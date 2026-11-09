@@ -1,0 +1,109 @@
+name: Publish Linux preview
+
+on:
+  push:
+    tags:
+      - 'v*-preview.*'
+
+permissions: {}
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  PACKAGE: scala-test-selector-${{ github.ref_name }}-linux-x86_64
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+        with:
+          persist-credentials: false
+
+      - name: Build and test the pinned workspace
+        run: |
+          rustup toolchain install --no-self-update
+          rustc --version
+          cargo fetch --locked
+          cargo test --locked --offline -p selector-runtime-equivalence --lib
+          cargo build --locked --offline --release -p selector-cli --bin selector
+          cargo build --locked --offline --release -p selector-native-effects --example runtime_equivalence
+
+      - name: Package binaries and record provenance
+        run: |
+          mkdir -p "stage/$PACKAGE" release
+          install -m 755 target/release/selector target/release/examples/runtime_equivalence "stage/$PACKAGE/"
+          install -m 644 tools/ScalaSpans.scala LICENSE README.md SPLICE_SOURCE_REVISION "stage/$PACKAGE/"
+          "stage/$PACKAGE/selector" producers --output stage/producers.json
+          jq -n --arg release_tag "$GITHUB_REF_NAME" --arg release_commit "$(git rev-parse HEAD)" \
+            --arg splice_source_revision "$(cat SPLICE_SOURCE_REVISION)" \
+            --arg target "$(rustc -vV | sed -n 's/^host: //p')" \
+            --slurpfile selector stage/producers.json \
+            '{release_tag: $release_tag, release_commit: $release_commit, splice_source_revision: $splice_source_revision,
+              target: $target, selector: $selector[0]}' > "stage/$PACKAGE/PROVENANCE.json"
+          tar -C stage -czf "release/$PACKAGE.tar.gz" "$PACKAGE"
+          cd release
+          sha256sum "$PACKAGE.tar.gz" | tee SHA256SUMS
+
+      - name: Verify the packaged Linux executables
+        run: |
+          cd release
+          sha256sum --check SHA256SUMS
+          unpack=$(mktemp -d)
+          tar -xzf "$PACKAGE.tar.gz" -C "$unpack"
+          cd "$unpack/$PACKAGE"
+          for executable in selector runtime_equivalence; do
+            file "$executable" | tee "$executable.file"
+            grep -F 'ELF 64-bit LSB' "$executable.file"
+            grep -F 'x86-64' "$executable.file"
+          done
+          ./selector --help > selector.help
+          grep -F 'Rust compiler-backed analysis' selector.help
+          ./selector producers --output producers.json
+          jq -e --slurpfile producers producers.json \
+            '.target == "x86_64-unknown-linux-gnu" and .selector == $producers[0] and
+             .selector.build.profile == "release" and (.selector.producers | length > 0)' PROVENANCE.json
+          repo="$unpack/test-repo"
+          git init -q "$repo"
+          git -C "$repo" -c user.name=Preview -c user.email=preview@example.invalid commit -qm base --allow-empty
+          base=$(git -C "$repo" rev-parse HEAD)
+          source_path=app/src/test/scala/Example.scala
+          mkdir -p "$repo/$(dirname "$source_path")"
+          printf 'object Example {}\n' > "$repo/$source_path"
+          git -C "$repo" add "$source_path"
+          git -C "$repo" -c user.name=Preview -c user.email=preview@example.invalid commit -qm head
+          head=$(git -C "$repo" rev-parse HEAD)
+          ./runtime_equivalence preflight-tracked-test "$base" "$head" "$repo" > preflight.json
+          jq -e --arg path "$source_path" --arg blob "$(git -C "$repo" rev-parse "HEAD:$source_path")" \
+            '. == [{path: $path, base_blob: null, head_blob: $blob}]' preflight.json
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: linux-preview
+          path: release/
+          if-no-files-found: error
+          compression-level: 0
+
+  publish:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: linux-preview
+
+      - name: Publish the GitHub pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sha256sum --check SHA256SUMS
+          gh release create "$GITHUB_REF_NAME" "$PACKAGE.tar.gz" SHA256SUMS \
+            --repo "$GITHUB_REPOSITORY" --verify-tag --prerelease \
+            --title "Scala Test Selector $GITHUB_REF_NAME" \
+            --notes "Ubuntu 24.04 Linux x86-64 preview with the selector CLI, paired runtime-equivalence tool, Scala syntax exporter and source provenance. See the bundled README for verification and usage."
