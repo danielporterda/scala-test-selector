@@ -6,16 +6,15 @@ Splice commit recorded in [SPLICE_SOURCE_REVISION](SPLICE_SOURCE_REVISION).
 
 ## Download and verify
 
-On Ubuntu 24.04 x86-64, authenticate the GitHub CLI as an account with read
-access to this private repository. Download the named preview into an empty
+On Ubuntu 24.04 x86-64, download the named public preview into an empty
 directory.
 
 ```sh
-gh auth status
 tag=v0.1.0-preview.1
 package="scala-test-selector-${tag}-linux-x86_64"
-gh release download "$tag" --repo danielporterda/scala-test-selector \
-  --pattern "$package.tar.gz" --pattern SHA256SUMS
+release_url="https://github.com/danielporterda/scala-test-selector/releases/download/$tag"
+curl --fail --location --remote-name "$release_url/$package.tar.gz"
+curl --fail --location --remote-name "$release_url/SHA256SUMS"
 sha256sum --check SHA256SUMS && tar -xzf "$package.tar.gz"
 cd "$package"
 ./selector --help
@@ -78,3 +77,12 @@ cargo test --locked --offline -p selector-runtime-equivalence --lib
 cargo build --locked --offline --release -p selector-cli --bin selector
 cargo build --locked --offline --release -p selector-native-effects --example runtime_equivalence
 ```
+
+## Run a tagged release from a local machine
+
+Use an isolated Ubuntu 24.04 x86-64 guest with no host directory mounts.
+Install Git, the C build tools, Rustup, GitHub CLI, jq, and file in the guest.
+Register the GitHub Actions runner for this repository with the
+`selector-release` label and `--ephemeral` so it handles one job.
+Start the runner, then push the `v*-preview.*` tag. The job builds,
+checks, and publishes the archive and `SHA256SUMS` from that guest.
