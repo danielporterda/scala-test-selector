@@ -1,0 +1,65 @@
+{
+  "schema": "native-metadata-cli-test-inputs/v1",
+  "frozen_context_projection": {
+    "original_path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/compiler-contexts.json",
+    "original_sha256": "806e9717ce16ac80b2380ab14038bb1cb7b610b1e232a33a453fd6c472f5407b",
+    "new_native_input": "/private/tmp/selector-external-metadata-cli-controls/native-contexts.json",
+    "source_root_from_actual_recorded_argv": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata",
+    "input_objects_from_actual_pinned_jars": true,
+    "java_runtime_absent_preserved": true,
+    "qualification": "New explicit native context projection, not a claim the old smaller fixture capture had native authority wire."
+  },
+  "preview_command": [
+    "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/target/debug/selector",
+    "metadata-authority",
+    "--contexts",
+    "/private/tmp/selector-external-metadata-cli-controls/native-contexts.json",
+    "--metadata-binary-map",
+    "/private/tmp/selector-external-metadata-cli-controls/native-binary-map.json",
+    "--compiler-input-root",
+    "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata",
+    "--input",
+    "/private/tmp/selector-external-metadata-cli-controls/requests.json",
+    "--output",
+    "/private/tmp/selector-external-metadata-cli-controls/native-authority.json"
+  ],
+  "preview_exit_code": 0,
+  "pins": [
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/target/debug/selector",
+      "sha256": "953994cf41bf129f20b4545288f0f842b8ab7a7095971b1e086f443c66e6150c",
+      "bytes": 45320808
+    },
+    {
+      "path": "/private/tmp/selector-external-metadata-cli-controls/native-contexts.json",
+      "sha256": "65e2b709bdb265ad114f2db0696e88fa8738e8775d1c9ae7762cab8e4a01aed5",
+      "bytes": 4618
+    },
+    {
+      "path": "/private/tmp/selector-external-metadata-cli-controls/native-binary-map.json",
+      "sha256": "0c01820acec1720c30265b80be6a716c8a4c89381b9e6a5ae459c1a960ed8003",
+      "bytes": 815
+    },
+    {
+      "path": "/private/tmp/selector-external-metadata-cli-controls/native-authority.json",
+      "sha256": "aaa3ecbfdda41f8728074169cb6b7b715566c72353648a710be70528bfd1a7ba",
+      "bytes": 2151
+    },
+    {
+      "path": "/private/tmp/selector-external-metadata-cli-controls/native-admission.json",
+      "sha256": "af1c309f107ba48e7a08a7fc25535fe71e478ecf3d0c5428b861504c10cf6a53",
+      "bytes": 1335
+    },
+    {
+      "path": "/private/tmp/selector-external-metadata-cli-controls/external-signatures.semanticdb",
+      "sha256": "e6c01bc907104e8f5de03686a1f77b8b4a1421a4a5f7f90b5e48013b39e4709e",
+      "bytes": 1256
+    }
+  ],
+  "no_jvm": true,
+  "private_binary": {
+    "path": "/private/tmp/selector-external-metadata-cli-controls/selector-native-metadata-controls",
+    "sha256": "953994cf41bf129f20b4545288f0f842b8ab7a7095971b1e086f443c66e6150c",
+    "bytes": 45320808
+  }
+}

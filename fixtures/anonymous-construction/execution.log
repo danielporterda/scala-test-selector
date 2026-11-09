@@ -1,0 +1,7 @@
+active:trait-init
+class-active:argument,class:7
+body-active:trait-init,body
+dormant-created:
+dormant-invoked:trait-init
+override-created:trait-init
+override-invoked:override

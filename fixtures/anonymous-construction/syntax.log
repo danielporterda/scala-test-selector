@@ -1,0 +1,4 @@
+{"phase":"syntax","pid":70183,"revision":"request","stage":"stage_begin"}
+{"batches":1,"cache_hits":0,"effective_workers":2,"output_bytes":24947,"producer":"c57fbd467f622492b072553080272a0cfd4c7453ef267cf915248bbc1358a8f3","source_bytes":816,"sources":1,"stage":"syntax"}
+elapsed: 0.598s
+{"elapsed_ns":598257750,"phase":"syntax","pid":70183,"revision":"request","stage":"stage_end"}

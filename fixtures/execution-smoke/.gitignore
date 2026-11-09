@@ -1,0 +1,2 @@
+# These frozen compiler/JVM logs are acceptance evidence, not runtime output.
+!*.log

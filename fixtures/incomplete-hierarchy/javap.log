@@ -1,0 +1,700 @@
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes/metadatacase/Probe$Marker.class
+  Last modified Nov 7, 2026; size 387 bytes
+  SHA-256 checksum 4d659c80f77fca8d87e29627e1f647757f30aa46a24d699cbd773b1354a54faa
+  Compiled from "Probe.java"
+public interface metadatacase.Probe$Marker
+  minor version: 0
+  major version: 61
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #8                          // metadatacase/Probe$Marker
+  super_class: #13                        // java/lang/Object
+  interfaces: 0, fields: 1, methods: 1, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // metadatacase/Probe$Effects.note:(I)I
+   #2 = Class              #4             // metadatacase/Probe$Effects
+   #3 = NameAndType        #5:#6          // note:(I)I
+   #4 = Utf8               metadatacase/Probe$Effects
+   #5 = Utf8               note
+   #6 = Utf8               (I)I
+   #7 = Fieldref           #8.#9          // metadatacase/Probe$Marker.MARKER:I
+   #8 = Class              #10            // metadatacase/Probe$Marker
+   #9 = NameAndType        #11:#12        // MARKER:I
+  #10 = Utf8               metadatacase/Probe$Marker
+  #11 = Utf8               MARKER
+  #12 = Utf8               I
+  #13 = Class              #14            // java/lang/Object
+  #14 = Utf8               java/lang/Object
+  #15 = Utf8               <clinit>
+  #16 = Utf8               ()V
+  #17 = Utf8               Code
+  #18 = Utf8               LineNumberTable
+  #19 = Utf8               SourceFile
+  #20 = Utf8               Probe.java
+  #21 = Utf8               NestHost
+  #22 = Class              #23            // metadatacase/Probe
+  #23 = Utf8               metadatacase/Probe
+  #24 = Utf8               InnerClasses
+  #25 = Utf8               Effects
+  #26 = Utf8               Marker
+{
+  public static final int MARKER;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_1
+         1: invokestatic  #1                  // Method metadatacase/Probe$Effects.note:(I)I
+         4: putstatic     #7                  // Field MARKER:I
+         7: return
+      LineNumberTable:
+        line 10: 0
+}
+SourceFile: "Probe.java"
+NestHost: class metadatacase/Probe
+InnerClasses:
+  public static final #25= #2 of #22;     // Effects=class metadatacase/Probe$Effects of class metadatacase/Probe
+  public static #26= #8 of #22;           // Marker=class metadatacase/Probe$Marker of class metadatacase/Probe
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes/metadatacase/Probe$Child.class
+  Last modified Nov 7, 2026; size 632 bytes
+  SHA-256 checksum 0d4a8a5f89af0024cc3cd806369d3421815123f7b17b97abb5392833caa7d745
+  Compiled from "Probe.java"
+public interface metadatacase.Probe$Child extends metadatacase.Probe$Marker
+  minor version: 0
+  major version: 61
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #17                         // metadatacase/Probe$Child
+  super_class: #22                        // java/lang/Object
+  interfaces: 1, fields: 1, methods: 3, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // metadatacase/Probe$Effects.changed:()I
+   #2 = Class              #4             // metadatacase/Probe$Effects
+   #3 = NameAndType        #5:#6          // changed:()I
+   #4 = Utf8               metadatacase/Probe$Effects
+   #5 = Utf8               changed
+   #6 = Utf8               ()I
+   #7 = Methodref          #8.#9          // metadatacase/Probe$Missing.value:()I
+   #8 = Class              #10            // metadatacase/Probe$Missing
+   #9 = NameAndType        #11:#6         // value:()I
+  #10 = Utf8               metadatacase/Probe$Missing
+  #11 = Utf8               value
+  #12 = Methodref          #2.#13         // metadatacase/Probe$Effects.note:(I)I
+  #13 = NameAndType        #14:#15        // note:(I)I
+  #14 = Utf8               note
+  #15 = Utf8               (I)I
+  #16 = Fieldref           #17.#18        // metadatacase/Probe$Child.CHILD:I
+  #17 = Class              #19            // metadatacase/Probe$Child
+  #18 = NameAndType        #20:#21        // CHILD:I
+  #19 = Utf8               metadatacase/Probe$Child
+  #20 = Utf8               CHILD
+  #21 = Utf8               I
+  #22 = Class              #23            // java/lang/Object
+  #23 = Utf8               java/lang/Object
+  #24 = Class              #25            // metadatacase/Probe$Marker
+  #25 = Utf8               metadatacase/Probe$Marker
+  #26 = Utf8               ping
+  #27 = Utf8               Code
+  #28 = Utf8               LineNumberTable
+  #29 = Utf8               opaque
+  #30 = Utf8               <clinit>
+  #31 = Utf8               ()V
+  #32 = Utf8               SourceFile
+  #33 = Utf8               Probe.java
+  #34 = Utf8               NestHost
+  #35 = Class              #36            // metadatacase/Probe
+  #36 = Utf8               metadatacase/Probe
+  #37 = Utf8               InnerClasses
+  #38 = Utf8               Effects
+  #39 = Utf8               Missing
+  #40 = Utf8               Child
+  #41 = Utf8               Marker
+{
+  public static final int CHILD;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public static int ping();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: invokestatic  #1                  // Method metadatacase/Probe$Effects.changed:()I
+         3: ireturn
+      LineNumberTable:
+        line 13: 0
+
+  public static int opaque();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: invokestatic  #7                  // Method metadatacase/Probe$Missing.value:()I
+         3: ireturn
+      LineNumberTable:
+        line 14: 0
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: iconst_2
+         1: invokestatic  #12                 // Method metadatacase/Probe$Effects.note:(I)I
+         4: invokestatic  #1                  // Method metadatacase/Probe$Effects.changed:()I
+         7: iadd
+         8: putstatic     #16                 // Field CHILD:I
+        11: return
+      LineNumberTable:
+        line 12: 0
+}
+SourceFile: "Probe.java"
+NestHost: class metadatacase/Probe
+InnerClasses:
+  public static final #38= #2 of #35;     // Effects=class metadatacase/Probe$Effects of class metadatacase/Probe
+  public static final #39= #8 of #35;     // Missing=class metadatacase/Probe$Missing of class metadatacase/Probe
+  public static #40= #17 of #35;          // Child=class metadatacase/Probe$Child of class metadatacase/Probe
+  public static #41= #24 of #35;          // Marker=class metadatacase/Probe$Marker of class metadatacase/Probe
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes/metadatacase/Probe$DefaultParent.class
+  Last modified Nov 7, 2026; size 539 bytes
+  SHA-256 checksum 398889d717e1dbb0a80a760a668b69df6c128857bffdb213d33cd6832fa054d4
+  Compiled from "Probe.java"
+public interface metadatacase.Probe$DefaultParent
+  minor version: 0
+  major version: 61
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #8                          // metadatacase/Probe$DefaultParent
+  super_class: #13                        // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // metadatacase/Probe$Effects.note:(I)I
+   #2 = Class              #4             // metadatacase/Probe$Effects
+   #3 = NameAndType        #5:#6          // note:(I)I
+   #4 = Utf8               metadatacase/Probe$Effects
+   #5 = Utf8               note
+   #6 = Utf8               (I)I
+   #7 = Fieldref           #8.#9          // metadatacase/Probe$DefaultParent.DEFAULT:I
+   #8 = Class              #10            // metadatacase/Probe$DefaultParent
+   #9 = NameAndType        #11:#12        // DEFAULT:I
+  #10 = Utf8               metadatacase/Probe$DefaultParent
+  #11 = Utf8               DEFAULT
+  #12 = Utf8               I
+  #13 = Class              #14            // java/lang/Object
+  #14 = Utf8               java/lang/Object
+  #15 = Utf8               value
+  #16 = Utf8               ()I
+  #17 = Utf8               Code
+  #18 = Utf8               LineNumberTable
+  #19 = Utf8               LocalVariableTable
+  #20 = Utf8               this
+  #21 = Utf8               Lmetadatacase/Probe$DefaultParent;
+  #22 = Utf8               <clinit>
+  #23 = Utf8               ()V
+  #24 = Utf8               SourceFile
+  #25 = Utf8               Probe.java
+  #26 = Utf8               NestHost
+  #27 = Class              #28            // metadatacase/Probe
+  #28 = Utf8               metadatacase/Probe
+  #29 = Utf8               InnerClasses
+  #30 = Utf8               Effects
+  #31 = Utf8               DefaultParent
+{
+  public static final int DEFAULT;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public default int value();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_1
+         1: ireturn
+      LineNumberTable:
+        line 18: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Lmetadatacase/Probe$DefaultParent;
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_4
+         1: invokestatic  #1                  // Method metadatacase/Probe$Effects.note:(I)I
+         4: putstatic     #7                  // Field DEFAULT:I
+         7: return
+      LineNumberTable:
+        line 17: 0
+}
+SourceFile: "Probe.java"
+NestHost: class metadatacase/Probe
+InnerClasses:
+  public static final #30= #2 of #27;     // Effects=class metadatacase/Probe$Effects of class metadatacase/Probe
+  public static #31= #8 of #27;           // DefaultParent=class metadatacase/Probe$DefaultParent of class metadatacase/Probe
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes/metadatacase/Probe$DefaultChild.class
+  Last modified Nov 7, 2026; size 684 bytes
+  SHA-256 checksum 479aae1b0b87a0c0b7f581a5f1430202d6901742ce168dec08df54bf0bce9d68
+  Compiled from "Probe.java"
+public final class metadatacase.Probe$DefaultChild implements metadatacase.Probe$DefaultParent
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #18                         // metadatacase/Probe$DefaultChild
+  super_class: #2                         // java/lang/Object
+  interfaces: 1, fields: 1, methods: 3, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Methodref          #8.#9          // metadatacase/Probe$Effects.changed:()I
+   #8 = Class              #10            // metadatacase/Probe$Effects
+   #9 = NameAndType        #11:#12        // changed:()I
+  #10 = Utf8               metadatacase/Probe$Effects
+  #11 = Utf8               changed
+  #12 = Utf8               ()I
+  #13 = Methodref          #8.#14         // metadatacase/Probe$Effects.note:(I)I
+  #14 = NameAndType        #15:#16        // note:(I)I
+  #15 = Utf8               note
+  #16 = Utf8               (I)I
+  #17 = Fieldref           #18.#19        // metadatacase/Probe$DefaultChild.OWN:I
+  #18 = Class              #20            // metadatacase/Probe$DefaultChild
+  #19 = NameAndType        #21:#22        // OWN:I
+  #20 = Utf8               metadatacase/Probe$DefaultChild
+  #21 = Utf8               OWN
+  #22 = Utf8               I
+  #23 = Class              #24            // metadatacase/Probe$DefaultParent
+  #24 = Utf8               metadatacase/Probe$DefaultParent
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               LocalVariableTable
+  #28 = Utf8               this
+  #29 = Utf8               Lmetadatacase/Probe$DefaultChild;
+  #30 = Utf8               ping
+  #31 = Utf8               <clinit>
+  #32 = Utf8               SourceFile
+  #33 = Utf8               Probe.java
+  #34 = Utf8               NestHost
+  #35 = Class              #36            // metadatacase/Probe
+  #36 = Utf8               metadatacase/Probe
+  #37 = Utf8               InnerClasses
+  #38 = Utf8               Effects
+  #39 = Utf8               DefaultChild
+  #40 = Utf8               DefaultParent
+{
+  static int OWN;
+    descriptor: I
+    flags: (0x0008) ACC_STATIC
+
+  public metadatacase.Probe$DefaultChild();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 20: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lmetadatacase/Probe$DefaultChild;
+
+  public static int ping();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: invokestatic  #7                  // Method metadatacase/Probe$Effects.changed:()I
+         3: ireturn
+      LineNumberTable:
+        line 22: 0
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: bipush        8
+         2: invokestatic  #13                 // Method metadatacase/Probe$Effects.note:(I)I
+         5: invokestatic  #7                  // Method metadatacase/Probe$Effects.changed:()I
+         8: iadd
+         9: putstatic     #17                 // Field OWN:I
+        12: return
+      LineNumberTable:
+        line 21: 0
+}
+SourceFile: "Probe.java"
+NestHost: class metadatacase/Probe
+InnerClasses:
+  public static final #38= #8 of #35;     // Effects=class metadatacase/Probe$Effects of class metadatacase/Probe
+  public static final #39= #18 of #35;    // DefaultChild=class metadatacase/Probe$DefaultChild of class metadatacase/Probe
+  public static #40= #23 of #35;          // DefaultParent=class metadatacase/Probe$DefaultParent of class metadatacase/Probe
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes/metadatacase/Probe$SuperParent.class
+  Last modified Nov 7, 2026; size 547 bytes
+  SHA-256 checksum c3ece8f72b150e3523e47b7c1d6380f4617f198c8d0ab58a5f8b39a3e2d41b89
+  Compiled from "Probe.java"
+public class metadatacase.Probe$SuperParent
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #14                         // metadatacase/Probe$SuperParent
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Methodref          #8.#9          // metadatacase/Probe$Effects.note:(I)I
+   #8 = Class              #10            // metadatacase/Probe$Effects
+   #9 = NameAndType        #11:#12        // note:(I)I
+  #10 = Utf8               metadatacase/Probe$Effects
+  #11 = Utf8               note
+  #12 = Utf8               (I)I
+  #13 = Fieldref           #14.#15        // metadatacase/Probe$SuperParent.PARENT:I
+  #14 = Class              #16            // metadatacase/Probe$SuperParent
+  #15 = NameAndType        #17:#18        // PARENT:I
+  #16 = Utf8               metadatacase/Probe$SuperParent
+  #17 = Utf8               PARENT
+  #18 = Utf8               I
+  #19 = Utf8               Code
+  #20 = Utf8               LineNumberTable
+  #21 = Utf8               LocalVariableTable
+  #22 = Utf8               this
+  #23 = Utf8               Lmetadatacase/Probe$SuperParent;
+  #24 = Utf8               <clinit>
+  #25 = Utf8               SourceFile
+  #26 = Utf8               Probe.java
+  #27 = Utf8               NestHost
+  #28 = Class              #29            // metadatacase/Probe
+  #29 = Utf8               metadatacase/Probe
+  #30 = Utf8               InnerClasses
+  #31 = Utf8               Effects
+  #32 = Utf8               SuperParent
+{
+  static int PARENT;
+    descriptor: I
+    flags: (0x0008) ACC_STATIC
+
+  public metadatacase.Probe$SuperParent();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: bipush        64
+         6: invokestatic  #7                  // Method metadatacase/Probe$Effects.note:(I)I
+         9: pop
+        10: return
+      LineNumberTable:
+        line 26: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lmetadatacase/Probe$SuperParent;
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: bipush        16
+         2: invokestatic  #7                  // Method metadatacase/Probe$Effects.note:(I)I
+         5: putstatic     #13                 // Field PARENT:I
+         8: return
+      LineNumberTable:
+        line 25: 0
+}
+SourceFile: "Probe.java"
+NestHost: class metadatacase/Probe
+InnerClasses:
+  public static final #31= #8 of #28;     // Effects=class metadatacase/Probe$Effects of class metadatacase/Probe
+  public static #32= #14 of #28;          // SuperParent=class metadatacase/Probe$SuperParent of class metadatacase/Probe
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes/metadatacase/Probe$SuperChild.class
+  Last modified Nov 7, 2026; size 650 bytes
+  SHA-256 checksum 94b168efdfbb722af2ea1302b235cdfd6829a3b7381bdb9cbd39ec8dc5ccac32
+  Compiled from "Probe.java"
+public final class metadatacase.Probe$SuperChild extends metadatacase.Probe$SuperParent
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #18                         // metadatacase/Probe$SuperChild
+  super_class: #2                         // metadatacase/Probe$SuperParent
+  interfaces: 0, fields: 1, methods: 3, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // metadatacase/Probe$SuperParent."<init>":()V
+   #2 = Class              #4             // metadatacase/Probe$SuperParent
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               metadatacase/Probe$SuperParent
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Methodref          #8.#9          // metadatacase/Probe$Effects.changed:()I
+   #8 = Class              #10            // metadatacase/Probe$Effects
+   #9 = NameAndType        #11:#12        // changed:()I
+  #10 = Utf8               metadatacase/Probe$Effects
+  #11 = Utf8               changed
+  #12 = Utf8               ()I
+  #13 = Methodref          #8.#14         // metadatacase/Probe$Effects.note:(I)I
+  #14 = NameAndType        #15:#16        // note:(I)I
+  #15 = Utf8               note
+  #16 = Utf8               (I)I
+  #17 = Fieldref           #18.#19        // metadatacase/Probe$SuperChild.OWN:I
+  #18 = Class              #20            // metadatacase/Probe$SuperChild
+  #19 = NameAndType        #21:#22        // OWN:I
+  #20 = Utf8               metadatacase/Probe$SuperChild
+  #21 = Utf8               OWN
+  #22 = Utf8               I
+  #23 = Utf8               Code
+  #24 = Utf8               LineNumberTable
+  #25 = Utf8               LocalVariableTable
+  #26 = Utf8               this
+  #27 = Utf8               Lmetadatacase/Probe$SuperChild;
+  #28 = Utf8               ping
+  #29 = Utf8               <clinit>
+  #30 = Utf8               SourceFile
+  #31 = Utf8               Probe.java
+  #32 = Utf8               NestHost
+  #33 = Class              #34            // metadatacase/Probe
+  #34 = Utf8               metadatacase/Probe
+  #35 = Utf8               InnerClasses
+  #36 = Utf8               SuperParent
+  #37 = Utf8               Effects
+  #38 = Utf8               SuperChild
+{
+  static int OWN;
+    descriptor: I
+    flags: (0x0008) ACC_STATIC
+
+  public metadatacase.Probe$SuperChild();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method metadatacase/Probe$SuperParent."<init>":()V
+         4: return
+      LineNumberTable:
+        line 30: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lmetadatacase/Probe$SuperChild;
+
+  public static int ping();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: invokestatic  #7                  // Method metadatacase/Probe$Effects.changed:()I
+         3: ireturn
+      LineNumberTable:
+        line 31: 0
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: bipush        32
+         2: invokestatic  #13                 // Method metadatacase/Probe$Effects.note:(I)I
+         5: invokestatic  #7                  // Method metadatacase/Probe$Effects.changed:()I
+         8: iadd
+         9: putstatic     #17                 // Field OWN:I
+        12: return
+      LineNumberTable:
+        line 29: 0
+}
+SourceFile: "Probe.java"
+NestHost: class metadatacase/Probe
+InnerClasses:
+  public static #36= #2 of #33;           // SuperParent=class metadatacase/Probe$SuperParent of class metadatacase/Probe
+  public static final #37= #8 of #33;     // Effects=class metadatacase/Probe$Effects of class metadatacase/Probe
+  public static final #38= #18 of #33;    // SuperChild=class metadatacase/Probe$SuperChild of class metadatacase/Probe
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes/metadatacase/Probe$Missing.class
+  Last modified Nov 7, 2026; size 421 bytes
+  SHA-256 checksum 45372990522acd2c6d42ba1baef0e58e1ce33c00744845c99a0c521df57ff8bd
+  Compiled from "Probe.java"
+public final class metadatacase.Probe$Missing
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #7                          // metadatacase/Probe$Missing
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // metadatacase/Probe$Missing
+   #8 = Utf8               metadatacase/Probe$Missing
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               LocalVariableTable
+  #12 = Utf8               this
+  #13 = Utf8               Lmetadatacase/Probe$Missing;
+  #14 = Utf8               value
+  #15 = Utf8               ()I
+  #16 = Utf8               SourceFile
+  #17 = Utf8               Probe.java
+  #18 = Utf8               NestHost
+  #19 = Class              #20            // metadatacase/Probe
+  #20 = Utf8               metadatacase/Probe
+  #21 = Utf8               InnerClasses
+  #22 = Utf8               Missing
+{
+  public metadatacase.Probe$Missing();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 33: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lmetadatacase/Probe$Missing;
+
+  public static int value();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: bipush        11
+         2: ireturn
+      LineNumberTable:
+        line 33: 0
+}
+SourceFile: "Probe.java"
+NestHost: class metadatacase/Probe
+InnerClasses:
+  public static final #22= #7 of #19;     // Missing=class metadatacase/Probe$Missing of class metadatacase/Probe
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes/metadatacase/Probe$Effects.class
+  Last modified Nov 7, 2026; size 643 bytes
+  SHA-256 checksum 2f60a9980a6c5164f0bf9f8ebb0d12330d6ed617487db973730756d9258d2f0a
+  Compiled from "Probe.java"
+public final class metadatacase.Probe$Effects
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #8                          // metadatacase/Probe$Effects
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 4, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // metadatacase/Probe$Effects.bits:I
+   #8 = Class              #10            // metadatacase/Probe$Effects
+   #9 = NameAndType        #11:#12        // bits:I
+  #10 = Utf8               metadatacase/Probe$Effects
+  #11 = Utf8               bits
+  #12 = Utf8               I
+  #13 = Fieldref           #8.#14         // metadatacase/Probe$Effects.changedCalls:I
+  #14 = NameAndType        #15:#12        // changedCalls:I
+  #15 = Utf8               changedCalls
+  #16 = Utf8               Code
+  #17 = Utf8               LineNumberTable
+  #18 = Utf8               LocalVariableTable
+  #19 = Utf8               this
+  #20 = Utf8               Lmetadatacase/Probe$Effects;
+  #21 = Utf8               note
+  #22 = Utf8               (I)I
+  #23 = Utf8               bit
+  #24 = Utf8               changed
+  #25 = Utf8               ()I
+  #26 = Utf8               <clinit>
+  #27 = Utf8               SourceFile
+  #28 = Utf8               Probe.java
+  #29 = Utf8               NestHost
+  #30 = Class              #31            // metadatacase/Probe
+  #31 = Utf8               metadatacase/Probe
+  #32 = Utf8               InnerClasses
+  #33 = Utf8               Effects
+{
+  public static int bits;
+    descriptor: I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public static int changedCalls;
+    descriptor: I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public metadatacase.Probe$Effects();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lmetadatacase/Probe$Effects;
+
+  public static int note(int);
+    descriptor: (I)I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #7                  // Field bits:I
+         3: iload_0
+         4: ior
+         5: putstatic     #7                  // Field bits:I
+         8: getstatic     #7                  // Field bits:I
+        11: ireturn
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0   bit   I
+
+  public static int changed();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #13                 // Field changedCalls:I
+         3: iconst_1
+         4: iadd
+         5: putstatic     #13                 // Field changedCalls:I
+         8: bipush        7
+        10: ireturn
+      LineNumberTable:
+        line 8: 0
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_0
+         1: putstatic     #7                  // Field bits:I
+         4: iconst_0
+         5: putstatic     #13                 // Field changedCalls:I
+         8: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 4
+}
+SourceFile: "Probe.java"
+NestHost: class metadatacase/Probe
+InnerClasses:
+  public static final #33= #8 of #30;     // Effects=class metadatacase/Probe$Effects of class metadatacase/Probe

@@ -1,0 +1,42 @@
+{
+  "purpose": "Independent pre-prepare/finish metadata-None canonical facts golden",
+  "native_only": true,
+  "producer_receipt": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase12-first-site-build/receipt.json",
+  "extractor_domain": "selector-extract/19:compiler-selected-source-application",
+  "command": [
+    "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase12-first-site-build/executables/4e329d7b8229497bb144aa21f8127af3cddf05618d08f2c996435fc4c3f3ba96/selector",
+    "extract",
+    "--input",
+    "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/documents.jsonl",
+    "--syntax",
+    "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/syntax.jsonl",
+    "--output",
+    "/private/tmp/selector-extract-none-golden/pre-refactor.bin",
+    "--workers",
+    "1"
+  ],
+  "exit_code": 0,
+  "sealed_facts_identity": "368b21f194341e60c3999d6d11b73bf488ae0a9ccde1297a9aaabe849025c1cd",
+  "pins": {
+    "binary": {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase12-first-site-build/executables/4e329d7b8229497bb144aa21f8127af3cddf05618d08f2c996435fc4c3f3ba96/selector",
+      "bytes": 15620968,
+      "sha256": "4e329d7b8229497bb144aa21f8127af3cddf05618d08f2c996435fc4c3f3ba96"
+    },
+    "documents": {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/documents.jsonl",
+      "bytes": 20334,
+      "sha256": "04c5e35c82857d4fcc822c0ffb981cfc24404f31d3db196d99923768af4a092d"
+    },
+    "syntax": {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/syntax.jsonl",
+      "bytes": 31883,
+      "sha256": "84f5fa5d62235c5b732479bb0991f492fcc3f7e0c4e511598068a458dfbdd3eb"
+    },
+    "facts": {
+      "path": "/private/tmp/selector-extract-none-golden/pre-refactor.bin",
+      "bytes": 17616,
+      "sha256": "610285e2ffdbf1f805270159dd2d38b52058ea378be0d9a706fe316e00ed22dc"
+    }
+  }
+}

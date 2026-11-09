@@ -1,0 +1,167 @@
+{
+  "schema": "selector-top-module-metadata-fixture/v1",
+  "kind": "signature-only-read-of-existing-hash-pinned-library",
+  "existing_source_and_jvm_witnesses_unchanged": true,
+  "java_test_execution_in_this_capture": false,
+  "compiler_or_source_regeneration": false,
+  "scope": "Exactly Effects.note method/formal closure; runtime module authority still requires native header, real initialization and MODULE$ field.",
+  "copied_capture_files": [
+    {
+      "path": "fixtures/top-module-metadata/authority.json",
+      "sha256": "ab26fd1c021f1f99f34237814d85cede9162b6ec1543d6a58ca04d9f970d6890",
+      "bytes": 2535
+    },
+    {
+      "path": "fixtures/top-module-metadata/batch-0000/class-0000.semanticdb",
+      "sha256": "3537be80f5fad748c92c8c38d56a45dee266a54031deb836c98f6ac8749d54ee",
+      "bytes": 244
+    },
+    {
+      "path": "fixtures/top-module-metadata/batch-0000/classpath.txt",
+      "sha256": "07f07744a2d8e6b418b66d614843a72c05b5f6ef8a8cb870bf8d88a50b66731c",
+      "bytes": 396
+    },
+    {
+      "path": "fixtures/top-module-metadata/batch-0000/requests.tsv",
+      "sha256": "2fa05e8e33937a46b3aa482731f3936c222a493262f78c3ce6b0017009c17b94",
+      "bytes": 247
+    },
+    {
+      "path": "fixtures/top-module-metadata/batch-0000/result.json",
+      "sha256": "15f79f7b2fb1dd466a2a4310ae002b9e56139a798da60dc2babe9e73d0347792",
+      "bytes": 636
+    },
+    {
+      "path": "fixtures/top-module-metadata/manifest.json",
+      "sha256": "a7c449b715bb355b6706a8661b6829213886b6efb801e00c5e5be361c35d1296",
+      "bytes": 955
+    },
+    {
+      "path": "fixtures/top-module-metadata/metadata-batch-0000.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/top-module-metadata/metadata-batch-0000.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/top-module-metadata/native-authority.stderr",
+      "sha256": "606642249c58b71efc226545ee537ca9f3d52bbef83b10c8648f2e09f2a3380c",
+      "bytes": 209
+    },
+    {
+      "path": "fixtures/top-module-metadata/native-authority.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/top-module-metadata/native-binary-map.json",
+      "sha256": "0c01820acec1720c30265b80be6a716c8a4c89381b9e6a5ae459c1a960ed8003",
+      "bytes": 815
+    },
+    {
+      "path": "fixtures/top-module-metadata/native-contexts.json",
+      "sha256": "65e2b709bdb265ad114f2db0696e88fa8738e8775d1c9ae7762cab8e4a01aed5",
+      "bytes": 4618
+    },
+    {
+      "path": "fixtures/top-module-metadata/native-inputs-receipt.json",
+      "sha256": "ac7de4f1d861108b3680fc63840a389d48971b746c389e4c77ca23e099feeae3",
+      "bytes": 3064
+    },
+    {
+      "path": "fixtures/top-module-metadata/producer.json",
+      "sha256": "b5c98021ecca81222a3e5bb7c1e183ef4de067e9300cac07fd75cf34a77549dd",
+      "bytes": 1527
+    },
+    {
+      "path": "fixtures/top-module-metadata/provider-requests.json",
+      "sha256": "ac333faec92ef71f8681dc3ee8ae11c53355183d8ae19f28ebadf0f7814a74be",
+      "bytes": 265
+    },
+    {
+      "path": "fixtures/top-module-metadata/receipt.json",
+      "sha256": "3c5887408aa6be437f8256fc0b446b2b0189ec3da2d05677dee837e58b9673c2",
+      "bytes": 4491
+    },
+    {
+      "path": "fixtures/top-module-metadata/requests.json",
+      "sha256": "13eaf9f946691031a4288178e09c1545eb3141b27c0dab59a7b71ca14d673de5",
+      "bytes": 1186
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "fixtures/external-metadata/documents.jsonl",
+      "sha256": "d48750d56cb7ea8495c2816814fcd6f3c5a1b9921de281550700eb515e6bc5aa",
+      "bytes": 20315
+    },
+    {
+      "path": "fixtures/external-metadata/syntax.jsonl",
+      "sha256": "84f5fa5d62235c5b732479bb0991f492fcc3f7e0c4e511598068a458dfbdd3eb",
+      "bytes": 31883
+    },
+    {
+      "path": "fixtures/external-metadata/compiler-contexts.json",
+      "sha256": "806e9717ce16ac80b2380ab14038bb1cb7b610b1e232a33a453fd6c472f5407b",
+      "bytes": 3804
+    },
+    {
+      "path": "fixtures/external-metadata/src/selectedexternal/Calls.scala",
+      "sha256": "ac931d6e6d937dd9f1055e8d7cd90ab72ad98b8a3a59e12dd0a43c4df76c7a37",
+      "bytes": 1022
+    },
+    {
+      "path": "fixtures/external-metadata/jvm-inherited.stdout",
+      "sha256": "933b42e8616c31ddaae26016faea1b56aac7a8172c8215741327476b71f421a8",
+      "bytes": 31
+    },
+    {
+      "path": "fixtures/external-metadata/jvm-dormant.stdout",
+      "sha256": "eb993cb58d05d9ff4d3b028df2d1591ce77d1a04f71fe9fa5a2ea55cbd100ff9",
+      "bytes": 9
+    },
+    {
+      "path": "fixtures/selected-external-apply/library.jar",
+      "sha256": "c5c965928dba16f7ccb7a1e9812b6de9471828d65d3345e9f822e4572b36a3ad",
+      "bytes": 8980
+    },
+    {
+      "path": "fixtures/selected-external-apply/definitions/selectedexternal/Library.scala",
+      "sha256": "eedef7d312b12dd8552e177d522472c047759e8de991336a8ffe74941a031a2b",
+      "bytes": 752
+    },
+    {
+      "path": "fixtures/top-module-metadata/tooling/produce_external_metadata.py",
+      "sha256": "2d7a8ff129c80546183eeaff995fdafc3206acbd9cd3140c3e35eb0f4559fda6",
+      "bytes": 30725,
+      "original_producer_source_path": "ci-cost-study/rust-selector/tools/produce_external_metadata.py"
+    },
+    {
+      "path": "fixtures/top-module-metadata/tooling/metadata/ExternalMetadataBatch.scala",
+      "sha256": "911f21cc878d99909f541f875fe212a4ecfbc517a0e222fdff5f1c06bb4da9ee",
+      "bytes": 7717,
+      "original_producer_source_path": "ci-cost-study/rust-selector/tools/metadata/ExternalMetadataBatch.scala"
+    },
+    {
+      "path": "fixtures/top-module-metadata/tooling/metadata/DemandConverter.java",
+      "sha256": "6ea18f010d2fb6f35a97399d18af15078bec807a4faa12af27ae89ace36cde8a",
+      "bytes": 517,
+      "original_producer_source_path": "ci-cost-study/rust-selector/tools/metadata/DemandConverter.java"
+    }
+  ],
+  "reproduce": {
+    "requests": "requests.json",
+    "contexts": "native-contexts.json",
+    "binary_map": "native-binary-map.json",
+    "compiler_input_root": "../external-metadata",
+    "tool": "../../tools/produce_external_metadata.py",
+    "symbol": "selectedexternal/Effects.note().",
+    "max_requests": 1,
+    "heap_mib": 512,
+    "note": "Use a new output directory. Metadata authority paths inside copied raw receipts are the original execution paths; raw bytes are preserved.",
+    "historical_tool_sources": "tooling/ preserves the exact version-pinned source inputs; the current production driver can change independently."
+  }
+}

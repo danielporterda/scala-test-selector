@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "ad9796c187d28722331a364b2726396af2556f3e",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/suites/META-INF/semanticdb/src/curriedcase/Suites.scala.semanticdb",
+      "sha256": "6aa85394b74cd195c8806440193b516009f9f8dba2eb2b2f6850a85e3afd83df",
+      "semanticdb_input": "raw/suites/META-INF/semanticdb/src/curriedcase/Suites.scala.semanticdb",
+      "input_target_contexts": [
+        "project:curried-synthetics/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/curriedcase/Suites.scala",
+      "file": "src/curriedcase/Suites.scala",
+      "sha256": "9d936a8861cba1c6fc02aa7c392115021357fa95e321ca7e5df6c9dedbb1185f",
+      "source_contexts": [
+        "project:curried-synthetics/configuration:test"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "schema": "selector-value-bounds-fixture/v1",
+  "compiler": "Scala 2.13.18",
+  "plugin": "SemanticDB 4.15.2",
+  "generator_sha256": "c2b6f39a5283f366d1d8e3f85af62423d5bef5e5ab150f6f30a22600f0ca2d47",
+  "capture_helper_sha256": "11424bb4a30ca1cb8b347dd1106b03071d1c56bd4823b213ea1480e945e44bf9",
+  "exporter_sha256": "c607f9cff393cee883220d46ed49dc9adad4653dc1184557327d29a60bd01445",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba"
+    }
+  ],
+  "opaque_library_bodies_admitted": false,
+  "qualification": "Static compiler bounds restrict unknown alternatives; they never prove an allocation or complete opaque library effects.",
+  "sides": {
+    "base": {
+      "revision": "d6e2ec7ce1480473dc216c6758acc76ea486ab23",
+      "jvm_witness": "observed:41,41,41,41,41,41,41,41,41,99\n",
+      "compile_command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-value-bounds-fp8zn3l7/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/value-bounds/base",
+        "-P:semanticdb:targetroot:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-value-bounds-fp8zn3l7/metadata",
+        "-P:semanticdb:synthetics:on",
+        "-Yrangepos",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-value-bounds-fp8zn3l7/classes"
+      ],
+      "files": [
+        {
+          "path": "bytecode.jar",
+          "sha256": "ac49ef8fdcab2e7b71686118b1abd93f5534c9f7bedde195242cea7cc88f3f9d",
+          "bytes": 8216
+        },
+        {
+          "path": "capture.json",
+          "sha256": "b2b5431f0f1889d27c3b605b99fae33e9da4c752ecaeb060ddb2cb4f9503837b",
+          "bytes": 2688
+        },
+        {
+          "path": "capture.log",
+          "sha256": "7629bf206a375dad452c73b4f17ffaead8f9d573221da5c36e09ef5bb515b8e5",
+          "bytes": 225
+        },
+        {
+          "path": "cases-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "documents.jsonl",
+          "sha256": "bab2b258076a2922e018049944248b0a52e933c47c33268fedbb0d57a60dacea",
+          "bytes": 33676
+        },
+        {
+          "path": "execution.log",
+          "sha256": "d009e7deca13bf0cb3bd48fead39f0c14495f3e7678a5c9fae9bb26a8aa9e5e0",
+          "bytes": 39
+        },
+        {
+          "path": "library/Opaque.java",
+          "sha256": "ac6bc13106a5f292f28d90fe238bb8a63876870ba25e540202ee0a9d18597a5c",
+          "bytes": 392
+        },
+        {
+          "path": "library-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "raw/META-INF/semanticdb/src/valuebounds/Cases.scala.semanticdb",
+          "sha256": "4fc3406dc707475065c7be5414e68c4f475be57178beb5a5ea46cea99bc186b5",
+          "bytes": 3672
+        },
+        {
+          "path": "raw/META-INF/semanticdb/src/valuebounds/Effects.scala.semanticdb",
+          "sha256": "63f97a92dae6b80aad0501cc0b4fe882dc92a14729fd6b80b59bf19f50a0c639",
+          "bytes": 764
+        },
+        {
+          "path": "raw/META-INF/semanticdb/src/valuebounds/Factories.scala.semanticdb",
+          "sha256": "f5456a3fa0f7cf1bbb70136aea33ad89e9664291e7bc335ee9b9355533048217",
+          "bytes": 2582
+        },
+        {
+          "path": "raw/META-INF/semanticdb/src/valuebounds/Types.scala.semanticdb",
+          "sha256": "0aa9d10c67cbfee116401db3329036b0eca3055e7598dafccca4c6105d46ae09",
+          "bytes": 2770
+        },
+        {
+          "path": "src/valuebounds/Cases.scala",
+          "sha256": "a4da12ab9e163a81e2c6428487658cdbf74cd438de6de79edbe8e0126f36ea43",
+          "bytes": 601
+        },
+        {
+          "path": "src/valuebounds/Effects.scala",
+          "sha256": "c063ec54059d3f802628672557e4975b117b52ac8034d33ba0ab63e7921a54da",
+          "bytes": 116
+        },
+        {
+          "path": "src/valuebounds/Factories.scala",
+          "sha256": "43375a9797b633377c702ab8d1c8f9aa4a87659cb6f23f177fe2dbd3a0a5e77f",
+          "bytes": 335
+        },
+        {
+          "path": "src/valuebounds/Types.scala",
+          "sha256": "026a233a009b738a3d0319df2839cc560506637e4f9dcdf1efcc7ac670847c19",
+          "bytes": 365
+        },
+        {
+          "path": "syntax.jsonl",
+          "sha256": "882911bee3a7a23307563af86526251cda229dd766650f3fe75e8dcdaffa34d0",
+          "bytes": 42468
+        },
+        {
+          "path": "syntax.log",
+          "sha256": "2a448f1eff13389187e107576298b4b0b2eed47d43122d2c4f3ff11cfd8408ac",
+          "bytes": 215
+        },
+        {
+          "path": "types-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "validation/Check.scala",
+          "sha256": "d8fa2b8d8ee37171deb9e76eb079e36ad67ebd0bb5561f1fb33a7d9c0257abe3",
+          "bytes": 475
+        },
+        {
+          "path": "validation-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      ]
+    },
+    "head": {
+      "revision": "8b6f9bab5387cab6122f4360c9e9225eb248ca12",
+      "jvm_witness": "observed:42,42,42,42,42,42,42,42,42,99\n",
+      "compile_command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-value-bounds-8mt8x6qi/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/value-bounds/head",
+        "-P:semanticdb:targetroot:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-value-bounds-8mt8x6qi/metadata",
+        "-P:semanticdb:synthetics:on",
+        "-Yrangepos",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-value-bounds-8mt8x6qi/classes"
+      ],
+      "files": [
+        {
+          "path": "bytecode.jar",
+          "sha256": "f78824d9794fa34e08f44daae10612b1fcea548680297f44662a887dd88d4ae5",
+          "bytes": 8216
+        },
+        {
+          "path": "capture.json",
+          "sha256": "48a97a73bcbd270c066143ebb2065875b2da37bfe49ceb455974c8556b8ee4a5",
+          "bytes": 2688
+        },
+        {
+          "path": "capture.log",
+          "sha256": "c54994d1f51e6aaa6d6957cab1d2e758af6e3f191c9391ad4005fe22f1875513",
+          "bytes": 225
+        },
+        {
+          "path": "cases-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "documents.jsonl",
+          "sha256": "92c25f1926b0e1ac61e93f4968105fb752712b7eabc8f9d697bcaf0829807ed6",
+          "bytes": 33676
+        },
+        {
+          "path": "execution.log",
+          "sha256": "ffd2b8ba732cd55c19f82adb8646ff014a8db232e1ba9964fbe597ce61370c01",
+          "bytes": 39
+        },
+        {
+          "path": "library/Opaque.java",
+          "sha256": "ac6bc13106a5f292f28d90fe238bb8a63876870ba25e540202ee0a9d18597a5c",
+          "bytes": 392
+        },
+        {
+          "path": "library-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "raw/META-INF/semanticdb/src/valuebounds/Cases.scala.semanticdb",
+          "sha256": "4fc3406dc707475065c7be5414e68c4f475be57178beb5a5ea46cea99bc186b5",
+          "bytes": 3672
+        },
+        {
+          "path": "raw/META-INF/semanticdb/src/valuebounds/Effects.scala.semanticdb",
+          "sha256": "c8506d8531b2cb42b7de738646b008899599ad440b271ab69fa3b0eda2f0a9fe",
+          "bytes": 764
+        },
+        {
+          "path": "raw/META-INF/semanticdb/src/valuebounds/Factories.scala.semanticdb",
+          "sha256": "f5456a3fa0f7cf1bbb70136aea33ad89e9664291e7bc335ee9b9355533048217",
+          "bytes": 2582
+        },
+        {
+          "path": "raw/META-INF/semanticdb/src/valuebounds/Types.scala.semanticdb",
+          "sha256": "0aa9d10c67cbfee116401db3329036b0eca3055e7598dafccca4c6105d46ae09",
+          "bytes": 2770
+        },
+        {
+          "path": "src/valuebounds/Cases.scala",
+          "sha256": "a4da12ab9e163a81e2c6428487658cdbf74cd438de6de79edbe8e0126f36ea43",
+          "bytes": 601
+        },
+        {
+          "path": "src/valuebounds/Effects.scala",
+          "sha256": "ffa66f5c9439b2c3a2eb85736073356c2fba8638d0d479a18338772df411cc94",
+          "bytes": 116
+        },
+        {
+          "path": "src/valuebounds/Factories.scala",
+          "sha256": "43375a9797b633377c702ab8d1c8f9aa4a87659cb6f23f177fe2dbd3a0a5e77f",
+          "bytes": 335
+        },
+        {
+          "path": "src/valuebounds/Types.scala",
+          "sha256": "026a233a009b738a3d0319df2839cc560506637e4f9dcdf1efcc7ac670847c19",
+          "bytes": 365
+        },
+        {
+          "path": "syntax.jsonl",
+          "sha256": "e256467676e961a944d3ad971eb12bec0f86565645b91d4b1f0dd8f6f99a2137",
+          "bytes": 42468
+        },
+        {
+          "path": "syntax.log",
+          "sha256": "dfde5f3fe86ed9809c87af0c8f0389dc9c5d327876a04cfb9794fb478c426503",
+          "bytes": 215
+        },
+        {
+          "path": "types-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "validation/Check.scala",
+          "sha256": "143998c4dc73bc8ebb0daa9dc071251f8dbe28a4cbe7cda796b95dc258e0abec",
+          "bytes": 475
+        },
+        {
+          "path": "validation-compile.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      ]
+    }
+  }
+}

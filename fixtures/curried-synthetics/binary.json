@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "revision": "ad9796c187d28722331a364b2726396af2556f3e",
+  "java_feature": 21,
+  "contexts": [
+    {
+      "id": "project:curried-synthetics/configuration:test",
+      "entries": [
+        {
+          "path": "bytecode.jar",
+          "sha256": "242e6959a316842635bc8c8bb620fced02b72c156bd9d42da880daf8b849140c",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+          "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar",
+          "sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.19/scalatest-funsuite_2.13-3.2.19.jar",
+          "sha256": "926aeb37193ad79d0b380160765c9ab61d4367b994c1ab715896fe4961241d5e",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.19/scalatest-wordspec_2.13-3.2.19.jar",
+          "sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar",
+          "sha256": "5dc6b8fa5396fe9e1a7c2b72df174a8eb3e92770cdc3e70636d3eba673cd0da3",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar",
+          "sha256": "c27c33de17d450e29e66c16c5af4cfa33e8ffcf03c124f0a3d249d848cccd4af",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+          "sha256": "b549a1bf335bc4528cf26f005894c7c37220ac4e8450847973d8f4001b8f59ea",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.19/scalatest-shouldmatchers_2.13-3.2.19.jar",
+          "sha256": "64658d736039267baae0108af620617e8ce88b2f4683112e2e31e4ad2a603c0f",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.19/scalatest-matchers-core_2.13-3.2.19.jar",
+          "sha256": "033f16c1143fbe51675d080b13ac319d98581d0331ba3ccebb121e3904a774a3",
+          "kind": "jar"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "context": "project:curried-synthetics/configuration:test",
+      "compiler_symbol": "curriedcase/Library.",
+      "jvm_owner": "curriedcase/Library$"
+    }
+  ],
+  "methods": [
+    {
+      "context": "project:curried-synthetics/configuration:test",
+      "compiler_symbol": "curriedcase/Library.curried().",
+      "jvm_owner": "curriedcase/Library$",
+      "jvm_name": "curried",
+      "descriptor": "(ILorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)I"
+    },
+    {
+      "context": "project:curried-synthetics/configuration:test",
+      "compiler_symbol": "curriedcase/Library.returned().",
+      "jvm_owner": "curriedcase/Library$",
+      "jvm_name": "returned",
+      "descriptor": "(I)Lscala/Function0;"
+    },
+    {
+      "context": "project:curried-synthetics/configuration:test",
+      "compiler_symbol": "org/scalatest/matchers/should/Matchers#convertToStringShouldWrapper().",
+      "jvm_owner": "org/scalatest/matchers/should/Matchers",
+      "jvm_name": "convertToStringShouldWrapper",
+      "descriptor": "(Ljava/lang/String;Lorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)Lorg/scalatest/matchers/should/Matchers$StringShouldWrapper;"
+    }
+  ]
+}

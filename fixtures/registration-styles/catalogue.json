@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "families": [
+    {
+      "name": "registration-smoke",
+      "suites": [
+        "registrationcase.AsyncWordSuite",
+        "registrationcase.FixtureFunctionSuite",
+        "registrationcase.FixtureThunkSuite",
+        "registrationcase.TaggedFixtureSuite",
+        "registrationcase.FixtureAsyncFunctionSuite",
+        "registrationcase.FixtureAsyncThunkSuite",
+        "registrationcase.TaggedAsyncSuite",
+        "registrationcase.FlatItSuite",
+        "registrationcase.WhenWordSuite"
+      ]
+    }
+  ]
+}

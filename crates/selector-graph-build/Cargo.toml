@@ -1,0 +1,27 @@
+[package]
+name = "selector-graph-build"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+selector-types.workspace = true
+selector-framework.workspace = true
+selector-facts.workspace = true
+selector-graph.workspace = true
+selector-models.workspace = true
+selector-runtime-platform.workspace = true
+selector-jvm-resolve.workspace = true
+rayon.workspace = true
+sha2.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+flate2.workspace = true
+sha1 = "=0.10.7"
+
+[dev-dependencies]
+tempfile.workspace = true

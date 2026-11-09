@@ -1,0 +1,317 @@
+{
+  "files": [
+    {
+      "bytes": 10173,
+      "path": "LICENSE-APACHE",
+      "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9"
+    },
+    {
+      "bytes": 2577,
+      "path": "README.md",
+      "sha256": "0ab1fb1a36b92008c68aee7bfa21789603fc6f6904e56652f7fcc6a923543297"
+    },
+    {
+      "bytes": 916,
+      "path": "THIRD-PARTY-NOTICE.txt",
+      "sha256": "65fac1b5e522fc03379231cca2347ce80713c720bc0e4130e1b36ded46318068"
+    },
+    {
+      "bytes": 16211,
+      "path": "classes/org/scalatest/Args.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/Args.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "e3764665fa5eef559a2c914ba1b36630fab9de2c5135a43be4274d085506e394"
+    },
+    {
+      "bytes": 57857,
+      "path": "classes/org/scalatest/ConfigMap.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/ConfigMap.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "dd04dda21fefd81beb0d5f303a75112cf929502515b3f89cea8cb3a3ba914621"
+    },
+    {
+      "bytes": 1119,
+      "path": "classes/org/scalatest/Engine.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/Engine.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "b26797c52219220c24d310dff3623c303f811e89bc3c8943ac58fbd9c1605d4a"
+    },
+    {
+      "bytes": 20126,
+      "path": "classes/org/scalatest/Filter.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/Filter.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "2cdae09f008adc39800a36d85744b3dca4623b8c427a10b2ce5dd4780c29ffe9"
+    },
+    {
+      "bytes": 48574,
+      "path": "classes/org/scalatest/Suite$.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/Suite$.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "7724071fbbc4dc9a88688810e4810e5a6ebb0629a99fd75be38c2c2873e4d548"
+    },
+    {
+      "bytes": 58922,
+      "path": "classes/org/scalatest/Suite.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/Suite.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "37f416b68f3529c104de076108f7f8a406dcc71da2913b36c7ed17cc1e98cd7d"
+    },
+    {
+      "bytes": 7309,
+      "path": "classes/org/scalatest/SuperEngine$TestLeaf.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/SuperEngine$TestLeaf.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "6375a527eaad1495d5478c5c4a9df4a6e0fc28175ce98f1fe8d7e6bf9d3f0b82"
+    },
+    {
+      "bytes": 72965,
+      "path": "classes/org/scalatest/SuperEngine.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/SuperEngine.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "82e64009083e453349ab527dd758242a3e55386e8b2460c76e78ab69978a1f97"
+    },
+    {
+      "bytes": 1197,
+      "path": "classes/org/scalatest/TestData.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/TestData.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "104fd333ab9beeae18a651af953ed955e23f06377b3f9313247ff53919973a19"
+    },
+    {
+      "bytes": 1513,
+      "path": "classes/org/scalatest/TestRegistration.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/TestRegistration.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "920df58cd24a8e877cb981346702410f20b181eb6677aa1b369bfc3cab182311"
+    },
+    {
+      "bytes": 447,
+      "path": "classes/org/scalatest/TestSuite$NoArgTest.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/TestSuite$NoArgTest.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "3bae033c4b88e311ace0fe99a7d2bfbb7fb56eae2db12b7fd39784356dd48a7c"
+    },
+    {
+      "bytes": 2293,
+      "path": "classes/org/scalatest/TestSuite.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/TestSuite.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "88c6b335282c5264f9ac6fb3b143af2f0646b998a3981db40b5597ec89efa60d"
+    },
+    {
+      "bytes": 6627,
+      "path": "classes/org/scalatest/Transformer.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/Transformer.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "40816b929af931a08f7e531b68fd723dd0bbfd5eeedfb20265f557b3e2cf6bc6"
+    },
+    {
+      "bytes": 991,
+      "path": "classes/org/scalatest/verbs/BehaveWord.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/verbs/BehaveWord.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "21d0889548c1a8a045d825baf8323cec7eead2f2fce1a9b1ade6bc28f428994c"
+    },
+    {
+      "bytes": 3673,
+      "path": "classes/org/scalatest/verbs/ShouldVerb$$anon$1.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/verbs/ShouldVerb$$anon$1.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "fc08705c44cbe7004917cccdbfcbd5519c8bc083fc1a5204c0ca0ed307145a49"
+    },
+    {
+      "bytes": 4088,
+      "path": "classes/org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "188aeee8885a056aa23cd4673bc7441af6abc1fc9eef20ae47dce2216e9a35c0"
+    },
+    {
+      "bytes": 2393,
+      "path": "classes/org/scalatest/verbs/ShouldVerb.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/verbs/ShouldVerb.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "ba61704a1f759e2e111003af300b6b420339311fa764c9ca62e128a0601bd897"
+    },
+    {
+      "bytes": 1204,
+      "path": "classes/org/scalatest/verbs/StringVerbBlockRegistration.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/verbs/StringVerbBlockRegistration.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "5c6c8eb748ab6f7a3f9982d0d3ed57ab1020db997f67cac10969ed99ba63fbaf"
+    },
+    {
+      "bytes": 1192,
+      "path": "classes/org/scalatest/verbs/SubjectWithAfterWordRegistration.class",
+      "provider": "core",
+      "provider_entry": "org/scalatest/verbs/SubjectWithAfterWordRegistration.class",
+      "provider_sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "sha256": "d58ea18d864cc22a702236635e33c6266b42b06be1fde4b09cd697d103a96438"
+    },
+    {
+      "bytes": 28864,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpec.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpec.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "2308694d49a3455ed0decc32a3a30105ccc2e3ea0dfbeaa3f70c9fb93ad33c80"
+    },
+    {
+      "bytes": 1437,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpecLike$$anon$1.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "e03d37ab8b68514ad463e2df20854ab0703eeb7fb91c8bdbec18609d7a4a97d8"
+    },
+    {
+      "bytes": 3017,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpecLike$$anon$2.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpecLike$$anon$2.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "61352f0278960da58083fef5bdb139068c09574476ba0a02da87dcaeebd8711a"
+    },
+    {
+      "bytes": 4241,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpecLike$$anon$3.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "f20c9e32b87142f9e3a70dbe543f0f13c2483897b489ca4de1f156a8badb827d"
+    },
+    {
+      "bytes": 1115,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpecLike$AfterWord.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpecLike$AfterWord.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "91628fbfcfe547d505332a4876a80053d7607308e909470be69511ca4cb3f1d1"
+    },
+    {
+      "bytes": 3620,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpecLike$ItWord.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpecLike$ItWord.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "50f405afba8e11deba596b7eb873a69112f12b4ab4f0aac0291c0abf4cea89bb"
+    },
+    {
+      "bytes": 3323,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpecLike$ResultOfTaggedAsInvocationOnString.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpecLike$ResultOfTaggedAsInvocationOnString.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "f9cbddc2b08515b904d09335b137459e31d873089053b9b372b24345bb998365"
+    },
+    {
+      "bytes": 3628,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpecLike$TheyWord.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpecLike$TheyWord.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "4ccb1ecd82b9adf2f6cc4821e3f8391f95f5b5290229ca5fb65c40a606ef12c9"
+    },
+    {
+      "bytes": 6001,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "561b35ef86ebb813e582f36b442ad7c33a625320bfd74a4b2cdc3f56b6388be3"
+    },
+    {
+      "bytes": 32868,
+      "path": "classes/org/scalatest/wordspec/AnyWordSpecLike.class",
+      "provider": "word",
+      "provider_entry": "org/scalatest/wordspec/AnyWordSpecLike.class",
+      "provider_sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "sha256": "89aefea679450680f3100e16ef5a4f4ec0758c6728eeb703fa87c23e059c13af"
+    },
+    {
+      "bytes": 119167,
+      "path": "methods.json",
+      "sha256": "b3b486dee0254af955f6de6c26bb5f2033c1dc001ac414b60abaec3e6486be54"
+    },
+    {
+      "bytes": 189288,
+      "path": "protocol.json",
+      "sha256": "4c9399b90d22defbd03df566c1732fb9a86056b492ce82cb9483efdde847492a"
+    },
+    {
+      "bytes": 8797,
+      "path": "provenance/extraction.py",
+      "sha256": "7c6726cbb668416d07e6e53ea3db624cb4498bf6c4f8168c9b78ac8d32794f99"
+    },
+    {
+      "bytes": 2450,
+      "path": "provenance/scalatest-wordspec_2.13-3.2.19.pom",
+      "sha256": "837ec794f2f07dda32d5107652a5a8ba0ad88942214a73e4a8893c50f1a6f575"
+    },
+    {
+      "bytes": 134854,
+      "path": "scalatest-wordspec_2.13-3.2.19.jar",
+      "sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93"
+    },
+    {
+      "bytes": 9187,
+      "path": "verify.py",
+      "sha256": "61cbe18585e947414e18920c4c933b85c1ef297d2cc5560b211603041eb90485"
+    }
+  ],
+  "inventory": {
+    "bytes": 832083,
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/scalatest-execution-inventory-v1/inventory.json",
+    "sha256": "59ae714bfa169efc388744a890990887d997dc025d8b04277acc558e085b7cb7"
+  },
+  "inventory_tool": {
+    "bytes": 8797,
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/scalatest-execution-inventory-v1/inventory.py",
+    "sha256": "7c6726cbb668416d07e6e53ea3db624cb4498bf6c4f8168c9b78ac8d32794f99"
+  },
+  "providers": [
+    {
+      "archive_license_notice_entries": [],
+      "artifact": "scalatest-wordspec_2.13",
+      "bytes": 134854,
+      "license": {
+        "attribution": "THIRD-PARTY-NOTICE.txt",
+        "declaration": "provenance/scalatest-wordspec_2.13-3.2.19.pom",
+        "spdx": "Apache-2.0",
+        "text": "LICENSE-APACHE"
+      },
+      "local_path": "scalatest-wordspec_2.13-3.2.19.jar",
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.19/scalatest-wordspec_2.13-3.2.19.jar",
+      "sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93",
+      "version": "3.2.19"
+    },
+    {
+      "artifact": "scalatest-core_2.13",
+      "bytes": 3755368,
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar",
+      "sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+      "version": "3.2.19"
+    }
+  ],
+  "qualification": "Genuine pinned ScalaTest3.2.19 extracted class bytes and selected method pins; diagnostic protocol inventory only, no JVM execution, effect closure, framework purity, suite discovery or exclusion authority.",
+  "schema": "scalatest-synchronous-wordspec-extracted-classes/v1"
+}

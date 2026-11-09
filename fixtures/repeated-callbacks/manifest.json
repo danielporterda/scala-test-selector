@@ -1,0 +1,853 @@
+{
+  "schema": "selector-tiny-compiler-jvm-fixture/v1",
+  "revision": "1399561b2f243bd11d812be2cdd092636084510f",
+  "revision_kind": "first40hex_of_source_tree_sha256",
+  "source_tree_sha256": "1399561b2f243bd11d812be2cdd092636084510ffeb6d1c15c016d7847161bd7",
+  "generator": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/tools/prepare_repeated_callbacks.py",
+  "generator_sha256": "a2a19e72df5caabe6c35b82216516d9423ee14c90f8926407b45dfc48a372f23",
+  "shared_generator_sha256": "14320a49a7da2d1203f6995ed4d42a9b3af3cc7666a441ba69860db000e9f808",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+      "bytes": 5940741
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21",
+      "bytes": 12343847
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b",
+      "bytes": 3814367
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba",
+      "bytes": 23982496
+    }
+  ],
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "selector": {
+    "path": "/private/tmp/selector-external-metadata-cli-controls/selector-native-metadata-controls",
+    "sha256": "953994cf41bf129f20b4545288f0f842b8ab7a7095971b1e086f443c66e6150c"
+  },
+  "commands": [
+    {
+      "case": "compile-library",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx512m",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks",
+        "-P:semanticdb:targetroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/raw/library",
+        "-P:semanticdb:synthetics:on",
+        "-Yrangepos",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/library",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/definitions/repeatedcallbacks/Library.scala"
+      ],
+      "pid": 33505,
+      "exit_code": 0,
+      "wall_ns": 1271931375,
+      "peak_rss_bytes": 254656512,
+      "cpu_ns": 2897632000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/compile-library.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/compile-library.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "compile-caller",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx512m",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks",
+        "-P:semanticdb:targetroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/raw/caller",
+        "-P:semanticdb:synthetics:on",
+        "-Yrangepos",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/src/repeatedcallbacks/Calls.scala"
+      ],
+      "pid": 33526,
+      "exit_code": 0,
+      "wall_ns": 1119637000,
+      "peak_rss_bytes": 246366208,
+      "cpu_ns": 2538579000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/compile-caller.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/compile-caller.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "compile-validation",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx512m",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/validation/CheckRepeated.scala"
+      ],
+      "pid": 33530,
+      "exit_code": 0,
+      "wall_ns": 890258250,
+      "peak_rss_bytes": 179027968,
+      "cpu_ns": 1878992000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/compile-validation.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/compile-validation.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-flat",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "repeatedcallbacks.CheckRepeated",
+        "flat"
+      ],
+      "pid": 33546,
+      "exit_code": 0,
+      "wall_ns": 92352375,
+      "peak_rss_bytes": 59998208,
+      "cpu_ns": 130130000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-flat.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-flat.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 53,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-empty",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "repeatedcallbacks.CheckRepeated",
+        "empty"
+      ],
+      "pid": 33547,
+      "exit_code": 0,
+      "wall_ns": 100571333,
+      "peak_rss_bytes": 59342848,
+      "cpu_ns": 125037000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-empty.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-empty.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 15,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-spread",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "repeatedcallbacks.CheckRepeated",
+        "spread"
+      ],
+      "pid": 33548,
+      "exit_code": 0,
+      "wall_ns": 89769500,
+      "peak_rss_bytes": 59523072,
+      "cpu_ns": 125232000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-spread.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-spread.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 55,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-mixed",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "repeatedcallbacks.CheckRepeated",
+        "mixed"
+      ],
+      "pid": 33549,
+      "exit_code": 0,
+      "wall_ns": 91972125,
+      "peak_rss_bytes": 60456960,
+      "cpu_ns": 132009999,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-mixed.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-mixed.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 58,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-captured",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "repeatedcallbacks.CheckRepeated",
+        "captured"
+      ],
+      "pid": 33551,
+      "exit_code": 0,
+      "wall_ns": 92670417,
+      "peak_rss_bytes": 59883520,
+      "cpu_ns": 132670000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-captured.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-captured.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 104,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-dormant",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "repeatedcallbacks.CheckRepeated",
+        "dormant"
+      ],
+      "pid": 33552,
+      "exit_code": 0,
+      "wall_ns": 106703625,
+      "peak_rss_bytes": 60571648,
+      "cpu_ns": 133098000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-dormant.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/jvm-dormant.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 113,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "javap",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+        "-classpath",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-repeated-callbacks-9im0eq6x/caller:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "-p",
+        "-c",
+        "-s",
+        "repeatedcallbacks.Api",
+        "repeatedcallbacks.Effects$",
+        "repeatedcallbacks.Effects"
+      ],
+      "pid": 33553,
+      "exit_code": 0,
+      "wall_ns": 150315792,
+      "peak_rss_bytes": 73760768,
+      "cpu_ns": 312225000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/javap.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/javap.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 9159,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "capture-caller",
+      "command": [
+        "/private/tmp/selector-external-metadata-cli-controls/selector-native-metadata-controls",
+        "capture",
+        "--input",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/caller-capture.json",
+        "--output",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/caller-documents.jsonl",
+        "--workers",
+        "2"
+      ],
+      "pid": 33554,
+      "exit_code": 0,
+      "wall_ns": 33151791,
+      "peak_rss_bytes": 7553024,
+      "cpu_ns": 11498999,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/capture-caller.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/capture-caller.stderr",
+      "stage_metrics": [
+        {
+          "phase": "capture",
+          "pid": 33554,
+          "revision": "request",
+          "stage": "stage_begin"
+        },
+        {
+          "documents": 1,
+          "effective_workers": 2,
+          "output_bytes": 13363,
+          "producer": "5ee24144a77568804201a0dec76525415f483b114e88b0bdd518d5971abc7540",
+          "raw_bytes": 4237,
+          "raw_inputs": 1,
+          "stage": "capture",
+          "validated_sources": 1
+        },
+        {
+          "elapsed_ns": 20018375,
+          "phase": "capture",
+          "pid": 33554,
+          "revision": "request",
+          "stage": "stage_end"
+        }
+      ],
+      "stdout_bytes": 0,
+      "stderr_bytes": 395
+    },
+    {
+      "case": "syntax-caller",
+      "command": [
+        "/private/tmp/selector-external-metadata-cli-controls/selector-native-metadata-controls",
+        "syntax",
+        "--input",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/caller-documents.jsonl",
+        "--exporter",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/tooling/ScalaSpans.scala",
+        "--tool-cache",
+        "/private/tmp/rust-selector-execution-syntax",
+        "--output",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/caller-syntax.jsonl",
+        "--workers",
+        "2"
+      ],
+      "pid": 33555,
+      "exit_code": 0,
+      "wall_ns": 4428284500,
+      "peak_rss_bytes": 133758976,
+      "cpu_ns": 4655608000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/syntax-caller.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/syntax-caller.stderr",
+      "stage_metrics": [
+        {
+          "phase": "syntax",
+          "pid": 33555,
+          "revision": "request",
+          "stage": "stage_begin"
+        },
+        {
+          "elapsed_ns": 1010201375,
+          "phase": "syntax",
+          "pid": 33555,
+          "revision": "request",
+          "stage": "stage_progress"
+        },
+        {
+          "elapsed_ns": 2015629250,
+          "phase": "syntax",
+          "pid": 33555,
+          "revision": "request",
+          "stage": "stage_progress"
+        },
+        {
+          "elapsed_ns": 3025835584,
+          "phase": "syntax",
+          "pid": 33555,
+          "revision": "request",
+          "stage": "stage_progress"
+        },
+        {
+          "elapsed_ns": 4030692292,
+          "phase": "syntax",
+          "pid": 33555,
+          "revision": "request",
+          "stage": "stage_progress"
+        },
+        {
+          "batches": 1,
+          "cache_hits": 0,
+          "effective_workers": 2,
+          "output_bytes": 28384,
+          "producer": "3f298691e87ff690e819b6f9947ff13cc798bce13614e5fed6406453447700e5",
+          "source_bytes": 727,
+          "sources": 1,
+          "stage": "syntax"
+        },
+        {
+          "elapsed_ns": 4422951125,
+          "phase": "syntax",
+          "pid": 33555,
+          "revision": "request",
+          "stage": "stage_end"
+        }
+      ],
+      "stdout_bytes": 0,
+      "stderr_bytes": 788
+    },
+    {
+      "case": "capture-all",
+      "command": [
+        "/private/tmp/selector-external-metadata-cli-controls/selector-native-metadata-controls",
+        "capture",
+        "--input",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/all-capture.json",
+        "--output",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/all-documents.jsonl",
+        "--workers",
+        "2"
+      ],
+      "pid": 33582,
+      "exit_code": 0,
+      "wall_ns": 19811000,
+      "peak_rss_bytes": 7618560,
+      "cpu_ns": 9267000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/capture-all.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/capture-all.stderr",
+      "stage_metrics": [
+        {
+          "phase": "capture",
+          "pid": 33582,
+          "revision": "request",
+          "stage": "stage_begin"
+        },
+        {
+          "documents": 2,
+          "effective_workers": 2,
+          "output_bytes": 27667,
+          "producer": "5ee24144a77568804201a0dec76525415f483b114e88b0bdd518d5971abc7540",
+          "raw_bytes": 8781,
+          "raw_inputs": 2,
+          "stage": "capture",
+          "validated_sources": 2
+        },
+        {
+          "elapsed_ns": 15155666,
+          "phase": "capture",
+          "pid": 33582,
+          "revision": "request",
+          "stage": "stage_end"
+        }
+      ],
+      "stdout_bytes": 0,
+      "stderr_bytes": 395
+    },
+    {
+      "case": "syntax-all",
+      "command": [
+        "/private/tmp/selector-external-metadata-cli-controls/selector-native-metadata-controls",
+        "syntax",
+        "--input",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/all-documents.jsonl",
+        "--exporter",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/tooling/ScalaSpans.scala",
+        "--tool-cache",
+        "/private/tmp/rust-selector-execution-syntax",
+        "--output",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/all-syntax.jsonl",
+        "--workers",
+        "2"
+      ],
+      "pid": 33585,
+      "exit_code": 0,
+      "wall_ns": 4517661500,
+      "peak_rss_bytes": 136953856,
+      "cpu_ns": 4769804000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/syntax-all.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/syntax-all.stderr",
+      "stage_metrics": [
+        {
+          "phase": "syntax",
+          "pid": 33585,
+          "revision": "request",
+          "stage": "stage_begin"
+        },
+        {
+          "elapsed_ns": 1010228875,
+          "phase": "syntax",
+          "pid": 33585,
+          "revision": "request",
+          "stage": "stage_progress"
+        },
+        {
+          "elapsed_ns": 2011755000,
+          "phase": "syntax",
+          "pid": 33585,
+          "revision": "request",
+          "stage": "stage_progress"
+        },
+        {
+          "elapsed_ns": 3021922292,
+          "phase": "syntax",
+          "pid": 33585,
+          "revision": "request",
+          "stage": "stage_progress"
+        },
+        {
+          "elapsed_ns": 4024968833,
+          "phase": "syntax",
+          "pid": 33585,
+          "revision": "request",
+          "stage": "stage_progress"
+        },
+        {
+          "batches": 1,
+          "cache_hits": 0,
+          "effective_workers": 2,
+          "output_bytes": 47798,
+          "producer": "3f298691e87ff690e819b6f9947ff13cc798bce13614e5fed6406453447700e5",
+          "source_bytes": 1284,
+          "sources": 2,
+          "stage": "syntax"
+        },
+        {
+          "elapsed_ns": 4512703792,
+          "phase": "syntax",
+          "pid": 33585,
+          "revision": "request",
+          "stage": "stage_end"
+        }
+      ],
+      "stdout_bytes": 0,
+      "stderr_bytes": 789
+    },
+    {
+      "case": "metadata",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx512m",
+        "-cp",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/tooling/metadata-helper.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "ExternalSignatures",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/metadata-classpath.txt",
+        "repeatedcallbacks/Api",
+        "14f02f6773ffba56a187f2eff09f80a4a9fd5e72a03f996defa982a7b200c1f1",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/metadata-requests.txt",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/external-signatures"
+      ],
+      "pid": 33589,
+      "exit_code": 0,
+      "wall_ns": 314121333,
+      "peak_rss_bytes": 111149056,
+      "cpu_ns": 580295999,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/metadata.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/metadata.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 1095,
+      "stderr_bytes": 0
+    }
+  ],
+  "metadata_authority": {
+    "outer_class": "repeatedcallbacks/Api",
+    "outer_class_sha256": "14f02f6773ffba56a187f2eff09f80a4a9fd5e72a03f996defa982a7b200c1f1",
+    "provider_sha256": "b753da489edfa407c8f8af81458b00aaf64cddda5ba29cd02e5506bb0d33c99c",
+    "helper": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/tooling/metadata-helper.jar",
+    "helper_sha256": "72f09c189a18f22f5c2997ff9ff23afd780bd0383099c181392db3bf402053fd",
+    "ordered_classpath": [
+      {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/library.jar",
+        "sha256": "b753da489edfa407c8f8af81458b00aaf64cddda5ba29cd02e5506bb0d33c99c"
+      },
+      {
+        "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+      }
+    ],
+    "requests": [
+      "repeatedcallbacks/Api#aggregate().",
+      "repeatedcallbacks/Api#store().",
+      "repeatedcallbacks/Api#mixed()."
+    ],
+    "settings": {
+      "stubBrokenSignatures": false,
+      "usejavacp": false,
+      "includeJdk": false,
+      "scalaLibrarySynthetics": false,
+      "manifest_class_path_expansion": "forbidden"
+    }
+  },
+  "independent_runtime_observations": {
+    "flat": [
+      "flat:provider:a,provider:b,aggregate,call:a,call:b:3"
+    ],
+    "empty": [
+      "empty-created:"
+    ],
+    "spread": [
+      "spread:provider:a,provider:b,aggregate,call:a,call:b:3"
+    ],
+    "mixed": [
+      "mixed:provider:a,provider:b,mixed,call:a,call:b,prefix:10"
+    ],
+    "captured": [
+      "captured-created:provider:a,provider:b",
+      "captured-invoked:provider:a,provider:b,aggregate,call:a,call:b:3"
+    ],
+    "dormant": [
+      "dormant-created:",
+      "dormant-invoked:provider:dormant-a,provider:dormant-b,aggregate,call:dormant-a,call:dormant-b:9"
+    ]
+  },
+  "syntax_authority": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/repeated-callbacks/tooling/ScalaSpans.scala",
+    "sha256": "dd202eac9d6f43e4c7ff882c7ac79c973dc15cef43fa7a0686ebe35b860af589",
+    "origin": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/tools/ScalaSpans.scala"
+  },
+  "files": [
+    {
+      "path": "all-capture.json",
+      "sha256": "1e4c00c021092603cfcb1c2a7b610e8f8369c6320ec9f8db7ae590558b378f4b",
+      "bytes": 1542
+    },
+    {
+      "path": "all-documents.jsonl",
+      "sha256": "cc73ffd13f455e66706a35bca484a34a657dc8f04e58c4570e2e54f3e476c907",
+      "bytes": 27667
+    },
+    {
+      "path": "all-syntax.jsonl",
+      "sha256": "53b8d59984282577f0518d5c31eaed8918c85fe1cd6163ef83a68cca84b3ef43",
+      "bytes": 47798
+    },
+    {
+      "path": "caller-capture.json",
+      "sha256": "0e05cd78e69fd5aea67c8005442ca47c2dce06b8626ac28dc69a71e20a4ccff6",
+      "bytes": 818
+    },
+    {
+      "path": "caller-documents.jsonl",
+      "sha256": "7c8a8a477b308c846e8559b27ef76e8db32ec8657aa15108eaf62003f7754539",
+      "bytes": 13363
+    },
+    {
+      "path": "caller-syntax.jsonl",
+      "sha256": "e02be37df3ac4ddfda84338ae6b11acf402a0174c88116a78d269adcb70465ef",
+      "bytes": 28384
+    },
+    {
+      "path": "caller.jar",
+      "sha256": "04a197a6882f908346e07645edd22652e563f180fb91e9252d1a552acec8662a",
+      "bytes": 2446
+    },
+    {
+      "path": "capture-all.stderr",
+      "sha256": "242304488a971bd725aa4a635c81dd40f9ee3b3f294e5d3f391bed4b4f7424cf",
+      "bytes": 395
+    },
+    {
+      "path": "capture-all.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "capture-caller.stderr",
+      "sha256": "456bb98b2be23cdf1d467c85a6416ae2a7ff673de7cb3d4b02088ec567ee8f7a",
+      "bytes": 395
+    },
+    {
+      "path": "capture-caller.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-caller.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-caller.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-library.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-library.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-validation.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-validation.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "definitions/repeatedcallbacks/Library.scala",
+      "sha256": "ce595d9f203ddc255d7564b575190cf10fb8bb04ef0d07bb05d20489f65e6a45",
+      "bytes": 557
+    },
+    {
+      "path": "external-signatures.json",
+      "sha256": "80ec49771e964cceeb919c50cb43aad3e807451eb99656a207025fcf83fe4bc1",
+      "bytes": 1095
+    },
+    {
+      "path": "external-signatures.semanticdb",
+      "sha256": "f85d02dbd9e40d0491c767f9e9bbabbc4aae7551055dde18d45ae70c2a14d9a3",
+      "bytes": 878
+    },
+    {
+      "path": "external-signatures.textproto",
+      "sha256": "ab7daad7423b38c238228b3ae7acbb208c028125e560598debc9c6d775c510ca",
+      "bytes": 4283
+    },
+    {
+      "path": "javap.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "javap.stdout",
+      "sha256": "270a4ecbb00dc7a4b5ecd74b3755a54267c3a44106fd7880ffda501c7f4d176d",
+      "bytes": 9159
+    },
+    {
+      "path": "jvm-captured.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-captured.stdout",
+      "sha256": "0cb1510d548a84648d0d1f9c2671ac55c8a94404aa48227573b8384bd2405a81",
+      "bytes": 104
+    },
+    {
+      "path": "jvm-dormant.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-dormant.stdout",
+      "sha256": "2893d98f1661807ba6d2fe20ac121eb41455bf579a9a3838bc414802e3b09727",
+      "bytes": 113
+    },
+    {
+      "path": "jvm-empty.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-empty.stdout",
+      "sha256": "4a13356a0f9c4ba1bc443028d3bd330629db88152364fa668b799846eac89c5d",
+      "bytes": 15
+    },
+    {
+      "path": "jvm-flat.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-flat.stdout",
+      "sha256": "45485b3728f716abdb9a7384d9eab7c504b529d5a582b1120f40109b05eafa90",
+      "bytes": 53
+    },
+    {
+      "path": "jvm-mixed.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-mixed.stdout",
+      "sha256": "9921b2a34e79f894162ebb059a583fb0fa8dc3949a92a0db3b8ca3ab19ae163c",
+      "bytes": 58
+    },
+    {
+      "path": "jvm-spread.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-spread.stdout",
+      "sha256": "82fc6d34d63cb9636e422a5250dd2e8263dcc5607c2bfea8879cf1b1265e4962",
+      "bytes": 55
+    },
+    {
+      "path": "library.jar",
+      "sha256": "b753da489edfa407c8f8af81458b00aaf64cddda5ba29cd02e5506bb0d33c99c",
+      "bytes": 3373
+    },
+    {
+      "path": "metadata-classpath.txt",
+      "sha256": "e649b28efcbbfd61a940ecca2b26a08fdb60534d81fa5397bdde7a9830edac5c",
+      "bytes": 250
+    },
+    {
+      "path": "metadata-requests.txt",
+      "sha256": "eb8f240d25075863b2a938bac290695a43eba5f3f8eda8c8cd11504ae742739f",
+      "bytes": 97
+    },
+    {
+      "path": "metadata.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "metadata.stdout",
+      "sha256": "80ec49771e964cceeb919c50cb43aad3e807451eb99656a207025fcf83fe4bc1",
+      "bytes": 1095
+    },
+    {
+      "path": "raw/caller/META-INF/semanticdb/src/repeatedcallbacks/Calls.scala.semanticdb",
+      "sha256": "10925b9222e60931842cb0aaa670431e34324879233fc588fdadc5f38d49455f",
+      "bytes": 4237
+    },
+    {
+      "path": "raw/library/META-INF/semanticdb/definitions/repeatedcallbacks/Library.scala.semanticdb",
+      "sha256": "4d7c0e4aaef31ec37a59a3feccf351913d7c46ed92e8d7fb465a675d0cc41a44",
+      "bytes": 4544
+    },
+    {
+      "path": "src/repeatedcallbacks/Calls.scala",
+      "sha256": "7c6c04c05d101742bd144d09775f3121aefac2a772e20c9664de348ca9d13fb3",
+      "bytes": 727
+    },
+    {
+      "path": "syntax-all.stderr",
+      "sha256": "3771122de8c5e10ca09ac45a8806a13d878c7bdce27d9d9121c761db6ce22b93",
+      "bytes": 789
+    },
+    {
+      "path": "syntax-all.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "syntax-caller.stderr",
+      "sha256": "03a7740cfc3e4107e3147ca0825c6897242740863cc787aaae9bac2a05cf3452",
+      "bytes": 788
+    },
+    {
+      "path": "syntax-caller.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "tooling/ScalaSpans.scala",
+      "sha256": "dd202eac9d6f43e4c7ff882c7ac79c973dc15cef43fa7a0686ebe35b860af589",
+      "bytes": 27203
+    },
+    {
+      "path": "validation/CheckRepeated.scala",
+      "sha256": "4223934aecbfa5c4b69ca208c608cab8794193f4bf1c5c6a262489da5669e2a9",
+      "bytes": 982
+    }
+  ]
+}

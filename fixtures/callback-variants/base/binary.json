@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "revision": "2ce9e46e1d6e1f91ee77ba2be08cdbcf8bed642e",
+  "java_feature": 21,
+  "contexts": [
+    {
+      "id": "project:callback-variants/configuration:test",
+      "entries": [
+        {
+          "path": "bytecode.jar",
+          "sha256": "41f7b4fe8421e0b0fab8a028c9240752584dd29f3a4da7b288984dd4f267e937",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar",
+          "sha256": "a9b108a2e73cd96cf87bc15c2c29a9f2ee6c83559227d72a042e45ff3f114b75",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+          "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar",
+          "sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar",
+          "sha256": "5dc6b8fa5396fe9e1a7c2b72df174a8eb3e92770cdc3e70636d3eba673cd0da3",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar",
+          "sha256": "c27c33de17d450e29e66c16c5af4cfa33e8ffcf03c124f0a3d249d848cccd4af",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+          "sha256": "b549a1bf335bc4528cf26f005894c7c37220ac4e8450847973d8f4001b8f59ea",
+          "kind": "unavailable"
+        },
+        {
+          "path": "../opaque.jar",
+          "sha256": "aaaeb395b5a0be1d4f3a589404626443ce673ea54657846a82ac5d656b775322",
+          "kind": "unavailable"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Lexical1Suite#",
+      "jvm_owner": "callbackcase/Lexical1Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Lexical2Suite#",
+      "jvm_owner": "callbackcase/Lexical2Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Lexical3Suite#",
+      "jvm_owner": "callbackcase/Lexical3Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Lexical4Suite#",
+      "jvm_owner": "callbackcase/Lexical4Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Lexical5Suite#",
+      "jvm_owner": "callbackcase/Lexical5Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Lexical6Suite#",
+      "jvm_owner": "callbackcase/Lexical6Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Captured1Suite#",
+      "jvm_owner": "callbackcase/Captured1Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Captured2Suite#",
+      "jvm_owner": "callbackcase/Captured2Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Captured3Suite#",
+      "jvm_owner": "callbackcase/Captured3Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Captured4Suite#",
+      "jvm_owner": "callbackcase/Captured4Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Captured5Suite#",
+      "jvm_owner": "callbackcase/Captured5Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/Captured6Suite#",
+      "jvm_owner": "callbackcase/Captured6Suite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "callbackcase/UnknownSuite#",
+      "jvm_owner": "callbackcase/UnknownSuite"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "org/scalatest/Suite#",
+      "jvm_owner": "org/scalatest/Suite"
+    }
+  ],
+  "methods": [
+    {
+      "context": "project:callback-variants/configuration:test",
+      "compiler_symbol": "org/scalatest/Suite#",
+      "jvm_owner": "org/scalatest/Suite",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalatest/Suite;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "org/scalactic/TripleEqualsSupport",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalactic/TripleEqualsSupport;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "org/scalactic/TripleEquals",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalactic/TripleEquals;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "org/scalatest/Assertions",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalatest/Assertions;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical1Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical1Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical2Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical2Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical3Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical3Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical4Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical4Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical5Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical5Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical6Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Lexical6Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured1Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured1Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured2Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured2Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured3Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured3Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured4Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured4Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured5Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured5Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured6Suite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/Captured6Suite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/UnknownSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:callback-variants/configuration:test",
+      "jvm_owner": "callbackcase/UnknownSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    }
+  ]
+}

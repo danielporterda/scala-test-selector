@@ -1,0 +1,26 @@
+[package]
+name = "selector-solve"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+selector-types.workspace = true
+selector-issue.workspace = true
+selector-facts.workspace = true
+selector-graph.workspace = true
+selector-domain.workspace = true
+selector-transfer.workspace = true
+selector-result.workspace = true
+rayon.workspace = true
+selector-artifacts.workspace = true
+sha2.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

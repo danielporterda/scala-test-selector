@@ -1,0 +1,943 @@
+{
+  "schema": "selector-genuine-multi-release-fixture/v1",
+  "generator_sha256": "39ceac2fed9dfda2f443e1d13f8c6e058f31c9b33439fbf7626080a6708a35b6",
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "java_sha256": "2aee02a39a0817c27501e853728c28b79f48d114dbde7c88cbf698ecf1680f63",
+  "java_version": {
+    "command": [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-version"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 21.0.12.1)\nOpenJDK 64-Bit Server VM Homebrew (build 21.0.12.1, mixed mode, sharing)\n"
+  },
+  "compilation": [
+    {
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+        "-J-Xmx256m",
+        "-J-XX:ActiveProcessorCount=2",
+        "--release",
+        "8",
+        "-d",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/8",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/src/8/mr/Probe.java"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: [options] source value 8 is obsolete and will be removed in a future release\nwarning: [options] target value 8 is obsolete and will be removed in a future release\nwarning: [options] To suppress warnings about obsolete options, use -Xlint:-options.\n3 warnings\n"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+        "-J-Xmx256m",
+        "-J-XX:ActiveProcessorCount=2",
+        "--release",
+        "17",
+        "-d",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/17",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/src/17/mr/Probe.java"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+        "-J-Xmx256m",
+        "-J-XX:ActiveProcessorCount=2",
+        "--release",
+        "21",
+        "-d",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/21",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/src/21/mr/Probe.java"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+        "-J-Xmx256m",
+        "-J-XX:ActiveProcessorCount=2",
+        "--release",
+        "8",
+        "-cp",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/8",
+        "-d",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/8",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/validation/Main.java"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: [options] source value 8 is obsolete and will be removed in a future release\nwarning: [options] target value 8 is obsolete and will be removed in a future release\nwarning: [options] To suppress warnings about obsolete options, use -Xlint:-options.\n3 warnings\n"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+        "-J-Xmx256m",
+        "-J-XX:ActiveProcessorCount=2",
+        "--release",
+        "17",
+        "-d",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/validation/Inspect.java"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "jars": [
+    {
+      "path": "multi-release.jar",
+      "sha256": "ecb5f0149c802f58ef32fa13b126b4cb1381cc87c2c0c81c032009328b4ad482",
+      "manifest": "Manifest-Version: 1.0\r\nMulti-Release: true\r\n\r\n",
+      "entries": {
+        "mr/Main.class": "39ec137add972bb95e79ff9390ee3ab5530678443bb2bad2b73a78b6ffee5429",
+        "mr/Probe.class": "f0fa38f4879fed5838c98e16282574237f7b344eed73be66bb5ee73aa504060a",
+        "META-INF/versions/17/mr/Probe.class": "4ae9ae5f753a361c009bc9c3a6406c76a2f7969addcc45274d5bea6458f1e632",
+        "META-INF/versions/21/mr/Probe.class": "1e0de6ac78482b49f13bd6855cc990b71e4c2a596e0144623ed291223a759ebb"
+      }
+    },
+    {
+      "path": "false.jar",
+      "sha256": "979f1c95bc0362f4c0b643a17f56ea7cad4e06fedef2b874a54a500f81ac9070",
+      "manifest": "Manifest-Version: 1.0\r\nMulti-Release: false\r\n\r\n",
+      "entries": {
+        "mr/Main.class": "39ec137add972bb95e79ff9390ee3ab5530678443bb2bad2b73a78b6ffee5429",
+        "mr/Probe.class": "f0fa38f4879fed5838c98e16282574237f7b344eed73be66bb5ee73aa504060a",
+        "META-INF/versions/17/mr/Probe.class": "4ae9ae5f753a361c009bc9c3a6406c76a2f7969addcc45274d5bea6458f1e632",
+        "META-INF/versions/21/mr/Probe.class": "1e0de6ac78482b49f13bd6855cc990b71e4c2a596e0144623ed291223a759ebb"
+      }
+    },
+    {
+      "path": "missing-attribute.jar",
+      "sha256": "301efe42d02e9c150a5cb667f6cd5011646b814578673348b636088d59e31256",
+      "manifest": "Manifest-Version: 1.0\r\n\r\n",
+      "entries": {
+        "mr/Main.class": "39ec137add972bb95e79ff9390ee3ab5530678443bb2bad2b73a78b6ffee5429",
+        "mr/Probe.class": "f0fa38f4879fed5838c98e16282574237f7b344eed73be66bb5ee73aa504060a",
+        "META-INF/versions/17/mr/Probe.class": "4ae9ae5f753a361c009bc9c3a6406c76a2f7969addcc45274d5bea6458f1e632",
+        "META-INF/versions/21/mr/Probe.class": "1e0de6ac78482b49f13bd6855cc990b71e4c2a596e0144623ed291223a759ebb"
+      }
+    },
+    {
+      "path": "no-manifest.jar",
+      "sha256": "64dcf7eca1495ccceeb9f763feddcbb428c2c3f9a22b050154e9d421113f6179",
+      "manifest": null,
+      "entries": {
+        "mr/Main.class": "39ec137add972bb95e79ff9390ee3ab5530678443bb2bad2b73a78b6ffee5429",
+        "mr/Probe.class": "f0fa38f4879fed5838c98e16282574237f7b344eed73be66bb5ee73aa504060a",
+        "META-INF/versions/17/mr/Probe.class": "4ae9ae5f753a361c009bc9c3a6406c76a2f7969addcc45274d5bea6458f1e632",
+        "META-INF/versions/21/mr/Probe.class": "1e0de6ac78482b49f13bd6855cc990b71e4c2a596e0144623ed291223a759ebb"
+      }
+    },
+    {
+      "path": "plain.jar",
+      "sha256": "9b30726565f931ee7429a6d54df798d8bd14b51caf71ff7c46aff9f9eb52415e",
+      "manifest": "Manifest-Version: 1.0\r\n\r\n",
+      "entries": {
+        "mr/Main.class": "39ec137add972bb95e79ff9390ee3ab5530678443bb2bad2b73a78b6ffee5429",
+        "mr/Probe.class": "f0fa38f4879fed5838c98e16282574237f7b344eed73be66bb5ee73aa504060a"
+      }
+    }
+  ],
+  "controls": [
+    {
+      "jar": "multi-release.jar",
+      "requested_version": 8,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=8",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/multi-release.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/multi-release.jar",
+          "8"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\ntrue\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "multi-release.jar",
+      "requested_version": 17,
+      "expected_value": 17,
+      "physical_entry": "META-INF/versions/17/mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=17",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/multi-release.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "17\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/multi-release.jar",
+          "17"
+        ],
+        "exit_code": 0,
+        "stdout": "META-INF/versions/17/mr/Probe.class\ntrue\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "multi-release.jar",
+      "requested_version": 21,
+      "expected_value": 21,
+      "physical_entry": "META-INF/versions/21/mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=21",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/multi-release.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "21\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/multi-release.jar",
+          "21"
+        ],
+        "exit_code": 0,
+        "stdout": "META-INF/versions/21/mr/Probe.class\ntrue\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "false.jar",
+      "requested_version": 8,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=8",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/false.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/false.jar",
+          "8"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "false.jar",
+      "requested_version": 17,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=17",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/false.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/false.jar",
+          "17"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "false.jar",
+      "requested_version": 21,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=21",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/false.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/false.jar",
+          "21"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "missing-attribute.jar",
+      "requested_version": 8,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=8",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/missing-attribute.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/missing-attribute.jar",
+          "8"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "missing-attribute.jar",
+      "requested_version": 17,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=17",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/missing-attribute.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/missing-attribute.jar",
+          "17"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "missing-attribute.jar",
+      "requested_version": 21,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=21",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/missing-attribute.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/missing-attribute.jar",
+          "21"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "no-manifest.jar",
+      "requested_version": 8,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=8",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/no-manifest.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/no-manifest.jar",
+          "8"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "no-manifest.jar",
+      "requested_version": 17,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=17",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/no-manifest.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/no-manifest.jar",
+          "17"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "no-manifest.jar",
+      "requested_version": 21,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=21",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/no-manifest.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/no-manifest.jar",
+          "21"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "plain.jar",
+      "requested_version": 8,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=8",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/plain.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/plain.jar",
+          "8"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "plain.jar",
+      "requested_version": 17,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=17",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/plain.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/plain.jar",
+          "17"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    },
+    {
+      "jar": "plain.jar",
+      "requested_version": 21,
+      "expected_value": 8,
+      "physical_entry": "mr/Probe.class",
+      "execution": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-Djdk.util.jar.version=21",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/plain.jar",
+          "mr.Main"
+        ],
+        "exit_code": 0,
+        "stdout": "8\n",
+        "stderr": ""
+      },
+      "selection": {
+        "command": [
+          "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xmx256m",
+          "-XX:ActiveProcessorCount=2",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/classes/inspector",
+          "Inspect",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/multi-release/plain.jar",
+          "21"
+        ],
+        "exit_code": 0,
+        "stdout": "mr/Probe.class\nfalse\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "e027cf8ebf80d6dcdacced8a4dbd1c440e2436fb1868ec851db4061cb67bb787",
+      "bytes": 7
+    },
+    {
+      "path": "README.md",
+      "sha256": "08b13dc327649bfc789a7303974da3882cdca19d728cdcf48586cb4ab1959f35",
+      "bytes": 956
+    },
+    {
+      "path": "classes/17/mr/Probe.class",
+      "sha256": "4ae9ae5f753a361c009bc9c3a6406c76a2f7969addcc45274d5bea6458f1e632",
+      "bytes": 242
+    },
+    {
+      "path": "classes/21/mr/Probe.class",
+      "sha256": "1e0de6ac78482b49f13bd6855cc990b71e4c2a596e0144623ed291223a759ebb",
+      "bytes": 242
+    },
+    {
+      "path": "classes/8/mr/Main.class",
+      "sha256": "39ec137add972bb95e79ff9390ee3ab5530678443bb2bad2b73a78b6ffee5429",
+      "bytes": 417
+    },
+    {
+      "path": "classes/8/mr/Probe.class",
+      "sha256": "f0fa38f4879fed5838c98e16282574237f7b344eed73be66bb5ee73aa504060a",
+      "bytes": 242
+    },
+    {
+      "path": "classes/inspector/Inspect.class",
+      "sha256": "814fa8d600bb2bcaf9e9191038855807609b25a00dcbe1cfbd210bf18b0d5178",
+      "bytes": 1256
+    },
+    {
+      "path": "false.jar",
+      "sha256": "979f1c95bc0362f4c0b643a17f56ea7cad4e06fedef2b874a54a500f81ac9070",
+      "bytes": 1532
+    },
+    {
+      "path": "logs/compile-17.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "logs/compile-21.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "logs/compile-8.log",
+      "sha256": "312e9bd919c699a2f8409f70240177012720c94095f0f4374d44152defc50f7e",
+      "bytes": 268
+    },
+    {
+      "path": "logs/compile-inspector.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "logs/compile-main.log",
+      "sha256": "312e9bd919c699a2f8409f70240177012720c94095f0f4374d44152defc50f7e",
+      "bytes": 268
+    },
+    {
+      "path": "logs/false.jar-entry-17.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/false.jar-entry-21.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/false.jar-entry-8.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/false.jar-runtime-17.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/false.jar-runtime-21.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/false.jar-runtime-8.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/java-version.log",
+      "sha256": "da6bb29c482c0fd5ea827d1eecfcf573d88175541589705d776142562e788e18",
+      "bytes": 167
+    },
+    {
+      "path": "logs/missing-attribute.jar-entry-17.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/missing-attribute.jar-entry-21.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/missing-attribute.jar-entry-8.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/missing-attribute.jar-runtime-17.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/missing-attribute.jar-runtime-21.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/missing-attribute.jar-runtime-8.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/multi-release.jar-entry-17.log",
+      "sha256": "eb2d2f7bf791b92448e2b4e1d32ae5c0605eb1d6756e38ab4ae0d3e89c850a99",
+      "bytes": 41
+    },
+    {
+      "path": "logs/multi-release.jar-entry-21.log",
+      "sha256": "30732156ac449235b9724187ab224e71b8bc053691de3d68dc1298d8f7b7087f",
+      "bytes": 41
+    },
+    {
+      "path": "logs/multi-release.jar-entry-8.log",
+      "sha256": "3348e6acae5398893fa5fef9d311f60435b1798b40a007fec35050b050c99a0f",
+      "bytes": 20
+    },
+    {
+      "path": "logs/multi-release.jar-runtime-17.log",
+      "sha256": "54183f4323f377b737433a1e98229ead0fdc686f93bab057ecb612daa94002b5",
+      "bytes": 3
+    },
+    {
+      "path": "logs/multi-release.jar-runtime-21.log",
+      "sha256": "6e2ae11dad0616f66bbb2b6e6556f580bb987fd911d7132aa6bee2bfc7cc7b52",
+      "bytes": 3
+    },
+    {
+      "path": "logs/multi-release.jar-runtime-8.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/no-manifest.jar-entry-17.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/no-manifest.jar-entry-21.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/no-manifest.jar-entry-8.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/no-manifest.jar-runtime-17.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/no-manifest.jar-runtime-21.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/no-manifest.jar-runtime-8.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/plain.jar-entry-17.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/plain.jar-entry-21.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/plain.jar-entry-8.log",
+      "sha256": "dd74351328a9eb7cbfac27ddfb198f954535bb54a457d4a0e955230f03a4fa79",
+      "bytes": 21
+    },
+    {
+      "path": "logs/plain.jar-runtime-17.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/plain.jar-runtime-21.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "logs/plain.jar-runtime-8.log",
+      "sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+      "bytes": 2
+    },
+    {
+      "path": "missing-attribute.jar",
+      "sha256": "301efe42d02e9c150a5cb667f6cd5011646b814578673348b636088d59e31256",
+      "bytes": 1510
+    },
+    {
+      "path": "multi-release.jar",
+      "sha256": "ecb5f0149c802f58ef32fa13b126b4cb1381cc87c2c0c81c032009328b4ad482",
+      "bytes": 1531
+    },
+    {
+      "path": "no-manifest.jar",
+      "sha256": "64dcf7eca1495ccceeb9f763feddcbb428c2c3f9a22b050154e9d421113f6179",
+      "bytes": 1367
+    },
+    {
+      "path": "plain.jar",
+      "sha256": "9b30726565f931ee7429a6d54df798d8bd14b51caf71ff7c46aff9f9eb52415e",
+      "bytes": 849
+    },
+    {
+      "path": "src/17/mr/Probe.java",
+      "sha256": "9667dce79d607ddd6b6f15a8f7356713c11068c526cdc20b94d9e2f71f14ae41",
+      "bytes": 84
+    },
+    {
+      "path": "src/21/mr/Probe.java",
+      "sha256": "051349c18ead681ee9925f9c4a646af8120106f2fc4a245bcc143deaa61e1ad0",
+      "bytes": 84
+    },
+    {
+      "path": "src/8/mr/Probe.java",
+      "sha256": "34675f26c6e4d1eec88873b97913b9b5c98cd90b3021918e67587226d67d8c4c",
+      "bytes": 83
+    },
+    {
+      "path": "validation/Inspect.java",
+      "sha256": "d55deb9adb498890bc58e9229673d148fb12612c12f843f0624d3c0b77af57e6",
+      "bytes": 455
+    },
+    {
+      "path": "validation/Main.java",
+      "sha256": "ee3486a33dca84951ecb1661f2975a99d88a09c3c82ebfca64dfee12762f194c",
+      "bytes": 120
+    }
+  ]
+}

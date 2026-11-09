@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "discovery": "Actual JVM class names of successfully constructed ScalaTest Suite instances, independently run by ScalaTest Runner.",
+  "families": [
+    {
+      "name": "execution-smoke",
+      "suites": [
+        "executioncase.AffectedSuite",
+        "executioncase.UnaffectedSuite",
+        "executioncase.DormantSuite"
+      ]
+    }
+  ]
+}

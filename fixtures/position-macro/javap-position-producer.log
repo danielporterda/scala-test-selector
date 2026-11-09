@@ -1,0 +1,150 @@
+Compiled from "PositionMacro.scala"
+public final class org.scalactic.source.PositionMacro$ {
+  public static final org.scalactic.source.PositionMacro$ MODULE$;
+
+  private static boolean showScalacticFillFilePathnames;
+
+  private static java.lang.ref.WeakReference<org.scalactic.source.PositionMacro$PositionMacroImpl> cache;
+
+  private static volatile boolean bitmap$0;
+
+  public static {};
+    Code:
+       0: new           #2                  // class org/scalactic/source/PositionMacro$
+       3: dup
+       4: invokespecial #47                 // Method "<init>":()V
+       7: putstatic     #49                 // Field MODULE$:Lorg/scalactic/source/PositionMacro$;
+      10: new           #51                 // class java/lang/ref/WeakReference
+      13: dup
+      14: aconst_null
+      15: invokespecial #54                 // Method java/lang/ref/WeakReference."<init>":(Ljava/lang/Object;)V
+      18: putstatic     #56                 // Field cache:Ljava/lang/ref/WeakReference;
+      21: return
+
+  private boolean showScalacticFillFilePathnames$lzycompute();
+    Code:
+       0: aload_0
+       1: dup
+       2: astore_1
+       3: monitorenter
+       4: getstatic     #60                 // Field bitmap$0:Z
+       7: ifne          55
+      10: ldc           #62                 // String SCALACTIC_FILL_FILE_PATHNAMES
+      12: invokestatic  #68                 // Method java/lang/System.getenv:(Ljava/lang/String;)Ljava/lang/String;
+      15: astore_2
+      16: aload_2
+      17: ifnull        47
+      20: aload_2
+      21: ldc           #70                 // String yes
+      23: astore_3
+      24: dup
+      25: ifnonnull     36
+      28: pop
+      29: aload_3
+      30: ifnull        43
+      33: goto          47
+      36: aload_3
+      37: invokevirtual #74                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      40: ifeq          47
+      43: iconst_1
+      44: goto          48
+      47: iconst_0
+      48: putstatic     #76                 // Field showScalacticFillFilePathnames:Z
+      51: iconst_1
+      52: putstatic     #60                 // Field bitmap$0:Z
+      55: aload_1
+      56: monitorexit
+      57: goto          63
+      60: aload_1
+      61: monitorexit
+      62: athrow
+      63: getstatic     #76                 // Field showScalacticFillFilePathnames:Z
+      66: ireturn
+    Exception table:
+       from    to  target type
+           4    55    60   any
+
+  public boolean showScalacticFillFilePathnames();
+    Code:
+       0: getstatic     #60                 // Field bitmap$0:Z
+       3: ifne          11
+       6: aload_0
+       7: invokespecial #85                 // Method showScalacticFillFilePathnames$lzycompute:()Z
+      10: ireturn
+      11: getstatic     #76                 // Field showScalacticFillFilePathnames:Z
+      14: ireturn
+
+  private java.lang.ref.WeakReference<org.scalactic.source.PositionMacro$PositionMacroImpl> cache();
+    Code:
+       0: getstatic     #56                 // Field cache:Ljava/lang/ref/WeakReference;
+       3: areturn
+
+  private void cache_$eq(java.lang.ref.WeakReference<org.scalactic.source.PositionMacro$PositionMacroImpl>);
+    Code:
+       0: aload_1
+       1: putstatic     #56                 // Field cache:Ljava/lang/ref/WeakReference;
+       4: return
+
+  public scala.reflect.api.Exprs$Expr<org.scalactic.source.Position> genPosition(scala.reflect.macros.blackbox.Context);
+    Code:
+       0: aload_0
+       1: invokespecial #97                 // Method cache:()Ljava/lang/ref/WeakReference;
+       4: invokevirtual #101                // Method java/lang/ref/WeakReference.get:()Ljava/lang/Object;
+       7: checkcast     #10                 // class org/scalactic/source/PositionMacro$PositionMacroImpl
+      10: astore_2
+      11: aload_2
+      12: ifnull        45
+      15: aload_2
+      16: invokevirtual #105                // Method org/scalactic/source/PositionMacro$PositionMacroImpl.universe:()Lscala/reflect/api/Universe;
+      19: aload_1
+      20: invokeinterface #110,  1          // InterfaceMethod scala/reflect/macros/blackbox/Context.universe:()Lscala/reflect/macros/Universe;
+      25: astore_3
+      26: dup
+      27: ifnonnull     38
+      30: pop
+      31: aload_3
+      32: ifnull        74
+      35: goto          45
+      38: aload_3
+      39: invokevirtual #74                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      42: ifne          74
+      45: new           #10                 // class org/scalactic/source/PositionMacro$PositionMacroImpl
+      48: dup
+      49: aload_1
+      50: invokeinterface #110,  1          // InterfaceMethod scala/reflect/macros/blackbox/Context.universe:()Lscala/reflect/macros/Universe;
+      55: invokespecial #113                // Method org/scalactic/source/PositionMacro$PositionMacroImpl."<init>":(Lscala/reflect/api/Universe;)V
+      58: astore_2
+      59: aload_0
+      60: new           #51                 // class java/lang/ref/WeakReference
+      63: dup
+      64: aload_2
+      65: invokespecial #54                 // Method java/lang/ref/WeakReference."<init>":(Ljava/lang/Object;)V
+      68: invokespecial #115                // Method cache_$eq:(Ljava/lang/ref/WeakReference;)V
+      71: goto          74
+      74: aload_1
+      75: aload_2
+      76: aload_1
+      77: invokevirtual #119                // Method org/scalactic/source/PositionMacro$PositionMacroImpl.apply:(Lscala/reflect/macros/blackbox/Context;)Lscala/reflect/api/Trees$TreeApi;
+      80: aload_1
+      81: invokeinterface #110,  1          // InterfaceMethod scala/reflect/macros/blackbox/Context.universe:()Lscala/reflect/macros/Universe;
+      86: astore        4
+      88: aload_1
+      89: invokeinterface #110,  1          // InterfaceMethod scala/reflect/macros/blackbox/Context.universe:()Lscala/reflect/macros/Universe;
+      94: invokevirtual #125                // Method scala/reflect/macros/Universe.rootMirror:()Lscala/reflect/api/Mirror;
+      97: astore        5
+      99: aload         4
+     101: invokevirtual #128                // Method scala/reflect/macros/Universe.TypeTag:()Lscala/reflect/api/TypeTags$TypeTag$;
+     104: aload         5
+     106: new           #7                  // class org/scalactic/source/PositionMacro$$typecreator1$1
+     109: dup
+     110: invokespecial #129                // Method org/scalactic/source/PositionMacro$$typecreator1$1."<init>":()V
+     113: invokevirtual #132                // Method scala/reflect/api/TypeTags$TypeTag$.apply:(Lscala/reflect/api/Mirror;Lscala/reflect/api/TypeCreator;)Lscala/reflect/api/TypeTags$TypeTag;
+     116: invokeinterface #135,  3          // InterfaceMethod scala/reflect/macros/blackbox/Context.Expr:(Lscala/reflect/api/Trees$TreeApi;Lscala/reflect/api/TypeTags$WeakTypeTag;)Lscala/reflect/api/Exprs$Expr;
+     121: areturn
+
+  private org.scalactic.source.PositionMacro$();
+    Code:
+       0: aload_0
+       1: invokespecial #145                // Method java/lang/Object."<init>":()V
+       4: return
+}

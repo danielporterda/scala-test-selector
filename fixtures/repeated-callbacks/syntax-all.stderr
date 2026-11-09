@@ -1,0 +1,8 @@
+{"phase":"syntax","pid":33585,"revision":"request","stage":"stage_begin"}
+{"elapsed_ns":1010228875,"phase":"syntax","pid":33585,"revision":"request","stage":"stage_progress"}
+{"elapsed_ns":2011755000,"phase":"syntax","pid":33585,"revision":"request","stage":"stage_progress"}
+{"elapsed_ns":3021922292,"phase":"syntax","pid":33585,"revision":"request","stage":"stage_progress"}
+{"elapsed_ns":4024968833,"phase":"syntax","pid":33585,"revision":"request","stage":"stage_progress"}
+{"batches":1,"cache_hits":0,"effective_workers":2,"output_bytes":47798,"producer":"3f298691e87ff690e819b6f9947ff13cc798bce13614e5fed6406453447700e5","source_bytes":1284,"sources":2,"stage":"syntax"}
+elapsed: 4.512s
+{"elapsed_ns":4512703792,"phase":"syntax","pid":33585,"revision":"request","stage":"stage_end"}

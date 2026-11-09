@@ -1,0 +1,16 @@
+{
+  "schema": "selector-native-provider-snapshot/v1",
+  "source_fixture_manifest": "fixtures/repeated-callbacks/manifest.json",
+  "source_fixture_manifest_sha256": "08a9f3f72ad16d0768cf9ac3137ff8e34c8d5fb4b5f7edb466aa89994fec095c",
+  "provider": {
+    "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+    "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+    "bytes": 5940741
+  },
+  "entry": "scala/collection/SeqOps.class",
+  "class_sha256": "ac7eaf9dae947a982779b58caa14adab07d17e7ef1d003b9c274bf53b97672eb",
+  "class_bytes": 41319,
+  "authority": "Exact selected provider class/descriptor grants only a guarded additive value view; no source definition, concrete Seq allocation or purity.",
+  "source_fixture_git_commit": "d37f9e1dd",
+  "source_fixture_manifest_note": "Original source fixture manifest is pinned at this Git commit; later fixture changes do not alter the provider snapshot."
+}

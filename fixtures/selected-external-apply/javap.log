@@ -1,0 +1,397 @@
+Compiled from "Library.scala"
+public interface selectedexternal.Configuration {
+  public abstract selectedexternal.Configuration$PatienceConfig$ PatienceConfig();
+    descriptor: ()Lselectedexternal/Configuration$PatienceConfig$;
+
+  public static void $init$(selectedexternal.Configuration);
+    descriptor: (Lselectedexternal/Configuration;)V
+    Code:
+       0: return
+}
+Compiled from "Library.scala"
+public class selectedexternal.Configuration$PatienceConfig$ implements java.io.Serializable {
+  private final selectedexternal.Configuration $outer;
+    descriptor: Lselectedexternal/Configuration;
+
+  public selectedexternal.Span $lessinit$greater$default$1();
+    descriptor: ()Lselectedexternal/Span;
+    Code:
+       0: new           #24                 // class selectedexternal/Span
+       3: dup
+       4: bipush        10
+       6: invokespecial #28                 // Method selectedexternal/Span."<init>":(I)V
+       9: areturn
+
+  public selectedexternal.Span $lessinit$greater$default$2();
+    descriptor: ()Lselectedexternal/Span;
+    Code:
+       0: new           #24                 // class selectedexternal/Span
+       3: dup
+       4: bipush        20
+       6: invokespecial #28                 // Method selectedexternal/Span."<init>":(I)V
+       9: areturn
+
+  public selectedexternal.Configuration$PatienceConfig apply(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lselectedexternal/Configuration$PatienceConfig;
+    Code:
+       0: getstatic     #40                 // Field selectedexternal/Effects$.MODULE$:Lselectedexternal/Effects$;
+       3: new           #42                 // class java/lang/StringBuilder
+       6: dup
+       7: ldc           #43                 // int 9
+       9: invokespecial #44                 // Method java/lang/StringBuilder."<init>":(I)V
+      12: ldc           #46                 // String overload:
+      14: invokevirtual #50                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      17: aload_1
+      18: invokevirtual #50                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      21: invokevirtual #54                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      24: invokevirtual #58                 // Method selectedexternal/Effects$.note:(Ljava/lang/String;)V
+      27: new           #14                 // class selectedexternal/Configuration$PatienceConfig
+      30: dup
+      31: aload_0
+      32: getfield      #60                 // Field $outer:Lselectedexternal/Configuration;
+      35: new           #24                 // class selectedexternal/Span
+      38: dup
+      39: bipush        30
+      41: invokespecial #28                 // Method selectedexternal/Span."<init>":(I)V
+      44: new           #24                 // class selectedexternal/Span
+      47: dup
+      48: bipush        40
+      50: invokespecial #28                 // Method selectedexternal/Span."<init>":(I)V
+      53: invokespecial #63                 // Method selectedexternal/Configuration$PatienceConfig."<init>":(Lselectedexternal/Configuration;Lselectedexternal/Span;Lselectedexternal/Span;)V
+      56: areturn
+
+  public selectedexternal.Span apply$default$1();
+    descriptor: ()Lselectedexternal/Span;
+    Code:
+       0: new           #24                 // class selectedexternal/Span
+       3: dup
+       4: bipush        10
+       6: invokespecial #28                 // Method selectedexternal/Span."<init>":(I)V
+       9: areturn
+
+  public selectedexternal.Span apply$default$2();
+    descriptor: ()Lselectedexternal/Span;
+    Code:
+       0: new           #24                 // class selectedexternal/Span
+       3: dup
+       4: bipush        20
+       6: invokespecial #28                 // Method selectedexternal/Span."<init>":(I)V
+       9: areturn
+
+  public scala.Function1<selectedexternal.Span, selectedexternal.Configuration$PatienceConfig> returning(selectedexternal.Span);
+    descriptor: (Lselectedexternal/Span;)Lscala/Function1;
+    Code:
+       0: getstatic     #40                 // Field selectedexternal/Effects$.MODULE$:Lselectedexternal/Effects$;
+       3: ldc           #72                 // String factory
+       5: invokevirtual #58                 // Method selectedexternal/Effects$.note:(Ljava/lang/String;)V
+       8: aload_0
+       9: aload_1
+      10: invokedynamic #93,  0             // InvokeDynamic #0:apply:(Lselectedexternal/Configuration$PatienceConfig$;Lselectedexternal/Span;)Lscala/Function1;
+      15: areturn
+
+  public selectedexternal.Configuration$PatienceConfig apply(selectedexternal.Span, selectedexternal.Span);
+    descriptor: (Lselectedexternal/Span;Lselectedexternal/Span;)Lselectedexternal/Configuration$PatienceConfig;
+    Code:
+       0: new           #14                 // class selectedexternal/Configuration$PatienceConfig
+       3: dup
+       4: aload_0
+       5: getfield      #60                 // Field $outer:Lselectedexternal/Configuration;
+       8: aload_1
+       9: aload_2
+      10: invokespecial #63                 // Method selectedexternal/Configuration$PatienceConfig."<init>":(Lselectedexternal/Configuration;Lselectedexternal/Span;Lselectedexternal/Span;)V
+      13: areturn
+
+  public scala.Option<scala.Tuple2<selectedexternal.Span, selectedexternal.Span>> unapply(selectedexternal.Configuration$PatienceConfig);
+    descriptor: (Lselectedexternal/Configuration$PatienceConfig;)Lscala/Option;
+    Code:
+       0: aload_1
+       1: ifnonnull     8
+       4: getstatic     #105                // Field scala/None$.MODULE$:Lscala/None$;
+       7: areturn
+       8: new           #107                // class scala/Some
+      11: dup
+      12: new           #109                // class scala/Tuple2
+      15: dup
+      16: aload_1
+      17: invokevirtual #111                // Method selectedexternal/Configuration$PatienceConfig.timeout:()Lselectedexternal/Span;
+      20: aload_1
+      21: invokevirtual #113                // Method selectedexternal/Configuration$PatienceConfig.interval:()Lselectedexternal/Span;
+      24: invokespecial #116                // Method scala/Tuple2."<init>":(Ljava/lang/Object;Ljava/lang/Object;)V
+      27: invokespecial #119                // Method scala/Some."<init>":(Ljava/lang/Object;)V
+      30: areturn
+
+  public static final selectedexternal.Configuration$PatienceConfig $anonfun$returning$1(selectedexternal.Configuration$PatienceConfig$, selectedexternal.Span, selectedexternal.Span);
+    descriptor: (Lselectedexternal/Configuration$PatienceConfig$;Lselectedexternal/Span;Lselectedexternal/Span;)Lselectedexternal/Configuration$PatienceConfig;
+    Code:
+       0: getstatic     #40                 // Field selectedexternal/Effects$.MODULE$:Lselectedexternal/Effects$;
+       3: ldc           #124                // String returned-body
+       5: invokevirtual #58                 // Method selectedexternal/Effects$.note:(Ljava/lang/String;)V
+       8: new           #14                 // class selectedexternal/Configuration$PatienceConfig
+      11: dup
+      12: aload_0
+      13: getfield      #60                 // Field $outer:Lselectedexternal/Configuration;
+      16: aload_1
+      17: aload_2
+      18: invokespecial #63                 // Method selectedexternal/Configuration$PatienceConfig."<init>":(Lselectedexternal/Configuration;Lselectedexternal/Span;Lselectedexternal/Span;)V
+      21: areturn
+
+  public selectedexternal.Configuration$PatienceConfig$(selectedexternal.Configuration);
+    descriptor: (Lselectedexternal/Configuration;)V
+    Code:
+       0: aload_1
+       1: ifnonnull     6
+       4: aconst_null
+       5: athrow
+       6: aload_0
+       7: aload_1
+       8: putfield      #60                 // Field $outer:Lselectedexternal/Configuration;
+      11: aload_0
+      12: invokespecial #128                // Method java/lang/Object."<init>":()V
+      15: return
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    descriptor: (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokedynamic #140,  0            // InvokeDynamic #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}
+Compiled from "Calls.scala"
+public final class selectedexternal.Calls implements selectedexternal.Configuration {
+  private volatile selectedexternal.Configuration$PatienceConfig$ PatienceConfig$module;
+    descriptor: Lselectedexternal/Configuration$PatienceConfig$;
+
+  public selectedexternal.Configuration$PatienceConfig$ PatienceConfig();
+    descriptor: ()Lselectedexternal/Configuration$PatienceConfig$;
+    Code:
+       0: aload_0
+       1: getfield      #26                 // Field PatienceConfig$module:Lselectedexternal/Configuration$PatienceConfig$;
+       4: ifnonnull     11
+       7: aload_0
+       8: invokespecial #30                 // Method PatienceConfig$lzycompute$1:()V
+      11: aload_0
+      12: getfield      #26                 // Field PatienceConfig$module:Lselectedexternal/Configuration$PatienceConfig$;
+      15: areturn
+
+  public selectedexternal.Span interval();
+    descriptor: ()Lselectedexternal/Span;
+    Code:
+       0: getstatic     #40                 // Field selectedexternal/Effects$.MODULE$:Lselectedexternal/Effects$;
+       3: ldc           #41                 // String interval
+       5: invokevirtual #45                 // Method selectedexternal/Effects$.note:(Ljava/lang/String;)V
+       8: new           #47                 // class selectedexternal/Span
+      11: dup
+      12: iconst_2
+      13: invokespecial #51                 // Method selectedexternal/Span."<init>":(I)V
+      16: areturn
+
+  public selectedexternal.Span timeout();
+    descriptor: ()Lselectedexternal/Span;
+    Code:
+       0: getstatic     #40                 // Field selectedexternal/Effects$.MODULE$:Lselectedexternal/Effects$;
+       3: ldc           #53                 // String timeout
+       5: invokevirtual #45                 // Method selectedexternal/Effects$.note:(Ljava/lang/String;)V
+       8: new           #47                 // class selectedexternal/Span
+      11: dup
+      12: iconst_1
+      13: invokespecial #51                 // Method selectedexternal/Span."<init>":(I)V
+      16: areturn
+
+  public java.lang.String label();
+    descriptor: ()Ljava/lang/String;
+    Code:
+       0: getstatic     #40                 // Field selectedexternal/Effects$.MODULE$:Lselectedexternal/Effects$;
+       3: ldc           #56                 // String label
+       5: invokevirtual #45                 // Method selectedexternal/Effects$.note:(Ljava/lang/String;)V
+       8: ldc           #58                 // String x
+      10: areturn
+
+  public selectedexternal.Library$ qualifier();
+    descriptor: ()Lselectedexternal/Library$;
+    Code:
+       0: getstatic     #40                 // Field selectedexternal/Effects$.MODULE$:Lselectedexternal/Effects$;
+       3: ldc           #61                 // String qualifier
+       5: invokevirtual #45                 // Method selectedexternal/Effects$.note:(Ljava/lang/String;)V
+       8: getstatic     #66                 // Field selectedexternal/Library$.MODULE$:Lselectedexternal/Library$;
+      11: areturn
+
+  public selectedexternal.Configuration$PatienceConfig inherited();
+    descriptor: ()Lselectedexternal/Configuration$PatienceConfig;
+    Code:
+       0: aload_0
+       1: invokevirtual #70                 // Method interval:()Lselectedexternal/Span;
+       4: astore_1
+       5: aload_0
+       6: invokevirtual #72                 // Method timeout:()Lselectedexternal/Span;
+       9: astore_2
+      10: new           #17                 // class selectedexternal/Configuration$PatienceConfig
+      13: dup
+      14: aload_0
+      15: aload_2
+      16: aload_1
+      17: invokespecial #75                 // Method selectedexternal/Configuration$PatienceConfig."<init>":(Lselectedexternal/Configuration;Lselectedexternal/Span;Lselectedexternal/Span;)V
+      20: areturn
+
+  public java.lang.Object qualified();
+    descriptor: ()Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokevirtual #82                 // Method qualifier:()Lselectedexternal/Library$;
+       4: invokevirtual #84                 // Method selectedexternal/Library$.PatienceConfig:()Lselectedexternal/Configuration$PatienceConfig$;
+       7: astore_1
+       8: aload_0
+       9: invokevirtual #70                 // Method interval:()Lselectedexternal/Span;
+      12: astore_2
+      13: aload_0
+      14: invokevirtual #72                 // Method timeout:()Lselectedexternal/Span;
+      17: astore_3
+      18: new           #17                 // class selectedexternal/Configuration$PatienceConfig
+      21: dup
+      22: getstatic     #66                 // Field selectedexternal/Library$.MODULE$:Lselectedexternal/Library$;
+      25: aload_3
+      26: aload_2
+      27: invokespecial #75                 // Method selectedexternal/Configuration$PatienceConfig."<init>":(Lselectedexternal/Configuration;Lselectedexternal/Span;Lselectedexternal/Span;)V
+      30: areturn
+
+  public java.lang.Object positional();
+    descriptor: ()Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokevirtual #82                 // Method qualifier:()Lselectedexternal/Library$;
+       4: invokevirtual #84                 // Method selectedexternal/Library$.PatienceConfig:()Lselectedexternal/Configuration$PatienceConfig$;
+       7: aload_0
+       8: invokevirtual #72                 // Method timeout:()Lselectedexternal/Span;
+      11: aload_0
+      12: invokevirtual #70                 // Method interval:()Lselectedexternal/Span;
+      15: invokevirtual #90                 // Method selectedexternal/Configuration$PatienceConfig$.apply:(Lselectedexternal/Span;Lselectedexternal/Span;)Lselectedexternal/Configuration$PatienceConfig;
+      18: areturn
+
+  public java.lang.Object overloaded();
+    descriptor: ()Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokevirtual #82                 // Method qualifier:()Lselectedexternal/Library$;
+       4: invokevirtual #84                 // Method selectedexternal/Library$.PatienceConfig:()Lselectedexternal/Configuration$PatienceConfig$;
+       7: aload_0
+       8: invokevirtual #93                 // Method label:()Ljava/lang/String;
+      11: invokevirtual #96                 // Method selectedexternal/Configuration$PatienceConfig$.apply:(Ljava/lang/String;)Lselectedexternal/Configuration$PatienceConfig;
+      14: areturn
+
+  public scala.Function0<java.lang.Object> eta();
+    descriptor: ()Lscala/Function0;
+    Code:
+       0: aload_0
+       1: invokevirtual #82                 // Method qualifier:()Lselectedexternal/Library$;
+       4: invokevirtual #84                 // Method selectedexternal/Library$.PatienceConfig:()Lselectedexternal/Configuration$PatienceConfig$;
+       7: astore_2
+       8: invokedynamic #118,  0            // InvokeDynamic #0:apply:()Lscala/Function2;
+      13: astore_1
+      14: aload_0
+      15: aload_1
+      16: invokedynamic #127,  0            // InvokeDynamic #1:apply:(Lselectedexternal/Calls;Lscala/Function2;)Lscala/Function0;
+      21: areturn
+
+  public scala.Function1<selectedexternal.Span, java.lang.Object> returned();
+    descriptor: ()Lscala/Function1;
+    Code:
+       0: aload_0
+       1: invokevirtual #82                 // Method qualifier:()Lselectedexternal/Library$;
+       4: invokevirtual #84                 // Method selectedexternal/Library$.PatienceConfig:()Lselectedexternal/Configuration$PatienceConfig$;
+       7: aload_0
+       8: invokevirtual #72                 // Method timeout:()Lselectedexternal/Span;
+      11: invokevirtual #136                // Method selectedexternal/Configuration$PatienceConfig$.returning:(Lselectedexternal/Span;)Lscala/Function1;
+      14: areturn
+
+  public java.lang.Object appliedReturned();
+    descriptor: ()Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokevirtual #82                 // Method qualifier:()Lselectedexternal/Library$;
+       4: invokevirtual #84                 // Method selectedexternal/Library$.PatienceConfig:()Lselectedexternal/Configuration$PatienceConfig$;
+       7: aload_0
+       8: invokevirtual #72                 // Method timeout:()Lselectedexternal/Span;
+      11: invokevirtual #136                // Method selectedexternal/Configuration$PatienceConfig$.returning:(Lselectedexternal/Span;)Lscala/Function1;
+      14: aload_0
+      15: invokevirtual #70                 // Method interval:()Lselectedexternal/Span;
+      18: invokeinterface #142,  2          // InterfaceMethod scala/Function1.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      23: areturn
+
+  public scala.Function0<java.lang.Object> dormant();
+    descriptor: ()Lscala/Function0;
+    Code:
+       0: aload_0
+       1: invokedynamic #151,  0            // InvokeDynamic #2:apply:(Lselectedexternal/Calls;)Lscala/Function0;
+       6: areturn
+
+  private final void PatienceConfig$lzycompute$1();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: dup
+       2: astore_1
+       3: monitorenter
+       4: aload_0
+       5: getfield      #26                 // Field PatienceConfig$module:Lselectedexternal/Configuration$PatienceConfig$;
+       8: ifnonnull     23
+      11: aload_0
+      12: new           #20                 // class selectedexternal/Configuration$PatienceConfig$
+      15: dup
+      16: aload_0
+      17: invokespecial #154                // Method selectedexternal/Configuration$PatienceConfig$."<init>":(Lselectedexternal/Configuration;)V
+      20: putfield      #26                 // Field PatienceConfig$module:Lselectedexternal/Configuration$PatienceConfig$;
+      23: aload_1
+      24: monitorexit
+      25: goto          31
+      28: aload_1
+      29: monitorexit
+      30: athrow
+      31: return
+    Exception table:
+       from    to  target type
+           4    23    28   any
+
+  public static final selectedexternal.Configuration$PatienceConfig $anonfun$eta$1(selectedexternal.Span, selectedexternal.Span);
+    descriptor: (Lselectedexternal/Span;Lselectedexternal/Span;)Lselectedexternal/Configuration$PatienceConfig;
+    Code:
+       0: new           #17                 // class selectedexternal/Configuration$PatienceConfig
+       3: dup
+       4: getstatic     #66                 // Field selectedexternal/Library$.MODULE$:Lselectedexternal/Library$;
+       7: aload_0
+       8: aload_1
+       9: invokespecial #75                 // Method selectedexternal/Configuration$PatienceConfig."<init>":(Lselectedexternal/Configuration;Lselectedexternal/Span;Lselectedexternal/Span;)V
+      12: areturn
+
+  public static final java.lang.Object $anonfun$eta$2(selectedexternal.Calls, scala.Function2);
+    descriptor: (Lselectedexternal/Calls;Lscala/Function2;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokevirtual #72                 // Method timeout:()Lselectedexternal/Span;
+       5: aload_0
+       6: invokevirtual #70                 // Method interval:()Lselectedexternal/Span;
+       9: invokeinterface #162,  3          // InterfaceMethod scala/Function2.apply:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      14: areturn
+
+  public static final java.lang.Object $anonfun$dormant$1(selectedexternal.Calls);
+    descriptor: (Lselectedexternal/Calls;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokevirtual #164                // Method qualified:()Ljava/lang/Object;
+       4: areturn
+
+  public selectedexternal.Calls();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #166                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #169                // InterfaceMethod selectedexternal/Configuration.$init$:(Lselectedexternal/Configuration;)V
+       8: return
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    descriptor: (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokedynamic #181,  0            // InvokeDynamic #3:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}

@@ -1,0 +1,128 @@
+{
+  "schema": "selector-native-lambda-fixture/v1",
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "generator_sha256": "bb79bca4116e86a5b516d41e8a297d79d2834f6231f7a62557c84e8fca2849b2",
+  "independent_runtime_observations": [
+    "deferred:0:0",
+    "static:3:0",
+    "receiver:3:5",
+    "bound:3:6",
+    "opaque-followed-by-store:9",
+    "native-wrappers:6:6",
+    "target-created:0:0",
+    "target-run:1:1",
+    "target-wrapper:1:2",
+    "unbound-created:6",
+    "unbound-run:7"
+  ],
+  "commands": [
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lambdas-bpsxbpe9/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lambdas/src/lambdacase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lambdas-bpsxbpe9/classes",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lambdas-bpsxbpe9/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lambdas/validation/lambdacase/CheckProbe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lambdas-bpsxbpe9/classes",
+      "lambdacase.CheckProbe"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lambdas-bpsxbpe9/classes",
+      "-v",
+      "-p",
+      "-c",
+      "lambdacase.Probe",
+      "lambdacase.Probe$DeferredTarget"
+    ]
+  ],
+  "java_version": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 21.0.12.1)\nOpenJDK 64-Bit Server VM Homebrew (build 21.0.12.1, mixed mode, sharing)\n",
+  "javac_version": "javac 21.0.12.1\n",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "9a3ffa5a0c7db6609d0792bb607d2b758523e048abe9d2948217fb4ea1b9f55f",
+      "bytes": 1486
+    },
+    {
+      "path": "bytecode.jar",
+      "sha256": "815fc4a82cebc4abece79da64fa54e8a898a2961470dec4d1d88408cbd57f482",
+      "bytes": 2048
+    },
+    {
+      "path": "classes/lambdacase/Probe$DeferredTarget.class",
+      "sha256": "39d25b78ec2ba81894c9092ce26a851ea36c18698596f9441f2dc478dce89796",
+      "bytes": 558
+    },
+    {
+      "path": "classes/lambdacase/Probe.class",
+      "sha256": "2287af8243f0ed6a5710f6c6c4fcd9df1ecf33d564d53f27684a45d31e9cbe54",
+      "bytes": 3338
+    },
+    {
+      "path": "compile-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "execution.log",
+      "sha256": "50135568abcef720cb095eae7d213cee74de5c1e09532099d5073a841f5477ab",
+      "bytes": 179
+    },
+    {
+      "path": "java-version.log",
+      "sha256": "da6bb29c482c0fd5ea827d1eecfcf573d88175541589705d776142562e788e18",
+      "bytes": 167
+    },
+    {
+      "path": "javac-version.log",
+      "sha256": "2df6b9c76e710158266aeaae8f3578eaed8ddd747a2272483506ad9a8a5e644a",
+      "bytes": 16
+    },
+    {
+      "path": "javap.log",
+      "sha256": "a102ebf0d29213b4bb80518dcace2af34259b515b27d4c5051b946ca1c999a84",
+      "bytes": 26710
+    },
+    {
+      "path": "src/lambdacase/Probe.java",
+      "sha256": "7b104439ba2f750b5e1d0e254885a99ee51150cd489545901c01bf62b1e46af1",
+      "bytes": 1663
+    },
+    {
+      "path": "validation/lambdacase/CheckProbe.java",
+      "sha256": "8a106a22a7f1c2f9df7b10ba2ba46bc4b47cb2a4abf2d4929d4137b47a689c4e",
+      "bytes": 1976
+    }
+  ]
+}

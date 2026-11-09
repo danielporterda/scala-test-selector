@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "1399561b2f243bd11d812be2cdd092636084510f",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/caller/META-INF/semanticdb/src/repeatedcallbacks/Calls.scala.semanticdb",
+      "sha256": "10925b9222e60931842cb0aaa670431e34324879233fc588fdadc5f38d49455f",
+      "semanticdb_input": "raw/caller/META-INF/semanticdb/src/repeatedcallbacks/Calls.scala.semanticdb",
+      "input_target_contexts": [
+        "project:repeated-callbacks/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/repeatedcallbacks/Calls.scala",
+      "file": "src/repeatedcallbacks/Calls.scala",
+      "sha256": "7c6c04c05d101742bd144d09775f3121aefac2a772e20c9664de348ca9d13fb3",
+      "source_contexts": [
+        "project:repeated-callbacks/configuration:test"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "capture_kind": "one_unmodified_actual_PR7743_document_and_native_syntax_row",
+  "capture_receipt": {
+    "path": "artifacts/pr7743-scoped-incompleteness-pair-v1/receipt.json",
+    "sha256": "5bb9450ba746572edadad41821d62812a78d646636f04236673f8a80a6ca16ec"
+  },
+  "expected_calls": [
+    {
+      "callee": "org/scalatest/prop/TableDrivenPropertyChecks#forAll(+1).",
+      "complete_apply": [
+        482,
+        738
+      ],
+      "first_apply": [
+        482,
+        549
+      ],
+      "prefix": [
+        482,
+        488
+      ]
+    },
+    {
+      "callee": "org/scalatest/prop/TableDrivenPropertyChecks#forAll(+1).",
+      "complete_apply": [
+        802,
+        1060
+      ],
+      "first_apply": [
+        802,
+        869
+      ],
+      "prefix": [
+        802,
+        808
+      ]
+    },
+    {
+      "callee": "org/scalatest/prop/TableDrivenPropertyChecks#forAll(+1).",
+      "complete_apply": [
+        1132,
+        1492
+      ],
+      "first_apply": [
+        1132,
+        1294
+      ],
+      "prefix": [
+        1132,
+        1138
+      ]
+    },
+    {
+      "callee": "org/scalatest/prop/TableDrivenPropertyChecks#forAll(+1).",
+      "complete_apply": [
+        1499,
+        1941
+      ],
+      "first_apply": [
+        1499,
+        1715
+      ],
+      "prefix": [
+        1499,
+        1505
+      ]
+    }
+  ],
+  "files": [
+    {
+      "bytes": 35129,
+      "path": "documents.jsonl",
+      "sha256": "20fef2a8086a98e56b8506e71112e1da67e4763ef4856ec84590e42ccb832afc"
+    },
+    {
+      "bytes": 52418,
+      "path": "syntax.jsonl",
+      "sha256": "0ab73382bc35cbb688a152ec64c2383d3b5c36dbd80b2229bf8473c288810140"
+    },
+    {
+      "bytes": 2223,
+      "path": "ThresholdsTest.scala",
+      "sha256": "7f00df896db27bba5e35ac7993c0b2f98d228fe48430308fabec0a69d80a35b7"
+    }
+  ],
+  "input_target_contexts": [
+    "project:apps-common/configuration:test"
+  ],
+  "original_document_capture": {
+    "bytes": 76294293,
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/capture/semanticdb-documents.jsonl.gz",
+    "sha256": "e7e1c29f4a04e81fc343f1275f42588b68b252e006b8b1cb5ce60e3317d05c63"
+  },
+  "original_native_syntax_capture": {
+    "bytes": 122569266,
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-progress-syntax/head.jsonl.gz",
+    "sha256": "747f03ed07cc53d8ec0f59ad060df91c6ae4d91d1952465a27d536f33de27e13"
+  },
+  "qualification": "Source IR projection only. The original compiler document and additive native AST row are copied byte-for-byte. No compiler/JVM rerun, hand-authored AST, injected external signatures, classpath completeness or suite exclusion authority. Other unresolved compiler/runtime boundaries remain expected.",
+  "schema": "selector-curried-type-prefix-captured-source-fixture/v1",
+  "source_contexts": [
+    "project:apps-common/configuration:test"
+  ],
+  "source_path": "apps/common/src/test/scala/org/lfdecentralizedtrust/splice/config/ThresholdsTest.scala",
+  "source_sha256": "7f00df896db27bba5e35ac7993c0b2f98d228fe48430308fabec0a69d80a35b7",
+  "syntax_exporter_sha256": "cd2f327816a22cacc865af0979da62f3e8b0d6100acbefc71dbdcdd1a7df2ef3"
+}

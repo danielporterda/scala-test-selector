@@ -1,0 +1,62 @@
+{
+  "schema": "rust-selector-source-reviewed-synthetic-classification/v1",
+  "role": "Evaluator-only classification assertions, never production edges or selector input.",
+  "basis": "Exact compiler AST tags and bound symbols in captured-patterns.json, checked against source excerpts; language effects are intentionally separated from type metadata and deferred callback bodies.",
+  "examples": [
+    {
+      "id": "selected_companion_apply",
+      "inserted_callee": "scala/concurrent/Promise.apply().",
+      "rules": ["Join OriginalTree qualifier to the written Promise function range.", "An inserted SelectTree.id can establish a callee without a written reference occurrence for apply."]
+    },
+    {
+      "id": "typed_selected_apply",
+      "inserted_callee": "scala/util/Try.apply().",
+      "compile_type_references": ["com/digitalasset/canton/lifecycle/UnlessShutdown.Outcome#", "com/digitalasset/canton/time/Clock#Queued#[A]"],
+      "rules": ["TypeApplyTree follows function to the compiler callee.", "Type arguments supply static type/substitution facts, never runtime call targets.", "Try's callback/by-name execution requires joining actual call arguments and its explicit runtime contract."]
+    },
+    {
+      "id": "callback_apply_selection",
+      "inserted_callee": "scala/Function1#apply().",
+      "operation": "InvokeCallback",
+      "rules": ["Bind receiver to the OriginalTree action expression, then instantiate callback alternatives.", "A static edge to Function1.apply alone does not execute the actual bound closure."]
+    },
+    {
+      "id": "enclosing_implicit_actual",
+      "inserted_callee": null,
+      "inserted_argument_callees": ["scala/`<:<`.refl()."],
+      "compile_type_references": ["com/digitalasset/canton/time/Clock.SystemClockRunningBackwards.Error#"],
+      "rules": ["The root function OriginalTree is the written invocation; do not invent a second outer callee.", "Append the inserted actual to the exact original call clause, preserving its position and compiler identity."]
+    },
+    {
+      "id": "type_application_without_new_callee",
+      "inserted_callee": null,
+      "inserted_argument_callees": [],
+      "compile_type_references": ["com/digitalasset/canton/time/Clock.SystemClockRunningBackwards.Error#"],
+      "rules": ["A TypeApplyTree whose function is only OriginalTree introduces no new runtime target.", "Retain the written call independently, and use complete signature/type-argument arity before substituting type parameters."]
+    },
+    {
+      "id": "inserted_implicit_conversion",
+      "inserted_callee": "com/digitalasset/canton/discard/Implicits.DiscardOps().",
+      "rules": ["The implicit conversion is executable even though the source does not name DiscardOps.", "OriginalTree argument evaluates the existing source expression; it is not a transparent callback alias.", "The enclosing conversion's result remains distinct from nested argument conversion results."]
+    },
+    {
+      "id": "nested_implicit_actual_calls",
+      "inserted_callee": null,
+      "inserted_argument_callees": ["com/digitalasset/canton/logging/NamedLogging#errorLoggingContext().", "com/digitalasset/canton/tracing/NoTracing#traceContext()."],
+      "rules": ["Keep the written invocation and lower the nested inserted implicit-argument computation.", "SpliceApp module is a receiver/value identity, not a method callee.", "IdTree kind controls whether a symbol is a parameter read, stable value access or accessor invocation; spelling alone does not decide."]
+    },
+    {
+      "id": "deferred_synthetic_function",
+      "inserted_callee": "scala/collection/IterableOnceOps#foreach().",
+      "deferred_parameters": ["local12079"],
+      "rules": ["FunctionTree allocates/binds a deferred callback with file-scoped compiler parameters and its OriginalTree body range.", "Do not execute the function body merely while evaluating the synthetic argument.", "The verified foreach contract invokes the deferred body when that call executes; unknown callback consumers retain unknown execution."]
+    },
+    {
+      "id": "macro_expansion_without_runtime_body",
+      "inserted_callee": null,
+      "compile_only_macro": "scala/reflect/package.materializeClassTag().",
+      "compile_type_references": ["scala/reflect/ClassTag#", "org/lfdecentralizedtrust/splice/sv/automation/singlesv/SvBftSequencerPeerOffboardingTrigger#"],
+      "rules": ["MacroExpansionTree.before_expansion names a compile-time macro, not a demonstrated runtime callee.", "The provided tpe is a static result bound, not a concrete allocation identity.", "The AST lacks the full expanded runtime body; retain a typed unknown effect unless an admitted macro model supplies it."]
+    }
+  ]
+}

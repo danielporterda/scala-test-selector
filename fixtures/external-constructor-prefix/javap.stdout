@@ -1,0 +1,320 @@
+Compiled from "Native.java"
+public final class externalprefix.Native {
+  public static java.lang.String trace;
+    descriptor: Ljava/lang/String;
+
+  public final int value;
+    descriptor: I
+
+  public static void note(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    Code:
+       0: getstatic     #1                  // Field trace:Ljava/lang/String;
+       3: invokevirtual #7                  // Method java/lang/String.isEmpty:()Z
+       6: ifeq          13
+       9: aload_0
+      10: goto          38
+      13: new           #13                 // class java/lang/StringBuilder
+      16: dup
+      17: invokespecial #15                 // Method java/lang/StringBuilder."<init>":()V
+      20: getstatic     #1                  // Field trace:Ljava/lang/String;
+      23: invokevirtual #19                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      26: ldc           #23                 // String ,
+      28: invokevirtual #19                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      31: aload_0
+      32: invokevirtual #19                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      35: invokevirtual #25                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      38: putstatic     #1                  // Field trace:Ljava/lang/String;
+      41: return
+
+  public static void reset();
+    descriptor: ()V
+    Code:
+       0: ldc           #29                 // String
+       2: putstatic     #1                  // Field trace:Ljava/lang/String;
+       5: return
+
+  public externalprefix.Native(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    Code:
+       0: aload_0
+       1: invokespecial #31                 // Method java/lang/Object."<init>":()V
+       4: new           #13                 // class java/lang/StringBuilder
+       7: dup
+       8: invokespecial #15                 // Method java/lang/StringBuilder."<init>":()V
+      11: ldc           #34                 // String ctor-string:
+      13: invokevirtual #19                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      16: aload_1
+      17: invokevirtual #19                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      20: invokevirtual #25                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      23: invokestatic  #36                 // Method note:(Ljava/lang/String;)V
+      26: aload_0
+      27: aload_1
+      28: invokevirtual #40                 // Method java/lang/String.length:()I
+      31: putfield      #44                 // Field value:I
+      34: return
+
+  public externalprefix.Native(int);
+    descriptor: (I)V
+    Code:
+       0: aload_0
+       1: invokespecial #31                 // Method java/lang/Object."<init>":()V
+       4: new           #13                 // class java/lang/StringBuilder
+       7: dup
+       8: invokespecial #15                 // Method java/lang/StringBuilder."<init>":()V
+      11: ldc           #48                 // String ctor-int:
+      13: invokevirtual #19                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      16: iload_1
+      17: invokevirtual #50                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      20: invokevirtual #25                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      23: invokestatic  #36                 // Method note:(Ljava/lang/String;)V
+      26: aload_0
+      27: iload_1
+      28: putfield      #44                 // Field value:I
+      31: return
+
+  static {};
+    descriptor: ()V
+    Code:
+       0: ldc           #29                 // String
+       2: putstatic     #1                  // Field trace:Ljava/lang/String;
+       5: return
+}
+Compiled from "Calls.scala"
+public final class externalprefix.Calls {
+  public java.lang.String text();
+    descriptor: ()Ljava/lang/String;
+    Code:
+       0: ldc           #16                 // String text
+       2: invokestatic  #22                 // Method externalprefix/Native.note:(Ljava/lang/String;)V
+       5: ldc           #24                 // String x
+       7: areturn
+
+  public int number();
+    descriptor: ()I
+    Code:
+       0: ldc           #29                 // String number
+       2: invokestatic  #22                 // Method externalprefix/Native.note:(Ljava/lang/String;)V
+       5: bipush        7
+       7: ireturn
+
+  public externalprefix.Native stringConstructor();
+    descriptor: ()Lexternalprefix/Native;
+    Code:
+       0: new           #18                 // class externalprefix/Native
+       3: dup
+       4: aload_0
+       5: invokevirtual #33                 // Method text:()Ljava/lang/String;
+       8: invokespecial #36                 // Method externalprefix/Native."<init>":(Ljava/lang/String;)V
+      11: areturn
+
+  public externalprefix.Native intConstructor();
+    descriptor: ()Lexternalprefix/Native;
+    Code:
+       0: new           #18                 // class externalprefix/Native
+       3: dup
+       4: aload_0
+       5: invokevirtual #39                 // Method number:()I
+       8: invokespecial #42                 // Method externalprefix/Native."<init>":(I)V
+      11: areturn
+
+  public scala.Function0<externalprefix.Native> dormantConstructor();
+    descriptor: ()Lscala/Function0;
+    Code:
+       0: aload_0
+       1: invokedynamic #66,  0             // InvokeDynamic #0:apply:(Lexternalprefix/Calls;)Lscala/Function0;
+       6: areturn
+
+  public java.lang.Class<externalprefix.Native> classLiteral();
+    descriptor: ()Ljava/lang/Class;
+    Code:
+       0: ldc           #18                 // class externalprefix/Native
+       2: areturn
+
+  public externalprefix.Box<java.lang.Object> box();
+    descriptor: ()Lexternalprefix/Box;
+    Code:
+       0: ldc           #73                 // String box
+       2: invokestatic  #22                 // Method externalprefix/Native.note:(Ljava/lang/String;)V
+       5: new           #75                 // class externalprefix/Box
+       8: dup
+       9: iconst_1
+      10: invokestatic  #81                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      13: invokespecial #84                 // Method externalprefix/Box."<init>":(Ljava/lang/Object;)V
+      16: areturn
+
+  public int mapped(int);
+    descriptor: (I)I
+    Code:
+       0: ldc           #89                 // String map-body
+       2: invokestatic  #22                 // Method externalprefix/Native.note:(Ljava/lang/String;)V
+       5: iload_1
+       6: iconst_1
+       7: iadd
+       8: ireturn
+
+  public externalprefix.Box<java.lang.Object> flatMapped(int);
+    descriptor: (I)Lexternalprefix/Box;
+    Code:
+       0: ldc           #95                 // String flat-body
+       2: invokestatic  #22                 // Method externalprefix/Native.note:(Ljava/lang/String;)V
+       5: new           #75                 // class externalprefix/Box
+       8: dup
+       9: iload_1
+      10: iconst_1
+      11: iadd
+      12: invokestatic  #81                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      15: invokespecial #84                 // Method externalprefix/Box."<init>":(Ljava/lang/Object;)V
+      18: areturn
+
+  public int chain();
+    descriptor: ()I
+    Code:
+       0: aload_0
+       1: invokevirtual #98                 // Method box:()Lexternalprefix/Box;
+       4: aload_0
+       5: invokedynamic #108,  0            // InvokeDynamic #1:apply$mcII$sp:(Lexternalprefix/Calls;)Lscala/runtime/java8/JFunction1$mcII$sp;
+      10: invokevirtual #112                // Method externalprefix/Box.map:(Lscala/Function1;)Lexternalprefix/Box;
+      13: aload_0
+      14: invokedynamic #124,  0            // InvokeDynamic #2:apply:(Lexternalprefix/Calls;)Lscala/Function1;
+      19: invokevirtual #127                // Method externalprefix/Box.flatMap:(Lscala/Function1;)Lexternalprefix/Box;
+      22: invokevirtual #129                // Method externalprefix/Box.value:()Ljava/lang/Object;
+      25: invokestatic  #133                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+      28: ireturn
+
+  public scala.Function0<java.lang.Object> dormantChain();
+    descriptor: ()Lscala/Function0;
+    Code:
+       0: aload_0
+       1: invokedynamic #145,  0            // InvokeDynamic #3:apply$mcI$sp:(Lexternalprefix/Calls;)Lscala/runtime/java8/JFunction0$mcI$sp;
+       6: areturn
+
+  public <A> A generic(A);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: ldc           #148                // String generic
+       2: invokestatic  #22                 // Method externalprefix/Native.note:(Ljava/lang/String;)V
+       5: aload_1
+       6: areturn
+
+  public scala.Function1<java.lang.Object, java.lang.Object> eta();
+    descriptor: ()Lscala/Function1;
+    Code:
+       0: aload_0
+       1: invokedynamic #157,  0            // InvokeDynamic #4:apply$mcII$sp:(Lexternalprefix/Calls;)Lscala/runtime/java8/JFunction1$mcII$sp;
+       6: areturn
+
+  public static final externalprefix.Native $anonfun$dormantConstructor$1(externalprefix.Calls);
+    descriptor: (Lexternalprefix/Calls;)Lexternalprefix/Native;
+    Code:
+       0: new           #18                 // class externalprefix/Native
+       3: dup
+       4: aload_0
+       5: invokevirtual #33                 // Method text:()Ljava/lang/String;
+       8: invokespecial #36                 // Method externalprefix/Native."<init>":(Ljava/lang/String;)V
+      11: areturn
+
+  public static final int $anonfun$chain$1(externalprefix.Calls, int);
+    descriptor: (Lexternalprefix/Calls;I)I
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokevirtual #160                // Method mapped:(I)I
+       5: ireturn
+
+  public static final externalprefix.Box $anonfun$chain$2(externalprefix.Calls, int);
+    descriptor: (Lexternalprefix/Calls;I)Lexternalprefix/Box;
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokevirtual #164                // Method flatMapped:(I)Lexternalprefix/Box;
+       5: areturn
+
+  public static final int $anonfun$dormantChain$1(externalprefix.Calls);
+    descriptor: (Lexternalprefix/Calls;)I
+    Code:
+       0: aload_0
+       1: invokevirtual #166                // Method chain:()I
+       4: ireturn
+
+  public static final int $anonfun$eta$1(externalprefix.Calls, int);
+    descriptor: (Lexternalprefix/Calls;I)I
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokestatic  #81                 // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       5: invokevirtual #168                // Method generic:(Ljava/lang/Object;)Ljava/lang/Object;
+       8: invokestatic  #133                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+      11: ireturn
+
+  public externalprefix.Calls();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #171                // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static final externalprefix.Box $anonfun$chain$2$adapted(externalprefix.Calls, java.lang.Object);
+    descriptor: (Lexternalprefix/Calls;Ljava/lang/Object;)Lexternalprefix/Box;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #133                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokestatic  #173                // Method $anonfun$chain$2:(Lexternalprefix/Calls;I)Lexternalprefix/Box;
+       8: areturn
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    descriptor: (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokedynamic #185,  0            // InvokeDynamic #5:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}
+Compiled from "Calls.scala"
+public final class externalprefix.Box<A> {
+  private final A value;
+    descriptor: Ljava/lang/Object;
+
+  public A value();
+    descriptor: ()Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field value:Ljava/lang/Object;
+       4: areturn
+
+  public <B> externalprefix.Box<B> map(scala.Function1<A, B>);
+    descriptor: (Lscala/Function1;)Lexternalprefix/Box;
+    Code:
+       0: ldc           #23                 // String map
+       2: invokestatic  #29                 // Method externalprefix/Native.note:(Ljava/lang/String;)V
+       5: new           #2                  // class externalprefix/Box
+       8: dup
+       9: aload_1
+      10: aload_0
+      11: invokevirtual #31                 // Method value:()Ljava/lang/Object;
+      14: invokeinterface #37,  2           // InterfaceMethod scala/Function1.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      19: invokespecial #41                 // Method "<init>":(Ljava/lang/Object;)V
+      22: areturn
+
+  public <B> externalprefix.Box<B> flatMap(scala.Function1<A, externalprefix.Box<B>>);
+    descriptor: (Lscala/Function1;)Lexternalprefix/Box;
+    Code:
+       0: ldc           #45                 // String flatMap
+       2: invokestatic  #29                 // Method externalprefix/Native.note:(Ljava/lang/String;)V
+       5: aload_1
+       6: aload_0
+       7: invokevirtual #31                 // Method value:()Ljava/lang/Object;
+      10: invokeinterface #37,  2           // InterfaceMethod scala/Function1.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      15: checkcast     #2                  // class externalprefix/Box
+      18: areturn
+
+  public externalprefix.Box(A);
+    descriptor: (Ljava/lang/Object;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #16                 // Field value:Ljava/lang/Object;
+       5: aload_0
+       6: invokespecial #49                 // Method java/lang/Object."<init>":()V
+       9: return
+}

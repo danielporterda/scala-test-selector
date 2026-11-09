@@ -1,0 +1,1561 @@
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/Active.class
+  Last modified Nov 7, 2026; size 895 bytes
+  SHA-256 checksum 8aa4404f478f7780dfd0aa11dc4cdc3c507ffd14d97596e8ae6c31050566a490
+  Compiled from "Allocations.scala"
+public final class anonymouscase.Active
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/Active
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 5
+Constant pool:
+   #1 = Utf8               anonymouscase/Active
+   #2 = Class              #1             // anonymouscase/Active
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               \u0006\u0005q1A\u0001B\u0003\u0003\u0011!)q\u0002\u0001C\u0001!!91\u0003\u0001b\u0001\n\u0003!\u0002B\u0002\r\u0001A\u0003%QC\u0001\u0004BGRLg/\u001a\u0006\u0002\r\u0005i\u0011M\\8os6|Wo]2bg\u0016\u001c\u0001a\u0005\u0002\u0001\u0013A\u0011!\"D\u0007\u0002\u0017)\tA\"A\u0003tG\u0006d\u0017-\u0003\u0002\u000f\u0017\t1\u0011I\\=SK\u001a\fa\u0001P5oSRtD#A\t\u0011\u0005I\u0001Q\"A\u0003\u0002\u0013\u0005dGn\\2bi\u0016$W#A\u000b\u0013\u0007YI\u0011D\u0002\u0003\u0018\u0007\u0001)\"\u0001\u0004\u001fsK\u001aLg.Z7f]Rt\u0014AC1mY>\u001c\u0017\r^3eAA\u0011!CG\u0005\u00037\u0015\u0011a\u0001U1sK:$\b
+   #9 = Utf8               anonymouscase/Active$$anon$1
+  #10 = Class              #9             // anonymouscase/Active$$anon$1
+  #11 = Utf8               allocated
+  #12 = Utf8               Lanonymouscase/Parent;
+  #13 = Utf8               ()Lanonymouscase/Parent;
+  #14 = NameAndType        #11:#12        // allocated:Lanonymouscase/Parent;
+  #15 = Fieldref           #2.#14         // anonymouscase/Active.allocated:Lanonymouscase/Parent;
+  #16 = Utf8               this
+  #17 = Utf8               Lanonymouscase/Active;
+  #18 = Utf8               <init>
+  #19 = Utf8               ()V
+  #20 = NameAndType        #18:#19        // "<init>":()V
+  #21 = Methodref          #4.#20         // java/lang/Object."<init>":()V
+  #22 = Utf8               (Lanonymouscase/Active;)V
+  #23 = NameAndType        #18:#22        // "<init>":(Lanonymouscase/Active;)V
+  #24 = Methodref          #10.#23        // anonymouscase/Active$$anon$1."<init>":(Lanonymouscase/Active;)V
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               LocalVariableTable
+  #28 = Utf8               InnerClasses
+  #29 = Utf8               SourceFile
+  #30 = Utf8               RuntimeVisibleAnnotations
+  #31 = Utf8               ScalaInlineInfo
+  #32 = Utf8               ScalaSig
+{
+  private final anonymouscase.Parent allocated;
+    descriptor: Lanonymouscase/Parent;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  public anonymouscase.Parent allocated();
+    descriptor: ()Lanonymouscase/Parent;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #15                 // Field allocated:Lanonymouscase/Parent;
+         4: areturn
+      LineNumberTable:
+        line 16: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/Active;
+
+  public anonymouscase.Active();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #10                 // class anonymouscase/Active$$anon$1
+         8: dup
+         9: aconst_null
+        10: invokespecial #24                 // Method anonymouscase/Active$$anon$1."<init>":(Lanonymouscase/Active;)V
+        13: putfield      #15                 // Field allocated:Lanonymouscase/Parent;
+        16: return
+      LineNumberTable:
+        line 15: 0
+        line 16: 4
+        line 15: 16
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   Lanonymouscase/Active;
+}
+InnerClasses:
+  public final #10;                       // class anonymouscase/Active$$anon$1
+SourceFile: "Allocations.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+    scala.reflect.ScalaSignature(
+      bytes="\u0006\u0005q1A\u0001B\u0003\u0003\u0011!)q\u0002\u0001C\u0001!!91\u0003\u0001b\u0001\n\u0003!\u0002B\u0002\r\u0001A\u0003%QC\u0001\u0004BGRLg/\u001a\u0006\u0002\r\u0005i\u0011M\\8os6|Wo]2bg\u0016\u001c\u0001a\u0005\u0002\u0001\u0013A\u0011!\"D\u0007\u0002\u0017)\tA\"A\u0003tG\u0006d\u0017-\u0003\u0002\u000f\u0017\t1\u0011I\\=SK\u001a\fa\u0001P5oSRtD#A\t\u0011\u0005I\u0001Q\"A\u0003\u0002\u0013\u0005dGn\\2bi\u0016$W#A\u000b\u0013\u0007YI\u0011D\u0002\u0003\u0018\u0007\u0001)\"\u0001\u0004\u001fsK\u001aLg.Z7f]Rt\u0014AC1mY>\u001c\u0017\r^3eAA\u0011!CG\u0005\u00037\u0015\u0011a\u0001U1sK:$\b"
+    )
+  ScalaInlineInfo: length = 0xE (unknown attribute)
+   01 01 00 02 00 12 00 13 01 00 0B 00 0D 01
+  ScalaSig: length = 0x3 (unknown attribute)
+   05 02 00
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/Active$$anon$1.class
+  Last modified Nov 7, 2026; size 697 bytes
+  SHA-256 checksum 53fdcf2603d2f4438f8ecdddc81a2aa83cae5925b5740f12c5f35e6fcc4ade26
+  Compiled from "Allocations.scala"
+public final class anonymouscase.Active$$anon$1 implements anonymouscase.Parent
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/Active$$anon$1
+  super_class: #4                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 2, attributes: 5
+Constant pool:
+   #1 = Utf8               anonymouscase/Active$$anon$1
+   #2 = Class              #1             // anonymouscase/Active$$anon$1
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               anonymouscase/Parent
+   #6 = Class              #5             // anonymouscase/Parent
+   #7 = Utf8               Allocations.scala
+   #8 = Utf8               anonymouscase/Active
+   #9 = Class              #8             // anonymouscase/Active
+  #10 = Utf8               work
+  #11 = Utf8               ()V
+  #12 = Utf8               work$
+  #13 = Utf8               (Lanonymouscase/Parent;)V
+  #14 = NameAndType        #12:#13        // work$:(Lanonymouscase/Parent;)V
+  #15 = InterfaceMethodref #6.#14         // anonymouscase/Parent.work$:(Lanonymouscase/Parent;)V
+  #16 = Utf8               this
+  #17 = Utf8               Lanonymouscase/Active$$anon$1;
+  #18 = Utf8               <init>
+  #19 = Utf8               (Lanonymouscase/Active;)V
+  #20 = Utf8               $outer
+  #21 = NameAndType        #18:#11        // "<init>":()V
+  #22 = Methodref          #4.#21         // java/lang/Object."<init>":()V
+  #23 = Utf8               $init$
+  #24 = NameAndType        #23:#13        // $init$:(Lanonymouscase/Parent;)V
+  #25 = InterfaceMethodref #6.#24         // anonymouscase/Parent.$init$:(Lanonymouscase/Parent;)V
+  #26 = Utf8               Lanonymouscase/Active;
+  #27 = Utf8               Code
+  #28 = Utf8               LineNumberTable
+  #29 = Utf8               LocalVariableTable
+  #30 = Utf8               MethodParameters
+  #31 = Utf8               InnerClasses
+  #32 = Utf8               EnclosingMethod
+  #33 = Utf8               SourceFile
+  #34 = Utf8               ScalaInlineInfo
+  #35 = Utf8               Scala
+{
+  public void work();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #15                 // InterfaceMethod anonymouscase/Parent.work$:(Lanonymouscase/Parent;)V
+         4: return
+      LineNumberTable:
+        line 16: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/Active$$anon$1;
+
+  public anonymouscase.Active$$anon$1(anonymouscase.Active);
+    descriptor: (Lanonymouscase/Active;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #22                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: invokestatic  #25                 // InterfaceMethod anonymouscase/Parent.$init$:(Lanonymouscase/Parent;)V
+         8: return
+      LineNumberTable:
+        line 16: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lanonymouscase/Active$$anon$1;
+            0       9     1 $outer   Lanonymouscase/Active;
+    MethodParameters:
+      Name                           Flags
+      $outer                         final synthetic
+}
+InnerClasses:
+  public final #2;                        // class anonymouscase/Active$$anon$1
+EnclosingMethod: #9.#0                  // anonymouscase.Active
+SourceFile: "Allocations.scala"
+  ScalaInlineInfo: length = 0xE (unknown attribute)
+   01 01 00 02 00 12 00 13 01 00 0A 00 0B 01
+  Scala: length = 0x0 (unknown attribute)
+
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/BodyActive.class
+  Last modified Nov 7, 2026; size 916 bytes
+  SHA-256 checksum 8e7f9f9439b393f0c481209f3852d4ee15c2b50557ac784f32f93f98120db6d0
+  Compiled from "Allocations.scala"
+public final class anonymouscase.BodyActive
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/BodyActive
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 5
+Constant pool:
+   #1 = Utf8               anonymouscase/BodyActive
+   #2 = Class              #1             // anonymouscase/BodyActive
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               \u0006\u0005q1A\u0001B\u0003\u0003\u0011!)q\u0002\u0001C\u0001!!91\u0003\u0001b\u0001\n\u0003!\u0002B\u0002\r\u0001A\u0003%QC\u0001\u0006C_\u0012L\u0018i\u0019;jm\u0016T\u0011AB\u0001\u000eC:|g._7pkN\u001c\u0017m]3\u0004\u0001M\u0011\u0001!\u0003\t\u0003\u00155i\u0011a\u0003\u0006\u0002\u0019\u0005)1oY1mC&\u0011ab\u0003\u0002\u0007\u0003:L(+\u001a4\u0002\rqJg.\u001b;?)\u0005\t\u0002C\u0001\n\u0001\u001b\u0005)\u0011!C1mY>\u001c\u0017\r^3e+\u0005)\"c\u0001\f\n3\u0019!qc\u0001\u0001\u0016\u00051a$/\u001a4j]\u0016lWM\u001c;?\u0003)\tG\u000e\\8dCR,G\r\t\t\u0003%iI!aG\u0003\u0003\rA\u000b\'/\u001a8u\u0001
+   #9 = Utf8               anonymouscase/BodyActive$$anon$3
+  #10 = Class              #9             // anonymouscase/BodyActive$$anon$3
+  #11 = Utf8               allocated
+  #12 = Utf8               Lanonymouscase/Parent;
+  #13 = Utf8               ()Lanonymouscase/Parent;
+  #14 = NameAndType        #11:#12        // allocated:Lanonymouscase/Parent;
+  #15 = Fieldref           #2.#14         // anonymouscase/BodyActive.allocated:Lanonymouscase/Parent;
+  #16 = Utf8               this
+  #17 = Utf8               Lanonymouscase/BodyActive;
+  #18 = Utf8               <init>
+  #19 = Utf8               ()V
+  #20 = NameAndType        #18:#19        // "<init>":()V
+  #21 = Methodref          #4.#20         // java/lang/Object."<init>":()V
+  #22 = Utf8               (Lanonymouscase/BodyActive;)V
+  #23 = NameAndType        #18:#22        // "<init>":(Lanonymouscase/BodyActive;)V
+  #24 = Methodref          #10.#23        // anonymouscase/BodyActive$$anon$3."<init>":(Lanonymouscase/BodyActive;)V
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               LocalVariableTable
+  #28 = Utf8               InnerClasses
+  #29 = Utf8               SourceFile
+  #30 = Utf8               RuntimeVisibleAnnotations
+  #31 = Utf8               ScalaInlineInfo
+  #32 = Utf8               ScalaSig
+{
+  private final anonymouscase.Parent allocated;
+    descriptor: Lanonymouscase/Parent;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  public anonymouscase.Parent allocated();
+    descriptor: ()Lanonymouscase/Parent;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #15                 // Field allocated:Lanonymouscase/Parent;
+         4: areturn
+      LineNumberTable:
+        line 23: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/BodyActive;
+
+  public anonymouscase.BodyActive();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #10                 // class anonymouscase/BodyActive$$anon$3
+         8: dup
+         9: aconst_null
+        10: invokespecial #24                 // Method anonymouscase/BodyActive$$anon$3."<init>":(Lanonymouscase/BodyActive;)V
+        13: putfield      #15                 // Field allocated:Lanonymouscase/Parent;
+        16: return
+      LineNumberTable:
+        line 22: 0
+        line 23: 4
+        line 22: 16
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   Lanonymouscase/BodyActive;
+}
+InnerClasses:
+  public final #10;                       // class anonymouscase/BodyActive$$anon$3
+SourceFile: "Allocations.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+    scala.reflect.ScalaSignature(
+      bytes="\u0006\u0005q1A\u0001B\u0003\u0003\u0011!)q\u0002\u0001C\u0001!!91\u0003\u0001b\u0001\n\u0003!\u0002B\u0002\r\u0001A\u0003%QC\u0001\u0006C_\u0012L\u0018i\u0019;jm\u0016T\u0011AB\u0001\u000eC:|g._7pkN\u001c\u0017m]3\u0004\u0001M\u0011\u0001!\u0003\t\u0003\u00155i\u0011a\u0003\u0006\u0002\u0019\u0005)1oY1mC&\u0011ab\u0003\u0002\u0007\u0003:L(+\u001a4\u0002\rqJg.\u001b;?)\u0005\t\u0002C\u0001\n\u0001\u001b\u0005)\u0011!C1mY>\u001c\u0017\r^3e+\u0005)\"c\u0001\f\n3\u0019!qc\u0001\u0001\u0016\u00051a$/\u001a4j]\u0016lWM\u001c;?\u0003)\tG\u000e\\8dCR,G\r\t\t\u0003%iI!aG\u0003\u0003\rA\u000b\'/\u001a8u\u0001"
+    )
+  ScalaInlineInfo: length = 0xE (unknown attribute)
+   01 01 00 02 00 12 00 13 01 00 0B 00 0D 01
+  ScalaSig: length = 0x3 (unknown attribute)
+   05 02 00
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/BodyActive$$anon$3.class
+  Last modified Nov 7, 2026; size 851 bytes
+  SHA-256 checksum 58729ccde8c1ea126a804094cae081e10fb2f7bd2f72a855951b16422e39a889
+  Compiled from "Allocations.scala"
+public final class anonymouscase.BodyActive$$anon$3 implements anonymouscase.Parent
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/BodyActive$$anon$3
+  super_class: #4                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 2, attributes: 5
+Constant pool:
+   #1 = Utf8               anonymouscase/BodyActive$$anon$3
+   #2 = Class              #1             // anonymouscase/BodyActive$$anon$3
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               anonymouscase/Parent
+   #6 = Class              #5             // anonymouscase/Parent
+   #7 = Utf8               Allocations.scala
+   #8 = Utf8               anonymouscase/BodyActive
+   #9 = Class              #8             // anonymouscase/BodyActive
+  #10 = Utf8               work
+  #11 = Utf8               ()V
+  #12 = Utf8               work$
+  #13 = Utf8               (Lanonymouscase/Parent;)V
+  #14 = NameAndType        #12:#13        // work$:(Lanonymouscase/Parent;)V
+  #15 = InterfaceMethodref #6.#14         // anonymouscase/Parent.work$:(Lanonymouscase/Parent;)V
+  #16 = Utf8               this
+  #17 = Utf8               Lanonymouscase/BodyActive$$anon$3;
+  #18 = Utf8               <init>
+  #19 = Utf8               (Lanonymouscase/BodyActive;)V
+  #20 = Utf8               $outer
+  #21 = NameAndType        #18:#11        // "<init>":()V
+  #22 = Methodref          #4.#21         // java/lang/Object."<init>":()V
+  #23 = Utf8               $init$
+  #24 = NameAndType        #23:#13        // $init$:(Lanonymouscase/Parent;)V
+  #25 = InterfaceMethodref #6.#24         // anonymouscase/Parent.$init$:(Lanonymouscase/Parent;)V
+  #26 = Utf8               anonymouscase/Effects$
+  #27 = Class              #26            // anonymouscase/Effects$
+  #28 = Utf8               MODULE$
+  #29 = Utf8               Lanonymouscase/Effects$;
+  #30 = NameAndType        #28:#29        // MODULE$:Lanonymouscase/Effects$;
+  #31 = Fieldref           #27.#30        // anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+  #32 = Utf8               body
+  #33 = String             #32            // body
+  #34 = Utf8               note
+  #35 = Utf8               (Ljava/lang/String;)V
+  #36 = NameAndType        #34:#35        // note:(Ljava/lang/String;)V
+  #37 = Methodref          #27.#36        // anonymouscase/Effects$.note:(Ljava/lang/String;)V
+  #38 = Utf8               Lanonymouscase/BodyActive;
+  #39 = Utf8               Code
+  #40 = Utf8               LineNumberTable
+  #41 = Utf8               LocalVariableTable
+  #42 = Utf8               MethodParameters
+  #43 = Utf8               InnerClasses
+  #44 = Utf8               EnclosingMethod
+  #45 = Utf8               SourceFile
+  #46 = Utf8               ScalaInlineInfo
+  #47 = Utf8               Scala
+{
+  public void work();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #15                 // InterfaceMethod anonymouscase/Parent.work$:(Lanonymouscase/Parent;)V
+         4: return
+      LineNumberTable:
+        line 23: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/BodyActive$$anon$3;
+
+  public anonymouscase.BodyActive$$anon$3(anonymouscase.BodyActive);
+    descriptor: (Lanonymouscase/BodyActive;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #22                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: invokestatic  #25                 // InterfaceMethod anonymouscase/Parent.$init$:(Lanonymouscase/Parent;)V
+         8: getstatic     #31                 // Field anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+        11: ldc           #33                 // String body
+        13: invokevirtual #37                 // Method anonymouscase/Effects$.note:(Ljava/lang/String;)V
+        16: return
+      LineNumberTable:
+        line 23: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   Lanonymouscase/BodyActive$$anon$3;
+            0      17     1 $outer   Lanonymouscase/BodyActive;
+    MethodParameters:
+      Name                           Flags
+      $outer                         final synthetic
+}
+InnerClasses:
+  public final #2;                        // class anonymouscase/BodyActive$$anon$3
+EnclosingMethod: #9.#0                  // anonymouscase.BodyActive
+SourceFile: "Allocations.scala"
+  ScalaInlineInfo: length = 0xE (unknown attribute)
+   01 01 00 02 00 12 00 13 01 00 0A 00 0B 01
+  Scala: length = 0x0 (unknown attribute)
+
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/ClassActive.class
+  Last modified Nov 7, 2026; size 1157 bytes
+  SHA-256 checksum 132555caa09d46c62a4fe557b3da5c2d410d6c2a5205ae41e1b647606a21a679
+  Compiled from "Allocations.scala"
+public final class anonymouscase.ClassActive
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/ClassActive
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 3, attributes: 5
+Constant pool:
+   #1 = Utf8               anonymouscase/ClassActive
+   #2 = Class              #1             // anonymouscase/ClassActive
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               \u0006\u0005}1A!\u0002\u0004\u0003\u0013!)\u0001\u0003\u0001C\u0001#!)A\u0003\u0001C\u0001+!9\u0011\u0004\u0001b\u0001\n\u0003Q\u0002B\u0002\u0010\u0001A\u0003%1DA\u0006DY\u0006\u001c8/Q2uSZ,\'\"A\u0004\u0002\u001b\u0005twN\\=n_V\u001c8-Y:f\u0007\u0001\u0019\"\u0001\u0001\u0006\u0011\u0005-qQ\"\u0001\u0007\u000b\u00035\tQa]2bY\u0006L!a\u0004\u0007\u0003\r\u0005s\u0017PU3g\u0003\u0019a\u0014N\\5u}Q\t!\u0003\u0005\u0002\u0014\u00015\ta!A\u0005fM\u001a,7\r^!sOR\ta\u0003\u0005\u0002\f/%\u0011\u0001\u0004\u0004\u0002\u0004\u0013:$\u0018!C1mY>\u001c\u0017\r^3e+\u0005Y\u0002CA\n\u001d\u0013\tibA\u0001\u0005XSRD7\t^8s\u0003)\tG\u000e\\8dCR,G\r\t
+   #9 = Utf8               anonymouscase/ClassActive$$anon$2
+  #10 = Class              #9             // anonymouscase/ClassActive$$anon$2
+  #11 = Utf8               allocated
+  #12 = Utf8               Lanonymouscase/WithCtor;
+  #13 = Utf8               effectArg
+  #14 = Utf8               ()I
+  #15 = Utf8               anonymouscase/Effects$
+  #16 = Class              #15            // anonymouscase/Effects$
+  #17 = Utf8               MODULE$
+  #18 = Utf8               Lanonymouscase/Effects$;
+  #19 = NameAndType        #17:#18        // MODULE$:Lanonymouscase/Effects$;
+  #20 = Fieldref           #16.#19        // anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+  #21 = Utf8               argument
+  #22 = String             #21            // argument
+  #23 = Utf8               note
+  #24 = Utf8               (Ljava/lang/String;)V
+  #25 = NameAndType        #23:#24        // note:(Ljava/lang/String;)V
+  #26 = Methodref          #16.#25        // anonymouscase/Effects$.note:(Ljava/lang/String;)V
+  #27 = Utf8               this
+  #28 = Utf8               Lanonymouscase/ClassActive;
+  #29 = Utf8               ()Lanonymouscase/WithCtor;
+  #30 = NameAndType        #11:#12        // allocated:Lanonymouscase/WithCtor;
+  #31 = Fieldref           #2.#30         // anonymouscase/ClassActive.allocated:Lanonymouscase/WithCtor;
+  #32 = Utf8               <init>
+  #33 = Utf8               ()V
+  #34 = NameAndType        #32:#33        // "<init>":()V
+  #35 = Methodref          #4.#34         // java/lang/Object."<init>":()V
+  #36 = Utf8               (Lanonymouscase/ClassActive;)V
+  #37 = NameAndType        #32:#36        // "<init>":(Lanonymouscase/ClassActive;)V
+  #38 = Methodref          #10.#37        // anonymouscase/ClassActive$$anon$2."<init>":(Lanonymouscase/ClassActive;)V
+  #39 = Utf8               Code
+  #40 = Utf8               LineNumberTable
+  #41 = Utf8               LocalVariableTable
+  #42 = Utf8               InnerClasses
+  #43 = Utf8               SourceFile
+  #44 = Utf8               RuntimeVisibleAnnotations
+  #45 = Utf8               ScalaInlineInfo
+  #46 = Utf8               ScalaSig
+{
+  private final anonymouscase.WithCtor allocated;
+    descriptor: Lanonymouscase/WithCtor;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  public int effectArg();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #20                 // Field anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+         3: ldc           #22                 // String argument
+         5: invokevirtual #26                 // Method anonymouscase/Effects$.note:(Ljava/lang/String;)V
+         8: bipush        7
+        10: ireturn
+      LineNumberTable:
+        line 19: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0  this   Lanonymouscase/ClassActive;
+
+  public anonymouscase.WithCtor allocated();
+    descriptor: ()Lanonymouscase/WithCtor;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #31                 // Field allocated:Lanonymouscase/WithCtor;
+         4: areturn
+      LineNumberTable:
+        line 20: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/ClassActive;
+
+  public anonymouscase.ClassActive();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #35                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #10                 // class anonymouscase/ClassActive$$anon$2
+         8: dup
+         9: aload_0
+        10: invokespecial #38                 // Method anonymouscase/ClassActive$$anon$2."<init>":(Lanonymouscase/ClassActive;)V
+        13: putfield      #31                 // Field allocated:Lanonymouscase/WithCtor;
+        16: return
+      LineNumberTable:
+        line 18: 0
+        line 20: 4
+        line 18: 16
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   Lanonymouscase/ClassActive;
+}
+InnerClasses:
+  public final #10;                       // class anonymouscase/ClassActive$$anon$2
+SourceFile: "Allocations.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+    scala.reflect.ScalaSignature(
+      bytes="\u0006\u0005}1A!\u0002\u0004\u0003\u0013!)\u0001\u0003\u0001C\u0001#!)A\u0003\u0001C\u0001+!9\u0011\u0004\u0001b\u0001\n\u0003Q\u0002B\u0002\u0010\u0001A\u0003%1DA\u0006DY\u0006\u001c8/Q2uSZ,\'\"A\u0004\u0002\u001b\u0005twN\\=n_V\u001c8-Y:f\u0007\u0001\u0019\"\u0001\u0001\u0006\u0011\u0005-qQ\"\u0001\u0007\u000b\u00035\tQa]2bY\u0006L!a\u0004\u0007\u0003\r\u0005s\u0017PU3g\u0003\u0019a\u0014N\\5u}Q\t!\u0003\u0005\u0002\u0014\u00015\ta!A\u0005fM\u001a,7\r^!sOR\ta\u0003\u0005\u0002\f/%\u0011\u0001\u0004\u0004\u0002\u0004\u0013:$\u0018!C1mY>\u001c\u0017\r^3e+\u0005Y\u0002CA\n\u001d\u0013\tibA\u0001\u0005XSRD7\t^8s\u0003)\tG\u000e\\8dCR,G\r\t"
+    )
+  ScalaInlineInfo: length = 0x13 (unknown attribute)
+   01 01 00 03 00 20 00 21 01 00 0B 00 1D 01 00 0D
+   00 0E 01
+  ScalaSig: length = 0x3 (unknown attribute)
+   05 02 00
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/ClassActive$$anon$2.class
+  Last modified Nov 7, 2026; size 591 bytes
+  SHA-256 checksum f9fb822a518d71c5e89bce08ddf656f2be856394c4f702a3d747cbd990cabf48
+  Compiled from "Allocations.scala"
+public final class anonymouscase.ClassActive$$anon$2 extends anonymouscase.WithCtor
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/ClassActive$$anon$2
+  super_class: #4                         // anonymouscase/WithCtor
+  interfaces: 0, fields: 0, methods: 1, attributes: 5
+Constant pool:
+   #1 = Utf8               anonymouscase/ClassActive$$anon$2
+   #2 = Class              #1             // anonymouscase/ClassActive$$anon$2
+   #3 = Utf8               anonymouscase/WithCtor
+   #4 = Class              #3             // anonymouscase/WithCtor
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               anonymouscase/ClassActive
+   #7 = Class              #6             // anonymouscase/ClassActive
+   #8 = Utf8               <init>
+   #9 = Utf8               (Lanonymouscase/ClassActive;)V
+  #10 = Utf8               $outer
+  #11 = Utf8               effectArg
+  #12 = Utf8               ()I
+  #13 = NameAndType        #11:#12        // effectArg:()I
+  #14 = Methodref          #7.#13         // anonymouscase/ClassActive.effectArg:()I
+  #15 = Utf8               (I)V
+  #16 = NameAndType        #8:#15         // "<init>":(I)V
+  #17 = Methodref          #4.#16         // anonymouscase/WithCtor."<init>":(I)V
+  #18 = Utf8               this
+  #19 = Utf8               Lanonymouscase/ClassActive$$anon$2;
+  #20 = Utf8               Lanonymouscase/ClassActive;
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               LocalVariableTable
+  #24 = Utf8               MethodParameters
+  #25 = Utf8               InnerClasses
+  #26 = Utf8               EnclosingMethod
+  #27 = Utf8               SourceFile
+  #28 = Utf8               ScalaInlineInfo
+  #29 = Utf8               Scala
+{
+  public anonymouscase.ClassActive$$anon$2(anonymouscase.ClassActive);
+    descriptor: (Lanonymouscase/ClassActive;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: invokevirtual #14                 // Method anonymouscase/ClassActive.effectArg:()I
+         5: invokespecial #17                 // Method anonymouscase/WithCtor."<init>":(I)V
+         8: return
+      LineNumberTable:
+        line 20: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lanonymouscase/ClassActive$$anon$2;
+            0       9     1 $outer   Lanonymouscase/ClassActive;
+    MethodParameters:
+      Name                           Flags
+      $outer                         final synthetic
+}
+InnerClasses:
+  public final #2;                        // class anonymouscase/ClassActive$$anon$2
+EnclosingMethod: #7.#0                  // anonymouscase.ClassActive
+SourceFile: "Allocations.scala"
+  ScalaInlineInfo: length = 0x9 (unknown attribute)
+   01 01 00 01 00 08 00 09 01
+  Scala: length = 0x0 (unknown attribute)
+
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/Dormant.class
+  Last modified Nov 7, 2026; size 1917 bytes
+  SHA-256 checksum d6fab516f07537506d7cfdefb9a095f536e17da13257971377b3913b010c2d8c
+  Compiled from "Allocations.scala"
+public final class anonymouscase.Dormant
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/Dormant
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 4, attributes: 6
+Constant pool:
+   #1 = Utf8               anonymouscase/Dormant
+   #2 = Class              #1             // anonymouscase/Dormant
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               \u0006\u0005\t2A\u0001B\u0003\u0003\u0011!)q\u0002\u0001C\u0001!!91\u0003\u0001b\u0001\n\u0003!\u0002BB\u000f\u0001A\u0003%QCA\u0004E_Jl\u0017M\u001c;\u000b\u0003\u0019\tQ\"\u00198p]flw.^:dCN,7\u0001A\n\u0003\u0001%\u0001\"AC\u0007\u000e\u0003-Q\u0011\u0001D\u0001\u0006g\u000e\fG.Y\u0005\u0003\u001d-\u0011a!\u00118z%\u00164\u0017A\u0002\u001fj]&$h\bF\u0001\u0012!\t\u0011\u0002!D\u0001\u0006\u0003\u0015a\u0017\r^3s+\u0005)\u0002c\u0001\u0006\u00171%\u0011qc\u0003\u0002\n\rVt7\r^5p]B\u00122!G\u0005 \r\u0011Q2\u0004\u0001\r\u0003\u0019q\u0012XMZ5oK6,g\u000e\u001e \t\u000fq\u0019\u0011\u0011!A\u0001=\u0005AA%\u00198p]\u001a,h.\u0001\u0004mCR,\'\u000fI\u0006\u0001!\t\u0011\u0002%\u0003\u0002\"\u000b\t1\u0001+\u0019:f]R\u0004
+   #9 = Utf8               anonymouscase/Dormant$$anon$4
+  #10 = Class              #9             // anonymouscase/Dormant$$anon$4
+  #11 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #12 = Class              #11            // java/lang/invoke/MethodHandles$Lookup
+  #13 = Utf8               java/lang/invoke/MethodHandles
+  #14 = Class              #13            // java/lang/invoke/MethodHandles
+  #15 = Utf8               Lookup
+  #16 = Utf8               later
+  #17 = Utf8               Lscala/Function0;
+  #18 = Utf8               Lscala/Function0<Lanonymouscase/Parent;>;
+  #19 = Utf8               ()Lscala/Function0;
+  #20 = Utf8               ()Lscala/Function0<Lanonymouscase/Parent;>;
+  #21 = NameAndType        #16:#17        // later:Lscala/Function0;
+  #22 = Fieldref           #2.#21         // anonymouscase/Dormant.later:Lscala/Function0;
+  #23 = Utf8               this
+  #24 = Utf8               Lanonymouscase/Dormant;
+  #25 = Utf8               $anonfun$later$1
+  #26 = Utf8               ()Lanonymouscase/Parent;
+  #27 = Utf8               <init>
+  #28 = Utf8               (Lanonymouscase/Dormant;)V
+  #29 = NameAndType        #27:#28        // "<init>":(Lanonymouscase/Dormant;)V
+  #30 = Methodref          #10.#29        // anonymouscase/Dormant$$anon$4."<init>":(Lanonymouscase/Dormant;)V
+  #31 = Utf8               ()V
+  #32 = NameAndType        #27:#31        // "<init>":()V
+  #33 = Methodref          #4.#32         // java/lang/Object."<init>":()V
+  #34 = Utf8               ()Ljava/lang/Object;
+  #35 = MethodType         #34            //  ()Ljava/lang/Object;
+  #36 = NameAndType        #25:#26        // $anonfun$later$1:()Lanonymouscase/Parent;
+  #37 = Methodref          #2.#36         // anonymouscase/Dormant.$anonfun$later$1:()Lanonymouscase/Parent;
+  #38 = MethodHandle       6:#37          // REF_invokeStatic anonymouscase/Dormant.$anonfun$later$1:()Lanonymouscase/Parent;
+  #39 = MethodType         #26            //  ()Lanonymouscase/Parent;
+  #40 = Integer            5
+  #41 = Integer            1
+  #42 = Utf8               java/lang/invoke/LambdaMetafactory
+  #43 = Class              #42            // java/lang/invoke/LambdaMetafactory
+  #44 = Utf8               altMetafactory
+  #45 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #46 = NameAndType        #44:#45        // altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #47 = Methodref          #43.#46        // java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #48 = MethodHandle       6:#47          // REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #49 = Utf8               apply
+  #50 = NameAndType        #49:#19        // apply:()Lscala/Function0;
+  #51 = InvokeDynamic      #0:#50         // #0:apply:()Lscala/Function0;
+  #52 = Utf8               $deserializeLambda$
+  #53 = Utf8               (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #54 = Utf8               scala/runtime/LambdaDeserialize
+  #55 = Class              #54            // scala/runtime/LambdaDeserialize
+  #56 = Utf8               bootstrap
+  #57 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #58 = NameAndType        #56:#57        // bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #59 = Methodref          #55.#58        // scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #60 = MethodHandle       6:#59          // REF_invokeStatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+  #61 = Utf8               lambdaDeserialize
+  #62 = NameAndType        #61:#53        // lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #63 = InvokeDynamic      #1:#62         // #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+  #64 = Utf8               Signature
+  #65 = Utf8               Code
+  #66 = Utf8               LineNumberTable
+  #67 = Utf8               LocalVariableTable
+  #68 = Utf8               InnerClasses
+  #69 = Utf8               SourceFile
+  #70 = Utf8               RuntimeVisibleAnnotations
+  #71 = Utf8               BootstrapMethods
+  #72 = Utf8               ScalaInlineInfo
+  #73 = Utf8               ScalaSig
+{
+  private final scala.Function0<anonymouscase.Parent> later;
+    descriptor: Lscala/Function0;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #18                          // Lscala/Function0<Lanonymouscase/Parent;>;
+
+  public scala.Function0<anonymouscase.Parent> later();
+    descriptor: ()Lscala/Function0;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #22                 // Field later:Lscala/Function0;
+         4: areturn
+      LineNumberTable:
+        line 26: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/Dormant;
+    Signature: #20                          // ()Lscala/Function0<Lanonymouscase/Parent;>;
+
+  public static final anonymouscase.Parent $anonfun$later$1();
+    descriptor: ()Lanonymouscase/Parent;
+    flags: (0x1019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=0, args_size=0
+         0: new           #10                 // class anonymouscase/Dormant$$anon$4
+         3: dup
+         4: aconst_null
+         5: invokespecial #30                 // Method anonymouscase/Dormant$$anon$4."<init>":(Lanonymouscase/Dormant;)V
+         8: areturn
+      LineNumberTable:
+        line 26: 0
+
+  public anonymouscase.Dormant();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #33                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: invokedynamic #51,  0             // InvokeDynamic #0:apply:()Lscala/Function0;
+        10: putfield      #22                 // Field later:Lscala/Function0;
+        13: return
+      LineNumberTable:
+        line 25: 0
+        line 26: 4
+        line 25: 13
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      14     0  this   Lanonymouscase/Dormant;
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    descriptor: (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokedynamic #63,  0             // InvokeDynamic #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+         6: areturn
+}
+InnerClasses:
+  public final #10;                       // class anonymouscase/Dormant$$anon$4
+  public static final #15= #12 of #14;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+SourceFile: "Allocations.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+    scala.reflect.ScalaSignature(
+      bytes="\u0006\u0005\t2A\u0001B\u0003\u0003\u0011!)q\u0002\u0001C\u0001!!91\u0003\u0001b\u0001\n\u0003!\u0002BB\u000f\u0001A\u0003%QCA\u0004E_Jl\u0017M\u001c;\u000b\u0003\u0019\tQ\"\u00198p]flw.^:dCN,7\u0001A\n\u0003\u0001%\u0001\"AC\u0007\u000e\u0003-Q\u0011\u0001D\u0001\u0006g\u000e\fG.Y\u0005\u0003\u001d-\u0011a!\u00118z%\u00164\u0017A\u0002\u001fj]&$h\bF\u0001\u0012!\t\u0011\u0002!D\u0001\u0006\u0003\u0015a\u0017\r^3s+\u0005)\u0002c\u0001\u0006\u00171%\u0011qc\u0003\u0002\n\rVt7\r^5p]B\u00122!G\u0005 \r\u0011Q2\u0004\u0001\r\u0003\u0019q\u0012XMZ5oK6,g\u000e\u001e \t\u000fq\u0019\u0011\u0011!A\u0001=\u0005AA%\u00198p]\u001a,h.\u0001\u0004mCR,\'\u000fI\u0006\u0001!\t\u0011\u0002%\u0003\u0002\"\u000b\t1\u0001+\u0019:f]R\u0004"
+    )
+BootstrapMethods:
+  0: #48 REF_invokeStatic java/lang/invoke/LambdaMetafactory.altMetafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #35 ()Ljava/lang/Object;
+      #38 REF_invokeStatic anonymouscase/Dormant.$anonfun$later$1:()Lanonymouscase/Parent;
+      #39 ()Lanonymouscase/Parent;
+      #40 5
+      #41 1
+      #39 ()Lanonymouscase/Parent;
+  1: #60 REF_invokeStatic scala/runtime/LambdaDeserialize.bootstrap:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #38 REF_invokeStatic anonymouscase/Dormant.$anonfun$later$1:()Lanonymouscase/Parent;
+  ScalaInlineInfo: length = 0x13 (unknown attribute)
+   01 01 00 03 00 19 00 1A 01 00 1B 00 1F 01 00 10
+   00 13 01
+  ScalaSig: length = 0x3 (unknown attribute)
+   05 02 00
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/Dormant$$anon$4.class
+  Last modified Nov 7, 2026; size 702 bytes
+  SHA-256 checksum d3d20a6d742a8657fff2e0dae399d431cfdce97b03d06596fbda05458e205127
+  Compiled from "Allocations.scala"
+public final class anonymouscase.Dormant$$anon$4 implements anonymouscase.Parent
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/Dormant$$anon$4
+  super_class: #4                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 2, attributes: 5
+Constant pool:
+   #1 = Utf8               anonymouscase/Dormant$$anon$4
+   #2 = Class              #1             // anonymouscase/Dormant$$anon$4
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               anonymouscase/Parent
+   #6 = Class              #5             // anonymouscase/Parent
+   #7 = Utf8               Allocations.scala
+   #8 = Utf8               anonymouscase/Dormant
+   #9 = Class              #8             // anonymouscase/Dormant
+  #10 = Utf8               work
+  #11 = Utf8               ()V
+  #12 = Utf8               work$
+  #13 = Utf8               (Lanonymouscase/Parent;)V
+  #14 = NameAndType        #12:#13        // work$:(Lanonymouscase/Parent;)V
+  #15 = InterfaceMethodref #6.#14         // anonymouscase/Parent.work$:(Lanonymouscase/Parent;)V
+  #16 = Utf8               this
+  #17 = Utf8               Lanonymouscase/Dormant$$anon$4;
+  #18 = Utf8               <init>
+  #19 = Utf8               (Lanonymouscase/Dormant;)V
+  #20 = Utf8               $outer
+  #21 = NameAndType        #18:#11        // "<init>":()V
+  #22 = Methodref          #4.#21         // java/lang/Object."<init>":()V
+  #23 = Utf8               $init$
+  #24 = NameAndType        #23:#13        // $init$:(Lanonymouscase/Parent;)V
+  #25 = InterfaceMethodref #6.#24         // anonymouscase/Parent.$init$:(Lanonymouscase/Parent;)V
+  #26 = Utf8               Lanonymouscase/Dormant;
+  #27 = Utf8               Code
+  #28 = Utf8               LineNumberTable
+  #29 = Utf8               LocalVariableTable
+  #30 = Utf8               MethodParameters
+  #31 = Utf8               InnerClasses
+  #32 = Utf8               EnclosingMethod
+  #33 = Utf8               SourceFile
+  #34 = Utf8               ScalaInlineInfo
+  #35 = Utf8               Scala
+{
+  public void work();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #15                 // InterfaceMethod anonymouscase/Parent.work$:(Lanonymouscase/Parent;)V
+         4: return
+      LineNumberTable:
+        line 26: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/Dormant$$anon$4;
+
+  public anonymouscase.Dormant$$anon$4(anonymouscase.Dormant);
+    descriptor: (Lanonymouscase/Dormant;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #22                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: invokestatic  #25                 // InterfaceMethod anonymouscase/Parent.$init$:(Lanonymouscase/Parent;)V
+         8: return
+      LineNumberTable:
+        line 26: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lanonymouscase/Dormant$$anon$4;
+            0       9     1 $outer   Lanonymouscase/Dormant;
+    MethodParameters:
+      Name                           Flags
+      $outer                         final synthetic
+}
+InnerClasses:
+  public final #2;                        // class anonymouscase/Dormant$$anon$4
+EnclosingMethod: #9.#0                  // anonymouscase.Dormant
+SourceFile: "Allocations.scala"
+  ScalaInlineInfo: length = 0xE (unknown attribute)
+   01 01 00 02 00 12 00 13 01 00 0A 00 0B 01
+  Scala: length = 0x0 (unknown attribute)
+
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/Effects.class
+  Last modified Nov 7, 2026; size 958 bytes
+  SHA-256 checksum 4fcebf1abd911f76fcd0023e70caaa76314a19ee77c35fbe17355f7b2a313a70
+  Compiled from "Allocations.scala"
+public final class anonymouscase.Effects
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/Effects
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Utf8               anonymouscase/Effects
+   #2 = Class              #1             // anonymouscase/Effects
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               \u0006\u0005m:Q\u0001C\u0005\t\u000211QAD\u0005\t\u0002=AQAF\u0001\u0005\u0002]Aq\u0001G\u0001A\u0002\u0013%\u0011\u0004C\u0004.\u0003\u0001\u0007I\u0011\u0002\u0018\t\rQ\n\u0001\u0015)\u0003\u001b\u0011\u0015)\u0014\u0001\"\u00017\u0011\u0015I\u0014\u0001\"\u0001;\u0003\u001d)eMZ3diNT\u0011AC\u0001\u000eC:|g._7pkN\u001c\u0017m]3\u0004\u0001A\u0011Q\"A\u0007\u0002\u0013\t9QI\u001a4fGR\u001c8CA\u0001\u0011!\t\tB#D\u0001\u0013\u0015\u0005\u0019\u0012!B:dC2\f\u0017BA\u000b\u0013\u0005\u0019\te.\u001f*fM\u00061A(\u001b8jiz\"\u0012\u0001D\u0001\u0007KZ,g\u000e^:\u0016\u0003i\u00012a\u0007\u0011#\u001b\u0005a\"BA\u000f\u001f\u0003%IW.\\;uC\ndWM\u0003\u0002 %\u0005Q1m\u001c7mK\u000e$\u0018n\u001c8\n\u0005\u0005b\"\u0001\u0002\'jgR\u0004\"a\t\u0016\u000f\u0005\u0011B\u0003CA\u0013\u0013\u001b\u00051#BA\u0014\f\u0003\u0019a$o\\8u}%\u0011\u0011FE\u0001\u0007!J,G-\u001a4\n\u0005-b#AB*ue&twM\u0003\u0002*%\u0005QQM^3oiN|F%Z9\u0015\u0005=\u0012\u0004CA\t1\u0013\t\t$C\u0001\u0003V]&$\bbB\u001a\u0005\u0003\u0003\u0005\rAG\u0001\u0004q\u0012\n\u0014aB3wK:$8\u000fI\u0001\u0005]>$X\r\u0006\u00020o!)\u0001H\u0002a\u0001E\u0005)a/\u00197vK\u0006)AM]1j]R\t!\u0005
+   #9 = Utf8               drain
+  #10 = Utf8               ()Ljava/lang/String;
+  #11 = Utf8               anonymouscase/Effects$
+  #12 = Class              #11            // anonymouscase/Effects$
+  #13 = Utf8               MODULE$
+  #14 = Utf8               Lanonymouscase/Effects$;
+  #15 = NameAndType        #13:#14        // MODULE$:Lanonymouscase/Effects$;
+  #16 = Fieldref           #12.#15        // anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+  #17 = NameAndType        #9:#10         // drain:()Ljava/lang/String;
+  #18 = Methodref          #12.#17        // anonymouscase/Effects$.drain:()Ljava/lang/String;
+  #19 = Utf8               note
+  #20 = Utf8               (Ljava/lang/String;)V
+  #21 = Utf8               value
+  #22 = NameAndType        #19:#20        // note:(Ljava/lang/String;)V
+  #23 = Methodref          #12.#22        // anonymouscase/Effects$.note:(Ljava/lang/String;)V
+  #24 = Utf8               Ljava/lang/String;
+  #25 = Utf8               Code
+  #26 = Utf8               LocalVariableTable
+  #27 = Utf8               MethodParameters
+  #28 = Utf8               SourceFile
+  #29 = Utf8               RuntimeVisibleAnnotations
+  #30 = Utf8               ScalaSig
+{
+  public static java.lang.String drain();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: getstatic     #16                 // Field anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+         3: invokevirtual #18                 // Method anonymouscase/Effects$.drain:()Ljava/lang/String;
+         6: areturn
+
+  public static void note(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #16                 // Field anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+         3: aload_0
+         4: invokevirtual #23                 // Method anonymouscase/Effects$.note:(Ljava/lang/String;)V
+         7: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0 value   Ljava/lang/String;
+    MethodParameters:
+      Name                           Flags
+      value                          final
+}
+SourceFile: "Allocations.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+    scala.reflect.ScalaSignature(
+      bytes="\u0006\u0005m:Q\u0001C\u0005\t\u000211QAD\u0005\t\u0002=AQAF\u0001\u0005\u0002]Aq\u0001G\u0001A\u0002\u0013%\u0011\u0004C\u0004.\u0003\u0001\u0007I\u0011\u0002\u0018\t\rQ\n\u0001\u0015)\u0003\u001b\u0011\u0015)\u0014\u0001\"\u00017\u0011\u0015I\u0014\u0001\"\u0001;\u0003\u001d)eMZ3diNT\u0011AC\u0001\u000eC:|g._7pkN\u001c\u0017m]3\u0004\u0001A\u0011Q\"A\u0007\u0002\u0013\t9QI\u001a4fGR\u001c8CA\u0001\u0011!\t\tB#D\u0001\u0013\u0015\u0005\u0019\u0012!B:dC2\f\u0017BA\u000b\u0013\u0005\u0019\te.\u001f*fM\u00061A(\u001b8jiz\"\u0012\u0001D\u0001\u0007KZ,g\u000e^:\u0016\u0003i\u00012a\u0007\u0011#\u001b\u0005a\"BA\u000f\u001f\u0003%IW.\\;uC\ndWM\u0003\u0002 %\u0005Q1m\u001c7mK\u000e$\u0018n\u001c8\n\u0005\u0005b\"\u0001\u0002\'jgR\u0004\"a\t\u0016\u000f\u0005\u0011B\u0003CA\u0013\u0013\u001b\u00051#BA\u0014\f\u0003\u0019a$o\\8u}%\u0011\u0011FE\u0001\u0007!J,G-\u001a4\n\u0005-b#AB*ue&twM\u0003\u0002*%\u0005QQM^3oiN|F%Z9\u0015\u0005=\u0012\u0004CA\t1\u0013\t\t$C\u0001\u0003V]&$\bbB\u001a\u0005\u0003\u0003\u0005\rAG\u0001\u0004q\u0012\n\u0014aB3wK:$8\u000fI\u0001\u0005]>$X\r\u0006\u00020o!)\u0001H\u0002a\u0001E\u0005)a/\u00197vK\u0006)AM]1j]R\t!\u0005"
+    )
+  ScalaSig: length = 0x3 (unknown attribute)
+   05 02 00
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/Effects$.class
+  Last modified Nov 7, 2026; size 1741 bytes
+  SHA-256 checksum 0b9bbc95696c45d78021d4359890dbc4fcd025e6e82718716216e961737114a4
+  Compiled from "Allocations.scala"
+public final class anonymouscase.Effects$
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/Effects$
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 6, attributes: 3
+Constant pool:
+   #1 = Utf8               anonymouscase/Effects$
+   #2 = Class              #1             // anonymouscase/Effects$
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               MODULE$
+   #7 = Utf8               Lanonymouscase/Effects$;
+   #8 = Utf8               events
+   #9 = Utf8               Lscala/collection/immutable/List;
+  #10 = Utf8               Lscala/collection/immutable/List<Ljava/lang/String;>;
+  #11 = Utf8               <clinit>
+  #12 = Utf8               ()V
+  #13 = Utf8               <init>
+  #14 = NameAndType        #13:#12        // "<init>":()V
+  #15 = Methodref          #2.#14         // anonymouscase/Effects$."<init>":()V
+  #16 = NameAndType        #6:#7          // MODULE$:Lanonymouscase/Effects$;
+  #17 = Fieldref           #2.#16         // anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+  #18 = Utf8               scala/package$
+  #19 = Class              #18            // scala/package$
+  #20 = Utf8               Lscala/package$;
+  #21 = NameAndType        #6:#20         // MODULE$:Lscala/package$;
+  #22 = Fieldref           #19.#21        // scala/package$.MODULE$:Lscala/package$;
+  #23 = Utf8               List
+  #24 = Utf8               ()Lscala/collection/immutable/List$;
+  #25 = NameAndType        #23:#24        // List:()Lscala/collection/immutable/List$;
+  #26 = Methodref          #19.#25        // scala/package$.List:()Lscala/collection/immutable/List$;
+  #27 = Utf8               scala/collection/immutable/List$
+  #28 = Class              #27            // scala/collection/immutable/List$
+  #29 = Utf8               empty
+  #30 = Utf8               ()Lscala/collection/immutable/List;
+  #31 = NameAndType        #29:#30        // empty:()Lscala/collection/immutable/List;
+  #32 = Methodref          #28.#31        // scala/collection/immutable/List$.empty:()Lscala/collection/immutable/List;
+  #33 = NameAndType        #8:#9          // events:Lscala/collection/immutable/List;
+  #34 = Fieldref           #2.#33         // anonymouscase/Effects$.events:Lscala/collection/immutable/List;
+  #35 = Utf8               ()Lscala/collection/immutable/List<Ljava/lang/String;>;
+  #36 = Utf8               this
+  #37 = Utf8               events_$eq
+  #38 = Utf8               (Lscala/collection/immutable/List;)V
+  #39 = Utf8               (Lscala/collection/immutable/List<Ljava/lang/String;>;)V
+  #40 = Utf8               x$1
+  #41 = Utf8               note
+  #42 = Utf8               (Ljava/lang/String;)V
+  #43 = Utf8               value
+  #44 = NameAndType        #8:#30         // events:()Lscala/collection/immutable/List;
+  #45 = Methodref          #2.#44         // anonymouscase/Effects$.events:()Lscala/collection/immutable/List;
+  #46 = Utf8               scala/collection/immutable/List
+  #47 = Class              #46            // scala/collection/immutable/List
+  #48 = Utf8               $colon$colon
+  #49 = Utf8               (Ljava/lang/Object;)Lscala/collection/immutable/List;
+  #50 = NameAndType        #48:#49        // $colon$colon:(Ljava/lang/Object;)Lscala/collection/immutable/List;
+  #51 = Methodref          #47.#50        // scala/collection/immutable/List.$colon$colon:(Ljava/lang/Object;)Lscala/collection/immutable/List;
+  #52 = NameAndType        #37:#38        // events_$eq:(Lscala/collection/immutable/List;)V
+  #53 = Methodref          #2.#52         // anonymouscase/Effects$.events_$eq:(Lscala/collection/immutable/List;)V
+  #54 = Utf8               Ljava/lang/String;
+  #55 = Utf8               drain
+  #56 = Utf8               ()Ljava/lang/String;
+  #57 = Utf8               reverse
+  #58 = NameAndType        #57:#30        // reverse:()Lscala/collection/immutable/List;
+  #59 = Methodref          #47.#58        // scala/collection/immutable/List.reverse:()Lscala/collection/immutable/List;
+  #60 = Utf8               ,
+  #61 = String             #60            // ,
+  #62 = Utf8               mkString
+  #63 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #64 = NameAndType        #62:#63        // mkString:(Ljava/lang/String;)Ljava/lang/String;
+  #65 = Methodref          #47.#64        // scala/collection/immutable/List.mkString:(Ljava/lang/String;)Ljava/lang/String;
+  #66 = Utf8               scala/collection/immutable/Nil$
+  #67 = Class              #66            // scala/collection/immutable/Nil$
+  #68 = Utf8               Lscala/collection/immutable/Nil$;
+  #69 = NameAndType        #6:#68         // MODULE$:Lscala/collection/immutable/Nil$;
+  #70 = Fieldref           #67.#69        // scala/collection/immutable/Nil$.MODULE$:Lscala/collection/immutable/Nil$;
+  #71 = Utf8               result
+  #72 = Methodref          #4.#14         // java/lang/Object."<init>":()V
+  #73 = Utf8               Signature
+  #74 = Utf8               Code
+  #75 = Utf8               LineNumberTable
+  #76 = Utf8               LocalVariableTable
+  #77 = Utf8               MethodParameters
+  #78 = Utf8               SourceFile
+  #79 = Utf8               ScalaInlineInfo
+  #80 = Utf8               Scala
+{
+  public static final anonymouscase.Effects$ MODULE$;
+    descriptor: Lanonymouscase/Effects$;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  private static scala.collection.immutable.List<java.lang.String> events;
+    descriptor: Lscala/collection/immutable/List;
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    Signature: #10                          // Lscala/collection/immutable/List<Ljava/lang/String;>;
+
+  public static {};
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #2                  // class anonymouscase/Effects$
+         3: dup
+         4: invokespecial #15                 // Method "<init>":()V
+         7: putstatic     #17                 // Field MODULE$:Lanonymouscase/Effects$;
+        10: getstatic     #22                 // Field scala/package$.MODULE$:Lscala/package$;
+        13: invokevirtual #26                 // Method scala/package$.List:()Lscala/collection/immutable/List$;
+        16: invokevirtual #32                 // Method scala/collection/immutable/List$.empty:()Lscala/collection/immutable/List;
+        19: putstatic     #34                 // Field events:Lscala/collection/immutable/List;
+        22: return
+      LineNumberTable:
+        line 3: 0
+        line 4: 10
+        line 3: 22
+
+  private scala.collection.immutable.List<java.lang.String> events();
+    descriptor: ()Lscala/collection/immutable/List;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #34                 // Field events:Lscala/collection/immutable/List;
+         3: areturn
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  this   Lanonymouscase/Effects$;
+    Signature: #35                          // ()Lscala/collection/immutable/List<Ljava/lang/String;>;
+
+  private void events_$eq(scala.collection.immutable.List<java.lang.String>);
+    descriptor: (Lscala/collection/immutable/List;)V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_1
+         1: putstatic     #34                 // Field events:Lscala/collection/immutable/List;
+         4: return
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/Effects$;
+            0       5     1   x$1   Lscala/collection/immutable/List;
+    Signature: #39                          // (Lscala/collection/immutable/List<Ljava/lang/String;>;)V
+    MethodParameters:
+      Name                           Flags
+      x$1                            final
+
+  public void note(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: aload_0
+         1: aload_1
+         2: astore_2
+         3: aload_0
+         4: invokespecial #45                 // Method events:()Lscala/collection/immutable/List;
+         7: aload_2
+         8: invokevirtual #51                 // Method scala/collection/immutable/List.$colon$colon:(Ljava/lang/Object;)Lscala/collection/immutable/List;
+        11: invokespecial #53                 // Method events_$eq:(Lscala/collection/immutable/List;)V
+        14: return
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      15     0  this   Lanonymouscase/Effects$;
+            0      15     1 value   Ljava/lang/String;
+    MethodParameters:
+      Name                           Flags
+      value                          final
+
+  public java.lang.String drain();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: aload_0
+         1: invokespecial #45                 // Method events:()Lscala/collection/immutable/List;
+         4: invokevirtual #59                 // Method scala/collection/immutable/List.reverse:()Lscala/collection/immutable/List;
+         7: ldc           #61                 // String ,
+         9: invokevirtual #65                 // Method scala/collection/immutable/List.mkString:(Ljava/lang/String;)Ljava/lang/String;
+        12: astore_1
+        13: aload_0
+        14: getstatic     #70                 // Field scala/collection/immutable/Nil$.MODULE$:Lscala/collection/immutable/Nil$;
+        17: invokespecial #53                 // Method events_$eq:(Lscala/collection/immutable/List;)V
+        20: aload_1
+        21: areturn
+      LineNumberTable:
+        line 6: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           13       9     1 result   Ljava/lang/String;
+            0      22     0  this   Lanonymouscase/Effects$;
+
+  private anonymouscase.Effects$();
+    descriptor: ()V
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #72                 // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/Effects$;
+}
+SourceFile: "Allocations.scala"
+  ScalaInlineInfo: length = 0x1D (unknown attribute)
+   01 01 00 05 00 0D 00 0C 01 00 37 00 38 01 00 08
+   00 1E 01 00 25 00 26 01 00 29 00 2A 01
+  Scala: length = 0x0 (unknown attribute)
+
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/OverrideActive.class
+  Last modified Nov 7, 2026; size 936 bytes
+  SHA-256 checksum 378569e4ed764b2e4eb99dbb656c210706902f7c07a425b1bc58896b5b917e3b
+  Compiled from "Allocations.scala"
+public final class anonymouscase.OverrideActive
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/OverrideActive
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 5
+Constant pool:
+   #1 = Utf8               anonymouscase/OverrideActive
+   #2 = Class              #1             // anonymouscase/OverrideActive
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               \u0006\u0005q1A\u0001B\u0003\u0003\u0011!)q\u0002\u0001C\u0001!!91\u0003\u0001b\u0001\n\u0003!\u0002B\u0002\r\u0001A\u0003%QC\u0001\bPm\u0016\u0014(/\u001b3f\u0003\u000e$\u0018N^3\u000b\u0003\u0019\tQ\"\u00198p]flw.^:dCN,7\u0001A\n\u0003\u0001%\u0001\"AC\u0007\u000e\u0003-Q\u0011\u0001D\u0001\u0006g\u000e\fG.Y\u0005\u0003\u001d-\u0011a!\u00118z%\u00164\u0017A\u0002\u001fj]&$h\bF\u0001\u0012!\t\u0011\u0002!D\u0001\u0006\u0003%\tG\u000e\\8dCR,G-F\u0001\u0016%\r1\u0012\"\u0007\u0004\u0005/\r\u0001QC\u0001\u0007=e\u00164\u0017N\\3nK:$h(\u0001\u0006bY2|7-\u0019;fI\u0002\u0002\"A\u0005\u000e\n\u0005m)!A\u0002)be\u0016tG\u000f
+   #9 = Utf8               anonymouscase/OverrideActive$$anon$5
+  #10 = Class              #9             // anonymouscase/OverrideActive$$anon$5
+  #11 = Utf8               allocated
+  #12 = Utf8               Lanonymouscase/Parent;
+  #13 = Utf8               ()Lanonymouscase/Parent;
+  #14 = NameAndType        #11:#12        // allocated:Lanonymouscase/Parent;
+  #15 = Fieldref           #2.#14         // anonymouscase/OverrideActive.allocated:Lanonymouscase/Parent;
+  #16 = Utf8               this
+  #17 = Utf8               Lanonymouscase/OverrideActive;
+  #18 = Utf8               <init>
+  #19 = Utf8               ()V
+  #20 = NameAndType        #18:#19        // "<init>":()V
+  #21 = Methodref          #4.#20         // java/lang/Object."<init>":()V
+  #22 = Utf8               (Lanonymouscase/OverrideActive;)V
+  #23 = NameAndType        #18:#22        // "<init>":(Lanonymouscase/OverrideActive;)V
+  #24 = Methodref          #10.#23        // anonymouscase/OverrideActive$$anon$5."<init>":(Lanonymouscase/OverrideActive;)V
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               LocalVariableTable
+  #28 = Utf8               InnerClasses
+  #29 = Utf8               SourceFile
+  #30 = Utf8               RuntimeVisibleAnnotations
+  #31 = Utf8               ScalaInlineInfo
+  #32 = Utf8               ScalaSig
+{
+  private final anonymouscase.Parent allocated;
+    descriptor: Lanonymouscase/Parent;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  public anonymouscase.Parent allocated();
+    descriptor: ()Lanonymouscase/Parent;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #15                 // Field allocated:Lanonymouscase/Parent;
+         4: areturn
+      LineNumberTable:
+        line 29: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lanonymouscase/OverrideActive;
+
+  public anonymouscase.OverrideActive();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #21                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #10                 // class anonymouscase/OverrideActive$$anon$5
+         8: dup
+         9: aconst_null
+        10: invokespecial #24                 // Method anonymouscase/OverrideActive$$anon$5."<init>":(Lanonymouscase/OverrideActive;)V
+        13: putfield      #15                 // Field allocated:Lanonymouscase/Parent;
+        16: return
+      LineNumberTable:
+        line 28: 0
+        line 29: 4
+        line 28: 16
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0  this   Lanonymouscase/OverrideActive;
+}
+InnerClasses:
+  public final #10;                       // class anonymouscase/OverrideActive$$anon$5
+SourceFile: "Allocations.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+    scala.reflect.ScalaSignature(
+      bytes="\u0006\u0005q1A\u0001B\u0003\u0003\u0011!)q\u0002\u0001C\u0001!!91\u0003\u0001b\u0001\n\u0003!\u0002B\u0002\r\u0001A\u0003%QC\u0001\bPm\u0016\u0014(/\u001b3f\u0003\u000e$\u0018N^3\u000b\u0003\u0019\tQ\"\u00198p]flw.^:dCN,7\u0001A\n\u0003\u0001%\u0001\"AC\u0007\u000e\u0003-Q\u0011\u0001D\u0001\u0006g\u000e\fG.Y\u0005\u0003\u001d-\u0011a!\u00118z%\u00164\u0017A\u0002\u001fj]&$h\bF\u0001\u0012!\t\u0011\u0002!D\u0001\u0006\u0003%\tG\u000e\\8dCR,G-F\u0001\u0016%\r1\u0012\"\u0007\u0004\u0005/\r\u0001QC\u0001\u0007=e\u00164\u0017N\\3nK:$h(\u0001\u0006bY2|7-\u0019;fI\u0002\u0002\"A\u0005\u000e\n\u0005m)!A\u0002)be\u0016tG\u000f"
+    )
+  ScalaInlineInfo: length = 0xE (unknown attribute)
+   01 01 00 02 00 12 00 13 01 00 0B 00 0D 01
+  ScalaSig: length = 0x3 (unknown attribute)
+   05 02 00
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/OverrideActive$$anon$5.class
+  Last modified Nov 7, 2026; size 853 bytes
+  SHA-256 checksum 6ffd3571019ea09bb3ec95ee85a69c468ff58fd2baf38634675b84e6eb1ba920
+  Compiled from "Allocations.scala"
+public final class anonymouscase.OverrideActive$$anon$5 implements anonymouscase.Parent
+  minor version: 0
+  major version: 52
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #2                          // anonymouscase/OverrideActive$$anon$5
+  super_class: #4                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 2, attributes: 5
+Constant pool:
+   #1 = Utf8               anonymouscase/OverrideActive$$anon$5
+   #2 = Class              #1             // anonymouscase/OverrideActive$$anon$5
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               anonymouscase/Parent
+   #6 = Class              #5             // anonymouscase/Parent
+   #7 = Utf8               Allocations.scala
+   #8 = Utf8               anonymouscase/OverrideActive
+   #9 = Class              #8             // anonymouscase/OverrideActive
+  #10 = Utf8               work
+  #11 = Utf8               ()V
+  #12 = Utf8               anonymouscase/Effects$
+  #13 = Class              #12            // anonymouscase/Effects$
+  #14 = Utf8               MODULE$
+  #15 = Utf8               Lanonymouscase/Effects$;
+  #16 = NameAndType        #14:#15        // MODULE$:Lanonymouscase/Effects$;
+  #17 = Fieldref           #13.#16        // anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+  #18 = Utf8               override
+  #19 = String             #18            // override
+  #20 = Utf8               note
+  #21 = Utf8               (Ljava/lang/String;)V
+  #22 = NameAndType        #20:#21        // note:(Ljava/lang/String;)V
+  #23 = Methodref          #13.#22        // anonymouscase/Effects$.note:(Ljava/lang/String;)V
+  #24 = Utf8               this
+  #25 = Utf8               Lanonymouscase/OverrideActive$$anon$5;
+  #26 = Utf8               <init>
+  #27 = Utf8               (Lanonymouscase/OverrideActive;)V
+  #28 = Utf8               $outer
+  #29 = NameAndType        #26:#11        // "<init>":()V
+  #30 = Methodref          #4.#29         // java/lang/Object."<init>":()V
+  #31 = Utf8               $init$
+  #32 = Utf8               (Lanonymouscase/Parent;)V
+  #33 = NameAndType        #31:#32        // $init$:(Lanonymouscase/Parent;)V
+  #34 = InterfaceMethodref #6.#33         // anonymouscase/Parent.$init$:(Lanonymouscase/Parent;)V
+  #35 = Utf8               Lanonymouscase/OverrideActive;
+  #36 = Utf8               Code
+  #37 = Utf8               LineNumberTable
+  #38 = Utf8               LocalVariableTable
+  #39 = Utf8               MethodParameters
+  #40 = Utf8               InnerClasses
+  #41 = Utf8               EnclosingMethod
+  #42 = Utf8               SourceFile
+  #43 = Utf8               ScalaInlineInfo
+  #44 = Utf8               Scala
+{
+  public void work();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #17                 // Field anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+         3: ldc           #19                 // String override
+         5: invokevirtual #23                 // Method anonymouscase/Effects$.note:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 29: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lanonymouscase/OverrideActive$$anon$5;
+
+  public anonymouscase.OverrideActive$$anon$5(anonymouscase.OverrideActive);
+    descriptor: (Lanonymouscase/OverrideActive;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #30                 // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: invokestatic  #34                 // InterfaceMethod anonymouscase/Parent.$init$:(Lanonymouscase/Parent;)V
+         8: return
+      LineNumberTable:
+        line 29: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lanonymouscase/OverrideActive$$anon$5;
+            0       9     1 $outer   Lanonymouscase/OverrideActive;
+    MethodParameters:
+      Name                           Flags
+      $outer                         final synthetic
+}
+InnerClasses:
+  public final #2;                        // class anonymouscase/OverrideActive$$anon$5
+EnclosingMethod: #9.#0                  // anonymouscase.OverrideActive
+SourceFile: "Allocations.scala"
+  ScalaInlineInfo: length = 0xE (unknown attribute)
+   01 01 00 02 00 1A 00 1B 01 00 0A 00 0B 01
+  Scala: length = 0x0 (unknown attribute)
+
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/Parent.class
+  Last modified Nov 7, 2026; size 914 bytes
+  SHA-256 checksum a9b9969d613f4d37d39427cc6bc8cdee0d91b109a4077efb2ba911434fa2a69e
+  Compiled from "Allocations.scala"
+public interface anonymouscase.Parent
+  minor version: 0
+  major version: 52
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #2                          // anonymouscase/Parent
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 3, attributes: 4
+Constant pool:
+   #1 = Utf8               anonymouscase/Parent
+   #2 = Class              #1             // anonymouscase/Parent
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               \u0006\u0005Q1qa\u0001\u0003\u0011\u0002\u0007\u0005q\u0001C\u0003\u000f\u0001\u0011\u0005q\u0002C\u0003\u0014\u0001\u0011\u0005qB\u0001\u0004QCJ,g\u000e\u001e\u0006\u0002\u000b\u0005i\u0011M\\8os6|Wo]2bg\u0016\u001c\u0001a\u0005\u0002\u0001\u0011A\u0011\u0011\u0002D\u0007\u0002\u0015)\t1\"A\u0003tG\u0006d\u0017-\u0003\u0002\u000e\u0015\t1\u0011I\\=SK\u001a\fa\u0001J5oSR$C#\u0001\t\u0011\u0005%\t\u0012B\u0001\n\u000b\u0005\u0011)f.\u001b;\u0002\t]|\'o\u001b
+   #9 = Utf8               work$
+  #10 = Utf8               (Lanonymouscase/Parent;)V
+  #11 = Utf8               $this
+  #12 = Utf8               work
+  #13 = Utf8               ()V
+  #14 = NameAndType        #12:#13        // work:()V
+  #15 = InterfaceMethodref #2.#14         // anonymouscase/Parent.work:()V
+  #16 = Utf8               Lanonymouscase/Parent;
+  #17 = Utf8               this
+  #18 = Utf8               $init$
+  #19 = Utf8               anonymouscase/Effects$
+  #20 = Class              #19            // anonymouscase/Effects$
+  #21 = Utf8               MODULE$
+  #22 = Utf8               Lanonymouscase/Effects$;
+  #23 = NameAndType        #21:#22        // MODULE$:Lanonymouscase/Effects$;
+  #24 = Fieldref           #20.#23        // anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+  #25 = Utf8               trait-init
+  #26 = String             #25            // trait-init
+  #27 = Utf8               note
+  #28 = Utf8               (Ljava/lang/String;)V
+  #29 = NameAndType        #27:#28        // note:(Ljava/lang/String;)V
+  #30 = Methodref          #20.#29        // anonymouscase/Effects$.note:(Ljava/lang/String;)V
+  #31 = Utf8               Code
+  #32 = Utf8               LineNumberTable
+  #33 = Utf8               LocalVariableTable
+  #34 = Utf8               MethodParameters
+  #35 = Utf8               SourceFile
+  #36 = Utf8               RuntimeVisibleAnnotations
+  #37 = Utf8               ScalaInlineInfo
+  #38 = Utf8               ScalaSig
+{
+  public static void work$(anonymouscase.Parent);
+    descriptor: (Lanonymouscase/Parent;)V
+    flags: (0x1009) ACC_PUBLIC, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #15                 // InterfaceMethod work:()V
+         4: return
+      LineNumberTable:
+        line 10: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0 $this   Lanonymouscase/Parent;
+    MethodParameters:
+      Name                           Flags
+      $this                          final synthetic
+
+  public default void work();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 10: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       1     0  this   Lanonymouscase/Parent;
+
+  public static void $init$(anonymouscase.Parent);
+    descriptor: (Lanonymouscase/Parent;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #24                 // Field anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+         3: ldc           #26                 // String trait-init
+         5: invokevirtual #30                 // Method anonymouscase/Effects$.note:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 9: 0
+        line 8: 8
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0 $this   Lanonymouscase/Parent;
+    MethodParameters:
+      Name                           Flags
+      $this                          final synthetic
+}
+SourceFile: "Allocations.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+    scala.reflect.ScalaSignature(
+      bytes="\u0006\u0005Q1qa\u0001\u0003\u0011\u0002\u0007\u0005q\u0001C\u0003\u000f\u0001\u0011\u0005q\u0002C\u0003\u0014\u0001\u0011\u0005qB\u0001\u0004QCJ,g\u000e\u001e\u0006\u0002\u000b\u0005i\u0011M\\8os6|Wo]2bg\u0016\u001c\u0001a\u0005\u0002\u0001\u0011A\u0011\u0011\u0002D\u0007\u0002\u0015)\t1\"A\u0003tG\u0006d\u0017-\u0003\u0002\u000e\u0015\t1\u0011I\\=SK\u001a\fa\u0001J5oSR$C#\u0001\t\u0011\u0005%\t\u0012B\u0001\n\u000b\u0005\u0011)f.\u001b;\u0002\t]|\'o\u001b"
+    )
+  ScalaInlineInfo: length = 0x13 (unknown attribute)
+   01 00 00 03 00 12 00 0A 01 00 0C 00 0D 00 00 09
+   00 0A 01
+  ScalaSig: length = 0x3 (unknown attribute)
+   05 02 00
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-anonymous-construction-vfcfsaor/classes/anonymouscase/WithCtor.class
+  Last modified Nov 7, 2026; size 996 bytes
+  SHA-256 checksum 926673f560eda1138ca2e1d19d8043e07d4670a807eb74d35aa336675abc9913
+  Compiled from "Allocations.scala"
+public class anonymouscase.WithCtor
+  minor version: 0
+  major version: 52
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // anonymouscase/WithCtor
+  super_class: #4                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 1, attributes: 4
+Constant pool:
+   #1 = Utf8               anonymouscase/WithCtor
+   #2 = Class              #1             // anonymouscase/WithCtor
+   #3 = Utf8               java/lang/Object
+   #4 = Class              #3             // java/lang/Object
+   #5 = Utf8               Allocations.scala
+   #6 = Utf8               Lscala/reflect/ScalaSignature;
+   #7 = Utf8               bytes
+   #8 = Utf8               \u0006\u0005]1Aa\u0001\u0003\u0001\u000f!Aa\u0002\u0001B\u0001B\u0003%q\u0002C\u0003\u0013\u0001\u0011\u00051C\u0001\u0005XSRD7\t^8s\u0015\u0005)\u0011!D1o_:LXn\\;tG\u0006\u001cXm\u0001\u0001\u0014\u0005\u0001A\u0001CA\u0005\r\u001b\u0005Q!\"A\u0006\u0002\u000bM\u001c\u0017\r\\1\n\u00055Q!AB!osJ+g-A\u0003wC2,X\r\u0005\u0002\n!%\u0011\u0011C\u0003\u0002\u0004\u0013:$\u0018A\u0002\u001fj]&$h\b\u0006\u0002\u0015-A\u0011Q\u0003A\u0007\u0002\t!)aB\u0001a\u0001\u001f\u0001
+   #9 = Utf8               <init>
+  #10 = Utf8               (I)V
+  #11 = Utf8               value
+  #12 = Utf8               ()V
+  #13 = NameAndType        #9:#12         // "<init>":()V
+  #14 = Methodref          #4.#13         // java/lang/Object."<init>":()V
+  #15 = Utf8               anonymouscase/Effects$
+  #16 = Class              #15            // anonymouscase/Effects$
+  #17 = Utf8               MODULE$
+  #18 = Utf8               Lanonymouscase/Effects$;
+  #19 = NameAndType        #17:#18        // MODULE$:Lanonymouscase/Effects$;
+  #20 = Fieldref           #16.#19        // anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+  #21 = Utf8               java/lang/StringBuilder
+  #22 = Class              #21            // java/lang/StringBuilder
+  #23 = Integer            6
+  #24 = NameAndType        #9:#10         // "<init>":(I)V
+  #25 = Methodref          #22.#24        // java/lang/StringBuilder."<init>":(I)V
+  #26 = Utf8               class:
+  #27 = String             #26            // class:
+  #28 = Utf8               append
+  #29 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #30 = NameAndType        #28:#29        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #31 = Methodref          #22.#30        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #32 = Utf8               (I)Ljava/lang/StringBuilder;
+  #33 = NameAndType        #28:#32        // append:(I)Ljava/lang/StringBuilder;
+  #34 = Methodref          #22.#33        // java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+  #35 = Utf8               toString
+  #36 = Utf8               ()Ljava/lang/String;
+  #37 = NameAndType        #35:#36        // toString:()Ljava/lang/String;
+  #38 = Methodref          #22.#37        // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #39 = Utf8               note
+  #40 = Utf8               (Ljava/lang/String;)V
+  #41 = NameAndType        #39:#40        // note:(Ljava/lang/String;)V
+  #42 = Methodref          #16.#41        // anonymouscase/Effects$.note:(Ljava/lang/String;)V
+  #43 = Utf8               this
+  #44 = Utf8               Lanonymouscase/WithCtor;
+  #45 = Utf8               I
+  #46 = Utf8               Code
+  #47 = Utf8               LineNumberTable
+  #48 = Utf8               LocalVariableTable
+  #49 = Utf8               MethodParameters
+  #50 = Utf8               SourceFile
+  #51 = Utf8               RuntimeVisibleAnnotations
+  #52 = Utf8               ScalaInlineInfo
+  #53 = Utf8               ScalaSig
+{
+  public anonymouscase.WithCtor(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: aload_0
+         1: invokespecial #14                 // Method java/lang/Object."<init>":()V
+         4: getstatic     #20                 // Field anonymouscase/Effects$.MODULE$:Lanonymouscase/Effects$;
+         7: new           #22                 // class java/lang/StringBuilder
+        10: dup
+        11: ldc           #23                 // int 6
+        13: invokespecial #25                 // Method java/lang/StringBuilder."<init>":(I)V
+        16: ldc           #27                 // String class:
+        18: invokevirtual #31                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        21: iload_1
+        22: invokevirtual #34                 // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+        25: invokevirtual #38                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        28: invokevirtual #42                 // Method anonymouscase/Effects$.note:(Ljava/lang/String;)V
+        31: return
+      LineNumberTable:
+        line 12: 0
+        line 13: 4
+        line 12: 31
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      32     0  this   Lanonymouscase/WithCtor;
+            0      32     1 value   I
+    MethodParameters:
+      Name                           Flags
+      value                          final
+}
+SourceFile: "Allocations.scala"
+RuntimeVisibleAnnotations:
+  0: #6(#7=s#8)
+    scala.reflect.ScalaSignature(
+      bytes="\u0006\u0005]1Aa\u0001\u0003\u0001\u000f!Aa\u0002\u0001B\u0001B\u0003%q\u0002C\u0003\u0013\u0001\u0011\u00051C\u0001\u0005XSRD7\t^8s\u0015\u0005)\u0011!D1o_:LXn\\;tG\u0006\u001cXm\u0001\u0001\u0014\u0005\u0001A\u0001CA\u0005\r\u001b\u0005Q!\"A\u0006\u0002\u000bM\u001c\u0017\r\\1\n\u00055Q!AB!osJ+g-A\u0003wC2,X\r\u0005\u0002\n!%\u0011\u0011C\u0003\u0002\u0004\u0013:$\u0018A\u0002\u001fj]&$h\b\u0006\u0002\u0015-A\u0011Q\u0003A\u0007\u0002\t!)aB\u0001a\u0001\u001f\u0001"
+    )
+  ScalaInlineInfo: length = 0x9 (unknown attribute)
+   01 00 00 01 00 09 00 0A 00
+  ScalaSig: length = 0x3 (unknown attribute)
+   05 02 00

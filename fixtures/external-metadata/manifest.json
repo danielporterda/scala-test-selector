@@ -1,0 +1,767 @@
+{
+  "schema": "selector-external-metadata-fixture/v1",
+  "revision": "2e8cda83400a101f7cd269845db9e10eac3389b2",
+  "source_tree_sha256": "2e8cda83400a101f7cd269845db9e10eac3389b2e46dfe0293d7ea98cc847a1b",
+  "revision_kind": "first40hex_of_caller_sources_and_external_library_sha256",
+  "generator_sha256": "9b44eedf65049eaf8f38f85d3d7eb67a0081c85be42997b8cd6ed9d3ad57b4b9",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+      "bytes": 5940741
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21",
+      "bytes": 12343847
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b",
+      "bytes": 3814367
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba",
+      "bytes": 23982496
+    }
+  ],
+  "reused_fixture": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply",
+    "manifest_sha256": "87d2f1122673d30ba4f2ac77962b8db970dbcc62528b7f304ce8d76cd5ffcced"
+  },
+  "reused_helper": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/tooling/metadata-helper.jar",
+    "sha256": "72f09c189a18f22f5c2997ff9ff23afd780bd0383099c181392db3bf402053fd"
+  },
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "selector": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase12-build/executables/b9aff7545b4a3ee2cc032516282ae6dce2a1c14868913144bac1c68daec2e09b/selector",
+    "sha256": "b9aff7545b4a3ee2cc032516282ae6dce2a1c14868913144bac1c68daec2e09b"
+  },
+  "producer_inputs": {
+    "schema": "fixture-external-signature-producer/v1",
+    "helper_sha256": "72f09c189a18f22f5c2997ff9ff23afd780bd0383099c181392db3bf402053fd",
+    "tool_jars": [
+      {
+        "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+        "bytes": 5940741
+      },
+      {
+        "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+        "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21",
+        "bytes": 12343847
+      },
+      {
+        "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b",
+        "bytes": 3814367
+      },
+      {
+        "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba",
+        "bytes": 23982496
+      }
+    ],
+    "settings": {
+      "stubBrokenSignatures": false,
+      "usejavacp": false,
+      "includeJdk": false,
+      "scalaLibrarySynthetics": false,
+      "manifest_class_path_expansion": "forbidden-no-class-path-headers"
+    }
+  },
+  "producer_sha256": "9b4ac2b8c5b59036a0fd79de78fbf72a7200fc07ac5490fddc03a12409a2634a",
+  "ordered_actual_compiler_classpath": [
+    {
+      "index": 0,
+      "kind": "jar",
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar",
+      "sha256": "c5c965928dba16f7ccb7a1e9812b6de9471828d65d3345e9f822e4572b36a3ad"
+    },
+    {
+      "index": 1,
+      "kind": "jar",
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    }
+  ],
+  "commands": [
+    {
+      "case": "compile-caller",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx512m",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata",
+        "-P:semanticdb:targetroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/raw",
+        "-P:semanticdb:synthetics:on",
+        "-Yrangepos",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/src/selectedexternal/Calls.scala"
+      ],
+      "pid": 14574,
+      "exit_code": 0,
+      "wall_ns": 1116218000,
+      "peak_rss_bytes": 256491520,
+      "cpu_ns": 2488117000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/compile-caller.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/compile-caller.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "compile-validation",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx512m",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/validation/CheckSelectedApply.scala"
+      ],
+      "pid": 14576,
+      "exit_code": 0,
+      "wall_ns": 742711209,
+      "peak_rss_bytes": 176603136,
+      "cpu_ns": 1621859000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/compile-validation.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/compile-validation.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-inherited",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "selectedexternal.CheckSelectedApply",
+        "inherited"
+      ],
+      "pid": 14578,
+      "exit_code": 0,
+      "wall_ns": 74793167,
+      "peak_rss_bytes": 58900480,
+      "cpu_ns": 105755999,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-inherited.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-inherited.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 31,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-qualified",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "selectedexternal.CheckSelectedApply",
+        "qualified"
+      ],
+      "pid": 14579,
+      "exit_code": 0,
+      "wall_ns": 87926042,
+      "peak_rss_bytes": 58933248,
+      "cpu_ns": 103682000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-qualified.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-qualified.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 37,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-positional",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "selectedexternal.CheckSelectedApply",
+        "positional"
+      ],
+      "pid": 14580,
+      "exit_code": 0,
+      "wall_ns": 89268500,
+      "peak_rss_bytes": 59195392,
+      "cpu_ns": 107473000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-positional.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-positional.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 38,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-overloaded",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "selectedexternal.CheckSelectedApply",
+        "overloaded"
+      ],
+      "pid": 14581,
+      "exit_code": 0,
+      "wall_ns": 88052084,
+      "peak_rss_bytes": 59129856,
+      "cpu_ns": 102985000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-overloaded.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-overloaded.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 38,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-eta",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "selectedexternal.CheckSelectedApply",
+        "eta"
+      ],
+      "pid": 14582,
+      "exit_code": 0,
+      "wall_ns": 75398625,
+      "peak_rss_bytes": 59129856,
+      "cpu_ns": 106764000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-eta.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-eta.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 61,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-returned",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "selectedexternal.CheckSelectedApply",
+        "returned"
+      ],
+      "pid": 14583,
+      "exit_code": 0,
+      "wall_ns": 89621959,
+      "peak_rss_bytes": 59080704,
+      "cpu_ns": 113899000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-returned.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-returned.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 100,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-applied-returned",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "selectedexternal.CheckSelectedApply",
+        "applied-returned"
+      ],
+      "pid": 14594,
+      "exit_code": 0,
+      "wall_ns": 85218041,
+      "peak_rss_bytes": 59080704,
+      "cpu_ns": 103518000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-applied-returned.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-applied-returned.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 66,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "jvm-dormant",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx256m",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "selectedexternal.CheckSelectedApply",
+        "dormant"
+      ],
+      "pid": 14595,
+      "exit_code": 0,
+      "wall_ns": 72441500,
+      "peak_rss_bytes": 58982400,
+      "cpu_ns": 104251000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-dormant.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/jvm-dormant.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 9,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "capture",
+      "command": [
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase12-build/executables/b9aff7545b4a3ee2cc032516282ae6dce2a1c14868913144bac1c68daec2e09b/selector",
+        "capture",
+        "--input",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/capture.json",
+        "--output",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/documents.jsonl",
+        "--workers",
+        "2"
+      ],
+      "pid": 14596,
+      "exit_code": 0,
+      "wall_ns": 26731875,
+      "peak_rss_bytes": 4194304,
+      "cpu_ns": 4993000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/capture.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/capture.stderr",
+      "stage_metrics": [
+        {
+          "phase": "capture",
+          "pid": 14596,
+          "revision": "request",
+          "stage": "stage_begin"
+        },
+        {
+          "documents": 1,
+          "effective_workers": 2,
+          "output_bytes": 20315,
+          "producer": "5765acb0c4ef1d4204a2fbfa96f063cb32e3f1c45bd12089e2fca8caee5e74f4",
+          "raw_bytes": 6804,
+          "raw_inputs": 1,
+          "stage": "capture",
+          "validated_sources": 1
+        },
+        {
+          "elapsed_ns": 15726166,
+          "phase": "capture",
+          "pid": 14596,
+          "revision": "request",
+          "stage": "stage_end"
+        }
+      ],
+      "stdout_bytes": 0,
+      "stderr_bytes": 395
+    },
+    {
+      "case": "syntax",
+      "command": [
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase12-build/executables/b9aff7545b4a3ee2cc032516282ae6dce2a1c14868913144bac1c68daec2e09b/selector",
+        "syntax",
+        "--input",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/documents.jsonl",
+        "--exporter",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/tools/ScalaSpans.scala",
+        "--tool-cache",
+        "/private/tmp/rust-selector-execution-syntax",
+        "--output",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/syntax.jsonl",
+        "--workers",
+        "2"
+      ],
+      "pid": 14597,
+      "exit_code": 0,
+      "wall_ns": 595806291,
+      "peak_rss_bytes": 138280960,
+      "cpu_ns": 845719999,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/syntax.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/syntax.stderr",
+      "stage_metrics": [
+        {
+          "phase": "syntax",
+          "pid": 14597,
+          "revision": "request",
+          "stage": "stage_begin"
+        },
+        {
+          "batches": 1,
+          "cache_hits": 0,
+          "effective_workers": 2,
+          "output_bytes": 31883,
+          "producer": "c7517c7e18f75aa4f23e365c90c5e5c791b04bfee110ea1bb6bcff3a7d8439ea",
+          "source_bytes": 1022,
+          "sources": 1,
+          "stage": "syntax"
+        },
+        {
+          "elapsed_ns": 592002583,
+          "phase": "syntax",
+          "pid": 14597,
+          "revision": "request",
+          "stage": "stage_end"
+        }
+      ],
+      "stdout_bytes": 0,
+      "stderr_bytes": 384
+    },
+    {
+      "case": "metadata",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx512m",
+        "-cp",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/tooling/metadata-helper.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "ExternalSignatures",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/metadata-classpath.txt",
+        "selectedexternal/Configuration",
+        "646cb66cfdabbee1d44f35054bfbc65e89e38676dbf97b738596b83817a49d0d",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/metadata-requests.txt",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/external-signatures"
+      ],
+      "pid": 14602,
+      "exit_code": 0,
+      "wall_ns": 284858208,
+      "peak_rss_bytes": 115703808,
+      "cpu_ns": 558570999,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/metadata.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/metadata.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 1273,
+      "stderr_bytes": 0
+    }
+  ],
+  "authority_inputs": {
+    "schema": "fixture-provider-authority/v1",
+    "contexts_sha256": "806e9717ce16ac80b2380ab14038bb1cb7b610b1e232a33a453fd6c472f5407b",
+    "classpath_sha256": "dfedf3a6833861b6b48962d14520d5124d84db6199cb5b20641381953485dc87",
+    "context": "project:external-metadata/configuration:test",
+    "outer_class": "selectedexternal/Configuration",
+    "outer_class_sha256": "646cb66cfdabbee1d44f35054bfbc65e89e38676dbf97b738596b83817a49d0d",
+    "provider_index": 0,
+    "provider_sha256": "c5c965928dba16f7ccb7a1e9812b6de9471828d65d3345e9f822e4572b36a3ad"
+  },
+  "authority_sha256": "b1e99e737aa5561227d0308063d47327dc971abc661c7154fea99f1245079630",
+  "context_manifest_sha256": "806e9717ce16ac80b2380ab14038bb1cb7b610b1e232a33a453fd6c472f5407b",
+  "classpath_sha256": "dfedf3a6833861b6b48962d14520d5124d84db6199cb5b20641381953485dc87",
+  "independent_runtime_observations": {
+    "inherited": [
+      "inherited:interval,timeout:1:2"
+    ],
+    "qualified": [
+      "qualified:qualifier,interval,timeout"
+    ],
+    "positional": [
+      "positional:qualifier,timeout,interval"
+    ],
+    "overloaded": [
+      "overloaded:qualifier,label,overload:x"
+    ],
+    "eta": [
+      "eta-created:qualifier",
+      "eta-invoked:qualifier,timeout,interval"
+    ],
+    "returned": [
+      "returned-created:qualifier,timeout,factory",
+      "returned-invoked:qualifier,timeout,factory,returned-body"
+    ],
+    "applied-returned": [
+      "applied-returned:qualifier,timeout,factory,interval,returned-body"
+    ],
+    "dormant": [
+      "dormant:"
+    ]
+  },
+  "all_original_selected_fixture_files_unchanged": true,
+  "syntax_authority": {
+    "exporter": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/tools/ScalaSpans.scala",
+    "sha256": "c607f9cff393cee883220d46ed49dc9adad4653dc1184557327d29a60bd01445"
+  },
+  "files": [
+    {
+      "path": "admission.json",
+      "sha256": "638dc81913140780567b88ed2e2b555d025f722559f166e147c2ff928f1ae836",
+      "bytes": 1335
+    },
+    {
+      "path": "caller.jar",
+      "sha256": "8501afbd058b33c17407a6f77e1e7cd6d282efbd348c4afa9a0cf918f23c5a79",
+      "bytes": 2655
+    },
+    {
+      "path": "capture.json",
+      "sha256": "20c5b2010dac426da7764a08ed2544e8b886c8a520334cb21c160a2cad5bea4b",
+      "bytes": 798
+    },
+    {
+      "path": "capture.log",
+      "sha256": "eef4baba11fcced15a99e0c2cf013bf2bc103b404d982142fc62a64df9b40f9f",
+      "bytes": 395
+    },
+    {
+      "path": "capture.stderr",
+      "sha256": "eef4baba11fcced15a99e0c2cf013bf2bc103b404d982142fc62a64df9b40f9f",
+      "bytes": 395
+    },
+    {
+      "path": "capture.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-caller.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-caller.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-caller.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-validation.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-validation.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compiler-contexts.json",
+      "sha256": "806e9717ce16ac80b2380ab14038bb1cb7b610b1e232a33a453fd6c472f5407b",
+      "bytes": 3804
+    },
+    {
+      "path": "documents.jsonl",
+      "sha256": "d48750d56cb7ea8495c2816814fcd6f3c5a1b9921de281550700eb515e6bc5aa",
+      "bytes": 20315
+    },
+    {
+      "path": "external-signatures.json",
+      "sha256": "4526c5fa20129ebd1c0b7e1e76c8b70d6308b988ee1343db0a804b7d9e5cdc02",
+      "bytes": 1273
+    },
+    {
+      "path": "external-signatures.semanticdb",
+      "sha256": "e6c01bc907104e8f5de03686a1f77b8b4a1421a4a5f7f90b5e48013b39e4709e",
+      "bytes": 1256
+    },
+    {
+      "path": "external-signatures.textproto",
+      "sha256": "ff6bf7b74207954f12029115ec2595d977c41dfd7535270c9a322e42e64801d3",
+      "bytes": 3933
+    },
+    {
+      "path": "jvm-applied-returned.log",
+      "sha256": "da8edb11ee701b7b15160d17b0b089226b2e2a8c3023ea8f14751725400f312f",
+      "bytes": 66
+    },
+    {
+      "path": "jvm-applied-returned.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-applied-returned.stdout",
+      "sha256": "da8edb11ee701b7b15160d17b0b089226b2e2a8c3023ea8f14751725400f312f",
+      "bytes": 66
+    },
+    {
+      "path": "jvm-dormant.log",
+      "sha256": "eb993cb58d05d9ff4d3b028df2d1591ce77d1a04f71fe9fa5a2ea55cbd100ff9",
+      "bytes": 9
+    },
+    {
+      "path": "jvm-dormant.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-dormant.stdout",
+      "sha256": "eb993cb58d05d9ff4d3b028df2d1591ce77d1a04f71fe9fa5a2ea55cbd100ff9",
+      "bytes": 9
+    },
+    {
+      "path": "jvm-eta.log",
+      "sha256": "42503923d3cc53631f0b0864f64126c1598f482e1767f09191c33fe479006c1a",
+      "bytes": 61
+    },
+    {
+      "path": "jvm-eta.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-eta.stdout",
+      "sha256": "42503923d3cc53631f0b0864f64126c1598f482e1767f09191c33fe479006c1a",
+      "bytes": 61
+    },
+    {
+      "path": "jvm-inherited.log",
+      "sha256": "933b42e8616c31ddaae26016faea1b56aac7a8172c8215741327476b71f421a8",
+      "bytes": 31
+    },
+    {
+      "path": "jvm-inherited.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-inherited.stdout",
+      "sha256": "933b42e8616c31ddaae26016faea1b56aac7a8172c8215741327476b71f421a8",
+      "bytes": 31
+    },
+    {
+      "path": "jvm-overloaded.log",
+      "sha256": "541863f1dc166dcce628b8c1c2fc949e8cb39510ce291fb170611f731cb898d4",
+      "bytes": 38
+    },
+    {
+      "path": "jvm-overloaded.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-overloaded.stdout",
+      "sha256": "541863f1dc166dcce628b8c1c2fc949e8cb39510ce291fb170611f731cb898d4",
+      "bytes": 38
+    },
+    {
+      "path": "jvm-positional.log",
+      "sha256": "c6844cb14580bacd90d88055db1d8d83bfee0e6c57a0e64f5ffa74153dd55ddb",
+      "bytes": 38
+    },
+    {
+      "path": "jvm-positional.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-positional.stdout",
+      "sha256": "c6844cb14580bacd90d88055db1d8d83bfee0e6c57a0e64f5ffa74153dd55ddb",
+      "bytes": 38
+    },
+    {
+      "path": "jvm-qualified.log",
+      "sha256": "457d8aeef7b12f1f99f4bd5d6d6ae72bdca68aeb417711e7db36a25ba895ba7d",
+      "bytes": 37
+    },
+    {
+      "path": "jvm-qualified.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-qualified.stdout",
+      "sha256": "457d8aeef7b12f1f99f4bd5d6d6ae72bdca68aeb417711e7db36a25ba895ba7d",
+      "bytes": 37
+    },
+    {
+      "path": "jvm-returned.log",
+      "sha256": "2f25465aa92e53a728a2d77028cb7b35f8d2423bc422e586206ed1c4241abb2f",
+      "bytes": 100
+    },
+    {
+      "path": "jvm-returned.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "jvm-returned.stdout",
+      "sha256": "2f25465aa92e53a728a2d77028cb7b35f8d2423bc422e586206ed1c4241abb2f",
+      "bytes": 100
+    },
+    {
+      "path": "metadata-classpath.txt",
+      "sha256": "c4388491d2c1f28eee2cd48b839a94f5df1f4047a8b8eab480d7164e3242d20a",
+      "bytes": 255
+    },
+    {
+      "path": "metadata-requests.txt",
+      "sha256": "cbe441060471cc83b01fe7442ec4250415c55f63aa664cd2ecadbe96f784f2ce",
+      "bytes": 171
+    },
+    {
+      "path": "metadata.log",
+      "sha256": "4526c5fa20129ebd1c0b7e1e76c8b70d6308b988ee1343db0a804b7d9e5cdc02",
+      "bytes": 1273
+    },
+    {
+      "path": "metadata.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "metadata.stdout",
+      "sha256": "4526c5fa20129ebd1c0b7e1e76c8b70d6308b988ee1343db0a804b7d9e5cdc02",
+      "bytes": 1273
+    },
+    {
+      "path": "negative-java-language.semanticdb",
+      "sha256": "023064eef1ba6cf06686d318557b9ac67f78042b5f6d3083d528a73d2dd125c5",
+      "bytes": 1256
+    },
+    {
+      "path": "negative-missing-formal.semanticdb",
+      "sha256": "c5b2afeaf19e56a617b6cdaa4eab0ee669ca4c8f061ecf55608b9b602949e06e",
+      "bytes": 1136
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/selectedexternal/Calls.scala.semanticdb",
+      "sha256": "17f8ef05817b7611d306000dbb7f8095cfd8de7e78ac671181aaff612bfd831c",
+      "bytes": 6804
+    },
+    {
+      "path": "src/selectedexternal/Calls.scala",
+      "sha256": "ac931d6e6d937dd9f1055e8d7cd90ab72ad98b8a3a59e12dd0a43c4df76c7a37",
+      "bytes": 1022
+    },
+    {
+      "path": "syntax.jsonl",
+      "sha256": "84f5fa5d62235c5b732479bb0991f492fcc3f7e0c4e511598068a458dfbdd3eb",
+      "bytes": 31883
+    },
+    {
+      "path": "syntax.log",
+      "sha256": "6a8e101c51767d5191c41d791c330bbb1a33fe7ab369af2117795e6fdc7b422b",
+      "bytes": 384
+    },
+    {
+      "path": "syntax.stderr",
+      "sha256": "6a8e101c51767d5191c41d791c330bbb1a33fe7ab369af2117795e6fdc7b422b",
+      "bytes": 384
+    },
+    {
+      "path": "syntax.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "validation/CheckSelectedApply.scala",
+      "sha256": "ffea4fd11886b466937d98bc34cd9579a87c3c0d1baa3a33b9476abe0be65eff",
+      "bytes": 1077
+    }
+  ],
+  "negative_payloads": {
+    "basis_sha256": "e6c01bc907104e8f5de03686a1f77b8b4a1421a4a5f7f90b5e48013b39e4709e",
+    "qualification": "Normalized metadata byte perturbations only; not compiler-emitted positive evidence.",
+    "java_language": "TextDocument language1 changed to2 with all other fields retained",
+    "missing_formal": "selectedexternal/Configuration#PatienceConfig.apply(+1).(timeout)"
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "selector-external-module-header-fixture/v1",
+  "scope": "Exactly one genuine SCALA OBJECT header; no members, signatures, parents, source definitions or effect authority.",
+  "capture_kind": "signature-metadata-read-only; existing compiler/JVM witnesses reused unchanged",
+  "request_note": "Explicit search input cites genuine compiler occurrence; request_identity is carried historical metadata only. New PreparedCapture membership is checked independently by admission.",
+  "negative_scope": "Normalized wire perturbations of this actual one-row payload; not alternative genuine compiler outputs.",
+  "files": [
+    {
+      "path": "fixtures/external-module-header/authority.json",
+      "sha256": "ab26fd1c021f1f99f34237814d85cede9162b6ec1543d6a58ca04d9f970d6890",
+      "bytes": 2535
+    },
+    {
+      "path": "fixtures/external-module-header/batch-0000/class-0000.semanticdb",
+      "sha256": "c82f7efdb6ddc0ba438c16aae52f2f431a46c659d5d568cee679926eed7f1c7a",
+      "bytes": 81
+    },
+    {
+      "path": "fixtures/external-module-header/batch-0000/classpath.txt",
+      "sha256": "07f07744a2d8e6b418b66d614843a72c05b5f6ef8a8cb870bf8d88a50b66731c",
+      "bytes": 396
+    },
+    {
+      "path": "fixtures/external-module-header/batch-0000/requests.tsv",
+      "sha256": "3abfcee3369797a95779ef9538d97176037823795e6e8aa6758d2dfb4cf433fc",
+      "bytes": 263
+    },
+    {
+      "path": "fixtures/external-module-header/batch-0000/result.json",
+      "sha256": "891b9b341f2e880cd8b4945bf4a843f146d5d82762aefe9c95b3b66caeee1f3f",
+      "bytes": 629
+    },
+    {
+      "path": "fixtures/external-module-header/compile-java-bridge.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/external-module-header/compile-java-bridge.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/external-module-header/compile-scala-helper.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/external-module-header/compile-scala-helper.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/external-module-header/manifest.json",
+      "sha256": "3fdfbc5179a5b48383429b791a514087dc4b763996d6600310f3dd1449ca4d5a",
+      "bytes": 968
+    },
+    {
+      "path": "fixtures/external-module-header/metadata-batch-0000.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/external-module-header/metadata-batch-0000.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/external-module-header/native-authority.stderr",
+      "sha256": "b3f34b761f0f72211a8e261f21682572925bff72541d8cec0af5a2ba70507369",
+      "bytes": 209
+    },
+    {
+      "path": "fixtures/external-module-header/native-authority.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "fixtures/external-module-header/negative/defined-property.semanticdb",
+      "sha256": "7617493300974f1fe1fd84a1cc56ca6900befa93c832c672a190e6f464d48f85",
+      "bytes": 83
+    },
+    {
+      "path": "fixtures/external-module-header/negative/java-language.semanticdb",
+      "sha256": "92974b4a6191ed85b6b5ddd476ff2aaff5fc61cd4232b2f5a77769d7a14693e6",
+      "bytes": 81
+    },
+    {
+      "path": "fixtures/external-module-header/negative/overridden-symbol.semanticdb",
+      "sha256": "fbd730b52fb9caffb505b0eaae82aed7b988e1317b318c0e5152e9cd20124c2b",
+      "bytes": 107
+    },
+    {
+      "path": "fixtures/external-module-header/negative/signature.semanticdb",
+      "sha256": "b5dfe9e5f961fc25b304a4756c8160ec647f8128bd4e71dc88e184bfd2e97faf",
+      "bytes": 86
+    },
+    {
+      "path": "fixtures/external-module-header/negative/source-text.semanticdb",
+      "sha256": "1759b1cdaa802f498eae5b79d1509b568c6433688abf0d19561c918e9160f47c",
+      "bytes": 112
+    },
+    {
+      "path": "fixtures/external-module-header/negative/unrequested-member.semanticdb",
+      "sha256": "50a1a9fb36c3413d94e430380a0c0763a44cbfb86466b62f84428ae2dc32deda",
+      "bytes": 122
+    },
+    {
+      "path": "fixtures/external-module-header/negative/wrong-kind.semanticdb",
+      "sha256": "91f99d655bbdbd705fdf8290e04c47d3fef6378e2e2f050d998e524059e72f09",
+      "bytes": 81
+    },
+    {
+      "path": "fixtures/external-module-header/producer.json",
+      "sha256": "b114c95c5e6899a052ae431d5235fecb0615b5709b1810f7c0001e42b087f53c",
+      "bytes": 1527
+    },
+    {
+      "path": "fixtures/external-module-header/provider-requests.json",
+      "sha256": "ac333faec92ef71f8681dc3ee8ae11c53355183d8ae19f28ebadf0f7814a74be",
+      "bytes": 265
+    },
+    {
+      "path": "fixtures/external-module-header/receipt.json",
+      "sha256": "62488e53c0e0e28b45e254757667c820b1328b1932ba886df3ef20104acae5f8",
+      "bytes": 7805
+    },
+    {
+      "path": "fixtures/external-module-header/requests.json",
+      "sha256": "0af573307887f836901746f27a0be466dd763a2e8859df4a2dea465fc1f4bcf2",
+      "bytes": 611
+    },
+    {
+      "path": "fixtures/external-module-header/tooling/metadata/DemandConverter.java",
+      "sha256": "6ea18f010d2fb6f35a97399d18af15078bec807a4faa12af27ae89ace36cde8a",
+      "bytes": 517
+    },
+    {
+      "path": "fixtures/external-module-header/tooling/metadata/ExternalMetadataBatch.scala",
+      "sha256": "143e13c7aa7621f07e9212601cafbc08503b716d94ab05cdd4e3af7fea6e0fe4",
+      "bytes": 9619
+    },
+    {
+      "path": "fixtures/external-module-header/tooling/produce_external_metadata.py",
+      "sha256": "0d8d85ff7cb32172b91685df9e939ac4ab6ae83b66cdea74d503fd6b28b659d8",
+      "bytes": 31150
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "fixtures/top-module-metadata/native-contexts.json",
+      "sha256": "65e2b709bdb265ad114f2db0696e88fa8738e8775d1c9ae7762cab8e4a01aed5",
+      "bytes": 4618
+    },
+    {
+      "path": "fixtures/top-module-metadata/native-binary-map.json",
+      "sha256": "0c01820acec1720c30265b80be6a716c8a4c89381b9e6a5ae459c1a960ed8003",
+      "bytes": 815
+    },
+    {
+      "path": "fixtures/external-metadata/documents.jsonl",
+      "sha256": "d48750d56cb7ea8495c2816814fcd6f3c5a1b9921de281550700eb515e6bc5aa",
+      "bytes": 20315
+    },
+    {
+      "path": "fixtures/external-metadata/syntax.jsonl",
+      "sha256": "84f5fa5d62235c5b732479bb0991f492fcc3f7e0c4e511598068a458dfbdd3eb",
+      "bytes": 31883
+    },
+    {
+      "path": "fixtures/external-metadata/jvm-inherited.stdout",
+      "sha256": "933b42e8616c31ddaae26016faea1b56aac7a8172c8215741327476b71f421a8",
+      "bytes": 31
+    },
+    {
+      "path": "fixtures/external-metadata/jvm-dormant.stdout",
+      "sha256": "eb993cb58d05d9ff4d3b028df2d1591ce77d1a04f71fe9fa5a2ea55cbd100ff9",
+      "bytes": 9
+    },
+    {
+      "path": "fixtures/selected-external-apply/library.jar",
+      "sha256": "c5c965928dba16f7ccb7a1e9812b6de9471828d65d3345e9f822e4572b36a3ad",
+      "bytes": 8980
+    }
+  ]
+}

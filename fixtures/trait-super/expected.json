@@ -1,0 +1,36 @@
+{
+  "schema": "selector-independent-trait-super-expectations/v1",
+  "basis": "Genuine Scala compiler identities and source parent order plus independent JVM execution; evaluator only.",
+  "observed": {
+    "plain": 2,
+    "qualified": 1
+  },
+  "ordered_parents": {
+    "traitcase/Uses#": [
+      "scala/AnyRef#",
+      "traitcase/Root#",
+      "traitcase/Layer#"
+    ]
+  },
+  "calls": [
+    {
+      "owner": "traitcase/Layer#f().",
+      "target": "traitcase/Root#f().",
+      "receiver": "super",
+      "qualified": false
+    },
+    {
+      "owner": "traitcase/Uses#plain().",
+      "target": "traitcase/Layer#f().",
+      "receiver": "super",
+      "qualified": false
+    },
+    {
+      "owner": "traitcase/Uses#qualified().",
+      "target": "traitcase/Root#f().",
+      "receiver": "super",
+      "qualified": true,
+      "qualifier": "traitcase/Root#"
+    }
+  ]
+}

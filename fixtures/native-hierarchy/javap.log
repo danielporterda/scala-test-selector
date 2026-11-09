@@ -1,0 +1,505 @@
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-hierarchy-zd3piyv0/main/hierarchycase/Factory.class
+  Last modified Nov 7, 2026; size 2293 bytes
+  SHA-256 checksum a10ce3123be43ab303ab2587e2c127e55a86aaf91eadfe1f0be7706f0e416953
+  Compiled from "Factory.java"
+public final class hierarchycase.Factory
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #8                          // hierarchycase/Factory
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 5, attributes: 4
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Methodref          #8.#9         // hierarchycase/Factory.echo:(Lhierarchycase/Factory$A;)Lhierarchycase/Factory$A;
+    #8 = Class              #10           // hierarchycase/Factory
+    #9 = NameAndType        #11:#12       // echo:(Lhierarchycase/Factory$A;)Lhierarchycase/Factory$A;
+   #10 = Utf8               hierarchycase/Factory
+   #11 = Utf8               echo
+   #12 = Utf8               (Lhierarchycase/Factory$A;)Lhierarchycase/Factory$A;
+   #13 = InterfaceMethodref #14.#15       // hierarchycase/Factory$Contract.value:()I
+   #14 = Class              #16           // hierarchycase/Factory$Contract
+   #15 = NameAndType        #17:#18       // value:()I
+   #16 = Utf8               hierarchycase/Factory$Contract
+   #17 = Utf8               value
+   #18 = Utf8               ()I
+   #19 = Methodref          #2.#20        // java/lang/Object.toString:()Ljava/lang/String;
+   #20 = NameAndType        #21:#22       // toString:()Ljava/lang/String;
+   #21 = Utf8               toString
+   #22 = Utf8               ()Ljava/lang/String;
+   #23 = Fieldref           #24.#25       // java/lang/System.out:Ljava/io/PrintStream;
+   #24 = Class              #26           // java/lang/System
+   #25 = NameAndType        #27:#28       // out:Ljava/io/PrintStream;
+   #26 = Utf8               java/lang/System
+   #27 = Utf8               out
+   #28 = Utf8               Ljava/io/PrintStream;
+   #29 = Class              #30           // hierarchycase/Factory$A
+   #30 = Utf8               hierarchycase/Factory$A
+   #31 = Methodref          #29.#3        // hierarchycase/Factory$A."<init>":()V
+   #32 = Methodref          #8.#33        // hierarchycase/Factory.caller:(Lhierarchycase/Factory$A;)I
+   #33 = NameAndType        #34:#35       // caller:(Lhierarchycase/Factory$A;)I
+   #34 = Utf8               caller
+   #35 = Utf8               (Lhierarchycase/Factory$A;)I
+   #36 = InvokeDynamic      #0:#37        // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+   #37 = NameAndType        #38:#39       // makeConcatWithConstants:(I)Ljava/lang/String;
+   #38 = Utf8               makeConcatWithConstants
+   #39 = Utf8               (I)Ljava/lang/String;
+   #40 = Methodref          #41.#42       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #41 = Class              #43           // java/io/PrintStream
+   #42 = NameAndType        #44:#45       // println:(Ljava/lang/String;)V
+   #43 = Utf8               java/io/PrintStream
+   #44 = Utf8               println
+   #45 = Utf8               (Ljava/lang/String;)V
+   #46 = Class              #47           // hierarchycase/Factory$B
+   #47 = Utf8               hierarchycase/Factory$B
+   #48 = Methodref          #46.#3        // hierarchycase/Factory$B."<init>":()V
+   #49 = Methodref          #46.#15       // hierarchycase/Factory$B.value:()I
+   #50 = InvokeDynamic      #1:#37        // #1:makeConcatWithConstants:(I)Ljava/lang/String;
+   #51 = Methodref          #52.#53       // java/lang/Class.getSuperclass:()Ljava/lang/Class;
+   #52 = Class              #54           // java/lang/Class
+   #53 = NameAndType        #55:#56       // getSuperclass:()Ljava/lang/Class;
+   #54 = Utf8               java/lang/Class
+   #55 = Utf8               getSuperclass
+   #56 = Utf8               ()Ljava/lang/Class;
+   #57 = Methodref          #52.#58       // java/lang/Class.getName:()Ljava/lang/String;
+   #58 = NameAndType        #59:#22       // getName:()Ljava/lang/String;
+   #59 = Utf8               getName
+   #60 = InvokeDynamic      #2:#61        // #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+   #61 = NameAndType        #38:#62       // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+   #62 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+   #63 = Methodref          #8.#64        // hierarchycase/Factory.objectText:(Lhierarchycase/Factory$A;)Ljava/lang/String;
+   #64 = NameAndType        #65:#66       // objectText:(Lhierarchycase/Factory$A;)Ljava/lang/String;
+   #65 = Utf8               objectText
+   #66 = Utf8               (Lhierarchycase/Factory$A;)Ljava/lang/String;
+   #67 = String             #68           // hierarchycase.Factory$A@
+   #68 = Utf8               hierarchycase.Factory$A@
+   #69 = Methodref          #70.#71       // java/lang/String.startsWith:(Ljava/lang/String;)Z
+   #70 = Class              #72           // java/lang/String
+   #71 = NameAndType        #73:#74       // startsWith:(Ljava/lang/String;)Z
+   #72 = Utf8               java/lang/String
+   #73 = Utf8               startsWith
+   #74 = Utf8               (Ljava/lang/String;)Z
+   #75 = Class              #76           // java/lang/AssertionError
+   #76 = Utf8               java/lang/AssertionError
+   #77 = Methodref          #75.#78       // java/lang/AssertionError."<init>":(Ljava/lang/Object;)V
+   #78 = NameAndType        #5:#79        // "<init>":(Ljava/lang/Object;)V
+   #79 = Utf8               (Ljava/lang/Object;)V
+   #80 = String             #81           // object-method:class-name-prefix
+   #81 = Utf8               object-method:class-name-prefix
+   #82 = Utf8               Code
+   #83 = Utf8               LineNumberTable
+   #84 = Utf8               LocalVariableTable
+   #85 = Utf8               this
+   #86 = Utf8               Lhierarchycase/Factory;
+   #87 = Utf8               Lhierarchycase/Factory$A;
+   #88 = Utf8               receiver
+   #89 = Utf8               Lhierarchycase/Factory$Contract;
+   #90 = Utf8               main
+   #91 = Utf8               ([Ljava/lang/String;)V
+   #92 = Utf8               args
+   #93 = Utf8               [Ljava/lang/String;
+   #94 = Utf8               text
+   #95 = Utf8               Ljava/lang/String;
+   #96 = Utf8               StackMapTable
+   #97 = Utf8               SourceFile
+   #98 = Utf8               Factory.java
+   #99 = Utf8               NestMembers
+  #100 = Class              #101          // hierarchycase/Factory$Base
+  #101 = Utf8               hierarchycase/Factory$Base
+  #102 = Utf8               BootstrapMethods
+  #103 = String             #104          // caller:\u0001
+  #104 = Utf8               caller:\u0001
+  #105 = String             #106          // B:\u0001
+  #106 = Utf8               B:\u0001
+  #107 = String             #108          // A-parent:\u0001
+  #108 = Utf8               A-parent:\u0001
+  #109 = MethodHandle       6:#110        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #110 = Methodref          #111.#112     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #111 = Class              #113          // java/lang/invoke/StringConcatFactory
+  #112 = NameAndType        #38:#114      // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #113 = Utf8               java/lang/invoke/StringConcatFactory
+  #114 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #115 = Utf8               InnerClasses
+  #116 = Utf8               A
+  #117 = Utf8               Contract
+  #118 = Utf8               B
+  #119 = Utf8               Base
+  #120 = Class              #121          // java/lang/invoke/MethodHandles$Lookup
+  #121 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #122 = Class              #123          // java/lang/invoke/MethodHandles
+  #123 = Utf8               java/lang/invoke/MethodHandles
+  #124 = Utf8               Lookup
+{
+  public hierarchycase.Factory();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 2: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lhierarchycase/Factory;
+
+  public static hierarchycase.Factory$A echo(hierarchycase.Factory$A);
+    descriptor: (Lhierarchycase/Factory$A;)Lhierarchycase/Factory$A;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: areturn
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0 value   Lhierarchycase/Factory$A;
+
+  public static int caller(hierarchycase.Factory$A);
+    descriptor: (Lhierarchycase/Factory$A;)I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=2, args_size=1
+         0: aload_0
+         1: invokestatic  #7                  // Method echo:(Lhierarchycase/Factory$A;)Lhierarchycase/Factory$A;
+         4: astore_1
+         5: aload_1
+         6: invokeinterface #13,  1           // InterfaceMethod hierarchycase/Factory$Contract.value:()I
+        11: ireturn
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0 value   Lhierarchycase/Factory$A;
+            5       7     1 receiver   Lhierarchycase/Factory$Contract;
+
+  public static java.lang.String objectText(hierarchycase.Factory$A);
+    descriptor: (Lhierarchycase/Factory$A;)Ljava/lang/String;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #19                 // Method java/lang/Object.toString:()Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 9: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0 value   Lhierarchycase/Factory$A;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=2, args_size=1
+         0: getstatic     #23                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: new           #29                 // class hierarchycase/Factory$A
+         6: dup
+         7: invokespecial #31                 // Method hierarchycase/Factory$A."<init>":()V
+        10: invokestatic  #32                 // Method caller:(Lhierarchycase/Factory$A;)I
+        13: invokedynamic #36,  0             // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        18: invokevirtual #40                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        21: getstatic     #23                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        24: new           #46                 // class hierarchycase/Factory$B
+        27: dup
+        28: invokespecial #48                 // Method hierarchycase/Factory$B."<init>":()V
+        31: invokevirtual #49                 // Method hierarchycase/Factory$B.value:()I
+        34: invokedynamic #50,  0             // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+        39: invokevirtual #40                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        42: getstatic     #23                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        45: ldc           #29                 // class hierarchycase/Factory$A
+        47: invokevirtual #51                 // Method java/lang/Class.getSuperclass:()Ljava/lang/Class;
+        50: invokevirtual #57                 // Method java/lang/Class.getName:()Ljava/lang/String;
+        53: invokedynamic #60,  0             // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+        58: invokevirtual #40                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        61: new           #29                 // class hierarchycase/Factory$A
+        64: dup
+        65: invokespecial #31                 // Method hierarchycase/Factory$A."<init>":()V
+        68: invokestatic  #63                 // Method objectText:(Lhierarchycase/Factory$A;)Ljava/lang/String;
+        71: astore_1
+        72: aload_1
+        73: ldc           #67                 // String hierarchycase.Factory$A@
+        75: invokevirtual #69                 // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+        78: ifne          90
+        81: new           #75                 // class java/lang/AssertionError
+        84: dup
+        85: aload_1
+        86: invokespecial #77                 // Method java/lang/AssertionError."<init>":(Ljava/lang/Object;)V
+        89: athrow
+        90: getstatic     #23                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        93: ldc           #80                 // String object-method:class-name-prefix
+        95: invokevirtual #40                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        98: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 21
+        line 13: 42
+        line 14: 61
+        line 15: 72
+        line 16: 90
+        line 17: 98
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      99     0  args   [Ljava/lang/String;
+           72      27     1  text   Ljava/lang/String;
+      StackMapTable: number_of_entries = 1
+        frame_type = 252 /* append */
+          offset_delta = 90
+          locals = [ class java/lang/String ]
+}
+SourceFile: "Factory.java"
+NestMembers:
+  hierarchycase/Factory$B
+  hierarchycase/Factory$A
+  hierarchycase/Factory$Base
+  hierarchycase/Factory$Contract
+BootstrapMethods:
+  0: #109 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #103 caller:\u0001
+  1: #109 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #105 B:\u0001
+  2: #109 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #107 A-parent:\u0001
+InnerClasses:
+  public static final #116= #29 of #8;    // A=class hierarchycase/Factory$A of class hierarchycase/Factory
+  public static #117= #14 of #8;          // Contract=class hierarchycase/Factory$Contract of class hierarchycase/Factory
+  public static final #118= #46 of #8;    // B=class hierarchycase/Factory$B of class hierarchycase/Factory
+  public static #119= #100 of #8;         // Base=class hierarchycase/Factory$Base of class hierarchycase/Factory
+  public static final #124= #120 of #122; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-hierarchy-zd3piyv0/main/hierarchycase/Factory$A.class
+  Last modified Nov 7, 2026; size 513 bytes
+  SHA-256 checksum 82b89cfe84eebf6207f393467a04a23cca98a7326202ceaeb39019ab3dd1dfbd
+  Compiled from "Factory.java"
+public final class hierarchycase.Factory$A extends hierarchycase.Factory$Base implements hierarchycase.Factory$Contract
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #7                          // hierarchycase/Factory$A
+  super_class: #2                         // hierarchycase/Factory$Base
+  interfaces: 1, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // hierarchycase/Factory$Base."<init>":()V
+   #2 = Class              #4             // hierarchycase/Factory$Base
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               hierarchycase/Factory$Base
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // hierarchycase/Factory$A
+   #8 = Utf8               hierarchycase/Factory$A
+   #9 = Class              #10            // hierarchycase/Factory$Contract
+  #10 = Utf8               hierarchycase/Factory$Contract
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               LocalVariableTable
+  #14 = Utf8               this
+  #15 = Utf8               Lhierarchycase/Factory$A;
+  #16 = Utf8               value
+  #17 = Utf8               ()I
+  #18 = Utf8               SourceFile
+  #19 = Utf8               Factory.java
+  #20 = Utf8               NestHost
+  #21 = Class              #22            // hierarchycase/Factory
+  #22 = Utf8               hierarchycase/Factory
+  #23 = Utf8               InnerClasses
+  #24 = Utf8               Base
+  #25 = Utf8               A
+  #26 = Utf8               Contract
+{
+  public hierarchycase.Factory$A();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method hierarchycase/Factory$Base."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lhierarchycase/Factory$A;
+
+  public int value();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_1
+         1: ireturn
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Lhierarchycase/Factory$A;
+}
+SourceFile: "Factory.java"
+NestHost: class hierarchycase/Factory
+InnerClasses:
+  public static #24= #2 of #21;           // Base=class hierarchycase/Factory$Base of class hierarchycase/Factory
+  public static final #25= #7 of #21;     // A=class hierarchycase/Factory$A of class hierarchycase/Factory
+  public static #26= #9 of #21;           // Contract=class hierarchycase/Factory$Contract of class hierarchycase/Factory
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-hierarchy-zd3piyv0/main/hierarchycase/Factory$B.class
+  Last modified Nov 7, 2026; size 488 bytes
+  SHA-256 checksum d7e36c598bc7a3e2f2020393c58c5cc656065d2118acbde37f85f8e9e3df6c88
+  Compiled from "Factory.java"
+public final class hierarchycase.Factory$B implements hierarchycase.Factory$Contract
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #7                          // hierarchycase/Factory$B
+  super_class: #2                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // hierarchycase/Factory$B
+   #8 = Utf8               hierarchycase/Factory$B
+   #9 = Class              #10            // hierarchycase/Factory$Contract
+  #10 = Utf8               hierarchycase/Factory$Contract
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               LocalVariableTable
+  #14 = Utf8               this
+  #15 = Utf8               Lhierarchycase/Factory$B;
+  #16 = Utf8               value
+  #17 = Utf8               ()I
+  #18 = Utf8               SourceFile
+  #19 = Utf8               Factory.java
+  #20 = Utf8               NestHost
+  #21 = Class              #22            // hierarchycase/Factory
+  #22 = Utf8               hierarchycase/Factory
+  #23 = Utf8               InnerClasses
+  #24 = Utf8               B
+  #25 = Utf8               Contract
+{
+  public hierarchycase.Factory$B();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 6: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lhierarchycase/Factory$B;
+
+  public int value();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_2
+         1: ireturn
+      LineNumberTable:
+        line 6: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Lhierarchycase/Factory$B;
+}
+SourceFile: "Factory.java"
+NestHost: class hierarchycase/Factory
+InnerClasses:
+  public static final #24= #7 of #21;     // B=class hierarchycase/Factory$B of class hierarchycase/Factory
+  public static #25= #9 of #21;           // Contract=class hierarchycase/Factory$Contract of class hierarchycase/Factory
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-hierarchy-zd3piyv0/main/hierarchycase/Factory$Base.class
+  Last modified Nov 7, 2026; size 368 bytes
+  SHA-256 checksum 1009c4b5332c3c33203b657a8a90d2b0f951a1f944b77e6a622e417c9f6b49ca
+  Compiled from "Factory.java"
+public class hierarchycase.Factory$Base
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #7                          // hierarchycase/Factory$Base
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 1, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // hierarchycase/Factory$Base
+   #8 = Utf8               hierarchycase/Factory$Base
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               LocalVariableTable
+  #12 = Utf8               this
+  #13 = Utf8               Lhierarchycase/Factory$Base;
+  #14 = Utf8               SourceFile
+  #15 = Utf8               Factory.java
+  #16 = Utf8               NestHost
+  #17 = Class              #18            // hierarchycase/Factory
+  #18 = Utf8               hierarchycase/Factory
+  #19 = Utf8               InnerClasses
+  #20 = Utf8               Base
+{
+  public hierarchycase.Factory$Base();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lhierarchycase/Factory$Base;
+}
+SourceFile: "Factory.java"
+NestHost: class hierarchycase/Factory
+InnerClasses:
+  public static #20= #7 of #17;           // Base=class hierarchycase/Factory$Base of class hierarchycase/Factory
+Classfile /var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-hierarchy-zd3piyv0/main/hierarchycase/Factory$Contract.class
+  Last modified Nov 7, 2026; size 228 bytes
+  SHA-256 checksum 2b3156fe04e19e2775eaf9d2743162a02d0a2f83e6699b61ed7e8ca4dff4af22
+  Compiled from "Factory.java"
+public interface hierarchycase.Factory$Contract
+  minor version: 0
+  major version: 61
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #1                          // hierarchycase/Factory$Contract
+  super_class: #3                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 1, attributes: 3
+Constant pool:
+   #1 = Class              #2             // hierarchycase/Factory$Contract
+   #2 = Utf8               hierarchycase/Factory$Contract
+   #3 = Class              #4             // java/lang/Object
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               value
+   #6 = Utf8               ()I
+   #7 = Utf8               SourceFile
+   #8 = Utf8               Factory.java
+   #9 = Utf8               NestHost
+  #10 = Class              #11            // hierarchycase/Factory
+  #11 = Utf8               hierarchycase/Factory
+  #12 = Utf8               InnerClasses
+  #13 = Utf8               Contract
+{
+  public abstract int value();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+}
+SourceFile: "Factory.java"
+NestHost: class hierarchycase/Factory
+InnerClasses:
+  public static #13= #1 of #10;           // Contract=class hierarchycase/Factory$Contract of class hierarchycase/Factory

@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "revision": "d2ed80760618901ffe9e6d9c7e1cdb4d008ddf62",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/caller/META-INF/semanticdb/src/directivevalues/Calls.scala.semanticdb",
+      "sha256": "22e6ecb4704e44347141f4e54cd0215f62e37d85d709237907f299d550de3c6e",
+      "semanticdb_input": "raw/caller/META-INF/semanticdb/src/directivevalues/Calls.scala.semanticdb",
+      "input_target_contexts": [
+        "project:directive-values/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/library/META-INF/semanticdb/definitions/directivevalues/Library.scala.semanticdb",
+      "sha256": "5ebaed8005162f2a5ab8e555bfb754203ff399b43483e88aa1fba3ff92bec280",
+      "semanticdb_input": "raw/library/META-INF/semanticdb/definitions/directivevalues/Library.scala.semanticdb",
+      "input_target_contexts": [
+        "project:directive-values/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/directivevalues/Calls.scala",
+      "file": "src/directivevalues/Calls.scala",
+      "sha256": "dd8e47fb0ceee2b97472ad42f0133ceb0da226789bdc7f1cc4e8171eafdc3db9",
+      "source_contexts": [
+        "project:directive-values/configuration:test"
+      ]
+    },
+    {
+      "path": "definitions/directivevalues/Library.scala",
+      "file": "definitions/directivevalues/Library.scala",
+      "sha256": "4a6534219c435fde3d50e01a80f8cd42eb51f29ec7026d264ad6400a6bc84151",
+      "source_contexts": [
+        "project:directive-values/configuration:test"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "selector-independent-direct-parity/v1",
+  "basis": "Successful JVM construction values plus source-reviewed exact direct compiler call; evaluator-only. No registered ScalaTest test bodies.",
+  "selected_execution_suites": [
+    "executioncase.AffectedSuite"
+  ],
+  "uncertain_execution_suites": [],
+  "compile_affected_suites": [],
+  "changed_execution_symbols": [
+    "executioncase/Changed.value()."
+  ],
+  "execution_routes": {
+    "executioncase.AffectedSuite": [
+      "executioncase/AffectedSuite#",
+      "executioncase/Changed.value()."
+    ]
+  },
+  "observed_values": {
+    "base": [
+      41,
+      7,
+      7
+    ],
+    "head": [
+      42,
+      7,
+      7
+    ]
+  },
+  "legacy_obligations": [
+    {
+      "kind": "constructor_identity_unresolved",
+      "path": "src/executioncase/Suites.scala",
+      "range": [
+        219,
+        238
+      ]
+    },
+    {
+      "kind": "constructor_identity_unresolved",
+      "path": "src/executioncase/Suites.scala",
+      "range": [
+        358,
+        377
+      ]
+    },
+    {
+      "kind": "constructor_identity_unresolved",
+      "path": "src/executioncase/Suites.scala",
+      "range": [
+        455,
+        474
+      ]
+    }
+  ],
+  "known_refinements": [
+    {
+      "legacy": "Three unresolved parent-constructor identities at the exact source spans recorded below.",
+      "rust": "Those source parents are bound to hash-verified ScalaTest/Scalactic classfile initializer bodies.",
+      "independent_basis": "Real unmodified framework classfiles plus successful JVM construction/ScalaTest Runner in both revisions.",
+      "scope": "Retained explicit diagnostic refinement; the common direct-call route and exact selected/uncertain/compile sets must still match. Full evidence schemas are not equated."
+    }
+  ]
+}

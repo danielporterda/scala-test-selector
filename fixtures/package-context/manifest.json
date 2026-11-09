@@ -1,0 +1,33 @@
+{
+  "schema": "compiler-package-context-fixture/v1",
+  "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+  "capture": {
+    "path": "../local-retained/pr7646-rebuild-20261107/head/capture/semanticdb-documents.jsonl.gz",
+    "sha256": "83bcbe671eff85a103fc396eac165a765f839775a78333fb5ab00d2691affbc8"
+  },
+  "documents_sha256": "cf7fc96583f72a99cf627dd1e64067db9a752c37b1e59f9beac3111a2ae52b21",
+  "compiler_records": "Exact unmodified native captured JSONL rows; original raw SemanticDB hashes retained per document. No AST or inferred compiler context records.",
+  "package_symbol": "org/lfdecentralizedtrust/splice/environment/",
+  "documents": [
+    {
+      "path": "apps/common/src/main/scala/org/lfdecentralizedtrust/splice/environment/RetryFor.scala",
+      "capture_document_ordinal": 430,
+      "capture_row_sha256": "3418c042291aa416e7219f61217cb6919bd44018b36da037ef61964483eaaef0",
+      "source_sha256": "d0a664f4e74d83bb624be816e7a213d893beb7644aa07a5f2630808f32787a77",
+      "semanticdb_input_sha256": "e2691194b8d40cd78297834d271226e7e61396b469136e1fab7a37f6ae93715a",
+      "source_contexts": [
+        "project:apps-common/configuration:compile"
+      ]
+    },
+    {
+      "path": "apps/wallet/src/main/scala/org/lfdecentralizedtrust/splice/wallet/util/TopupUtil.scala",
+      "capture_document_ordinal": 1530,
+      "capture_row_sha256": "e4c4bb2836ba6705d01576a0b19622dcb5f4d9346c73ab1982fc8cddb310578e",
+      "source_sha256": "a59dad5a5356ff10573515cc420cbf716d114cafd913e522e98a523f7f7f4005",
+      "semanticdb_input_sha256": "d0775ffbc6b85a5c113c17b4d6d75d71267a0624a60accde114564dda12363e9",
+      "source_contexts": [
+        "project:apps-wallet/configuration:compile"
+      ]
+    }
+  ]
+}

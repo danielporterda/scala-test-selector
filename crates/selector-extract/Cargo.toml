@@ -1,0 +1,23 @@
+[package]
+name = "selector-extract"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+selector-types.workspace = true
+selector-framework.workspace = true
+selector-facts.workspace = true
+serde.workspace = true
+serde_json = { workspace = true, features = ["unbounded_depth"] }
+rayon.workspace = true
+flate2.workspace = true
+sha2.workspace = true
+md-5.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

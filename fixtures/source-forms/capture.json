@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "f4d4508b45ddba6abfb17bb3e97dc496d73064b0",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/sourceforms/Forms.scala.semanticdb",
+      "sha256": "730f5f8136ea67de96d19b91ebb205389dfe23673f29cb9ce05eff89b2b94113",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/sourceforms/Forms.scala.semanticdb",
+      "input_target_contexts": [
+        "project:source-forms/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/sourceforms/Forms.scala",
+      "file": "src/sourceforms/Forms.scala",
+      "sha256": "f4d4508b45ddba6abfb17bb3e97dc496d73064b0f7fc9c50418e419f3720f18a",
+      "source_contexts": [
+        "project:source-forms/configuration:test"
+      ]
+    }
+  ]
+}

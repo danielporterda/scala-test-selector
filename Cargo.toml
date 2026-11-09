@@ -1,0 +1,99 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/selector-types",
+    "crates/selector-issue",
+    "crates/selector-framework",
+    "crates/selector-artifacts",
+    "crates/selector-effects",
+    "crates/selector-effects-codec",
+    "crates/selector-effect-plan",
+    "crates/selector-compiled-products",
+    "crates/selector-runtime-platform",
+    "crates/selector-jvm-resolve",
+    "crates/selector-native-effects",
+    "crates/selector-source-effects",
+    "crates/selector-effect-world",
+    "crates/selector-catalogue",
+    "crates/selector-facts",
+    "crates/selector-graph",
+    "crates/selector-plan",
+    "crates/selector-domain",
+    "crates/selector-result",
+    "crates/selector-extract",
+    "crates/selector-models",
+    "crates/selector-class-diff",
+    "crates/selector-runtime-equivalence",
+    "crates/selector-graph-build",
+    "crates/selector-transfer",
+    "crates/selector-solve",
+    "crates/selector-select",
+    "crates/selector-report",
+    "crates/selector-cli",
+    "crates/selector-acceptance",
+]
+default-members = ["crates/selector-cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.98"
+license = "Apache-2.0"
+
+[workspace.dependencies]
+selector-types = { path = "crates/selector-types" }
+selector-issue = { path = "crates/selector-issue" }
+selector-framework = { path = "crates/selector-framework" }
+selector-artifacts = { path = "crates/selector-artifacts" }
+selector-effects = { path = "crates/selector-effects" }
+selector-effects-codec = { path = "crates/selector-effects-codec" }
+selector-effect-plan = { path = "crates/selector-effect-plan" }
+selector-compiled-products = { path = "crates/selector-compiled-products" }
+selector-class-diff = { path = "crates/selector-class-diff" }
+selector-runtime-platform = { path = "crates/selector-runtime-platform" }
+selector-jvm-resolve = { path = "crates/selector-jvm-resolve" }
+selector-native-effects = { path = "crates/selector-native-effects" }
+selector-source-effects = { path = "crates/selector-source-effects" }
+selector-effect-world = { path = "crates/selector-effect-world" }
+selector-catalogue = { path = "crates/selector-catalogue" }
+selector-facts = { path = "crates/selector-facts" }
+selector-graph = { path = "crates/selector-graph" }
+selector-plan = { path = "crates/selector-plan" }
+selector-domain = { path = "crates/selector-domain" }
+selector-result = { path = "crates/selector-result" }
+selector-extract = { path = "crates/selector-extract" }
+selector-models = { path = "crates/selector-models" }
+selector-graph-build = { path = "crates/selector-graph-build" }
+selector-transfer = { path = "crates/selector-transfer" }
+selector-solve = { path = "crates/selector-solve" }
+selector-select = { path = "crates/selector-select" }
+selector-report = { path = "crates/selector-report" }
+selector-cli = { path = "crates/selector-cli" }
+selector-acceptance = { path = "crates/selector-acceptance" }
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = { version = "=1.0.145", features = ["raw_value"] }
+rayon = "=1.12.0"
+flate2 = "=1.1.10"
+sha2 = "=0.10.9"
+md-5 = "=0.11.0"
+libc = "=0.2.186"
+rusqlite = { version = "=0.39.0", features = ["bundled"] }
+tempfile = "=3.27.0"
+tar = "=0.4.46"
+yaml-rust2 = { version = "=0.13.0", default-features = false }
+
+[workspace.lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+
+[profile.dev]
+opt-level = 0
+debug = "line-tables-only"
+incremental = true
+lto = "off"
+
+[profile.perf-dev]
+inherits = "dev"
+opt-level = 2
+
+[profile.release]
+lto = "off"

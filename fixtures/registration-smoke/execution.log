@@ -1,0 +1,11 @@
+suite:registrationcase.DirectSuite:tests=1:observed=41
+suite:registrationcase.StoredSuite:tests=1:observed=7
+suite:registrationcase.InvokedSuite:tests=1:observed=41
+suite:registrationcase.OpaqueSuite:tests=1:observed=7
+suite:registrationcase.InheritedSuite:tests=1:observed=41
+suite:registrationcase.InheritedSibling:tests=1:observed=7
+suite:registrationcase.HookSuite:tests=1:observed=41
+suite:registrationcase.HookSibling:tests=1:observed=7
+suite:registrationcase.FixtureSuite:tests=1:observed=41
+suite:registrationcase.WordSuite:tests=1:observed=41
+suite:registrationcase.NestedWordSuite:tests=1:observed=41

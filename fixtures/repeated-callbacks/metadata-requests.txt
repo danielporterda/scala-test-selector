@@ -1,0 +1,3 @@
+repeatedcallbacks/Api#aggregate().
+repeatedcallbacks/Api#store().
+repeatedcallbacks/Api#mixed().

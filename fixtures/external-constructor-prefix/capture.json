@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "9a6e3dc09341d4c03d7153f1a09ec763fd62e9a8",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/externalprefix/Calls.scala.semanticdb",
+      "sha256": "b5491556928227b85acde99aac5efaff705549975f25433399259d59fed36bad",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/externalprefix/Calls.scala.semanticdb",
+      "input_target_contexts": [
+        "project:external-constructor-prefix/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/externalprefix/Calls.scala",
+      "file": "src/externalprefix/Calls.scala",
+      "sha256": "7f9baa41488b94ab8a8510265d36ec0cd8eeff4ed34b1ea2c2b210a7ca66b89b",
+      "source_contexts": [
+        "project:external-constructor-prefix/configuration:test"
+      ]
+    }
+  ]
+}

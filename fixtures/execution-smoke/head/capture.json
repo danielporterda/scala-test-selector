@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "revision": "a7dd011c3ded9efa363b581172841effc8fa69e1",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/executioncase/Changed.scala.semanticdb",
+      "sha256": "a64115485b3ba215b6e09877c52f5bbacab064285248c6aa3bcc20cf07d5206a",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/executioncase/Changed.scala.semanticdb",
+      "input_target_contexts": [
+        "project:execution-smoke/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/executioncase/Factory.scala.semanticdb",
+      "sha256": "8cd0c5611de3ca3a1f24c8f71153d937f6d96506fdd13df308f32eb69145778b",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/executioncase/Factory.scala.semanticdb",
+      "input_target_contexts": [
+        "project:execution-smoke/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/executioncase/Suites.scala.semanticdb",
+      "sha256": "467070c1772fe36c6d4e4abe8e458ef4deb8fd6970bd96d67fee821aebe69e86",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/executioncase/Suites.scala.semanticdb",
+      "input_target_contexts": [
+        "project:execution-smoke/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/executioncase/Unchanged.scala.semanticdb",
+      "sha256": "5ed5508ca9e6c53dc64c899ba26095d80b0fdd08e2ff8a2dce46b88f46074ffc",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/executioncase/Unchanged.scala.semanticdb",
+      "input_target_contexts": [
+        "project:execution-smoke/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/executioncase/Changed.scala",
+      "file": "src/executioncase/Changed.scala",
+      "sha256": "e7e3f169764053a57d264a572a566bf8c0ddc33d445d486e96f17cc7e5055094",
+      "source_contexts": [
+        "project:execution-smoke/configuration:test"
+      ]
+    },
+    {
+      "path": "src/executioncase/Factory.scala",
+      "file": "src/executioncase/Factory.scala",
+      "sha256": "59b7939d12a461df993e657a76adb66d2b34e55332d49dda29a2674b337319b0",
+      "source_contexts": [
+        "project:execution-smoke/configuration:test"
+      ]
+    },
+    {
+      "path": "src/executioncase/Suites.scala",
+      "file": "src/executioncase/Suites.scala",
+      "sha256": "6f54daf608e5479a22aa63fc5a15f4e0c7d7f6a2c6c7c9d5d93ee4b981997364",
+      "source_contexts": [
+        "project:execution-smoke/configuration:test"
+      ]
+    },
+    {
+      "path": "src/executioncase/Unchanged.scala",
+      "file": "src/executioncase/Unchanged.scala",
+      "sha256": "ad6823908fe3073fe711b11deb450ff2f5d58c1efb39d9fdbdbdef283cd6a000",
+      "source_contexts": [
+        "project:execution-smoke/configuration:test"
+      ]
+    }
+  ]
+}

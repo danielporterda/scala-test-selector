@@ -1,0 +1,5 @@
+direct:PositionSuite.scala:10
+implicit:PositionSuite.scala:12
+position-effects:0:0
+user-macro-effects:0:1
+assertion-argument-effects:1:11

@@ -1,0 +1,32 @@
+{
+  "schema": "selector-replay-fixture-operator/v1",
+  "implementation_before": {
+    "sha256": "276bcee3de91517f61017c5f0337dc804abb3046ef10237f2ad5ce4f3e377602",
+    "files": 150,
+    "scope": "All crate Rust/Scala/Cargo sources plus root Cargo manifest and lockfile; not a claim about fixture or external toolchain identity."
+  },
+  "git_baseline": "fed1578ea4cc5c2b61fffb0aa7ebaf288b7bb0f4",
+  "binary": {
+    "path": "artifacts/phase2-producer/selector-replay3-heap-unit",
+    "bytes": 15052592,
+    "sha256": "e04eab5fc633c00102c917b0bf55da1d3c5e2bb69fb74f6ad18a100a01252c0d"
+  },
+  "command": [
+    "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/phase2-producer/selector-replay3-heap-unit",
+    "replay::tests::coarse_v2_migration::recapture_genuine_clue_with_current_kernel_and_coarse_adapter",
+    "--ignored",
+    "--exact",
+    "--nocapture"
+  ],
+  "marker_control": {
+    "path": "/private/tmp/selector-legacy-marker-control-20261107.json",
+    "sha256": "331dbe6af58921ad91c770772f1663a32e4a7a657f88e66912d7aa92b2d74a9c"
+  },
+  "exit_code": 0,
+  "charged_wall_seconds": 0.27447470801416785,
+  "implementation_after": {
+    "sha256": "276bcee3de91517f61017c5f0337dc804abb3046ef10237f2ad5ce4f3e377602",
+    "files": 150,
+    "scope": "All crate Rust/Scala/Cargo sources plus root Cargo manifest and lockfile; not a claim about fixture or external toolchain identity."
+  }
+}

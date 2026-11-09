@@ -1,0 +1,26 @@
+{
+  "schema": "rust-selector-symbol-owner-fixture/v1",
+  "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+  "source": "ci-cost-study/compiler-selector/capture/c759ad48a1dffcbc4cc0abc6527a0252ced85f6b/semanticdb-documents.jsonl.gz",
+  "source_sha256": "4a1ebe630da1c27d45b08de11ed313c50bedc96959c6192f01b07679ab730d2b",
+  "reference": "compiler-selector/engine/semantic_index.py global_owner.__wrapped__",
+  "reference_source_sha256": "bb0abe87218d7e2fcdbed61d26b343b1db4500e2f1f0b999c7c4070858d594dd",
+  "full_unique_symbol_comparison": {
+    "symbols": 473970,
+    "mismatches": 0,
+    "scope": "all declaration and occurrence symbol strings in full exact head capture"
+  },
+  "subset_rows": 35,
+  "subset_sha256": "bd7015d0581ef1344bad52eb50ac556e4c8239c6688fcc80a7e89a2d2a4b1040",
+  "category_samples": {
+    "overloaded_method": 5,
+    "value_parameter": 5,
+    "type_parameter": 5,
+    "quoted_constructor": 5,
+    "default_getter": 5,
+    "local": 5,
+    "clock_method": 5
+  },
+  "format": "symbol TAB expected owner; a single - means no global owner",
+  "qualification": "Compiler identities are genuine; expected ownership is grammar-reference parity, not a selected-suite correctness oracle."
+}

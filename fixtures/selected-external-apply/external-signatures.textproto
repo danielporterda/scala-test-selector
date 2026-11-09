@@ -1,0 +1,183 @@
+documents {
+  schema: SEMANTICDB4
+  uri: "selectedexternal/Configuration.class"
+  text: ""
+  symbols {
+    symbol: "selectedexternal/Configuration#PatienceConfig.apply()."
+    kind: METHOD
+    properties: 0
+    display_name: "apply"
+    language: SCALA
+    signature {
+      method_signature {
+        type_parameters {
+        }
+        parameter_lists {
+          symlinks: "selectedexternal/Configuration#PatienceConfig.apply().(label)"
+        }
+        return_type {
+          type_ref {
+            prefix {
+            }
+            symbol: "selectedexternal/Configuration#PatienceConfig#"
+          }
+        }
+      }
+    }
+    access {
+      public_access {
+      }
+    }
+  }
+  symbols {
+    symbol: "selectedexternal/Configuration#PatienceConfig.apply().(label)"
+    kind: PARAMETER
+    properties: 0
+    display_name: "label"
+    language: SCALA
+    signature {
+      value_signature {
+        tpe {
+          type_ref {
+            prefix {
+            }
+            symbol: "scala/Predef.String#"
+          }
+        }
+      }
+    }
+    access {
+    }
+  }
+  symbols {
+    symbol: "selectedexternal/Configuration#PatienceConfig.apply(+1)."
+    kind: METHOD
+    properties: 0
+    display_name: "apply"
+    language: SCALA
+    signature {
+      method_signature {
+        type_parameters {
+        }
+        parameter_lists {
+          symlinks: "selectedexternal/Configuration#PatienceConfig.apply(+1).(timeout)"
+          symlinks: "selectedexternal/Configuration#PatienceConfig.apply(+1).(interval)"
+        }
+        return_type {
+          type_ref {
+            prefix {
+            }
+            symbol: "selectedexternal/Configuration#PatienceConfig#"
+          }
+        }
+      }
+    }
+    access {
+      public_access {
+      }
+    }
+  }
+  symbols {
+    symbol: "selectedexternal/Configuration#PatienceConfig.apply(+1).(timeout)"
+    kind: PARAMETER
+    properties: 32768
+    display_name: "timeout"
+    language: SCALA
+    signature {
+      value_signature {
+        tpe {
+          type_ref {
+            prefix {
+            }
+            symbol: "selectedexternal/Span#"
+          }
+        }
+      }
+    }
+    access {
+    }
+  }
+  symbols {
+    symbol: "selectedexternal/Configuration#PatienceConfig.apply(+1).(interval)"
+    kind: PARAMETER
+    properties: 32768
+    display_name: "interval"
+    language: SCALA
+    signature {
+      value_signature {
+        tpe {
+          type_ref {
+            prefix {
+            }
+            symbol: "selectedexternal/Span#"
+          }
+        }
+      }
+    }
+    access {
+    }
+  }
+  symbols {
+    symbol: "selectedexternal/Configuration#PatienceConfig.returning()."
+    kind: METHOD
+    properties: 0
+    display_name: "returning"
+    language: SCALA
+    signature {
+      method_signature {
+        type_parameters {
+        }
+        parameter_lists {
+          symlinks: "selectedexternal/Configuration#PatienceConfig.returning().(timeout)"
+        }
+        return_type {
+          type_ref {
+            prefix {
+            }
+            symbol: "scala/Function1#"
+            type_arguments {
+              type_ref {
+                prefix {
+                }
+                symbol: "selectedexternal/Span#"
+              }
+            }
+            type_arguments {
+              type_ref {
+                prefix {
+                }
+                symbol: "selectedexternal/Configuration#PatienceConfig#"
+              }
+            }
+          }
+        }
+      }
+    }
+    access {
+      public_access {
+      }
+    }
+  }
+  symbols {
+    symbol: "selectedexternal/Configuration#PatienceConfig.returning().(timeout)"
+    kind: PARAMETER
+    properties: 0
+    display_name: "timeout"
+    language: SCALA
+    signature {
+      value_signature {
+        tpe {
+          type_ref {
+            prefix {
+            }
+            symbol: "selectedexternal/Span#"
+          }
+        }
+      }
+    }
+    access {
+    }
+  }
+  language: SCALA
+  md5: ""
+}

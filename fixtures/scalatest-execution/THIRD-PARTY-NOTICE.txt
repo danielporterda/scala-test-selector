@@ -1,0 +1,16 @@
+This fixture redistributes unmodified ScalaTest 3.2.19 binary artifacts:
+
+- org.scalatest:scalatest-wordspec_2.13:3.2.19 (complete original JAR and 10
+  extracted classfiles)
+- org.scalatest:scalatest-core_2.13:3.2.19 (19 extracted classfiles)
+
+ScalaTest identifies its vendor as Artima, Inc. Its published Maven POM declares
+the Apache License, Version 2.0. The exact WordSpec POM is retained in
+provenance/scalatest-wordspec_2.13-3.2.19.pom; the license text is included in
+LICENSE-APACHE. This fixture's license copy is the same standard Apache 2.0
+text already retained in fixtures/execution-smoke/LICENSE-APACHE.
+
+The original WordSpec archive contains no LICENSE, NOTICE or COPYING entry.
+No upstream notice file has been removed or rewritten. This attribution file
+is fixture documentation, not an upstream NOTICE. Original provider, archive,
+classfile and selected method hashes are pinned in manifest.json.

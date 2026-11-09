@@ -1,0 +1,198 @@
+{
+  "schema": "selector-native-hierarchy-fixture/v1",
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "generator_sha256": "cdcd8b76d6c0d5f610d173c9f07550b10da59c785b4ca27e6c20aeb1ef81b746",
+  "commands": [
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-hierarchy-zd3piyv0/main",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-hierarchy/src/hierarchycase/Factory.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-hierarchy-zd3piyv0/shadow",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-hierarchy/shadow/hierarchycase/Factory.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-hierarchy-zd3piyv0/main",
+      "hierarchycase.Factory"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-hierarchy-zd3piyv0/main",
+      "-v",
+      "-p",
+      "-c",
+      "hierarchycase.Factory",
+      "hierarchycase.Factory$A",
+      "hierarchycase.Factory$B",
+      "hierarchycase.Factory$Base",
+      "hierarchycase.Factory$Contract"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-hierarchy/shadow.jar:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-hierarchy/bytecode.jar",
+      "hierarchycase.Factory"
+    ]
+  ],
+  "jdk_inputs": [
+    {
+      "path": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/jmods/java.base.jmod",
+      "sha256": "d3309e386efaacbc917e75706405b35517473a891326142705c8998f5090c2a3",
+      "bytes": 19773451
+    },
+    {
+      "path": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/lib/src.zip",
+      "sha256": "c4ef32be6c98b51e7ad4c01a583bf85f456304012271f019f34f6c3b1a93e1a3",
+      "bytes": 54198863
+    }
+  ],
+  "independent_runtime_observations": [
+    "caller:1",
+    "B:2",
+    "A-parent:hierarchycase.Factory$Base",
+    "object-method:class-name-prefix"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "380b799e13c4bd8a4cfe6dfdbdde3d3c2501579d2f83e4f6bedf9baafcb9abae",
+      "bytes": 1253
+    },
+    {
+      "path": "bootstrap.jar",
+      "sha256": "0c697e8d82ace53e32556a491f56e9fb444f37f58b7f87027835dd296f6c839c",
+      "bytes": 1504
+    },
+    {
+      "path": "bytecode.jar",
+      "sha256": "003d39871efcfc694578f73e1d9915ffbe833f430e8f9ce8768598f0a69e7f91",
+      "bytes": 2837
+    },
+    {
+      "path": "classes/hierarchycase/Factory$A.class",
+      "sha256": "82b89cfe84eebf6207f393467a04a23cca98a7326202ceaeb39019ab3dd1dfbd",
+      "bytes": 513
+    },
+    {
+      "path": "classes/hierarchycase/Factory$B.class",
+      "sha256": "d7e36c598bc7a3e2f2020393c58c5cc656065d2118acbde37f85f8e9e3df6c88",
+      "bytes": 488
+    },
+    {
+      "path": "classes/hierarchycase/Factory$Base.class",
+      "sha256": "1009c4b5332c3c33203b657a8a90d2b0f951a1f944b77e6a622e417c9f6b49ca",
+      "bytes": 368
+    },
+    {
+      "path": "classes/hierarchycase/Factory$Contract.class",
+      "sha256": "2b3156fe04e19e2775eaf9d2743162a02d0a2f83e6699b61ed7e8ca4dff4af22",
+      "bytes": 228
+    },
+    {
+      "path": "classes/hierarchycase/Factory.class",
+      "sha256": "a10ce3123be43ab303ab2587e2c127e55a86aaf91eadfe1f0be7706f0e416953",
+      "bytes": 2293
+    },
+    {
+      "path": "classes/java/lang/Object.class",
+      "sha256": "10cc90d16479279e1d6ee258fdaea4c5640ac6125acb5a7100a7b0a20237a9f2",
+      "bytes": 2487
+    },
+    {
+      "path": "compile-shadow.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "execution.log",
+      "sha256": "5715c93ac0ffe1bfdecba9a428d47de55b3cf0175d21b37617c752376d46f1ad",
+      "bytes": 81
+    },
+    {
+      "path": "incomplete.jar",
+      "sha256": "413f54e6b87a2fc60a17158a9255fa7cca86778ee4b5e00bd842188f12a21411",
+      "bytes": 2441
+    },
+    {
+      "path": "java-version.log",
+      "sha256": "da6bb29c482c0fd5ea827d1eecfcf573d88175541589705d776142562e788e18",
+      "bytes": 167
+    },
+    {
+      "path": "javac-version.log",
+      "sha256": "2df6b9c76e710158266aeaae8f3578eaed8ddd747a2272483506ad9a8a5e644a",
+      "bytes": 16
+    },
+    {
+      "path": "javap.log",
+      "sha256": "7815237b07fb5b3f55a6b2f9ab24d960b9c3344a47c9f94a983b6c28ef5ef4ce",
+      "bytes": 26016
+    },
+    {
+      "path": "shadow/hierarchycase/Factory.java",
+      "sha256": "9c6f038aea478df18f31a4e37a31af1800118457cb008456edcdded7fa36874c",
+      "bytes": 114
+    },
+    {
+      "path": "shadow-execution.log",
+      "sha256": "5715c93ac0ffe1bfdecba9a428d47de55b3cf0175d21b37617c752376d46f1ad",
+      "bytes": 81
+    },
+    {
+      "path": "shadow.jar",
+      "sha256": "f6e1a3ba20d0889be3c45b14afe429d6cadc9546365250b94185040e51361a68",
+      "bytes": 358
+    },
+    {
+      "path": "src/hierarchycase/Factory.java",
+      "sha256": "7b46b19d5e8ec8a46c369d5220920b141e85e469c696300fe8793d1664be10aa",
+      "bytes": 941
+    },
+    {
+      "path": "third-party/openjdk/ADDITIONAL_LICENSE_INFO",
+      "sha256": "a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916",
+      "bytes": 2114
+    },
+    {
+      "path": "third-party/openjdk/ASSEMBLY_EXCEPTION",
+      "sha256": "75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33",
+      "bytes": 1514
+    },
+    {
+      "path": "third-party/openjdk/LICENSE",
+      "sha256": "4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726",
+      "bytes": 19274
+    },
+    {
+      "path": "third-party/openjdk/Object.java",
+      "sha256": "e73d59e14502368925b23870aa9bf1a306a4bf6ae615443416f7a97b3a3e86c1",
+      "bytes": 28177
+    }
+  ]
+}

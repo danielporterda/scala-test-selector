@@ -1,0 +1,6 @@
+resource:006dd77ae4549ac642ee419d186edea9b23ba7432cf3ce51622cee24b9c2e046
+loaded-before-resource:false
+value:12
+state:7
+stack-origin:lntcase.Thrower
+stack:lntcase.Probe:fail:14

@@ -1,0 +1,14 @@
+float:Infinity:NaN
+double:Infinity:NaN
+integer-zero-throws:4
+field:Infinity:Infinity
+callback-hits:1
+native:UnsatisfiedLinkError
+reflection:Infinity
+monitor:Infinity
+array:Infinity
+caught:NaN:2
+handler-callback-hits:2:3
+throw-identity:true
+dynamic:value=Infinity
+mixed:ArithmeticException

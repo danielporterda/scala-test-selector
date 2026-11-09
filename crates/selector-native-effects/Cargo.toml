@@ -1,0 +1,26 @@
+[package]
+name = "selector-native-effects"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+selector-effects.workspace = true
+selector-models.workspace = true
+selector-jvm-resolve.workspace = true
+selector-runtime-platform.workspace = true
+selector-compiled-products.workspace = true
+selector-types.workspace = true
+selector-facts.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+flate2.workspace = true
+sha2.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+selector-runtime-equivalence = { path = "../selector-runtime-equivalence" }

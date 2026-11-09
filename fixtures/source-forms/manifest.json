@@ -1,0 +1,85 @@
+{
+  "schema": "selector-compiled-source-forms/v1",
+  "revision": "f4d4508b45ddba6abfb17bb3e97dc496d73064b0",
+  "compiler": "Scala 2.13.18",
+  "plugin": "SemanticDB 4.15.2",
+  "synthetics": true,
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba"
+    }
+  ],
+  "generator_sha256": "39edd7a85e98c73ac7a66c62e2faa191567c5b0a0f3b91f21f5d6529024f9462",
+  "exporter_sha256": "c607f9cff393cee883220d46ed49dc9adad4653dc1184557327d29a60bd01445",
+  "compile_command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-cp",
+    "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+    "scala.tools.nsc.Main",
+    "-classpath",
+    "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+    "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+    "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/source-forms",
+    "-P:semanticdb:targetroot:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/source-forms-lepk6v3t/metadata",
+    "-P:semanticdb:synthetics:on",
+    "-Yrangepos",
+    "-d",
+    "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/source-forms-lepk6v3t/classes",
+    "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/source-forms/src/sourceforms/Forms.scala"
+  ],
+  "jvm_witness": "source-forms:typed=7:applied=7:placeholder=1:eta=2:named=12:yield=7:receiver=3:bare=4:bare-receiver=5:nullary=7:calls=2255\n",
+  "bytecode": [
+    {
+      "path": "sourceforms/CheckSourceForms$.class",
+      "sha256": "ff2d71556768e783d3e6d7f76c2b8fe0720eb1c82ed2ac7075406a197103c29d"
+    },
+    {
+      "path": "sourceforms/CheckSourceForms.class",
+      "sha256": "cbb59bb73c8b91e26bac0d3932f3a07dfda58cc4a9a6efafaa2513125dc7bf4e"
+    },
+    {
+      "path": "sourceforms/Forms$.class",
+      "sha256": "4813c6cd787b5be6c8b2257bc7036f8d78c0794b7981171fd778462aae75b7df"
+    },
+    {
+      "path": "sourceforms/Forms.class",
+      "sha256": "622baf7fb09086d603a4ba11b335933984eb559a9d62f6dedc4895c6d3a5f3d5"
+    }
+  ],
+  "files": [
+    {
+      "path": "src/sourceforms/Forms.scala",
+      "sha256": "f4d4508b45ddba6abfb17bb3e97dc496d73064b0f7fc9c50418e419f3720f18a"
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/sourceforms/Forms.scala.semanticdb",
+      "sha256": "730f5f8136ea67de96d19b91ebb205389dfe23673f29cb9ce05eff89b2b94113"
+    },
+    {
+      "path": "documents.jsonl",
+      "sha256": "e3decd7f9e4bdefc86134baff2f5ba4ad42a68243f93c160ac687d6fee014de0"
+    },
+    {
+      "path": "syntax.jsonl",
+      "sha256": "a2a2b05b85cc9377305c0b4a2ec5187a5092771c85b6c5b79fdf59ffeb8c5b7f"
+    }
+  ],
+  "limitations": [
+    "Interpolate and ForYield remain conservative until full compiler-bound lowering is admitted.",
+    "Curried, implicit and by-name eta adaptation without a captured function tree remains explicit unknown."
+  ]
+}

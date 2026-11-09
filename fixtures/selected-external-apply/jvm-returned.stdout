@@ -1,0 +1,2 @@
+returned-created:qualifier,timeout,factory
+returned-invoked:qualifier,timeout,factory,returned-body

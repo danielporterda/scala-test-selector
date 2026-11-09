@@ -1,0 +1,6021 @@
+{
+  "methods": [
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/lang/Object",
+          "pc": 1
+        },
+        {
+          "descriptor": "(Lorg/scalactic/TripleEqualsSupport;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "org/scalactic/TripleEqualsSupport",
+          "pc": 5
+        },
+        {
+          "descriptor": "(Lorg/scalactic/TripleEquals;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "org/scalactic/TripleEquals",
+          "pc": 9
+        },
+        {
+          "descriptor": "(Lorg/scalatest/Assertions;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "org/scalatest/Assertions",
+          "pc": 13
+        },
+        {
+          "descriptor": "(Lorg/scalatest/Suite;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "org/scalatest/Suite",
+          "pc": 17
+        },
+        {
+          "descriptor": "(Lorg/scalatest/TestSuite;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "org/scalatest/TestSuite",
+          "pc": 21
+        },
+        {
+          "descriptor": "(Lorg/scalatest/verbs/ShouldVerb;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "org/scalatest/verbs/ShouldVerb",
+          "pc": 25
+        },
+        {
+          "descriptor": "(Lorg/scalatest/verbs/MustVerb;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "org/scalatest/verbs/MustVerb",
+          "pc": 29
+        },
+        {
+          "descriptor": "(Lorg/scalatest/verbs/CanVerb;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "org/scalatest/verbs/CanVerb",
+          "pc": 33
+        },
+        {
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 37
+        },
+        {
+          "descriptor": "()V",
+          "name": "releaseFence",
+          "opcode": 184,
+          "owner": "scala/runtime/Statics",
+          "pc": 40
+        }
+      ],
+      "code_bytes": 44,
+      "code_present": true,
+      "code_sha256": "279cb40367ce515c3805c0dcf4a8b16bcf1f88fcf5393d531cb879a11102fe55",
+      "constants": [],
+      "descriptor": "()V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 22,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 1,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()V",
+              "name": "<init>",
+              "owner": "java/lang/Object"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 5,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lorg/scalactic/TripleEqualsSupport;)V",
+              "name": "$init$",
+              "owner": "org/scalactic/TripleEqualsSupport"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 9,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lorg/scalactic/TripleEquals;)V",
+              "name": "$init$",
+              "owner": "org/scalactic/TripleEquals"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 13,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lorg/scalatest/Assertions;)V",
+              "name": "$init$",
+              "owner": "org/scalatest/Assertions"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 17,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lorg/scalatest/Suite;)V",
+              "name": "$init$",
+              "owner": "org/scalatest/Suite"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 21,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lorg/scalatest/TestSuite;)V",
+              "name": "$init$",
+              "owner": "org/scalatest/TestSuite"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 25,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lorg/scalatest/verbs/ShouldVerb;)V",
+              "name": "$init$",
+              "owner": "org/scalatest/verbs/ShouldVerb"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 29,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lorg/scalatest/verbs/MustVerb;)V",
+              "name": "$init$",
+              "owner": "org/scalatest/verbs/MustVerb"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 33,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lorg/scalatest/verbs/CanVerb;)V",
+              "name": "$init$",
+              "owner": "org/scalatest/verbs/CanVerb"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 37,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+              "name": "$init$",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 40,
+            "receiver": null,
+            "target": {
+              "descriptor": "()V",
+              "name": "releaseFence",
+              "owner": "scala/runtime/Statics"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": []
+      },
+      "name": "<init>",
+      "owner": "org/scalatest/wordspec/AnyWordSpec"
+    },
+    {
+      "allocations": [
+        {
+          "class": "org/scalatest/Transformer",
+          "pc": 14
+        },
+        {
+          "class": "scala/Some",
+          "pc": 41
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/Engine;",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 8
+        },
+        {
+          "descriptor": "(Lscala/Function0;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/Transformer",
+          "pc": 20
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/Some",
+          "pc": 47
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Ljava/lang/Object;Lscala/Function0;Ljava/lang/String;Ljava/lang/String;IILscala/Option;Lscala/Option;Lscala/Option;Lscala/Option;Lscala/collection/immutable/Seq;)Ljava/lang/String;",
+          "name": "registerTest",
+          "opcode": 182,
+          "owner": "org/scalatest/Engine",
+          "pc": 54
+        }
+      ],
+      "code_bytes": 59,
+      "code_present": true,
+      "code_sha256": "3ad1f0b6fc9c91fa4e6f81c53c0a7264b3f6fe93865a408e0c2082e56fcefc6e",
+      "constants": [
+        {
+          "kind": "string",
+          "pc": 28,
+          "value": "AnyWordSpecLike.scala"
+        }
+      ],
+      "descriptor": "(Ljava/lang/String;Lscala/collection/immutable/List;Ljava/lang/String;Lscala/Function0;Lorg/scalactic/source/Position;)V",
+      "dynamics": [
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "()Lscala/Function0;",
+          "method_handles": [
+            {
+              "descriptor": "()Ljava/lang/String;",
+              "handle_kind": 6,
+              "name": "$anonfun$registerTestToRun$1",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          ],
+          "name": "apply",
+          "pc": 23
+        }
+      ],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lscala/None$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/None$",
+          "pc": 35
+        },
+        {
+          "descriptor": "Lscala/None$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/None$",
+          "pc": 38
+        },
+        {
+          "descriptor": "Lscala/None$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/None$",
+          "pc": 50
+        }
+      ],
+      "flags": 1,
+      "instructions": 27,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 8,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/Engine;",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "descriptor": "Lscala/Function0;",
+                "kind": "formal",
+                "ordinal": 3,
+                "slot": 4
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 20,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/Transformer",
+              "pc": 14
+            },
+            "target": {
+              "descriptor": "(Lscala/Function0;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/Transformer"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "descriptor": "Lorg/scalactic/source/Position;",
+                "kind": "formal",
+                "ordinal": 4,
+                "slot": 5
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 47,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "scala/Some",
+              "pc": 41
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/Object;)V",
+              "name": "<init>",
+              "owner": "scala/Some"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/Transformer",
+                "pc": 14
+              },
+              {
+                "bootstrap": {
+                  "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+                  "name": "altMetafactory",
+                  "owner": "java/lang/invoke/LambdaMetafactory"
+                },
+                "bridges": 1,
+                "captures": [],
+                "factory_descriptor": "()Lscala/Function0;",
+                "flags": 5,
+                "handle_kind": 6,
+                "implementation": {
+                  "descriptor": "()Ljava/lang/String;",
+                  "name": "$anonfun$registerTestToRun$1",
+                  "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+                },
+                "kind": "closure",
+                "pc": 23
+              },
+              {
+                "cp_tag": 8,
+                "kind": "constant",
+                "value": "AnyWordSpecLike.scala"
+              },
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 2,
+                "slot": 3
+              },
+              {
+                "kind": "integer",
+                "value": 4
+              },
+              {
+                "kind": "integer",
+                "value": -3
+              },
+              {
+                "field": {
+                  "descriptor": "Lscala/None$;",
+                  "name": "MODULE$",
+                  "owner": "scala/None$"
+                },
+                "kind": "field",
+                "receiver": null
+              },
+              {
+                "field": {
+                  "descriptor": "Lscala/None$;",
+                  "name": "MODULE$",
+                  "owner": "scala/None$"
+                },
+                "kind": "field",
+                "receiver": null
+              },
+              {
+                "kind": "fresh",
+                "owner": "scala/Some",
+                "pc": 41
+              },
+              {
+                "field": {
+                  "descriptor": "Lscala/None$;",
+                  "name": "MODULE$",
+                  "owner": "scala/None$"
+                },
+                "kind": "field",
+                "receiver": null
+              },
+              {
+                "descriptor": "Lscala/collection/immutable/List;",
+                "kind": "formal",
+                "ordinal": 1,
+                "slot": 2
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 54,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 8,
+              "target": {
+                "descriptor": "()Lorg/scalatest/Engine;",
+                "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+              }
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/String;Ljava/lang/Object;Lscala/Function0;Ljava/lang/String;Ljava/lang/String;IILscala/Option;Lscala/Option;Lscala/Option;Lscala/Option;Lscala/collection/immutable/Seq;)Ljava/lang/String;",
+              "name": "registerTest",
+              "owner": "org/scalatest/Engine"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": []
+      },
+      "name": "org$scalatest$wordspec$AnyWordSpecLike$$registerTestToRun",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [
+        {
+          "class": "scala/Some",
+          "pc": 27
+        },
+        {
+          "class": "org/scalatest/exceptions/NotAllowedException",
+          "pc": 171
+        },
+        {
+          "class": "scala/Some",
+          "pc": 200
+        },
+        {
+          "class": "org/scalatest/exceptions/NotAllowedException",
+          "pc": 254
+        },
+        {
+          "class": "java/lang/StringBuilder",
+          "pc": 275
+        },
+        {
+          "class": "java/lang/StringBuilder",
+          "pc": 309
+        },
+        {
+          "class": "scala/Some",
+          "pc": 350
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/Engine;",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 1
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/Some",
+          "pc": 33
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Lscala/Option;Lscala/Function0;Lscala/Function0;Ljava/lang/String;Ljava/lang/String;IILscala/Option;Lscala/Option;)V",
+          "name": "registerNestedBranch",
+          "opcode": 182,
+          "owner": "org/scalatest/Engine",
+          "pc": 36
+        },
+        {
+          "descriptor": "(Lorg/scalatest/exceptions/StackDepthException;Lorg/scalactic/source/Position;)V",
+          "name": "rethrowIfCauseIsNAEOrDTNE",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 68
+        },
+        {
+          "descriptor": "(Lorg/scalatest/exceptions/StackDepthException;Lorg/scalactic/source/Position;)V",
+          "name": "rethrowIfCauseIsNAEOrDTNE",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 101
+        },
+        {
+          "descriptor": "()Ljava/lang/Class;",
+          "name": "getClass",
+          "opcode": 182,
+          "owner": "org/scalatest/exceptions/DuplicateTestNameException",
+          "pc": 182
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "getName",
+          "opcode": 182,
+          "owner": "java/lang/Class",
+          "pc": 185
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)Lorg/scalatest/UnquotedString;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "org/scalatest/UnquotedString$",
+          "pc": 188
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "getMessage",
+          "opcode": 182,
+          "owner": "org/scalatest/exceptions/DuplicateTestNameException",
+          "pc": 194
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Lorg/scalatest/UnquotedString;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "name": "exceptionWasThrownInClauseMessageFun",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 197
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/Some",
+          "pc": 206
+        },
+        {
+          "descriptor": "()Lscala/Option;",
+          "name": "position",
+          "opcode": 182,
+          "owner": "org/scalatest/exceptions/DuplicateTestNameException",
+          "pc": 211
+        },
+        {
+          "descriptor": "(Lscala/Function0;)Ljava/lang/Object;",
+          "name": "getOrElse",
+          "opcode": 182,
+          "owner": "scala/Option",
+          "pc": 221
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Lscala/Option;Lorg/scalactic/source/Position;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/exceptions/NotAllowedException",
+          "pc": 227
+        },
+        {
+          "descriptor": "(Ljava/lang/Throwable;)Z",
+          "name": "anExceptionThatShouldCauseAnAbort",
+          "opcode": 182,
+          "owner": "org/scalatest/Suite$",
+          "pc": 248
+        },
+        {
+          "descriptor": "()Ljava/lang/Class;",
+          "name": "getClass",
+          "opcode": 182,
+          "owner": "java/lang/Throwable",
+          "pc": 265
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "getName",
+          "opcode": 182,
+          "owner": "java/lang/Class",
+          "pc": 268
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)Lorg/scalatest/UnquotedString;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "org/scalatest/UnquotedString$",
+          "pc": 271
+        },
+        {
+          "descriptor": "(I)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/lang/StringBuilder",
+          "pc": 281
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/StringBuilder;",
+          "name": "append",
+          "opcode": 182,
+          "owner": "java/lang/StringBuilder",
+          "pc": 287
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/StringBuilder;",
+          "name": "append",
+          "opcode": 182,
+          "owner": "java/lang/StringBuilder",
+          "pc": 291
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "toString",
+          "opcode": 182,
+          "owner": "java/lang/StringBuilder",
+          "pc": 294
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)Z",
+          "name": "endsWith",
+          "opcode": 182,
+          "owner": "java/lang/String",
+          "pc": 297
+        },
+        {
+          "descriptor": "()I",
+          "name": "length",
+          "opcode": 182,
+          "owner": "java/lang/String",
+          "pc": 306
+        },
+        {
+          "descriptor": "(I)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/lang/StringBuilder",
+          "pc": 315
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/StringBuilder;",
+          "name": "append",
+          "opcode": 182,
+          "owner": "java/lang/StringBuilder",
+          "pc": 321
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)Ljava/lang/StringBuilder;",
+          "name": "append",
+          "opcode": 182,
+          "owner": "java/lang/StringBuilder",
+          "pc": 325
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "toString",
+          "opcode": 182,
+          "owner": "java/lang/StringBuilder",
+          "pc": 328
+        },
+        {
+          "descriptor": "()I",
+          "name": "length",
+          "opcode": 182,
+          "owner": "java/lang/String",
+          "pc": 331
+        },
+        {
+          "descriptor": "(II)Ljava/lang/String;",
+          "name": "substring",
+          "opcode": 182,
+          "owner": "java/lang/String",
+          "pc": 335
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "getMessage",
+          "opcode": 182,
+          "owner": "java/lang/Throwable",
+          "pc": 344
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Lorg/scalatest/UnquotedString;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "name": "exceptionWasThrownInClauseMessageFun",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 347
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/Some",
+          "pc": 356
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Lscala/Option;Lorg/scalactic/source/Position;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/exceptions/NotAllowedException",
+          "pc": 361
+        }
+      ],
+      "code_bytes": 393,
+      "code_present": true,
+      "code_sha256": "dbf2e5018cb86772eee811447851c07d4202a468d04f5eb2a96736983c7ed375",
+      "constants": [
+        {
+          "kind": "string",
+          "pc": 16,
+          "value": "AnyWordSpecLike.scala"
+        },
+        {
+          "kind": "string",
+          "pc": 284,
+          "value": " "
+        },
+        {
+          "kind": "string",
+          "pc": 318,
+          "value": " "
+        }
+      ],
+      "descriptor": "(Ljava/lang/String;Lscala/Option;Ljava/lang/String;Ljava/lang/String;IILorg/scalactic/source/Position;Lscala/Function0;)V",
+      "dynamics": [
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "(Ljava/lang/String;)Lscala/Function0;",
+          "method_handles": [
+            {
+              "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+              "handle_kind": 6,
+              "name": "$anonfun$registerBranch$1",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          ],
+          "name": "apply",
+          "pc": 11
+        },
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "(Lorg/scalactic/source/Position;)Lscala/Function0;",
+          "method_handles": [
+            {
+              "descriptor": "(Lorg/scalactic/source/Position;)Lorg/scalactic/source/Position;",
+              "handle_kind": 6,
+              "name": "$anonfun$registerBranch$2",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          ],
+          "name": "apply",
+          "pc": 216
+        }
+      ],
+      "exception_handlers": [
+        [
+          0,
+          39,
+          42,
+          337
+        ]
+      ],
+      "field_accesses": [
+        {
+          "descriptor": "Lscala/None$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/None$",
+          "pc": 24
+        },
+        {
+          "descriptor": "Lscala/runtime/BoxedUnit;",
+          "name": "UNIT",
+          "opcode": 178,
+          "owner": "scala/runtime/BoxedUnit",
+          "pc": 71
+        },
+        {
+          "descriptor": "Lscala/runtime/BoxedUnit;",
+          "name": "UNIT",
+          "opcode": 178,
+          "owner": "scala/runtime/BoxedUnit",
+          "pc": 104
+        },
+        {
+          "descriptor": "Lorg/scalatest/UnquotedString$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/UnquotedString$",
+          "pc": 177
+        },
+        {
+          "descriptor": "Lorg/scalatest/Suite$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/Suite$",
+          "pc": 243
+        },
+        {
+          "descriptor": "Lorg/scalatest/UnquotedString$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/UnquotedString$",
+          "pc": 260
+        }
+      ],
+      "flags": 1,
+      "instructions": 169,
+      "local_transport_open": "handlers require separate full-path obligation",
+      "name": "org$scalatest$wordspec$AnyWordSpecLike$$registerBranch",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [
+        {
+          "class": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper",
+          "pc": 0
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Ljava/lang/String;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper",
+          "pc": 6
+        }
+      ],
+      "code_bytes": 10,
+      "code_present": true,
+      "code_sha256": "1d6c941aab2821c4ada2c805c15f518fe04039d3fe259cd810984af0362decbd",
+      "constants": [],
+      "descriptor": "(Ljava/lang/String;)Lorg/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 6,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              },
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 6,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper",
+              "pc": 0
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Ljava/lang/String;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "fresh",
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper",
+          "pc": 0
+        },
+        "writes": []
+      },
+      "name": "convertToWordSpecStringWrapper",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/Engine;",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 4
+        },
+        {
+          "descriptor": "()Ljava/util/concurrent/atomic/AtomicReference;",
+          "name": "atomic",
+          "opcode": 182,
+          "owner": "org/scalatest/Engine",
+          "pc": 9
+        },
+        {
+          "descriptor": "()Ljava/lang/Object;",
+          "name": "get",
+          "opcode": 182,
+          "owner": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 12
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Map;",
+          "name": "tagsMap",
+          "opcode": 182,
+          "owner": "org/scalatest/SuperEngine$Bundle",
+          "pc": 18
+        },
+        {
+          "descriptor": "(Lscala/collection/immutable/Map;Lorg/scalatest/Suite;)Lscala/collection/immutable/Map;",
+          "name": "autoTagClassAnnotations",
+          "opcode": 182,
+          "owner": "org/scalatest/Suite$",
+          "pc": 22
+        }
+      ],
+      "code_bytes": 26,
+      "code_present": true,
+      "code_sha256": "db5bf41bb3315c07bcfc9fd7f401fbae4d3da1c7ecb05f2b0429f7b48df16497",
+      "constants": [],
+      "descriptor": "()Lscala/collection/immutable/Map;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lorg/scalatest/Suite$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/Suite$",
+          "pc": 0
+        }
+      ],
+      "flags": 1,
+      "instructions": 10,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 4,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/Engine;",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 9,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 4,
+              "target": {
+                "descriptor": "()Lorg/scalatest/Engine;",
+                "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+              }
+            },
+            "target": {
+              "descriptor": "()Ljava/util/concurrent/atomic/AtomicReference;",
+              "name": "atomic",
+              "owner": "org/scalatest/Engine"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 12,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 9,
+              "target": {
+                "descriptor": "()Ljava/util/concurrent/atomic/AtomicReference;",
+                "name": "atomic",
+                "owner": "org/scalatest/Engine"
+              }
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/Object;",
+              "name": "get",
+              "owner": "java/util/concurrent/atomic/AtomicReference"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 18,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 12,
+              "target": {
+                "descriptor": "()Ljava/lang/Object;",
+                "name": "get",
+                "owner": "java/util/concurrent/atomic/AtomicReference"
+              }
+            },
+            "target": {
+              "descriptor": "()Lscala/collection/immutable/Map;",
+              "name": "tagsMap",
+              "owner": "org/scalatest/SuperEngine$Bundle"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "call_result",
+                "pc": 18,
+                "target": {
+                  "descriptor": "()Lscala/collection/immutable/Map;",
+                  "name": "tagsMap",
+                  "owner": "org/scalatest/SuperEngine$Bundle"
+                }
+              },
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 22,
+            "receiver": {
+              "field": {
+                "descriptor": "Lorg/scalatest/Suite$;",
+                "name": "MODULE$",
+                "owner": "org/scalatest/Suite$"
+              },
+              "kind": "field",
+              "receiver": null
+            },
+            "target": {
+              "descriptor": "(Lscala/collection/immutable/Map;Lorg/scalatest/Suite;)Lscala/collection/immutable/Map;",
+              "name": "autoTagClassAnnotations",
+              "owner": "org/scalatest/Suite$"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 22,
+          "target": {
+            "descriptor": "(Lscala/collection/immutable/Map;Lorg/scalatest/Suite;)Lscala/collection/immutable/Map;",
+            "name": "autoTagClassAnnotations",
+            "owner": "org/scalatest/Suite$"
+          }
+        },
+        "writes": []
+      },
+      "name": "tags",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/Engine;",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 1
+        },
+        {
+          "descriptor": "(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/Args;ZLscala/Function1;)Lorg/scalatest/Status;",
+          "name": "runTestImpl",
+          "opcode": 182,
+          "owner": "org/scalatest/Engine",
+          "pc": 18
+        }
+      ],
+      "code_bytes": 22,
+      "code_present": true,
+      "code_sha256": "ca6d82e6349a542d8443322a690eb8e6bc16758176ef431cbbeb5d3ed809b392",
+      "constants": [],
+      "descriptor": "(Ljava/lang/String;Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+      "dynamics": [
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Lorg/scalatest/Args;Ljava/lang/String;)Lscala/Function1;",
+          "method_handles": [
+            {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Lorg/scalatest/Args;Ljava/lang/String;Lorg/scalatest/SuperEngine$TestLeaf;)Lorg/scalatest/Outcome;",
+              "handle_kind": 6,
+              "name": "$anonfun$runTest$1",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          ],
+          "name": "apply",
+          "pc": 13
+        }
+      ],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 12,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 1,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/Engine;",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              },
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "descriptor": "Lorg/scalatest/Args;",
+                "kind": "formal",
+                "ordinal": 1,
+                "slot": 2
+              },
+              {
+                "kind": "integer",
+                "value": 1
+              },
+              {
+                "bootstrap": {
+                  "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+                  "name": "altMetafactory",
+                  "owner": "java/lang/invoke/LambdaMetafactory"
+                },
+                "bridges": 1,
+                "captures": [
+                  {
+                    "kind": "receiver"
+                  },
+                  {
+                    "descriptor": "Lorg/scalatest/Args;",
+                    "kind": "formal",
+                    "ordinal": 1,
+                    "slot": 2
+                  },
+                  {
+                    "descriptor": "Ljava/lang/String;",
+                    "kind": "formal",
+                    "ordinal": 0,
+                    "slot": 1
+                  }
+                ],
+                "factory_descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Lorg/scalatest/Args;Ljava/lang/String;)Lscala/Function1;",
+                "flags": 5,
+                "handle_kind": 6,
+                "implementation": {
+                  "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Lorg/scalatest/Args;Ljava/lang/String;Lorg/scalatest/SuperEngine$TestLeaf;)Lorg/scalatest/Outcome;",
+                  "name": "$anonfun$runTest$1",
+                  "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+                },
+                "kind": "closure",
+                "pc": 13
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 18,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 1,
+              "target": {
+                "descriptor": "()Lorg/scalatest/Engine;",
+                "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+              }
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/Args;ZLscala/Function1;)Lorg/scalatest/Status;",
+              "name": "runTestImpl",
+              "owner": "org/scalatest/Engine"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 18,
+          "target": {
+            "descriptor": "(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/Args;ZLscala/Function1;)Lorg/scalatest/Status;",
+            "name": "runTestImpl",
+            "owner": "org/scalatest/Engine"
+          }
+        },
+        "writes": []
+      },
+      "name": "runTest",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/Engine;",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 1
+        },
+        {
+          "descriptor": "()Lorg/scalatest/Informer;",
+          "name": "info",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 10
+        },
+        {
+          "descriptor": "(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;Lorg/scalatest/Informer;ZLscala/Function2;)Lorg/scalatest/Status;",
+          "name": "runTestsImpl",
+          "opcode": 182,
+          "owner": "org/scalatest/Engine",
+          "pc": 22
+        }
+      ],
+      "code_bytes": 26,
+      "code_present": true,
+      "code_sha256": "42658e73eab7c9069ec016c36be45dbd34b0da4e738778ec4b9eff64a122b5a9",
+      "constants": [],
+      "descriptor": "(Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+      "dynamics": [
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)Lscala/Function2;",
+          "method_handles": [
+            {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Ljava/lang/String;Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+              "handle_kind": 6,
+              "name": "$anonfun$runTests$1",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          ],
+          "name": "apply",
+          "pc": 17
+        }
+      ],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 12,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 1,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/Engine;",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 10,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/Informer;",
+              "name": "info",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              },
+              {
+                "descriptor": "Lscala/Option;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "descriptor": "Lorg/scalatest/Args;",
+                "kind": "formal",
+                "ordinal": 1,
+                "slot": 2
+              },
+              {
+                "kind": "call_result",
+                "pc": 10,
+                "target": {
+                  "descriptor": "()Lorg/scalatest/Informer;",
+                  "name": "info",
+                  "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+                }
+              },
+              {
+                "kind": "integer",
+                "value": 1
+              },
+              {
+                "bootstrap": {
+                  "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+                  "name": "altMetafactory",
+                  "owner": "java/lang/invoke/LambdaMetafactory"
+                },
+                "bridges": 1,
+                "captures": [
+                  {
+                    "kind": "receiver"
+                  }
+                ],
+                "factory_descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)Lscala/Function2;",
+                "flags": 5,
+                "handle_kind": 6,
+                "implementation": {
+                  "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Ljava/lang/String;Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+                  "name": "$anonfun$runTests$1",
+                  "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+                },
+                "kind": "closure",
+                "pc": 17
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 22,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 1,
+              "target": {
+                "descriptor": "()Lorg/scalatest/Engine;",
+                "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+              }
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;Lorg/scalatest/Informer;ZLscala/Function2;)Lorg/scalatest/Status;",
+              "name": "runTestsImpl",
+              "owner": "org/scalatest/Engine"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 22,
+          "target": {
+            "descriptor": "(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;Lorg/scalatest/Informer;ZLscala/Function2;)Lorg/scalatest/Status;",
+            "name": "runTestsImpl",
+            "owner": "org/scalatest/Engine"
+          }
+        },
+        "writes": []
+      },
+      "name": "runTests",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/Engine;",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 4
+        },
+        {
+          "descriptor": "()Ljava/util/concurrent/atomic/AtomicReference;",
+          "name": "atomic",
+          "opcode": 182,
+          "owner": "org/scalatest/Engine",
+          "pc": 9
+        },
+        {
+          "descriptor": "()Ljava/lang/Object;",
+          "name": "get",
+          "opcode": 182,
+          "owner": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 12
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/List;",
+          "name": "testNamesList",
+          "opcode": 182,
+          "owner": "org/scalatest/SuperEngine$Bundle",
+          "pc": 18
+        },
+        {
+          "descriptor": "(Lscala/collection/immutable/List;)Lscala/collection/immutable/Set;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "org/scalatest/InsertionOrderSet$",
+          "pc": 21
+        }
+      ],
+      "code_bytes": 25,
+      "code_present": true,
+      "code_sha256": "7f3bb90616a9dca93b3eb3dd08a685c225fafe08bfc418211bed4f9fc56905f0",
+      "constants": [],
+      "descriptor": "()Lscala/collection/immutable/Set;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lorg/scalatest/InsertionOrderSet$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/InsertionOrderSet$",
+          "pc": 0
+        }
+      ],
+      "flags": 1,
+      "instructions": 9,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 4,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/Engine;",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 9,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 4,
+              "target": {
+                "descriptor": "()Lorg/scalatest/Engine;",
+                "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+              }
+            },
+            "target": {
+              "descriptor": "()Ljava/util/concurrent/atomic/AtomicReference;",
+              "name": "atomic",
+              "owner": "org/scalatest/Engine"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 12,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 9,
+              "target": {
+                "descriptor": "()Ljava/util/concurrent/atomic/AtomicReference;",
+                "name": "atomic",
+                "owner": "org/scalatest/Engine"
+              }
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/Object;",
+              "name": "get",
+              "owner": "java/util/concurrent/atomic/AtomicReference"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 18,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 12,
+              "target": {
+                "descriptor": "()Ljava/lang/Object;",
+                "name": "get",
+                "owner": "java/util/concurrent/atomic/AtomicReference"
+              }
+            },
+            "target": {
+              "descriptor": "()Lscala/collection/immutable/List;",
+              "name": "testNamesList",
+              "owner": "org/scalatest/SuperEngine$Bundle"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "call_result",
+                "pc": 18,
+                "target": {
+                  "descriptor": "()Lscala/collection/immutable/List;",
+                  "name": "testNamesList",
+                  "owner": "org/scalatest/SuperEngine$Bundle"
+                }
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 21,
+            "receiver": {
+              "field": {
+                "descriptor": "Lorg/scalatest/InsertionOrderSet$;",
+                "name": "MODULE$",
+                "owner": "org/scalatest/InsertionOrderSet$"
+              },
+              "kind": "field",
+              "receiver": null
+            },
+            "target": {
+              "descriptor": "(Lscala/collection/immutable/List;)Lscala/collection/immutable/Set;",
+              "name": "apply",
+              "owner": "org/scalatest/InsertionOrderSet$"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 21,
+          "target": {
+            "descriptor": "(Lscala/collection/immutable/List;)Lscala/collection/immutable/Set;",
+            "name": "apply",
+            "owner": "org/scalatest/InsertionOrderSet$"
+          }
+        },
+        "writes": []
+      },
+      "name": "testNames",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/Engine;",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 1
+        },
+        {
+          "descriptor": "(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;Lscala/Function2;)Lorg/scalatest/Status;",
+          "name": "runImpl",
+          "opcode": 182,
+          "owner": "org/scalatest/Engine",
+          "pc": 15
+        }
+      ],
+      "code_bytes": 19,
+      "code_present": true,
+      "code_sha256": "460b0615f983089c71dd0733d91cdc987a5d1922578a2db2137e190d8bbb97d7",
+      "constants": [],
+      "descriptor": "(Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+      "dynamics": [
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)Lscala/Function2;",
+          "method_handles": [
+            {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+              "handle_kind": 6,
+              "name": "$anonfun$run$1",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          ],
+          "name": "apply",
+          "pc": 10
+        }
+      ],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 9,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 1,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/Engine;",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              },
+              {
+                "descriptor": "Lscala/Option;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "descriptor": "Lorg/scalatest/Args;",
+                "kind": "formal",
+                "ordinal": 1,
+                "slot": 2
+              },
+              {
+                "bootstrap": {
+                  "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+                  "name": "altMetafactory",
+                  "owner": "java/lang/invoke/LambdaMetafactory"
+                },
+                "bridges": 1,
+                "captures": [
+                  {
+                    "kind": "receiver"
+                  }
+                ],
+                "factory_descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)Lscala/Function2;",
+                "flags": 5,
+                "handle_kind": 6,
+                "implementation": {
+                  "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+                  "name": "$anonfun$run$1",
+                  "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+                },
+                "kind": "closure",
+                "pc": 10
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 15,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 1,
+              "target": {
+                "descriptor": "()Lorg/scalatest/Engine;",
+                "name": "org$scalatest$wordspec$AnyWordSpecLike$$engine",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+              }
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;Lscala/Function2;)Lorg/scalatest/Status;",
+              "name": "runImpl",
+              "owner": "org/scalatest/Engine"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 15,
+          "target": {
+            "descriptor": "(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;Lscala/Function2;)Lorg/scalatest/Status;",
+            "name": "runImpl",
+            "owner": "org/scalatest/Engine"
+          }
+        },
+        "writes": []
+      },
+      "name": "run",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "concurrentWordSpecMod",
+          "opcode": 182,
+          "owner": "org/scalatest/Resources$",
+          "pc": 3
+        }
+      ],
+      "code_bytes": 7,
+      "code_present": true,
+      "code_sha256": "4b50819eaedc1190964c19aa9656b3492cc2a7fabf737e0f9d4069b688b81141",
+      "constants": [],
+      "descriptor": "()Ljava/lang/String;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lorg/scalatest/Resources$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/Resources$",
+          "pc": 0
+        }
+      ],
+      "flags": 4105,
+      "instructions": 3,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 3,
+            "receiver": {
+              "field": {
+                "descriptor": "Lorg/scalatest/Resources$;",
+                "name": "MODULE$",
+                "owner": "org/scalatest/Resources$"
+              },
+              "kind": "field",
+              "receiver": null
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/String;",
+              "name": "concurrentWordSpecMod",
+              "owner": "org/scalatest/Resources$"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 3,
+          "target": {
+            "descriptor": "()Ljava/lang/String;",
+            "name": "concurrentWordSpecMod",
+            "owner": "org/scalatest/Resources$"
+          }
+        },
+        "writes": []
+      },
+      "name": "$anonfun$engine$1",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [
+        {
+          "class": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 18
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/ConfigMap;",
+          "name": "configMap",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 1
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Lorg/scalatest/ConfigMap;)Lorg/scalatest/TestData;",
+          "name": "testDataFor",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 10
+        },
+        {
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Lorg/scalatest/TestData;Lorg/scalatest/SuperEngine$TestLeaf;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 26
+        },
+        {
+          "descriptor": "(Lorg/scalatest/TestSuite$NoArgTest;)Lorg/scalatest/Outcome;",
+          "name": "withFixture",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 29
+        }
+      ],
+      "code_bytes": 35,
+      "code_present": true,
+      "code_sha256": "c8e6aeaa94f7706eff25c1788bec6a92fd1739a2dff31d3f32443b93e21021aa",
+      "constants": [],
+      "descriptor": "(Lorg/scalatest/SuperEngine$TestLeaf;Lorg/scalatest/Args;Ljava/lang/String;)Lorg/scalatest/Outcome;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 2,
+      "instructions": 17,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 1,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/Args;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/ConfigMap;",
+              "name": "configMap",
+              "owner": "org/scalatest/Args"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 2,
+                "slot": 3
+              },
+              {
+                "kind": "call_result",
+                "pc": 1,
+                "target": {
+                  "descriptor": "()Lorg/scalatest/ConfigMap;",
+                  "name": "configMap",
+                  "owner": "org/scalatest/Args"
+                }
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 10,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/String;Lorg/scalatest/ConfigMap;)Lorg/scalatest/TestData;",
+              "name": "testDataFor",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "null"
+              },
+              {
+                "kind": "call_result",
+                "pc": 10,
+                "target": {
+                  "descriptor": "(Ljava/lang/String;Lorg/scalatest/ConfigMap;)Lorg/scalatest/TestData;",
+                  "name": "testDataFor",
+                  "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+                }
+              },
+              {
+                "descriptor": "Lorg/scalatest/SuperEngine$TestLeaf;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 26,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+              "pc": 18
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Lorg/scalatest/TestData;Lorg/scalatest/SuperEngine$TestLeaf;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+                "pc": 18
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 29,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/TestSuite$NoArgTest;)Lorg/scalatest/Outcome;",
+              "name": "withFixture",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 29,
+          "target": {
+            "descriptor": "(Lorg/scalatest/TestSuite$NoArgTest;)Lorg/scalatest/Outcome;",
+            "name": "withFixture",
+            "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+          }
+        },
+        "writes": []
+      },
+      "name": "invokeWithFixture$1",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [
+        {
+          "class": "org/scalatest/Engine",
+          "pc": 1
+        },
+        {
+          "class": "org/scalatest/wordspec/AnyWordSpecLike$ItWord",
+          "pc": 29
+        },
+        {
+          "class": "org/scalatest/wordspec/AnyWordSpecLike$TheyWord",
+          "pc": 43
+        },
+        {
+          "class": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1",
+          "pc": 57
+        },
+        {
+          "class": "org/scalatest/wordspec/AnyWordSpecLike$$anon$2",
+          "pc": 71
+        },
+        {
+          "class": "org/scalatest/verbs/BehaveWord",
+          "pc": 85
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "(Lscala/Function0;Ljava/lang/String;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/Engine",
+          "pc": 13
+        },
+        {
+          "descriptor": "(Lorg/scalatest/Engine;)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$org$scalatest$wordspec$AnyWordSpecLike$$engine_$eq",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 16
+        },
+        {
+          "descriptor": "(I)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$stackDepth_$eq",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 23
+        },
+        {
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$ItWord",
+          "pc": 34
+        },
+        {
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike$ItWord;)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$it_$eq",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 37
+        },
+        {
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$TheyWord",
+          "pc": 48
+        },
+        {
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike$TheyWord;)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$they_$eq",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 51
+        },
+        {
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1",
+          "pc": 62
+        },
+        {
+          "descriptor": "(Lorg/scalatest/verbs/StringVerbBlockRegistration;)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$subjectRegistrationFunction_$eq",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 65
+        },
+        {
+          "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$2",
+          "pc": 76
+        },
+        {
+          "descriptor": "(Lorg/scalatest/verbs/SubjectWithAfterWordRegistration;)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$subjectWithAfterWordRegistrationFunction_$eq",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 79
+        },
+        {
+          "descriptor": "()V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/verbs/BehaveWord",
+          "pc": 89
+        },
+        {
+          "descriptor": "(Lorg/scalatest/verbs/BehaveWord;)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$behave_$eq",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 92
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$styleName_$eq",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 101
+        }
+      ],
+      "code_bytes": 107,
+      "code_present": true,
+      "code_sha256": "a821b39698acb6b1aaee81792f214b818521bc7fec8a1462ad966a8ae76edc01",
+      "constants": [
+        {
+          "kind": "string",
+          "pc": 10,
+          "value": "WordSpecLike"
+        },
+        {
+          "kind": "string",
+          "pc": 98,
+          "value": "org.scalatest.WordSpec"
+        }
+      ],
+      "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+      "dynamics": [
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "()Lscala/Function0;",
+          "method_handles": [
+            {
+              "descriptor": "()Ljava/lang/String;",
+              "handle_kind": 6,
+              "name": "$anonfun$engine$1",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          ],
+          "name": "apply",
+          "pc": 5
+        }
+      ],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 9,
+      "instructions": 43,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [
+              {
+                "bootstrap": {
+                  "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+                  "name": "altMetafactory",
+                  "owner": "java/lang/invoke/LambdaMetafactory"
+                },
+                "bridges": 1,
+                "captures": [],
+                "factory_descriptor": "()Lscala/Function0;",
+                "flags": 5,
+                "handle_kind": 6,
+                "implementation": {
+                  "descriptor": "()Ljava/lang/String;",
+                  "name": "$anonfun$engine$1",
+                  "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+                },
+                "kind": "closure",
+                "pc": 5
+              },
+              {
+                "cp_tag": 8,
+                "kind": "constant",
+                "value": "WordSpecLike"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 13,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/Engine",
+              "pc": 1
+            },
+            "target": {
+              "descriptor": "(Lscala/Function0;Ljava/lang/String;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/Engine"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/Engine",
+                "pc": 1
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 16,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+              "kind": "formal",
+              "ordinal": 0,
+              "slot": 0
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/Engine;)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$org$scalatest$wordspec$AnyWordSpecLike$$engine_$eq",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "integer",
+                "value": 3
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 23,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+              "kind": "formal",
+              "ordinal": 0,
+              "slot": 0
+            },
+            "target": {
+              "descriptor": "(I)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$stackDepth_$eq",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 0
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 34,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$ItWord",
+              "pc": 29
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$ItWord"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike$ItWord",
+                "pc": 29
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 37,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+              "kind": "formal",
+              "ordinal": 0,
+              "slot": 0
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike$ItWord;)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$it_$eq",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 0
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 48,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$TheyWord",
+              "pc": 43
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$TheyWord"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike$TheyWord",
+                "pc": 43
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 51,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+              "kind": "formal",
+              "ordinal": 0,
+              "slot": 0
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike$TheyWord;)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$they_$eq",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 0
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 62,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1",
+              "pc": 57
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1",
+                "pc": 57
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 65,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+              "kind": "formal",
+              "ordinal": 0,
+              "slot": 0
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/verbs/StringVerbBlockRegistration;)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$subjectRegistrationFunction_$eq",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 0
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 76,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$2",
+              "pc": 71
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$2"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$2",
+                "pc": 71
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 79,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+              "kind": "formal",
+              "ordinal": 0,
+              "slot": 0
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/verbs/SubjectWithAfterWordRegistration;)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$subjectWithAfterWordRegistrationFunction_$eq",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 89,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/verbs/BehaveWord",
+              "pc": 85
+            },
+            "target": {
+              "descriptor": "()V",
+              "name": "<init>",
+              "owner": "org/scalatest/verbs/BehaveWord"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/verbs/BehaveWord",
+                "pc": 85
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 92,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+              "kind": "formal",
+              "ordinal": 0,
+              "slot": 0
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/verbs/BehaveWord;)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$behave_$eq",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "cp_tag": 8,
+                "kind": "constant",
+                "value": "org.scalatest.WordSpec"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 101,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+              "kind": "formal",
+              "ordinal": 0,
+              "slot": 0
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/String;)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$_setter_$styleName_$eq",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": []
+      },
+      "name": "$init$",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+    },
+    {
+      "allocations": [
+        {
+          "class": "scala/Some",
+          "pc": 5
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/Some",
+          "pc": 10
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Lscala/Option;Ljava/lang/String;Ljava/lang/String;IILorg/scalactic/source/Position;Lscala/Function0;)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$$registerBranch",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 23
+        }
+      ],
+      "code_bytes": 29,
+      "code_present": true,
+      "code_sha256": "255a3ff8bce5a3a553046b78782cdc792d64d65bd7fd6ce8c5f21815044e8e7d",
+      "constants": [
+        {
+          "kind": "string",
+          "pc": 14,
+          "value": "apply"
+        }
+      ],
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lorg/scalactic/source/Position;Lscala/Function0;)V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+          "name": "$outer",
+          "opcode": 180,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1",
+          "pc": 1
+        }
+      ],
+      "flags": 1,
+      "instructions": 15,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 1,
+                "slot": 2
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 10,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "scala/Some",
+              "pc": 5
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/Object;)V",
+              "name": "<init>",
+              "owner": "scala/Some"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "kind": "fresh",
+                "owner": "scala/Some",
+                "pc": 5
+              },
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 1,
+                "slot": 2
+              },
+              {
+                "cp_tag": 8,
+                "kind": "constant",
+                "value": "apply"
+              },
+              {
+                "kind": "integer",
+                "value": 6
+              },
+              {
+                "kind": "integer",
+                "value": -2
+              },
+              {
+                "descriptor": "Lorg/scalactic/source/Position;",
+                "kind": "formal",
+                "ordinal": 2,
+                "slot": 3
+              },
+              {
+                "descriptor": "Lscala/Function0;",
+                "kind": "formal",
+                "ordinal": 3,
+                "slot": 4
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 23,
+            "receiver": {
+              "field": {
+                "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+                "name": "$outer",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1"
+              },
+              "kind": "field",
+              "receiver": {
+                "kind": "receiver"
+              }
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/String;Lscala/Option;Ljava/lang/String;Ljava/lang/String;IILorg/scalactic/source/Position;Lscala/Function0;)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$$registerBranch",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": []
+      },
+      "name": "apply",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/verbs/StringVerbBlockRegistration",
+          "pc": 12
+        }
+      ],
+      "code_bytes": 16,
+      "code_present": true,
+      "code_sha256": "5044c72467649f264d54b233abccbca86da3ccbbee09f5e243b2232c4ae7401f",
+      "constants": [],
+      "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;)V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+          "name": "$outer",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1",
+          "pc": 8
+        }
+      ],
+      "flags": 1,
+      "instructions": 10,
+      "local_transport_open": "unsupported local flow opcode 199",
+      "name": "<init>",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$1"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Ljava/lang/Object;",
+          "name": "testFun",
+          "opcode": 182,
+          "owner": "org/scalatest/SuperEngine$TestLeaf",
+          "pc": 4
+        },
+        {
+          "descriptor": "()Ljava/lang/Object;",
+          "name": "apply",
+          "opcode": 185,
+          "owner": "scala/Function0",
+          "pc": 10
+        }
+      ],
+      "code_bytes": 19,
+      "code_present": true,
+      "code_sha256": "94cd0af068c298aef01717d02db8ffce964402e23a025f2ce9692558d7b9cf8e",
+      "constants": [],
+      "descriptor": "()Lorg/scalatest/Outcome;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lorg/scalatest/SuperEngine$TestLeaf;",
+          "name": "theTest$1",
+          "opcode": 180,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 1
+        }
+      ],
+      "flags": 1,
+      "instructions": 7,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 4,
+            "receiver": {
+              "field": {
+                "descriptor": "Lorg/scalatest/SuperEngine$TestLeaf;",
+                "name": "theTest$1",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+              },
+              "kind": "field",
+              "receiver": {
+                "kind": "receiver"
+              }
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/Object;",
+              "name": "testFun",
+              "owner": "org/scalatest/SuperEngine$TestLeaf"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 10,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 4,
+              "target": {
+                "descriptor": "()Ljava/lang/Object;",
+                "name": "testFun",
+                "owner": "org/scalatest/SuperEngine$TestLeaf"
+              }
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/Object;",
+              "name": "apply",
+              "owner": "scala/Function0"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 10,
+          "target": {
+            "descriptor": "()Ljava/lang/Object;",
+            "name": "apply",
+            "owner": "scala/Function0"
+          }
+        },
+        "writes": []
+      },
+      "name": "apply",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/Outcome;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 1
+        }
+      ],
+      "code_bytes": 5,
+      "code_present": true,
+      "code_sha256": "2fa3838c0f51e39619f9378ce8483f88b0b0d3ed1bee62c3fc5daf5886642855",
+      "constants": [],
+      "descriptor": "()Ljava/lang/Object;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 4161,
+      "instructions": 3,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 1,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/Outcome;",
+              "name": "apply",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 1,
+          "target": {
+            "descriptor": "()Lorg/scalatest/Outcome;",
+            "name": "apply",
+            "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+          }
+        },
+        "writes": []
+      },
+      "name": "apply",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/lang/Object",
+          "pc": 6
+        },
+        {
+          "descriptor": "(Lscala/Function0;)V",
+          "name": "$init$",
+          "opcode": 184,
+          "owner": "scala/Function0",
+          "pc": 10
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "name",
+          "opcode": 185,
+          "owner": "org/scalatest/TestData",
+          "pc": 15
+        },
+        {
+          "descriptor": "()Lorg/scalatest/ConfigMap;",
+          "name": "configMap",
+          "opcode": 185,
+          "owner": "org/scalatest/TestData",
+          "pc": 25
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/IndexedSeq;",
+          "name": "scopes",
+          "opcode": 185,
+          "owner": "org/scalatest/TestData",
+          "pc": 35
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "text",
+          "opcode": 185,
+          "owner": "org/scalatest/TestData",
+          "pc": 45
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Set;",
+          "name": "tags",
+          "opcode": 185,
+          "owner": "org/scalatest/TestData",
+          "pc": 55
+        },
+        {
+          "descriptor": "()Lscala/Option;",
+          "name": "pos",
+          "opcode": 185,
+          "owner": "org/scalatest/TestData",
+          "pc": 65
+        }
+      ],
+      "code_bytes": 74,
+      "code_present": true,
+      "code_sha256": "947b77857080ced208dc488a0fb21867058ae6edc3fcb2de791612a45a2d07c0",
+      "constants": [],
+      "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Lorg/scalatest/TestData;Lorg/scalatest/SuperEngine$TestLeaf;)V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lorg/scalatest/SuperEngine$TestLeaf;",
+          "name": "theTest$1",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 2
+        },
+        {
+          "descriptor": "Ljava/lang/String;",
+          "name": "name",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 20
+        },
+        {
+          "descriptor": "Lorg/scalatest/ConfigMap;",
+          "name": "configMap",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 30
+        },
+        {
+          "descriptor": "Lscala/collection/immutable/IndexedSeq;",
+          "name": "scopes",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 40
+        },
+        {
+          "descriptor": "Ljava/lang/String;",
+          "name": "text",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 50
+        },
+        {
+          "descriptor": "Lscala/collection/immutable/Set;",
+          "name": "tags",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 60
+        },
+        {
+          "descriptor": "Lscala/Option;",
+          "name": "pos",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3",
+          "pc": 70
+        }
+      ],
+      "flags": 1,
+      "instructions": 32,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 6,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()V",
+              "name": "<init>",
+              "owner": "java/lang/Object"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 10,
+            "receiver": null,
+            "target": {
+              "descriptor": "(Lscala/Function0;)V",
+              "name": "$init$",
+              "owner": "scala/Function0"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 15,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/TestData;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/String;",
+              "name": "name",
+              "owner": "org/scalatest/TestData"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 25,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/TestData;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/ConfigMap;",
+              "name": "configMap",
+              "owner": "org/scalatest/TestData"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 35,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/TestData;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "()Lscala/collection/immutable/IndexedSeq;",
+              "name": "scopes",
+              "owner": "org/scalatest/TestData"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 45,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/TestData;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/String;",
+              "name": "text",
+              "owner": "org/scalatest/TestData"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 55,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/TestData;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "()Lscala/collection/immutable/Set;",
+              "name": "tags",
+              "owner": "org/scalatest/TestData"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 65,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/TestData;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "()Lscala/Option;",
+              "name": "pos",
+              "owner": "org/scalatest/TestData"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": [
+          {
+            "field": {
+              "descriptor": "Lorg/scalatest/SuperEngine$TestLeaf;",
+              "name": "theTest$1",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+            },
+            "pc": 2,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "descriptor": "Lorg/scalatest/SuperEngine$TestLeaf;",
+              "kind": "formal",
+              "ordinal": 2,
+              "slot": 3
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Ljava/lang/String;",
+              "name": "name",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+            },
+            "pc": 20,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "call_result",
+              "pc": 15,
+              "target": {
+                "descriptor": "()Ljava/lang/String;",
+                "name": "name",
+                "owner": "org/scalatest/TestData"
+              }
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Lorg/scalatest/ConfigMap;",
+              "name": "configMap",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+            },
+            "pc": 30,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "call_result",
+              "pc": 25,
+              "target": {
+                "descriptor": "()Lorg/scalatest/ConfigMap;",
+                "name": "configMap",
+                "owner": "org/scalatest/TestData"
+              }
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Lscala/collection/immutable/IndexedSeq;",
+              "name": "scopes",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+            },
+            "pc": 40,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "call_result",
+              "pc": 35,
+              "target": {
+                "descriptor": "()Lscala/collection/immutable/IndexedSeq;",
+                "name": "scopes",
+                "owner": "org/scalatest/TestData"
+              }
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Ljava/lang/String;",
+              "name": "text",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+            },
+            "pc": 50,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "call_result",
+              "pc": 45,
+              "target": {
+                "descriptor": "()Ljava/lang/String;",
+                "name": "text",
+                "owner": "org/scalatest/TestData"
+              }
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Lscala/collection/immutable/Set;",
+              "name": "tags",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+            },
+            "pc": 60,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "call_result",
+              "pc": 55,
+              "target": {
+                "descriptor": "()Lscala/collection/immutable/Set;",
+                "name": "tags",
+                "owner": "org/scalatest/TestData"
+              }
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Lscala/Option;",
+              "name": "pos",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+            },
+            "pc": 70,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "call_result",
+              "pc": 65,
+              "target": {
+                "descriptor": "()Lscala/Option;",
+                "name": "pos",
+                "owner": "org/scalatest/TestData"
+              }
+            }
+          }
+        ]
+      },
+      "name": "<init>",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike$$anon$3"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "(Ljava/lang/String;Lscala/collection/immutable/List;Ljava/lang/String;Lscala/Function0;Lorg/scalactic/source/Position;)V",
+          "name": "org$scalatest$wordspec$AnyWordSpecLike$$registerTestToRun",
+          "opcode": 185,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike",
+          "pc": 15
+        }
+      ],
+      "code_bytes": 21,
+      "code_present": true,
+      "code_sha256": "730babb6738b4fca8b444a504b8876f7db0f96d7007046e9214acbedf2c6c185",
+      "constants": [
+        {
+          "kind": "string",
+          "pc": 11,
+          "value": "in"
+        }
+      ],
+      "descriptor": "(Lscala/Function0;Lorg/scalactic/source/Position;)V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+          "name": "$outer",
+          "opcode": 180,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper",
+          "pc": 1
+        },
+        {
+          "descriptor": "Ljava/lang/String;",
+          "name": "string",
+          "opcode": 180,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper",
+          "pc": 5
+        },
+        {
+          "descriptor": "Lscala/collection/immutable/Nil$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/collection/immutable/Nil$",
+          "pc": 8
+        }
+      ],
+      "flags": 1,
+      "instructions": 10,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [
+              {
+                "field": {
+                  "descriptor": "Ljava/lang/String;",
+                  "name": "string",
+                  "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper"
+                },
+                "kind": "field",
+                "receiver": {
+                  "kind": "receiver"
+                }
+              },
+              {
+                "field": {
+                  "descriptor": "Lscala/collection/immutable/Nil$;",
+                  "name": "MODULE$",
+                  "owner": "scala/collection/immutable/Nil$"
+                },
+                "kind": "field",
+                "receiver": null
+              },
+              {
+                "cp_tag": 8,
+                "kind": "constant",
+                "value": "in"
+              },
+              {
+                "descriptor": "Lscala/Function0;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "descriptor": "Lorg/scalactic/source/Position;",
+                "kind": "formal",
+                "ordinal": 1,
+                "slot": 2
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 15,
+            "receiver": {
+              "field": {
+                "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+                "name": "$outer",
+                "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper"
+              },
+              "kind": "field",
+              "receiver": {
+                "kind": "receiver"
+              }
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/String;Lscala/collection/immutable/List;Ljava/lang/String;Lscala/Function0;Lorg/scalactic/source/Position;)V",
+              "name": "org$scalatest$wordspec$AnyWordSpecLike$$registerTestToRun",
+              "owner": "org/scalatest/wordspec/AnyWordSpecLike"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": []
+      },
+      "name": "in",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/lang/Object",
+          "pc": 17
+        }
+      ],
+      "code_bytes": 21,
+      "code_present": true,
+      "code_sha256": "3981427c80f8e8441709057dc3c64fc2fff3acb08c58c821745f323ae63e1e06",
+      "constants": [],
+      "descriptor": "(Lorg/scalatest/wordspec/AnyWordSpecLike;Ljava/lang/String;)V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Ljava/lang/String;",
+          "name": "string",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper",
+          "pc": 2
+        },
+        {
+          "descriptor": "Lorg/scalatest/wordspec/AnyWordSpecLike;",
+          "name": "$outer",
+          "opcode": 181,
+          "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper",
+          "pc": 13
+        }
+      ],
+      "flags": 1,
+      "instructions": 13,
+      "local_transport_open": "unsupported local flow opcode 199",
+      "name": "<init>",
+      "owner": "org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper"
+    },
+    {
+      "allocations": [
+        {
+          "class": "org/scalatest/verbs/ShouldVerb$$anon$1",
+          "pc": 0
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "(Lorg/scalatest/verbs/ShouldVerb;Ljava/lang/String;Lorg/scalactic/source/Position;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/verbs/ShouldVerb$$anon$1",
+          "pc": 7
+        }
+      ],
+      "code_bytes": 11,
+      "code_present": true,
+      "code_sha256": "c35619acd62df64e757a99e36b9704ec74ba8d020bf149bcc04f6b9e8d77af0b",
+      "constants": [],
+      "descriptor": "(Ljava/lang/String;Lorg/scalactic/source/Position;)Lorg/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 7,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              },
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "descriptor": "Lorg/scalactic/source/Position;",
+                "kind": "formal",
+                "ordinal": 1,
+                "slot": 2
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 7,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/verbs/ShouldVerb$$anon$1",
+              "pc": 0
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/verbs/ShouldVerb;Ljava/lang/String;Lorg/scalactic/source/Position;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/verbs/ShouldVerb$$anon$1"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "fresh",
+          "owner": "org/scalatest/verbs/ShouldVerb$$anon$1",
+          "pc": 0
+        },
+        "writes": []
+      },
+      "name": "convertToStringShouldWrapperForVerb",
+      "owner": "org/scalatest/verbs/ShouldVerb"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "leftSideString",
+          "opcode": 185,
+          "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb",
+          "pc": 2
+        },
+        {
+          "descriptor": "()Lorg/scalactic/source/Position;",
+          "name": "pos",
+          "opcode": 185,
+          "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb",
+          "pc": 11
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/scalactic/source/Position;)Lorg/scalatest/verbs/ResultOfStringPassedToVerb;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "org/scalatest/verbs/StringVerbStringInvocation",
+          "pc": 16
+        }
+      ],
+      "code_bytes": 20,
+      "code_present": true,
+      "code_sha256": "9a79fdab764c75967b48d3d94c03da96e6e83c5ac06f01d0336e0478394b0078",
+      "constants": [
+        {
+          "kind": "string",
+          "pc": 7,
+          "value": "should"
+        }
+      ],
+      "descriptor": "(Ljava/lang/String;Lorg/scalatest/verbs/StringVerbStringInvocation;)Lorg/scalatest/verbs/ResultOfStringPassedToVerb;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 9,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 2,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/String;",
+              "name": "leftSideString",
+              "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 11,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalactic/source/Position;",
+              "name": "pos",
+              "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "call_result",
+                "pc": 2,
+                "target": {
+                  "descriptor": "()Ljava/lang/String;",
+                  "name": "leftSideString",
+                  "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+                }
+              },
+              {
+                "cp_tag": 8,
+                "kind": "constant",
+                "value": "should"
+              },
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "kind": "call_result",
+                "pc": 11,
+                "target": {
+                  "descriptor": "()Lorg/scalactic/source/Position;",
+                  "name": "pos",
+                  "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+                }
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 16,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/verbs/StringVerbStringInvocation;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/scalactic/source/Position;)Lorg/scalatest/verbs/ResultOfStringPassedToVerb;",
+              "name": "apply",
+              "owner": "org/scalatest/verbs/StringVerbStringInvocation"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 16,
+          "target": {
+            "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/scalactic/source/Position;)Lorg/scalatest/verbs/ResultOfStringPassedToVerb;",
+            "name": "apply",
+            "owner": "org/scalatest/verbs/StringVerbStringInvocation"
+          }
+        },
+        "writes": []
+      },
+      "name": "should",
+      "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "leftSideString",
+          "opcode": 185,
+          "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb",
+          "pc": 2
+        },
+        {
+          "descriptor": "()Lorg/scalactic/source/Position;",
+          "name": "pos",
+          "opcode": 185,
+          "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb",
+          "pc": 8
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Lorg/scalactic/source/Position;)Lorg/scalatest/verbs/BehaveWord;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "org/scalatest/verbs/StringVerbBehaveLikeInvocation",
+          "pc": 13
+        }
+      ],
+      "code_bytes": 17,
+      "code_present": true,
+      "code_sha256": "20cbbb9cf4a00ab9f59ac1ab1de812462f2231f6bdc10e2dba7acbb965a7f5cc",
+      "constants": [],
+      "descriptor": "(Lorg/scalatest/verbs/BehaveWord;Lorg/scalatest/verbs/StringVerbBehaveLikeInvocation;)Lorg/scalatest/verbs/BehaveWord;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 7,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 2,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/String;",
+              "name": "leftSideString",
+              "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 8,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalactic/source/Position;",
+              "name": "pos",
+              "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "call_result",
+                "pc": 2,
+                "target": {
+                  "descriptor": "()Ljava/lang/String;",
+                  "name": "leftSideString",
+                  "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+                }
+              },
+              {
+                "kind": "call_result",
+                "pc": 8,
+                "target": {
+                  "descriptor": "()Lorg/scalactic/source/Position;",
+                  "name": "pos",
+                  "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+                }
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 13,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/verbs/StringVerbBehaveLikeInvocation;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/String;Lorg/scalactic/source/Position;)Lorg/scalatest/verbs/BehaveWord;",
+              "name": "apply",
+              "owner": "org/scalatest/verbs/StringVerbBehaveLikeInvocation"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": {
+          "kind": "call_result",
+          "pc": 13,
+          "target": {
+            "descriptor": "(Ljava/lang/String;Lorg/scalactic/source/Position;)Lorg/scalatest/verbs/BehaveWord;",
+            "name": "apply",
+            "owner": "org/scalatest/verbs/StringVerbBehaveLikeInvocation"
+          }
+        },
+        "writes": []
+      },
+      "name": "should",
+      "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "leftSideString",
+          "opcode": 185,
+          "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb",
+          "pc": 2
+        },
+        {
+          "descriptor": "()Lorg/scalactic/source/Position;",
+          "name": "pos",
+          "opcode": 185,
+          "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb",
+          "pc": 10
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lorg/scalactic/source/Position;Lscala/Function0;)V",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "org/scalatest/verbs/StringVerbBlockRegistration",
+          "pc": 16
+        }
+      ],
+      "code_bytes": 20,
+      "code_present": true,
+      "code_sha256": "38fc628c1efd2e9a9f7ca9aad105666894594642eac6a9811d44e1c4d439a781",
+      "constants": [
+        {
+          "kind": "string",
+          "pc": 7,
+          "value": "should"
+        }
+      ],
+      "descriptor": "(Lscala/Function0;Lorg/scalatest/verbs/StringVerbBlockRegistration;)V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 9,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 2,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/String;",
+              "name": "leftSideString",
+              "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 10,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalactic/source/Position;",
+              "name": "pos",
+              "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "call_result",
+                "pc": 2,
+                "target": {
+                  "descriptor": "()Ljava/lang/String;",
+                  "name": "leftSideString",
+                  "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+                }
+              },
+              {
+                "cp_tag": 8,
+                "kind": "constant",
+                "value": "should"
+              },
+              {
+                "kind": "call_result",
+                "pc": 10,
+                "target": {
+                  "descriptor": "()Lorg/scalactic/source/Position;",
+                  "name": "pos",
+                  "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+                }
+              },
+              {
+                "descriptor": "Lscala/Function0;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 16,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/verbs/StringVerbBlockRegistration;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lorg/scalactic/source/Position;Lscala/Function0;)V",
+              "name": "apply",
+              "owner": "org/scalatest/verbs/StringVerbBlockRegistration"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": []
+      },
+      "name": "should",
+      "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "leftSideString",
+          "opcode": 185,
+          "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb",
+          "pc": 2
+        },
+        {
+          "descriptor": "()Lorg/scalactic/source/Position;",
+          "name": "pos",
+          "opcode": 185,
+          "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb",
+          "pc": 11
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lorg/scalatest/verbs/ResultOfAfterWordApplication;Lorg/scalactic/source/Position;)V",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "org/scalatest/verbs/SubjectWithAfterWordRegistration",
+          "pc": 16
+        }
+      ],
+      "code_bytes": 20,
+      "code_present": true,
+      "code_sha256": "1d587e9ea2991c4b44a15db757efbdea5a28d721a2eb2c20208a05e216a508e5",
+      "constants": [
+        {
+          "kind": "string",
+          "pc": 7,
+          "value": "should"
+        }
+      ],
+      "descriptor": "(Lorg/scalatest/verbs/ResultOfAfterWordApplication;Lorg/scalatest/verbs/SubjectWithAfterWordRegistration;)V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 9,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 2,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Ljava/lang/String;",
+              "name": "leftSideString",
+              "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 11,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalactic/source/Position;",
+              "name": "pos",
+              "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "call_result",
+                "pc": 2,
+                "target": {
+                  "descriptor": "()Ljava/lang/String;",
+                  "name": "leftSideString",
+                  "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+                }
+              },
+              {
+                "cp_tag": 8,
+                "kind": "constant",
+                "value": "should"
+              },
+              {
+                "descriptor": "Lorg/scalatest/verbs/ResultOfAfterWordApplication;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "kind": "call_result",
+                "pc": 11,
+                "target": {
+                  "descriptor": "()Lorg/scalactic/source/Position;",
+                  "name": "pos",
+                  "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+                }
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 16,
+            "receiver": {
+              "descriptor": "Lorg/scalatest/verbs/SubjectWithAfterWordRegistration;",
+              "kind": "formal",
+              "ordinal": 1,
+              "slot": 2
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lorg/scalatest/verbs/ResultOfAfterWordApplication;Lorg/scalactic/source/Position;)V",
+              "name": "apply",
+              "owner": "org/scalatest/verbs/SubjectWithAfterWordRegistration"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": []
+      },
+      "name": "should",
+      "owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "(Lscala/Function0;Ljava/lang/String;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 3
+        }
+      ],
+      "code_bytes": 7,
+      "code_present": true,
+      "code_sha256": "f753218a91c3b00bd2cd8feed09cbb91a36aa2c975e04020aa177809c94ac72a",
+      "constants": [],
+      "descriptor": "(Lscala/Function0;Ljava/lang/String;)V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 5,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [
+              {
+                "descriptor": "Lscala/Function0;",
+                "kind": "formal",
+                "ordinal": 0,
+                "slot": 1
+              },
+              {
+                "descriptor": "Ljava/lang/String;",
+                "kind": "formal",
+                "ordinal": 1,
+                "slot": 2
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 3,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "(Lscala/Function0;Ljava/lang/String;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/SuperEngine"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": []
+      },
+      "name": "<init>",
+      "owner": "org/scalatest/Engine"
+    },
+    {
+      "allocations": [
+        {
+          "class": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 10
+        },
+        {
+          "class": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 66
+        },
+        {
+          "class": "org/scalatest/SuperEngine$RegistrationInformer",
+          "pc": 70
+        },
+        {
+          "class": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 85
+        },
+        {
+          "class": "org/scalatest/SuperEngine$RegistrationNotifier",
+          "pc": 89
+        },
+        {
+          "class": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 104
+        },
+        {
+          "class": "org/scalatest/SuperEngine$RegistrationAlerter",
+          "pc": 108
+        },
+        {
+          "class": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 123
+        },
+        {
+          "class": "org/scalatest/SuperEngine$RegistrationDocumenter",
+          "pc": 127
+        },
+        {
+          "class": "org/scalatest/SuperEngine$$anon$1",
+          "pc": 142
+        },
+        {
+          "class": "org/scalatest/SuperEngine$$anon$2",
+          "pc": 154
+        },
+        {
+          "class": "org/scalatest/SuperEngine$$anon$3",
+          "pc": 166
+        },
+        {
+          "class": "org/scalatest/SuperEngine$$anon$4",
+          "pc": 178
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "()V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/lang/Object",
+          "pc": 6
+        },
+        {
+          "descriptor": "()Lorg/scalatest/SuperEngine$Bundle$;",
+          "name": "Bundle",
+          "opcode": 182,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 15
+        },
+        {
+          "descriptor": "()Lorg/scalatest/SuperEngine$Trunk$;",
+          "name": "Trunk",
+          "opcode": 182,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 19
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Map$;",
+          "name": "Map",
+          "opcode": 182,
+          "owner": "scala/Predef$",
+          "pc": 28
+        },
+        {
+          "descriptor": "(Lscala/collection/immutable/Seq;)Ljava/lang/Object;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "scala/collection/immutable/Map$",
+          "pc": 34
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Map$;",
+          "name": "Map",
+          "opcode": 182,
+          "owner": "scala/Predef$",
+          "pc": 43
+        },
+        {
+          "descriptor": "(Lscala/collection/immutable/Seq;)Ljava/lang/Object;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "scala/collection/immutable/Map$",
+          "pc": 49
+        },
+        {
+          "descriptor": "(Lorg/scalatest/SuperEngine$Branch;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;Lscala/collection/immutable/Map;Z)Lorg/scalatest/SuperEngine$Bundle;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "org/scalatest/SuperEngine$Bundle$",
+          "pc": 56
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 59
+        },
+        {
+          "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/SuperEngine$RegistrationInformer",
+          "pc": 75
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 78
+        },
+        {
+          "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/SuperEngine$RegistrationNotifier",
+          "pc": 94
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 97
+        },
+        {
+          "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/SuperEngine$RegistrationAlerter",
+          "pc": 113
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 116
+        },
+        {
+          "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/SuperEngine$RegistrationDocumenter",
+          "pc": 132
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "java/util/concurrent/atomic/AtomicReference",
+          "pc": 135
+        },
+        {
+          "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/SuperEngine$$anon$1",
+          "pc": 147
+        },
+        {
+          "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/SuperEngine$$anon$2",
+          "pc": 159
+        },
+        {
+          "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/SuperEngine$$anon$3",
+          "pc": 171
+        },
+        {
+          "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/SuperEngine$$anon$4",
+          "pc": 183
+        }
+      ],
+      "code_bytes": 190,
+      "code_present": true,
+      "code_sha256": "57392c7116573fadddbad7d27e897a3fced4e2f13316282726ac9facd4575f35",
+      "constants": [],
+      "descriptor": "(Lscala/Function0;Ljava/lang/String;)V",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lscala/Function0;",
+          "name": "concurrentBundleModMessageFun",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 2
+        },
+        {
+          "descriptor": "Lscala/collection/immutable/Nil$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/collection/immutable/Nil$",
+          "pc": 22
+        },
+        {
+          "descriptor": "Lscala/Predef$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/Predef$",
+          "pc": 25
+        },
+        {
+          "descriptor": "Lscala/collection/immutable/Nil$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/collection/immutable/Nil$",
+          "pc": 31
+        },
+        {
+          "descriptor": "Lscala/Predef$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/Predef$",
+          "pc": 40
+        },
+        {
+          "descriptor": "Lscala/collection/immutable/Nil$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/collection/immutable/Nil$",
+          "pc": 46
+        },
+        {
+          "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+          "name": "atomic",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 62
+        },
+        {
+          "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+          "name": "atomicInformer",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 81
+        },
+        {
+          "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+          "name": "atomicNotifier",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 100
+        },
+        {
+          "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+          "name": "atomicAlerter",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 119
+        },
+        {
+          "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+          "name": "atomicDocumenter",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 138
+        },
+        {
+          "descriptor": "Lorg/scalatest/Informer;",
+          "name": "zombieInformer",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 150
+        },
+        {
+          "descriptor": "Lorg/scalatest/Notifier;",
+          "name": "zombieNotifier",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 162
+        },
+        {
+          "descriptor": "Lorg/scalatest/Alerter;",
+          "name": "zombieAlerter",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 174
+        },
+        {
+          "descriptor": "Lorg/scalatest/Documenter;",
+          "name": "zombieDocumenter",
+          "opcode": 181,
+          "owner": "org/scalatest/SuperEngine",
+          "pc": 186
+        }
+      ],
+      "flags": 1,
+      "instructions": 88,
+      "local_transport": {
+        "calls": [
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 6,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()V",
+              "name": "<init>",
+              "owner": "java/lang/Object"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 15,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/SuperEngine$Bundle$;",
+              "name": "Bundle",
+              "owner": "org/scalatest/SuperEngine"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 19,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "target": {
+              "descriptor": "()Lorg/scalatest/SuperEngine$Trunk$;",
+              "name": "Trunk",
+              "owner": "org/scalatest/SuperEngine"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 28,
+            "receiver": {
+              "field": {
+                "descriptor": "Lscala/Predef$;",
+                "name": "MODULE$",
+                "owner": "scala/Predef$"
+              },
+              "kind": "field",
+              "receiver": null
+            },
+            "target": {
+              "descriptor": "()Lscala/collection/immutable/Map$;",
+              "name": "Map",
+              "owner": "scala/Predef$"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "field": {
+                  "descriptor": "Lscala/collection/immutable/Nil$;",
+                  "name": "MODULE$",
+                  "owner": "scala/collection/immutable/Nil$"
+                },
+                "kind": "field",
+                "receiver": null
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 34,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 28,
+              "target": {
+                "descriptor": "()Lscala/collection/immutable/Map$;",
+                "name": "Map",
+                "owner": "scala/Predef$"
+              }
+            },
+            "target": {
+              "descriptor": "(Lscala/collection/immutable/Seq;)Ljava/lang/Object;",
+              "name": "apply",
+              "owner": "scala/collection/immutable/Map$"
+            }
+          },
+          {
+            "arguments": [],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 43,
+            "receiver": {
+              "field": {
+                "descriptor": "Lscala/Predef$;",
+                "name": "MODULE$",
+                "owner": "scala/Predef$"
+              },
+              "kind": "field",
+              "receiver": null
+            },
+            "target": {
+              "descriptor": "()Lscala/collection/immutable/Map$;",
+              "name": "Map",
+              "owner": "scala/Predef$"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "field": {
+                  "descriptor": "Lscala/collection/immutable/Nil$;",
+                  "name": "MODULE$",
+                  "owner": "scala/collection/immutable/Nil$"
+                },
+                "kind": "field",
+                "receiver": null
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 49,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 43,
+              "target": {
+                "descriptor": "()Lscala/collection/immutable/Map$;",
+                "name": "Map",
+                "owner": "scala/Predef$"
+              }
+            },
+            "target": {
+              "descriptor": "(Lscala/collection/immutable/Seq;)Ljava/lang/Object;",
+              "name": "apply",
+              "owner": "scala/collection/immutable/Map$"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "call_result",
+                "pc": 19,
+                "target": {
+                  "descriptor": "()Lorg/scalatest/SuperEngine$Trunk$;",
+                  "name": "Trunk",
+                  "owner": "org/scalatest/SuperEngine"
+                }
+              },
+              {
+                "field": {
+                  "descriptor": "Lscala/collection/immutable/Nil$;",
+                  "name": "MODULE$",
+                  "owner": "scala/collection/immutable/Nil$"
+                },
+                "kind": "field",
+                "receiver": null
+              },
+              {
+                "kind": "call_result",
+                "pc": 34,
+                "target": {
+                  "descriptor": "(Lscala/collection/immutable/Seq;)Ljava/lang/Object;",
+                  "name": "apply",
+                  "owner": "scala/collection/immutable/Map$"
+                }
+              },
+              {
+                "kind": "call_result",
+                "pc": 49,
+                "target": {
+                  "descriptor": "(Lscala/collection/immutable/Seq;)Ljava/lang/Object;",
+                  "name": "apply",
+                  "owner": "scala/collection/immutable/Map$"
+                }
+              },
+              {
+                "kind": "integer",
+                "value": 0
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 56,
+            "receiver": {
+              "kind": "call_result",
+              "pc": 15,
+              "target": {
+                "descriptor": "()Lorg/scalatest/SuperEngine$Bundle$;",
+                "name": "Bundle",
+                "owner": "org/scalatest/SuperEngine"
+              }
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/SuperEngine$Branch;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;Lscala/collection/immutable/Map;Z)Lorg/scalatest/SuperEngine$Bundle;",
+              "name": "apply",
+              "owner": "org/scalatest/SuperEngine$Bundle$"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "call_result",
+                "pc": 56,
+                "target": {
+                  "descriptor": "(Lorg/scalatest/SuperEngine$Branch;Lscala/collection/immutable/List;Lscala/collection/immutable/Map;Lscala/collection/immutable/Map;Z)Lorg/scalatest/SuperEngine$Bundle;",
+                  "name": "apply",
+                  "owner": "org/scalatest/SuperEngine$Bundle$"
+                }
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 59,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 10
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/Object;)V",
+              "name": "<init>",
+              "owner": "java/util/concurrent/atomic/AtomicReference"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 75,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$RegistrationInformer",
+              "pc": 70
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/SuperEngine$RegistrationInformer"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/SuperEngine$RegistrationInformer",
+                "pc": 70
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 78,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 66
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/Object;)V",
+              "name": "<init>",
+              "owner": "java/util/concurrent/atomic/AtomicReference"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 94,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$RegistrationNotifier",
+              "pc": 89
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/SuperEngine$RegistrationNotifier"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/SuperEngine$RegistrationNotifier",
+                "pc": 89
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 97,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 85
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/Object;)V",
+              "name": "<init>",
+              "owner": "java/util/concurrent/atomic/AtomicReference"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 113,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$RegistrationAlerter",
+              "pc": 108
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/SuperEngine$RegistrationAlerter"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/SuperEngine$RegistrationAlerter",
+                "pc": 108
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 116,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 104
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/Object;)V",
+              "name": "<init>",
+              "owner": "java/util/concurrent/atomic/AtomicReference"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "receiver"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 132,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$RegistrationDocumenter",
+              "pc": 127
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/SuperEngine$RegistrationDocumenter"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "fresh",
+                "owner": "org/scalatest/SuperEngine$RegistrationDocumenter",
+                "pc": 127
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 135,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 123
+            },
+            "target": {
+              "descriptor": "(Ljava/lang/Object;)V",
+              "name": "<init>",
+              "owner": "java/util/concurrent/atomic/AtomicReference"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "null"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 147,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$$anon$1",
+              "pc": 142
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/SuperEngine$$anon$1"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "null"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 159,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$$anon$2",
+              "pc": 154
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/SuperEngine$$anon$2"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "null"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 171,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$$anon$3",
+              "pc": 166
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/SuperEngine$$anon$3"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "kind": "null"
+              }
+            ],
+            "execution_effects": "TOP_until_callee_contract_composed",
+            "pc": 183,
+            "receiver": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$$anon$4",
+              "pc": 178
+            },
+            "target": {
+              "descriptor": "(Lorg/scalatest/SuperEngine;)V",
+              "name": "<init>",
+              "owner": "org/scalatest/SuperEngine$$anon$4"
+            }
+          }
+        ],
+        "conditions": [],
+        "return": null,
+        "writes": [
+          {
+            "field": {
+              "descriptor": "Lscala/Function0;",
+              "name": "concurrentBundleModMessageFun",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 2,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "descriptor": "Lscala/Function0;",
+              "kind": "formal",
+              "ordinal": 0,
+              "slot": 1
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+              "name": "atomic",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 62,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 10
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+              "name": "atomicInformer",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 81,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 66
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+              "name": "atomicNotifier",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 100,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 85
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+              "name": "atomicAlerter",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 119,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 104
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Ljava/util/concurrent/atomic/AtomicReference;",
+              "name": "atomicDocumenter",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 138,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "fresh",
+              "owner": "java/util/concurrent/atomic/AtomicReference",
+              "pc": 123
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Lorg/scalatest/Informer;",
+              "name": "zombieInformer",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 150,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$$anon$1",
+              "pc": 142
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Lorg/scalatest/Notifier;",
+              "name": "zombieNotifier",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 162,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$$anon$2",
+              "pc": 154
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Lorg/scalatest/Alerter;",
+              "name": "zombieAlerter",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 174,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$$anon$3",
+              "pc": 166
+            }
+          },
+          {
+            "field": {
+              "descriptor": "Lorg/scalatest/Documenter;",
+              "name": "zombieDocumenter",
+              "owner": "org/scalatest/SuperEngine"
+            },
+            "pc": 186,
+            "receiver": {
+              "kind": "receiver"
+            },
+            "value": {
+              "kind": "fresh",
+              "owner": "org/scalatest/SuperEngine$$anon$4",
+              "pc": 178
+            }
+          }
+        ]
+      },
+      "name": "<init>",
+      "owner": "org/scalatest/SuperEngine"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalatest/Outcome;",
+          "name": "apply",
+          "opcode": 185,
+          "owner": "org/scalatest/TestSuite$NoArgTest",
+          "pc": 1
+        }
+      ],
+      "code_bytes": 7,
+      "code_present": true,
+      "code_sha256": "181c80e3dd0b304075b2e5987a2a6096a520867bc9224222cf2bbb55c23505fe",
+      "constants": [],
+      "descriptor": "(Lorg/scalatest/TestSuite$NoArgTest;)Lorg/scalatest/Outcome;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 3,
+      "name": "withFixture",
+      "owner": "org/scalatest/TestSuite"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Lscala/collection/immutable/Vector$;",
+          "name": "Vector",
+          "opcode": 182,
+          "owner": "scala/package$",
+          "pc": 3
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Vector;",
+          "name": "empty",
+          "opcode": 182,
+          "owner": "scala/collection/immutable/Vector$",
+          "pc": 6
+        }
+      ],
+      "code_bytes": 10,
+      "code_present": true,
+      "code_sha256": "b41734d6a9fbae5812990daac2dca24a7d072182a994e920dd666e4c0faeeefe",
+      "constants": [],
+      "descriptor": "()Lscala/collection/immutable/IndexedSeq;",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lscala/package$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/package$",
+          "pc": 0
+        }
+      ],
+      "flags": 1,
+      "instructions": 4,
+      "name": "nestedSuites",
+      "owner": "org/scalatest/Suite"
+    },
+    {
+      "allocations": [
+        {
+          "class": "org/scalactic/source/Position",
+          "pc": 49
+        },
+        {
+          "class": "scala/MatchError",
+          "pc": 198
+        },
+        {
+          "class": "org/scalatest/events/InfoProvided",
+          "pc": 243
+        },
+        {
+          "class": "scala/Some",
+          "pc": 256
+        },
+        {
+          "class": "org/scalatest/events/NameInfo",
+          "pc": 260
+        },
+        {
+          "class": "scala/Some",
+          "pc": 276
+        },
+        {
+          "class": "org/scalatest/CompositeStatus",
+          "pc": 344
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "()Lorg/scalactic/Requirements$RequirementsHelper;",
+          "name": "requirementsHelper",
+          "opcode": 182,
+          "owner": "org/scalactic/Requirements$",
+          "pc": 3
+        },
+        {
+          "descriptor": "()Lorg/scalactic/Prettifier;",
+          "name": "default",
+          "opcode": 182,
+          "owner": "org/scalactic/Prettifier$",
+          "pc": 46
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;I)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalactic/source/Position",
+          "pc": 62
+        },
+        {
+          "descriptor": "([Ljava/lang/String;[Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)V",
+          "name": "macroRequireNonNull",
+          "opcode": 182,
+          "owner": "org/scalactic/Requirements$RequirementsHelper",
+          "pc": 65
+        },
+        {
+          "descriptor": "()Ljava/lang/Thread;",
+          "name": "currentThread",
+          "opcode": 184,
+          "owner": "java/lang/Thread",
+          "pc": 68
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "getName",
+          "opcode": 182,
+          "owner": "java/lang/Thread",
+          "pc": 71
+        },
+        {
+          "descriptor": "()Ljava/lang/Thread;",
+          "name": "currentThread",
+          "opcode": 184,
+          "owner": "java/lang/Thread",
+          "pc": 76
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "suiteName",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 85
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+          "name": "augmentedThreadName",
+          "opcode": 182,
+          "owner": "org/scalatest/SuiteHelpers$",
+          "pc": 90
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)V",
+          "name": "setName",
+          "opcode": 182,
+          "owner": "java/lang/Thread",
+          "pc": 93
+        },
+        {
+          "descriptor": "()Lorg/scalatest/Reporter;",
+          "name": "reporter",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 101
+        },
+        {
+          "descriptor": "(Lorg/scalatest/Suite;Lorg/scalatest/Reporter;)Lorg/scalatest/Reporter;",
+          "name": "wrapReporterIfNecessary",
+          "opcode": 182,
+          "owner": "org/scalatest/tools/Utils$",
+          "pc": 104
+        },
+        {
+          "descriptor": "()Lorg/scalatest/Stopper;",
+          "name": "copy$default$2",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 113
+        },
+        {
+          "descriptor": "()Lorg/scalatest/Filter;",
+          "name": "copy$default$3",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 117
+        },
+        {
+          "descriptor": "()Lorg/scalatest/ConfigMap;",
+          "name": "copy$default$4",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 121
+        },
+        {
+          "descriptor": "()Lscala/Option;",
+          "name": "copy$default$5",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 125
+        },
+        {
+          "descriptor": "()Lorg/scalatest/Tracker;",
+          "name": "copy$default$6",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 129
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Set;",
+          "name": "copy$default$7",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 133
+        },
+        {
+          "descriptor": "()Z",
+          "name": "copy$default$8",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 137
+        },
+        {
+          "descriptor": "()Lscala/Option;",
+          "name": "copy$default$9",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 141
+        },
+        {
+          "descriptor": "()Lscala/Option;",
+          "name": "copy$default$10",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 145
+        },
+        {
+          "descriptor": "(Lorg/scalatest/Reporter;Lorg/scalatest/Stopper;Lorg/scalatest/Filter;Lorg/scalatest/ConfigMap;Lscala/Option;Lorg/scalatest/Tracker;Lscala/collection/immutable/Set;ZLscala/Option;Lscala/Option;)Lorg/scalatest/Args;",
+          "name": "copy",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 148
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)Z",
+          "name": "equals",
+          "opcode": 182,
+          "owner": "java/lang/Object",
+          "pc": 161
+        },
+        {
+          "descriptor": "(Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+          "name": "runNestedSuites",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 170
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/MatchError",
+          "pc": 204
+        },
+        {
+          "descriptor": "(Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+          "name": "runTests",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 214
+        },
+        {
+          "descriptor": "()Lorg/scalatest/Stopper;",
+          "name": "stopper",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 222
+        },
+        {
+          "descriptor": "()Z",
+          "name": "stopRequested",
+          "opcode": 185,
+          "owner": "org/scalatest/Stopper",
+          "pc": 225
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "executeStopping",
+          "opcode": 182,
+          "owner": "org/scalatest/Resources$",
+          "pc": 236
+        },
+        {
+          "descriptor": "()Lorg/scalatest/Tracker;",
+          "name": "tracker",
+          "opcode": 182,
+          "owner": "org/scalatest/Args",
+          "pc": 248
+        },
+        {
+          "descriptor": "()Lorg/scalatest/events/Ordinal;",
+          "name": "nextOrdinal",
+          "opcode": 182,
+          "owner": "org/scalatest/Tracker",
+          "pc": 251
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "suiteName",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 265
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "suiteId",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 271
+        },
+        {
+          "descriptor": "()Ljava/lang/Class;",
+          "name": "getClass",
+          "opcode": 182,
+          "owner": "java/lang/Object",
+          "pc": 281
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "getName",
+          "opcode": 182,
+          "owner": "java/lang/Class",
+          "pc": 284
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/Some",
+          "pc": 287
+        },
+        {
+          "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lscala/Option;Lscala/Option;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/events/NameInfo",
+          "pc": 291
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/Some",
+          "pc": 294
+        },
+        {
+          "descriptor": "()Lscala/Option;",
+          "name": "apply$default$4",
+          "opcode": 182,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 300
+        },
+        {
+          "descriptor": "()Lscala/Option;",
+          "name": "apply$default$5",
+          "opcode": 182,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 306
+        },
+        {
+          "descriptor": "()Lscala/Option;",
+          "name": "apply$default$6",
+          "opcode": 182,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 312
+        },
+        {
+          "descriptor": "()Lscala/Option;",
+          "name": "apply$default$7",
+          "opcode": 182,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 318
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "apply$default$8",
+          "opcode": 182,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 324
+        },
+        {
+          "descriptor": "()J",
+          "name": "apply$default$9",
+          "opcode": 182,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 330
+        },
+        {
+          "descriptor": "(Lorg/scalatest/events/Ordinal;Ljava/lang/String;Lscala/Option;Lscala/Option;Lscala/Option;Lscala/Option;Lscala/Option;Ljava/lang/String;J)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/events/InfoProvided",
+          "pc": 333
+        },
+        {
+          "descriptor": "(Lorg/scalatest/events/Event;)V",
+          "name": "apply",
+          "opcode": 185,
+          "owner": "org/scalatest/Reporter",
+          "pc": 336
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Set$;",
+          "name": "Set",
+          "opcode": 182,
+          "owner": "scala/Predef$",
+          "pc": 351
+        },
+        {
+          "descriptor": "([Ljava/lang/Object;)Lscala/collection/immutable/ArraySeq;",
+          "name": "wrapRefArray",
+          "opcode": 182,
+          "owner": "scala/runtime/ScalaRunTime$",
+          "pc": 374
+        },
+        {
+          "descriptor": "(Lscala/collection/immutable/Seq;)Ljava/lang/Object;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "scala/collection/immutable/Set$",
+          "pc": 377
+        },
+        {
+          "descriptor": "(Lscala/collection/immutable/Set;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "org/scalatest/CompositeStatus",
+          "pc": 383
+        },
+        {
+          "descriptor": "()Ljava/lang/Thread;",
+          "name": "currentThread",
+          "opcode": 184,
+          "owner": "java/lang/Thread",
+          "pc": 391
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)V",
+          "name": "setName",
+          "opcode": 182,
+          "owner": "java/lang/Thread",
+          "pc": 396
+        },
+        {
+          "descriptor": "()Ljava/lang/Thread;",
+          "name": "currentThread",
+          "opcode": 184,
+          "owner": "java/lang/Thread",
+          "pc": 402
+        },
+        {
+          "descriptor": "(Ljava/lang/String;)V",
+          "name": "setName",
+          "opcode": 182,
+          "owner": "java/lang/Thread",
+          "pc": 407
+        }
+      ],
+      "code_bytes": 411,
+      "code_present": true,
+      "code_sha256": "85a450fcaa78d525b55d2205e2e57da09a35883ae14a68742652a3ba12014a7b",
+      "constants": [
+        {
+          "kind": "string",
+          "pc": 12,
+          "value": "testName"
+        },
+        {
+          "kind": "string",
+          "pc": 18,
+          "value": "args"
+        },
+        {
+          "kind": "string",
+          "pc": 53,
+          "value": "Suite.scala"
+        },
+        {
+          "kind": "string",
+          "pc": 56,
+          "value": "Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature."
+        }
+      ],
+      "descriptor": "(Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;",
+      "dynamics": [],
+      "exception_handlers": [
+        [
+          76,
+          389,
+          389,
+          0
+        ]
+      ],
+      "field_accesses": [
+        {
+          "descriptor": "Lorg/scalactic/Requirements$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalactic/Requirements$",
+          "pc": 0
+        },
+        {
+          "descriptor": "Lorg/scalactic/Prettifier$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalactic/Prettifier$",
+          "pc": 43
+        },
+        {
+          "descriptor": "Lorg/scalatest/SuiteHelpers$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/SuiteHelpers$",
+          "pc": 79
+        },
+        {
+          "descriptor": "Lorg/scalatest/tools/Utils$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/tools/Utils$",
+          "pc": 96
+        },
+        {
+          "descriptor": "Lscala/None$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/None$",
+          "pc": 156
+        },
+        {
+          "descriptor": "Lorg/scalatest/SucceededStatus$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/SucceededStatus$",
+          "pc": 189
+        },
+        {
+          "descriptor": "Lorg/scalatest/Resources$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/Resources$",
+          "pc": 233
+        },
+        {
+          "descriptor": "Lorg/scalatest/events/InfoProvided$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 297
+        },
+        {
+          "descriptor": "Lorg/scalatest/events/InfoProvided$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 303
+        },
+        {
+          "descriptor": "Lorg/scalatest/events/InfoProvided$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 309
+        },
+        {
+          "descriptor": "Lorg/scalatest/events/InfoProvided$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 315
+        },
+        {
+          "descriptor": "Lorg/scalatest/events/InfoProvided$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 321
+        },
+        {
+          "descriptor": "Lorg/scalatest/events/InfoProvided$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "org/scalatest/events/InfoProvided$",
+          "pc": 327
+        },
+        {
+          "descriptor": "Lscala/Predef$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/Predef$",
+          "pc": 348
+        },
+        {
+          "descriptor": "Lscala/runtime/ScalaRunTime$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/runtime/ScalaRunTime$",
+          "pc": 354
+        }
+      ],
+      "flags": 1,
+      "instructions": 177,
+      "name": "run",
+      "owner": "org/scalatest/Suite"
+    },
+    {
+      "allocations": [],
+      "calls": [
+        {
+          "descriptor": "()Lscala/collection/immutable/Set;",
+          "name": "testNames",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 3
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Map;",
+          "name": "tags",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 9
+        },
+        {
+          "descriptor": "()Ljava/lang/String;",
+          "name": "suiteId",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 15
+        },
+        {
+          "descriptor": "(Lscala/collection/immutable/Set;Lscala/collection/immutable/Map;Ljava/lang/String;)I",
+          "name": "runnableTestCount",
+          "opcode": 182,
+          "owner": "org/scalatest/Filter",
+          "pc": 20
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/IndexedSeq;",
+          "name": "nestedSuites",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 24
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/List;",
+          "name": "toList",
+          "opcode": 185,
+          "owner": "scala/collection/immutable/IndexedSeq",
+          "pc": 29
+        },
+        {
+          "descriptor": "(ILscala/collection/immutable/List;Lorg/scalatest/Filter;)I",
+          "name": "countNestedSuiteTests$1",
+          "opcode": 183,
+          "owner": "org/scalatest/Suite",
+          "pc": 35
+        }
+      ],
+      "code_bytes": 39,
+      "code_present": true,
+      "code_sha256": "b618d4c9ced4aebcbfdcf99771a3acbcb2e3287b174fe68f0c4f6af98c101e3d",
+      "constants": [],
+      "descriptor": "(Lorg/scalatest/Filter;)I",
+      "dynamics": [],
+      "exception_handlers": [],
+      "field_accesses": [],
+      "flags": 1,
+      "instructions": 15,
+      "name": "expectedTestCount",
+      "owner": "org/scalatest/Suite"
+    },
+    {
+      "allocations": [
+        {
+          "class": "scala/collection/immutable/$colon$colon",
+          "pc": 154
+        },
+        {
+          "class": "scala/collection/immutable/$colon$colon",
+          "pc": 159
+        }
+      ],
+      "calls": [
+        {
+          "descriptor": "()Ljava/lang/Class;",
+          "name": "getClass",
+          "opcode": 182,
+          "owner": "java/lang/Object",
+          "pc": 13
+        },
+        {
+          "descriptor": "()[Ljava/lang/annotation/Annotation;",
+          "name": "getAnnotations",
+          "opcode": 182,
+          "owner": "java/lang/Class",
+          "pc": 16
+        },
+        {
+          "descriptor": "([Ljava/lang/Object;)Ljava/lang/Object;",
+          "name": "refArrayOps",
+          "opcode": 182,
+          "owner": "scala/Predef$",
+          "pc": 22
+        },
+        {
+          "descriptor": "(Ljava/lang/Class;)Lscala/reflect/ClassTag;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "scala/reflect/ClassTag$",
+          "pc": 36
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;Lscala/Function1;Lscala/reflect/ClassTag;)Ljava/lang/Object;",
+          "name": "map$extension",
+          "opcode": 182,
+          "owner": "scala/collection/ArrayOps$",
+          "pc": 39
+        },
+        {
+          "descriptor": "([Ljava/lang/Object;)Ljava/lang/Object;",
+          "name": "refArrayOps",
+          "opcode": 182,
+          "owner": "scala/Predef$",
+          "pc": 45
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;Lscala/Function1;)Lscala/collection/ArrayOps$WithFilter;",
+          "name": "withFilter$extension",
+          "opcode": 182,
+          "owner": "scala/collection/ArrayOps$",
+          "pc": 53
+        },
+        {
+          "descriptor": "(Ljava/lang/Class;)Lscala/reflect/ClassTag;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "scala/reflect/ClassTag$",
+          "pc": 66
+        },
+        {
+          "descriptor": "(Lscala/Function1;Lscala/reflect/ClassTag;)Ljava/lang/Object;",
+          "name": "map",
+          "opcode": 182,
+          "owner": "scala/collection/ArrayOps$WithFilter",
+          "pc": 69
+        },
+        {
+          "descriptor": "([Ljava/lang/Object;)Ljava/lang/Object;",
+          "name": "refArrayOps",
+          "opcode": 182,
+          "owner": "scala/Predef$",
+          "pc": 86
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;)I",
+          "name": "size$extension",
+          "opcode": 182,
+          "owner": "scala/collection/ArrayOps$",
+          "pc": 89
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Map$;",
+          "name": "Map",
+          "opcode": 182,
+          "owner": "scala/Predef$",
+          "pc": 99
+        },
+        {
+          "descriptor": "(Lscala/collection/immutable/Seq;)Ljava/lang/Object;",
+          "name": "apply",
+          "opcode": 182,
+          "owner": "scala/collection/immutable/Map$",
+          "pc": 105
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Set;",
+          "name": "testNames",
+          "opcode": 185,
+          "owner": "org/scalatest/Suite",
+          "pc": 112
+        },
+        {
+          "descriptor": "(Lscala/Function1;)Ljava/lang/Object;",
+          "name": "map",
+          "opcode": 185,
+          "owner": "scala/collection/immutable/Set",
+          "pc": 123
+        },
+        {
+          "descriptor": "(Lscala/collection/IterableOnce;)Lscala/collection/IterableOps;",
+          "name": "$plus$plus",
+          "opcode": 185,
+          "owner": "scala/collection/MapOps",
+          "pc": 131
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Map$;",
+          "name": "Map",
+          "opcode": 182,
+          "owner": "scala/Predef$",
+          "pc": 145
+        },
+        {
+          "descriptor": "()Lscala/collection/immutable/Map;",
+          "name": "empty",
+          "opcode": 182,
+          "owner": "scala/collection/immutable/Map$",
+          "pc": 148
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;Lscala/collection/immutable/List;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/collection/immutable/$colon$colon",
+          "pc": 168
+        },
+        {
+          "descriptor": "(Ljava/lang/Object;Lscala/collection/immutable/List;)V",
+          "name": "<init>",
+          "opcode": 183,
+          "owner": "scala/collection/immutable/$colon$colon",
+          "pc": 171
+        },
+        {
+          "descriptor": "(Lscala/collection/immutable/List;Lscala/Function2;)Lscala/collection/immutable/Map;",
+          "name": "mergeMap",
+          "opcode": 182,
+          "owner": "org/scalatest/Suite$",
+          "pc": 179
+        }
+      ],
+      "code_bytes": 183,
+      "code_present": true,
+      "code_sha256": "ac816a95cde0ac6fd51e11d6f05e6f45c68d8511a4c17233a5368c786022a8fc",
+      "constants": [
+        {
+          "kind": "class",
+          "pc": 33,
+          "value": "scala/Tuple2"
+        },
+        {
+          "kind": "class",
+          "pc": 64,
+          "value": "java/lang/String"
+        }
+      ],
+      "descriptor": "(Lscala/collection/immutable/Map;Lorg/scalatest/Suite;)Lscala/collection/immutable/Map;",
+      "dynamics": [
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "()Lscala/Function1;",
+          "method_handles": [
+            {
+              "descriptor": "(Ljava/lang/annotation/Annotation;)Lscala/Tuple2;",
+              "handle_kind": 6,
+              "name": "$anonfun$autoTagClassAnnotations$1",
+              "owner": "org/scalatest/Suite$"
+            }
+          ],
+          "name": "apply",
+          "pc": 25
+        },
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "()Lscala/Function1;",
+          "method_handles": [
+            {
+              "descriptor": "(Lscala/Tuple2;)Ljava/lang/Object;",
+              "handle_kind": 6,
+              "name": "$anonfun$autoTagClassAnnotations$2$adapted",
+              "owner": "org/scalatest/Suite$"
+            }
+          ],
+          "name": "apply",
+          "pc": 48
+        },
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "()Lscala/Function1;",
+          "method_handles": [
+            {
+              "descriptor": "(Lscala/Tuple2;)Ljava/lang/String;",
+              "handle_kind": 6,
+              "name": "$anonfun$autoTagClassAnnotations$3",
+              "owner": "org/scalatest/Suite$"
+            }
+          ],
+          "name": "apply",
+          "pc": 56
+        },
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "([Ljava/lang/String;)Lscala/Function1;",
+          "method_handles": [
+            {
+              "descriptor": "([Ljava/lang/String;Ljava/lang/String;)Lscala/Tuple2;",
+              "handle_kind": 6,
+              "name": "$anonfun$autoTagClassAnnotations$4",
+              "owner": "org/scalatest/Suite$"
+            }
+          ],
+          "name": "apply",
+          "pc": 118
+        },
+        {
+          "bootstrap": {
+            "descriptor": "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+            "name": "altMetafactory",
+            "owner": "java/lang/invoke/LambdaMetafactory"
+          },
+          "bootstrap_handle_kind": 6,
+          "descriptor": "()Lscala/Function2;",
+          "method_handles": [
+            {
+              "descriptor": "(Lscala/collection/immutable/Set;Lscala/collection/immutable/Set;)Lscala/collection/immutable/Set;",
+              "handle_kind": 6,
+              "name": "$anonfun$autoTagClassAnnotations$5",
+              "owner": "org/scalatest/Suite$"
+            }
+          ],
+          "name": "apply",
+          "pc": 174
+        }
+      ],
+      "exception_handlers": [],
+      "field_accesses": [
+        {
+          "descriptor": "Lscala/collection/ArrayOps$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/collection/ArrayOps$",
+          "pc": 0
+        },
+        {
+          "descriptor": "Lscala/Predef$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/Predef$",
+          "pc": 3
+        },
+        {
+          "descriptor": "Lscala/collection/ArrayOps$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/collection/ArrayOps$",
+          "pc": 6
+        },
+        {
+          "descriptor": "Lscala/Predef$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/Predef$",
+          "pc": 9
+        },
+        {
+          "descriptor": "Lscala/reflect/ClassTag$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/reflect/ClassTag$",
+          "pc": 30
+        },
+        {
+          "descriptor": "Lscala/reflect/ClassTag$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/reflect/ClassTag$",
+          "pc": 61
+        },
+        {
+          "descriptor": "Lscala/collection/ArrayOps$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/collection/ArrayOps$",
+          "pc": 76
+        },
+        {
+          "descriptor": "Lscala/Predef$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/Predef$",
+          "pc": 79
+        },
+        {
+          "descriptor": "Lscala/Predef$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/Predef$",
+          "pc": 96
+        },
+        {
+          "descriptor": "Lscala/collection/immutable/Nil$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/collection/immutable/Nil$",
+          "pc": 102
+        },
+        {
+          "descriptor": "Lscala/Predef$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/Predef$",
+          "pc": 142
+        },
+        {
+          "descriptor": "Lscala/collection/immutable/Nil$;",
+          "name": "MODULE$",
+          "opcode": 178,
+          "owner": "scala/collection/immutable/Nil$",
+          "pc": 165
+        }
+      ],
+      "flags": 1,
+      "instructions": 64,
+      "name": "autoTagClassAnnotations",
+      "owner": "org/scalatest/Suite$"
+    }
+  ],
+  "qualification": "Diagnostic inventory, not an effect contract. Calls, exceptions, application overrides, dynamic/reflection/loading/native channels require independent recipes or guards.",
+  "schema": "scalatest-execution-protocol-inventory/v1"
+}

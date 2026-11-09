@@ -1,0 +1,54 @@
+{
+  "schema": "normalized-cross-context-native-getter/v1",
+  "scope": "Normalized two-context seam over unchanged genuine Scala compiler captures, own-product bytes and abstract/concrete getters; not two independently captured compilations.",
+  "contract_header_negative": {
+    "path": "changed-contract-header.jar",
+    "mutation": "Configuration.class minor-version low byte XOR1; actual methods/name/descriptor/flags unchanged, declaring class SHA differs",
+    "original_class_sha256": "646cb66cfdabbee1d44f35054bfbc65e89e38676dbf97b738596b83817a49d0d",
+    "changed_class_sha256": "c093cb022afe2aadc8c3752fd30dcdf0faa84a553eb806d9c560e621bde78d21"
+  },
+  "files": [
+    {
+      "path": "fixtures/cross-context-native-getter/changed-contract-header.jar",
+      "sha256": "7e06cb2013818a5e9a651d235627683a615b319f803266b48a5c79d32df0b5c1",
+      "bytes": 8980
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "fixtures/external-metadata/documents.jsonl",
+      "sha256": "d48750d56cb7ea8495c2816814fcd6f3c5a1b9921de281550700eb515e6bc5aa",
+      "bytes": 20315
+    },
+    {
+      "path": "fixtures/external-metadata/syntax.jsonl",
+      "sha256": "84f5fa5d62235c5b732479bb0991f492fcc3f7e0c4e511598068a458dfbdd3eb",
+      "bytes": 31883
+    },
+    {
+      "path": "fixtures/external-metadata/caller.jar",
+      "sha256": "8501afbd058b33c17407a6f77e1e7cd6d282efbd348c4afa9a0cf918f23c5a79",
+      "bytes": 2655
+    },
+    {
+      "path": "fixtures/external-metadata/compiler-contexts.json",
+      "sha256": "806e9717ce16ac80b2380ab14038bb1cb7b610b1e232a33a453fd6c472f5407b",
+      "bytes": 3804
+    },
+    {
+      "path": "fixtures/external-metadata/external-signatures.semanticdb",
+      "sha256": "e6c01bc907104e8f5de03686a1f77b8b4a1421a4a5f7f90b5e48013b39e4709e",
+      "bytes": 1256
+    },
+    {
+      "path": "fixtures/external-metadata/admission.json",
+      "sha256": "638dc81913140780567b88ed2e2b555d025f722559f166e147c2ff928f1ae836",
+      "bytes": 1335
+    },
+    {
+      "path": "fixtures/selected-external-apply/library.jar",
+      "sha256": "c5c965928dba16f7ccb7a1e9812b6de9471828d65d3345e9f822e4572b36a3ad",
+      "bytes": 8980
+    }
+  ]
+}

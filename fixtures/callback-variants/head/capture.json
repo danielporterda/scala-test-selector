@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "revision": "0a56539b9827b270425fd833e6e8a26f63124be0",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/callbackcase/Changed.scala.semanticdb",
+      "sha256": "b66efd71d422b699c5b71a65e2fd24b63793b905a5897bbde25d7c745226d417",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/callbackcase/Changed.scala.semanticdb",
+      "input_target_contexts": [
+        "project:callback-variants/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/callbackcase/Shared.scala.semanticdb",
+      "sha256": "732b634967a6afeb49636a369fc302b280e2a87a4c0218bdec3600b5cb27884c",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/callbackcase/Shared.scala.semanticdb",
+      "input_target_contexts": [
+        "project:callback-variants/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/callbackcase/Suites.scala.semanticdb",
+      "sha256": "767a20a26a10298463c716ea31be2e98ffe71b2c61a88495f14ffab7d8f2174b",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/callbackcase/Suites.scala.semanticdb",
+      "input_target_contexts": [
+        "project:callback-variants/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/callbackcase/Changed.scala",
+      "file": "src/callbackcase/Changed.scala",
+      "sha256": "6191c739c552a0e476893bdda7b7923844ca406eec00920f051f2c95a489a07d",
+      "source_contexts": [
+        "project:callback-variants/configuration:test"
+      ]
+    },
+    {
+      "path": "src/callbackcase/Shared.scala",
+      "file": "src/callbackcase/Shared.scala",
+      "sha256": "c01508fb28acb41bbb21b14f57c77f720e206785b19691f7e11c053d4a253ff7",
+      "source_contexts": [
+        "project:callback-variants/configuration:test"
+      ]
+    },
+    {
+      "path": "src/callbackcase/Suites.scala",
+      "file": "src/callbackcase/Suites.scala",
+      "sha256": "0f9fbde4fed67166794fa00967e2193cfda4e45bddcfca3616f44681c5ea9c7a",
+      "source_contexts": [
+        "project:callback-variants/configuration:test"
+      ]
+    }
+  ]
+}

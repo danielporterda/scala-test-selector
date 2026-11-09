@@ -1,0 +1,999 @@
+Compiled from "Arguments.scala"
+public final class contextboundcase.Api$ {
+  public static final contextboundcase.Api$ MODULE$;
+    descriptor: Lcontextboundcase/Api$;
+
+  public static {};
+    descriptor: ()V
+    Code:
+       0: new           #2                  // class contextboundcase/Api$
+       3: dup
+       4: invokespecial #22                 // Method "<init>":()V
+       7: putstatic     #24                 // Field MODULE$:Lcontextboundcase/Api$;
+      10: return
+
+  public <T> scala.Function1<T, java.lang.Object> defaultCond();
+    descriptor: ()Lscala/Function1;
+    Code:
+       0: getstatic     #32                 // Field contextboundcase/Effects$.MODULE$:Lcontextboundcase/Effects$;
+       3: invokevirtual #35                 // Method contextboundcase/Effects$.defaultMade:()V
+       6: invokedynamic #52,  0             // InvokeDynamic #0:apply:()Lscala/Function1;
+      11: areturn
+
+  public <T, V> scala.Function1<T, java.lang.Object> param(java.lang.String, scala.Function1<T, V>, scala.Function1<T, java.lang.Object>, contextboundcase.Render<V>);
+    descriptor: (Ljava/lang/String;Lscala/Function1;Lscala/Function1;Lcontextboundcase/Render;)Lscala/Function1;
+    Code:
+       0: aload_3
+       1: aload         4
+       3: aload_2
+       4: invokedynamic #68,  0             // InvokeDynamic #1:apply:(Lscala/Function1;Lcontextboundcase/Render;Lscala/Function1;)Lscala/Function1;
+       9: areturn
+
+  public <T, V> scala.Function1<T, java.lang.Object> param$default$3();
+    descriptor: ()Lscala/Function1;
+    Code:
+       0: aload_0
+       1: invokevirtual #75                 // Method defaultCond:()Lscala/Function1;
+       4: areturn
+
+  public <V> int named(V, contextboundcase.Render<V>);
+    descriptor: (Ljava/lang/Object;Lcontextboundcase/Render;)I
+    Code:
+       0: aload_2
+       1: invokedynamic #88,  0             // InvokeDynamic #2:apply:(Lcontextboundcase/Render;)Lscala/Function1;
+       6: astore_3
+       7: aload_3
+       8: aload_1
+       9: invokeinterface #92,  2           // InterfaceMethod scala/Function1.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      14: invokestatic  #98                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+      17: ireturn
+
+  public <V> int placeholder(V, contextboundcase.Render<V>);
+    descriptor: (Ljava/lang/Object;Lcontextboundcase/Render;)I
+    Code:
+       0: aload_2
+       1: invokedynamic #107,  0            // InvokeDynamic #3:apply:(Lcontextboundcase/Render;)Lscala/Function1;
+       6: astore_3
+       7: aload_3
+       8: aload_1
+       9: invokeinterface #92,  2           // InterfaceMethod scala/Function1.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      14: invokestatic  #98                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+      17: ireturn
+
+  public static final boolean $anonfun$defaultCond$1(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Z
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public static final int $anonfun$param$1(scala.Function1, contextboundcase.Render, scala.Function1, java.lang.Object);
+    descriptor: (Lscala/Function1;Lcontextboundcase/Render;Lscala/Function1;Ljava/lang/Object;)I
+    Code:
+       0: aload_0
+       1: aload_3
+       2: invokeinterface #92,  2           // InterfaceMethod scala/Function1.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+       7: invokestatic  #119                // Method scala/runtime/BoxesRunTime.unboxToBoolean:(Ljava/lang/Object;)Z
+      10: ifeq          36
+      13: getstatic     #124                // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      16: aload_1
+      17: invokevirtual #127                // Method scala/Predef$.implicitly:(Ljava/lang/Object;)Ljava/lang/Object;
+      20: checkcast     #129                // class contextboundcase/Render
+      23: aload_2
+      24: aload_3
+      25: invokeinterface #92,  2           // InterfaceMethod scala/Function1.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      30: invokeinterface #132,  2          // InterfaceMethod contextboundcase/Render.render:(Ljava/lang/Object;)I
+      35: ireturn
+      36: iconst_0
+      37: ireturn
+
+  public static final int $anonfun$named$1(contextboundcase.Render, java.lang.Object);
+    descriptor: (Lcontextboundcase/Render;Ljava/lang/Object;)I
+    Code:
+       0: getstatic     #140                // Field contextboundcase/Syntax$.MODULE$:Lcontextboundcase/Syntax$;
+       3: aload_1
+       4: aload_0
+       5: invokevirtual #143                // Method contextboundcase/Syntax$.RenderOps:(Ljava/lang/Object;Lcontextboundcase/Render;)Lcontextboundcase/Syntax$RenderOps;
+       8: invokevirtual #147                // Method contextboundcase/Syntax$RenderOps.rendered:()I
+      11: ireturn
+
+  public static final int $anonfun$placeholder$1(contextboundcase.Render, java.lang.Object);
+    descriptor: (Lcontextboundcase/Render;Ljava/lang/Object;)I
+    Code:
+       0: getstatic     #140                // Field contextboundcase/Syntax$.MODULE$:Lcontextboundcase/Syntax$;
+       3: aload_1
+       4: aload_0
+       5: invokevirtual #143                // Method contextboundcase/Syntax$.RenderOps:(Ljava/lang/Object;Lcontextboundcase/Render;)Lcontextboundcase/Syntax$RenderOps;
+       8: invokevirtual #147                // Method contextboundcase/Syntax$RenderOps.rendered:()I
+      11: ireturn
+
+  private contextboundcase.Api$();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #151                // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static final java.lang.Object $anonfun$defaultCond$1$adapted(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokestatic  #153                // Method $anonfun$defaultCond$1:(Ljava/lang/Object;)Z
+       4: invokestatic  #157                // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+       7: areturn
+
+  public static final java.lang.Object $anonfun$param$1$adapted(scala.Function1, contextboundcase.Render, scala.Function1, java.lang.Object);
+    descriptor: (Lscala/Function1;Lcontextboundcase/Render;Lscala/Function1;Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #159                // Method $anonfun$param$1:(Lscala/Function1;Lcontextboundcase/Render;Lscala/Function1;Ljava/lang/Object;)I
+       7: invokestatic  #163                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+      10: areturn
+
+  public static final java.lang.Object $anonfun$named$1$adapted(contextboundcase.Render, java.lang.Object);
+    descriptor: (Lcontextboundcase/Render;Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #165                // Method $anonfun$named$1:(Lcontextboundcase/Render;Ljava/lang/Object;)I
+       5: invokestatic  #163                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       8: areturn
+
+  public static final java.lang.Object $anonfun$placeholder$1$adapted(contextboundcase.Render, java.lang.Object);
+    descriptor: (Lcontextboundcase/Render;Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #167                // Method $anonfun$placeholder$1:(Lcontextboundcase/Render;Ljava/lang/Object;)I
+       5: invokestatic  #163                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       8: areturn
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    descriptor: (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokedynamic #179,  0            // InvokeDynamic #4:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}
+Compiled from "Arguments.scala"
+public final class contextboundcase.Calls$ {
+  public static final contextboundcase.Calls$ MODULE$;
+    descriptor: Lcontextboundcase/Calls$;
+
+  public static {};
+    descriptor: ()V
+    Code:
+       0: new           #2                  // class contextboundcase/Calls$
+       3: dup
+       4: invokespecial #17                 // Method "<init>":()V
+       7: putstatic     #19                 // Field MODULE$:Lcontextboundcase/Calls$;
+      10: return
+
+  public scala.Function1<contextboundcase.Item, java.lang.Object> omitted();
+    descriptor: ()Lscala/Function1;
+    Code:
+       0: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+       3: ldc           #28                 // String omitted
+       5: invokedynamic #48,  0             // InvokeDynamic #0:apply:()Lscala/Function1;
+      10: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+      13: invokevirtual #51                 // Method contextboundcase/Api$.param$default$3:()Lscala/Function1;
+      16: getstatic     #56                 // Field contextboundcase/Evidence$.MODULE$:Lcontextboundcase/Evidence$;
+      19: invokevirtual #60                 // Method contextboundcase/Evidence$.first:()Lcontextboundcase/Render;
+      22: invokevirtual #64                 // Method contextboundcase/Api$.param:(Ljava/lang/String;Lscala/Function1;Lscala/Function1;Lcontextboundcase/Render;)Lscala/Function1;
+      25: areturn
+
+  public scala.Function1<contextboundcase.Item, java.lang.Object> explicitCondition();
+    descriptor: ()Lscala/Function1;
+    Code:
+       0: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+       3: ldc           #68                 // String explicit
+       5: invokedynamic #73,  0             // InvokeDynamic #1:apply:()Lscala/Function1;
+      10: invokedynamic #78,  0             // InvokeDynamic #2:apply:()Lscala/Function1;
+      15: getstatic     #56                 // Field contextboundcase/Evidence$.MODULE$:Lcontextboundcase/Evidence$;
+      18: invokevirtual #60                 // Method contextboundcase/Evidence$.first:()Lcontextboundcase/Render;
+      21: invokevirtual #64                 // Method contextboundcase/Api$.param:(Ljava/lang/String;Lscala/Function1;Lscala/Function1;Lcontextboundcase/Render;)Lscala/Function1;
+      24: areturn
+
+  public scala.Function1<contextboundcase.Item, java.lang.Object> namedArguments();
+    descriptor: ()Lscala/Function1;
+    Code:
+       0: invokedynamic #84,  0             // InvokeDynamic #3:apply:()Lscala/Function1;
+       5: astore_1
+       6: ldc           #86                 // String named
+       8: astore_2
+       9: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+      12: invokevirtual #51                 // Method contextboundcase/Api$.param$default$3:()Lscala/Function1;
+      15: astore_3
+      16: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+      19: ldc           #86                 // String named
+      21: aload_1
+      22: aload_3
+      23: getstatic     #56                 // Field contextboundcase/Evidence$.MODULE$:Lcontextboundcase/Evidence$;
+      26: invokevirtual #60                 // Method contextboundcase/Evidence$.first:()Lcontextboundcase/Render;
+      29: invokevirtual #64                 // Method contextboundcase/Api$.param:(Ljava/lang/String;Lscala/Function1;Lscala/Function1;Lcontextboundcase/Render;)Lscala/Function1;
+      32: areturn
+
+  public scala.Function1<contextboundcase.Item, java.lang.Object> explicitEvidence();
+    descriptor: ()Lscala/Function1;
+    Code:
+       0: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+       3: ldc           #94                 // String evidence
+       5: invokedynamic #99,  0             // InvokeDynamic #4:apply:()Lscala/Function1;
+      10: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+      13: invokevirtual #51                 // Method contextboundcase/Api$.param$default$3:()Lscala/Function1;
+      16: getstatic     #56                 // Field contextboundcase/Evidence$.MODULE$:Lcontextboundcase/Evidence$;
+      19: invokevirtual #102                // Method contextboundcase/Evidence$.second:()Lcontextboundcase/Render;
+      22: invokevirtual #64                 // Method contextboundcase/Api$.param:(Ljava/lang/String;Lscala/Function1;Lscala/Function1;Lcontextboundcase/Render;)Lscala/Function1;
+      25: areturn
+
+  public int immediatelyApplied();
+    descriptor: ()I
+    Code:
+       0: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+       3: ldc           #106                // String applied
+       5: invokedynamic #111,  0            // InvokeDynamic #5:apply:()Lscala/Function1;
+      10: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+      13: invokevirtual #51                 // Method contextboundcase/Api$.param$default$3:()Lscala/Function1;
+      16: getstatic     #56                 // Field contextboundcase/Evidence$.MODULE$:Lcontextboundcase/Evidence$;
+      19: invokevirtual #102                // Method contextboundcase/Evidence$.second:()Lcontextboundcase/Render;
+      22: invokevirtual #64                 // Method contextboundcase/Api$.param:(Ljava/lang/String;Lscala/Function1;Lscala/Function1;Lcontextboundcase/Render;)Lscala/Function1;
+      25: new           #113                // class contextboundcase/Item
+      28: dup
+      29: bipush        7
+      31: invokespecial #116                // Method contextboundcase/Item."<init>":(I)V
+      34: invokeinterface #120,  2          // InterfaceMethod scala/Function1.apply:(Ljava/lang/Object;)Ljava/lang/Object;
+      39: invokestatic  #126                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+      42: ireturn
+
+  public int renderedNamed();
+    descriptor: ()I
+    Code:
+       0: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+       3: iconst_3
+       4: invokestatic  #131                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: getstatic     #56                 // Field contextboundcase/Evidence$.MODULE$:Lcontextboundcase/Evidence$;
+      10: invokevirtual #60                 // Method contextboundcase/Evidence$.first:()Lcontextboundcase/Render;
+      13: invokevirtual #134                // Method contextboundcase/Api$.named:(Ljava/lang/Object;Lcontextboundcase/Render;)I
+      16: ireturn
+
+  public int renderedPlaceholder();
+    descriptor: ()I
+    Code:
+       0: getstatic     #27                 // Field contextboundcase/Api$.MODULE$:Lcontextboundcase/Api$;
+       3: iconst_3
+       4: invokestatic  #131                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: getstatic     #56                 // Field contextboundcase/Evidence$.MODULE$:Lcontextboundcase/Evidence$;
+      10: invokevirtual #60                 // Method contextboundcase/Evidence$.first:()Lcontextboundcase/Render;
+      13: invokevirtual #138                // Method contextboundcase/Api$.placeholder:(Ljava/lang/Object;Lcontextboundcase/Render;)I
+      16: ireturn
+
+  public static final int $anonfun$omitted$1(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)I
+    Code:
+       0: aload_0
+       1: invokevirtual #143                // Method contextboundcase/Item.value:()I
+       4: ireturn
+
+  public static final int $anonfun$explicitCondition$1(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)I
+    Code:
+       0: aload_0
+       1: invokevirtual #143                // Method contextboundcase/Item.value:()I
+       4: ireturn
+
+  public static final boolean $anonfun$explicitCondition$2(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)Z
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public static final int $anonfun$namedArguments$1(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)I
+    Code:
+       0: aload_0
+       1: invokevirtual #143                // Method contextboundcase/Item.value:()I
+       4: ireturn
+
+  public static final int $anonfun$explicitEvidence$1(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)I
+    Code:
+       0: aload_0
+       1: invokevirtual #143                // Method contextboundcase/Item.value:()I
+       4: ireturn
+
+  public static final int $anonfun$immediatelyApplied$1(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)I
+    Code:
+       0: aload_0
+       1: invokevirtual #143                // Method contextboundcase/Item.value:()I
+       4: ireturn
+
+  private contextboundcase.Calls$();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #156                // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static final java.lang.Object $anonfun$omitted$1$adapted(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokestatic  #158                // Method $anonfun$omitted$1:(Lcontextboundcase/Item;)I
+       4: invokestatic  #131                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: areturn
+
+  public static final java.lang.Object $anonfun$explicitCondition$1$adapted(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokestatic  #160                // Method $anonfun$explicitCondition$1:(Lcontextboundcase/Item;)I
+       4: invokestatic  #131                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: areturn
+
+  public static final java.lang.Object $anonfun$explicitCondition$2$adapted(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokestatic  #162                // Method $anonfun$explicitCondition$2:(Lcontextboundcase/Item;)Z
+       4: invokestatic  #166                // Method scala/runtime/BoxesRunTime.boxToBoolean:(Z)Ljava/lang/Boolean;
+       7: areturn
+
+  public static final java.lang.Object $anonfun$namedArguments$1$adapted(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokestatic  #168                // Method $anonfun$namedArguments$1:(Lcontextboundcase/Item;)I
+       4: invokestatic  #131                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: areturn
+
+  public static final java.lang.Object $anonfun$explicitEvidence$1$adapted(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokestatic  #170                // Method $anonfun$explicitEvidence$1:(Lcontextboundcase/Item;)I
+       4: invokestatic  #131                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: areturn
+
+  public static final java.lang.Object $anonfun$immediatelyApplied$1$adapted(contextboundcase.Item);
+    descriptor: (Lcontextboundcase/Item;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokestatic  #172                // Method $anonfun$immediatelyApplied$1:(Lcontextboundcase/Item;)I
+       4: invokestatic  #131                // Method scala/runtime/BoxesRunTime.boxToInteger:(I)Ljava/lang/Integer;
+       7: areturn
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    descriptor: (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: invokedynamic #184,  0            // InvokeDynamic #6:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}
+Compiled from "Arguments.scala"
+public final class contextboundcase.Syntax$ {
+  public static final contextboundcase.Syntax$ MODULE$;
+    descriptor: Lcontextboundcase/Syntax$;
+
+  public static {};
+    descriptor: ()V
+    Code:
+       0: new           #2                  // class contextboundcase/Syntax$
+       3: dup
+       4: invokespecial #17                 // Method "<init>":()V
+       7: putstatic     #19                 // Field MODULE$:Lcontextboundcase/Syntax$;
+      10: return
+
+  public final <V> contextboundcase.Syntax$RenderOps<V> RenderOps(V, contextboundcase.Render<V>);
+    descriptor: (Ljava/lang/Object;Lcontextboundcase/Render;)Lcontextboundcase/Syntax$RenderOps;
+    Code:
+       0: new           #7                  // class contextboundcase/Syntax$RenderOps
+       3: dup
+       4: aload_1
+       5: aload_2
+       6: invokespecial #26                 // Method contextboundcase/Syntax$RenderOps."<init>":(Ljava/lang/Object;Lcontextboundcase/Render;)V
+       9: areturn
+
+  private contextboundcase.Syntax$();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #30                 // Method java/lang/Object."<init>":()V
+       4: return
+}
+Compiled from "Arguments.scala"
+public final class contextboundcase.Syntax$RenderOps<V> {
+  private final V value;
+    descriptor: Ljava/lang/Object;
+
+  private final contextboundcase.Render<V> evidence;
+    descriptor: Lcontextboundcase/Render;
+
+  public V value();
+    descriptor: ()Ljava/lang/Object;
+    Code:
+       0: aload_0
+       1: getfield      #19                 // Field value:Ljava/lang/Object;
+       4: areturn
+
+  public contextboundcase.Render<V> evidence();
+    descriptor: ()Lcontextboundcase/Render;
+    Code:
+       0: aload_0
+       1: getfield      #25                 // Field evidence:Lcontextboundcase/Render;
+       4: areturn
+
+  public int rendered();
+    descriptor: ()I
+    Code:
+       0: aload_0
+       1: invokevirtual #29                 // Method evidence:()Lcontextboundcase/Render;
+       4: aload_0
+       5: invokevirtual #31                 // Method value:()Ljava/lang/Object;
+       8: invokeinterface #37,  2           // InterfaceMethod contextboundcase/Render.render:(Ljava/lang/Object;)I
+      13: ireturn
+
+  public contextboundcase.Syntax$RenderOps(V, contextboundcase.Render<V>);
+    descriptor: (Ljava/lang/Object;Lcontextboundcase/Render;)V
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #19                 // Field value:Ljava/lang/Object;
+       5: aload_0
+       6: aload_2
+       7: putfield      #25                 // Field evidence:Lcontextboundcase/Render;
+      10: aload_0
+      11: invokespecial #43                 // Method java/lang/Object."<init>":()V
+      14: return
+}
+Compiled from "Arguments.scala"
+public final class contextboundcase.RecordingRender implements contextboundcase.Render<java.lang.Object> {
+  private final int factor;
+    descriptor: I
+
+  public int factor();
+    descriptor: ()I
+    Code:
+       0: aload_0
+       1: getfield      #16                 // Field factor:I
+       4: ireturn
+
+  public int render(int);
+    descriptor: (I)I
+    Code:
+       0: getstatic     #27                 // Field contextboundcase/Effects$.MODULE$:Lcontextboundcase/Effects$;
+       3: iload_1
+       4: aload_0
+       5: invokevirtual #29                 // Method factor:()I
+       8: invokevirtual #33                 // Method contextboundcase/Effects$.rendered:(II)I
+      11: ireturn
+
+  public int render(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)I
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #39                 // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       5: invokevirtual #41                 // Method render:(I)I
+       8: ireturn
+
+  public contextboundcase.RecordingRender(int);
+    descriptor: (I)V
+    Code:
+       0: aload_0
+       1: iload_1
+       2: putfield      #16                 // Field factor:I
+       5: aload_0
+       6: invokespecial #47                 // Method java/lang/Object."<init>":()V
+       9: return
+}
+Compiled from "Predef.scala"
+public final class scala.Predef$ extends scala.LowPriorityImplicits {
+  public static final scala.Predef$ MODULE$;
+    descriptor: Lscala/Predef$;
+
+  private static final scala.collection.immutable.Map$ Map;
+    descriptor: Lscala/collection/immutable/Map$;
+
+  private static final scala.collection.immutable.Set$ Set;
+    descriptor: Lscala/collection/immutable/Set$;
+
+  private static final scala.Tuple2$ $minus$greater;
+    descriptor: Lscala/Tuple2$;
+
+  private static final scala.reflect.Manifest$ Manifest;
+    descriptor: Lscala/reflect/Manifest$;
+
+  private static final scala.reflect.NoManifest$ NoManifest;
+    descriptor: Lscala/reflect/NoManifest$;
+
+  public static {};
+    descriptor: ()V
+    Code:
+       0: new           #2                  // class scala/Predef$
+       3: dup
+       4: invokespecial #30                 // Method "<init>":()V
+       7: putstatic     #32                 // Field MODULE$:Lscala/Predef$;
+      10: getstatic     #37                 // Field scala/package$.MODULE$:Lscala/package$;
+      13: pop
+      14: getstatic     #42                 // Field scala/collection/immutable/List$.MODULE$:Lscala/collection/immutable/List$;
+      17: pop
+      18: getstatic     #46                 // Field scala/collection/immutable/Map$.MODULE$:Lscala/collection/immutable/Map$;
+      21: putstatic     #48                 // Field Map:Lscala/collection/immutable/Map$;
+      24: getstatic     #52                 // Field scala/collection/immutable/Set$.MODULE$:Lscala/collection/immutable/Set$;
+      27: putstatic     #54                 // Field Set:Lscala/collection/immutable/Set$;
+      30: getstatic     #58                 // Field scala/Tuple2$.MODULE$:Lscala/Tuple2$;
+      33: putstatic     #60                 // Field $minus$greater:Lscala/Tuple2$;
+      36: getstatic     #64                 // Field scala/reflect/Manifest$.MODULE$:Lscala/reflect/Manifest$;
+      39: putstatic     #66                 // Field Manifest:Lscala/reflect/Manifest$;
+      42: getstatic     #70                 // Field scala/reflect/NoManifest$.MODULE$:Lscala/reflect/NoManifest$;
+      45: putstatic     #72                 // Field NoManifest:Lscala/reflect/NoManifest$;
+      48: return
+
+  public <T> java.lang.Class<T> classOf();
+    descriptor: ()Ljava/lang/Class;
+    Code:
+       0: aconst_null
+       1: areturn
+
+  public <T> T valueOf(T);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public scala.collection.immutable.Map$ Map();
+    descriptor: ()Lscala/collection/immutable/Map$;
+    Code:
+       0: getstatic     #48                 // Field Map:Lscala/collection/immutable/Map$;
+       3: areturn
+
+  public scala.collection.immutable.Set$ Set();
+    descriptor: ()Lscala/collection/immutable/Set$;
+    Code:
+       0: getstatic     #54                 // Field Set:Lscala/collection/immutable/Set$;
+       3: areturn
+
+  public scala.Tuple2$ $minus$greater();
+    descriptor: ()Lscala/Tuple2$;
+    Code:
+       0: getstatic     #60                 // Field $minus$greater:Lscala/Tuple2$;
+       3: areturn
+
+  public scala.reflect.Manifest$ Manifest();
+    descriptor: ()Lscala/reflect/Manifest$;
+    Code:
+       0: getstatic     #66                 // Field Manifest:Lscala/reflect/Manifest$;
+       3: areturn
+
+  public scala.reflect.NoManifest$ NoManifest();
+    descriptor: ()Lscala/reflect/NoManifest$;
+    Code:
+       0: getstatic     #72                 // Field NoManifest:Lscala/reflect/NoManifest$;
+       3: areturn
+
+  public <T> scala.reflect.Manifest<T> manifest(scala.reflect.Manifest<T>);
+    descriptor: (Lscala/reflect/Manifest;)Lscala/reflect/Manifest;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public <T> scala.reflect.OptManifest<T> optManifest(scala.reflect.OptManifest<T>);
+    descriptor: (Lscala/reflect/OptManifest;)Lscala/reflect/OptManifest;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public <A> A identity(A);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public <T> T implicitly(T);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public <T> T locally(T);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public void assert(boolean);
+    descriptor: (Z)V
+    Code:
+       0: iload_1
+       1: ifne          14
+       4: new           #106                // class java/lang/AssertionError
+       7: dup
+       8: ldc           #108                // String assertion failed
+      10: invokespecial #111                // Method java/lang/AssertionError."<init>":(Ljava/lang/Object;)V
+      13: athrow
+      14: return
+
+  public final void assert(boolean, scala.Function0<java.lang.Object>);
+    descriptor: (ZLscala/Function0;)V
+    Code:
+       0: iload_1
+       1: ifne          38
+       4: new           #106                // class java/lang/AssertionError
+       7: dup
+       8: new           #117                // class java/lang/StringBuilder
+      11: dup
+      12: ldc           #118                // int 18
+      14: invokespecial #121                // Method java/lang/StringBuilder."<init>":(I)V
+      17: ldc           #123                // String assertion failed:
+      19: invokevirtual #127                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      22: aload_2
+      23: invokeinterface #133,  1          // InterfaceMethod scala/Function0.apply:()Ljava/lang/Object;
+      28: invokevirtual #136                // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      31: invokevirtual #140                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      34: invokespecial #111                // Method java/lang/AssertionError."<init>":(Ljava/lang/Object;)V
+      37: athrow
+      38: return
+
+  public void assume(boolean);
+    descriptor: (Z)V
+    Code:
+       0: iload_1
+       1: ifne          14
+       4: new           #106                // class java/lang/AssertionError
+       7: dup
+       8: ldc           #145                // String assumption failed
+      10: invokespecial #111                // Method java/lang/AssertionError."<init>":(Ljava/lang/Object;)V
+      13: athrow
+      14: return
+
+  public final void assume(boolean, scala.Function0<java.lang.Object>);
+    descriptor: (ZLscala/Function0;)V
+    Code:
+       0: iload_1
+       1: ifne          38
+       4: new           #106                // class java/lang/AssertionError
+       7: dup
+       8: new           #117                // class java/lang/StringBuilder
+      11: dup
+      12: ldc           #146                // int 19
+      14: invokespecial #121                // Method java/lang/StringBuilder."<init>":(I)V
+      17: ldc           #148                // String assumption failed:
+      19: invokevirtual #127                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      22: aload_2
+      23: invokeinterface #133,  1          // InterfaceMethod scala/Function0.apply:()Ljava/lang/Object;
+      28: invokevirtual #136                // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      31: invokevirtual #140                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      34: invokespecial #111                // Method java/lang/AssertionError."<init>":(Ljava/lang/Object;)V
+      37: athrow
+      38: return
+
+  public void require(boolean);
+    descriptor: (Z)V
+    Code:
+       0: iload_1
+       1: ifne          14
+       4: new           #152                // class java/lang/IllegalArgumentException
+       7: dup
+       8: ldc           #154                // String requirement failed
+      10: invokespecial #157                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      13: athrow
+      14: return
+
+  public final void require(boolean, scala.Function0<java.lang.Object>);
+    descriptor: (ZLscala/Function0;)V
+    Code:
+       0: iload_1
+       1: ifne          38
+       4: new           #152                // class java/lang/IllegalArgumentException
+       7: dup
+       8: new           #117                // class java/lang/StringBuilder
+      11: dup
+      12: ldc           #158                // int 20
+      14: invokespecial #121                // Method java/lang/StringBuilder."<init>":(I)V
+      17: ldc           #160                // String requirement failed:
+      19: invokevirtual #127                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      22: aload_2
+      23: invokeinterface #133,  1          // InterfaceMethod scala/Function0.apply:()Ljava/lang/Object;
+      28: invokevirtual #136                // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      31: invokevirtual #140                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      34: invokespecial #157                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      37: athrow
+      38: return
+
+  public scala.runtime.Nothing$ $qmark$qmark$qmark();
+    descriptor: ()Lscala/runtime/Nothing$;
+    Code:
+       0: new           #164                // class scala/NotImplementedError
+       3: dup
+       4: invokespecial #165                // Method scala/NotImplementedError."<init>":()V
+       7: athrow
+
+  public final <A> A ArrowAssoc(A);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public final <A> A Ensuring(A);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public final <A> A StringFormat(A);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public final <A> A any2stringadd(A);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public scala.Predef$SeqCharSequence SeqCharSequence(scala.collection.IndexedSeq<java.lang.Object>);
+    descriptor: (Lscala/collection/IndexedSeq;)Lscala/Predef$SeqCharSequence;
+    Code:
+       0: new           #12                 // class scala/Predef$SeqCharSequence
+       3: dup
+       4: aload_1
+       5: invokespecial #176                // Method scala/Predef$SeqCharSequence."<init>":(Lscala/collection/IndexedSeq;)V
+       8: areturn
+
+  public scala.Predef$ArrayCharSequence ArrayCharSequence(char[]);
+    descriptor: ([C)Lscala/Predef$ArrayCharSequence;
+    Code:
+       0: new           #7                  // class scala/Predef$ArrayCharSequence
+       3: dup
+       4: aload_1
+       5: invokespecial #182                // Method scala/Predef$ArrayCharSequence."<init>":([C)V
+       8: areturn
+
+  public java.lang.String augmentString(java.lang.String);
+    descriptor: (Ljava/lang/String;)Ljava/lang/String;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public void print(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)V
+    Code:
+       0: getstatic     #192                // Field scala/Console$.MODULE$:Lscala/Console$;
+       3: aload_1
+       4: invokevirtual #194                // Method scala/Console$.print:(Ljava/lang/Object;)V
+       7: return
+
+  public void println();
+    descriptor: ()V
+    Code:
+       0: getstatic     #192                // Field scala/Console$.MODULE$:Lscala/Console$;
+       3: invokevirtual #197                // Method scala/Console$.println:()V
+       6: return
+
+  public void println(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)V
+    Code:
+       0: getstatic     #192                // Field scala/Console$.MODULE$:Lscala/Console$;
+       3: aload_1
+       4: invokevirtual #199                // Method scala/Console$.println:(Ljava/lang/Object;)V
+       7: return
+
+  public void printf(java.lang.String, scala.collection.immutable.Seq<java.lang.Object>);
+    descriptor: (Ljava/lang/String;Lscala/collection/immutable/Seq;)V
+    Code:
+       0: getstatic     #192                // Field scala/Console$.MODULE$:Lscala/Console$;
+       3: getstatic     #209                // Field scala/collection/StringOps$.MODULE$:Lscala/collection/StringOps$;
+       6: aload_1
+       7: aload_2
+       8: invokevirtual #213                // Method scala/collection/StringOps$.format$extension:(Ljava/lang/String;Lscala/collection/immutable/Seq;)Ljava/lang/String;
+      11: invokevirtual #194                // Method scala/Console$.print:(Ljava/lang/Object;)V
+      14: return
+
+  public <T1, T2> scala.Tuple2<T1, T2> tuple2ToZippedOps(scala.Tuple2<T1, T2>);
+    descriptor: (Lscala/Tuple2;)Lscala/Tuple2;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public <T1, T2, T3> scala.Tuple3<T1, T2, T3> tuple3ToZippedOps(scala.Tuple3<T1, T2, T3>);
+    descriptor: (Lscala/Tuple3;)Lscala/Tuple3;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public <T> java.lang.Object genericArrayOps(java.lang.Object);
+    descriptor: (Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public boolean[] booleanArrayOps(boolean[]);
+    descriptor: ([Z)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public byte[] byteArrayOps(byte[]);
+    descriptor: ([B)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public char[] charArrayOps(char[]);
+    descriptor: ([C)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public double[] doubleArrayOps(double[]);
+    descriptor: ([D)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public float[] floatArrayOps(float[]);
+    descriptor: ([F)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public int[] intArrayOps(int[]);
+    descriptor: ([I)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public long[] longArrayOps(long[]);
+    descriptor: ([J)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public <T> T[] refArrayOps(T[]);
+    descriptor: ([Ljava/lang/Object;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public short[] shortArrayOps(short[]);
+    descriptor: ([S)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public scala.runtime.BoxedUnit[] unitArrayOps(scala.runtime.BoxedUnit[]);
+    descriptor: ([Lscala/runtime/BoxedUnit;)Ljava/lang/Object;
+    Code:
+       0: aload_1
+       1: areturn
+
+  public java.lang.Byte byte2Byte(byte);
+    descriptor: (B)Ljava/lang/Byte;
+    Code:
+       0: iload_1
+       1: invokestatic  #269                // Method java/lang/Byte.valueOf:(B)Ljava/lang/Byte;
+       4: areturn
+
+  public java.lang.Short short2Short(short);
+    descriptor: (S)Ljava/lang/Short;
+    Code:
+       0: iload_1
+       1: invokestatic  #276                // Method java/lang/Short.valueOf:(S)Ljava/lang/Short;
+       4: areturn
+
+  public java.lang.Character char2Character(char);
+    descriptor: (C)Ljava/lang/Character;
+    Code:
+       0: iload_1
+       1: invokestatic  #283                // Method java/lang/Character.valueOf:(C)Ljava/lang/Character;
+       4: areturn
+
+  public java.lang.Integer int2Integer(int);
+    descriptor: (I)Ljava/lang/Integer;
+    Code:
+       0: iload_1
+       1: invokestatic  #290                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       4: areturn
+
+  public java.lang.Long long2Long(long);
+    descriptor: (J)Ljava/lang/Long;
+    Code:
+       0: lload_1
+       1: invokestatic  #297                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+       4: areturn
+
+  public java.lang.Float float2Float(float);
+    descriptor: (F)Ljava/lang/Float;
+    Code:
+       0: fload_1
+       1: invokestatic  #304                // Method java/lang/Float.valueOf:(F)Ljava/lang/Float;
+       4: areturn
+
+  public java.lang.Double double2Double(double);
+    descriptor: (D)Ljava/lang/Double;
+    Code:
+       0: dload_1
+       1: invokestatic  #311                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+       4: areturn
+
+  public java.lang.Boolean boolean2Boolean(boolean);
+    descriptor: (Z)Ljava/lang/Boolean;
+    Code:
+       0: iload_1
+       1: invokestatic  #318                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+       4: areturn
+
+  public byte Byte2byte(java.lang.Byte);
+    descriptor: (Ljava/lang/Byte;)B
+    Code:
+       0: aload_1
+       1: invokestatic  #326                // Method scala/runtime/BoxesRunTime.unboxToByte:(Ljava/lang/Object;)B
+       4: ireturn
+
+  public short Short2short(java.lang.Short);
+    descriptor: (Ljava/lang/Short;)S
+    Code:
+       0: aload_1
+       1: invokestatic  #333                // Method scala/runtime/BoxesRunTime.unboxToShort:(Ljava/lang/Object;)S
+       4: ireturn
+
+  public char Character2char(java.lang.Character);
+    descriptor: (Ljava/lang/Character;)C
+    Code:
+       0: aload_1
+       1: invokestatic  #340                // Method scala/runtime/BoxesRunTime.unboxToChar:(Ljava/lang/Object;)C
+       4: ireturn
+
+  public int Integer2int(java.lang.Integer);
+    descriptor: (Ljava/lang/Integer;)I
+    Code:
+       0: aload_1
+       1: invokestatic  #347                // Method scala/runtime/BoxesRunTime.unboxToInt:(Ljava/lang/Object;)I
+       4: ireturn
+
+  public long Long2long(java.lang.Long);
+    descriptor: (Ljava/lang/Long;)J
+    Code:
+       0: aload_1
+       1: invokestatic  #354                // Method scala/runtime/BoxesRunTime.unboxToLong:(Ljava/lang/Object;)J
+       4: lreturn
+
+  public float Float2float(java.lang.Float);
+    descriptor: (Ljava/lang/Float;)F
+    Code:
+       0: aload_1
+       1: invokestatic  #361                // Method scala/runtime/BoxesRunTime.unboxToFloat:(Ljava/lang/Object;)F
+       4: freturn
+
+  public double Double2double(java.lang.Double);
+    descriptor: (Ljava/lang/Double;)D
+    Code:
+       0: aload_1
+       1: invokestatic  #368                // Method scala/runtime/BoxesRunTime.unboxToDouble:(Ljava/lang/Object;)D
+       4: dreturn
+
+  public boolean Boolean2boolean(java.lang.Boolean);
+    descriptor: (Ljava/lang/Boolean;)Z
+    Code:
+       0: aload_1
+       1: invokestatic  #375                // Method scala/runtime/BoxesRunTime.unboxToBoolean:(Ljava/lang/Object;)Z
+       4: ireturn
+
+  public <A> scala.Function1<A, A> $conforms();
+    descriptor: ()Lscala/Function1;
+    Code:
+       0: getstatic     #384                // Field scala/$less$colon$less$.MODULE$:Lscala/$less$colon$less$;
+       3: invokevirtual #388                // Method scala/$less$colon$less$.refl:()Lscala/$eq$colon$eq;
+       6: areturn
+
+  private scala.Predef$();
+    descriptor: ()V
+    Code:
+       0: aload_0
+       1: invokespecial #389                // Method scala/LowPriorityImplicits."<init>":()V
+       4: return
+}

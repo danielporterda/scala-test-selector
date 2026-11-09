@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "62af895a2785dd4e7a20317c4e199ea04426c4a3",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/TraitSuper.scala.semanticdb",
+      "sha256": "5c8db7f43321ad0c9c5acfcad0febc38cc1fbca220a669910d9596aba0522820",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/TraitSuper.scala.semanticdb",
+      "input_target_contexts": [
+        "project:trait-super/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/TraitSuper.scala",
+      "file": "src/TraitSuper.scala",
+      "sha256": "62af895a2785dd4e7a20317c4e199ea04426c4a3e9d44d6ddd0d83498bce512b",
+      "source_contexts": [
+        "project:trait-super/configuration:test"
+      ]
+    }
+  ]
+}

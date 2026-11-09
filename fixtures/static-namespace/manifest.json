@@ -1,0 +1,328 @@
+{
+  "schema": "selector-static-namespace-fixture/v1",
+  "revision": "3a20e33342761fdd530e7eda7c108bc65a410e82",
+  "source_tree_sha256": "3a20e33342761fdd530e7eda7c108bc65a410e823f0d2e512127d78a23dcaeb5",
+  "revision_kind": "first40hex_of_source_tree_sha256",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba"
+    }
+  ],
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "java_version": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 21.0.12.1)\nOpenJDK 64-Bit Server VM Homebrew (build 21.0.12.1, mixed mode, sharing)\n",
+  "generator_sha256": "c2baab8a7c8a9adf5dfc529e5528794356baf101fcd1986430c5233bcef0cd6f",
+  "commands": [
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/definitions/namespacecase/JavaInstanceHost.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/definitions/namespacecase/JavaStaticHost.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/definitions/namespacecase/Tracker.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace",
+      "-P:semanticdb:targetroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/raw",
+      "-P:semanticdb:synthetics:on",
+      "-Yrangepos",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/src/namespacecase/Uses.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/validation/CheckNamespace.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "namespacecase.CheckNamespace"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/validation/CheckShadow.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/shadow",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/shadow/namespacecase/JavaStaticHost.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/shadow:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "namespacecase.CheckShadow"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-static-namespace-md0njdz4/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "-v",
+      "-p",
+      "-c",
+      "namespacecase.ActiveSuite",
+      "namespacecase.ClassOnlySuite",
+      "namespacecase.DormantSuite",
+      "namespacecase.InstanceSuite",
+      "namespacecase.JavaInstanceHost",
+      "namespacecase.JavaStaticHost",
+      "namespacecase.ModuleSuite",
+      "namespacecase.ScalaModule",
+      "namespacecase.ScalaModule$",
+      "namespacecase.Tracker"
+    ],
+    [
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase10-build/executables/04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c/selector",
+      "capture",
+      "--input",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/capture.json",
+      "--output",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/documents.jsonl",
+      "--workers",
+      "2"
+    ],
+    [
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase10-build/executables/04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c/selector",
+      "syntax",
+      "--input",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/documents.jsonl",
+      "--exporter",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/compiler-selector/engine/spans/ScalaSpans.scala",
+      "--tool-cache",
+      "/private/tmp/rust-selector-execution-syntax",
+      "--output",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/static-namespace/syntax.jsonl",
+      "--workers",
+      "2"
+    ]
+  ],
+  "independent_runtime_observations": [
+    "class-only:0",
+    "dormant-created:0",
+    "active:7:1:1",
+    "dormant-invoked:7:1:2",
+    "module:8:1:1",
+    "instance:9:1:1"
+  ],
+  "registered_testcases": 0,
+  "shadow_runtime_observation": "shadow-static:IncompatibleClassChangeError",
+  "selector": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase10-build/executables/04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c/selector",
+    "sha256": "04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c",
+    "bytes": 15179080
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "e0e8f07957bbc60acd0943329da7c021e1ece88bb50c700cfb0316274824b200",
+      "bytes": 1194
+    },
+    {
+      "path": "bytecode.jar",
+      "sha256": "75a989f47e2238f47794fca7255db917b9a572005255bc41a1869c74253730c6",
+      "bytes": 6610
+    },
+    {
+      "path": "capture.json",
+      "sha256": "12d098f2cfc61e749d8718ff6844005f03ec59d026668fe9609829f224105181",
+      "bytes": 780
+    },
+    {
+      "path": "capture.log",
+      "sha256": "2b6b538b34e05db76d5642d76c17777e59f6e01f1925ba50842df791271a13cd",
+      "bytes": 395
+    },
+    {
+      "path": "classes/namespacecase/ActiveSuite.class",
+      "sha256": "916affcc5c15415a204f44b9cbabd95ee61d363e81cdd2efc5b1949466ead169",
+      "bytes": 761
+    },
+    {
+      "path": "classes/namespacecase/ClassOnlySuite.class",
+      "sha256": "aa768d559d998d34f26e141018771f57a6e74b1507a912ac0f4049e4b52eb50e",
+      "bytes": 975
+    },
+    {
+      "path": "classes/namespacecase/DormantSuite.class",
+      "sha256": "662320a4bff4a356b3f776f2d1d5b840632946b6fa63642a7d3d70bd2461ed8c",
+      "bytes": 1813
+    },
+    {
+      "path": "classes/namespacecase/InstanceSuite.class",
+      "sha256": "c9054d1e017d140319c7dfea6ff5c9745d5d564fd69b2493bc2423d9d53238ca",
+      "bytes": 1030
+    },
+    {
+      "path": "classes/namespacecase/JavaInstanceHost.class",
+      "sha256": "bb26c45e68b6ecca71b9c38c490240cb2fb82ebbd9aa1dfc5c2dd5b6a921e273",
+      "bytes": 468
+    },
+    {
+      "path": "classes/namespacecase/JavaStaticHost.class",
+      "sha256": "eff7177320843df7116034b45dba2a51c2fe8d0566eca02d9530e6d5fe5580e0",
+      "bytes": 566
+    },
+    {
+      "path": "classes/namespacecase/ModuleSuite.class",
+      "sha256": "8e499a33809400afdce9eadda8fd6e1b0aa8bd3e76ac3cfcdd1096c24f53facc",
+      "bytes": 813
+    },
+    {
+      "path": "classes/namespacecase/ScalaModule$.class",
+      "sha256": "ec27563e4995a971d365550624709782d2a7ece1c87b76a6b2d98ed6f6ffa062",
+      "bytes": 612
+    },
+    {
+      "path": "classes/namespacecase/ScalaModule.class",
+      "sha256": "b273e18528e87ae97607fd7f8d1c0bb7d245cda8d5c269c332caae0cce39228c",
+      "bytes": 538
+    },
+    {
+      "path": "classes/namespacecase/Tracker.class",
+      "sha256": "2e9c983893913b746dba9edba585336bfe08f1f71b08ad9c9ebea9c8d02b8ef0",
+      "bytes": 430
+    },
+    {
+      "path": "compile-java.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-shadow-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-shadow.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "definitions/namespacecase/JavaInstanceHost.java",
+      "sha256": "7ca2f7a3f31864f75affc81d75edce75c5deb0d048ad39bf5f9d7d00ce3eb467",
+      "bytes": 175
+    },
+    {
+      "path": "definitions/namespacecase/JavaStaticHost.java",
+      "sha256": "605c53996eb1e8c718a4891fdc69f527c5b96f0674728806e3849f384410b738",
+      "bytes": 223
+    },
+    {
+      "path": "definitions/namespacecase/Tracker.java",
+      "sha256": "0117c1eedbda45428d464f3bc70b0ab7dd60b4d369be1be726382a80bbab8d1e",
+      "bytes": 172
+    },
+    {
+      "path": "documents.jsonl",
+      "sha256": "dd140b36f0ee9c50876a657f6569bf57f3246c372695a1419b19f9dbca796d72",
+      "bytes": 11660
+    },
+    {
+      "path": "execution.log",
+      "sha256": "09367002896360125bdddc0819acbd297d1bd40a8cacf9272fed7cccb26faf4d",
+      "bytes": 94
+    },
+    {
+      "path": "javap.log",
+      "sha256": "918be2978234666d3b016eef2bfdd79750ce1e4e5b37eaf0e1319a905043b148",
+      "bytes": 49462
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/namespacecase/Uses.scala.semanticdb",
+      "sha256": "664175c2b880e5f3e07f99f22588880346f771f79d4cf8228b090933e3dfee43",
+      "bytes": 3842
+    },
+    {
+      "path": "shadow-execution.log",
+      "sha256": "1727de04becd8d343a7442dfda8e090f0f4419467a4ca21e0fac0c2dd48edcaa",
+      "bytes": 43
+    },
+    {
+      "path": "shadow.jar",
+      "sha256": "2ba3d0016a55c339cc8f456f881826290f8001b76d972c35f55dd46bccb27b21",
+      "bytes": 402
+    },
+    {
+      "path": "shadow/namespacecase/JavaStaticHost.java",
+      "sha256": "00699352e8942e3eeab3f5b8e6a77f9b43513e6b58ba23c08940d7cae035b7ba",
+      "bytes": 93
+    },
+    {
+      "path": "src/namespacecase/Uses.scala",
+      "sha256": "38ce7694f41361e4ba29dc640aa729db36bb5301c2c3317a7c9e4a2b27f7d5aa",
+      "bytes": 493
+    },
+    {
+      "path": "syntax.jsonl",
+      "sha256": "ce037bc320dd5d4e8586f3322bad7f755af6e69b3d8210652c3ffea157e5cc73",
+      "bytes": 14128
+    },
+    {
+      "path": "syntax.log",
+      "sha256": "31af1ab5b7a39d026d72cacc6eda055c40137dc81d3b94b9d42463107c58b852",
+      "bytes": 383
+    },
+    {
+      "path": "validation/CheckNamespace.scala",
+      "sha256": "fd67a02268bbce0ee07ca6741e15bf1a993bbde5667fc52c27d1fdce48a73efd",
+      "bytes": 968
+    },
+    {
+      "path": "validation/CheckShadow.scala",
+      "sha256": "832f16d555de5f276dd09cb0669b5a8f6d3e1fca7e280f391f261663383cf478",
+      "bytes": 290
+    }
+  ]
+}

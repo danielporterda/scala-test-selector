@@ -1,0 +1,415 @@
+{
+  "root": 821044,
+  "callback_target": 833780,
+  "callback_binding": 478,
+  "min_calls": 9,
+  "min_reads": 10,
+  "issue": 6,
+  "disabled_operations": [
+    1909538,
+    1909539,
+    1909540,
+    1909541,
+    1909542,
+    1909546,
+    1909547,
+    1909548,
+    1909549,
+    1909550,
+    1909551,
+    1909553,
+    1909558,
+    1909561,
+    1909564,
+    1909565,
+    1909566
+  ],
+  "evaluations": 85,
+  "active_operations": 12,
+  "outcome": {
+    "value": {
+      "unknown": 1,
+      "atoms": []
+    },
+    "calls": [
+      {
+        "target": 833780,
+        "receiver": {
+          "unknown": 0,
+          "atoms": [
+            {
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621,
+              "binding": 0
+            }
+          ]
+        },
+        "arguments": {
+          "start": 0,
+          "len": 1
+        },
+        "operation": 1909543,
+        "kind": 5,
+        "edge": 4294967295,
+        "summary": 48350,
+        "binding": 478
+      },
+      {
+        "target": 821992,
+        "receiver": {
+          "unknown": 0,
+          "atoms": [
+            {
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621,
+              "binding": 0
+            }
+          ]
+        },
+        "arguments": {
+          "start": 1,
+          "len": 1
+        },
+        "operation": 1909544,
+        "kind": 2,
+        "edge": 4819429,
+        "summary": null,
+        "binding": 4294967295
+      },
+      {
+        "target": 821710,
+        "receiver": {
+          "unknown": 0,
+          "atoms": [
+            {
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621,
+              "binding": 0
+            }
+          ]
+        },
+        "arguments": {
+          "start": 2,
+          "len": 1
+        },
+        "operation": 1909552,
+        "kind": 2,
+        "edge": 4819418,
+        "summary": 19939,
+        "binding": 4294967295
+      },
+      {
+        "target": 822193,
+        "receiver": {
+          "unknown": 1,
+          "atoms": []
+        },
+        "arguments": {
+          "start": 3,
+          "len": 0
+        },
+        "operation": 1909554,
+        "kind": 2,
+        "edge": 4819449,
+        "summary": 20031,
+        "binding": 4294967295
+      },
+      {
+        "target": 822208,
+        "receiver": {
+          "unknown": 0,
+          "atoms": []
+        },
+        "arguments": {
+          "start": 3,
+          "len": 0
+        },
+        "operation": 1909556,
+        "kind": 2,
+        "edge": 4819453,
+        "summary": 48352,
+        "binding": 4294967295
+      },
+      {
+        "target": 821710,
+        "receiver": {
+          "unknown": 0,
+          "atoms": [
+            {
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621,
+              "binding": 0
+            }
+          ]
+        },
+        "arguments": {
+          "start": 3,
+          "len": 1
+        },
+        "operation": 1909557,
+        "kind": 2,
+        "edge": 4819419,
+        "summary": 19939,
+        "binding": 4294967295
+      },
+      {
+        "target": 822193,
+        "receiver": {
+          "unknown": 1,
+          "atoms": []
+        },
+        "arguments": {
+          "start": 4,
+          "len": 0
+        },
+        "operation": 1909559,
+        "kind": 2,
+        "edge": 4819450,
+        "summary": 20031,
+        "binding": 4294967295
+      },
+      {
+        "target": 821710,
+        "receiver": {
+          "unknown": 0,
+          "atoms": [
+            {
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621,
+              "binding": 0
+            }
+          ]
+        },
+        "arguments": {
+          "start": 4,
+          "len": 1
+        },
+        "operation": 1909560,
+        "kind": 2,
+        "edge": 4819420,
+        "summary": 19939,
+        "binding": 4294967295
+      },
+      {
+        "target": 822193,
+        "receiver": {
+          "unknown": 1,
+          "atoms": []
+        },
+        "arguments": {
+          "start": 5,
+          "len": 0
+        },
+        "operation": 1909562,
+        "kind": 2,
+        "edge": 4819451,
+        "summary": 20031,
+        "binding": 4294967295
+      }
+    ],
+    "arguments": [
+      {
+        "unknown": 0,
+        "atoms": []
+      },
+      {
+        "unknown": 0,
+        "atoms": []
+      },
+      {
+        "unknown": 1,
+        "atoms": []
+      },
+      {
+        "unknown": 1,
+        "atoms": []
+      },
+      {
+        "unknown": 1,
+        "atoms": []
+      }
+    ],
+    "stores": [],
+    "captures": [],
+    "reads": [
+      [
+        {
+          "kind": 2,
+          "owner": 478,
+          "member": 0
+        },
+        1,
+        true
+      ],
+      [
+        {
+          "kind": 0,
+          "owner": 48350,
+          "member": 0
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "owner": 2689981,
+          "member": 822064
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "owner": 4294967295,
+          "member": 822064
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 0,
+          "owner": 19939,
+          "member": 0
+        },
+        1,
+        true
+      ],
+      [
+        {
+          "kind": 0,
+          "owner": 20031,
+          "member": 0
+        },
+        1,
+        true
+      ],
+      [
+        {
+          "kind": 1,
+          "owner": 2689981,
+          "member": 821992
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "owner": 4294967295,
+          "member": 821992
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 0,
+          "owner": 48352,
+          "member": 0
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "owner": 2689981,
+          "member": 821756
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "owner": 4294967295,
+          "member": 821756
+        },
+        0,
+        false
+      ]
+    ],
+    "edges": [
+      [
+        833780,
+        1909543,
+        5,
+        4294967295,
+        4294967295
+      ],
+      [
+        821992,
+        1909544,
+        2,
+        4819429,
+        4294967295
+      ],
+      [
+        821710,
+        1909552,
+        2,
+        4819418,
+        4294967295
+      ],
+      [
+        822193,
+        1909554,
+        2,
+        4819449,
+        4294967295
+      ],
+      [
+        822208,
+        1909556,
+        2,
+        4819453,
+        4294967295
+      ],
+      [
+        821710,
+        1909557,
+        2,
+        4819419,
+        4294967295
+      ],
+      [
+        822193,
+        1909559,
+        2,
+        4819450,
+        4294967295
+      ],
+      [
+        821710,
+        1909560,
+        2,
+        4819420,
+        4294967295
+      ],
+      [
+        822193,
+        1909562,
+        2,
+        4819451,
+        4294967295
+      ]
+    ],
+    "issues": [
+      6
+    ],
+    "first_issue": {
+      "kind": 6,
+      "operation": 1909541,
+      "reason": 4
+    },
+    "operation_visits": 29
+  }
+}

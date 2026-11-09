@@ -1,0 +1,17 @@
+{
+  "schema": "selector-pinned-framework-class/v1",
+  "compiler_symbol": "org/scalatest/verbs/ShouldVerb#StringShouldWrapperForVerb#should(+2).",
+  "jvm_owner": "org/scalatest/verbs/ShouldVerb$StringShouldWrapperForVerb",
+  "jvm_name": "should",
+  "descriptor": "(Lscala/Function0;Lorg/scalatest/verbs/StringVerbBlockRegistration;)V",
+  "archive": {
+    "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar",
+    "sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936"
+  },
+  "class": {
+    "path": "StringShouldWrapperForVerb.class",
+    "sha256": "188aeee8885a056aa23cd4673bc7441af6abc1fc9eef20ae47dce2216e9a35c0",
+    "bytes": 4088
+  },
+  "authority": "Exact ScalaTest3.2.19 compiler-bound framework ABI and original immutable class bytes; descriptor binding only, no effect purity claim."
+}

@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "revision": "8b6f9bab5387cab6122f4360c9e9225eb248ca12",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/valuebounds/Cases.scala.semanticdb",
+      "sha256": "4fc3406dc707475065c7be5414e68c4f475be57178beb5a5ea46cea99bc186b5",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/valuebounds/Cases.scala.semanticdb",
+      "input_target_contexts": [
+        "project:value-bounds/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/valuebounds/Effects.scala.semanticdb",
+      "sha256": "c8506d8531b2cb42b7de738646b008899599ad440b271ab69fa3b0eda2f0a9fe",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/valuebounds/Effects.scala.semanticdb",
+      "input_target_contexts": [
+        "project:value-bounds/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/valuebounds/Factories.scala.semanticdb",
+      "sha256": "f5456a3fa0f7cf1bbb70136aea33ad89e9664291e7bc335ee9b9355533048217",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/valuebounds/Factories.scala.semanticdb",
+      "input_target_contexts": [
+        "project:value-bounds/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/valuebounds/Types.scala.semanticdb",
+      "sha256": "0aa9d10c67cbfee116401db3329036b0eca3055e7598dafccca4c6105d46ae09",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/valuebounds/Types.scala.semanticdb",
+      "input_target_contexts": [
+        "project:value-bounds/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/valuebounds/Cases.scala",
+      "file": "src/valuebounds/Cases.scala",
+      "sha256": "a4da12ab9e163a81e2c6428487658cdbf74cd438de6de79edbe8e0126f36ea43",
+      "source_contexts": [
+        "project:value-bounds/configuration:test"
+      ]
+    },
+    {
+      "path": "src/valuebounds/Effects.scala",
+      "file": "src/valuebounds/Effects.scala",
+      "sha256": "ffa66f5c9439b2c3a2eb85736073356c2fba8638d0d479a18338772df411cc94",
+      "source_contexts": [
+        "project:value-bounds/configuration:test"
+      ]
+    },
+    {
+      "path": "src/valuebounds/Factories.scala",
+      "file": "src/valuebounds/Factories.scala",
+      "sha256": "43375a9797b633377c702ab8d1c8f9aa4a87659cb6f23f177fe2dbd3a0a5e77f",
+      "source_contexts": [
+        "project:value-bounds/configuration:test"
+      ]
+    },
+    {
+      "path": "src/valuebounds/Types.scala",
+      "file": "src/valuebounds/Types.scala",
+      "sha256": "026a233a009b738a3d0319df2839cc560506637e4f9dcdf1efcc7ac670847c19",
+      "source_contexts": [
+        "project:value-bounds/configuration:test"
+      ]
+    }
+  ]
+}

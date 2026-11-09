@@ -1,0 +1,147 @@
+{
+  "schema": "selector-byte-identical-fixture-migration/v1",
+  "original": "benchmark-output/jvms-finite-effects-v1",
+  "qualification": "historical_genuine_javac_inputs_not_new_runtime_or_type_verification",
+  "files": [
+    {
+      "path": "attempt.json",
+      "sha256": "5e206015b70613be85b011b357aadd4288a2e7da6eb276f5e2ce9ccab2768678",
+      "bytes": 7091
+    },
+    {
+      "path": "bytecode.jar",
+      "sha256": "965c9ee0f3db3379878e231f328f61da5b5b9ca977ae1a78825e8665272b3109",
+      "bytes": 7195
+    },
+    {
+      "path": "classes/finitecase/Check$Throwing.class",
+      "sha256": "6d14ee8124149c8adec021b1b10235198151a116112e6bba1346f59edb79b132",
+      "bytes": 228
+    },
+    {
+      "path": "classes/finitecase/Check.class",
+      "sha256": "fa69d8972b3a0d06acfc5ccbaf6a664561bc1d5c22b42fdd08e5847660d96444",
+      "bytes": 6535
+    },
+    {
+      "path": "classes/finitecase/Probe.class",
+      "sha256": "e0019927542b275cb17ab2b6d2a2d3e3133050eaa59268306e096ec2c2f01aca",
+      "bytes": 4133
+    },
+    {
+      "path": "classes/finitecase/Warm.class",
+      "sha256": "911fb92c363cef897eb9b26ab5f5d78ea9005c94857d7549da7db18a48fe21a5",
+      "bytes": 2881
+    },
+    {
+      "path": "compile.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "correctness.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "correctness.stdout",
+      "sha256": "0b337045ea72b455f4f50c0b90a9e1d18910ef90efe11ac734a23b4737dc34b3",
+      "bytes": 426
+    },
+    {
+      "path": "inventory.json",
+      "sha256": "8bf90c8feab0fd5f5bcd7a2439c546a921d729e6a8aace81b3d48de983f52f32",
+      "bytes": 15531
+    },
+    {
+      "path": "inventory.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "inventory.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "inventory_check.py",
+      "sha256": "73dc4fd56057c74407c3604baf51a15258fdb316946e0f419e9afea5094ca8a7",
+      "bytes": 13317
+    },
+    {
+      "path": "java-version.stderr",
+      "sha256": "da6bb29c482c0fd5ea827d1eecfcf573d88175541589705d776142562e788e18",
+      "bytes": 167
+    },
+    {
+      "path": "java-version.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "5fb3955999f71c69a0dd683d1fb20ad51aa685685cb6432aec64e5b78bc0a114",
+      "bytes": 14115
+    },
+    {
+      "path": "run.py",
+      "sha256": "1a890b0978df623ec658ab23054df4eed3ab8721ec1592538261febf021f07f1",
+      "bytes": 5759
+    },
+    {
+      "path": "src/finitecase/Check.java",
+      "sha256": "1c115a9dabc495e17a91b1794c3e5fde8ed0d5b0137007a091b52029c2940b16",
+      "bytes": 4155
+    },
+    {
+      "path": "src/finitecase/Probe.java",
+      "sha256": "5e86600c79ec7b4dc816c35056e383a9308f611bb935499547b90aafa80588e4",
+      "bytes": 4150
+    },
+    {
+      "path": "src/finitecase/Warm.java",
+      "sha256": "9d077a282275817e8091172659ddbd0cf78c5267e984132656ce5cee121a0cb7",
+      "bytes": 1901
+    },
+    {
+      "path": "subject-archive.json",
+      "sha256": "fc14f65ee7331d8cb8426c3149f9a2ba758bf067c71d6781b38d2914b1802670",
+      "bytes": 690
+    },
+    {
+      "path": "subject-receipt.json",
+      "sha256": "f39f58fede910091c08dc890af727ec3b7a7f2460dd40ec4616fe48331cc77f1",
+      "bytes": 3889
+    },
+    {
+      "path": "subject.zip",
+      "sha256": "b8fa66d5db8ab88418c75a1da866b87e6fa662aa7f250d11090ade1c3ecf6d84",
+      "bytes": 9571
+    },
+    {
+      "path": "warm-default.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "warm-default.stdout",
+      "sha256": "916884461f45548e2f19960380faa1024b56108f2c6ab3024b913eb826f35627",
+      "bytes": 294
+    },
+    {
+      "path": "warm-interpreter.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "warm-interpreter.stdout",
+      "sha256": "2f75ef066f8d732b26e5bf3f0fba8866235191c9d24fac4662b6e3f4c0cd4828",
+      "bytes": 277
+    }
+  ]
+}

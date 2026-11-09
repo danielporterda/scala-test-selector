@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "revision": "06aa77bce52c2904f7964002d33d6ca4d502545e",
+  "contexts": [
+    {
+      "id": "project:constructor-forms/configuration:test",
+      "entries": [
+        {
+          "path": "bytecode.jar",
+          "sha256": "c74482b44ac6725157dab6a0202e8cc2eed2659c9f008e2a0bf12b127cbe957a",
+          "kind": "jar"
+        },
+        {
+          "path": "../framework-prefix.jar",
+          "sha256": "70a28d7607182cda0249fb9235b53526f9b6141d2174f00e09f8c42593372695",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+          "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar",
+          "sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar",
+          "sha256": "5dc6b8fa5396fe9e1a7c2b72df174a8eb3e92770cdc3e70636d3eba673cd0da3",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar",
+          "sha256": "c27c33de17d450e29e66c16c5af4cfa33e8ffcf03c124f0a3d249d848cccd4af",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+          "sha256": "b549a1bf335bc4528cf26f005894c7c37220ac4e8450847973d8f4001b8f59ea",
+          "kind": "unavailable"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/ApplyDefaultSuite#",
+      "jvm_owner": "constructorforms/ApplyDefaultSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/NewDefaultSuite#",
+      "jvm_owner": "constructorforms/NewDefaultSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/ApplyExplicitSuite#",
+      "jvm_owner": "constructorforms/ApplyExplicitSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/CopyDefaultSuite#",
+      "jvm_owner": "constructorforms/CopyDefaultSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/CopyExplicitSuite#",
+      "jvm_owner": "constructorforms/CopyExplicitSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/SecondaryDefaultSuite#",
+      "jvm_owner": "constructorforms/SecondaryDefaultSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/SecondaryExplicitSuite#",
+      "jvm_owner": "constructorforms/SecondaryExplicitSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/NewExplicitSuite#",
+      "jvm_owner": "constructorforms/NewExplicitSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/MethodDefaultSuite#",
+      "jvm_owner": "constructorforms/MethodDefaultSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/MethodExplicitSuite#",
+      "jvm_owner": "constructorforms/MethodExplicitSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/ByNameDefaultUsedSuite#",
+      "jvm_owner": "constructorforms/ByNameDefaultUsedSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/ByNameDefaultIgnoredSuite#",
+      "jvm_owner": "constructorforms/ByNameDefaultIgnoredSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/DependentDefaultSuite#",
+      "jvm_owner": "constructorforms/DependentDefaultSuite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "org/scalatest/Suite#",
+      "jvm_owner": "org/scalatest/Suite"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value#",
+      "jvm_owner": "constructorforms/Value"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value.",
+      "jvm_owner": "constructorforms/Value$"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Secondary#",
+      "jvm_owner": "constructorforms/Secondary"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Effects.",
+      "jvm_owner": "constructorforms/Effects$"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Defaults.",
+      "jvm_owner": "constructorforms/Defaults$"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "scala/Product#",
+      "jvm_owner": "scala/Product"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "scala/runtime/AbstractFunction1#",
+      "jvm_owner": "scala/runtime/AbstractFunction1"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "scala/package.Serializable#",
+      "jvm_owner": "java/io/Serializable"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "java/io/Serializable#",
+      "jvm_owner": "java/io/Serializable"
+    }
+  ],
+  "methods": [
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "org/scalatest/Suite#",
+      "jvm_owner": "org/scalatest/Suite",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalatest/Suite;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "org/scalactic/TripleEqualsSupport",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalactic/TripleEqualsSupport;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "org/scalactic/TripleEquals",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalactic/TripleEquals;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "org/scalatest/Assertions",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalatest/Assertions;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "scala/Product#",
+      "jvm_owner": "scala/Product",
+      "jvm_name": "$init$",
+      "descriptor": "(Lscala/Product;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/ApplyDefaultSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/ApplyDefaultSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/NewDefaultSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/NewDefaultSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/ApplyExplicitSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/ApplyExplicitSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/CopyDefaultSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/CopyDefaultSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/CopyExplicitSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/CopyExplicitSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/SecondaryDefaultSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/SecondaryDefaultSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/SecondaryExplicitSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/SecondaryExplicitSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/NewExplicitSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/NewExplicitSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/MethodDefaultSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/MethodDefaultSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/MethodExplicitSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/MethodExplicitSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/ByNameDefaultUsedSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/ByNameDefaultUsedSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/ByNameDefaultIgnoredSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/ByNameDefaultIgnoredSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/DependentDefaultSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "jvm_owner": "constructorforms/DependentDefaultSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value.apply().",
+      "jvm_owner": "constructorforms/Value$",
+      "jvm_name": "apply",
+      "descriptor": "(I)Lconstructorforms/Value;"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value.apply$default$1().",
+      "jvm_owner": "constructorforms/Value$",
+      "jvm_name": "apply$default$1",
+      "descriptor": "()I"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value.`<init>$default$1`().",
+      "jvm_owner": "constructorforms/Value$",
+      "jvm_name": "$lessinit$greater$default$1",
+      "descriptor": "()I"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value#copy().",
+      "jvm_owner": "constructorforms/Value",
+      "jvm_name": "copy",
+      "descriptor": "(I)Lconstructorforms/Value;"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value#copy$default$1().",
+      "jvm_owner": "constructorforms/Value",
+      "jvm_name": "copy$default$1",
+      "descriptor": "()I"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value.",
+      "jvm_owner": "constructorforms/Value$",
+      "jvm_name": "<init>",
+      "descriptor": "()V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value#value.",
+      "jvm_owner": "constructorforms/Value",
+      "jvm_name": "value",
+      "descriptor": "()I"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Secondary#observed.",
+      "jvm_owner": "constructorforms/Secondary",
+      "jvm_name": "observed",
+      "descriptor": "()I"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Value#`<init>`().",
+      "jvm_owner": "constructorforms/Value",
+      "jvm_name": "<init>",
+      "descriptor": "(I)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Secondary#`<init>`().",
+      "jvm_owner": "constructorforms/Secondary",
+      "jvm_name": "<init>",
+      "descriptor": "(I)V"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Effects.changed().",
+      "jvm_owner": "constructorforms/Effects$",
+      "jvm_name": "changed",
+      "descriptor": "()I"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Defaults.run().",
+      "jvm_owner": "constructorforms/Defaults$",
+      "jvm_name": "run",
+      "descriptor": "(I)I"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "constructorforms/Defaults.run$default$1().",
+      "jvm_owner": "constructorforms/Defaults$",
+      "jvm_name": "run$default$1",
+      "descriptor": "()I"
+    },
+    {
+      "context": "project:constructor-forms/configuration:test",
+      "compiler_symbol": "scala/runtime/AbstractFunction1#",
+      "jvm_owner": "scala/runtime/AbstractFunction1",
+      "jvm_name": "<init>",
+      "descriptor": "()V"
+    }
+  ]
+}

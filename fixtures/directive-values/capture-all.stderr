@@ -1,0 +1,4 @@
+{"phase":"capture","pid":30134,"revision":"request","stage":"stage_begin"}
+{"documents":2,"effective_workers":2,"output_bytes":34581,"producer":"5ee24144a77568804201a0dec76525415f483b114e88b0bdd518d5971abc7540","raw_bytes":10873,"raw_inputs":2,"stage":"capture","validated_sources":2}
+elapsed: 0.026s
+{"elapsed_ns":26435375,"phase":"capture","pid":30134,"revision":"request","stage":"stage_end"}

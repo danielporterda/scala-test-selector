@@ -1,0 +1,4 @@
+caller:1
+B:2
+A-parent:hierarchycase.Factory$Base
+object-method:class-name-prefix

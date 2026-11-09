@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "revision": "258997b4cf170665f8e3bf4823ef52c807b4e647",
+  "java_feature": 21,
+  "contexts": [
+    {
+      "id": "project:context-bound-arguments/configuration:test",
+      "entries": [
+        {
+          "path": "bytecode.jar",
+          "sha256": "e41bd2f81c722ea1a2bf04861ad035c38255e8ea1ddd70726a9f9ad1db034c3d",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+          "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+          "kind": "jar"
+        },
+        {
+          "path": "../native-hierarchy/bootstrap.jar",
+          "sha256": "0c697e8d82ace53e32556a491f56e9fb444f37f58b7f87027835dd296f6c839c",
+          "kind": "jar"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "contextboundcase/Api.",
+      "jvm_owner": "contextboundcase/Api$"
+    },
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "contextboundcase/Syntax.",
+      "jvm_owner": "contextboundcase/Syntax$"
+    },
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "contextboundcase/Syntax.RenderOps#",
+      "jvm_owner": "contextboundcase/Syntax$RenderOps"
+    },
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "contextboundcase/RecordingRender#",
+      "jvm_owner": "contextboundcase/RecordingRender"
+    },
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "contextboundcase/Render#",
+      "jvm_owner": "contextboundcase/Render"
+    },
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "contextboundcase/Item#",
+      "jvm_owner": "contextboundcase/Item"
+    },
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "scala/Predef.",
+      "jvm_owner": "scala/Predef$"
+    }
+  ],
+  "methods": [
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "contextboundcase/Api.param$default$3().",
+      "jvm_owner": "contextboundcase/Api$",
+      "jvm_name": "param$default$3",
+      "descriptor": "()Lscala/Function1;"
+    },
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "contextboundcase/Syntax.RenderOps().",
+      "jvm_owner": "contextboundcase/Syntax$",
+      "jvm_name": "RenderOps",
+      "descriptor": "(Ljava/lang/Object;Lcontextboundcase/Render;)Lcontextboundcase/Syntax$RenderOps;"
+    },
+    {
+      "context": "project:context-bound-arguments/configuration:test",
+      "compiler_symbol": "scala/Predef.implicitly().",
+      "jvm_owner": "scala/Predef$",
+      "jvm_name": "implicitly",
+      "descriptor": "(Ljava/lang/Object;)Ljava/lang/Object;"
+    }
+  ]
+}

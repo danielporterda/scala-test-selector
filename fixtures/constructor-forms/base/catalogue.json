@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "discovery": "Independent JVM construction and successful ScalaTest Runner run.",
+  "families": [
+    {
+      "name": "constructor-forms",
+      "suites": [
+        "constructorforms.ApplyDefaultSuite",
+        "constructorforms.NewDefaultSuite",
+        "constructorforms.ApplyExplicitSuite",
+        "constructorforms.CopyDefaultSuite",
+        "constructorforms.CopyExplicitSuite",
+        "constructorforms.SecondaryDefaultSuite",
+        "constructorforms.SecondaryExplicitSuite",
+        "constructorforms.NewExplicitSuite",
+        "constructorforms.MethodDefaultSuite",
+        "constructorforms.MethodExplicitSuite",
+        "constructorforms.ByNameDefaultUsedSuite",
+        "constructorforms.ByNameDefaultIgnoredSuite",
+        "constructorforms.DependentDefaultSuite"
+      ]
+    }
+  ]
+}

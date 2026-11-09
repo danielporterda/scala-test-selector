@@ -1,0 +1,762 @@
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-admission-chain/classes/admissioncase/Contract.class
+  Last modified Nov 8, 2026; size 307 bytes
+  SHA-256 checksum d164092a1a306af2823aa56ddb0f62c89bd97938a8010ffc94aa9c8771c70370
+  Compiled from "Fixture.java"
+interface admissioncase.Contract
+  minor version: 0
+  major version: 61
+  flags: (0x0600) ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #1                          // admissioncase/Contract
+  super_class: #3                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 9, attributes: 1
+Constant pool:
+   #1 = Class              #2             // admissioncase/Contract
+   #2 = Utf8               admissioncase/Contract
+   #3 = Class              #4             // java/lang/Object
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               aGet
+   #6 = Utf8               ()Ladmissioncase/Box;
+   #7 = Utf8               unused00
+   #8 = Utf8               ()I
+   #9 = Utf8               unused01
+  #10 = Utf8               unused02
+  #11 = Utf8               unused03
+  #12 = Utf8               unused04
+  #13 = Utf8               unused05
+  #14 = Utf8               unused06
+  #15 = Utf8               unused07
+  #16 = Utf8               SourceFile
+  #17 = Utf8               Fixture.java
+{
+  public abstract admissioncase.Box aGet();
+    descriptor: ()Ladmissioncase/Box;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int unused00();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int unused01();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int unused02();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int unused03();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int unused04();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int unused05();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int unused06();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract int unused07();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+}
+SourceFile: "Fixture.java"
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-admission-chain/classes/admissioncase/Getter.class
+  Last modified Nov 8, 2026; size 1217 bytes
+  SHA-256 checksum ed0eee1d27f92c3471c9c419283c26abf5bfdc14cc46e2fc6a55a346d9f4729d
+  Compiled from "Fixture.java"
+class admissioncase.Getter implements admissioncase.Contract
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #8                          // admissioncase/Getter
+  super_class: #2                         // java/lang/Object
+  interfaces: 1, fields: 1, methods: 11, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Methodref          #8.#9          // admissioncase/Getter.lazyHelper:()Ladmissioncase/Box;
+   #8 = Class              #10            // admissioncase/Getter
+   #9 = NameAndType        #11:#12        // lazyHelper:()Ladmissioncase/Box;
+  #10 = Utf8               admissioncase/Getter
+  #11 = Utf8               lazyHelper
+  #12 = Utf8               ()Ladmissioncase/Box;
+  #13 = Fieldref           #8.#14         // admissioncase/Getter.cached:Ladmissioncase/Box;
+  #14 = NameAndType        #15:#16        // cached:Ladmissioncase/Box;
+  #15 = Utf8               cached
+  #16 = Utf8               Ladmissioncase/Box;
+  #17 = Class              #18            // admissioncase/Box
+  #18 = Utf8               admissioncase/Box
+  #19 = Methodref          #17.#3         // admissioncase/Box."<init>":()V
+  #20 = Methodref          #21.#22        // admissioncase/Effects.changed:()I
+  #21 = Class              #23            // admissioncase/Effects
+  #22 = NameAndType        #24:#25        // changed:()I
+  #23 = Utf8               admissioncase/Effects
+  #24 = Utf8               changed
+  #25 = Utf8               ()I
+  #26 = Class              #27            // admissioncase/Contract
+  #27 = Utf8               admissioncase/Contract
+  #28 = Utf8               Code
+  #29 = Utf8               LineNumberTable
+  #30 = Utf8               LocalVariableTable
+  #31 = Utf8               this
+  #32 = Utf8               Ladmissioncase/Getter;
+  #33 = Utf8               aGet
+  #34 = Utf8               StackMapTable
+  #35 = Utf8               unused00
+  #36 = Utf8               unused01
+  #37 = Utf8               unused02
+  #38 = Utf8               unused03
+  #39 = Utf8               unused04
+  #40 = Utf8               unused05
+  #41 = Utf8               unused06
+  #42 = Utf8               unused07
+  #43 = Utf8               SourceFile
+  #44 = Utf8               Fixture.java
+{
+  private admissioncase.Box cached;
+    descriptor: Ladmissioncase/Box;
+    flags: (0x0002) ACC_PRIVATE
+
+  admissioncase.Getter();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ladmissioncase/Getter;
+
+  public admissioncase.Box aGet();
+    descriptor: ()Ladmissioncase/Box;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #7                  // Method lazyHelper:()Ladmissioncase/Box;
+         4: areturn
+      LineNumberTable:
+        line 10: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ladmissioncase/Getter;
+
+  private admissioncase.Box lazyHelper();
+    descriptor: ()Ladmissioncase/Box;
+    flags: (0x0002) ACC_PRIVATE
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #13                 // Field cached:Ladmissioncase/Box;
+         4: ifnonnull     18
+         7: aload_0
+         8: new           #17                 // class admissioncase/Box
+        11: dup
+        12: invokespecial #19                 // Method admissioncase/Box."<init>":()V
+        15: putfield      #13                 // Field cached:Ladmissioncase/Box;
+        18: invokestatic  #20                 // Method admissioncase/Effects.changed:()I
+        21: pop
+        22: aload_0
+        23: getfield      #13                 // Field cached:Ladmissioncase/Box;
+        26: areturn
+      LineNumberTable:
+        line 12: 0
+        line 13: 18
+        line 14: 22
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      27     0  this   Ladmissioncase/Getter;
+      StackMapTable: number_of_entries = 1
+        frame_type = 18 /* same */
+
+  public int unused00();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_0
+         1: ireturn
+      LineNumberTable:
+        line 16: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Ladmissioncase/Getter;
+
+  public int unused01();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_1
+         1: ireturn
+      LineNumberTable:
+        line 16: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Ladmissioncase/Getter;
+
+  public int unused02();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_2
+         1: ireturn
+      LineNumberTable:
+        line 17: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Ladmissioncase/Getter;
+
+  public int unused03();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_3
+         1: ireturn
+      LineNumberTable:
+        line 17: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Ladmissioncase/Getter;
+
+  public int unused04();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_4
+         1: ireturn
+      LineNumberTable:
+        line 18: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Ladmissioncase/Getter;
+
+  public int unused05();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_5
+         1: ireturn
+      LineNumberTable:
+        line 18: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Ladmissioncase/Getter;
+
+  public int unused06();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: bipush        6
+         2: ireturn
+      LineNumberTable:
+        line 19: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       3     0  this   Ladmissioncase/Getter;
+
+  public int unused07();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: bipush        7
+         2: ireturn
+      LineNumberTable:
+        line 19: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       3     0  this   Ladmissioncase/Getter;
+}
+SourceFile: "Fixture.java"
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-admission-chain/classes/admissioncase/Box.class
+  Last modified Nov 8, 2026; size 356 bytes
+  SHA-256 checksum 91348f7f6bb122f7732b8543ad569d8033b814e874b92ad18131b7f5177d2b11
+  Compiled from "Fixture.java"
+class admissioncase.Box
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #14                         // admissioncase/Box
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 1, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Methodref          #8.#9          // admissioncase/Effects.changed:()I
+   #8 = Class              #10            // admissioncase/Effects
+   #9 = NameAndType        #11:#12        // changed:()I
+  #10 = Utf8               admissioncase/Effects
+  #11 = Utf8               changed
+  #12 = Utf8               ()I
+  #13 = Fieldref           #14.#15        // admissioncase/Box.ready:I
+  #14 = Class              #16            // admissioncase/Box
+  #15 = NameAndType        #17:#18        // ready:I
+  #16 = Utf8               admissioncase/Box
+  #17 = Utf8               ready
+  #18 = Utf8               I
+  #19 = Utf8               Code
+  #20 = Utf8               LineNumberTable
+  #21 = Utf8               LocalVariableTable
+  #22 = Utf8               this
+  #23 = Utf8               Ladmissioncase/Box;
+  #24 = Utf8               SourceFile
+  #25 = Utf8               Fixture.java
+{
+  final int ready;
+    descriptor: I
+    flags: (0x0010) ACC_FINAL
+
+  admissioncase.Box();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: invokestatic  #7                  // Method admissioncase/Effects.changed:()I
+         8: putfield      #13                 // Field ready:I
+        11: return
+      LineNumberTable:
+        line 23: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0  this   Ladmissioncase/Box;
+}
+SourceFile: "Fixture.java"
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-admission-chain/classes/admissioncase/Effects.class
+  Last modified Nov 8, 2026; size 367 bytes
+  SHA-256 checksum c27e8f21620e2f62dc054cb791425f9c686d6db49add49426d8812ec4949cf71
+  Compiled from "Fixture.java"
+class admissioncase.Effects
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #8                          // admissioncase/Effects
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // admissioncase/Effects.hits:I
+   #8 = Class              #10            // admissioncase/Effects
+   #9 = NameAndType        #11:#12        // hits:I
+  #10 = Utf8               admissioncase/Effects
+  #11 = Utf8               hits
+  #12 = Utf8               I
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               LocalVariableTable
+  #16 = Utf8               this
+  #17 = Utf8               Ladmissioncase/Effects;
+  #18 = Utf8               changed
+  #19 = Utf8               ()I
+  #20 = Utf8               SourceFile
+  #21 = Utf8               Fixture.java
+{
+  static int hits;
+    descriptor: I
+    flags: (0x0008) ACC_STATIC
+
+  admissioncase.Effects();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 25: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ladmissioncase/Effects;
+
+  public static int changed();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #7                  // Field hits:I
+         3: iconst_1
+         4: iadd
+         5: dup
+         6: putstatic     #7                  // Field hits:I
+         9: ireturn
+      LineNumberTable:
+        line 27: 0
+}
+SourceFile: "Fixture.java"
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-admission-chain/classes/admissioncase/Closed.class
+  Last modified Nov 8, 2026; size 328 bytes
+  SHA-256 checksum 4e99c1cf63c7362f5ed2188c686c2468353dd1be60a9a126cf8fa2dcdc2a2c45
+  Compiled from "Fixture.java"
+class admissioncase.Closed
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #7                          // admissioncase/Closed
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // admissioncase/Closed
+   #8 = Utf8               admissioncase/Closed
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               LocalVariableTable
+  #12 = Utf8               this
+  #13 = Utf8               Ladmissioncase/Closed;
+  #14 = Utf8               scalar
+  #15 = Utf8               ()I
+  #16 = Utf8               SourceFile
+  #17 = Utf8               Fixture.java
+{
+  admissioncase.Closed();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 29: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ladmissioncase/Closed;
+
+  public static int scalar();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: bipush        17
+         2: ireturn
+      LineNumberTable:
+        line 29: 0
+}
+SourceFile: "Fixture.java"
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-admission-chain/classes/admissioncase/VirtualContract.class
+  Last modified Nov 8, 2026; size 135 bytes
+  SHA-256 checksum 9b30da1d6e3bccfb16dfb542bf6a45b656db58c5684f9fb8a8fbd30b73f6e835
+  Compiled from "Fixture.java"
+interface admissioncase.VirtualContract
+  minor version: 0
+  major version: 61
+  flags: (0x0600) ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #1                          // admissioncase/VirtualContract
+  super_class: #3                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 1, attributes: 1
+Constant pool:
+  #1 = Class              #2              // admissioncase/VirtualContract
+  #2 = Utf8               admissioncase/VirtualContract
+  #3 = Class              #4              // java/lang/Object
+  #4 = Utf8               java/lang/Object
+  #5 = Utf8               m
+  #6 = Utf8               ()I
+  #7 = Utf8               SourceFile
+  #8 = Utf8               Fixture.java
+{
+  public abstract int m();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+}
+SourceFile: "Fixture.java"
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-admission-chain/classes/admissioncase/Base.class
+  Last modified Nov 8, 2026; size 373 bytes
+  SHA-256 checksum 0d5f7d06f2b98e755270753629ac197e4b79e0081787af37ed37443ef71b6be9
+  Compiled from "Fixture.java"
+class admissioncase.Base implements admissioncase.VirtualContract
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #7                          // admissioncase/Base
+  super_class: #2                         // java/lang/Object
+  interfaces: 1, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // admissioncase/Base
+   #8 = Utf8               admissioncase/Base
+   #9 = Class              #10            // admissioncase/VirtualContract
+  #10 = Utf8               admissioncase/VirtualContract
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               LocalVariableTable
+  #14 = Utf8               this
+  #15 = Utf8               Ladmissioncase/Base;
+  #16 = Utf8               m
+  #17 = Utf8               ()I
+  #18 = Utf8               SourceFile
+  #19 = Utf8               Fixture.java
+{
+  admissioncase.Base();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 31: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ladmissioncase/Base;
+
+  public int m();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: iconst_m1
+         1: ireturn
+      LineNumberTable:
+        line 31: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       2     0  this   Ladmissioncase/Base;
+}
+SourceFile: "Fixture.java"
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-admission-chain/classes/admissioncase/Child.class
+  Last modified Nov 8, 2026; size 389 bytes
+  SHA-256 checksum 242355d753adf02b5c27a95a48422dd277cb48fa2942d76f843e2810e4647fa0
+  Compiled from "Fixture.java"
+class admissioncase.Child extends admissioncase.Base
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #13                         // admissioncase/Child
+  super_class: #2                         // admissioncase/Base
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // admissioncase/Base."<init>":()V
+   #2 = Class              #4             // admissioncase/Base
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               admissioncase/Base
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Methodref          #8.#9          // admissioncase/Effects.changed:()I
+   #8 = Class              #10            // admissioncase/Effects
+   #9 = NameAndType        #11:#12        // changed:()I
+  #10 = Utf8               admissioncase/Effects
+  #11 = Utf8               changed
+  #12 = Utf8               ()I
+  #13 = Class              #14            // admissioncase/Child
+  #14 = Utf8               admissioncase/Child
+  #15 = Utf8               Code
+  #16 = Utf8               LineNumberTable
+  #17 = Utf8               LocalVariableTable
+  #18 = Utf8               this
+  #19 = Utf8               Ladmissioncase/Child;
+  #20 = Utf8               m
+  #21 = Utf8               SourceFile
+  #22 = Utf8               Fixture.java
+{
+  admissioncase.Child();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method admissioncase/Base."<init>":()V
+         4: return
+      LineNumberTable:
+        line 32: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ladmissioncase/Child;
+
+  public int m();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: invokestatic  #7                  // Method admissioncase/Effects.changed:()I
+         3: ireturn
+      LineNumberTable:
+        line 32: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0  this   Ladmissioncase/Child;
+}
+SourceFile: "Fixture.java"
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-admission-chain/classes/admissioncase/Factory.class
+  Last modified Nov 8, 2026; size 956 bytes
+  SHA-256 checksum 6d8a0d8ebb79dc3fb7676ddca11fec0aa04a3b4dbfa9f0497bd109714d9d18f6
+  Compiled from "Fixture.java"
+class admissioncase.Factory
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #17                         // admissioncase/Factory
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 6, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // admissioncase/Getter
+   #8 = Utf8               admissioncase/Getter
+   #9 = Methodref          #7.#3          // admissioncase/Getter."<init>":()V
+  #10 = InterfaceMethodref #11.#12        // admissioncase/Contract.aGet:()Ladmissioncase/Box;
+  #11 = Class              #13            // admissioncase/Contract
+  #12 = NameAndType        #14:#15        // aGet:()Ladmissioncase/Box;
+  #13 = Utf8               admissioncase/Contract
+  #14 = Utf8               aGet
+  #15 = Utf8               ()Ladmissioncase/Box;
+  #16 = Methodref          #17.#18        // admissioncase/Factory.make:()Ladmissioncase/Contract;
+  #17 = Class              #19            // admissioncase/Factory
+  #18 = NameAndType        #20:#21        // make:()Ladmissioncase/Contract;
+  #19 = Utf8               admissioncase/Factory
+  #20 = Utf8               make
+  #21 = Utf8               ()Ladmissioncase/Contract;
+  #22 = Methodref          #17.#23        // admissioncase/Factory.invoke:(Ladmissioncase/Contract;)Ladmissioncase/Box;
+  #23 = NameAndType        #24:#25        // invoke:(Ladmissioncase/Contract;)Ladmissioncase/Box;
+  #24 = Utf8               invoke
+  #25 = Utf8               (Ladmissioncase/Contract;)Ladmissioncase/Box;
+  #26 = Methodref          #27.#28        // admissioncase/Base.m:()I
+  #27 = Class              #29            // admissioncase/Base
+  #28 = NameAndType        #30:#31        // m:()I
+  #29 = Utf8               admissioncase/Base
+  #30 = Utf8               m
+  #31 = Utf8               ()I
+  #32 = Class              #33            // admissioncase/Child
+  #33 = Utf8               admissioncase/Child
+  #34 = Methodref          #32.#3         // admissioncase/Child."<init>":()V
+  #35 = Methodref          #17.#36        // admissioncase/Factory.invokeBase:(Ladmissioncase/Base;)I
+  #36 = NameAndType        #37:#38        // invokeBase:(Ladmissioncase/Base;)I
+  #37 = Utf8               invokeBase
+  #38 = Utf8               (Ladmissioncase/Base;)I
+  #39 = Utf8               Code
+  #40 = Utf8               LineNumberTable
+  #41 = Utf8               LocalVariableTable
+  #42 = Utf8               this
+  #43 = Utf8               Ladmissioncase/Factory;
+  #44 = Utf8               receiver
+  #45 = Utf8               Ladmissioncase/Contract;
+  #46 = Utf8               entry
+  #47 = Utf8               Ladmissioncase/Base;
+  #48 = Utf8               childEntry
+  #49 = Utf8               SourceFile
+  #50 = Utf8               Fixture.java
+{
+  admissioncase.Factory();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 33: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ladmissioncase/Factory;
+
+  public static admissioncase.Contract make();
+    descriptor: ()Ladmissioncase/Contract;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #7                  // class admissioncase/Getter
+         3: dup
+         4: invokespecial #9                  // Method admissioncase/Getter."<init>":()V
+         7: areturn
+      LineNumberTable:
+        line 34: 0
+
+  public static admissioncase.Box invoke(admissioncase.Contract);
+    descriptor: (Ladmissioncase/Contract;)Ladmissioncase/Box;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokeinterface #10,  1           // InterfaceMethod admissioncase/Contract.aGet:()Ladmissioncase/Box;
+         6: areturn
+      LineNumberTable:
+        line 35: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       7     0 receiver   Ladmissioncase/Contract;
+
+  public static admissioncase.Box entry();
+    descriptor: ()Ladmissioncase/Box;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: invokestatic  #16                 // Method make:()Ladmissioncase/Contract;
+         3: invokestatic  #22                 // Method invoke:(Ladmissioncase/Contract;)Ladmissioncase/Box;
+         6: areturn
+      LineNumberTable:
+        line 36: 0
+
+  public static int invokeBase(admissioncase.Base);
+    descriptor: (Ladmissioncase/Base;)I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #26                 // Method admissioncase/Base.m:()I
+         4: ireturn
+      LineNumberTable:
+        line 37: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0 receiver   Ladmissioncase/Base;
+
+  public static int childEntry();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: new           #32                 // class admissioncase/Child
+         3: dup
+         4: invokespecial #34                 // Method admissioncase/Child."<init>":()V
+         7: invokestatic  #35                 // Method invokeBase:(Ladmissioncase/Base;)I
+        10: ireturn
+      LineNumberTable:
+        line 38: 0
+}
+SourceFile: "Fixture.java"

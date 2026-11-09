@@ -1,0 +1,88 @@
+{
+  "additional_factory_fixture": {
+    "bytes": 1917,
+    "factory": {
+      "captures": 0,
+      "descriptor": "()V",
+      "implementation": "anonymouscase/Dormant.$anonfun$later$1()Lanonymouscase/Parent;",
+      "method": "<init>",
+      "pc": 5,
+      "sam": "scala/Function0.apply()Ljava/lang/Object;"
+    },
+    "path": "fixtures/anonymous-construction/classes/anonymouscase/Dormant.class",
+    "producer_manifest": "fixtures/anonymous-construction/manifest.json",
+    "producer_manifest_sha256": "073724ef23be465168f48f5032e049d00e8a22739e00ec0dad94bac239ed545a",
+    "sha256": "d6fab516f07537506d7cfdefb9a095f536e17da13257971377b3913b010c2d8c"
+  },
+  "archive": {
+    "bytes": 5940741,
+    "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+    "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+  },
+  "authority_limits": [
+    "Class/code/provider identities are not native-runtime effect or process-isolation proofs.",
+    "Only exact creation BSMs without renamed default overrides may use reviewed bridge evidence.",
+    "Default bridge code is executed/composed, including BoxedUnit.UNIT read and class initialization; no pure alias.",
+    "Synthetic mutations in Rust tests remain explicitly labeled; no fake compiler outputs."
+  ],
+  "classes": [
+    {
+      "archive_member": "scala/Function0.class",
+      "bytes": 3748,
+      "owner": "scala/Function0",
+      "path": "scala/Function0.class",
+      "sha256": "a2e079fbd9b6da1fbd23e2be74071a77514ba27ef9a44fc8ffd20e249283fda8"
+    },
+    {
+      "archive_member": "scala/runtime/java8/JFunction0$mcV$sp.class",
+      "bytes": 1457,
+      "owner": "scala/runtime/java8/JFunction0$mcV$sp",
+      "path": "scala/runtime/java8/JFunction0$mcV$sp.class",
+      "sha256": "68af46180aa15ec6ad62d8d725d5e57d1ea60e24941af6945940bb836d8050f7"
+    },
+    {
+      "archive_member": "scala/runtime/BoxedUnit.class",
+      "bytes": 1039,
+      "owner": "scala/runtime/BoxedUnit",
+      "path": "scala/runtime/BoxedUnit.class",
+      "sha256": "41d8c274bccfe1e7cbbab0535f45fa0ee184f1cfed970256abe8628bf7062102"
+    }
+  ],
+  "factory_fixture": {
+    "bytes": 2680,
+    "factory": {
+      "captures": 1,
+      "descriptor": "()V",
+      "implementation": "registrationcase/WordSuite.$anonfun$new$11(Lregistrationcase/WordSuite;)V",
+      "method": "<init>",
+      "pc": 16,
+      "sam": "scala/runtime/java8/JFunction0$mcV$sp.apply$mcV$sp()V"
+    },
+    "path": "fixtures/registration-smoke/bytecode/registrationcase/WordSuite.class",
+    "producer_manifest": "fixtures/registration-smoke/manifest.json",
+    "producer_manifest_sha256": "6dfa44b92cc555959c69f791be418b850fc7ffb2a783f9e733ba9ed159173a90",
+    "sha256": "d44deefeec788c14f5670b77cee18788ddd9bf9a76175aabd66c923df1d449e1"
+  },
+  "generation": "Byte-identical extraction from the existing pinned Scala2.13.18 archive; no compiler/JVM executed.",
+  "genuine_classfiles": true,
+  "schema": "selector-framework-transport-fixture/v1",
+  "standard_factory_contract": {
+    "api": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/invoke/LambdaMetafactory.html",
+    "contract": "java21-standard-lambda-metafactory-method-set/v1",
+    "scope": "Generated method names and bounded static factory adaptation only; bootstrap, loading, class initialization, JNI and process mutation channels remain TOP."
+  },
+  "standard_factory_fixture": {
+    "authority": "New declared Java21 runtime; not historical compiler/test environment or runtime isolation.",
+    "bytes": 4978,
+    "owner": "java/lang/invoke/LambdaMetafactory",
+    "path": "java/lang/invoke/LambdaMetafactory.class",
+    "runtime_manifest": "artifacts/pr7743-declared-runtime-platform-v2/head/manifest.json",
+    "runtime_manifest_sha256": "72e6bcf1ce09754b95fb4750f710f5ae38d2e7f2e64bec56bf2ceaa7338a923a",
+    "sha256": "8573d464155bd9b3c8755953fd588a0f7d03760b24f827015a87f1d1b5515d9a",
+    "source_archive": {
+      "bytes": 30081825,
+      "path": "artifacts/pr7743-declared-runtime-platform-v2/head/java.base.jar",
+      "sha256": "ba5f1b0448a754a9bfe2bed7d0e9db87d94cb5d6575b1a8227362b536872e87f"
+    }
+  }
+}

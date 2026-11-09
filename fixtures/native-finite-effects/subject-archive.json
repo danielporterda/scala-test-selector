@@ -1,0 +1,16 @@
+{
+  "schema": "selector-jvms-finite-effects-subject-archive/v1",
+  "archive": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/jvms-finite-effects-v1/subject.zip",
+    "bytes": 9571,
+    "sha256": "b8fa66d5db8ab88418c75a1da866b87e6fa662aa7f250d11090ade1c3ecf6d84"
+  },
+  "uncompressed_subject_bytes": 28700,
+  "source_manifest": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/jvms-finite-effects-v1/manifest.json",
+    "bytes": 14115,
+    "sha256": "5fb3955999f71c69a0dd683d1fb20ad51aa685685cb6432aec64e5b78bc0a114"
+  },
+  "diagnostic_only": true,
+  "omission_authority": false
+}

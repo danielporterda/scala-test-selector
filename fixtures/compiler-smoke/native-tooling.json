@@ -1,0 +1,61 @@
+{
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "classpath": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.15.2/scalameta_2.13-4.15.2.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.15.2/parsers_2.13-4.15.2.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/trees_2.13/4.15.2/trees_2.13-4.15.2.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/common_2.13/4.15.2/common_2.13-4.15.2.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/io_2.13/4.15.2/io_2.13-4.15.2.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.4.4/sourcecode_2.13-0.4.4.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.13/1.1.1/geny_2.13-1.1.1.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_2.13/4.0.2/ujson_2.13-4.0.2.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_2.13/4.0.2/upickle-core_2.13-4.0.2.jar",
+  "main_class": "ScalaSpans",
+  "exporter": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/compiler-selector/engine/spans/ScalaSpans.scala",
+  "exporter_sha256": "306910603430eb0b508716a1d3e77d292280c23a67767af155e23803f6edb5a5",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/scalameta_2.13/4.15.2/scalameta_2.13-4.15.2.jar",
+      "sha256": "01defa3e740ca91f5406690d58390634b607d44bffde081abd84a3695c4125d8"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/parsers_2.13/4.15.2/parsers_2.13-4.15.2.jar",
+      "sha256": "787c0c29cc1aecadb4bd446db53a71d0cb4ea2a8efadd84d9753c7f7bbeaf44a"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/trees_2.13/4.15.2/trees_2.13-4.15.2.jar",
+      "sha256": "a018de3bb3fda248e1e5b0677c43859771f9292bb79e6066e86239fa905ef7c5"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/common_2.13/4.15.2/common_2.13-4.15.2.jar",
+      "sha256": "309d134ba017a7a69acc65ec0f157ba99ab753dee259d403088b2f6867c6f5f7"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/io_2.13/4.15.2/io_2.13-4.15.2.jar",
+      "sha256": "5c2814d9d1f54b734775fe5cd11fddaeb6bc2ee77110915b3c3ceef4825e107b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fastparse_2.13/3.1.1/fastparse_2.13-3.1.1.jar",
+      "sha256": "ff3f37dad0f89c9cff494cb984edc122a3c282f063790949e825ae039dcad9d5"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.4.4/sourcecode_2.13-0.4.4.jar",
+      "sha256": "bd4e99aef8267a410b6ed716c487cf5256f801425f158a8c9cbd056eb032d80d"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/geny_2.13/1.1.1/geny_2.13-1.1.1.jar",
+      "sha256": "20af231c222fc71c29e06b3cd8d9190a16b412da83cc49fb0b778cf2dc6f94d2"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/ujson_2.13/4.0.2/ujson_2.13-4.0.2.jar",
+      "sha256": "9d96ab1088bc370c06682f92151fd43d238a1c5c8a86a50bdda785f6fa28424f"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/upickle-core_2.13/4.0.2/upickle-core_2.13-4.0.2.jar",
+      "sha256": "7896e716e7122872926591a3e8c14b0123390cc8ff533b14e7c187db773b496e"
+    }
+  ]
+}

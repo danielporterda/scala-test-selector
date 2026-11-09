@@ -1,0 +1,90 @@
+{
+  "schema": "rust-selector-native-jvm-fixture/v1",
+  "javac": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+  "javac_sha256": "18046707ee067a5a7ababd7a1f9dd2cbae1e6686ebc50d57ea4a7f3a80f1af43",
+  "javac_version": "javac 21.0.12.1",
+  "source_sha256": "9f602c60b5206ad71177178695cadcd5ed7522a9014cbe51814a6f584c179704",
+  "product_tests_executed": false,
+  "outputs": [
+    {
+      "path": "classes/fixture/Base.class",
+      "bytes": 242,
+      "sha256": "77dd1b391f61f02929231d008d4479cc66fedab74730225a98fbf44c448116df"
+    },
+    {
+      "path": "classes/fixture/Child.class",
+      "bytes": 305,
+      "sha256": "216e5c6f1b3168f5b114e60374d31a527233e4b3306ccff2478b8993e47cb7b3"
+    },
+    {
+      "path": "classes/fixture/Immediate.class",
+      "bytes": 204,
+      "sha256": "64702e3dc47bf121935c55a9da1e13f2786468b9bc5719da9b2ece5e3a4f4828"
+    },
+    {
+      "path": "classes/fixture/Made.class",
+      "bytes": 210,
+      "sha256": "0b0fbcef0b0f390deca837f3402218197942e3c70694962d3e0d1912df1b07ec"
+    },
+    {
+      "path": "classes/fixture/Probe.class",
+      "bytes": 2305,
+      "sha256": "e87aa49d8bc2789eaa404cf48c6a1c36eeca773d501e0ea43b4d414f1cc2eba3"
+    },
+    {
+      "path": "classes/fixture/Refined.class",
+      "bytes": 147,
+      "sha256": "4e615c349d1e039010e0b020806b5ab6b2fb81bdf9a9cb61ada63776c84201c2"
+    },
+    {
+      "path": "classes/fixture/Runner.class",
+      "bytes": 109,
+      "sha256": "5e1b6ae18d834c7cf3a85069f6e733cfd03e3223ab66cba2da487b6384bf6e6e"
+    },
+    {
+      "path": "fixture-alternate.jar",
+      "bytes": 4345,
+      "sha256": "ad80e3e66caace19a45d5126adf1a845f50eeac0ca521deb217b8522643b08b4"
+    },
+    {
+      "path": "fixture-deflated.jar",
+      "bytes": 2839,
+      "sha256": "0f74275ccff59730981d6761519cd62aa255e6c3da866398bd4e9239dcacc9c9"
+    },
+    {
+      "path": "fixture-stored.jar",
+      "bytes": 4352,
+      "sha256": "7288140b1d243cda8070b2c8ef1606b1df59f43df6c873d424401f685742157f"
+    }
+  ],
+  "commands": [
+    {
+      "variant": "original",
+      "command_template": [
+        "javac",
+        "--release",
+        "17",
+        "-g:none",
+        "-d",
+        "<classes>",
+        "<Probe.java>"
+      ],
+      "source_sha256": "9f602c60b5206ad71177178695cadcd5ed7522a9014cbe51814a6f584c179704",
+      "exit_code": 0
+    },
+    {
+      "variant": "alternate",
+      "command_template": [
+        "javac",
+        "--release",
+        "17",
+        "-g:none",
+        "-d",
+        "<classes>",
+        "<Probe.java>"
+      ],
+      "source_sha256": "51295a61aa7a5294d5ca4953b7cbca4847dbbaefda19e37e3a26d6a29cb3c26f",
+      "exit_code": 0
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "schema": "rust-selector-compiler-fixture/v1",
+  "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+  "kind": "exact_subset_of_real_capture",
+  "new_compilation": false,
+  "producer": {
+    "decoder_path": "ci-cost-study/prototype/semanticdb_export.py",
+    "decoder_sha256": "77ce03933a6817116cf387103c2c72969e3536a86cf868a7ece4a98eadf86a17",
+    "exporter_sha256": "4d1e1f5cc9f6797a1c401a7538c9bb71ef6b7791bb5e496b9e099acaa08f9770",
+    "semanticdb_schema": 4,
+    "semanticdb_plugin_version": "4.15.2"
+  },
+  "upstream_bundle": {
+    "path": "ci-cost-study/compiler-selector/capture/c759ad48a1dffcbc4cc0abc6527a0252ced85f6b/replay-bundle.json",
+    "bytes": 1990,
+    "sha256": "39f4273693dae8f1645e270a97453efc62640339a72b32b17600cae6dd7d98d3"
+  },
+  "upstream_manifest": {
+    "path": "ci-cost-study/compiler-selector/capture/c759ad48a1dffcbc4cc0abc6527a0252ced85f6b/documents-manifest.json",
+    "bytes": 6175261,
+    "sha256": "a2a028f339b973e17fadf2374940491358edd05bfedbbae9aae6faf0fef965dc"
+  },
+  "upstream_decoded": {
+    "path": "ci-cost-study/compiler-selector/capture/c759ad48a1dffcbc4cc0abc6527a0252ced85f6b/semanticdb-documents.jsonl.gz",
+    "bytes": 76252987,
+    "sha256": "4a1ebe630da1c27d45b08de11ed313c50bedc96959c6192f01b07679ab730d2b"
+  },
+  "upstream_syntax": {
+    "path": "ci-cost-study/helper-shadow/downstream-evaluation/annotation-lexical-v403/captured-fixture.json.gz",
+    "bytes": 229499,
+    "sha256": "b0c66a04b25464dc6bd667a59bea2002efbf47f7bf6f3e16a31b96407e80b69e"
+  },
+  "raw_layers": [
+    {
+      "path": "ci-cost-study/compiler-selector/capture/4d270fdbdd8619590ef5e520a78585f5bb1e304a/semanticdb-raw.tar.gz",
+      "sha256": "31e179ccc43836fae7b614d9126b242d2be66971c984980ad36d03d5c7d1461c",
+      "bytes": 56796002
+    },
+    {
+      "path": "ci-cost-study/compiler-selector/capture/c759ad48a1dffcbc4cc0abc6527a0252ced85f6b/semanticdb-delta.tar.gz",
+      "sha256": "dbb56747ef742134bd797d3b551db530287f7e8a36ccea59714e2ac06ca054cf",
+      "bytes": 7892764
+    }
+  ],
+  "native_syntax": {
+    "producer_sha256": "306910603430eb0b508716a1d3e77d292280c23a67767af155e23803f6edb5a5",
+    "producer_identity_scope": "exporter source digest; ordered JVM classpath hashes retained separately in native-tooling.json",
+    "producer": "actual ScalaSpans JVM run over the exact two captured source texts",
+    "new_product_compilation": false
+  },
+  "records": [
+    {
+      "path": "apps/app/src/main/scala/org/lfdecentralizedtrust/splice/SpliceApp.scala",
+      "source_sha256": "4548680c113d0a49dbb941a94d2492ec44e6541df3177d449e8219e658459ef0",
+      "source_md5": "5f161a1b8a45e13ef6283f3aa83e4877",
+      "source_contexts": [
+        "project:apps-app/configuration:compile"
+      ],
+      "input_target_contexts": [
+        "project:apps-app/configuration:compile"
+      ],
+      "semanticdb_input": "apps/app/target/scala-2.13/meta/META-INF/semanticdb/apps/app/src/main/scala/org/lfdecentralizedtrust/splice/SpliceApp.scala.semanticdb",
+      "semanticdb_input_sha256": "1e74146eabc0a147e216ac4e4eb3b5bc3d547dd1c57ed02174dee207452978b0",
+      "syntax_status": "native_scalaspans_source_hash_bound",
+      "symbols": 13,
+      "occurrences": 94,
+      "synthetics": 4
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "source_sha256": "8bf640e640e10378feb137a10dba6222cceec9f48abbb48dd6495c022f8d19db",
+      "source_md5": "3fefd4d7c6a6fa1fb5887dda83679619",
+      "source_contexts": [
+        "project:canton-community-base/configuration:compile"
+      ],
+      "input_target_contexts": [
+        "project:canton-community-base/configuration:compile"
+      ],
+      "semanticdb_input": "canton/community/base/target/scala-2.13/meta/META-INF/semanticdb/canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala.semanticdb",
+      "semanticdb_input_sha256": "bb7d341b7e390dd89e5be6a139dae93bda0926024ac095a9a628f283c855d8bb",
+      "syntax_status": "native_scalaspans_source_hash_bound",
+      "symbols": 349,
+      "occurrences": 1281,
+      "synthetics": 126
+    }
+  ],
+  "outputs": [
+    {
+      "path": "ci-cost-study/rust-selector/fixtures/compiler-smoke/clock.scala",
+      "bytes": 29937,
+      "sha256": "8bf640e640e10378feb137a10dba6222cceec9f48abbb48dd6495c022f8d19db"
+    },
+    {
+      "path": "ci-cost-study/rust-selector/fixtures/compiler-smoke/documents.jsonl",
+      "bytes": 427450,
+      "sha256": "485a6287e2b5950dbf0708ead540870092f199cf35dedb2413e6c1e188df3d1c"
+    },
+    {
+      "path": "ci-cost-study/rust-selector/fixtures/compiler-smoke/helper-syntax.jsonl",
+      "bytes": 525259,
+      "sha256": "2b2ccf0553997c2a73b500ddc262be4bbfae0db1d1815b597b4e161288859a1e"
+    },
+    {
+      "path": "ci-cost-study/rust-selector/fixtures/compiler-smoke/native-tooling.json",
+      "bytes": 5305,
+      "sha256": "01e41b78ccfe04c919fdb2506a4b210ba9a2a74543834a9bdde244eac7ae0d7d"
+    },
+    {
+      "path": "ci-cost-study/rust-selector/fixtures/compiler-smoke/raw/1e74146eabc0a147e216ac4e4eb3b5bc3d547dd1c57ed02174dee207452978b0.semanticdb",
+      "bytes": 9335,
+      "sha256": "1e74146eabc0a147e216ac4e4eb3b5bc3d547dd1c57ed02174dee207452978b0"
+    },
+    {
+      "path": "ci-cost-study/rust-selector/fixtures/compiler-smoke/raw/bb7d341b7e390dd89e5be6a139dae93bda0926024ac095a9a628f283c855d8bb.semanticdb",
+      "bytes": 163026,
+      "sha256": "bb7d341b7e390dd89e5be6a139dae93bda0926024ac095a9a628f283c855d8bb"
+    },
+    {
+      "path": "ci-cost-study/rust-selector/fixtures/compiler-smoke/splice-app.scala",
+      "bytes": 1698,
+      "sha256": "4548680c113d0a49dbb941a94d2492ec44e6541df3177d449e8219e658459ef0"
+    },
+    {
+      "path": "ci-cost-study/rust-selector/fixtures/compiler-smoke/syntax.jsonl",
+      "bytes": 480745,
+      "sha256": "614846ff42cf7c8b58682203d47d939161d22ee96cfb6aac31d50dbdc74dfad8"
+    }
+  ],
+  "limitations": [
+    "Two source/compiler documents are not a closed program or a complete suite catalogue.",
+    "Native ScalaSpans syntax is newly produced from the exact two captured source texts; it is not a historical PR7646 syntax artifact.",
+    "The separately retained helper-syntax.jsonl Clock lowering has identical source bytes and compiler record multisets, but its occurrence order and raw protobuf hashes differ; original PR7646 document order is preserved.",
+    "No external binary bodies or successful runtime-provider results are fabricated.",
+    "Expected direct body calls are source-reviewed acceptance assertions, not earlier selector output."
+  ]
+}

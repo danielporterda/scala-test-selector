@@ -1,0 +1,16 @@
+Compiled from "Library.scala"
+public final class curriedcase.Library$ {
+  public static final curriedcase.Library$ MODULE$;
+    descriptor: Lcurriedcase/Library$;
+  public static {};
+    descriptor: ()V
+
+  public int curried(int, org.scalactic.source.Position);
+    descriptor: (ILorg/scalactic/source/Position;)I
+
+  public int returned(int);
+    descriptor: (I)I
+
+  private curriedcase.Library$();
+    descriptor: ()V
+}

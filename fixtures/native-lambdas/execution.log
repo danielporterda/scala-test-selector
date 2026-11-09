@@ -1,0 +1,11 @@
+deferred:0:0
+static:3:0
+receiver:3:5
+bound:3:6
+opaque-followed-by-store:9
+native-wrappers:6:6
+target-created:0:0
+target-run:1:1
+target-wrapper:1:2
+unbound-created:6
+unbound-run:7

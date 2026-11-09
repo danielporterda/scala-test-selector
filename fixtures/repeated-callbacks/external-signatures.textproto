@@ -1,0 +1,213 @@
+documents {
+  schema: SEMANTICDB4
+  uri: "repeatedcallbacks/Api.class"
+  text: ""
+  symbols {
+    symbol: "repeatedcallbacks/Api#aggregate()."
+    kind: METHOD
+    properties: 0
+    display_name: "aggregate"
+    language: SCALA
+    signature {
+      method_signature {
+        type_parameters {
+        }
+        parameter_lists {
+          symlinks: "repeatedcallbacks/Api#aggregate().(callbacks)"
+        }
+        return_type {
+          type_ref {
+            prefix {
+            }
+            symbol: "scala/Int#"
+          }
+        }
+      }
+    }
+    access {
+      public_access {
+      }
+    }
+  }
+  symbols {
+    symbol: "repeatedcallbacks/Api#aggregate().(callbacks)"
+    kind: PARAMETER
+    properties: 0
+    display_name: "callbacks"
+    language: SCALA
+    signature {
+      value_signature {
+        tpe {
+          repeated_type {
+            tpe {
+              type_ref {
+                prefix {
+                }
+                symbol: "scala/Function0#"
+                type_arguments {
+                  type_ref {
+                    prefix {
+                    }
+                    symbol: "scala/Int#"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    access {
+    }
+  }
+  symbols {
+    symbol: "repeatedcallbacks/Api#store()."
+    kind: METHOD
+    properties: 0
+    display_name: "store"
+    language: SCALA
+    signature {
+      method_signature {
+        type_parameters {
+        }
+        parameter_lists {
+          symlinks: "repeatedcallbacks/Api#store().(callbacks)"
+        }
+        return_type {
+          type_ref {
+            prefix {
+            }
+            symbol: "scala/Function0#"
+            type_arguments {
+              type_ref {
+                prefix {
+                }
+                symbol: "scala/Int#"
+              }
+            }
+          }
+        }
+      }
+    }
+    access {
+      public_access {
+      }
+    }
+  }
+  symbols {
+    symbol: "repeatedcallbacks/Api#store().(callbacks)"
+    kind: PARAMETER
+    properties: 0
+    display_name: "callbacks"
+    language: SCALA
+    signature {
+      value_signature {
+        tpe {
+          repeated_type {
+            tpe {
+              type_ref {
+                prefix {
+                }
+                symbol: "scala/Function0#"
+                type_arguments {
+                  type_ref {
+                    prefix {
+                    }
+                    symbol: "scala/Int#"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    access {
+    }
+  }
+  symbols {
+    symbol: "repeatedcallbacks/Api#mixed()."
+    kind: METHOD
+    properties: 0
+    display_name: "mixed"
+    language: SCALA
+    signature {
+      method_signature {
+        type_parameters {
+        }
+        parameter_lists {
+          symlinks: "repeatedcallbacks/Api#mixed().(prefix)"
+          symlinks: "repeatedcallbacks/Api#mixed().(callbacks)"
+        }
+        return_type {
+          type_ref {
+            prefix {
+            }
+            symbol: "scala/Int#"
+          }
+        }
+      }
+    }
+    access {
+      public_access {
+      }
+    }
+  }
+  symbols {
+    symbol: "repeatedcallbacks/Api#mixed().(prefix)"
+    kind: PARAMETER
+    properties: 0
+    display_name: "prefix"
+    language: SCALA
+    signature {
+      value_signature {
+        tpe {
+          by_name_type {
+            tpe {
+              type_ref {
+                prefix {
+                }
+                symbol: "scala/Int#"
+              }
+            }
+          }
+        }
+      }
+    }
+    access {
+    }
+  }
+  symbols {
+    symbol: "repeatedcallbacks/Api#mixed().(callbacks)"
+    kind: PARAMETER
+    properties: 0
+    display_name: "callbacks"
+    language: SCALA
+    signature {
+      value_signature {
+        tpe {
+          repeated_type {
+            tpe {
+              type_ref {
+                prefix {
+                }
+                symbol: "scala/Function0#"
+                type_arguments {
+                  type_ref {
+                    prefix {
+                    }
+                    symbol: "scala/Int#"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    access {
+    }
+  }
+  language: SCALA
+  md5: ""
+}

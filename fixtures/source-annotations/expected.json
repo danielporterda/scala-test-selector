@@ -1,0 +1,30 @@
+{
+  "changed_paths": [
+    "src/annotationcase/Service.scala"
+  ],
+  "selected_suites": [
+    "annotationcase.AffectedSuite"
+  ],
+  "excluded_suites": [
+    "annotationcase.UnaffectedSuite"
+  ],
+  "completion": "complete",
+  "annotation_symbol": "java/lang/SuppressWarnings#",
+  "independent_observed_values": {
+    "base": [
+      41,
+      7
+    ],
+    "head": [
+      42,
+      7
+    ],
+    "annotation-only": [
+      41,
+      7
+    ]
+  },
+  "annotation_only_selected_suites": [],
+  "annotation_only_execution_bytecode_equals_base": true,
+  "annotation_only_classfile_equals_base": false
+}

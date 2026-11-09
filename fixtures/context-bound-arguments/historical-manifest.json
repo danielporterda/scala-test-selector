@@ -1,0 +1,305 @@
+{
+  "schema": "selector-context-bound-arguments-fixture/v1",
+  "revision": "258997b4cf170665f8e3bf4823ef52c807b4e647",
+  "revision_kind": "first40hex_of_source_tree_sha256",
+  "source_tree_sha256": "258997b4cf170665f8e3bf4823ef52c807b4e647e3c6f4755b2501f88588652e",
+  "generator_sha256": "0e8f6e70ebe494d9ce394392c9dc131cc574a594438fead47f7aeea1e5570c2b",
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba",
+      "bytes": 23982496
+    }
+  ],
+  "selector": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase11-build/executables/8a511ea7b29c4e7a648bee7620c6a9ce9ef4cce427dd9ad0c6421439cb7e1f6d/selector",
+    "sha256": "8a511ea7b29c4e7a648bee7620c6a9ce9ef4cce427dd9ad0c6421439cb7e1f6d"
+  },
+  "commands": [
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/context-bound-arguments",
+      "-P:semanticdb:targetroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/context-bound-arguments/raw",
+      "-P:semanticdb:synthetics:on",
+      "-Yrangepos",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/context-bound-arguments/src/contextboundcase/Arguments.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/context-bound-arguments/validation/CheckArguments.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "contextboundcase.CheckArguments",
+      "omitted"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "contextboundcase.CheckArguments",
+      "explicit"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "contextboundcase.CheckArguments",
+      "named"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "contextboundcase.CheckArguments",
+      "evidence"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "contextboundcase.CheckArguments",
+      "never"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "contextboundcase.CheckArguments",
+      "immediate"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "contextboundcase.CheckArguments",
+      "lambda-named"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "contextboundcase.CheckArguments",
+      "lambda-placeholder"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-context-bound-arguments-kbthgwmr/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "-p",
+      "-c",
+      "-s",
+      "contextboundcase.Api$",
+      "contextboundcase.Calls$",
+      "contextboundcase.Syntax$",
+      "contextboundcase.Syntax$RenderOps",
+      "contextboundcase.RecordingRender",
+      "scala.Predef$"
+    ],
+    [
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase11-build/executables/8a511ea7b29c4e7a648bee7620c6a9ce9ef4cce427dd9ad0c6421439cb7e1f6d/selector",
+      "capture",
+      "--input",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/context-bound-arguments/capture.json",
+      "--output",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/context-bound-arguments/documents.jsonl",
+      "--workers",
+      "2"
+    ],
+    [
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase11-build/executables/8a511ea7b29c4e7a648bee7620c6a9ce9ef4cce427dd9ad0c6421439cb7e1f6d/selector",
+      "syntax",
+      "--input",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/context-bound-arguments/documents.jsonl",
+      "--exporter",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/compiler-selector/engine/spans/ScalaSpans.scala",
+      "--tool-cache",
+      "/private/tmp/rust-selector-execution-syntax",
+      "--output",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/context-bound-arguments/syntax.jsonl",
+      "--workers",
+      "2"
+    ]
+  ],
+  "independent_runtime_observations": {
+    "omitted": [
+      "created:1:0:0",
+      "invoked:10:1:1:2"
+    ],
+    "explicit": [
+      "created:0:0:0",
+      "invoked:10:0:1:2"
+    ],
+    "named": [
+      "created:1:0:0",
+      "invoked:10:1:1:2"
+    ],
+    "evidence": [
+      "created:1:0:0",
+      "invoked:15:1:1:3"
+    ],
+    "never": [
+      "created:1:0:0"
+    ],
+    "immediate": [
+      "immediate:21:1:1:3"
+    ],
+    "lambda-named": [
+      "lambda-named:6:0:1:2"
+    ],
+    "lambda-placeholder": [
+      "lambda-placeholder:6:0:1:2"
+    ]
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "121dde5401adc1392ce8945e578f72aa9aa131c29dfc8127ad3ed8c366a92666",
+      "bytes": 1970
+    },
+    {
+      "path": "binary.json",
+      "sha256": "153c92b739411f6c0c44ceebdd6612e83b46a7654276d5bd1ab5fd00473a0a97",
+      "bytes": 3064
+    },
+    {
+      "path": "bytecode.jar",
+      "sha256": "e41bd2f81c722ea1a2bf04861ad035c38255e8ea1ddd70726a9f9ad1db034c3d",
+      "bytes": 14308
+    },
+    {
+      "path": "capture.json",
+      "sha256": "05be5c364dec97987aa95a11b86b170e1ebc68f190aa357c92328a576cf4744e",
+      "bytes": 826
+    },
+    {
+      "path": "capture.log",
+      "sha256": "55995b7962b7cffb8d8386f7dfcdae34f865c7f1aeb3f8b640b636eb06c6a219",
+      "bytes": 396
+    },
+    {
+      "path": "compile-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "documents.jsonl",
+      "sha256": "c249c57f05b605b9738acd566b9386456d72e437b2e1525dc940be1f71ce5005",
+      "bytes": 56678
+    },
+    {
+      "path": "evidence.log",
+      "sha256": "b0922c4e91203bd92ac895a3be33cc267086588bbd3ce7768582cb8c5b67d4dc",
+      "bytes": 31
+    },
+    {
+      "path": "explicit.log",
+      "sha256": "2793871c18a4d1ec089f940247615ee95052d854b9bfe926f3817f4a5132cf6c",
+      "bytes": 31
+    },
+    {
+      "path": "immediate.log",
+      "sha256": "638e7ea0618bf7bfd196f11a184587174112db15bade73ec124d813e354231f4",
+      "bytes": 19
+    },
+    {
+      "path": "java-version.log",
+      "sha256": "da6bb29c482c0fd5ea827d1eecfcf573d88175541589705d776142562e788e18",
+      "bytes": 167
+    },
+    {
+      "path": "javap.log",
+      "sha256": "6df72d1ba405889f62b051ace51631d885795655fa0aeca1bfc55a09846c305e",
+      "bytes": 42890
+    },
+    {
+      "path": "lambda-named.log",
+      "sha256": "5deecc4ed878f109b0f38264373be992462258fa2f001e18d144c3243c02c277",
+      "bytes": 21
+    },
+    {
+      "path": "lambda-placeholder.log",
+      "sha256": "fe590d2df03a586adfd5cd35a139cdc2a377fa1df3dbb1336771ade884b1cdf8",
+      "bytes": 27
+    },
+    {
+      "path": "named.log",
+      "sha256": "73349aef6ef676d9bee30c021a5460af5132ea3f8d3ead6fea885466881a32be",
+      "bytes": 31
+    },
+    {
+      "path": "never.log",
+      "sha256": "d7686679279fea41612c849008d7cd45d14696b3b3abe4f52f971f9fa02a51a4",
+      "bytes": 14
+    },
+    {
+      "path": "omitted.log",
+      "sha256": "73349aef6ef676d9bee30c021a5460af5132ea3f8d3ead6fea885466881a32be",
+      "bytes": 31
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/contextboundcase/Arguments.scala.semanticdb",
+      "sha256": "d76a450a3fd3dfd20ddb51e99ec5f3949dc7a9fbb81f67ba9a578deaf1387ced",
+      "bytes": 20344
+    },
+    {
+      "path": "src/contextboundcase/Arguments.scala",
+      "sha256": "37757f2c03d0ec7739e691eaddb0b064c0a89eefc0c9a9b212f3ca10a0f35c4e",
+      "bytes": 1926
+    },
+    {
+      "path": "syntax.jsonl",
+      "sha256": "4e0316980a3a2b94cd6f2a72771a8016668e9def2bd96c088443226fd2807436",
+      "bytes": 59814
+    },
+    {
+      "path": "syntax.log",
+      "sha256": "55e633bf0054010588e1e08c1bc82e9726a9e2b0b8eecd6f85a0877c21bce44b",
+      "bytes": 384
+    },
+    {
+      "path": "validation/CheckArguments.scala",
+      "sha256": "c3798b9010a7daa50a59f993834d7017e6dcf9918fc1286714f7bb5fb9fe9731",
+      "bytes": 1180
+    }
+  ]
+}

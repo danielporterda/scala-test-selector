@@ -1,0 +1,1190 @@
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/classes/floatingcase/Probe.class
+  Last modified Nov 8, 2026; size 5682 bytes
+  SHA-256 checksum e7a5eeade9041acb45788f95b12f231a13a6daf534be84a43c5bb8d1eef45f53
+  Compiled from "Probe.java"
+public final class floatingcase.Probe
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #8                          // floatingcase/Probe
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 18, attributes: 4
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Fieldref           #8.#9         // floatingcase/Probe.hits:I
+    #8 = Class              #10           // floatingcase/Probe
+    #9 = NameAndType        #11:#12       // hits:I
+   #10 = Utf8               floatingcase/Probe
+   #11 = Utf8               hits
+   #12 = Utf8               I
+   #13 = Fieldref           #8.#14        // floatingcase/Probe.stored:F
+   #14 = NameAndType        #15:#16       // stored:F
+   #15 = Utf8               stored
+   #16 = Utf8               F
+   #17 = InterfaceMethodref #18.#19       // java/lang/Runnable.run:()V
+   #18 = Class              #20           // java/lang/Runnable
+   #19 = NameAndType        #21:#6        // run:()V
+   #20 = Utf8               java/lang/Runnable
+   #21 = Utf8               run
+   #22 = Methodref          #8.#23        // floatingcase/Probe.opaque:()V
+   #23 = NameAndType        #24:#6        // opaque:()V
+   #24 = Utf8               opaque
+   #25 = Methodref          #26.#27       // java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+   #26 = Class              #28           // java/lang/Class
+   #27 = NameAndType        #29:#30       // forName:(Ljava/lang/String;)Ljava/lang/Class;
+   #28 = Utf8               java/lang/Class
+   #29 = Utf8               forName
+   #30 = Utf8               (Ljava/lang/String;)Ljava/lang/Class;
+   #31 = Class              #32           // java/lang/IllegalArgumentException
+   #32 = Utf8               java/lang/IllegalArgumentException
+   #33 = Methodref          #31.#3        // java/lang/IllegalArgumentException."<init>":()V
+   #34 = Methodref          #8.#35        // floatingcase/Probe.changed:()I
+   #35 = NameAndType        #36:#37       // changed:()I
+   #36 = Utf8               changed
+   #37 = Utf8               ()I
+   #38 = InvokeDynamic      #0:#39        // #0:makeConcatWithConstants:(F)Ljava/lang/String;
+   #39 = NameAndType        #40:#41       // makeConcatWithConstants:(F)Ljava/lang/String;
+   #40 = Utf8               makeConcatWithConstants
+   #41 = Utf8               (F)Ljava/lang/String;
+   #42 = Fieldref           #43.#44       // java/lang/System.out:Ljava/io/PrintStream;
+   #43 = Class              #45           // java/lang/System
+   #44 = NameAndType        #46:#47       // out:Ljava/io/PrintStream;
+   #45 = Utf8               java/lang/System
+   #46 = Utf8               out
+   #47 = Utf8               Ljava/io/PrintStream;
+   #48 = Methodref          #49.#50       // floatingcase/Probe$Pure.fdiv:(FF)F
+   #49 = Class              #51           // floatingcase/Probe$Pure
+   #50 = NameAndType        #52:#53       // fdiv:(FF)F
+   #51 = Utf8               floatingcase/Probe$Pure
+   #52 = Utf8               fdiv
+   #53 = Utf8               (FF)F
+   #54 = Methodref          #49.#55       // floatingcase/Probe$Pure.frem:(FF)F
+   #55 = NameAndType        #56:#53       // frem:(FF)F
+   #56 = Utf8               frem
+   #57 = InvokeDynamic      #1:#58        // #1:makeConcatWithConstants:(FF)Ljava/lang/String;
+   #58 = NameAndType        #40:#59       // makeConcatWithConstants:(FF)Ljava/lang/String;
+   #59 = Utf8               (FF)Ljava/lang/String;
+   #60 = Methodref          #61.#62       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #61 = Class              #63           // java/io/PrintStream
+   #62 = NameAndType        #64:#65       // println:(Ljava/lang/String;)V
+   #63 = Utf8               java/io/PrintStream
+   #64 = Utf8               println
+   #65 = Utf8               (Ljava/lang/String;)V
+   #66 = Methodref          #49.#67       // floatingcase/Probe$Pure.ddiv:(DD)D
+   #67 = NameAndType        #68:#69       // ddiv:(DD)D
+   #68 = Utf8               ddiv
+   #69 = Utf8               (DD)D
+   #70 = Methodref          #49.#71       // floatingcase/Probe$Pure.drem:(DD)D
+   #71 = NameAndType        #72:#69       // drem:(DD)D
+   #72 = Utf8               drem
+   #73 = InvokeDynamic      #2:#74        // #2:makeConcatWithConstants:(DD)Ljava/lang/String;
+   #74 = NameAndType        #40:#75       // makeConcatWithConstants:(DD)Ljava/lang/String;
+   #75 = Utf8               (DD)Ljava/lang/String;
+   #76 = Methodref          #49.#77       // floatingcase/Probe$Pure.idiv:(II)I
+   #77 = NameAndType        #78:#79       // idiv:(II)I
+   #78 = Utf8               idiv
+   #79 = Utf8               (II)I
+   #80 = Class              #81           // java/lang/ArithmeticException
+   #81 = Utf8               java/lang/ArithmeticException
+   #82 = Methodref          #49.#83       // floatingcase/Probe$Pure.irem:(II)I
+   #83 = NameAndType        #84:#79       // irem:(II)I
+   #84 = Utf8               irem
+   #85 = Methodref          #49.#86       // floatingcase/Probe$Pure.ldiv:(JJ)J
+   #86 = NameAndType        #87:#88       // ldiv:(JJ)J
+   #87 = Utf8               ldiv
+   #88 = Utf8               (JJ)J
+   #89 = Methodref          #49.#90       // floatingcase/Probe$Pure.lrem:(JJ)J
+   #90 = NameAndType        #91:#88       // lrem:(JJ)J
+   #91 = Utf8               lrem
+   #92 = InvokeDynamic      #3:#93        // #3:makeConcatWithConstants:(I)Ljava/lang/String;
+   #93 = NameAndType        #40:#94       // makeConcatWithConstants:(I)Ljava/lang/String;
+   #94 = Utf8               (I)Ljava/lang/String;
+   #95 = Methodref          #8.#96        // floatingcase/Probe.field:(FF)F
+   #96 = NameAndType        #97:#53       // field:(FF)F
+   #97 = Utf8               field
+   #98 = InvokeDynamic      #4:#58        // #4:makeConcatWithConstants:(FF)Ljava/lang/String;
+   #99 = InvokeDynamic      #5:#100       // #5:run:()Ljava/lang/Runnable;
+  #100 = NameAndType        #21:#101      // run:()Ljava/lang/Runnable;
+  #101 = Utf8               ()Ljava/lang/Runnable;
+  #102 = Methodref          #8.#103       // floatingcase/Probe.callback:(FFLjava/lang/Runnable;)F
+  #103 = NameAndType        #104:#105     // callback:(FFLjava/lang/Runnable;)F
+  #104 = Utf8               callback
+  #105 = Utf8               (FFLjava/lang/Runnable;)F
+  #106 = InvokeDynamic      #6:#93        // #6:makeConcatWithConstants:(I)Ljava/lang/String;
+  #107 = Methodref          #8.#108       // floatingcase/Probe.nativeCall:(FF)F
+  #108 = NameAndType        #109:#53      // nativeCall:(FF)F
+  #109 = Utf8               nativeCall
+  #110 = Class              #111          // java/lang/UnsatisfiedLinkError
+  #111 = Utf8               java/lang/UnsatisfiedLinkError
+  #112 = String             #113          // native:UnsatisfiedLinkError
+  #113 = Utf8               native:UnsatisfiedLinkError
+  #114 = String             #115          // java.lang.String
+  #115 = Utf8               java.lang.String
+  #116 = Methodref          #8.#117       // floatingcase/Probe.reflected:(FFLjava/lang/String;)F
+  #117 = NameAndType        #118:#119     // reflected:(FFLjava/lang/String;)F
+  #118 = Utf8               reflected
+  #119 = Utf8               (FFLjava/lang/String;)F
+  #120 = InvokeDynamic      #7:#39        // #7:makeConcatWithConstants:(F)Ljava/lang/String;
+  #121 = Methodref          #8.#122       // floatingcase/Probe.monitor:(FFLjava/lang/Object;)F
+  #122 = NameAndType        #123:#124     // monitor:(FFLjava/lang/Object;)F
+  #123 = Utf8               monitor
+  #124 = Utf8               (FFLjava/lang/Object;)F
+  #125 = InvokeDynamic      #8:#39        // #8:makeConcatWithConstants:(F)Ljava/lang/String;
+  #126 = Methodref          #8.#127       // floatingcase/Probe.array:(FF[F)F
+  #127 = NameAndType        #128:#129     // array:(FF[F)F
+  #128 = Utf8               array
+  #129 = Utf8               (FF[F)F
+  #130 = InvokeDynamic      #9:#39        // #9:makeConcatWithConstants:(F)Ljava/lang/String;
+  #131 = Methodref          #8.#132       // floatingcase/Probe.caught:(FFZ)F
+  #132 = NameAndType        #133:#134     // caught:(FFZ)F
+  #133 = Utf8               caught
+  #134 = Utf8               (FFZ)F
+  #135 = InvokeDynamic      #10:#136      // #10:makeConcatWithConstants:(FI)Ljava/lang/String;
+  #136 = NameAndType        #40:#137      // makeConcatWithConstants:(FI)Ljava/lang/String;
+  #137 = Utf8               (FI)Ljava/lang/String;
+  #138 = InvokeDynamic      #11:#100      // #11:run:()Ljava/lang/Runnable;
+  #139 = Methodref          #8.#140       // floatingcase/Probe.caughtCallback:(FFZLjava/lang/Runnable;)F
+  #140 = NameAndType        #141:#142     // caughtCallback:(FFZLjava/lang/Runnable;)F
+  #141 = Utf8               caughtCallback
+  #142 = Utf8               (FFZLjava/lang/Runnable;)F
+  #143 = InvokeDynamic      #12:#100      // #12:run:()Ljava/lang/Runnable;
+  #144 = InvokeDynamic      #13:#145      // #13:makeConcatWithConstants:(II)Ljava/lang/String;
+  #145 = NameAndType        #40:#146      // makeConcatWithConstants:(II)Ljava/lang/String;
+  #146 = Utf8               (II)Ljava/lang/String;
+  #147 = Class              #148          // java/lang/Throwable
+  #148 = Utf8               java/lang/Throwable
+  #149 = String             #150          // identity-control
+  #150 = Utf8               identity-control
+  #151 = Methodref          #147.#152     // java/lang/Throwable."<init>":(Ljava/lang/String;)V
+  #152 = NameAndType        #5:#65        // "<init>":(Ljava/lang/String;)V
+  #153 = Methodref          #8.#154       // floatingcase/Probe.throwing:(FFLjava/lang/Throwable;)F
+  #154 = NameAndType        #155:#156     // throwing:(FFLjava/lang/Throwable;)F
+  #155 = Utf8               throwing
+  #156 = Utf8               (FFLjava/lang/Throwable;)F
+  #157 = InvokeDynamic      #14:#158      // #14:makeConcatWithConstants:(Z)Ljava/lang/String;
+  #158 = NameAndType        #40:#159      // makeConcatWithConstants:(Z)Ljava/lang/String;
+  #159 = Utf8               (Z)Ljava/lang/String;
+  #160 = Methodref          #8.#161       // floatingcase/Probe.dynamic:(FF)Ljava/lang/String;
+  #161 = NameAndType        #162:#59      // dynamic:(FF)Ljava/lang/String;
+  #162 = Utf8               dynamic
+  #163 = InvokeDynamic      #15:#164      // #15:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #164 = NameAndType        #40:#165      // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #165 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #166 = Methodref          #8.#167       // floatingcase/Probe.mixedInteger:(FFII)F
+  #167 = NameAndType        #168:#169     // mixedInteger:(FFII)F
+  #168 = Utf8               mixedInteger
+  #169 = Utf8               (FFII)F
+  #170 = String             #171          // mixed:ArithmeticException
+  #171 = Utf8               mixed:ArithmeticException
+  #172 = Utf8               Code
+  #173 = Utf8               LineNumberTable
+  #174 = Utf8               LocalVariableTable
+  #175 = Utf8               this
+  #176 = Utf8               Lfloatingcase/Probe;
+  #177 = Utf8               a
+  #178 = Utf8               b
+  #179 = Utf8               body
+  #180 = Utf8               Ljava/lang/Runnable;
+  #181 = Utf8               value
+  #182 = Utf8               name
+  #183 = Utf8               Ljava/lang/String;
+  #184 = Utf8               Exceptions
+  #185 = Class              #186          // java/lang/Exception
+  #186 = Utf8               java/lang/Exception
+  #187 = Utf8               lock
+  #188 = Utf8               Ljava/lang/Object;
+  #189 = Utf8               StackMapTable
+  #190 = Utf8               values
+  #191 = Utf8               [F
+  #192 = Utf8               error
+  #193 = Utf8               Ljava/lang/IllegalArgumentException;
+  #194 = Utf8               fail
+  #195 = Utf8               Z
+  #196 = Utf8               failure
+  #197 = Utf8               Ljava/lang/Throwable;
+  #198 = Utf8               numerator
+  #199 = Utf8               divisor
+  #200 = Utf8               main
+  #201 = Utf8               ([Ljava/lang/String;)V
+  #202 = Utf8               expected
+  #203 = Utf8               Ljava/lang/ArithmeticException;
+  #204 = Utf8               Ljava/lang/UnsatisfiedLinkError;
+  #205 = Utf8               observed
+  #206 = Utf8               args
+  #207 = Utf8               [Ljava/lang/String;
+  #208 = Utf8               integerThrows
+  #209 = Utf8               dormantHandlerHits
+  #210 = Class              #207          // "[Ljava/lang/String;"
+  #211 = Utf8               lambda$main$2
+  #212 = Utf8               lambda$main$1
+  #213 = Utf8               lambda$main$0
+  #214 = Utf8               SourceFile
+  #215 = Utf8               Probe.java
+  #216 = Utf8               NestMembers
+  #217 = Utf8               BootstrapMethods
+  #218 = String             #219          // value=\u0001
+  #219 = Utf8               value=\u0001
+  #220 = String             #221          // float:\u0001:\u0001
+  #221 = Utf8               float:\u0001:\u0001
+  #222 = String             #223          // double:\u0001:\u0001
+  #223 = Utf8               double:\u0001:\u0001
+  #224 = String             #225          // integer-zero-throws:\u0001
+  #225 = Utf8               integer-zero-throws:\u0001
+  #226 = String             #227          // field:\u0001:\u0001
+  #227 = Utf8               field:\u0001:\u0001
+  #228 = MethodType         #6            //  ()V
+  #229 = MethodHandle       6:#230        // REF_invokeStatic floatingcase/Probe.lambda$main$0:()V
+  #230 = Methodref          #8.#231       // floatingcase/Probe.lambda$main$0:()V
+  #231 = NameAndType        #213:#6       // lambda$main$0:()V
+  #232 = String             #233          // callback-hits:\u0001
+  #233 = Utf8               callback-hits:\u0001
+  #234 = String             #235          // reflection:\u0001
+  #235 = Utf8               reflection:\u0001
+  #236 = String             #237          // monitor:\u0001
+  #237 = Utf8               monitor:\u0001
+  #238 = String             #239          // array:\u0001
+  #239 = Utf8               array:\u0001
+  #240 = String             #241          // caught:\u0001:\u0001
+  #241 = Utf8               caught:\u0001:\u0001
+  #242 = MethodHandle       6:#243        // REF_invokeStatic floatingcase/Probe.lambda$main$1:()V
+  #243 = Methodref          #8.#244       // floatingcase/Probe.lambda$main$1:()V
+  #244 = NameAndType        #212:#6       // lambda$main$1:()V
+  #245 = MethodHandle       6:#246        // REF_invokeStatic floatingcase/Probe.lambda$main$2:()V
+  #246 = Methodref          #8.#247       // floatingcase/Probe.lambda$main$2:()V
+  #247 = NameAndType        #211:#6       // lambda$main$2:()V
+  #248 = String             #249          // handler-callback-hits:\u0001:\u0001
+  #249 = Utf8               handler-callback-hits:\u0001:\u0001
+  #250 = String             #251          // throw-identity:\u0001
+  #251 = Utf8               throw-identity:\u0001
+  #252 = String             #253          // dynamic:\u0001
+  #253 = Utf8               dynamic:\u0001
+  #254 = MethodHandle       6:#255        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #255 = Methodref          #256.#257     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #256 = Class              #258          // java/lang/invoke/StringConcatFactory
+  #257 = NameAndType        #40:#259      // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #258 = Utf8               java/lang/invoke/StringConcatFactory
+  #259 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #260 = MethodHandle       6:#261        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #261 = Methodref          #262.#263     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #262 = Class              #264          // java/lang/invoke/LambdaMetafactory
+  #263 = NameAndType        #265:#266     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #264 = Utf8               java/lang/invoke/LambdaMetafactory
+  #265 = Utf8               metafactory
+  #266 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #267 = Utf8               InnerClasses
+  #268 = Utf8               Pure
+  #269 = Class              #270          // java/lang/invoke/MethodHandles$Lookup
+  #270 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #271 = Class              #272          // java/lang/invoke/MethodHandles
+  #272 = Utf8               java/lang/invoke/MethodHandles
+  #273 = Utf8               Lookup
+{
+  public static float stored;
+    descriptor: F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public static int hits;
+    descriptor: I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public floatingcase.Probe();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lfloatingcase/Probe;
+
+  public static native void opaque();
+    descriptor: ()V
+    flags: (0x0109) ACC_PUBLIC, ACC_STATIC, ACC_NATIVE
+
+  public static int changed();
+    descriptor: ()I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #7                  // Field hits:I
+         3: iconst_1
+         4: iadd
+         5: dup
+         6: putstatic     #7                  // Field hits:I
+         9: ireturn
+      LineNumberTable:
+        line 19: 0
+
+  public static float field(float, float);
+    descriptor: (FF)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: fload_0
+         1: fload_1
+         2: fdiv
+         3: putstatic     #13                 // Field stored:F
+         6: getstatic     #13                 // Field stored:F
+         9: freturn
+      LineNumberTable:
+        line 20: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0     a   F
+            0      10     1     b   F
+
+  public static float callback(float, float, java.lang.Runnable);
+    descriptor: (FFLjava/lang/Runnable;)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=4, args_size=3
+         0: fload_0
+         1: fload_1
+         2: fdiv
+         3: fstore_3
+         4: aload_2
+         5: invokeinterface #17,  1           // InterfaceMethod java/lang/Runnable.run:()V
+        10: fload_3
+        11: freturn
+      LineNumberTable:
+        line 22: 0
+        line 23: 4
+        line 24: 10
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0     a   F
+            0      12     1     b   F
+            0      12     2  body   Ljava/lang/Runnable;
+            4       8     3 value   F
+
+  public static float nativeCall(float, float);
+    descriptor: (FF)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=2
+         0: fload_0
+         1: fload_1
+         2: fdiv
+         3: fstore_2
+         4: invokestatic  #22                 // Method opaque:()V
+         7: fload_2
+         8: freturn
+      LineNumberTable:
+        line 27: 0
+        line 28: 4
+        line 29: 7
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0     a   F
+            0       9     1     b   F
+            4       5     2 value   F
+
+  public static float reflected(float, float, java.lang.String) throws java.lang.Exception;
+    descriptor: (FFLjava/lang/String;)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=4, args_size=3
+         0: fload_0
+         1: fload_1
+         2: fdiv
+         3: fstore_3
+         4: aload_2
+         5: invokestatic  #25                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+         8: pop
+         9: fload_3
+        10: freturn
+      LineNumberTable:
+        line 32: 0
+        line 33: 4
+        line 34: 9
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      11     0     a   F
+            0      11     1     b   F
+            0      11     2  name   Ljava/lang/String;
+            4       7     3 value   F
+    Exceptions:
+      throws java.lang.Exception
+
+  public static float monitor(float, float, java.lang.Object);
+    descriptor: (FFLjava/lang/Object;)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=5, args_size=3
+         0: aload_2
+         1: dup
+         2: astore_3
+         3: monitorenter
+         4: fload_0
+         5: fload_1
+         6: fdiv
+         7: aload_3
+         8: monitorexit
+         9: freturn
+        10: astore        4
+        12: aload_3
+        13: monitorexit
+        14: aload         4
+        16: athrow
+      Exception table:
+         from    to  target type
+             4     9    10   any
+            10    14    10   any
+      LineNumberTable:
+        line 37: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      17     0     a   F
+            0      17     1     b   F
+            0      17     2  lock   Ljava/lang/Object;
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 10
+          locals = [ float, float, class java/lang/Object, class java/lang/Object ]
+          stack = [ class java/lang/Throwable ]
+
+  public static float array(float, float, float[]);
+    descriptor: (FF[F)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=3, args_size=3
+         0: aload_2
+         1: iconst_0
+         2: fload_0
+         3: fload_1
+         4: fdiv
+         5: fastore
+         6: aload_2
+         7: iconst_0
+         8: faload
+         9: freturn
+      LineNumberTable:
+        line 40: 0
+        line 41: 6
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      10     0     a   F
+            0      10     1     b   F
+            0      10     2 values   [F
+
+  public static float caught(float, float, boolean);
+    descriptor: (FFZ)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=4, args_size=3
+         0: iload_2
+         1: ifeq          12
+         4: new           #31                 // class java/lang/IllegalArgumentException
+         7: dup
+         8: invokespecial #33                 // Method java/lang/IllegalArgumentException."<init>":()V
+        11: athrow
+        12: fload_0
+        13: fload_1
+        14: fdiv
+        15: freturn
+        16: astore_3
+        17: invokestatic  #34                 // Method changed:()I
+        20: pop
+        21: fload_0
+        22: fload_1
+        23: frem
+        24: freturn
+      Exception table:
+         from    to  target type
+             0    15    16   Class java/lang/IllegalArgumentException
+      LineNumberTable:
+        line 45: 0
+        line 46: 12
+        line 47: 16
+        line 48: 17
+        line 49: 21
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           17       8     3 error   Ljava/lang/IllegalArgumentException;
+            0      25     0     a   F
+            0      25     1     b   F
+            0      25     2  fail   Z
+      StackMapTable: number_of_entries = 2
+        frame_type = 12 /* same */
+        frame_type = 67 /* same_locals_1_stack_item */
+          stack = [ class java/lang/IllegalArgumentException ]
+
+  public static float caughtCallback(float, float, boolean, java.lang.Runnable);
+    descriptor: (FFZLjava/lang/Runnable;)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=5, args_size=4
+         0: iload_2
+         1: ifeq          12
+         4: new           #31                 // class java/lang/IllegalArgumentException
+         7: dup
+         8: invokespecial #33                 // Method java/lang/IllegalArgumentException."<init>":()V
+        11: athrow
+        12: fload_0
+        13: fload_1
+        14: fdiv
+        15: freturn
+        16: astore        4
+        18: aload_3
+        19: invokeinterface #17,  1           // InterfaceMethod java/lang/Runnable.run:()V
+        24: fload_0
+        25: fload_1
+        26: frem
+        27: freturn
+      Exception table:
+         from    to  target type
+             0    15    16   Class java/lang/IllegalArgumentException
+      LineNumberTable:
+        line 54: 0
+        line 55: 12
+        line 56: 16
+        line 57: 18
+        line 58: 24
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           18      10     4 error   Ljava/lang/IllegalArgumentException;
+            0      28     0     a   F
+            0      28     1     b   F
+            0      28     2  fail   Z
+            0      28     3  body   Ljava/lang/Runnable;
+      StackMapTable: number_of_entries = 2
+        frame_type = 12 /* same */
+        frame_type = 67 /* same_locals_1_stack_item */
+          stack = [ class java/lang/IllegalArgumentException ]
+
+  public static float throwing(float, float, java.lang.Throwable) throws java.lang.Throwable;
+    descriptor: (FFLjava/lang/Throwable;)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=4, args_size=3
+         0: fload_0
+         1: fload_1
+         2: fdiv
+         3: fstore_3
+         4: fload_3
+         5: fconst_0
+         6: fcmpl
+         7: ifle          12
+        10: aload_2
+        11: athrow
+        12: fload_3
+        13: freturn
+      LineNumberTable:
+        line 62: 0
+        line 63: 4
+        line 64: 12
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      14     0     a   F
+            0      14     1     b   F
+            0      14     2 failure   Ljava/lang/Throwable;
+            4      10     3 value   F
+      StackMapTable: number_of_entries = 1
+        frame_type = 252 /* append */
+          offset_delta = 12
+          locals = [ float ]
+    Exceptions:
+      throws java.lang.Throwable
+
+  public static java.lang.String dynamic(float, float);
+    descriptor: (FF)Ljava/lang/String;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: fload_0
+         1: fload_1
+         2: fdiv
+         3: invokedynamic #38,  0             // InvokeDynamic #0:makeConcatWithConstants:(F)Ljava/lang/String;
+         8: areturn
+      LineNumberTable:
+        line 66: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0     a   F
+            0       9     1     b   F
+
+  public static float mixedInteger(float, float, int, int);
+    descriptor: (FFII)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=4, args_size=4
+         0: fload_0
+         1: fload_1
+         2: fdiv
+         3: iload_2
+         4: iload_3
+         5: idiv
+         6: i2f
+         7: fadd
+         8: freturn
+      LineNumberTable:
+        line 68: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0     a   F
+            0       9     1     b   F
+            0       9     2 numerator   I
+            0       9     3 divisor   I
+
+  public static void main(java.lang.String[]) throws java.lang.Throwable;
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=7, locals=5, args_size=1
+         0: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: fconst_1
+         4: fconst_0
+         5: invokestatic  #48                 // Method floatingcase/Probe$Pure.fdiv:(FF)F
+         8: fconst_1
+         9: fconst_0
+        10: invokestatic  #54                 // Method floatingcase/Probe$Pure.frem:(FF)F
+        13: invokedynamic #57,  0             // InvokeDynamic #1:makeConcatWithConstants:(FF)Ljava/lang/String;
+        18: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        21: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        24: dconst_1
+        25: dconst_0
+        26: invokestatic  #66                 // Method floatingcase/Probe$Pure.ddiv:(DD)D
+        29: dconst_1
+        30: dconst_0
+        31: invokestatic  #70                 // Method floatingcase/Probe$Pure.drem:(DD)D
+        34: invokedynamic #73,  0             // InvokeDynamic #2:makeConcatWithConstants:(DD)Ljava/lang/String;
+        39: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        42: iconst_0
+        43: istore_1
+        44: iconst_1
+        45: iconst_0
+        46: invokestatic  #76                 // Method floatingcase/Probe$Pure.idiv:(II)I
+        49: pop
+        50: goto          57
+        53: astore_2
+        54: iinc          1, 1
+        57: iconst_1
+        58: iconst_0
+        59: invokestatic  #82                 // Method floatingcase/Probe$Pure.irem:(II)I
+        62: pop
+        63: goto          70
+        66: astore_2
+        67: iinc          1, 1
+        70: lconst_1
+        71: lconst_0
+        72: invokestatic  #85                 // Method floatingcase/Probe$Pure.ldiv:(JJ)J
+        75: pop2
+        76: goto          83
+        79: astore_2
+        80: iinc          1, 1
+        83: lconst_1
+        84: lconst_0
+        85: invokestatic  #89                 // Method floatingcase/Probe$Pure.lrem:(JJ)J
+        88: pop2
+        89: goto          96
+        92: astore_2
+        93: iinc          1, 1
+        96: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        99: iload_1
+       100: invokedynamic #92,  0             // InvokeDynamic #3:makeConcatWithConstants:(I)Ljava/lang/String;
+       105: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       108: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       111: fconst_1
+       112: fconst_0
+       113: invokestatic  #95                 // Method field:(FF)F
+       116: getstatic     #13                 // Field stored:F
+       119: invokedynamic #98,  0             // InvokeDynamic #4:makeConcatWithConstants:(FF)Ljava/lang/String;
+       124: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       127: fconst_1
+       128: fconst_0
+       129: invokedynamic #99,  0             // InvokeDynamic #5:run:()Ljava/lang/Runnable;
+       134: invokestatic  #102                // Method callback:(FFLjava/lang/Runnable;)F
+       137: pop
+       138: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       141: getstatic     #7                  // Field hits:I
+       144: invokedynamic #106,  0            // InvokeDynamic #6:makeConcatWithConstants:(I)Ljava/lang/String;
+       149: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       152: fconst_1
+       153: fconst_0
+       154: invokestatic  #107                // Method nativeCall:(FF)F
+       157: pop
+       158: goto          170
+       161: astore_2
+       162: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       165: ldc           #112                // String native:UnsatisfiedLinkError
+       167: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       170: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       173: fconst_1
+       174: fconst_0
+       175: ldc           #114                // String java.lang.String
+       177: invokestatic  #116                // Method reflected:(FFLjava/lang/String;)F
+       180: invokedynamic #120,  0            // InvokeDynamic #7:makeConcatWithConstants:(F)Ljava/lang/String;
+       185: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       188: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       191: fconst_1
+       192: fconst_0
+       193: new           #2                  // class java/lang/Object
+       196: dup
+       197: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       200: invokestatic  #121                // Method monitor:(FFLjava/lang/Object;)F
+       203: invokedynamic #125,  0            // InvokeDynamic #8:makeConcatWithConstants:(F)Ljava/lang/String;
+       208: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       211: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       214: fconst_1
+       215: fconst_0
+       216: iconst_1
+       217: newarray       float
+       219: invokestatic  #126                // Method array:(FF[F)F
+       222: invokedynamic #130,  0            // InvokeDynamic #9:makeConcatWithConstants:(F)Ljava/lang/String;
+       227: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       230: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       233: fconst_1
+       234: fconst_0
+       235: iconst_1
+       236: invokestatic  #131                // Method caught:(FFZ)F
+       239: getstatic     #7                  // Field hits:I
+       242: invokedynamic #135,  0            // InvokeDynamic #10:makeConcatWithConstants:(FI)Ljava/lang/String;
+       247: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       250: fconst_1
+       251: fconst_0
+       252: iconst_0
+       253: invokedynamic #138,  0            // InvokeDynamic #11:run:()Ljava/lang/Runnable;
+       258: invokestatic  #139                // Method caughtCallback:(FFZLjava/lang/Runnable;)F
+       261: pop
+       262: getstatic     #7                  // Field hits:I
+       265: istore_2
+       266: fconst_1
+       267: fconst_0
+       268: iconst_1
+       269: invokedynamic #143,  0            // InvokeDynamic #12:run:()Ljava/lang/Runnable;
+       274: invokestatic  #139                // Method caughtCallback:(FFZLjava/lang/Runnable;)F
+       277: pop
+       278: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       281: iload_2
+       282: getstatic     #7                  // Field hits:I
+       285: invokedynamic #144,  0            // InvokeDynamic #13:makeConcatWithConstants:(II)Ljava/lang/String;
+       290: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       293: new           #147                // class java/lang/Throwable
+       296: dup
+       297: ldc           #149                // String identity-control
+       299: invokespecial #151                // Method java/lang/Throwable."<init>":(Ljava/lang/String;)V
+       302: astore_3
+       303: fconst_1
+       304: fconst_0
+       305: aload_3
+       306: invokestatic  #153                // Method throwing:(FFLjava/lang/Throwable;)F
+       309: pop
+       310: goto          337
+       313: astore        4
+       315: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       318: aload         4
+       320: aload_3
+       321: if_acmpne     328
+       324: iconst_1
+       325: goto          329
+       328: iconst_0
+       329: invokedynamic #157,  0            // InvokeDynamic #14:makeConcatWithConstants:(Z)Ljava/lang/String;
+       334: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       337: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       340: fconst_1
+       341: fconst_0
+       342: invokestatic  #160                // Method dynamic:(FF)Ljava/lang/String;
+       345: invokedynamic #163,  0            // InvokeDynamic #15:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+       350: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       353: fconst_1
+       354: fconst_0
+       355: iconst_1
+       356: iconst_0
+       357: invokestatic  #166                // Method mixedInteger:(FFII)F
+       360: pop
+       361: goto          374
+       364: astore        4
+       366: getstatic     #42                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       369: ldc           #170                // String mixed:ArithmeticException
+       371: invokevirtual #60                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       374: return
+      Exception table:
+         from    to  target type
+            44    50    53   Class java/lang/ArithmeticException
+            57    63    66   Class java/lang/ArithmeticException
+            70    76    79   Class java/lang/ArithmeticException
+            83    89    92   Class java/lang/ArithmeticException
+           152   158   161   Class java/lang/UnsatisfiedLinkError
+           303   310   313   Class java/lang/Throwable
+           353   361   364   Class java/lang/ArithmeticException
+      LineNumberTable:
+        line 72: 0
+        line 73: 21
+        line 74: 42
+        line 75: 44
+        line 76: 57
+        line 77: 70
+        line 78: 83
+        line 79: 96
+        line 80: 108
+        line 81: 127
+        line 82: 138
+        line 83: 152
+        line 84: 158
+        line 85: 170
+        line 86: 188
+        line 87: 211
+        line 88: 230
+        line 89: 250
+        line 90: 262
+        line 91: 266
+        line 92: 278
+        line 93: 293
+        line 94: 303
+        line 95: 310
+        line 96: 337
+        line 97: 353
+        line 98: 361
+        line 99: 374
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+           54       3     2 expected   Ljava/lang/ArithmeticException;
+           67       3     2 expected   Ljava/lang/ArithmeticException;
+           80       3     2 expected   Ljava/lang/ArithmeticException;
+           93       3     2 expected   Ljava/lang/ArithmeticException;
+          162       8     2 expected   Ljava/lang/UnsatisfiedLinkError;
+          315      22     4 observed   Ljava/lang/Throwable;
+          366       8     4 expected   Ljava/lang/ArithmeticException;
+            0     375     0  args   [Ljava/lang/String;
+           44     331     1 integerThrows   I
+          266     109     2 dormantHandlerHits   I
+          303      72     3 failure   Ljava/lang/Throwable;
+      StackMapTable: number_of_entries = 16
+        frame_type = 255 /* full_frame */
+          offset_delta = 53
+          locals = [ class "[Ljava/lang/String;", int ]
+          stack = [ class java/lang/ArithmeticException ]
+        frame_type = 3 /* same */
+        frame_type = 72 /* same_locals_1_stack_item */
+          stack = [ class java/lang/ArithmeticException ]
+        frame_type = 3 /* same */
+        frame_type = 72 /* same_locals_1_stack_item */
+          stack = [ class java/lang/ArithmeticException ]
+        frame_type = 3 /* same */
+        frame_type = 72 /* same_locals_1_stack_item */
+          stack = [ class java/lang/ArithmeticException ]
+        frame_type = 3 /* same */
+        frame_type = 247 /* same_locals_1_stack_item_frame_extended */
+          offset_delta = 64
+          stack = [ class java/lang/UnsatisfiedLinkError ]
+        frame_type = 8 /* same */
+        frame_type = 255 /* full_frame */
+          offset_delta = 142
+          locals = [ class "[Ljava/lang/String;", int, int, class java/lang/Throwable ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 14
+          locals = [ class "[Ljava/lang/String;", int, int, class java/lang/Throwable, class java/lang/Throwable ]
+          stack = [ class java/io/PrintStream ]
+        frame_type = 255 /* full_frame */
+          offset_delta = 0
+          locals = [ class "[Ljava/lang/String;", int, int, class java/lang/Throwable, class java/lang/Throwable ]
+          stack = [ class java/io/PrintStream, int ]
+        frame_type = 250 /* chop */
+          offset_delta = 7
+        frame_type = 90 /* same_locals_1_stack_item */
+          stack = [ class java/lang/ArithmeticException ]
+        frame_type = 9 /* same */
+    Exceptions:
+      throws java.lang.Throwable
+
+  private static void lambda$main$2();
+    descriptor: ()V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: invokestatic  #34                 // Method changed:()I
+         3: pop
+         4: return
+      LineNumberTable:
+        line 91: 0
+
+  private static void lambda$main$1();
+    descriptor: ()V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: invokestatic  #34                 // Method changed:()I
+         3: pop
+         4: return
+      LineNumberTable:
+        line 89: 0
+
+  private static void lambda$main$0();
+    descriptor: ()V
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: invokestatic  #34                 // Method changed:()I
+         3: pop
+         4: return
+      LineNumberTable:
+        line 81: 0
+}
+SourceFile: "Probe.java"
+NestMembers:
+  floatingcase/Probe$Pure
+BootstrapMethods:
+  0: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #218 value=\u0001
+  1: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #220 float:\u0001:\u0001
+  2: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #222 double:\u0001:\u0001
+  3: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #224 integer-zero-throws:\u0001
+  4: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #226 field:\u0001:\u0001
+  5: #260 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #228 ()V
+      #229 REF_invokeStatic floatingcase/Probe.lambda$main$0:()V
+      #228 ()V
+  6: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #232 callback-hits:\u0001
+  7: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #234 reflection:\u0001
+  8: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #236 monitor:\u0001
+  9: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #238 array:\u0001
+  10: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #240 caught:\u0001:\u0001
+  11: #260 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #228 ()V
+      #242 REF_invokeStatic floatingcase/Probe.lambda$main$1:()V
+      #228 ()V
+  12: #260 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #228 ()V
+      #245 REF_invokeStatic floatingcase/Probe.lambda$main$2:()V
+      #228 ()V
+  13: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #248 handler-callback-hits:\u0001:\u0001
+  14: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #250 throw-identity:\u0001
+  15: #254 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #252 dynamic:\u0001
+InnerClasses:
+  public static final #268= #49 of #8;    // Pure=class floatingcase/Probe$Pure of class floatingcase/Probe
+  public static final #273= #269 of #271; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/classes/floatingcase/Probe$Pure.class
+  Last modified Nov 8, 2026; size 1029 bytes
+  SHA-256 checksum fac5183982a669078cbd0fcc1ee6615bcbe350903d4b989eb014e3d3a26d6c0a
+  Compiled from "Probe.java"
+public final class floatingcase.Probe$Pure
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #7                          // floatingcase/Probe$Pure
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 9, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // floatingcase/Probe$Pure
+   #8 = Utf8               floatingcase/Probe$Pure
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               LocalVariableTable
+  #12 = Utf8               this
+  #13 = Utf8               Lfloatingcase/Probe$Pure;
+  #14 = Utf8               fdiv
+  #15 = Utf8               (FF)F
+  #16 = Utf8               a
+  #17 = Utf8               F
+  #18 = Utf8               b
+  #19 = Utf8               frem
+  #20 = Utf8               ddiv
+  #21 = Utf8               (DD)D
+  #22 = Utf8               D
+  #23 = Utf8               drem
+  #24 = Utf8               idiv
+  #25 = Utf8               (II)I
+  #26 = Utf8               I
+  #27 = Utf8               irem
+  #28 = Utf8               ldiv
+  #29 = Utf8               (JJ)J
+  #30 = Utf8               J
+  #31 = Utf8               lrem
+  #32 = Utf8               SourceFile
+  #33 = Utf8               Probe.java
+  #34 = Utf8               NestHost
+  #35 = Class              #36            // floatingcase/Probe
+  #36 = Utf8               floatingcase/Probe
+  #37 = Utf8               InnerClasses
+  #38 = Utf8               Pure
+{
+  public floatingcase.Probe$Pure();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lfloatingcase/Probe$Pure;
+
+  public static float fdiv(float, float);
+    descriptor: (FF)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: fload_0
+         1: fload_1
+         2: fdiv
+         3: freturn
+      LineNumberTable:
+        line 6: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   F
+            0       4     1     b   F
+
+  public static float frem(float, float);
+    descriptor: (FF)F
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: fload_0
+         1: fload_1
+         2: frem
+         3: freturn
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   F
+            0       4     1     b   F
+
+  public static double ddiv(double, double);
+    descriptor: (DD)D
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=4, args_size=2
+         0: dload_0
+         1: dload_2
+         2: ddiv
+         3: dreturn
+      LineNumberTable:
+        line 8: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   D
+            0       4     2     b   D
+
+  public static double drem(double, double);
+    descriptor: (DD)D
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=4, args_size=2
+         0: dload_0
+         1: dload_2
+         2: drem
+         3: dreturn
+      LineNumberTable:
+        line 9: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   D
+            0       4     2     b   D
+
+  public static int idiv(int, int);
+    descriptor: (II)I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: iload_1
+         2: idiv
+         3: ireturn
+      LineNumberTable:
+        line 10: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   I
+            0       4     1     b   I
+
+  public static int irem(int, int);
+    descriptor: (II)I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: iload_1
+         2: irem
+         3: ireturn
+      LineNumberTable:
+        line 11: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   I
+            0       4     1     b   I
+
+  public static long ldiv(long, long);
+    descriptor: (JJ)J
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=4, args_size=2
+         0: lload_0
+         1: lload_2
+         2: ldiv
+         3: lreturn
+      LineNumberTable:
+        line 12: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   J
+            0       4     2     b   J
+
+  public static long lrem(long, long);
+    descriptor: (JJ)J
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=4, args_size=2
+         0: lload_0
+         1: lload_2
+         2: lrem
+         3: lreturn
+      LineNumberTable:
+        line 13: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     a   J
+            0       4     2     b   J
+}
+SourceFile: "Probe.java"
+NestHost: class floatingcase/Probe
+InnerClasses:
+  public static final #38= #7 of #35;     // Pure=class floatingcase/Probe$Pure of class floatingcase/Probe

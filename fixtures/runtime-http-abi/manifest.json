@@ -1,0 +1,8 @@
+{
+  "schema": "selector-frozen-runtime-abi-fixture/v1",
+  "source": "ci-cost-study/compiler-selector/bridges/compiler-http-abi-fixture.json.gz",
+  "revision": "b59057d841890660fd59d41dfba54f21efb9dadb",
+  "sha256": "6bb9e1c72274f1e8fb03e8daa58bffc614cc1e64417bbb59a63cd011433d3545",
+  "bytes": 197000,
+  "scope": "Frozen compiler ABI projection; declarations and definition occurrences only, no reference/synthetic completeness claim. Evaluator imports documents and sources only; legacy expected edges are never graph inputs."
+}

@@ -1,0 +1,132 @@
+{
+  "schema": "selector-native-float-effects-fixture/v1",
+  "commands": [
+    {
+      "case": "compile",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+        "--release",
+        "17",
+        "-g",
+        "-d",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/classes",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/src/floatingcase/Probe.java"
+      ],
+      "pid": 24803,
+      "exit_code": 0,
+      "wall_ns": 272155917,
+      "peak_rss_bytes": 111706112,
+      "cpu_ns": 619323000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/compile.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/compile.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 0,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "execution",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-Xmx128m",
+        "-cp",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/classes",
+        "floatingcase.Probe"
+      ],
+      "pid": 24804,
+      "exit_code": 0,
+      "wall_ns": 60991208,
+      "peak_rss_bytes": 44466176,
+      "cpu_ns": 55151000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/execution.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/execution.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 289,
+      "stderr_bytes": 0
+    },
+    {
+      "case": "javap",
+      "command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+        "-classpath",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/classes",
+        "-p",
+        "-v",
+        "-c",
+        "floatingcase.Probe",
+        "floatingcase.Probe$Pure"
+      ],
+      "pid": 24807,
+      "exit_code": 0,
+      "wall_ns": 161361416,
+      "peak_rss_bytes": 89112576,
+      "cpu_ns": 364935000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/javap.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-float-effects/javap.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 54630,
+      "stderr_bytes": 0
+    }
+  ],
+  "generator_sha256": "dd3996a765dca2a51d37985600576592d100e1c3f2baf5d58fc878aaae3e3f1f",
+  "java_sha256": "2aee02a39a0817c27501e853728c28b79f48d114dbde7c88cbf698ecf1680f63",
+  "javac_sha256": "18046707ee067a5a7ababd7a1f9dd2cbae1e6686ebc50d57ea4a7f3a80f1af43",
+  "expected_stdout": "float:Infinity:NaN\ndouble:Infinity:NaN\ninteger-zero-throws:4\nfield:Infinity:Infinity\ncallback-hits:1\nnative:UnsatisfiedLinkError\nreflection:Infinity\nmonitor:Infinity\narray:Infinity\ncaught:NaN:2\nhandler-callback-hits:2:3\nthrow-identity:true\ndynamic:value=Infinity\nmixed:ArithmeticException\n",
+  "scope": "genuine tiny JVM scalar/effect controls; explicit native callables, no CI catalogue",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "1dbb62984df55c6fa3aa894f711ae1046a00a9348f8907fda3e4e95b90da8f66",
+      "bytes": 1293
+    },
+    {
+      "path": "bytecode.jar",
+      "sha256": "608000a9e79e6b018ab0a57ae157b937a5c1d544464edbf833d6379feba6d509",
+      "bytes": 3474
+    },
+    {
+      "path": "classes/floatingcase/Probe$Pure.class",
+      "sha256": "fac5183982a669078cbd0fcc1ee6615bcbe350903d4b989eb014e3d3a26d6c0a",
+      "bytes": 1029
+    },
+    {
+      "path": "classes/floatingcase/Probe.class",
+      "sha256": "e7a5eeade9041acb45788f95b12f231a13a6daf534be84a43c5bb8d1eef45f53",
+      "bytes": 5682
+    },
+    {
+      "path": "compile.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "compile.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "execution.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "execution.stdout",
+      "sha256": "c3b14b1d08ad86af15283ed75a89e176b13ff22262e6ca20af9c9220345b4246",
+      "bytes": 289
+    },
+    {
+      "path": "javap.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "javap.stdout",
+      "sha256": "7bfd64f7c3af6a19fdbcf7bbcd7fa32f30c6c8c672ff7d6f4e51015f97724d37",
+      "bytes": 54630
+    },
+    {
+      "path": "src/floatingcase/Probe.java",
+      "sha256": "75112eebf089e3570fa36208cf6773f648579c64cec85cef7754546594ff94f3",
+      "bytes": 4200
+    }
+  ]
+}

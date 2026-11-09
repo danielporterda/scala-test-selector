@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "f20116bc144298a8952b9a89ec057694734dc989",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/JsIdentityProviderService.scala.semanticdb",
+      "sha256": "862bb26c35664f3fb0902993031c5738ffe717e6c6faee5e95542fd19eaa1ac7",
+      "semanticdb_input": "raw/JsIdentityProviderService.scala.semanticdb",
+      "input_target_contexts": [
+        "project:source-annotations/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "canton/community/ledger/ledger-json-api/src/main/scala/com/digitalasset/canton/http/json/v2/JsIdentityProviderService.scala",
+      "file": "canton/community/ledger/ledger-json-api/src/main/scala/com/digitalasset/canton/http/json/v2/JsIdentityProviderService.scala",
+      "sha256": "c46fb1e6b3f96297a74d9933c1bb5f03d84acef29c3bf26934a33eb3b41bc28c",
+      "source_contexts": [
+        "project:source-annotations/configuration:test"
+      ]
+    }
+  ]
+}

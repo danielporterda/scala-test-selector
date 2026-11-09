@@ -1,0 +1,234 @@
+{
+  "schema": "selector-registration-fixture/v1",
+  "revision": "f008cb295feb9591f6b6a48c66b2b52fda9c92be",
+  "revision_kind": "first40hex_of_source_tree_sha256",
+  "source_tree_sha256": "f008cb295feb9591f6b6a48c66b2b52fda9c92be197974a790ef50c1c5cb033a",
+  "compiler": "Scala 2.13.18",
+  "plugin": "SemanticDB 4.15.2",
+  "framework": "ScalaTest 3.2.19",
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "java_version": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 21.0.12.1)\nOpenJDK 64-Bit Server VM Homebrew (build 21.0.12.1, mixed mode, sharing)\n",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar",
+      "sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.19/scalatest-funsuite_2.13-3.2.19.jar",
+      "sha256": "926aeb37193ad79d0b380160765c9ab61d4367b994c1ab715896fe4961241d5e"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.19/scalatest-wordspec_2.13-3.2.19.jar",
+      "sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar",
+      "sha256": "5dc6b8fa5396fe9e1a7c2b72df174a8eb3e92770cdc3e70636d3eba673cd0da3"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar",
+      "sha256": "c27c33de17d450e29e66c16c5af4cfa33e8ffcf03c124f0a3d249d848cccd4af"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+      "sha256": "b549a1bf335bc4528cf26f005894c7c37220ac4e8450847973d8f4001b8f59ea"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba"
+    }
+  ],
+  "generator_sha256": "702f6ca9d66089bddccdc42a944f628796abf2127258642d405ced5c305b2de5",
+  "framework_bodies_admitted": false,
+  "compile_command": [
+    "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "-cp",
+    "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+    "scala.tools.nsc.Main",
+    "-classpath",
+    "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/registration-fixture-7bj2aljs/library:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.19/scalatest-funsuite_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.19/scalatest-wordspec_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+    "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+    "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/registration-smoke",
+    "-P:semanticdb:targetroot:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/registration-fixture-7bj2aljs/metadata",
+    "-Yrangepos",
+    "-d",
+    "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/registration-fixture-7bj2aljs/classes",
+    "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/registration-smoke/src/registrationcase/Effects.scala",
+    "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/registration-smoke/src/registrationcase/Suites.scala"
+  ],
+  "jvm_witness": "suite:registrationcase.DirectSuite:tests=1:observed=41\nsuite:registrationcase.StoredSuite:tests=1:observed=7\nsuite:registrationcase.InvokedSuite:tests=1:observed=41\nsuite:registrationcase.OpaqueSuite:tests=1:observed=7\nsuite:registrationcase.InheritedSuite:tests=1:observed=41\nsuite:registrationcase.InheritedSibling:tests=1:observed=7\nsuite:registrationcase.HookSuite:tests=1:observed=41\nsuite:registrationcase.HookSibling:tests=1:observed=7\nsuite:registrationcase.FixtureSuite:tests=1:observed=41\nsuite:registrationcase.WordSuite:tests=1:observed=41\nsuite:registrationcase.NestedWordSuite:tests=1:observed=41\n",
+  "files": [
+    {
+      "path": "bytecode/registrationcase/DirectSuite.class",
+      "sha256": "7462cb4fbd5a10bc02b38158b3407eb4b5de03504385433760c27753fb2063f9",
+      "bytes": 2556
+    },
+    {
+      "path": "bytecode/registrationcase/Effects$.class",
+      "sha256": "f2c7250d6cd60a8543ba17632fef6d484ef348738977a555547604af03ae5f8b",
+      "bytes": 576
+    },
+    {
+      "path": "bytecode/registrationcase/Effects.class",
+      "sha256": "2506c5032bd7b634008c83a28c06963d0a50ae2432075ca9e102226d190d8ae7",
+      "bytes": 608
+    },
+    {
+      "path": "bytecode/registrationcase/FixtureSuite.class",
+      "sha256": "c1904a6558113002b522822da3f7d41bc3ad092022959bfd61ed4cc0711c1358",
+      "bytes": 2998
+    },
+    {
+      "path": "bytecode/registrationcase/HookBase.class",
+      "sha256": "092f794c1f4828f9ad49c1baa8c247d246c1fd451aaec201db9c74362b6f763e",
+      "bytes": 3940
+    },
+    {
+      "path": "bytecode/registrationcase/HookSibling.class",
+      "sha256": "d24c1110e5605f292448eebbc3017fc61274103a51d30dc007120ab5b8bbcbc7",
+      "bytes": 821
+    },
+    {
+      "path": "bytecode/registrationcase/HookSuite.class",
+      "sha256": "ed200fa5d9684e2f6464988cf991a1dfd6e9daf6b773fb33487b689914b84114",
+      "bytes": 538
+    },
+    {
+      "path": "bytecode/registrationcase/InheritedSibling.class",
+      "sha256": "cf1f5d7ec933f2224aa8b840daf23dfaa0884209c3c48ec27ae523b23a7c6849",
+      "bytes": 804
+    },
+    {
+      "path": "bytecode/registrationcase/InheritedSuite.class",
+      "sha256": "8471a494de6dbfea7969d3cc1b9a8d1224a9f8f5ece192303b285e0cf25bc5e0",
+      "bytes": 799
+    },
+    {
+      "path": "bytecode/registrationcase/InvokedSuite.class",
+      "sha256": "59a8e158f5978b481593a1e1c8e3e3020e4a74c24112cffdedf30954b165623d",
+      "bytes": 3037
+    },
+    {
+      "path": "bytecode/registrationcase/NestedWordSuite.class",
+      "sha256": "e7dac16ad715a463254aa54b2185cc425ac33e5e77f0e20a2efdfd40c3fa8c6a",
+      "bytes": 3364
+    },
+    {
+      "path": "bytecode/registrationcase/OpaqueSuite.class",
+      "sha256": "40a8905fb5de800b6d62dc693e99a9f72f2bc9a2eb69deebc44c2ebfd1952912",
+      "bytes": 2829
+    },
+    {
+      "path": "bytecode/registrationcase/RegisteredBase.class",
+      "sha256": "0f2c83fa4ec18e538a593feb24d31ba8a6ba28747e3bafc812b7dd320188c3ac",
+      "bytes": 2678
+    },
+    {
+      "path": "bytecode/registrationcase/StoredSuite.class",
+      "sha256": "da397f1ec5c9720e4eb828101f5df3a8da379cab3a1b9c8a93ac696dafbedb1e",
+      "bytes": 2782
+    },
+    {
+      "path": "bytecode/registrationcase/WordSuite.class",
+      "sha256": "d44deefeec788c14f5670b77cee18788ddd9bf9a76175aabd66c923df1d449e1",
+      "bytes": 2680
+    },
+    {
+      "path": "capture.json",
+      "sha256": "a49193f282671c6a6338fe149ad9b5f3948af623fbe58085678fe564d28cf665",
+      "bytes": 1476
+    },
+    {
+      "path": "capture.log",
+      "sha256": "6776c5b4d4f1ee42ed784c0272d7415d74ed269731120c02d68d66e6f75c1b87",
+      "bytes": 226
+    },
+    {
+      "path": "catalogue.json",
+      "sha256": "151c06760af915da0d5e34e654cc61c6b7c74ad43db99e284d530152c5f3d699",
+      "bytes": 567
+    },
+    {
+      "path": "compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "documents.jsonl",
+      "sha256": "bcfa1a8bc61a07a8ab0fef5ac38d3ef010c56bf094686421ec64c7f1e4c2e2de",
+      "bytes": 47149
+    },
+    {
+      "path": "execution.log",
+      "sha256": "69117ac99d7b8232707ba659dc3f53f52ada947b0c87a729387c8181c651f95b",
+      "bytes": 611
+    },
+    {
+      "path": "library/OpaqueSink.java",
+      "sha256": "961e8f1aa628f11352738c1f4528255cbbc3d78d5ac979b7af390cd68e87b2e4",
+      "bytes": 203
+    },
+    {
+      "path": "library-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "opaque.jar",
+      "sha256": "eae246bdaebdc4b9a2a1951d092f13ca81501965ea6cfe4b2681cfec29be91e0",
+      "bytes": 476
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/registrationcase/Effects.scala.semanticdb",
+      "sha256": "5943a94f229e3b3e32362fa537b026c519b3f9efb74c2cba3ee7e9a4f44f5333",
+      "bytes": 616
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/registrationcase/Suites.scala.semanticdb",
+      "sha256": "33d8d7e61343b6004dc675bb52749fac05b75822c4237eb04d02c08a42fdb6bf",
+      "bytes": 16536
+    },
+    {
+      "path": "src/registrationcase/Effects.scala",
+      "sha256": "7afde97ab5377ca9723238826c6c6a10e5627de49647ebfd88a1cf82a2278ad5",
+      "bytes": 94
+    },
+    {
+      "path": "src/registrationcase/Suites.scala",
+      "sha256": "54f63eeeaa5256474c4ce6e70478a2dafe129b6811c736c103ebe5d29a14685e",
+      "bytes": 2068
+    },
+    {
+      "path": "syntax.jsonl",
+      "sha256": "2d9fb58223c9778ef3cb8c4fd8ef924aacfcd772161c2018596f6eab49b09189",
+      "bytes": 57684
+    },
+    {
+      "path": "syntax.log",
+      "sha256": "e1a93e81b654d214c8adcc20a7907dcc9c7d928356eb7520d69ed165edac8758",
+      "bytes": 215
+    },
+    {
+      "path": "validation/CheckRegistration.scala",
+      "sha256": "85818a381c56d2dfe33a985d22041e5f3994bae5820d58265a5b3379ef6186d1",
+      "bytes": 1478
+    },
+    {
+      "path": "validation-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ]
+}

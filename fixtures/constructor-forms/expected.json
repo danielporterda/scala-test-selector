@@ -1,0 +1,55 @@
+{
+  "changed_paths": [
+    "src/constructorforms/Effects.scala"
+  ],
+  "selected_suites": [
+    "constructorforms.ApplyDefaultSuite",
+    "constructorforms.ByNameDefaultUsedSuite",
+    "constructorforms.CopyExplicitSuite",
+    "constructorforms.DependentDefaultSuite",
+    "constructorforms.MethodDefaultSuite",
+    "constructorforms.NewDefaultSuite",
+    "constructorforms.SecondaryDefaultSuite"
+  ],
+  "excluded_suites": [
+    "constructorforms.ApplyExplicitSuite",
+    "constructorforms.ByNameDefaultIgnoredSuite",
+    "constructorforms.CopyDefaultSuite",
+    "constructorforms.MethodExplicitSuite",
+    "constructorforms.NewExplicitSuite",
+    "constructorforms.SecondaryExplicitSuite"
+  ],
+  "independent_observed_values": {
+    "base": [
+      41,
+      41,
+      7,
+      7,
+      41,
+      41,
+      7,
+      7,
+      41,
+      7,
+      41,
+      7,
+      41
+    ],
+    "head": [
+      42,
+      42,
+      7,
+      7,
+      42,
+      42,
+      7,
+      7,
+      42,
+      7,
+      42,
+      7,
+      42
+    ]
+  },
+  "completion": "complete"
+}

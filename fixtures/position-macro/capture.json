@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "revision": "333b74ce787dc9f63bb29803778b4ce518a0ac48",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/definitions/META-INF/semanticdb/definitions/positioncase/UserMacros.scala.semanticdb",
+      "sha256": "18ce4981178ccc83175c5e870bfd167e85c4f9525b8fdc311a1c758ed7819d78",
+      "semanticdb_input": "raw/definitions/META-INF/semanticdb/definitions/positioncase/UserMacros.scala.semanticdb",
+      "input_target_contexts": [
+        "project:position-macro/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/suites/META-INF/semanticdb/src/positioncase/PositionSuite.scala.semanticdb",
+      "sha256": "91db14f8781a24b51915b917c42b6171b9cbddd6fb54505bb0c28dd380509af2",
+      "semanticdb_input": "raw/suites/META-INF/semanticdb/src/positioncase/PositionSuite.scala.semanticdb",
+      "input_target_contexts": [
+        "project:position-macro/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "definitions/positioncase/UserMacros.scala",
+      "file": "definitions/positioncase/UserMacros.scala",
+      "sha256": "7fc3e776a976595e9caefdafbe15d622867de02b0749d7aedcf4f54a753ec6d7",
+      "source_contexts": [
+        "project:position-macro/configuration:test"
+      ]
+    },
+    {
+      "path": "src/positioncase/PositionSuite.scala",
+      "file": "src/positioncase/PositionSuite.scala",
+      "sha256": "06dc6848f65bd878ac9395c68db18f21ff60f50eb0664707a31de4f9320d10ac",
+      "source_contexts": [
+        "project:position-macro/configuration:test"
+      ]
+    }
+  ]
+}

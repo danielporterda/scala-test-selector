@@ -1,0 +1,10 @@
+factory:FixtureFunctionSuite:made=7:observed=0
+suite:registrationcase.AsyncWordSuite:tests=1:observed=41
+suite:registrationcase.FixtureFunctionSuite:tests=1:observed=41
+suite:registrationcase.FixtureThunkSuite:tests=1:observed=41
+suite:registrationcase.TaggedFixtureSuite:tests=1:observed=41
+suite:registrationcase.FixtureAsyncFunctionSuite:tests=1:observed=41
+suite:registrationcase.FixtureAsyncThunkSuite:tests=1:observed=41
+suite:registrationcase.TaggedAsyncSuite:tests=1:observed=41
+suite:registrationcase.FlatItSuite:tests=1:observed=41
+suite:registrationcase.WhenWordSuite:tests=1:observed=41

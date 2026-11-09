@@ -1,0 +1,117 @@
+{
+  "basis": "current ReadWorld over explicitly legacy-adapted read-only state",
+  "checkpoint": {
+    "artifact": "07db884580e89edd1015b5412376b1f636b4d92add902a2088845de91afe315d",
+    "completion": "ResourceLimited",
+    "content_seal": "b8ee584139e2f203e40278402ffadeaeffc208536079417623d74963785ff7c7",
+    "contexts": 59049,
+    "facts": "737f0f4232074f05ba05af9f0e430f7334517e12da23849552d071528c1282b1",
+    "graph": "0bf2d9be3f3f145824a6b59c39e47c57b2ba3eee306894449d023d3496f0389a",
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase2-work-census/pr7743-exact/checkpoints/head.bin",
+    "producer": "eaef0bed8289276ac03177ded7b60d29db354597c257b6fa39a193ffb5c42ad1",
+    "ready": 20864,
+    "retained_bytes": 86335894,
+    "rounds": 234,
+    "stop": "Some(StepLimit)",
+    "version": 1
+  },
+  "compiled_read_world_source_sha256": "2326fe4582e1d2c5b2fe85a01c0011e7c099877c0fcd9945e420d8fcea41a864",
+  "compiled_transfer_source_sha256": "4255226398e7a5b97836157e9620dda7ce695e6e5f7c96796f684d544ac2d29b",
+  "current_solve_producer": null,
+  "facts": {
+    "identity": "737f0f4232074f05ba05af9f0e430f7334517e12da23849552d071528c1282b1",
+    "operations": 2658360,
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-final/head/enriched.bin",
+    "symbols": 1098659
+  },
+  "graph": {
+    "identity": "0bf2d9be3f3f145824a6b59c39e47c57b2ba3eee306894449d023d3496f0389a",
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-final/head/graph.bin"
+  },
+  "receiver_origin_precision": false,
+  "rows": [
+    {
+      "kind": "Field",
+      "member": 822064,
+      "members": [],
+      "owner": 2689981,
+      "present": false,
+      "set": 0,
+      "unknown": 0,
+      "version": 0
+    },
+    {
+      "kind": "FieldMissing",
+      "member": 822064,
+      "members": [],
+      "owner": 2689981,
+      "present": false,
+      "set": 0,
+      "unknown": 0,
+      "version": 0
+    },
+    {
+      "kind": "Field",
+      "member": 821757,
+      "members": [],
+      "owner": 2689981,
+      "present": false,
+      "set": 0,
+      "unknown": 0,
+      "version": 0
+    },
+    {
+      "kind": "FieldMissing",
+      "member": 821757,
+      "members": [],
+      "owner": 2689981,
+      "present": false,
+      "set": 0,
+      "unknown": 0,
+      "version": 0
+    },
+    {
+      "kind": "Field",
+      "member": 821992,
+      "members": [],
+      "owner": 2689981,
+      "present": false,
+      "set": 0,
+      "unknown": 0,
+      "version": 0
+    },
+    {
+      "kind": "FieldMissing",
+      "member": 821992,
+      "members": [],
+      "owner": 2689981,
+      "present": false,
+      "set": 0,
+      "unknown": 0,
+      "version": 0
+    },
+    {
+      "kind": "Field",
+      "member": 821756,
+      "members": [],
+      "owner": 2689981,
+      "present": false,
+      "set": 0,
+      "unknown": 0,
+      "version": 0
+    },
+    {
+      "kind": "FieldMissing",
+      "member": 821756,
+      "members": [],
+      "owner": 2689981,
+      "present": false,
+      "set": 0,
+      "unknown": 0,
+      "version": 0
+    }
+  ],
+  "schema": "selector-legacy-read-world-marker-control/v1",
+  "source_root_name": "org/lfdecentralizedtrust/splice/integration/tests/DowngradeSvPackagesIntegrationTest#",
+  "source_root_symbol": 31621
+}

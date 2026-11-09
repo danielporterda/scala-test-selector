@@ -1,0 +1,918 @@
+{
+  "schema": "selector-real-transfer-regression/v3",
+  "capture_scope": "One current transfer re-evaluation of a sealed historical v2 coarse input through a test-only adapter. New missing-marker responses are independently observed with production ReadWorld over the original read-only StepLimit checkpoint. This is neither the historical same proof nor a resumed solver, finalized state, fixed point, or whole-query coverage result.",
+  "method": "com/digitalasset/canton/BaseTest#clue().",
+  "source_facts": "737f0f4232074f05ba05af9f0e430f7334517e12da23849552d071528c1282b1",
+  "source_graph": "0bf2d9be3f3f145824a6b59c39e47c57b2ba3eee306894449d023d3496f0389a",
+  "scope": "b86426ed6a739952cc1ca13481e1d3abda5eb9362a9b28a44ef9d36ba91eace2",
+  "source_revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+  "source_files": [
+    {
+      "path": "apps/app/src/main/scala/org/lfdecentralizedtrust/splice/console/LedgerApiExtensions.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:compile",
+      "source_sha256": "160883ee9486861d487c7c4a322ee3ae4e775e1a3973c6801bbc63cbdf936062",
+      "flags": 0
+    },
+    {
+      "path": "apps/app/src/test/scala/org/lfdecentralizedtrust/splice/integration/tests/AdditionalPackagesToUnvetIntegrationTest.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:test",
+      "source_sha256": "39d6ad7e2e0babf476ec3abaeb62832e3c19c06b6bd990c8d8639c087d6251ab",
+      "flags": 0
+    },
+    {
+      "path": "apps/app/src/test/scala/org/lfdecentralizedtrust/splice/integration/tests/SpliceTests.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:test",
+      "source_sha256": "1a57db3ab31bbe51f653a5f2a9856dcb8b3a059f4b0b8eeb53eb1dad844eb6ca",
+      "flags": 0
+    },
+    {
+      "path": "apps/app/src/test/scala/org/lfdecentralizedtrust/splice/util/CommonAppInstanceReferences.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:test",
+      "source_sha256": "2d064b262467ef4b333372d2e0ca42c730a868756e528945a885e9d8df4a7cbe",
+      "flags": 0
+    },
+    {
+      "path": "apps/app/src/test/scala/org/lfdecentralizedtrust/splice/util/PackageUnvettingUtil.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:test",
+      "source_sha256": "76cd461aa90e7d227feb2ab44ecc4922fbfa273e478da736db94759b2c273f8b",
+      "flags": 0
+    },
+    {
+      "path": "apps/common/src/test/scala/org/lfdecentralizedtrust/splice/test/HasRetryProvider.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-common/configuration:test",
+      "source_sha256": "5dc447853002d7151e394e6510cbe78ecbbc9d764847e09d9706c4ff588e54a9",
+      "flags": 0
+    },
+    {
+      "path": "apps/common/src/test/scala/org/lfdecentralizedtrust/splice/util/BigDecimalMatchers.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-common/configuration:test",
+      "source_sha256": "7e4caa3c67e07bcdd66e0e3eb082ba18ec27485658c2cb0b27da5de29cfe5604",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/lifecycle/FlagCloseable.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-base/configuration:compile",
+      "source_sha256": "624fa8efee159fe0b66a0cff86230414049b1fc531e697605047195e6221c468",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/lifecycle/HasRunOnClosing.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-base/configuration:compile",
+      "source_sha256": "5ee8fe5bfdb03d278d1ecb3181898e408ea5585b6c56d9e10c79aa036b3f4dc3",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/lifecycle/HasSynchronizeWithClosing.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-base/configuration:compile",
+      "source_sha256": "3dc12fa210ed73283bcb4cd4282d9d45dc1cbf01fe5d931e7a2893c1587ac1d2",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/lifecycle/HasSynchronizeWithReaders.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-base/configuration:compile",
+      "source_sha256": "6bf2c6a51c1df7b3653018804179079e3c8f602374b877ded2cfd3c1e1f78d54",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/lifecycle/HasUnlessClosing.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-base/configuration:compile",
+      "source_sha256": "1a724a2db77ee64398e9b521d128217a511b0e51b97e188822b852a2e7c01352",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/lifecycle/OnShutdownRunner.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-base/configuration:compile",
+      "source_sha256": "f6f3594a91695faa832614ce64b8cb9d2aac1a7113e6f0de21636d630bac5438",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/lifecycle/PerformUnlessClosing.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-base/configuration:compile",
+      "source_sha256": "7dd47265f9035b05ce39297111e93f7ab690ff9ac763b5e9536831e579a1273f",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/integration-testing/src/main/scala/com/digitalasset/canton/integration/BaseIntegrationTest.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "f4be331a0052c7c6f49f194b489455b6ef9981a8b7ebdbc3ef33b71df4ac9ae2",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/integration-testing/src/main/scala/com/digitalasset/canton/integration/EnvironmentSetup.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "b3d0737efda5eabd43a88660351352410ab662e7ec198ae9a47d19b2c8fc9c62",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/integration-testing/src/main/scala/com/digitalasset/canton/integration/PartyTopologyUtils.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "3411cf563ea32dab83096f1d50b5b9815ddc544a366b55eb99e8524443786d99",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/testing/src/main/scala/com/digitalasset/canton/BaseTest.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "f15486f098e8b1867772d6f9038b9da528166ef357e0e592344c6c9d27ac809a",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/testing/src/main/scala/com/digitalasset/canton/CloseableTest.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "8040f64c9a432ee42e8283f201592418a792c311b584b582d8915d7631b74c39",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/testing/src/main/scala/com/digitalasset/canton/ProtocolVersionChecks.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "639fc0e9e91c467c72f3c2189abea59e1ba1d815d0d822ad0d4bcccaf2924ede",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/testing/src/main/scala/com/digitalasset/canton/ProtocolVersionSuiteChecks.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "e9d1ab52bcc0149b23e9bfabcfa60244c5d0009e60aad3013406a3b3a724c7bb",
+      "flags": 0
+    },
+    {
+      "path": "canton/community/testing/src/main/scala/com/digitalasset/canton/RepeatableTest.scala",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "781f264ab8ffaefb50448af060b5fd962831bcc5d28cce289d3785dd3bbed066",
+      "flags": 0
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar!/scala/StringContext$.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "47634f584241d33d762ec7614fba6d2926339e8d35c276b3e907fe96741c32ef",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar!/scala/util/Try$.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "c3fdfc8bf9d99f54eb9705956fef3733f4c076b0a516bc265231fad120ec217c",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/Assertions.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:compile",
+      "source_sha256": "c38b44f8c514c581fca5c86addb2e1e6d1828ccadadd3bb8b6299743faf1e8de",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/Tolerance.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:compile",
+      "source_sha256": "7f14886cfdeaca3fabc7ac5e03140191f6754d4055a4ce7f3b76fcf97f50545f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/verbs/ShouldVerb.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:compile",
+      "source_sha256": "ba61704a1f759e2e111003af300b6b420339311fa764c9ca62e128a0601bd897",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.19/scalatest-matchers-core_2.13-3.2.19.jar!/org/scalatest/matchers/dsl/MatcherWords.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:compile",
+      "source_sha256": "f014acfc04f601629ca59c4e1b8de5a83faad912f4f74d53130fcdf1e74f601c",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/Explicitly.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:compile",
+      "source_sha256": "06d0f7b7e3f1b0533fd069cf3ccd2531cbb924d1b01be56fcd60d2f879f2a1d6",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/SuiteMixin.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:test",
+      "source_sha256": "2b0873575948b0df6e5690dc4ec3977b8e8af07eb16c7427144162e5ae8a8627",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/TripleEquals.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-common/configuration:test",
+      "source_sha256": "6b11a51a3b1343637556a5c28eeb807d1ac897d9f28f1ce7f9a717b16071575b",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/TripleEqualsSupport.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-common/configuration:test",
+      "source_sha256": "426d084d7a41d734ff385f79e8c0a6c459292735ec727807c391835901bf8d33",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/verbs/ShouldVerb.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-common/configuration:test",
+      "source_sha256": "ba61704a1f759e2e111003af300b6b420339311fa764c9ca62e128a0601bd897",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/Tolerance.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-common/configuration:test",
+      "source_sha256": "7f14886cfdeaca3fabc7ac5e03140191f6754d4055a4ce7f3b76fcf97f50545f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/Explicitly.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-common/configuration:test",
+      "source_sha256": "06d0f7b7e3f1b0533fd069cf3ccd2531cbb924d1b01be56fcd60d2f879f2a1d6",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/testing/target/scala-2.13/classes!/com/digitalasset/canton/BaseTest.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "b6ec526ba1be9454aebaa73c4d76b4a56172085d3b44b3603a9ed0919de82fe5",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/testing/target/scala-2.13/classes!/com/digitalasset/canton/RepeatableTestSuiteTest.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "be3bcb924778d13a8be2d3dd46d85a96073f79419f02ced93277bc8845206f65",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/integration-testing/target/scala-2.13/classes!/com/digitalasset/canton/integration/PartyTopologyUtils.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "20edc6bfd342da529485b83980243df37338aff4ab4fb44b6211c9a16bce1a8e",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/testing/target/scala-2.13/classes!/com/digitalasset/canton/TestPredicateFiltersFixtureAnyWordSpec.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "a1a93a30e3130cabfbf6dddf7be7c487ef11b29b363981db6074e341b19a9ca5",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/testing/target/scala-2.13/classes!/com/digitalasset/canton/ProtocolVersionSuiteChecks.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "2a8644c13c1b37e312fae88348a59c07bcaa07c90e1704abf09bc8dc9d20ab20",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/util-observability/target/scala-2.13/classes!/com/digitalasset/canton/logging/NamedLogging.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "6497f2de6fcddaef44d1e0afb53c62490dc786a4493956e21152b4925152d207",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/TripleEquals.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "6b11a51a3b1343637556a5c28eeb807d1ac897d9f28f1ce7f9a717b16071575b",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/SuiteMixin.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "2b0873575948b0df6e5690dc4ec3977b8e8af07eb16c7427144162e5ae8a8627",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/concurrent/PatienceConfiguration.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "5bdb5900ad6db1c7fb5e056bc4b5ce20931fd5502091e69862a3b302e68fba81",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/concurrent/Futures.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "5322ea884072d068ca1ea0f679729d81c0e6699256c9b7f45abf355d7b742834",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/Tolerance.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "7f14886cfdeaca3fabc7ac5e03140191f6754d4055a4ce7f3b76fcf97f50545f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/verbs/ShouldVerb.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "ba61704a1f759e2e111003af300b6b420339311fa764c9ca62e128a0601bd897",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/Explicitly.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "06d0f7b7e3f1b0533fd069cf3ccd2531cbb924d1b01be56fcd60d2f879f2a1d6",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/TripleEqualsSupport.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "426d084d7a41d734ff385f79e8c0a6c459292735ec727807c391835901bf8d33",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/Suite.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "37f416b68f3529c104de076108f7f8a406dcc71da2913b36c7ed17cc1e98cd7d",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/FixtureSuite.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "25a0a8dc2c7527cb4360d869af9762636f29a3565e4e586b586e9dc3094a2c5f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/TestSuite.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "88c6b335282c5264f9ac6fb3b143af2f0646b998a3981db40b5597ec89efa60d",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/FixtureTestSuite.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "bbadd8fd60c59c5a98c392164170d884ac7fca285bbadac6dda7283d571c406f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/verbs/MustVerb.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "e2b10d5d3c56a7fb0ac0ac40355bbac693cc67fcd1ebbd5a7970d012b86e31a7",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/verbs/CanVerb.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "3c8575548ff5d18d4b2fa8e79fb904f1a3981a85552df813d9364be15b94d6d7",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.19/scalatest-wordspec_2.13-3.2.19.jar!/org/scalatest/wordspec/FixtureAnyWordSpecLike.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "b864d6f4d229a43f134c13de7dcc5ca5fccde924ece80c31c7124a39ad812083",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/FixtureTestRegistration.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "a8d1e3d6391b44cdcbbdd988c2a37db11fda807a6eaf7be6398bc8707fb6577c",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/Informing.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "bf12dad28c2ee36e4e8b43300ef005256314c29435ae2c8a93c109ab88cfc057",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/Notifying.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "54770267501039d5996477d7e761beb827182f4100ad8848e1a40c713cc991a3",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/Alerting.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "cf04f6a0c2940d0b153a392fc6f3a22c0e4c38729dd60a15ddc24f2631b023d3",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/Documenting.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "2271a565bd52b8eb51653b493bf854ff0e6d803bc72e64b2dca9fa07e9df9129",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/daml/scalatest-utils_2.13/3.6.1/scalatest-utils_2.13-3.6.1.jar!/com/digitalasset/canton/scalatest/ScalaFuturesWithPatience.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "3cf60ad34de55f2fe6df3479831e1f4159a9e013961fc4d0b965285c3b9b7a1a",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/TripleEqualsSupport.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "426d084d7a41d734ff385f79e8c0a6c459292735ec727807c391835901bf8d33",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/TripleEquals.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "6b11a51a3b1343637556a5c28eeb807d1ac897d9f28f1ce7f9a717b16071575b",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/Tolerance.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "7f14886cfdeaca3fabc7ac5e03140191f6754d4055a4ce7f3b76fcf97f50545f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/verbs/ShouldVerb.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "ba61704a1f759e2e111003af300b6b420339311fa764c9ca62e128a0601bd897",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/concurrent/PatienceConfiguration.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "5bdb5900ad6db1c7fb5e056bc4b5ce20931fd5502091e69862a3b302e68fba81",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/Suite.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "37f416b68f3529c104de076108f7f8a406dcc71da2913b36c7ed17cc1e98cd7d",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/concurrent/ScaledTimeSpans.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "b9a509d0f333c18131b130ff248d2f1c30fce4fe7348dde463ff481cc1403e38",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/concurrent/Futures.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "5322ea884072d068ca1ea0f679729d81c0e6699256c9b7f45abf355d7b742834",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/Explicitly.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "06d0f7b7e3f1b0533fd069cf3ccd2531cbb924d1b01be56fcd60d2f879f2a1d6",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/prop/Whenever.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "18430053a5f515abfd5383fc58635b0e87ba54f06efb7fe134e910df0f8749aa",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/prop/Tables.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "2ea9d58ce65d9276824b7d7fd761b727e87784fc2f441e7fb2f2a8eeff3a4e1f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar!/scala/Equals.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "ca85f2031f7baf12993a9aeadf110cd35916b295fe05b416e5053122e903339b",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar!/scala/StringContext.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-testing/configuration:compile",
+      "source_sha256": "f3b50de059cfd11855993568e1b43be6554f799badfe72142a1878ce16748f01",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/TripleEquals.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:compile",
+      "source_sha256": "6b11a51a3b1343637556a5c28eeb807d1ac897d9f28f1ce7f9a717b16071575b",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar!/org/scalactic/TripleEqualsSupport.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:apps-app/configuration:compile",
+      "source_sha256": "426d084d7a41d734ff385f79e8c0a6c459292735ec727807c391835901bf8d33",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/testing/target/scala-2.13/classes!/com/digitalasset/canton/TestEssentials.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "1683bacb5f6de8db05144ad897de74ccc330c01d223eb79d8c4d5657e3c2e667",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/Inspectors.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "681c1dd9e7eeec1b93b7e660533db6870d34d74bc8944db6976d4a2adf437eb8",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/prop/TableDrivenPropertyChecks.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "500f1fba762b47d52a1f397e9d06c06e290cf634df0a8fff1b597897ed455ecf",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/Inside.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "8450e1e5470e4425c0fa4325ebb7ebcdad4fbaafc3fcaacc74b0d3b62bfc3ef9",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/TryValues.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "de555f0ca64d26d9a33a47efb06d1e5ecae00ca62e8e1489ea19fc1ee094d94f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/AppendedClues.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "5acd32970fa72cbf277f06c077090d65cd7d340a85e9dc77ccd5a164559895bc",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/testing/target/scala-2.13/classes!/com/digitalasset/canton/TimestampHelpers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "e2f131d8ce24de96a93afe839eed8321fd45d563225a08e91886a3d12745eea4",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/testing/target/scala-2.13/classes!/com/digitalasset/canton/FutureHelpers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "47c2a8e5540438ed92547eb168abc90961ca688fd833ddaff53230bf9443f49b",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/canton/community/testing/target/scala-2.13/classes!/com/digitalasset/canton/RepeatableTest.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "35315c0d13cd682555ce72acac96822c508dca4f4a90276a1a8dc7e0f450e46a",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/concurrent/AbstractPatienceConfiguration.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "4b0785d0df72357538d206237389fb7ee68795ddc37c555f318bcbccf06dad00",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/daml/scalatest-utils_2.13/3.6.1/scalatest-utils_2.13-3.6.1.jar!/com/digitalasset/canton/scalatest/ScalatestEssentials.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "b8c61617db45d7e4d5ac6e74202310b601e6a9b014a4a3c9ab7b17002b8b293d",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/prop/Whenever.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "18430053a5f515abfd5383fc58635b0e87ba54f06efb7fe134e910df0f8749aa",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/prop/Tables.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "2ea9d58ce65d9276824b7d7fd761b727e87784fc2f441e7fb2f2a8eeff3a4e1f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/daml/scalatest-utils_2.13/3.6.1/scalatest-utils_2.13-3.6.1.jar!/com/digitalasset/canton/scalatest/ScalaFuturesWithPatience.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "3cf60ad34de55f2fe6df3479831e1f4159a9e013961fc4d0b965285c3b9b7a1a",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar!/org/scalatest/concurrent/ScaledTimeSpans.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "b9a509d0f333c18131b130ff248d2f1c30fce4fe7348dde463ff481cc1403e38",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/MockitoSugar.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "d4edf6e10d958fb84aae7d6a8886c0daac7126ed450cd8b2fda4a6a9d43319aa",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/ArgumentMatchersSugar.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "a10eebb5787df5abdee986e7dd6647bc8f97c12e6ac7af4d4a482f0cb986f1f2",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/daml/scalatest-utils_2.13/3.6.1/scalatest-utils_2.13-3.6.1.jar!/com/digitalasset/canton/scalatest/DefaultCantonUnitTestPatience.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "ca3338ca6fe68bce486cee97446a427b75cc981239feb362544a658f59281dc3",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/Rest.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "48b5be339da6ed7c017cc071fb6ca24d6c05f2a5d015b6ad631ac5a30c0e01cf",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/matchers/AnyMatchers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "214c13df5551a061212cc5202406fd916eae18b3f8e30e1552fb3667e411fd2f",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/matchers/EqMatchers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "4a8c9713605e90ceead19686884cafb79548d0a1874eb41d914dab31b50f71fc",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/matchers/EqMatchers_VersionSpecific.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "ba9edb02654cfcbf6525edcfb174731e3474429449e14c32601bffd513c06828",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/matchers/ThatMatchers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "e4fe28456360bdad9355ccb4ec6a48688b2dc42fc581e8f197732e834a1d5b9e",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/matchers/StringThatMatchers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "48425c5b8d8cae319aa6a847188aeb33a873f4e59c6244ff4d1d235855cdba83",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/matchers/NullMatchers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "bf7cf1c2df7da9e23baf9b6cc5dbdaa034331a98a377eb74366e66dc009a8efd",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/matchers/FunctionMatchers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "4efebf1d5d2544dcc177a19de15fa79238b6995a5070c191ac414c2e2686b930",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/matchers/NumericMatchers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "d8c6abd9bcb78054d035d63b8e0edb49b47c0f2cfb9abffaad21d0a1ad19ba05",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/matchers/MacroBasedMatchers.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "5a11bfdb6b0f0905b54519d88a4035e8c0e09dc8b2118210302cbd5d44b67176",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/MockitoEnhancer.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "7f68fe56e5a2754744b50a7289024442c1fa1de75ced73cc40be6e4406bf4ced",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/DoSomething.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "5703df9bf6acc3f3ed417cbcc3498f678d5ebb4ffe811b874d86c17034a75554",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/Verifications.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "94bb59b36882d241f909b7aedf787a057329766c87c42214b469fed1140c43af",
+      "flags": 4
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/mockito/mockito-scala_2.13/1.16.3/mockito-scala_2.13-1.16.3.jar!/org/mockito/MockCreator.class",
+      "revision": "8d6193f4c449e04e7d96840d13f031cf966fe146",
+      "context": "project:canton-community-integration-testing/configuration:compile",
+      "source_sha256": "45ff4d79c0d3d814e445fe79633ed29bf9efc2078289889191544503b4fc0c1b",
+      "flags": 4
+    }
+  ],
+  "producer_binary": {
+    "path": "artifacts/phase2-producer/selector-replay3-heap-unit",
+    "bytes": 15052592,
+    "sha256": "e04eab5fc633c00102c917b0bf55da1d3c5e2bb69fb74f6ad18a100a01252c0d"
+  },
+  "source_checkpoint_receipt_sha256": "ea3ddbaef406e043d3f7cd728e34d746f6f23c3a6b183782655aa64a5ecf5903",
+  "artifacts": {
+    "facts.bin": {
+      "bytes": 54400,
+      "sha256": "30b916442baa90acea9b9654a118257cae503a2ac49233c8257ea9025af6cb4e"
+    },
+    "graph.bin": {
+      "bytes": 4480,
+      "sha256": "f545e7163ffaa3dda341c884af0a89a58ce1b4c0de63490aae20d5a87feda803"
+    },
+    "metadata.json": {
+      "bytes": 18263,
+      "sha256": "45c9a14447d82e2ca42fa184f29df9944394dfc956dfc21e8f3d17a573e1a940"
+    },
+    "recording.sha256": {
+      "bytes": 32,
+      "sha256": "92bc04d2e90d75749ac9cb32cdecedf77854e759e0e5f4c4dd6834abf250eeb1"
+    }
+  },
+  "counts": {
+    "symbols": 255,
+    "nodes": 20,
+    "operations": 36,
+    "static_candidates": 54,
+    "events": 28,
+    "source_symbols": 1098659,
+    "source_operations": 2658360,
+    "baseline_calls": 9,
+    "baseline_reads": 17,
+    "logical_field_reads": 4,
+    "heap_owner_drafts": 0
+  },
+  "minimization": {
+    "predicate": "UnknownExecution retained; callback target833780/binding478 retained; calls>=9; reads>=10",
+    "active_operations": 11,
+    "evaluations": 83,
+    "observed_calls": 9,
+    "observed_reads": 11,
+    "qualification": "Current local transfer mask over explicitly coarse historical inputs. Immutable candidate/type/callee authority is retained; no solver or fixed-point proof."
+  },
+  "operator_implementation": {
+    "sha256": "276bcee3de91517f61017c5f0337dc804abb3046ef10237f2ad5ce4f3e377602",
+    "files": 150,
+    "scope": "All crate Rust/Scala/Cargo sources plus root Cargo manifest and lockfile; not a claim about fixture or external toolchain identity."
+  },
+  "original_capture": {
+    "fixture_commit": "f41ac2abff7e45145879ad7ca4871d59e206b2d2",
+    "provenance": "history/v1-provenance.json",
+    "metadata": "history/v1-metadata.json",
+    "reduction": "history/v1-reduction.json",
+    "scope": "883acd9df908a3faa8cb7d61e76d7af6150f0dae5b358270c9fe2add9bbd309f",
+    "artifacts": {
+      "facts.bin": {
+        "bytes": 54400,
+        "sha256": "30b916442baa90acea9b9654a118257cae503a2ac49233c8257ea9025af6cb4e"
+      },
+      "graph.bin": {
+        "bytes": 4480,
+        "sha256": "bcd30772f3f41e6a12a57fd2d3eac547d6a558b05074fd85c92a3b9e5a57f994"
+      },
+      "metadata.json": {
+        "bytes": 16889,
+        "sha256": "96361c3bbc41eccbd5ae7d2852265b552dee6594199e5a7b5ca713ea588bb51a"
+      },
+      "recording.sha256": {
+        "bytes": 32,
+        "sha256": "9b21c34e668529516caa91220eea2d84de6c17cd4a11154b0e263d800a561ac2"
+      }
+    },
+    "source_checkpoint_receipt_sha256": "ea3ddbaef406e043d3f7cd728e34d746f6f23c3a6b183782655aa64a5ecf5903",
+    "capture_receipt_sha256": "8e727301b52e0b5a54316f2f6ae197acb85c3574406e7b5e421d721ea925a6db",
+    "qualification": "Historical v1 output remains pinned to its original producer; it is not silently admitted by the v2 reader."
+  },
+  "original_capture_receipt_sha256": "8e727301b52e0b5a54316f2f6ae197acb85c3574406e7b5e421d721ea925a6db",
+  "source_checkpoint": {
+    "path": "benchmark-output/phase2-work-census/pr7743-exact/checkpoints/head.bin",
+    "artifact": "07db884580e89edd1015b5412376b1f636b4d92add902a2088845de91afe315d",
+    "content_seal": "b8ee584139e2f203e40278402ffadeaeffc208536079417623d74963785ff7c7",
+    "context_policy": {
+      "kind": "exact"
+    },
+    "contexts": 59049,
+    "execution_roots": "035a7fd2d8acc5b7153939426a1549400f224d34202bde4d48006cc6a0f12efc",
+    "facts": "737f0f4232074f05ba05af9f0e430f7334517e12da23849552d071528c1282b1",
+    "frames": 4998,
+    "graph": "0bf2d9be3f3f145824a6b59c39e47c57b2ba3eee306894449d023d3496f0389a",
+    "max_set_members": 64,
+    "producer": "eaef0bed8289276ac03177ded7b60d29db354597c257b6fa39a193ffb5c42ad1",
+    "quantum": 256,
+    "recorded_completion": "ResourceLimited",
+    "recorded_stop": "StepLimit",
+    "rounds": 234,
+    "value_sets": 6193,
+    "version": 1,
+    "qualification": "Legacy v1 is admitted only for read-only inventory and independent production ReadWorld observations. Its original raw coarse object identities remain unchanged; it is never resumed by the current mutable solver."
+  },
+  "migration": {
+    "from_version": 2,
+    "to_version": 3,
+    "method": "Ignored test-only coarse-input adapter under the current compiled transfer; production reader remains strictv3. The adapter cannot reconstruct Object origins or exact heap owners and rejects unrecorded non-marker World requests.",
+    "receipt": {
+      "path": "coarse-migration.json",
+      "bytes": 12332,
+      "sha256": "6f3b46020bebcc642200dcfc0b27966e9b60e07710656fab1e90be8540b272c0"
+    },
+    "independent_marker_control": {
+      "path": "read-world-control.json",
+      "bytes": 3363,
+      "sha256": "331dbe6af58921ad91c770772f1663a32e4a7a657f88e66912d7aa92b2d74a9c"
+    },
+    "marker_control_ready_contexts": 20864,
+    "marker_policy_basis": "The actual current ReadWorld over original StepLimit state returned EMPTY/version0/absent for every required primary and FieldMissing key; no finalized absence certificate was inferred.",
+    "historical_origins": "All Object.binding=0 remain coarse. No partition origin or dynamic callee authority was invented.",
+    "first_issue": {
+      "kind": 6,
+      "operation": 1909541,
+      "reason": 12
+    },
+    "rejected_experiment": "UNKNOWN_FIELD marker injection introduced unrecorded summary requests and was rejected; full requests are retained in coarse-migration.json."
+  },
+  "operator_git_baseline": "fed1578ea4cc5c2b61fffb0aa7ebaf288b7bb0f4",
+  "operator_receipt": {
+    "path": "operator.json",
+    "bytes": 1420,
+    "sha256": "3062c813802f89a695b29df0abc4f4e40f6fb1f434baf4e5516b25bf06731c1a"
+  },
+  "previous_capture": {
+    "version": 2,
+    "path": "history/v2/provenance.json",
+    "scope": "50b724199b380bc75becf4b431d491b08e529063c2a72ec2fa1b83238e498863",
+    "producer_binary": {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/phase2-producer/selector-curried-fixed",
+      "bytes": 14219624,
+      "sha256": "818ad6da1ebe8de5419cb854ab963a13eeb0ffd6c4534c4cbdf0b82c6140b577"
+    },
+    "operator_revision": "5adf748dbfd0c70bfeef2459234a7d538e237686",
+    "bytes": 56259,
+    "sha256": "32a4e0b72343eb9dac7fe3e855cec5b246dc0df3c5febe8f032efc8e6347e875"
+  }
+}

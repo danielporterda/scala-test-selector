@@ -1,0 +1,608 @@
+{
+  "adapter_marker_response_count": 6,
+  "adapter_marker_responses": [
+    {
+      "kind": 8,
+      "member": 822064,
+      "owner": 2689981
+    },
+    {
+      "kind": 8,
+      "member": 822064,
+      "owner": 2689981
+    },
+    {
+      "kind": 8,
+      "member": 822064,
+      "owner": 2689981
+    },
+    {
+      "kind": 8,
+      "member": 821757,
+      "owner": 2689981
+    },
+    {
+      "kind": 8,
+      "member": 821992,
+      "owner": 2689981
+    },
+    {
+      "kind": 8,
+      "member": 821756,
+      "owner": 2689981
+    }
+  ],
+  "current_outcome": {
+    "arguments": [
+      {
+        "atoms": [],
+        "unknown": 0
+      },
+      {
+        "atoms": [],
+        "unknown": 0
+      },
+      {
+        "atoms": [],
+        "unknown": 1
+      },
+      {
+        "atoms": [],
+        "unknown": 1
+      },
+      {
+        "atoms": [],
+        "unknown": 1
+      }
+    ],
+    "calls": [
+      {
+        "arguments": {
+          "len": 1,
+          "start": 0
+        },
+        "binding": 478,
+        "edge": 4294967295,
+        "kind": 5,
+        "operation": 1909543,
+        "receiver": {
+          "atoms": [
+            {
+              "binding": 0,
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621
+            }
+          ],
+          "unknown": 0
+        },
+        "summary": 48350,
+        "target": 833780
+      },
+      {
+        "arguments": {
+          "len": 1,
+          "start": 1
+        },
+        "binding": 4294967295,
+        "edge": 4819429,
+        "kind": 2,
+        "operation": 1909544,
+        "receiver": {
+          "atoms": [
+            {
+              "binding": 0,
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621
+            }
+          ],
+          "unknown": 0
+        },
+        "summary": null,
+        "target": 821992
+      },
+      {
+        "arguments": {
+          "len": 1,
+          "start": 2
+        },
+        "binding": 4294967295,
+        "edge": 4819418,
+        "kind": 2,
+        "operation": 1909552,
+        "receiver": {
+          "atoms": [
+            {
+              "binding": 0,
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621
+            }
+          ],
+          "unknown": 0
+        },
+        "summary": 19939,
+        "target": 821710
+      },
+      {
+        "arguments": {
+          "len": 0,
+          "start": 3
+        },
+        "binding": 4294967295,
+        "edge": 4819449,
+        "kind": 2,
+        "operation": 1909554,
+        "receiver": {
+          "atoms": [],
+          "unknown": 1
+        },
+        "summary": 20031,
+        "target": 822193
+      },
+      {
+        "arguments": {
+          "len": 0,
+          "start": 3
+        },
+        "binding": 4294967295,
+        "edge": 4819453,
+        "kind": 2,
+        "operation": 1909556,
+        "receiver": {
+          "atoms": [],
+          "unknown": 0
+        },
+        "summary": 48352,
+        "target": 822208
+      },
+      {
+        "arguments": {
+          "len": 1,
+          "start": 3
+        },
+        "binding": 4294967295,
+        "edge": 4819419,
+        "kind": 2,
+        "operation": 1909557,
+        "receiver": {
+          "atoms": [
+            {
+              "binding": 0,
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621
+            }
+          ],
+          "unknown": 0
+        },
+        "summary": 19939,
+        "target": 821710
+      },
+      {
+        "arguments": {
+          "len": 0,
+          "start": 4
+        },
+        "binding": 4294967295,
+        "edge": 4819450,
+        "kind": 2,
+        "operation": 1909559,
+        "receiver": {
+          "atoms": [],
+          "unknown": 1
+        },
+        "summary": 20031,
+        "target": 822193
+      },
+      {
+        "arguments": {
+          "len": 1,
+          "start": 4
+        },
+        "binding": 4294967295,
+        "edge": 4819420,
+        "kind": 2,
+        "operation": 1909560,
+        "receiver": {
+          "atoms": [
+            {
+              "binding": 0,
+              "kind": 1,
+              "site": 4294967295,
+              "symbol": 31621
+            }
+          ],
+          "unknown": 0
+        },
+        "summary": 19939,
+        "target": 821710
+      },
+      {
+        "arguments": {
+          "len": 0,
+          "start": 5
+        },
+        "binding": 4294967295,
+        "edge": 4819451,
+        "kind": 2,
+        "operation": 1909562,
+        "receiver": {
+          "atoms": [],
+          "unknown": 1
+        },
+        "summary": 20031,
+        "target": 822193
+      }
+    ],
+    "captures": [],
+    "edges": [
+      [
+        833780,
+        1909543,
+        5,
+        4294967295,
+        4294967295
+      ],
+      [
+        821992,
+        1909544,
+        2,
+        4819429,
+        4294967295
+      ],
+      [
+        821710,
+        1909552,
+        2,
+        4819418,
+        4294967295
+      ],
+      [
+        822193,
+        1909554,
+        2,
+        4819449,
+        4294967295
+      ],
+      [
+        822208,
+        1909556,
+        2,
+        4819453,
+        4294967295
+      ],
+      [
+        821710,
+        1909557,
+        2,
+        4819419,
+        4294967295
+      ],
+      [
+        822193,
+        1909559,
+        2,
+        4819450,
+        4294967295
+      ],
+      [
+        821710,
+        1909560,
+        2,
+        4819420,
+        4294967295
+      ],
+      [
+        822193,
+        1909562,
+        2,
+        4819451,
+        4294967295
+      ]
+    ],
+    "field_reads": [
+      {
+        "kind": 1,
+        "member": 822064,
+        "owner": 2689981
+      },
+      {
+        "kind": 1,
+        "member": 821757,
+        "owner": 2689981
+      },
+      {
+        "kind": 1,
+        "member": 821992,
+        "owner": 2689981
+      },
+      {
+        "kind": 1,
+        "member": 821756,
+        "owner": 2689981
+      }
+    ],
+    "first_issue": {
+      "kind": 6,
+      "operation": 1909541,
+      "reason": 12
+    },
+    "heap_owners": [],
+    "issues": [
+      6
+    ],
+    "operation_visits": 29,
+    "reads": [
+      [
+        {
+          "kind": 1,
+          "member": 822064,
+          "owner": 2689981
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 8,
+          "member": 822064,
+          "owner": 2689981
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "member": 822064,
+          "owner": 4294967295
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 2,
+          "member": 0,
+          "owner": 478
+        },
+        1,
+        true
+      ],
+      [
+        {
+          "kind": 0,
+          "member": 0,
+          "owner": 48350
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "member": 821757,
+          "owner": 2689981
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 8,
+          "member": 821757,
+          "owner": 2689981
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "member": 821757,
+          "owner": 4294967295
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 0,
+          "member": 0,
+          "owner": 19939
+        },
+        1,
+        true
+      ],
+      [
+        {
+          "kind": 0,
+          "member": 0,
+          "owner": 20031
+        },
+        1,
+        true
+      ],
+      [
+        {
+          "kind": 1,
+          "member": 821992,
+          "owner": 2689981
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 8,
+          "member": 821992,
+          "owner": 2689981
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "member": 821992,
+          "owner": 4294967295
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 0,
+          "member": 0,
+          "owner": 48352
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "member": 821756,
+          "owner": 2689981
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 8,
+          "member": 821756,
+          "owner": 2689981
+        },
+        0,
+        false
+      ],
+      [
+        {
+          "kind": 1,
+          "member": 821756,
+          "owner": 4294967295
+        },
+        0,
+        false
+      ]
+    ],
+    "stores": [],
+    "value": {
+      "atoms": [],
+      "unknown": 1
+    }
+  },
+  "current_scope": "b86426ed6a739952cc1ca13481e1d3abda5eb9362a9b28a44ef9d36ba91eace2",
+  "interpretation": "Current transfer re-evaluation of an explicitly adapted coarse v2 input; not the historical same proof, finalized state, resumed solver, or fixed point.",
+  "legacy_allocated_field_requests_mapped_to_coarse_all": 0,
+  "legacy_recording_sha256": "6937526d164a502b0b5bcea53d11c3c2c5ce15615e0d195bd87d87531213ca14",
+  "legacy_scope": "50b724199b380bc75becf4b431d491b08e529063c2a72ec2fa1b83238e498863",
+  "marker_policy": "Adapter-provided bottom/version0/presentfalse for recorded bottom/version0/presentfalse primary reads only; current unfinalized in-flight view of a StepLimit snapshot, not a finalized absence certificate or exact historical v3 marker state.",
+  "namespace_evidence": "Full counts read from original enriched.bin directory sections 5/9 with the pinned source facts identity.",
+  "object_origins": "All historical Object.binding=0 remain coarse; no root origin or heap partition reconstructed.",
+  "publication_status": "Published only after the independent actual ReadWorld control confirmed the marker responses; no legacy mutable restore or fixed-point claim.",
+  "rejected_unknown_extension": {
+    "error": "invalid replay unrecorded world frontier",
+    "interpretation": "These summary frontiers have no recorded result; no extended transcript was published.",
+    "new_summary_requests": [
+      {
+        "Summary": {
+          "arguments": [
+            {
+              "atoms": [],
+              "unknown": 1
+            }
+          ],
+          "node": 822065,
+          "receiver": {
+            "atoms": [],
+            "unknown": 4
+          }
+        }
+      },
+      {
+        "Summary": {
+          "arguments": [
+            {
+              "atoms": [],
+              "unknown": 1
+            }
+          ],
+          "node": 822065,
+          "receiver": {
+            "atoms": [],
+            "unknown": 4
+          }
+        }
+      },
+      {
+        "Summary": {
+          "arguments": [
+            {
+              "atoms": [],
+              "unknown": 1
+            },
+            {
+              "atoms": [],
+              "unknown": 4
+            }
+          ],
+          "node": 822066,
+          "receiver": {
+            "atoms": [],
+            "unknown": 4
+          }
+        }
+      },
+      {
+        "Summary": {
+          "arguments": [],
+          "node": 822208,
+          "receiver": {
+            "atoms": [],
+            "unknown": 4
+          }
+        }
+      }
+    ],
+    "policy": "UNKNOWN_FIELD/version0/presentfalse",
+    "status": "rejected"
+  },
+  "report": {
+    "candidates": 54,
+    "events": 28,
+    "node": 821044,
+    "nodes": 20,
+    "operations": 36,
+    "owned_bytes": 86212,
+    "symbols": 255
+  },
+  "schema": "selector-replay-coarse-current-kernel-migration/v1",
+  "source_facts": "737f0f4232074f05ba05af9f0e430f7334517e12da23849552d071528c1282b1",
+  "source_graph": "0bf2d9be3f3f145824a6b59c39e47c57b2ba3eee306894449d023d3496f0389a",
+  "source_operations": 2658360,
+  "source_symbols": 1098659,
+  "legacy_provenance": {
+    "path": "history/v2/provenance.json",
+    "bytes": 56259,
+    "sha256": "32a4e0b72343eb9dac7fe3e855cec5b246dc0df3c5febe8f032efc8e6347e875"
+  },
+  "generated_experiment_receipt": {
+    "path": "/private/tmp/selector-clue-replay3-coarse-final-20261107/migration.json",
+    "bytes": 69756,
+    "sha256": "f5701434046da87d90b53a2a0911d53180f549bbd871706b541daa52db6364f7"
+  },
+  "independent_control": {
+    "path": "read-world-control.json",
+    "bytes": 3363,
+    "sha256": "331dbe6af58921ad91c770772f1663a32e4a7a657f88e66912d7aa92b2d74a9c"
+  },
+  "operator": {
+    "path": "operator.json",
+    "bytes": 1420,
+    "sha256": "3062c813802f89a695b29df0abc4f4e40f6fb1f434baf4e5516b25bf06731c1a"
+  }
+}

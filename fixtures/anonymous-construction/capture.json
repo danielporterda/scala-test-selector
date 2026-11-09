@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "43a759216e65bbb225e4148e347a1659b305bd1e",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/anonymouscase/Allocations.scala.semanticdb",
+      "sha256": "27e4008761443a56abb1d5346a2f1a266faf8589d4d85e0f6ecf2845e0223cd8",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/anonymouscase/Allocations.scala.semanticdb",
+      "input_target_contexts": [
+        "project:anonymous-construction/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/anonymouscase/Allocations.scala",
+      "file": "src/anonymouscase/Allocations.scala",
+      "sha256": "48e065817152003dc2f8d2da74f563a214d67185fa012eb900d6b4fd56585d2d",
+      "source_contexts": [
+        "project:anonymous-construction/configuration:test"
+      ]
+    }
+  ]
+}

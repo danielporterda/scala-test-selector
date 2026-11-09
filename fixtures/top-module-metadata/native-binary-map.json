@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "revision": "2e8cda83400a101f7cd269845db9e10eac3389b2",
+  "java_feature": null,
+  "contexts": [
+    {
+      "id": "project:external-metadata/configuration:test",
+      "entries": [
+        {
+          "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar",
+          "sha256": "c5c965928dba16f7ccb7a1e9812b6de9471828d65d3345e9f822e4572b36a3ad",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+          "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+          "kind": "jar"
+        }
+      ]
+    }
+  ],
+  "types": [],
+  "methods": []
+}

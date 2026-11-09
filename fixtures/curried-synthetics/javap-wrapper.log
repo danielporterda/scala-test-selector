@@ -1,0 +1,464 @@
+Compiled from "Matchers.scala"
+public interface org.scalatest.matchers.should.Matchers extends org.scalatest.Assertions,org.scalactic.Tolerance,org.scalatest.verbs.ShouldVerb,org.scalatest.matchers.dsl.MatcherWords,org.scalactic.Explicitly {
+  public abstract org.scalatest.matchers.should.Matchers$BetweenCollected$ org$scalatest$matchers$should$Matchers$$BetweenCollected();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$BetweenCollected$;
+
+  public abstract org.scalatest.matchers.should.Matchers$AtLeastCollected$ org$scalatest$matchers$should$Matchers$$AtLeastCollected();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$AtLeastCollected$;
+
+  public abstract org.scalatest.matchers.should.Matchers$AtMostCollected$ org$scalatest$matchers$should$Matchers$$AtMostCollected();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$AtMostCollected$;
+
+  public abstract org.scalatest.matchers.should.Matchers$ExactlyCollected$ org$scalatest$matchers$should$Matchers$$ExactlyCollected();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$ExactlyCollected$;
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$key_$eq(org.scalatest.matchers.should.Matchers$KeyWord);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$KeyWord;)V
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$value_$eq(org.scalatest.matchers.should.Matchers$ValueWord);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$ValueWord;)V
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$a_$eq(org.scalatest.matchers.should.Matchers$AWord);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$AWord;)V
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$an_$eq(org.scalatest.matchers.should.Matchers$AnWord);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$AnWord;)V
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$theSameInstanceAs_$eq(org.scalatest.matchers.should.Matchers$TheSameInstanceAsPhrase);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$TheSameInstanceAsPhrase;)V
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$regex_$eq(org.scalatest.matchers.should.Matchers$RegexWord);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$RegexWord;)V
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$org$scalatest$matchers$should$Matchers$$AllCollected_$eq(org.scalatest.matchers.should.Matchers$Collected);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$Collected;)V
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$org$scalatest$matchers$should$Matchers$$EveryCollected_$eq(org.scalatest.matchers.should.Matchers$Collected);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$Collected;)V
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$org$scalatest$matchers$should$Matchers$$NoCollected_$eq(org.scalatest.matchers.should.Matchers$Collected);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$Collected;)V
+
+  public abstract void org$scalatest$matchers$should$Matchers$_setter_$org$scalatest$matchers$should$Matchers$$ShouldMethodHelper_$eq(org.scalatest.matchers.should.Matchers$ShouldMethodHelperClass);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$ShouldMethodHelperClass;)V
+
+  public static org.scalatest.matchers.should.Matchers$HavePropertyMatcherGenerator convertSymbolToHavePropertyMatcherGenerator$(org.scalatest.matchers.should.Matchers, scala.Symbol, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/Symbol;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$HavePropertyMatcherGenerator;
+
+  public default org.scalatest.matchers.should.Matchers$HavePropertyMatcherGenerator convertSymbolToHavePropertyMatcherGenerator(scala.Symbol, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lscala/Symbol;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$HavePropertyMatcherGenerator;
+
+  public static org.scalatest.matchers.Matcher equal$(org.scalatest.matchers.should.Matchers, org.scalactic.TripleEqualsSupport$Spread);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalatest/matchers/Matcher;
+
+  public default <T> org.scalatest.matchers.Matcher<T> equal(org.scalactic.TripleEqualsSupport$Spread<T>);
+    descriptor: (Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalatest/matchers/Matcher;
+
+  public static org.scalatest.matchers.Matcher equal$(org.scalatest.matchers.should.Matchers, scala.runtime.Null$);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/runtime/Null$;)Lorg/scalatest/matchers/Matcher;
+
+  public default org.scalatest.matchers.Matcher<java.lang.Object> equal(scala.runtime.Null$);
+    descriptor: (Lscala/runtime/Null$;)Lorg/scalatest/matchers/Matcher;
+
+  public abstract org.scalatest.matchers.should.Matchers$KeyWord key();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$KeyWord;
+
+  public abstract org.scalatest.matchers.should.Matchers$ValueWord value();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$ValueWord;
+
+  public abstract org.scalatest.matchers.should.Matchers$AWord a();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$AWord;
+
+  public abstract org.scalatest.matchers.should.Matchers$AnWord an();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$AnWord;
+
+  public abstract org.scalatest.matchers.should.Matchers$TheSameInstanceAsPhrase theSameInstanceAs();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$TheSameInstanceAsPhrase;
+
+  public abstract org.scalatest.matchers.should.Matchers$RegexWord regex();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$RegexWord;
+
+  public static org.scalatest.matchers.dsl.ResultOfLessThanComparison $less$(org.scalatest.matchers.should.Matchers, java.lang.Object, scala.math.Ordering);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfLessThanComparison;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfLessThanComparison<T> $less(T, scala.math.Ordering<T>);
+    descriptor: (Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfLessThanComparison;
+
+  public static org.scalatest.matchers.dsl.ResultOfGreaterThanComparison $greater$(org.scalatest.matchers.should.Matchers, java.lang.Object, scala.math.Ordering);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfGreaterThanComparison;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfGreaterThanComparison<T> $greater(T, scala.math.Ordering<T>);
+    descriptor: (Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfGreaterThanComparison;
+
+  public static org.scalatest.matchers.dsl.ResultOfLessThanOrEqualToComparison $less$eq$(org.scalatest.matchers.should.Matchers, java.lang.Object, scala.math.Ordering);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfLessThanOrEqualToComparison;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfLessThanOrEqualToComparison<T> $less$eq(T, scala.math.Ordering<T>);
+    descriptor: (Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfLessThanOrEqualToComparison;
+
+  public static org.scalatest.matchers.dsl.ResultOfGreaterThanOrEqualToComparison $greater$eq$(org.scalatest.matchers.should.Matchers, java.lang.Object, scala.math.Ordering);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfGreaterThanOrEqualToComparison;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfGreaterThanOrEqualToComparison<T> $greater$eq(T, scala.math.Ordering<T>);
+    descriptor: (Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfGreaterThanOrEqualToComparison;
+
+  public static org.scalatest.matchers.dsl.ResultOfDefinedAt definedAt$(org.scalatest.matchers.should.Matchers, java.lang.Object);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;)Lorg/scalatest/matchers/dsl/ResultOfDefinedAt;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfDefinedAt<T> definedAt(T);
+    descriptor: (Ljava/lang/Object;)Lorg/scalatest/matchers/dsl/ResultOfDefinedAt;
+
+  public static org.scalatest.matchers.dsl.ResultOfOneOfApplication oneOf$(org.scalatest.matchers.should.Matchers, java.lang.Object, java.lang.Object, scala.collection.immutable.Seq, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfOneOfApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfOneOfApplication oneOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfOneOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfOneElementOfApplication oneElementOf$(org.scalatest.matchers.should.Matchers, scala.collection.Iterable);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfOneElementOfApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfOneElementOfApplication oneElementOf(scala.collection.Iterable<java.lang.Object>);
+    descriptor: (Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfOneElementOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfAtLeastOneOfApplication atLeastOneOf$(org.scalatest.matchers.should.Matchers, java.lang.Object, java.lang.Object, scala.collection.immutable.Seq, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfAtLeastOneOfApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfAtLeastOneOfApplication atLeastOneOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfAtLeastOneOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfAtLeastOneElementOfApplication atLeastOneElementOf$(org.scalatest.matchers.should.Matchers, scala.collection.Iterable);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfAtLeastOneElementOfApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfAtLeastOneElementOfApplication atLeastOneElementOf(scala.collection.Iterable<java.lang.Object>);
+    descriptor: (Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfAtLeastOneElementOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfNoneOfApplication noneOf$(org.scalatest.matchers.should.Matchers, java.lang.Object, java.lang.Object, scala.collection.immutable.Seq, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfNoneOfApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfNoneOfApplication noneOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfNoneOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfNoElementsOfApplication noElementsOf$(org.scalatest.matchers.should.Matchers, scala.collection.Iterable);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfNoElementsOfApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfNoElementsOfApplication noElementsOf(scala.collection.Iterable<java.lang.Object>);
+    descriptor: (Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfNoElementsOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfTheSameElementsAsApplication theSameElementsAs$(org.scalatest.matchers.should.Matchers, scala.collection.Iterable);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfTheSameElementsAsApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfTheSameElementsAsApplication theSameElementsAs(scala.collection.Iterable<java.lang.Object>);
+    descriptor: (Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfTheSameElementsAsApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfTheSameElementsInOrderAsApplication theSameElementsInOrderAs$(org.scalatest.matchers.should.Matchers, scala.collection.Iterable);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfTheSameElementsInOrderAsApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfTheSameElementsInOrderAsApplication theSameElementsInOrderAs(scala.collection.Iterable<java.lang.Object>);
+    descriptor: (Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfTheSameElementsInOrderAsApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfOnlyApplication only$(org.scalatest.matchers.should.Matchers, scala.collection.immutable.Seq, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfOnlyApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfOnlyApplication only(scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    descriptor: (Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfOnlyApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfInOrderOnlyApplication inOrderOnly$(org.scalatest.matchers.should.Matchers, java.lang.Object, java.lang.Object, scala.collection.immutable.Seq, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfInOrderOnlyApplication;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfInOrderOnlyApplication inOrderOnly(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfInOrderOnlyApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfAllOfApplication allOf$(org.scalatest.matchers.should.Matchers, java.lang.Object, java.lang.Object, scala.collection.immutable.Seq, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfAllOfApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfAllOfApplication allOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfAllOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfAllElementsOfApplication allElementsOf$(org.scalatest.matchers.should.Matchers, scala.collection.Iterable);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfAllElementsOfApplication;
+
+  public default <R> org.scalatest.matchers.dsl.ResultOfAllElementsOfApplication allElementsOf(scala.collection.Iterable<R>);
+    descriptor: (Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfAllElementsOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfInOrderApplication inOrder$(org.scalatest.matchers.should.Matchers, java.lang.Object, java.lang.Object, scala.collection.immutable.Seq, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfInOrderApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfInOrderApplication inOrder(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfInOrderApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfInOrderElementsOfApplication inOrderElementsOf$(org.scalatest.matchers.should.Matchers, scala.collection.Iterable);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfInOrderElementsOfApplication;
+
+  public default <R> org.scalatest.matchers.dsl.ResultOfInOrderElementsOfApplication inOrderElementsOf(scala.collection.Iterable<R>);
+    descriptor: (Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfInOrderElementsOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfAtMostOneOfApplication atMostOneOf$(org.scalatest.matchers.should.Matchers, java.lang.Object, java.lang.Object, scala.collection.immutable.Seq, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfAtMostOneOfApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfAtMostOneOfApplication atMostOneOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfAtMostOneOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfAtMostOneElementOfApplication atMostOneElementOf$(org.scalatest.matchers.should.Matchers, scala.collection.Iterable);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfAtMostOneElementOfApplication;
+
+  public default <R> org.scalatest.matchers.dsl.ResultOfAtMostOneElementOfApplication atMostOneElementOf(scala.collection.Iterable<R>);
+    descriptor: (Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfAtMostOneElementOfApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfThrownByApplication thrownBy$(org.scalatest.matchers.should.Matchers, scala.Function0);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/Function0;)Lorg/scalatest/matchers/dsl/ResultOfThrownByApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfThrownByApplication thrownBy(scala.Function0<java.lang.Object>);
+    descriptor: (Lscala/Function0;)Lorg/scalatest/matchers/dsl/ResultOfThrownByApplication;
+
+  public static org.scalatest.matchers.dsl.ResultOfMessageWordApplication message$(org.scalatest.matchers.should.Matchers, java.lang.String);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;)Lorg/scalatest/matchers/dsl/ResultOfMessageWordApplication;
+
+  public default org.scalatest.matchers.dsl.ResultOfMessageWordApplication message(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lorg/scalatest/matchers/dsl/ResultOfMessageWordApplication;
+
+  public abstract org.scalatest.matchers.should.Matchers$Collected org$scalatest$matchers$should$Matchers$$AllCollected();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$Collected;
+
+  public abstract org.scalatest.matchers.should.Matchers$Collected org$scalatest$matchers$should$Matchers$$EveryCollected();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$Collected;
+
+  public abstract org.scalatest.matchers.should.Matchers$Collected org$scalatest$matchers$should$Matchers$$NoCollected();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$Collected;
+
+  public static org.scalatest.compatible.Assertion doCollected$(org.scalatest.matchers.should.Matchers, org.scalatest.matchers.should.Matchers$Collected, scala.collection.Iterable, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position, scala.Function1);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lorg/scalatest/matchers/should/Matchers$Collected;Lscala/collection/Iterable;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;Lscala/Function1;)Lorg/scalatest/compatible/Assertion;
+
+  public default <T> org.scalatest.compatible.Assertion doCollected(org.scalatest.matchers.should.Matchers$Collected, scala.collection.Iterable<T>, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position, scala.Function1<T, org.scalatest.compatible.Assertion>);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers$Collected;Lscala/collection/Iterable;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;Lscala/Function1;)Lorg/scalatest/compatible/Assertion;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny all$(org.scalatest.matchers.should.Matchers, java.lang.Object, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> all(C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny all$(org.scalatest.matchers.should.Matchers, scala.collection.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> all(MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny all$(org.scalatest.matchers.should.Matchers, java.util.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> all(JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Ljava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny all$(org.scalatest.matchers.should.Matchers, java.lang.String, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> all(java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny atLeast$(org.scalatest.matchers.should.Matchers, int, java.lang.Object, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> atLeast(int, C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny atLeast$(org.scalatest.matchers.should.Matchers, int, scala.collection.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> atLeast(int, MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny atLeast$(org.scalatest.matchers.should.Matchers, int, java.util.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> atLeast(int, JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny atLeast$(org.scalatest.matchers.should.Matchers, int, java.lang.String, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> atLeast(int, java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny every$(org.scalatest.matchers.should.Matchers, java.lang.Object, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> every(C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny every$(org.scalatest.matchers.should.Matchers, scala.collection.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> every(MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny every$(org.scalatest.matchers.should.Matchers, java.util.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> every(JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Ljava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny every$(org.scalatest.matchers.should.Matchers, java.lang.String, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> every(java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny exactly$(org.scalatest.matchers.should.Matchers, int, java.lang.Object, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> exactly(int, C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny exactly$(org.scalatest.matchers.should.Matchers, int, scala.collection.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> exactly(int, MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny exactly$(org.scalatest.matchers.should.Matchers, int, java.util.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> exactly(int, JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny exactly$(org.scalatest.matchers.should.Matchers, int, java.lang.String, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> exactly(int, java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny no$(org.scalatest.matchers.should.Matchers, java.lang.Object, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> no(C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny no$(org.scalatest.matchers.should.Matchers, java.util.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> no(JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Ljava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny no$(org.scalatest.matchers.should.Matchers, java.lang.String, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> no(java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Ljava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny between$(org.scalatest.matchers.should.Matchers, int, int, java.lang.Object, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;IILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> between(int, int, C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (IILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny between$(org.scalatest.matchers.should.Matchers, int, int, java.util.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;IILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> between(int, int, JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (IILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny between$(org.scalatest.matchers.should.Matchers, int, int, java.lang.String, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;IILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> between(int, int, java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (IILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny atMost$(org.scalatest.matchers.should.Matchers, int, java.lang.Object, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> atMost(int, C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny atMost$(org.scalatest.matchers.should.Matchers, int, scala.collection.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> atMost(int, MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny atMost$(org.scalatest.matchers.should.Matchers, int, java.util.Map, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> atMost(int, JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.should.Matchers$ResultOfCollectedAny atMost$(org.scalatest.matchers.should.Matchers, int, java.lang.String, org.scalatest.enablers.Collecting, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;ILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public default org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> atMost(int, java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    descriptor: (ILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+
+  public static org.scalatest.matchers.dsl.ResultOfATypeInvocation a$(org.scalatest.matchers.should.Matchers, scala.reflect.ClassTag);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/reflect/ClassTag;)Lorg/scalatest/matchers/dsl/ResultOfATypeInvocation;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfATypeInvocation<T> a(scala.reflect.ClassTag<T>);
+    descriptor: (Lscala/reflect/ClassTag;)Lorg/scalatest/matchers/dsl/ResultOfATypeInvocation;
+
+  public static org.scalatest.matchers.dsl.ResultOfAnTypeInvocation an$(org.scalatest.matchers.should.Matchers, scala.reflect.ClassTag);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/reflect/ClassTag;)Lorg/scalatest/matchers/dsl/ResultOfAnTypeInvocation;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfAnTypeInvocation<T> an(scala.reflect.ClassTag<T>);
+    descriptor: (Lscala/reflect/ClassTag;)Lorg/scalatest/matchers/dsl/ResultOfAnTypeInvocation;
+
+  public static org.scalatest.matchers.dsl.ResultOfTheTypeInvocation the$(org.scalatest.matchers.should.Matchers, scala.reflect.ClassTag, org.scalactic.source.Position);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfTheTypeInvocation;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfTheTypeInvocation<T> the(scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    descriptor: (Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfTheTypeInvocation;
+
+  public abstract org.scalatest.matchers.should.Matchers$ShouldMethodHelperClass org$scalatest$matchers$should$Matchers$$ShouldMethodHelper();
+    descriptor: ()Lorg/scalatest/matchers/should/Matchers$ShouldMethodHelperClass;
+
+  public static org.scalatest.matchers.should.Matchers$AnyShouldWrapper convertToAnyShouldWrapper$(org.scalatest.matchers.should.Matchers, java.lang.Object, org.scalactic.source.Position, org.scalactic.Prettifier);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)Lorg/scalatest/matchers/should/Matchers$AnyShouldWrapper;
+
+  public default <T> org.scalatest.matchers.should.Matchers$AnyShouldWrapper<T> convertToAnyShouldWrapper(T, org.scalactic.source.Position, org.scalactic.Prettifier);
+    descriptor: (Ljava/lang/Object;Lorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)Lorg/scalatest/matchers/should/Matchers$AnyShouldWrapper;
+
+  public static org.scalatest.matchers.should.Matchers$StringShouldWrapper convertToStringShouldWrapper$(org.scalatest.matchers.should.Matchers, java.lang.String, org.scalactic.source.Position, org.scalactic.Prettifier);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;Lorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)Lorg/scalatest/matchers/should/Matchers$StringShouldWrapper;
+
+  public default org.scalatest.matchers.should.Matchers$StringShouldWrapper convertToStringShouldWrapper(java.lang.String, org.scalactic.source.Position, org.scalactic.Prettifier);
+    descriptor: (Ljava/lang/String;Lorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)Lorg/scalatest/matchers/should/Matchers$StringShouldWrapper;
+
+  public static org.scalatest.matchers.should.Matchers$RegexWrapper convertToRegexWrapper$(org.scalatest.matchers.should.Matchers, scala.util.matching.Regex);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/util/matching/Regex;)Lorg/scalatest/matchers/should/Matchers$RegexWrapper;
+
+  public default org.scalatest.matchers.should.Matchers$RegexWrapper convertToRegexWrapper(scala.util.matching.Regex);
+    descriptor: (Lscala/util/matching/Regex;)Lorg/scalatest/matchers/should/Matchers$RegexWrapper;
+
+  public static org.scalatest.matchers.dsl.ResultOfOfTypeInvocation of$(org.scalatest.matchers.should.Matchers, scala.reflect.ClassTag);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;Lscala/reflect/ClassTag;)Lorg/scalatest/matchers/dsl/ResultOfOfTypeInvocation;
+
+  public default <T> org.scalatest.matchers.dsl.ResultOfOfTypeInvocation<T> of(scala.reflect.ClassTag<T>);
+    descriptor: (Lscala/reflect/ClassTag;)Lorg/scalatest/matchers/dsl/ResultOfOfTypeInvocation;
+
+  public static void $anonfun$thrownBy$1(scala.Function0);
+    descriptor: (Lscala/Function0;)V
+
+  public static org.scalatest.compatible.Assertion $anonfun$doCollected$1(scala.Function1, java.lang.Object);
+    descriptor: (Lscala/Function1;Ljava/lang/Object;)Lorg/scalatest/compatible/Assertion;
+
+  public static org.scalatest.compatible.Assertion $anonfun$doCollected$2(scala.Function1, java.lang.Object);
+    descriptor: (Lscala/Function1;Ljava/lang/Object;)Lorg/scalatest/compatible/Assertion;
+
+  public static org.scalatest.compatible.Assertion $anonfun$doCollected$3(scala.Function1, java.lang.Object);
+    descriptor: (Lscala/Function1;Ljava/lang/Object;)Lorg/scalatest/compatible/Assertion;
+
+  public static org.scalatest.compatible.Assertion $anonfun$doCollected$4(scala.Function1, java.lang.Object);
+    descriptor: (Lscala/Function1;Ljava/lang/Object;)Lorg/scalatest/compatible/Assertion;
+
+  public static org.scalatest.compatible.Assertion $anonfun$doCollected$5(scala.Function1, java.lang.Object);
+    descriptor: (Lscala/Function1;Ljava/lang/Object;)Lorg/scalatest/compatible/Assertion;
+
+  public static org.scalatest.compatible.Assertion $anonfun$doCollected$6(scala.Function1, java.lang.Object);
+    descriptor: (Lscala/Function1;Ljava/lang/Object;)Lorg/scalatest/compatible/Assertion;
+
+  public static org.scalatest.compatible.Assertion $anonfun$doCollected$7(scala.Function1, java.lang.Object);
+    descriptor: (Lscala/Function1;Ljava/lang/Object;)Lorg/scalatest/compatible/Assertion;
+
+  public static void $init$(org.scalatest.matchers.should.Matchers);
+    descriptor: (Lorg/scalatest/matchers/should/Matchers;)V
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    descriptor: (Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+}

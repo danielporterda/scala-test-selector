@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "discovery": "Independent JVM construction and successful ScalaTest Runner run.",
+  "families": [
+    {
+      "name": "source-annotations",
+      "suites": [
+        "annotationcase.AffectedSuite",
+        "annotationcase.UnaffectedSuite"
+      ]
+    }
+  ]
+}

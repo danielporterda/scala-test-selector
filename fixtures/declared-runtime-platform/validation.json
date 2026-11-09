@@ -1,0 +1,316 @@
+{
+  "schema": "selector-declared-runtime-platform-acceptance/v1",
+  "recorded_at_utc": "2026-11-08T18:07:14.107778+00:00",
+  "complete": true,
+  "passed": 4,
+  "failed": 0,
+  "ignored_in_explicit_gate": 0,
+  "default_gate": {
+    "passed": 3,
+    "actual_image_test_ignored_without_explicit_environment": true,
+    "host_jdk_required": false
+  },
+  "scope": "New declared-runtime java.base admission and conservative execution boundary controls. Callable native endpoints and Object compiler-reference placeholder are explicitly normalized engine controls, not discovered CI suites or a claim of source capture.",
+  "historical_compiler_image_proven": false,
+  "runtime_isolation_proven": false,
+  "suite_omission_authority": false,
+  "whole_project_execution_complete": false,
+  "all_span_guards_resolved": false,
+  "performance_eligible": false,
+  "capture": {
+    "manifest": {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/manifest.json",
+      "bytes": 3667,
+      "sha256": "72e6bcf1ce09754b95fb4750f710f5ae38d2e7f2e64bec56bf2ceaa7338a923a"
+    },
+    "receipt": {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/receipt.json",
+      "bytes": 11965,
+      "sha256": "8903528cd864dd698ce44d32cb176d3c3b4790356c175a4fe85918f946d37115"
+    },
+    "producer_sha256": "d959a6cdd9311f0dac2dfa20a95708037014d5116ffb8369fee3f5ea053dfecf",
+    "capture_sha256": "fd647b37f795355a5798aef24fd5f26327d797425988556ac7ee25b09fc24d3f",
+    "context_ids": [
+      "project:apps-app/configuration:compile",
+      "project:apps-app/configuration:test",
+      "project:apps-common-sv/configuration:compile",
+      "project:apps-common/configuration:compile",
+      "project:apps-common/configuration:test",
+      "project:apps-dar-resources-generator/configuration:compile",
+      "project:apps-metrics-docs/configuration:compile",
+      "project:apps-scan/configuration:compile",
+      "project:apps-scan/configuration:test",
+      "project:apps-splitwell/configuration:compile",
+      "project:apps-sv/configuration:compile",
+      "project:apps-sv/configuration:test",
+      "project:apps-validator/configuration:compile",
+      "project:apps-validator/configuration:test",
+      "project:apps-wallet/configuration:compile",
+      "project:apps-wallet/configuration:test",
+      "project:build-tools-dar-lock-checker/configuration:compile",
+      "project:build-tools-dar-lock-checker/configuration:test",
+      "project:canton-community-admin-api/configuration:compile",
+      "project:canton-community-app-base/configuration:compile",
+      "project:canton-community-app/configuration:compile",
+      "project:canton-community-base/configuration:compile",
+      "project:canton-community-common/configuration:compile",
+      "project:canton-community-integration-testing/configuration:compile",
+      "project:canton-community-participant/configuration:compile",
+      "project:canton-community-reference-driver/configuration:compile",
+      "project:canton-community-synchronizer/configuration:compile",
+      "project:canton-community-testing/configuration:compile",
+      "project:canton-fork-community-common-test/configuration:compile",
+      "project:canton-ledger-json-api/configuration:compile",
+      "project:canton-sequencer-driver-api/configuration:compile",
+      "project:canton-traffic-enforcement-component/configuration:compile",
+      "project:canton-util-observability/configuration:compile",
+      "project:canton-wartremover-extension/configuration:compile",
+      "project:daml-lf-data-scalacheck/configuration:compile",
+      "project:daml-lf-transaction-test-lib/configuration:compile",
+      "project:lf-value-json/configuration:compile",
+      "project:splice-wartremover-extension/configuration:compile",
+      "project:splice-wartremover-extension/configuration:test",
+      "project:tools/configuration:compile"
+    ],
+    "java_feature": 21,
+    "archive": {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/java.base.jar",
+      "bytes": 30081825,
+      "sha256": "ba5f1b0448a754a9bfe2bed7d0e9db87d94cb5d6575b1a8227362b536872e87f"
+    },
+    "inventory": {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/java.base.inventory.json",
+      "bytes": 1122861,
+      "sha256": "f5e170eef58a69be31f8ac981718ebc990db12a6d24e0144409a298286dbbd35"
+    },
+    "classes": 7536,
+    "class_bytes": 28798243,
+    "actual_image_inputs": {
+      "canonical_home": "/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home",
+      "launcher": {
+        "bytes": 51584,
+        "path": "/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "sha256": "2aee02a39a0817c27501e853728c28b79f48d114dbde7c88cbf698ecf1680f63"
+      },
+      "modules": {
+        "bytes": 140689296,
+        "path": "/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/lib/modules",
+        "sha256": "f9cb5772407c18438da71d6776528d108fd014a6768866a38abd79376862c7c0"
+      },
+      "release": {
+        "bytes": 1232,
+        "path": "/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/release",
+        "sha256": "7b6f4e84249287203d8e1857254307a6b2dc0643b1efdeef5fa2aeaf791866f0"
+      }
+    },
+    "inputs_unchanged_by_capture": true,
+    "helper_commands": [
+      {
+        "command": [
+          "/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/bin/javac",
+          "-g:none",
+          "-proc:none",
+          "-implicit:none",
+          "-encoding",
+          "UTF-8",
+          "--release",
+          "17",
+          "-d",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/work",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/tools/platform/RuntimePlatformCapture.java"
+        ],
+        "pid": 12379,
+        "wall_ns": 321187833,
+        "cpu_ns": 798446999,
+        "peak_rss_bytes": 127172608,
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/bin/java",
+          "-Xms16m",
+          "-Xmx128m",
+          "-XX:ActiveProcessorCount=2",
+          "-Dfile.encoding=UTF-8",
+          "-cp",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/work",
+          "RuntimePlatformCapture",
+          "/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home",
+          "21",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/work/java.base.jar",
+          "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/work/java.base.inventory.json",
+          "100000",
+          "16777216",
+          "134217728",
+          "201326592",
+          "33554432",
+          "1073741824",
+          "64"
+        ],
+        "pid": 12380,
+        "wall_ns": 1807458542,
+        "cpu_ns": 2030758999,
+        "peak_rss_bytes": 117719040,
+        "exit_code": 0
+      }
+    ],
+    "lookup": "jrt_filesystem_no_reflective_target_loading",
+    "target_jvm_code_executed_by_acceptance": false
+  },
+  "selected_genuine_classes": [
+    {
+      "owner": "java/io/Serializable",
+      "class_sha256": "fde91e69e406145f4d405b1060d87efbc870b480dd1fbc4b8e0064a80cffdf11",
+      "bytes": 113
+    },
+    {
+      "owner": "java/lang/Object",
+      "class_sha256": "10cc90d16479279e1d6ee258fdaea4c5640ac6125acb5a7100a7b0a20237a9f2",
+      "bytes": 2487
+    },
+    {
+      "owner": "java/lang/String",
+      "class_sha256": "831a11d5c76c84b8777a7813440b4570d49934dee05c285c9068a0ec43158412",
+      "bytes": 49154
+    },
+    {
+      "owner": "java/lang/System",
+      "class_sha256": "6e8032510fcd1d3e5df60093c2e45ca1a4b07c3bb9a58c6ab594fac29c09bc03",
+      "bytes": 18814
+    }
+  ],
+  "native_admission_limits": {
+    "classes_per_context": 64,
+    "bytes_per_context": 8388608,
+    "methods": 32
+  },
+  "observations": [
+    "Every inventoried java.base class digest and archive membership is checked through normal platform admission.",
+    "Object and Serializable verified header flags are published only from admitted bytes; their real binary recipe file SHA, context and owner path match the independently captured inventory.",
+    "The Object constructor has an ordinary binary Return recipe despite a same-context opaque Object# compiler-reference placeholder; no executable body is fabricated for the placeholder.",
+    "String.length demands the genuine String-to-Serializable parent path; declaring an unused type alone is not treated as a demand.",
+    "System.nanoTime is backed by the exact admitted System class, retains UnknownExecution and an Unknown operation, and its public QuerySession completes normally with the root guarded.",
+    "Without platform inputs the actual MissingBinary boundary remains, and the public QuerySession retains the guard.",
+    "Wrong schema, capture/context/producer identity, unsupported runtime hooks, image/archive/inventory digests and a re-sealed per-class digest mismatch fail at their intended admission checks."
+  ],
+  "measurement": {
+    "receipt": {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v4/receipt.json",
+      "bytes": 2057,
+      "sha256": "6b67349c5058ae9f190334ac9e4082d86e66c95d715f4e4867bc1aea45116380"
+    },
+    "record": {
+      "case": "complete-focused-gate",
+      "command": [
+        "/opt/homebrew/bin/cargo",
+        "test",
+        "--locked",
+        "--offline",
+        "-p",
+        "selector-acceptance",
+        "--test",
+        "declared_runtime_platform",
+        "--",
+        "--include-ignored"
+      ],
+      "pid": 15096,
+      "exit_code": 0,
+      "wall_ns": 15405760167,
+      "peak_rss_bytes": 188547072,
+      "cpu_ns": 15268462000,
+      "stdout": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v4/complete-focused-gate.stdout",
+      "stderr": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v4/complete-focused-gate.stderr",
+      "stage_metrics": [],
+      "stdout_bytes": 458,
+      "stderr_bytes": 324,
+      "environment": {
+        "CARGO_BUILD_JOBS": "2",
+        "SELECTOR_PLATFORM_MANIFEST": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/manifest.json",
+        "SELECTOR_PLATFORM_CONTEXTS": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/capture/compiler-contexts.json.gz",
+        "SELECTOR_PLATFORM_PRODUCER": "d959a6cdd9311f0dac2dfa20a95708037014d5116ffb8369fee3f5ea053dfecf"
+      },
+      "test_source_sha256_before": "5535b5bde3c3d018752038cac2b751dd33b4e4556dc7db50cf3e1278bbfaafd4",
+      "test_source_sha256_after": "5535b5bde3c3d018752038cac2b751dd33b4e4556dc7db50cf3e1278bbfaafd4",
+      "stdout_sha256": "b16d742fb8a5f4509ce0cd04072ebd6a5f78ecdaf66f19e1f18e6a75f343b214",
+      "stderr_sha256": "5543a4bb914ee53414acfc85e440f5edefa256b64d0f655eaae19016b1defa3b",
+      "retained_executable_after_gate": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v4/executables/244816515d0879d8a0273eed5fd533f037b2da685e0ce830176d92b44aae3de1/declared_runtime_platform",
+        "sha256": "244816515d0879d8a0273eed5fd533f037b2da685e0ce830176d92b44aae3de1",
+        "bytes": 19717880
+      }
+    },
+    "qualification": "wait4 command accounting includes focused Cargo compilation and test execution on a shared host; no corpus or selector speed claim."
+  },
+  "source_pins": [
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/crates/selector-acceptance/tests/declared_runtime_platform.rs",
+      "bytes": 19064,
+      "sha256": "5535b5bde3c3d018752038cac2b751dd33b4e4556dc7db50cf3e1278bbfaafd4"
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/crates/selector-acceptance/Cargo.toml",
+      "bytes": 983,
+      "sha256": "5ea6c83bc18d119c4b8721e94f2ad735c6b002ce8c1481f20a9c5256d134bd6f"
+    }
+  ],
+  "test_source_unchanged_during_gate": true,
+  "retained_prior_observations": [
+    {
+      "receipt": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation/receipt.json",
+        "bytes": 1506,
+        "sha256": "1fd5f7519ec9c617bc93337458db9fcad0516de28f4dfea959b4ed005541f03b"
+      },
+      "exit_code": 101,
+      "qualification": "Failed fresh test assumption: an explicit namespace endpoint retains fileNONE; actual byte authority belongs to the binary recipe file. Corrected to exact captured class SHA/context/owner assertions.",
+      "raw_stdout": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation/native-image-and-rejection-controls.stdout",
+        "bytes": 942,
+        "sha256": "f70006809433d9501ec60b22823e909fbeee5c47df9647b7faf2b641856c0d30"
+      },
+      "raw_stderr": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation/native-image-and-rejection-controls.stderr",
+        "bytes": 1084,
+        "sha256": "85e30a2c964158776e986ce8db2b544399fbc761a4a185ff15786aaa1337bcad"
+      }
+    },
+    {
+      "receipt": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v2/receipt.json",
+        "bytes": 1578,
+        "sha256": "85c7def40493f5573d2c82f19afc9c44906234d264940401379d40610598ea80"
+      },
+      "exit_code": 101,
+      "qualification": "Failed fresh fixture assumption: declaring an unused Serializable type does not demand its native header. Added the genuine String.length native root to request Serializable through the real parent header.",
+      "raw_stdout": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v2/genuine-image-native-controls.stdout",
+        "bytes": 717,
+        "sha256": "d2b86737186eea78e6993c3c9c0cdc901049f0f849e16a6a6d7cc212c1851550"
+      },
+      "raw_stderr": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v2/genuine-image-native-controls.stderr",
+        "bytes": 416,
+        "sha256": "698c18146e61f06d245788afeca6cfaf9674ecc8e187f86844a0f5c8480abfad"
+      }
+    },
+    {
+      "receipt": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v3/receipt.json",
+        "bytes": 1576,
+        "sha256": "a0563862b6a1050a9480ab245b550ccc2c1b9d7cc17f0cd14e5724db83ed3ebb"
+      },
+      "exit_code": 0,
+      "qualification": "Earlier genuine pass before adding the normalized Object# reference that makes the legacy-shortcut regression control nonvacuous.",
+      "raw_stdout": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v3/genuine-image-native-controls.stdout",
+        "bytes": 196,
+        "sha256": "b2b115480c48a2ad69cc3bd51f2d4d5af0c37bc10b3353655e8ebef96d7c9788"
+      },
+      "raw_stderr": {
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/declared-runtime-platform-validation-v3/genuine-image-native-controls.stderr",
+        "bytes": 722,
+        "sha256": "b867ea40166a53ccd53ae1cae691f4c80cee6e77ba69fa7142f2269fa41f1286"
+      }
+    }
+  ]
+}

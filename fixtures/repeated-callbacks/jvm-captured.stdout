@@ -1,0 +1,2 @@
+captured-created:provider:a,provider:b
+captured-invoked:provider:a,provider:b,aggregate,call:a,call:b:3

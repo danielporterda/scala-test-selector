@@ -1,0 +1,12 @@
+loads:all-nine
+new-and-length:all-types
+stores:all-nine
+null-load:NullPointerException
+bounds-load:ArrayIndexOutOfBoundsException
+null-length:NullPointerException
+negative-new:NegativeArraySizeException
+zero-divide:ArithmeticException
+zero-remainder:ArithmeticException
+handlers:7:7:-1:-1:-1:callbacks=4:shared=4
+native:UnsatisfiedLinkError
+consumers:later-store-call:callback:monitor:native:reflection:dynamic:throw-identity

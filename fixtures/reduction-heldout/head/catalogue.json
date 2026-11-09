@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "discovery": "Independent JVM construction plus real ScalaTest runner completion",
+  "families": [
+    {
+      "name": "execution-heldout",
+      "suites": [
+        "executioncase.AffectedSuite",
+        "executioncase.UnaffectedSuite",
+        "executioncase.DormantSuite"
+      ]
+    }
+  ]
+}

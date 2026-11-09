@@ -1,0 +1,19 @@
+[package]
+name = "selector-select"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+selector-types.workspace = true
+selector-facts.workspace = true
+selector-graph.workspace = true
+selector-result.workspace = true
+selector-plan.workspace = true
+
+[dev-dependencies]
+selector-solve.workspace = true

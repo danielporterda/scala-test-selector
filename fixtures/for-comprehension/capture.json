@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "ac8dc2e3c31974a05859c3a5ebb571932c494230",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/forcase/Pipeline.scala.semanticdb",
+      "sha256": "2111ba3be3f820e09aeb0deceacafd46881294966c4085a2365aa23ff82d8bdb",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/forcase/Pipeline.scala.semanticdb",
+      "input_target_contexts": [
+        "project:for-comprehension/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/forcase/Pipeline.scala",
+      "file": "src/forcase/Pipeline.scala",
+      "sha256": "4374b9080235e1b979127108cd1a4d872e49e98479c87e88ade73979b3d9313a",
+      "source_contexts": [
+        "project:for-comprehension/configuration:test"
+      ]
+    }
+  ]
+}

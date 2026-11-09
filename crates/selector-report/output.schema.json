@@ -1,0 +1,1710 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:rust-selector:selection",
+  "title": "Rust selector full evidence and compact standalone decision reports",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "base_snapshot",
+        "head_snapshot",
+        "completion",
+        "suites",
+        "obligations",
+        "base",
+        "head"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "base_snapshot": {
+          "$ref": "#/$defs/hash"
+        },
+        "head_snapshot": {
+          "$ref": "#/$defs/hash"
+        },
+        "completion": {
+          "$ref": "#/$defs/completion"
+        },
+        "suite_semantics": {
+          "$ref": "#/$defs/suiteSemantics"
+        },
+        "selection_contract": {
+          "$ref": "#/$defs/selectionContract"
+        },
+        "classpath_exclusions": {
+          "type": "array",
+          "description": "Conditional paired classpath-absence proofs, emitted only in owning Test/fullClasspath mode. Kernel completion and guards remain independent.",
+          "items": { "$ref": "#/$defs/classpathExclusion" }
+        },
+        "suites": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/suite"
+          }
+        },
+        "obligations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/obligation"
+          }
+        },
+        "base": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/analysis"
+            }
+          ]
+        },
+        "head": {
+          "$ref": "#/$defs/analysis"
+        },
+        "guard_causes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/guardCause"
+          }
+        },
+        "change_scope": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/sourceChangeScope"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "report_kind",
+        "base_snapshot",
+        "head_snapshot",
+        "base_facts",
+        "head_facts",
+        "completion",
+        "guard_causes",
+        "suites",
+        "decisions",
+        "execution_seeds"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": 2
+        },
+        "report_kind": {
+          "const": "decisions"
+        },
+        "base_snapshot": {
+          "$ref": "#/$defs/hash"
+        },
+        "head_snapshot": {
+          "$ref": "#/$defs/hash"
+        },
+        "base_facts": {
+          "$ref": "#/$defs/hash"
+        },
+        "head_facts": {
+          "$ref": "#/$defs/hash"
+        },
+        "completion": {
+          "$ref": "#/$defs/completion"
+        },
+        "suite_semantics": {
+          "$ref": "#/$defs/suiteSemantics"
+        },
+        "selection_contract": {
+          "$ref": "#/$defs/selectionContract"
+        },
+        "guard_causes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/guardCause"
+          }
+        },
+        "suites": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "suite_id",
+              "node",
+              "base_node",
+              "name",
+              "symbol",
+              "context",
+              "path",
+              "guarded"
+            ],
+            "properties": {
+              "suite_id": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              },
+              "node": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4294967294
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "base_node": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4294967294
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "symbol": {
+                "type": "string"
+              },
+              "context": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "guarded": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "decisions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/decision"
+          }
+        },
+        "full_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "path",
+            "sha256",
+            "bytes"
+          ],
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "sha256": {
+              "$ref": "#/$defs/hash"
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "execution_seeds": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "base",
+            "head"
+          ],
+          "properties": {
+            "base": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              }
+            },
+            "head": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              }
+            }
+          }
+        },
+        "change_scope": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/sourceChangeScope"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "selectionContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "bits", "assumptions"],
+      "description": "Explicit conditional selection model; owning_test_full_classpath is an opt-in runner premise, not observed loader isolation. The additional ordinary_compilation premise exists only in exact contract 2032 and concerns the captured source/dependency/toolchain abstraction, not raw-bytecode equivalence or a complete historical JDK image hash. Legacy reports acquire no new assumptions.",
+      "properties": {
+        "version": { "const": "selector-selection-contract/1" },
+        "bits": { "type": "integer", "minimum": 0, "maximum": 2032, "multipleOf": 16,
+          "anyOf": [{ "maximum": 1008 }, { "const": 2032 }] },
+        "assumptions": {
+          "type": "array", "maxItems": 7, "uniqueItems": true,
+          "items": { "enum": ["suite_independence", "functional_behavior", "closed_application_classpath", "trusted_runtime_contracts", "stable_external_inputs", "owning_test_full_classpath", "ordinary_compilation"] }
+        }
+      },
+      "allOf": [
+        { "if": { "properties": { "bits": { "const": 2032 } } },
+          "then": { "properties": { "assumptions": { "const": ["suite_independence", "functional_behavior", "closed_application_classpath", "trusted_runtime_contracts", "stable_external_inputs", "owning_test_full_classpath", "ordinary_compilation"] } } } },
+        { "if": { "properties": { "assumptions": { "contains": { "const": "ordinary_compilation" } } } },
+          "then": { "properties": { "bits": { "const": 2032 } } } }
+      ]
+    },
+    "suiteSemantics": {
+      "enum": ["shared_state", "independent_suites"],
+      "default": "shared_state",
+      "description": "Selection contract; independent_suites is a conditional assumption, not evidence of physical JVM or process isolation. Absent in legacy reports means shared_state."
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 4294967294
+    },
+    "completion": {
+      "enum": [
+        "complete",
+        "conservative",
+        "resource_limited"
+      ]
+    },
+    "suite": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "suite_id",
+        "node",
+        "name",
+        "symbol",
+        "context",
+        "path",
+        "guarded",
+        "base_node"
+      ],
+      "properties": {
+        "suite_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "node": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "context": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "guarded": {
+          "type": "boolean"
+        },
+        "base_node": {
+          "$ref": "#/$defs/id"
+        },
+        "opaque_shared_heap": {
+          "type": "boolean",
+          "description": "Potential shared-state exposure to a changed or unresolved writer; not an observed execution boundary."
+        }
+      }
+    },
+    "classpathExclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Independent negative classpath proof, not an assertion of complete or guard-free kernel execution. Requires both snapshot/root-bound certificates under the exact named contract.",
+      "required": [
+        "suite_id",
+        "node",
+        "name",
+        "symbol",
+        "context",
+        "path",
+        "guarded",
+        "base_node",
+        "reason",
+        "exclusions"
+      ],
+      "properties": {
+        "suite_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "node": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967294
+        },
+        "name": {
+          "type": "string"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "context": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "guarded": {
+          "const": false
+        },
+        "base_node": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967294
+        },
+        "reason": {
+          "const": "classpath_absence"
+        },
+        "exclusions": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "snapshot",
+              "snapshot_identity",
+              "root",
+              "certificate",
+              "assumptions"
+            ],
+            "properties": {
+              "snapshot": {
+                "enum": [
+                  "base",
+                  "head"
+                ]
+              },
+              "snapshot_identity": {
+                "$ref": "#/$defs/hash"
+              },
+              "root": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              },
+              "certificate": {
+                "$ref": "#/$defs/hash"
+              },
+              "assumptions": {
+                "type": "integer",
+                "enum": [1008, 2032]
+              }
+            }
+          }
+        }
+      }
+    },
+    "obligation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "file_id",
+        "path",
+        "symbol_id",
+        "symbol",
+        "detail"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "file_id": {
+          "$ref": "#/$defs/id"
+        },
+        "path": {
+          "type": "string"
+        },
+        "symbol_id": {
+          "$ref": "#/$defs/id"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "detail": {
+          "type": "string"
+        }
+      }
+    },
+    "witness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "node",
+        "next",
+        "edge",
+        "kind",
+        "source",
+        "target",
+        "derived",
+        "operation",
+        "occurrence",
+        "receiver"
+      ],
+      "properties": {
+        "node": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "next": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "edge": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "kind": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "target": {
+          "type": "string"
+        },
+        "derived": {
+          "type": "boolean"
+        },
+        "operation": {
+          "$ref": "#/$defs/id"
+        },
+        "occurrence": {
+          "$ref": "#/$defs/id"
+        },
+        "receiver": {
+          "type": "string"
+        }
+      }
+    },
+    "derived_edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "target",
+        "kind",
+        "operation",
+        "receiver"
+      ],
+      "properties": {
+        "source": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "target": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "kind": {
+          "type": "string"
+        },
+        "operation": {
+          "$ref": "#/$defs/id"
+        },
+        "receiver": {
+          "type": "string"
+        }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "snapshot",
+        "completion",
+        "affected",
+        "witnesses",
+        "derived_edges",
+        "obligations",
+        "metrics",
+        "guarded_roots",
+        "unscoped_uncertainty",
+        "compilation",
+        "evidence"
+      ],
+      "properties": {
+        "snapshot": {
+          "$ref": "#/$defs/hash"
+        },
+        "completion": {
+          "$ref": "#/$defs/completion"
+        },
+        "affected": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "witnesses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/witness"
+          }
+        },
+        "derived_edges": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/derived_edge"
+          }
+        },
+        "obligations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/obligation"
+          }
+        },
+        "metrics": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "states",
+            "edge_visits",
+            "novel_facts",
+            "repeated_facts",
+            "summary_hits",
+            "invalidations",
+            "queued_peak",
+            "owned_bytes",
+            "workers",
+            "elapsed_ns"
+          ],
+          "properties": {
+            "states": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "edge_visits": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "novel_facts": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "repeated_facts": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "summary_hits": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "invalidations": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "queued_peak": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "owned_bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "workers": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "elapsed_ns": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        },
+        "guarded_roots": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "unscoped_uncertainty": {
+          "type": "boolean"
+        },
+        "compilation": {
+          "$ref": "#/$defs/compilation"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        },
+        "runtime_diagnostics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/runtime_diagnostic"
+          }
+        }
+      }
+    },
+    "compilation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "affected",
+        "witnesses"
+      ],
+      "properties": {
+        "affected": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "witnesses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/witness"
+          }
+        }
+      }
+    },
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "len"
+      ],
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "len": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "atom": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "site",
+        "symbol_id",
+        "symbol",
+        "binding"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "site": {
+          "$ref": "#/$defs/id"
+        },
+        "symbol_id": {
+          "$ref": "#/$defs/id"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "binding": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "constraint": {
+          "const": "static_result_constraint"
+        },
+        "constraint_identity": {
+          "const": "exact_class_conjunction"
+        },
+        "origin_role": {
+          "const": "representative_clause"
+        },
+        "upper_bounds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "carrier": {
+          "const": "sequence_elements"
+        },
+        "identity": {
+          "const": "pack_site_and_receiver_root"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": 3
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "constraint",
+              "upper_bounds"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": 4
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "carrier",
+              "identity"
+            ],
+            "properties": {
+              "site": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              },
+              "symbol": {
+                "const": "@selector:sequence-elements"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "value": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "atoms",
+        "unknown"
+      ],
+      "properties": {
+        "atoms": {
+          "$ref": "#/$defs/range"
+        },
+        "unknown": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "node",
+        "symbol",
+        "receiver",
+        "arguments"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "node": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "receiver": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "arguments": {
+          "$ref": "#/$defs/range"
+        },
+        "path": {
+          "type": "string"
+        }
+      }
+    },
+    "capture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "binding",
+        "receiver",
+        "arguments"
+      ],
+      "properties": {
+        "binding": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "receiver": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "arguments": {
+          "$ref": "#/$defs/range"
+        }
+      }
+    },
+    "context_witness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "context",
+        "next",
+        "edge",
+        "binding"
+      ],
+      "properties": {
+        "context": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "next": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "edge": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "binding": {
+          "$ref": "#/$defs/id"
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "atoms",
+        "values",
+        "value_ids",
+        "contexts",
+        "captures",
+        "witnesses",
+        "root_contexts"
+      ],
+      "properties": {
+        "atoms": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/atom"
+          }
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/value"
+          }
+        },
+        "value_ids": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "contexts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/context"
+          }
+        },
+        "captures": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/capture"
+          }
+        },
+        "witnesses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/context_witness"
+          }
+        },
+        "root_contexts": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "heap_origins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "symbol_id",
+              "symbol",
+              "context"
+            ],
+            "properties": {
+              "symbol_id": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              },
+              "symbol": {
+                "type": "string",
+                "minLength": 1
+              },
+              "context": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "requested_roots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "node",
+              "receiver"
+            ],
+            "properties": {
+              "node": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              },
+              "receiver": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4294967294
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "receiver_symbol": {
+                "type": "string"
+              },
+              "receiver_context": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "guard_causes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/guardBoundary"
+          }
+        }
+      }
+    },
+    "runtime_diagnostic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "scope",
+        "node",
+        "file_id",
+        "path",
+        "symbol_id",
+        "symbol",
+        "reason",
+        "metadata_path"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string"
+        },
+        "scope": {
+          "enum": [
+            "node",
+            "symbol",
+            "file",
+            "unscoped"
+          ]
+        },
+        "node": {
+          "$ref": "#/$defs/id"
+        },
+        "file_id": {
+          "$ref": "#/$defs/id"
+        },
+        "path": {
+          "type": "string"
+        },
+        "symbol_id": {
+          "$ref": "#/$defs/id"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metadata_path": {
+          "type": "string"
+        }
+      }
+    },
+    "guardCause": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "snapshot",
+        "reason",
+        "kind",
+        "file_id",
+        "path",
+        "symbol_id",
+        "symbol",
+        "detail"
+      ],
+      "properties": {
+        "snapshot": {
+          "enum": [
+            "base",
+            "head"
+          ]
+        },
+        "reason": {
+          "enum": [
+            "uncaptured_changed_path",
+            "unverified_source",
+            "unverified_syntax",
+            "no_declarations",
+            "unscoped_fact_issue",
+            "missing_declaration_node",
+            "external_input",
+            "unspecified_fallback"
+          ]
+        },
+        "kind": {
+          "type": "string"
+        },
+        "file_id": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967294
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "path": {
+          "type": "string"
+        },
+        "symbol_id": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967294
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "detail": {
+          "type": "string"
+        },
+        "external": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "reason",
+            "message"
+          ],
+          "properties": {
+            "reason": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            },
+            "suite_name": {
+              "type": "string"
+            },
+            "operation_path": {
+              "type": "string"
+            },
+            "verb": {
+              "type": "string"
+            },
+            "schema_path": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "suite_id",
+        "node",
+        "base_node",
+        "name",
+        "symbol",
+        "context",
+        "path",
+        "guarded",
+        "status",
+        "reasons",
+        "explanation",
+        "proofs",
+        "exclusions"
+      ],
+      "properties": {
+        "suite_id": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967294
+        },
+        "node": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967294
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "base_node": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967294
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "context": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "guarded": {
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "required",
+            "unknown",
+            "excluded"
+          ]
+        },
+        "reasons": {
+          "type": "array",
+          "description": "Decision reasons include classpath_absence for the opt-in paired product proof; other retained reasons may describe kernel diagnostics independently.",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "explanation": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "proofs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "snapshot",
+              "snapshot_identity",
+              "root",
+              "chain",
+              "seed",
+              "seed_symbol"
+            ],
+            "properties": {
+              "snapshot": {
+                "enum": [
+                  "base",
+                  "head"
+                ]
+              },
+              "snapshot_identity": {
+                "$ref": "#/$defs/hash"
+              },
+              "root": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              },
+              "seed": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              },
+              "seed_symbol": {
+                "type": "string"
+              },
+              "chain": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/witness"
+                }
+              }
+            }
+          }
+        },
+        "exclusions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "snapshot",
+              "snapshot_identity",
+              "root",
+              "certificate",
+              "assumptions"
+            ],
+            "properties": {
+              "snapshot": {
+                "enum": [
+                  "base",
+                  "head"
+                ]
+              },
+              "snapshot_identity": {
+                "$ref": "#/$defs/hash"
+              },
+              "root": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4294967294
+              },
+              "certificate": {
+                "$ref": "#/$defs/hash"
+              },
+              "assumptions": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        "uncertainty": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "snapshot",
+              "boundary",
+              "metadata"
+            ],
+            "properties": {
+              "snapshot": {
+                "enum": [
+                  "base",
+                  "head"
+                ]
+              },
+              "boundary": {
+                "$ref": "#/$defs/guardBoundary"
+              },
+              "metadata": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "reason",
+                    "metadata_path"
+                  ],
+                  "properties": {
+                    "reason": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "metadata_path": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "guardBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "root",
+        "node",
+        "kind",
+        "boundary_symbol",
+        "file_id",
+        "path",
+        "symbol_id",
+        "symbol",
+        "detail"
+      ],
+      "properties": {
+        "root": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967294
+        },
+        "node": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967294
+        },
+        "kind": {
+          "type": "string"
+        },
+        "boundary_symbol": {
+          "type": "string"
+        },
+        "file_id": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967294
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "path": {
+          "type": "string"
+        },
+        "symbol_id": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 4294967294
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "symbol": {
+          "type": "string"
+        },
+        "detail": {
+          "type": "string"
+        },
+        "runtime_reason": {
+          "enum": [
+            "missing_callback_target",
+            "unknown_callback_value",
+            "incomplete_callback_dispatch",
+            "execution_guard",
+            "missing_executable_body",
+            "unbound_callback_target",
+            "missing_field_target",
+            "unknown_field_value",
+            "unknown_super_owner",
+            "incomplete_virtual_dispatch",
+            "missing_call_target",
+            "unknown_operation",
+            "incomplete_deferred_callback"
+          ]
+        },
+        "operation": {
+          "$ref": "#/$defs/id"
+        },
+        "opcode": {
+          "anyOf": [
+            {
+              "enum": [
+                "call",
+                "virtual_call",
+                "allocate",
+                "assign",
+                "parameter",
+                "return",
+                "bind_callback",
+                "invoke_callback",
+                "load_field",
+                "store_field",
+                "initialize",
+                "unknown",
+                "constant",
+                "join",
+                "default_argument",
+                "register_test",
+                "pack_sequence",
+                "read_elements"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "operation_path": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "span": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sourceSpan"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "runtime_reason"
+            ]
+          },
+          "then": {
+            "required": [
+              "operation",
+              "opcode",
+              "operation_path",
+              "span"
+            ]
+          }
+        }
+      ]
+    },
+    "sourceSpan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967295
+        }
+      }
+    },
+    "sourceFileDelta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "base_file_id",
+        "head_file_id",
+        "path",
+        "context",
+        "base_source_sha256",
+        "head_source_sha256"
+      ],
+      "properties": {
+        "base_file_id": {
+          "$ref": "#/$defs/id"
+        },
+        "head_file_id": {
+          "$ref": "#/$defs/id"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context": {
+          "type": "string"
+        },
+        "base_source_sha256": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/hash"
+            }
+          ]
+        },
+        "head_source_sha256": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/hash"
+            }
+          ]
+        }
+      }
+    },
+    "sourceChangeScope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "effective_requested_source_paths",
+        "outside_count",
+        "outside_sample_complete",
+        "covers_captured_source_delta",
+        "whole_checkout_omission_authority",
+        "notice",
+        "outside"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "requested_paths",
+            "snapshot_delta"
+          ]
+        },
+        "effective_requested_source_paths": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "outside_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "outside_sample_complete": {
+          "type": "boolean"
+        },
+        "covers_captured_source_delta": {
+          "type": "boolean"
+        },
+        "whole_checkout_omission_authority": {
+          "const": false
+        },
+        "notice": {
+          "enum": [
+            "Other captured source changes need a separate selection. This result does not authorize omissions for the whole checkout.",
+            "This result records the effective requested source paths. Source scope alone does not authorize omissions for the whole checkout.",
+            "This result covers the captured source delta. Source scope alone does not authorize omissions for the whole checkout."
+          ]
+        },
+        "outside": {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "$ref": "#/$defs/sourceFileDelta"
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "outside_count": {
+                "minimum": 1
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "covers_captured_source_delta": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

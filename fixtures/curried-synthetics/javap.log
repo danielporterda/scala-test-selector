@@ -1,0 +1,3343 @@
+Compiled from "Library.scala"
+public final class curriedcase.Library$ {
+  public static final curriedcase.Library$ MODULE$;
+
+  public static {};
+    Code:
+       0: new           #2                  // class curriedcase/Library$
+       3: dup
+       4: invokespecial #17                 // Method "<init>":()V
+       7: putstatic     #19                 // Field MODULE$:Lcurriedcase/Library$;
+      10: return
+
+  public int curried(int, org.scalactic.source.Position, org.scalactic.Prettifier);
+    Code:
+       0: getstatic     #29                 // Field curriedcase/Effects$.MODULE$:Lcurriedcase/Effects$;
+       3: iload_1
+       4: invokevirtual #33                 // Method curriedcase/Effects$.note:(I)I
+       7: ireturn
+
+  public scala.Function0<java.lang.Object> returned(int);
+    Code:
+       0: iload_1
+       1: invokedynamic #58,  0             // InvokeDynamic #0:apply$mcI$sp:(I)Lscala/runtime/java8/JFunction0$mcI$sp;
+       6: areturn
+
+  public static final int $anonfun$returned$1(int);
+    Code:
+       0: getstatic     #29                 // Field curriedcase/Effects$.MODULE$:Lcurriedcase/Effects$;
+       3: iload_0
+       4: invokevirtual #33                 // Method curriedcase/Effects$.note:(I)I
+       7: ireturn
+
+  private curriedcase.Library$();
+    Code:
+       0: aload_0
+       1: invokespecial #60                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    Code:
+       0: aload_0
+       1: invokedynamic #72,  0             // InvokeDynamic #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}
+Compiled from "Suites.scala"
+public class curriedcase.ExternalSuite implements org.scalatest.Suite {
+  private final int actual;
+
+  private java.lang.String styleName;
+
+  private org.scalatest.compatible.Assertion succeed;
+
+  public scala.collection.immutable.IndexedSeq<org.scalatest.Suite> nestedSuites();
+    Code:
+       0: aload_0
+       1: invokestatic  #40                 // InterfaceMethod org/scalatest/Suite.nestedSuites$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/IndexedSeq;
+       4: areturn
+
+  public final void execute(java.lang.String, org.scalatest.ConfigMap, boolean, boolean, boolean, boolean, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: iload_3
+       4: iload         4
+       6: iload         5
+       8: iload         6
+      10: iload         7
+      12: invokestatic  #55                 // InterfaceMethod org/scalatest/Suite.execute$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/ConfigMap;ZZZZZ)V
+      15: return
+
+  public final java.lang.String execute$default$1();
+    Code:
+       0: aload_0
+       1: invokestatic  #63                 // InterfaceMethod org/scalatest/Suite.execute$default$1$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public final org.scalatest.ConfigMap execute$default$2();
+    Code:
+       0: aload_0
+       1: invokestatic  #69                 // InterfaceMethod org/scalatest/Suite.execute$default$2$:(Lorg/scalatest/Suite;)Lorg/scalatest/ConfigMap;
+       4: areturn
+
+  public final boolean execute$default$3();
+    Code:
+       0: aload_0
+       1: invokestatic  #75                 // InterfaceMethod org/scalatest/Suite.execute$default$3$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$4();
+    Code:
+       0: aload_0
+       1: invokestatic  #79                 // InterfaceMethod org/scalatest/Suite.execute$default$4$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$5();
+    Code:
+       0: aload_0
+       1: invokestatic  #83                 // InterfaceMethod org/scalatest/Suite.execute$default$5$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$6();
+    Code:
+       0: aload_0
+       1: invokestatic  #87                 // InterfaceMethod org/scalatest/Suite.execute$default$6$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$7();
+    Code:
+       0: aload_0
+       1: invokestatic  #91                 // InterfaceMethod org/scalatest/Suite.execute$default$7$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public scala.collection.immutable.Map<java.lang.String, scala.collection.immutable.Set<java.lang.String>> tags();
+    Code:
+       0: aload_0
+       1: invokestatic  #98                 // InterfaceMethod org/scalatest/Suite.tags$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/Map;
+       4: areturn
+
+  public scala.collection.immutable.Set<java.lang.String> testNames();
+    Code:
+       0: aload_0
+       1: invokestatic  #105                // InterfaceMethod org/scalatest/Suite.testNames$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/Set;
+       4: areturn
+
+  public org.scalatest.Status runTest(java.lang.String, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #112                // InterfaceMethod org/scalatest/Suite.runTest$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status runTests(scala.Option<java.lang.String>, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #120                // InterfaceMethod org/scalatest/Suite.runTests$:(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status run(scala.Option<java.lang.String>, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #125                // InterfaceMethod org/scalatest/Suite.run$:(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status runNestedSuites(org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #131                // InterfaceMethod org/scalatest/Suite.runNestedSuites$:(Lorg/scalatest/Suite;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       5: areturn
+
+  public java.lang.String suiteName();
+    Code:
+       0: aload_0
+       1: invokestatic  #135                // InterfaceMethod org/scalatest/Suite.suiteName$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String suiteId();
+    Code:
+       0: aload_0
+       1: invokestatic  #139                // InterfaceMethod org/scalatest/Suite.suiteId$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public int expectedTestCount(org.scalatest.Filter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #146                // InterfaceMethod org/scalatest/Suite.expectedTestCount$:(Lorg/scalatest/Suite;Lorg/scalatest/Filter;)I
+       5: ireturn
+
+  public org.scalatest.Reporter createCatchReporter(org.scalatest.Reporter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #154                // InterfaceMethod org/scalatest/Suite.createCatchReporter$:(Lorg/scalatest/Suite;Lorg/scalatest/Reporter;)Lorg/scalatest/Reporter;
+       5: areturn
+
+  public scala.Option<java.lang.String> rerunner();
+    Code:
+       0: aload_0
+       1: invokestatic  #162                // InterfaceMethod org/scalatest/Suite.rerunner$:(Lorg/scalatest/Suite;)Lscala/Option;
+       4: areturn
+
+  public org.scalatest.TestData testDataFor(java.lang.String, org.scalatest.ConfigMap);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #169                // InterfaceMethod org/scalatest/Suite.testDataFor$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/ConfigMap;)Lorg/scalatest/TestData;
+       6: areturn
+
+  public org.scalatest.ConfigMap testDataFor$default$2();
+    Code:
+       0: aload_0
+       1: invokestatic  #173                // InterfaceMethod org/scalatest/Suite.testDataFor$default$2$:(Lorg/scalatest/Suite;)Lorg/scalatest/ConfigMap;
+       4: areturn
+
+  public java.lang.Throwable newAssertionFailedException(scala.Option<java.lang.String>, scala.Option<java.lang.Throwable>, org.scalactic.source.Position, scala.collection.immutable.IndexedSeq<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #186                // InterfaceMethod org/scalatest/Assertions.newAssertionFailedException$:(Lorg/scalatest/Assertions;Lscala/Option;Lscala/Option;Lorg/scalactic/source/Position;Lscala/collection/immutable/IndexedSeq;)Ljava/lang/Throwable;
+       9: areturn
+
+  public java.lang.Throwable newTestCanceledException(scala.Option<java.lang.String>, scala.Option<java.lang.Throwable>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #195                // InterfaceMethod org/scalatest/Assertions.newTestCanceledException$:(Lorg/scalatest/Assertions;Lscala/Option;Lscala/Option;Lorg/scalactic/source/Position;)Ljava/lang/Throwable;
+       7: areturn
+
+  public <T> T intercept(scala.Function0<java.lang.Object>, scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #204                // InterfaceMethod org/scalatest/Assertions.intercept$:(Lorg/scalatest/Assertions;Lscala/Function0;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Ljava/lang/Object;
+       7: areturn
+
+  public <T> org.scalatest.compatible.Assertion assertThrows(scala.Function0<java.lang.Object>, scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #213                // InterfaceMethod org/scalatest/Assertions.assertThrows$:(Lorg/scalatest/Assertions;Lscala/Function0;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       7: areturn
+
+  public org.scalatest.compatible.Assertion assertResult(java.lang.Object, java.lang.Object, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #222                // InterfaceMethod org/scalatest/Assertions.assertResult$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+      11: areturn
+
+  public org.scalatest.compatible.Assertion assertResult(java.lang.Object, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #228                // InterfaceMethod org/scalatest/Assertions.assertResult$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       9: areturn
+
+  public scala.runtime.Nothing$ fail(org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #234                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       5: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.String, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #239                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/String;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.String, java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #244                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/String;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       7: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #249                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ cancel(org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #253                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       5: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.String, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #255                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/String;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.String, java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #257                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/String;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       7: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #259                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public <T> T withClue(java.lang.Object, scala.Function0<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #267                // InterfaceMethod org/scalatest/Assertions.withClue$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;
+       6: areturn
+
+  public org.scalatest.compatible.Assertion pending();
+    Code:
+       0: aload_0
+       1: invokestatic  #273                // InterfaceMethod org/scalatest/Assertions.pending$:(Lorg/scalatest/Assertions;)Lorg/scalatest/compatible/Assertion;
+       4: areturn
+
+  public org.scalatest.compatible.Assertion pendingUntilFixed(scala.Function0<scala.runtime.BoxedUnit>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #280                // InterfaceMethod org/scalatest/Assertions.pendingUntilFixed$:(Lorg/scalatest/Assertions;Lscala/Function0;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       6: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$Equalizer<T> convertToEqualizer(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #290                // InterfaceMethod org/scalactic/TripleEquals.convertToEqualizer$:(Lorg/scalactic/TripleEquals;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$Equalizer;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$CheckingEqualizer<T> convertToCheckingEqualizer(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #297                // InterfaceMethod org/scalactic/TripleEquals.convertToCheckingEqualizer$:(Lorg/scalactic/TripleEquals;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$CheckingEqualizer;
+       5: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> unconstrainedEquality(org.scalactic.Equality<A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #305                // InterfaceMethod org/scalactic/TripleEquals.unconstrainedEquality$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equality;)Lorg/scalactic/CanEqual;
+       5: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> lowPriorityTypeCheckedConstraint(org.scalactic.Equivalence<B>, scala.$less$colon$less<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #315                // InterfaceMethod org/scalactic/TripleEquals.lowPriorityTypeCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToAToBConstraint(org.scalactic.Equivalence<B>, scala.$less$colon$less<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #321                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToAToBConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> typeCheckedConstraint(org.scalactic.Equivalence<A>, scala.$less$colon$less<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #327                // InterfaceMethod org/scalactic/TripleEquals.typeCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToBToAConstraint(org.scalactic.Equivalence<A>, scala.$less$colon$less<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #331                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToBToAConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> lowPriorityConversionCheckedConstraint(org.scalactic.Equivalence<B>, scala.Function1<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #339                // InterfaceMethod org/scalactic/TripleEquals.lowPriorityConversionCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToAToBConversionConstraint(org.scalactic.Equivalence<B>, scala.Function1<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #344                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToAToBConversionConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> conversionCheckedConstraint(org.scalactic.Equivalence<A>, scala.Function1<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #349                // InterfaceMethod org/scalactic/TripleEquals.conversionCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToBToAConversionConstraint(org.scalactic.Equivalence<A>, scala.Function1<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #353                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToBToAConversionConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A> org.scalactic.Equality<A> defaultEquality();
+    Code:
+       0: aload_0
+       1: invokestatic  #360                // InterfaceMethod org/scalactic/TripleEqualsSupport.defaultEquality$:(Lorg/scalactic/TripleEqualsSupport;)Lorg/scalactic/Equality;
+       4: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<T> $eq$eq$eq(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #368                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<T> $bang$eq$eq(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #372                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<scala.runtime.Null$> $eq$eq$eq(scala.runtime.Null$);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #377                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lscala/runtime/Null$;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<scala.runtime.Null$> $bang$eq$eq(scala.runtime.Null$);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #380                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lscala/runtime/Null$;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocationOnSpread<T> $eq$eq$eq(org.scalactic.TripleEqualsSupport$Spread<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #385                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocationOnSpread;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocationOnSpread<T> $bang$eq$eq(org.scalactic.TripleEqualsSupport$Spread<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #388                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocationOnSpread;
+       5: areturn
+
+  public java.lang.String styleName();
+    Code:
+       0: aload_0
+       1: getfield      #390                // Field styleName:Ljava/lang/String;
+       4: areturn
+
+  public void org$scalatest$Suite$_setter_$styleName_$eq(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #390                // Field styleName:Ljava/lang/String;
+       5: return
+
+  public final org.scalatest.compatible.Assertion succeed();
+    Code:
+       0: aload_0
+       1: getfield      #395                // Field succeed:Lorg/scalatest/compatible/Assertion;
+       4: areturn
+
+  public final void org$scalatest$Assertions$_setter_$succeed_$eq(org.scalatest.compatible.Assertion);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #395                // Field succeed:Lorg/scalatest/compatible/Assertion;
+       5: return
+
+  public int actual();
+    Code:
+       0: aload_0
+       1: getfield      #400                // Field actual:I
+       4: ireturn
+
+  public curriedcase.ExternalSuite();
+    Code:
+       0: aload_0
+       1: invokespecial #404                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #408                // InterfaceMethod org/scalactic/TripleEqualsSupport.$init$:(Lorg/scalactic/TripleEqualsSupport;)V
+       8: aload_0
+       9: invokestatic  #411                // InterfaceMethod org/scalactic/TripleEquals.$init$:(Lorg/scalactic/TripleEquals;)V
+      12: aload_0
+      13: invokestatic  #414                // InterfaceMethod org/scalatest/Assertions.$init$:(Lorg/scalatest/Assertions;)V
+      16: aload_0
+      17: invokestatic  #417                // InterfaceMethod org/scalatest/Suite.$init$:(Lorg/scalatest/Suite;)V
+      20: aload_0
+      21: getstatic     #423                // Field curriedcase/Library$.MODULE$:Lcurriedcase/Library$;
+      24: iconst_1
+      25: new           #425                // class org/scalactic/source/Position
+      28: dup
+      29: ldc_w         #426                // String Suites.scala
+      32: ldc_w         #428                // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      35: bipush        10
+      37: invokespecial #431                // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      40: getstatic     #436                // Field org/scalactic/Prettifier$.MODULE$:Lorg/scalactic/Prettifier$;
+      43: invokevirtual #440                // Method org/scalactic/Prettifier$.default:()Lorg/scalactic/Prettifier;
+      46: invokevirtual #444                // Method curriedcase/Library$.curried:(ILorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)I
+      49: putfield      #400                // Field actual:I
+      52: invokestatic  #449                // Method scala/runtime/Statics.releaseFence:()V
+      55: return
+}
+Compiled from "Suites.scala"
+public class curriedcase.SourceSuite implements org.scalatest.Suite {
+  private final int actual;
+
+  private java.lang.String styleName;
+
+  private org.scalatest.compatible.Assertion succeed;
+
+  public scala.collection.immutable.IndexedSeq<org.scalatest.Suite> nestedSuites();
+    Code:
+       0: aload_0
+       1: invokestatic  #40                 // InterfaceMethod org/scalatest/Suite.nestedSuites$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/IndexedSeq;
+       4: areturn
+
+  public final void execute(java.lang.String, org.scalatest.ConfigMap, boolean, boolean, boolean, boolean, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: iload_3
+       4: iload         4
+       6: iload         5
+       8: iload         6
+      10: iload         7
+      12: invokestatic  #55                 // InterfaceMethod org/scalatest/Suite.execute$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/ConfigMap;ZZZZZ)V
+      15: return
+
+  public final java.lang.String execute$default$1();
+    Code:
+       0: aload_0
+       1: invokestatic  #63                 // InterfaceMethod org/scalatest/Suite.execute$default$1$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public final org.scalatest.ConfigMap execute$default$2();
+    Code:
+       0: aload_0
+       1: invokestatic  #69                 // InterfaceMethod org/scalatest/Suite.execute$default$2$:(Lorg/scalatest/Suite;)Lorg/scalatest/ConfigMap;
+       4: areturn
+
+  public final boolean execute$default$3();
+    Code:
+       0: aload_0
+       1: invokestatic  #75                 // InterfaceMethod org/scalatest/Suite.execute$default$3$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$4();
+    Code:
+       0: aload_0
+       1: invokestatic  #79                 // InterfaceMethod org/scalatest/Suite.execute$default$4$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$5();
+    Code:
+       0: aload_0
+       1: invokestatic  #83                 // InterfaceMethod org/scalatest/Suite.execute$default$5$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$6();
+    Code:
+       0: aload_0
+       1: invokestatic  #87                 // InterfaceMethod org/scalatest/Suite.execute$default$6$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$7();
+    Code:
+       0: aload_0
+       1: invokestatic  #91                 // InterfaceMethod org/scalatest/Suite.execute$default$7$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public scala.collection.immutable.Map<java.lang.String, scala.collection.immutable.Set<java.lang.String>> tags();
+    Code:
+       0: aload_0
+       1: invokestatic  #98                 // InterfaceMethod org/scalatest/Suite.tags$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/Map;
+       4: areturn
+
+  public scala.collection.immutable.Set<java.lang.String> testNames();
+    Code:
+       0: aload_0
+       1: invokestatic  #105                // InterfaceMethod org/scalatest/Suite.testNames$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/Set;
+       4: areturn
+
+  public org.scalatest.Status runTest(java.lang.String, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #112                // InterfaceMethod org/scalatest/Suite.runTest$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status runTests(scala.Option<java.lang.String>, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #120                // InterfaceMethod org/scalatest/Suite.runTests$:(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status run(scala.Option<java.lang.String>, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #125                // InterfaceMethod org/scalatest/Suite.run$:(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status runNestedSuites(org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #131                // InterfaceMethod org/scalatest/Suite.runNestedSuites$:(Lorg/scalatest/Suite;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       5: areturn
+
+  public java.lang.String suiteName();
+    Code:
+       0: aload_0
+       1: invokestatic  #135                // InterfaceMethod org/scalatest/Suite.suiteName$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String suiteId();
+    Code:
+       0: aload_0
+       1: invokestatic  #139                // InterfaceMethod org/scalatest/Suite.suiteId$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public int expectedTestCount(org.scalatest.Filter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #146                // InterfaceMethod org/scalatest/Suite.expectedTestCount$:(Lorg/scalatest/Suite;Lorg/scalatest/Filter;)I
+       5: ireturn
+
+  public org.scalatest.Reporter createCatchReporter(org.scalatest.Reporter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #154                // InterfaceMethod org/scalatest/Suite.createCatchReporter$:(Lorg/scalatest/Suite;Lorg/scalatest/Reporter;)Lorg/scalatest/Reporter;
+       5: areturn
+
+  public scala.Option<java.lang.String> rerunner();
+    Code:
+       0: aload_0
+       1: invokestatic  #162                // InterfaceMethod org/scalatest/Suite.rerunner$:(Lorg/scalatest/Suite;)Lscala/Option;
+       4: areturn
+
+  public org.scalatest.TestData testDataFor(java.lang.String, org.scalatest.ConfigMap);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #169                // InterfaceMethod org/scalatest/Suite.testDataFor$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/ConfigMap;)Lorg/scalatest/TestData;
+       6: areturn
+
+  public org.scalatest.ConfigMap testDataFor$default$2();
+    Code:
+       0: aload_0
+       1: invokestatic  #173                // InterfaceMethod org/scalatest/Suite.testDataFor$default$2$:(Lorg/scalatest/Suite;)Lorg/scalatest/ConfigMap;
+       4: areturn
+
+  public java.lang.Throwable newAssertionFailedException(scala.Option<java.lang.String>, scala.Option<java.lang.Throwable>, org.scalactic.source.Position, scala.collection.immutable.IndexedSeq<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #186                // InterfaceMethod org/scalatest/Assertions.newAssertionFailedException$:(Lorg/scalatest/Assertions;Lscala/Option;Lscala/Option;Lorg/scalactic/source/Position;Lscala/collection/immutable/IndexedSeq;)Ljava/lang/Throwable;
+       9: areturn
+
+  public java.lang.Throwable newTestCanceledException(scala.Option<java.lang.String>, scala.Option<java.lang.Throwable>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #195                // InterfaceMethod org/scalatest/Assertions.newTestCanceledException$:(Lorg/scalatest/Assertions;Lscala/Option;Lscala/Option;Lorg/scalactic/source/Position;)Ljava/lang/Throwable;
+       7: areturn
+
+  public <T> T intercept(scala.Function0<java.lang.Object>, scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #204                // InterfaceMethod org/scalatest/Assertions.intercept$:(Lorg/scalatest/Assertions;Lscala/Function0;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Ljava/lang/Object;
+       7: areturn
+
+  public <T> org.scalatest.compatible.Assertion assertThrows(scala.Function0<java.lang.Object>, scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #213                // InterfaceMethod org/scalatest/Assertions.assertThrows$:(Lorg/scalatest/Assertions;Lscala/Function0;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       7: areturn
+
+  public org.scalatest.compatible.Assertion assertResult(java.lang.Object, java.lang.Object, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #222                // InterfaceMethod org/scalatest/Assertions.assertResult$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+      11: areturn
+
+  public org.scalatest.compatible.Assertion assertResult(java.lang.Object, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #228                // InterfaceMethod org/scalatest/Assertions.assertResult$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       9: areturn
+
+  public scala.runtime.Nothing$ fail(org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #234                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       5: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.String, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #239                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/String;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.String, java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #244                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/String;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       7: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #249                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ cancel(org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #253                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       5: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.String, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #255                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/String;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.String, java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #257                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/String;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       7: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #259                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public <T> T withClue(java.lang.Object, scala.Function0<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #267                // InterfaceMethod org/scalatest/Assertions.withClue$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;
+       6: areturn
+
+  public org.scalatest.compatible.Assertion pending();
+    Code:
+       0: aload_0
+       1: invokestatic  #273                // InterfaceMethod org/scalatest/Assertions.pending$:(Lorg/scalatest/Assertions;)Lorg/scalatest/compatible/Assertion;
+       4: areturn
+
+  public org.scalatest.compatible.Assertion pendingUntilFixed(scala.Function0<scala.runtime.BoxedUnit>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #280                // InterfaceMethod org/scalatest/Assertions.pendingUntilFixed$:(Lorg/scalatest/Assertions;Lscala/Function0;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       6: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$Equalizer<T> convertToEqualizer(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #290                // InterfaceMethod org/scalactic/TripleEquals.convertToEqualizer$:(Lorg/scalactic/TripleEquals;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$Equalizer;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$CheckingEqualizer<T> convertToCheckingEqualizer(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #297                // InterfaceMethod org/scalactic/TripleEquals.convertToCheckingEqualizer$:(Lorg/scalactic/TripleEquals;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$CheckingEqualizer;
+       5: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> unconstrainedEquality(org.scalactic.Equality<A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #305                // InterfaceMethod org/scalactic/TripleEquals.unconstrainedEquality$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equality;)Lorg/scalactic/CanEqual;
+       5: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> lowPriorityTypeCheckedConstraint(org.scalactic.Equivalence<B>, scala.$less$colon$less<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #315                // InterfaceMethod org/scalactic/TripleEquals.lowPriorityTypeCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToAToBConstraint(org.scalactic.Equivalence<B>, scala.$less$colon$less<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #321                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToAToBConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> typeCheckedConstraint(org.scalactic.Equivalence<A>, scala.$less$colon$less<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #327                // InterfaceMethod org/scalactic/TripleEquals.typeCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToBToAConstraint(org.scalactic.Equivalence<A>, scala.$less$colon$less<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #331                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToBToAConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> lowPriorityConversionCheckedConstraint(org.scalactic.Equivalence<B>, scala.Function1<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #339                // InterfaceMethod org/scalactic/TripleEquals.lowPriorityConversionCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToAToBConversionConstraint(org.scalactic.Equivalence<B>, scala.Function1<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #344                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToAToBConversionConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> conversionCheckedConstraint(org.scalactic.Equivalence<A>, scala.Function1<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #349                // InterfaceMethod org/scalactic/TripleEquals.conversionCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToBToAConversionConstraint(org.scalactic.Equivalence<A>, scala.Function1<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #353                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToBToAConversionConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A> org.scalactic.Equality<A> defaultEquality();
+    Code:
+       0: aload_0
+       1: invokestatic  #360                // InterfaceMethod org/scalactic/TripleEqualsSupport.defaultEquality$:(Lorg/scalactic/TripleEqualsSupport;)Lorg/scalactic/Equality;
+       4: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<T> $eq$eq$eq(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #368                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<T> $bang$eq$eq(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #372                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<scala.runtime.Null$> $eq$eq$eq(scala.runtime.Null$);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #377                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lscala/runtime/Null$;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<scala.runtime.Null$> $bang$eq$eq(scala.runtime.Null$);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #380                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lscala/runtime/Null$;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocationOnSpread<T> $eq$eq$eq(org.scalactic.TripleEqualsSupport$Spread<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #385                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocationOnSpread;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocationOnSpread<T> $bang$eq$eq(org.scalactic.TripleEqualsSupport$Spread<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #388                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocationOnSpread;
+       5: areturn
+
+  public java.lang.String styleName();
+    Code:
+       0: aload_0
+       1: getfield      #390                // Field styleName:Ljava/lang/String;
+       4: areturn
+
+  public void org$scalatest$Suite$_setter_$styleName_$eq(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #390                // Field styleName:Ljava/lang/String;
+       5: return
+
+  public final org.scalatest.compatible.Assertion succeed();
+    Code:
+       0: aload_0
+       1: getfield      #395                // Field succeed:Lorg/scalatest/compatible/Assertion;
+       4: areturn
+
+  public final void org$scalatest$Assertions$_setter_$succeed_$eq(org.scalatest.compatible.Assertion);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #395                // Field succeed:Lorg/scalatest/compatible/Assertion;
+       5: return
+
+  public int known(int, org.scalactic.source.Position, org.scalactic.Prettifier);
+    Code:
+       0: getstatic     #407                // Field curriedcase/Effects$.MODULE$:Lcurriedcase/Effects$;
+       3: iload_1
+       4: invokevirtual #411                // Method curriedcase/Effects$.note:(I)I
+       7: ireturn
+
+  public int actual();
+    Code:
+       0: aload_0
+       1: getfield      #414                // Field actual:I
+       4: ireturn
+
+  public curriedcase.SourceSuite();
+    Code:
+       0: aload_0
+       1: invokespecial #418                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #422                // InterfaceMethod org/scalactic/TripleEqualsSupport.$init$:(Lorg/scalactic/TripleEqualsSupport;)V
+       8: aload_0
+       9: invokestatic  #425                // InterfaceMethod org/scalactic/TripleEquals.$init$:(Lorg/scalactic/TripleEquals;)V
+      12: aload_0
+      13: invokestatic  #428                // InterfaceMethod org/scalatest/Assertions.$init$:(Lorg/scalatest/Assertions;)V
+      16: aload_0
+      17: invokestatic  #431                // InterfaceMethod org/scalatest/Suite.$init$:(Lorg/scalatest/Suite;)V
+      20: aload_0
+      21: aload_0
+      22: iconst_2
+      23: new           #433                // class org/scalactic/source/Position
+      26: dup
+      27: ldc_w         #434                // String Suites.scala
+      30: ldc_w         #436                // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      33: bipush        16
+      35: invokespecial #439                // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      38: getstatic     #444                // Field org/scalactic/Prettifier$.MODULE$:Lorg/scalactic/Prettifier$;
+      41: invokevirtual #448                // Method org/scalactic/Prettifier$.default:()Lorg/scalactic/Prettifier;
+      44: invokevirtual #450                // Method known:(ILorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)I
+      47: putfield      #414                // Field actual:I
+      50: invokestatic  #455                // Method scala/runtime/Statics.releaseFence:()V
+      53: return
+}
+Compiled from "Suites.scala"
+public class curriedcase.CallbackSuite implements org.scalatest.Suite {
+  private final int actual;
+
+  private java.lang.String styleName;
+
+  private org.scalatest.compatible.Assertion succeed;
+
+  public scala.collection.immutable.IndexedSeq<org.scalatest.Suite> nestedSuites();
+    Code:
+       0: aload_0
+       1: invokestatic  #40                 // InterfaceMethod org/scalatest/Suite.nestedSuites$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/IndexedSeq;
+       4: areturn
+
+  public final void execute(java.lang.String, org.scalatest.ConfigMap, boolean, boolean, boolean, boolean, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: iload_3
+       4: iload         4
+       6: iload         5
+       8: iload         6
+      10: iload         7
+      12: invokestatic  #55                 // InterfaceMethod org/scalatest/Suite.execute$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/ConfigMap;ZZZZZ)V
+      15: return
+
+  public final java.lang.String execute$default$1();
+    Code:
+       0: aload_0
+       1: invokestatic  #63                 // InterfaceMethod org/scalatest/Suite.execute$default$1$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public final org.scalatest.ConfigMap execute$default$2();
+    Code:
+       0: aload_0
+       1: invokestatic  #69                 // InterfaceMethod org/scalatest/Suite.execute$default$2$:(Lorg/scalatest/Suite;)Lorg/scalatest/ConfigMap;
+       4: areturn
+
+  public final boolean execute$default$3();
+    Code:
+       0: aload_0
+       1: invokestatic  #75                 // InterfaceMethod org/scalatest/Suite.execute$default$3$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$4();
+    Code:
+       0: aload_0
+       1: invokestatic  #79                 // InterfaceMethod org/scalatest/Suite.execute$default$4$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$5();
+    Code:
+       0: aload_0
+       1: invokestatic  #83                 // InterfaceMethod org/scalatest/Suite.execute$default$5$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$6();
+    Code:
+       0: aload_0
+       1: invokestatic  #87                 // InterfaceMethod org/scalatest/Suite.execute$default$6$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$7();
+    Code:
+       0: aload_0
+       1: invokestatic  #91                 // InterfaceMethod org/scalatest/Suite.execute$default$7$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public scala.collection.immutable.Map<java.lang.String, scala.collection.immutable.Set<java.lang.String>> tags();
+    Code:
+       0: aload_0
+       1: invokestatic  #98                 // InterfaceMethod org/scalatest/Suite.tags$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/Map;
+       4: areturn
+
+  public scala.collection.immutable.Set<java.lang.String> testNames();
+    Code:
+       0: aload_0
+       1: invokestatic  #105                // InterfaceMethod org/scalatest/Suite.testNames$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/Set;
+       4: areturn
+
+  public org.scalatest.Status runTest(java.lang.String, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #112                // InterfaceMethod org/scalatest/Suite.runTest$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status runTests(scala.Option<java.lang.String>, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #120                // InterfaceMethod org/scalatest/Suite.runTests$:(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status run(scala.Option<java.lang.String>, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #125                // InterfaceMethod org/scalatest/Suite.run$:(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status runNestedSuites(org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #131                // InterfaceMethod org/scalatest/Suite.runNestedSuites$:(Lorg/scalatest/Suite;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       5: areturn
+
+  public java.lang.String suiteName();
+    Code:
+       0: aload_0
+       1: invokestatic  #135                // InterfaceMethod org/scalatest/Suite.suiteName$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String suiteId();
+    Code:
+       0: aload_0
+       1: invokestatic  #139                // InterfaceMethod org/scalatest/Suite.suiteId$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public int expectedTestCount(org.scalatest.Filter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #146                // InterfaceMethod org/scalatest/Suite.expectedTestCount$:(Lorg/scalatest/Suite;Lorg/scalatest/Filter;)I
+       5: ireturn
+
+  public org.scalatest.Reporter createCatchReporter(org.scalatest.Reporter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #154                // InterfaceMethod org/scalatest/Suite.createCatchReporter$:(Lorg/scalatest/Suite;Lorg/scalatest/Reporter;)Lorg/scalatest/Reporter;
+       5: areturn
+
+  public scala.Option<java.lang.String> rerunner();
+    Code:
+       0: aload_0
+       1: invokestatic  #162                // InterfaceMethod org/scalatest/Suite.rerunner$:(Lorg/scalatest/Suite;)Lscala/Option;
+       4: areturn
+
+  public org.scalatest.TestData testDataFor(java.lang.String, org.scalatest.ConfigMap);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #169                // InterfaceMethod org/scalatest/Suite.testDataFor$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/ConfigMap;)Lorg/scalatest/TestData;
+       6: areturn
+
+  public org.scalatest.ConfigMap testDataFor$default$2();
+    Code:
+       0: aload_0
+       1: invokestatic  #173                // InterfaceMethod org/scalatest/Suite.testDataFor$default$2$:(Lorg/scalatest/Suite;)Lorg/scalatest/ConfigMap;
+       4: areturn
+
+  public java.lang.Throwable newAssertionFailedException(scala.Option<java.lang.String>, scala.Option<java.lang.Throwable>, org.scalactic.source.Position, scala.collection.immutable.IndexedSeq<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #186                // InterfaceMethod org/scalatest/Assertions.newAssertionFailedException$:(Lorg/scalatest/Assertions;Lscala/Option;Lscala/Option;Lorg/scalactic/source/Position;Lscala/collection/immutable/IndexedSeq;)Ljava/lang/Throwable;
+       9: areturn
+
+  public java.lang.Throwable newTestCanceledException(scala.Option<java.lang.String>, scala.Option<java.lang.Throwable>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #195                // InterfaceMethod org/scalatest/Assertions.newTestCanceledException$:(Lorg/scalatest/Assertions;Lscala/Option;Lscala/Option;Lorg/scalactic/source/Position;)Ljava/lang/Throwable;
+       7: areturn
+
+  public <T> T intercept(scala.Function0<java.lang.Object>, scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #204                // InterfaceMethod org/scalatest/Assertions.intercept$:(Lorg/scalatest/Assertions;Lscala/Function0;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Ljava/lang/Object;
+       7: areturn
+
+  public <T> org.scalatest.compatible.Assertion assertThrows(scala.Function0<java.lang.Object>, scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #213                // InterfaceMethod org/scalatest/Assertions.assertThrows$:(Lorg/scalatest/Assertions;Lscala/Function0;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       7: areturn
+
+  public org.scalatest.compatible.Assertion assertResult(java.lang.Object, java.lang.Object, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #222                // InterfaceMethod org/scalatest/Assertions.assertResult$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+      11: areturn
+
+  public org.scalatest.compatible.Assertion assertResult(java.lang.Object, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #228                // InterfaceMethod org/scalatest/Assertions.assertResult$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       9: areturn
+
+  public scala.runtime.Nothing$ fail(org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #234                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       5: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.String, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #239                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/String;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.String, java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #244                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/String;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       7: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #249                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ cancel(org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #253                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       5: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.String, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #255                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/String;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.String, java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #257                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/String;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       7: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #259                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public <T> T withClue(java.lang.Object, scala.Function0<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #267                // InterfaceMethod org/scalatest/Assertions.withClue$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;
+       6: areturn
+
+  public org.scalatest.compatible.Assertion pending();
+    Code:
+       0: aload_0
+       1: invokestatic  #273                // InterfaceMethod org/scalatest/Assertions.pending$:(Lorg/scalatest/Assertions;)Lorg/scalatest/compatible/Assertion;
+       4: areturn
+
+  public org.scalatest.compatible.Assertion pendingUntilFixed(scala.Function0<scala.runtime.BoxedUnit>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #280                // InterfaceMethod org/scalatest/Assertions.pendingUntilFixed$:(Lorg/scalatest/Assertions;Lscala/Function0;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       6: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$Equalizer<T> convertToEqualizer(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #290                // InterfaceMethod org/scalactic/TripleEquals.convertToEqualizer$:(Lorg/scalactic/TripleEquals;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$Equalizer;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$CheckingEqualizer<T> convertToCheckingEqualizer(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #297                // InterfaceMethod org/scalactic/TripleEquals.convertToCheckingEqualizer$:(Lorg/scalactic/TripleEquals;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$CheckingEqualizer;
+       5: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> unconstrainedEquality(org.scalactic.Equality<A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #305                // InterfaceMethod org/scalactic/TripleEquals.unconstrainedEquality$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equality;)Lorg/scalactic/CanEqual;
+       5: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> lowPriorityTypeCheckedConstraint(org.scalactic.Equivalence<B>, scala.$less$colon$less<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #315                // InterfaceMethod org/scalactic/TripleEquals.lowPriorityTypeCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToAToBConstraint(org.scalactic.Equivalence<B>, scala.$less$colon$less<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #321                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToAToBConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> typeCheckedConstraint(org.scalactic.Equivalence<A>, scala.$less$colon$less<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #327                // InterfaceMethod org/scalactic/TripleEquals.typeCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToBToAConstraint(org.scalactic.Equivalence<A>, scala.$less$colon$less<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #331                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToBToAConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> lowPriorityConversionCheckedConstraint(org.scalactic.Equivalence<B>, scala.Function1<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #339                // InterfaceMethod org/scalactic/TripleEquals.lowPriorityConversionCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToAToBConversionConstraint(org.scalactic.Equivalence<B>, scala.Function1<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #344                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToAToBConversionConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> conversionCheckedConstraint(org.scalactic.Equivalence<A>, scala.Function1<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #349                // InterfaceMethod org/scalactic/TripleEquals.conversionCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToBToAConversionConstraint(org.scalactic.Equivalence<A>, scala.Function1<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #353                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToBToAConversionConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A> org.scalactic.Equality<A> defaultEquality();
+    Code:
+       0: aload_0
+       1: invokestatic  #360                // InterfaceMethod org/scalactic/TripleEqualsSupport.defaultEquality$:(Lorg/scalactic/TripleEqualsSupport;)Lorg/scalactic/Equality;
+       4: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<T> $eq$eq$eq(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #368                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<T> $bang$eq$eq(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #372                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<scala.runtime.Null$> $eq$eq$eq(scala.runtime.Null$);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #377                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lscala/runtime/Null$;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<scala.runtime.Null$> $bang$eq$eq(scala.runtime.Null$);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #380                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lscala/runtime/Null$;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocationOnSpread<T> $eq$eq$eq(org.scalactic.TripleEqualsSupport$Spread<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #385                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocationOnSpread;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocationOnSpread<T> $bang$eq$eq(org.scalactic.TripleEqualsSupport$Spread<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #388                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocationOnSpread;
+       5: areturn
+
+  public java.lang.String styleName();
+    Code:
+       0: aload_0
+       1: getfield      #390                // Field styleName:Ljava/lang/String;
+       4: areturn
+
+  public void org$scalatest$Suite$_setter_$styleName_$eq(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #390                // Field styleName:Ljava/lang/String;
+       5: return
+
+  public final org.scalatest.compatible.Assertion succeed();
+    Code:
+       0: aload_0
+       1: getfield      #395                // Field succeed:Lorg/scalatest/compatible/Assertion;
+       4: areturn
+
+  public final void org$scalatest$Assertions$_setter_$succeed_$eq(org.scalatest.compatible.Assertion);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #395                // Field succeed:Lorg/scalatest/compatible/Assertion;
+       5: return
+
+  public int actual();
+    Code:
+       0: aload_0
+       1: getfield      #400                // Field actual:I
+       4: ireturn
+
+  public curriedcase.CallbackSuite();
+    Code:
+       0: aload_0
+       1: invokespecial #404                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #408                // InterfaceMethod org/scalactic/TripleEqualsSupport.$init$:(Lorg/scalactic/TripleEqualsSupport;)V
+       8: aload_0
+       9: invokestatic  #411                // InterfaceMethod org/scalactic/TripleEquals.$init$:(Lorg/scalactic/TripleEquals;)V
+      12: aload_0
+      13: invokestatic  #414                // InterfaceMethod org/scalatest/Assertions.$init$:(Lorg/scalatest/Assertions;)V
+      16: aload_0
+      17: invokestatic  #417                // InterfaceMethod org/scalatest/Suite.$init$:(Lorg/scalatest/Suite;)V
+      20: aload_0
+      21: getstatic     #423                // Field curriedcase/Library$.MODULE$:Lcurriedcase/Library$;
+      24: iconst_4
+      25: invokevirtual #427                // Method curriedcase/Library$.returned:(I)Lscala/Function0;
+      28: invokeinterface #432,  1          // InterfaceMethod scala/Function0.apply$mcI$sp:()I
+      33: putfield      #400                // Field actual:I
+      36: invokestatic  #437                // Method scala/runtime/Statics.releaseFence:()V
+      39: return
+}
+Compiled from "Suites.scala"
+public class curriedcase.ReusedCallbackSuite implements org.scalatest.Suite {
+  private final scala.Function0<java.lang.Object> callback;
+
+  private final int first;
+
+  private final int second;
+
+  private java.lang.String styleName;
+
+  private org.scalatest.compatible.Assertion succeed;
+
+  public scala.collection.immutable.IndexedSeq<org.scalatest.Suite> nestedSuites();
+    Code:
+       0: aload_0
+       1: invokestatic  #49                 // InterfaceMethod org/scalatest/Suite.nestedSuites$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/IndexedSeq;
+       4: areturn
+
+  public final void execute(java.lang.String, org.scalatest.ConfigMap, boolean, boolean, boolean, boolean, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: iload_3
+       4: iload         4
+       6: iload         5
+       8: iload         6
+      10: iload         7
+      12: invokestatic  #64                 // InterfaceMethod org/scalatest/Suite.execute$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/ConfigMap;ZZZZZ)V
+      15: return
+
+  public final java.lang.String execute$default$1();
+    Code:
+       0: aload_0
+       1: invokestatic  #72                 // InterfaceMethod org/scalatest/Suite.execute$default$1$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public final org.scalatest.ConfigMap execute$default$2();
+    Code:
+       0: aload_0
+       1: invokestatic  #78                 // InterfaceMethod org/scalatest/Suite.execute$default$2$:(Lorg/scalatest/Suite;)Lorg/scalatest/ConfigMap;
+       4: areturn
+
+  public final boolean execute$default$3();
+    Code:
+       0: aload_0
+       1: invokestatic  #84                 // InterfaceMethod org/scalatest/Suite.execute$default$3$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$4();
+    Code:
+       0: aload_0
+       1: invokestatic  #88                 // InterfaceMethod org/scalatest/Suite.execute$default$4$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$5();
+    Code:
+       0: aload_0
+       1: invokestatic  #92                 // InterfaceMethod org/scalatest/Suite.execute$default$5$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$6();
+    Code:
+       0: aload_0
+       1: invokestatic  #96                 // InterfaceMethod org/scalatest/Suite.execute$default$6$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public final boolean execute$default$7();
+    Code:
+       0: aload_0
+       1: invokestatic  #100                // InterfaceMethod org/scalatest/Suite.execute$default$7$:(Lorg/scalatest/Suite;)Z
+       4: ireturn
+
+  public scala.collection.immutable.Map<java.lang.String, scala.collection.immutable.Set<java.lang.String>> tags();
+    Code:
+       0: aload_0
+       1: invokestatic  #107                // InterfaceMethod org/scalatest/Suite.tags$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/Map;
+       4: areturn
+
+  public scala.collection.immutable.Set<java.lang.String> testNames();
+    Code:
+       0: aload_0
+       1: invokestatic  #114                // InterfaceMethod org/scalatest/Suite.testNames$:(Lorg/scalatest/Suite;)Lscala/collection/immutable/Set;
+       4: areturn
+
+  public org.scalatest.Status runTest(java.lang.String, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #121                // InterfaceMethod org/scalatest/Suite.runTest$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status runTests(scala.Option<java.lang.String>, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #129                // InterfaceMethod org/scalatest/Suite.runTests$:(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status run(scala.Option<java.lang.String>, org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #134                // InterfaceMethod org/scalatest/Suite.run$:(Lorg/scalatest/Suite;Lscala/Option;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       6: areturn
+
+  public org.scalatest.Status runNestedSuites(org.scalatest.Args);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #140                // InterfaceMethod org/scalatest/Suite.runNestedSuites$:(Lorg/scalatest/Suite;Lorg/scalatest/Args;)Lorg/scalatest/Status;
+       5: areturn
+
+  public java.lang.String suiteName();
+    Code:
+       0: aload_0
+       1: invokestatic  #144                // InterfaceMethod org/scalatest/Suite.suiteName$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String suiteId();
+    Code:
+       0: aload_0
+       1: invokestatic  #148                // InterfaceMethod org/scalatest/Suite.suiteId$:(Lorg/scalatest/Suite;)Ljava/lang/String;
+       4: areturn
+
+  public int expectedTestCount(org.scalatest.Filter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #155                // InterfaceMethod org/scalatest/Suite.expectedTestCount$:(Lorg/scalatest/Suite;Lorg/scalatest/Filter;)I
+       5: ireturn
+
+  public org.scalatest.Reporter createCatchReporter(org.scalatest.Reporter);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #163                // InterfaceMethod org/scalatest/Suite.createCatchReporter$:(Lorg/scalatest/Suite;Lorg/scalatest/Reporter;)Lorg/scalatest/Reporter;
+       5: areturn
+
+  public scala.Option<java.lang.String> rerunner();
+    Code:
+       0: aload_0
+       1: invokestatic  #171                // InterfaceMethod org/scalatest/Suite.rerunner$:(Lorg/scalatest/Suite;)Lscala/Option;
+       4: areturn
+
+  public org.scalatest.TestData testDataFor(java.lang.String, org.scalatest.ConfigMap);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #178                // InterfaceMethod org/scalatest/Suite.testDataFor$:(Lorg/scalatest/Suite;Ljava/lang/String;Lorg/scalatest/ConfigMap;)Lorg/scalatest/TestData;
+       6: areturn
+
+  public org.scalatest.ConfigMap testDataFor$default$2();
+    Code:
+       0: aload_0
+       1: invokestatic  #182                // InterfaceMethod org/scalatest/Suite.testDataFor$default$2$:(Lorg/scalatest/Suite;)Lorg/scalatest/ConfigMap;
+       4: areturn
+
+  public java.lang.Throwable newAssertionFailedException(scala.Option<java.lang.String>, scala.Option<java.lang.Throwable>, org.scalactic.source.Position, scala.collection.immutable.IndexedSeq<java.lang.String>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #195                // InterfaceMethod org/scalatest/Assertions.newAssertionFailedException$:(Lorg/scalatest/Assertions;Lscala/Option;Lscala/Option;Lorg/scalactic/source/Position;Lscala/collection/immutable/IndexedSeq;)Ljava/lang/Throwable;
+       9: areturn
+
+  public java.lang.Throwable newTestCanceledException(scala.Option<java.lang.String>, scala.Option<java.lang.Throwable>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #204                // InterfaceMethod org/scalatest/Assertions.newTestCanceledException$:(Lorg/scalatest/Assertions;Lscala/Option;Lscala/Option;Lorg/scalactic/source/Position;)Ljava/lang/Throwable;
+       7: areturn
+
+  public <T> T intercept(scala.Function0<java.lang.Object>, scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #213                // InterfaceMethod org/scalatest/Assertions.intercept$:(Lorg/scalatest/Assertions;Lscala/Function0;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Ljava/lang/Object;
+       7: areturn
+
+  public <T> org.scalatest.compatible.Assertion assertThrows(scala.Function0<java.lang.Object>, scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #221                // InterfaceMethod org/scalatest/Assertions.assertThrows$:(Lorg/scalatest/Assertions;Lscala/Function0;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       7: areturn
+
+  public org.scalatest.compatible.Assertion assertResult(java.lang.Object, java.lang.Object, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #231                // InterfaceMethod org/scalatest/Assertions.assertResult$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+      11: areturn
+
+  public org.scalatest.compatible.Assertion assertResult(java.lang.Object, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #237                // InterfaceMethod org/scalatest/Assertions.assertResult$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       9: areturn
+
+  public scala.runtime.Nothing$ fail(org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #243                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       5: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.String, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #248                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/String;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.String, java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #253                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/String;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       7: areturn
+
+  public scala.runtime.Nothing$ fail(java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #258                // InterfaceMethod org/scalatest/Assertions.fail$:(Lorg/scalatest/Assertions;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ cancel(org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #262                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       5: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.String, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #264                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/String;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.String, java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #266                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/String;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       7: areturn
+
+  public scala.runtime.Nothing$ cancel(java.lang.Throwable, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #268                // InterfaceMethod org/scalatest/Assertions.cancel$:(Lorg/scalatest/Assertions;Ljava/lang/Throwable;Lorg/scalactic/source/Position;)Lscala/runtime/Nothing$;
+       6: areturn
+
+  public <T> T withClue(java.lang.Object, scala.Function0<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #276                // InterfaceMethod org/scalatest/Assertions.withClue$:(Lorg/scalatest/Assertions;Ljava/lang/Object;Lscala/Function0;)Ljava/lang/Object;
+       6: areturn
+
+  public org.scalatest.compatible.Assertion pending();
+    Code:
+       0: aload_0
+       1: invokestatic  #282                // InterfaceMethod org/scalatest/Assertions.pending$:(Lorg/scalatest/Assertions;)Lorg/scalatest/compatible/Assertion;
+       4: areturn
+
+  public org.scalatest.compatible.Assertion pendingUntilFixed(scala.Function0<scala.runtime.BoxedUnit>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #289                // InterfaceMethod org/scalatest/Assertions.pendingUntilFixed$:(Lorg/scalatest/Assertions;Lscala/Function0;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+       6: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$Equalizer<T> convertToEqualizer(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #299                // InterfaceMethod org/scalactic/TripleEquals.convertToEqualizer$:(Lorg/scalactic/TripleEquals;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$Equalizer;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$CheckingEqualizer<T> convertToCheckingEqualizer(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #306                // InterfaceMethod org/scalactic/TripleEquals.convertToCheckingEqualizer$:(Lorg/scalactic/TripleEquals;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$CheckingEqualizer;
+       5: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> unconstrainedEquality(org.scalactic.Equality<A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #314                // InterfaceMethod org/scalactic/TripleEquals.unconstrainedEquality$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equality;)Lorg/scalactic/CanEqual;
+       5: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> lowPriorityTypeCheckedConstraint(org.scalactic.Equivalence<B>, scala.$less$colon$less<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #324                // InterfaceMethod org/scalactic/TripleEquals.lowPriorityTypeCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToAToBConstraint(org.scalactic.Equivalence<B>, scala.$less$colon$less<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #330                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToAToBConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> typeCheckedConstraint(org.scalactic.Equivalence<A>, scala.$less$colon$less<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #336                // InterfaceMethod org/scalactic/TripleEquals.typeCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToBToAConstraint(org.scalactic.Equivalence<A>, scala.$less$colon$less<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #340                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToBToAConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/$less$colon$less;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> lowPriorityConversionCheckedConstraint(org.scalactic.Equivalence<B>, scala.Function1<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #348                // InterfaceMethod org/scalactic/TripleEquals.lowPriorityConversionCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToAToBConversionConstraint(org.scalactic.Equivalence<B>, scala.Function1<A, B>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #353                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToAToBConversionConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> conversionCheckedConstraint(org.scalactic.Equivalence<A>, scala.Function1<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #358                // InterfaceMethod org/scalactic/TripleEquals.conversionCheckedConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A, B> org.scalactic.CanEqual<A, B> convertEquivalenceToBToAConversionConstraint(org.scalactic.Equivalence<A>, scala.Function1<B, A>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #362                // InterfaceMethod org/scalactic/TripleEquals.convertEquivalenceToBToAConversionConstraint$:(Lorg/scalactic/TripleEquals;Lorg/scalactic/Equivalence;Lscala/Function1;)Lorg/scalactic/CanEqual;
+       6: areturn
+
+  public <A> org.scalactic.Equality<A> defaultEquality();
+    Code:
+       0: aload_0
+       1: invokestatic  #369                // InterfaceMethod org/scalactic/TripleEqualsSupport.defaultEquality$:(Lorg/scalactic/TripleEqualsSupport;)Lorg/scalactic/Equality;
+       4: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<T> $eq$eq$eq(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #377                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<T> $bang$eq$eq(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #381                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Ljava/lang/Object;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<scala.runtime.Null$> $eq$eq$eq(scala.runtime.Null$);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #386                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lscala/runtime/Null$;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public org.scalactic.TripleEqualsSupport$TripleEqualsInvocation<scala.runtime.Null$> $bang$eq$eq(scala.runtime.Null$);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #389                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lscala/runtime/Null$;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocation;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocationOnSpread<T> $eq$eq$eq(org.scalactic.TripleEqualsSupport$Spread<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #394                // InterfaceMethod org/scalactic/TripleEqualsSupport.$eq$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocationOnSpread;
+       5: areturn
+
+  public <T> org.scalactic.TripleEqualsSupport$TripleEqualsInvocationOnSpread<T> $bang$eq$eq(org.scalactic.TripleEqualsSupport$Spread<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #397                // InterfaceMethod org/scalactic/TripleEqualsSupport.$bang$eq$eq$:(Lorg/scalactic/TripleEqualsSupport;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalactic/TripleEqualsSupport$TripleEqualsInvocationOnSpread;
+       5: areturn
+
+  public java.lang.String styleName();
+    Code:
+       0: aload_0
+       1: getfield      #399                // Field styleName:Ljava/lang/String;
+       4: areturn
+
+  public void org$scalatest$Suite$_setter_$styleName_$eq(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #399                // Field styleName:Ljava/lang/String;
+       5: return
+
+  public final org.scalatest.compatible.Assertion succeed();
+    Code:
+       0: aload_0
+       1: getfield      #404                // Field succeed:Lorg/scalatest/compatible/Assertion;
+       4: areturn
+
+  public final void org$scalatest$Assertions$_setter_$succeed_$eq(org.scalatest.compatible.Assertion);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #404                // Field succeed:Lorg/scalatest/compatible/Assertion;
+       5: return
+
+  public scala.Function0<java.lang.Object> callback();
+    Code:
+       0: aload_0
+       1: getfield      #410                // Field callback:Lscala/Function0;
+       4: areturn
+
+  public int first();
+    Code:
+       0: aload_0
+       1: getfield      #413                // Field first:I
+       4: ireturn
+
+  public int second();
+    Code:
+       0: aload_0
+       1: getfield      #415                // Field second:I
+       4: ireturn
+
+  public static final int $anonfun$callback$1();
+    Code:
+       0: getstatic     #422                // Field curriedcase/Library$.MODULE$:Lcurriedcase/Library$;
+       3: bipush        16
+       5: new           #424                // class org/scalactic/source/Position
+       8: dup
+       9: ldc_w         #425                // String Suites.scala
+      12: ldc_w         #427                // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      15: bipush        24
+      17: invokespecial #431                // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      20: getstatic     #436                // Field org/scalactic/Prettifier$.MODULE$:Lorg/scalactic/Prettifier$;
+      23: invokevirtual #440                // Method org/scalactic/Prettifier$.default:()Lorg/scalactic/Prettifier;
+      26: invokevirtual #444                // Method curriedcase/Library$.curried:(ILorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)I
+      29: ireturn
+
+  public curriedcase.ReusedCallbackSuite();
+    Code:
+       0: aload_0
+       1: invokespecial #447                // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: invokestatic  #451                // InterfaceMethod org/scalactic/TripleEqualsSupport.$init$:(Lorg/scalactic/TripleEqualsSupport;)V
+       8: aload_0
+       9: invokestatic  #454                // InterfaceMethod org/scalactic/TripleEquals.$init$:(Lorg/scalactic/TripleEquals;)V
+      12: aload_0
+      13: invokestatic  #457                // InterfaceMethod org/scalatest/Assertions.$init$:(Lorg/scalatest/Assertions;)V
+      16: aload_0
+      17: invokestatic  #460                // InterfaceMethod org/scalatest/Suite.$init$:(Lorg/scalatest/Suite;)V
+      20: aload_0
+      21: invokedynamic #476,  0            // InvokeDynamic #0:apply$mcI$sp:()Lscala/runtime/java8/JFunction0$mcI$sp;
+      26: putfield      #410                // Field callback:Lscala/Function0;
+      29: aload_0
+      30: aload_0
+      31: invokevirtual #478                // Method callback:()Lscala/Function0;
+      34: invokeinterface #482,  1          // InterfaceMethod scala/Function0.apply$mcI$sp:()I
+      39: putfield      #413                // Field first:I
+      42: aload_0
+      43: aload_0
+      44: invokevirtual #478                // Method callback:()Lscala/Function0;
+      47: invokeinterface #482,  1          // InterfaceMethod scala/Function0.apply$mcI$sp:()I
+      52: putfield      #415                // Field second:I
+      55: invokestatic  #487                // Method scala/runtime/Statics.releaseFence:()V
+      58: return
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    Code:
+       0: aload_0
+       1: invokedynamic #499,  0            // InvokeDynamic #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}
+Compiled from "Suites.scala"
+public class curriedcase.WordSuite extends org.scalatest.wordspec.AnyWordSpec implements org.scalatest.matchers.should.Matchers {
+  private org.scalatest.matchers.should.Matchers$KeyWord key;
+
+  private org.scalatest.matchers.should.Matchers$ValueWord value;
+
+  private org.scalatest.matchers.should.Matchers$AWord a;
+
+  private org.scalatest.matchers.should.Matchers$AnWord an;
+
+  private org.scalatest.matchers.should.Matchers$TheSameInstanceAsPhrase theSameInstanceAs;
+
+  private org.scalatest.matchers.should.Matchers$RegexWord regex;
+
+  private org.scalatest.matchers.should.Matchers$Collected org$scalatest$matchers$should$Matchers$$AllCollected;
+
+  private org.scalatest.matchers.should.Matchers$Collected org$scalatest$matchers$should$Matchers$$EveryCollected;
+
+  private volatile org.scalatest.matchers.should.Matchers$BetweenCollected$ BetweenCollected$module;
+
+  private volatile org.scalatest.matchers.should.Matchers$AtLeastCollected$ AtLeastCollected$module;
+
+  private volatile org.scalatest.matchers.should.Matchers$AtMostCollected$ AtMostCollected$module;
+
+  private org.scalatest.matchers.should.Matchers$Collected org$scalatest$matchers$should$Matchers$$NoCollected;
+
+  private volatile org.scalatest.matchers.should.Matchers$ExactlyCollected$ ExactlyCollected$module;
+
+  private org.scalatest.matchers.should.Matchers$ShouldMethodHelperClass org$scalatest$matchers$should$Matchers$$ShouldMethodHelper;
+
+  private org.scalactic.Explicitly$DecidedWord decided;
+
+  private org.scalactic.Explicitly$DeterminedWord determined;
+
+  private org.scalactic.Explicitly$TheAfterWord after;
+
+  private org.scalatest.matchers.dsl.FullyMatchWord fullyMatch;
+
+  private org.scalatest.matchers.dsl.StartWithWord startWith;
+
+  private org.scalatest.matchers.dsl.EndWithWord endWith;
+
+  private org.scalatest.matchers.dsl.IncludeWord include;
+
+  private org.scalatest.matchers.dsl.HaveWord have;
+
+  private org.scalatest.matchers.dsl.BeWord be;
+
+  private org.scalatest.matchers.dsl.ContainWord contain;
+
+  private org.scalatest.matchers.dsl.NotWord not;
+
+  private org.scalatest.matchers.dsl.LengthWord length;
+
+  private org.scalatest.matchers.dsl.SizeWord size;
+
+  private org.scalatest.matchers.dsl.SortedWord sorted;
+
+  private org.scalatest.matchers.dsl.DefinedWord defined;
+
+  private org.scalatest.matchers.dsl.ExistWord exist;
+
+  private org.scalatest.matchers.dsl.ReadableWord readable;
+
+  private org.scalatest.matchers.dsl.WritableWord writable;
+
+  private org.scalatest.matchers.dsl.EmptyWord empty;
+
+  private org.scalatest.verbs.CompileWord compile;
+
+  private org.scalatest.verbs.TypeCheckWord typeCheck;
+
+  private org.scalatest.matchers.dsl.MatchPatternWord matchPattern;
+
+  public org.scalatest.matchers.should.Matchers$HavePropertyMatcherGenerator convertSymbolToHavePropertyMatcherGenerator(scala.Symbol, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #171                // InterfaceMethod org/scalatest/matchers/should/Matchers.convertSymbolToHavePropertyMatcherGenerator$:(Lorg/scalatest/matchers/should/Matchers;Lscala/Symbol;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$HavePropertyMatcherGenerator;
+       7: areturn
+
+  public <T> org.scalatest.matchers.Matcher<T> equal(org.scalactic.TripleEqualsSupport$Spread<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #184                // InterfaceMethod org/scalatest/matchers/should/Matchers.equal$:(Lorg/scalatest/matchers/should/Matchers;Lorg/scalactic/TripleEqualsSupport$Spread;)Lorg/scalatest/matchers/Matcher;
+       5: areturn
+
+  public org.scalatest.matchers.Matcher<java.lang.Object> equal(scala.runtime.Null$);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #191                // InterfaceMethod org/scalatest/matchers/should/Matchers.equal$:(Lorg/scalatest/matchers/should/Matchers;Lscala/runtime/Null$;)Lorg/scalatest/matchers/Matcher;
+       5: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfLessThanComparison<T> $less(T, scala.math.Ordering<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #201                // InterfaceMethod org/scalatest/matchers/should/Matchers.$less$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfLessThanComparison;
+       6: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfGreaterThanComparison<T> $greater(T, scala.math.Ordering<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #211                // InterfaceMethod org/scalatest/matchers/should/Matchers.$greater$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfGreaterThanComparison;
+       6: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfLessThanOrEqualToComparison<T> $less$eq(T, scala.math.Ordering<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #219                // InterfaceMethod org/scalatest/matchers/should/Matchers.$less$eq$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfLessThanOrEqualToComparison;
+       6: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfGreaterThanOrEqualToComparison<T> $greater$eq(T, scala.math.Ordering<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #227                // InterfaceMethod org/scalatest/matchers/should/Matchers.$greater$eq$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lscala/math/Ordering;)Lorg/scalatest/matchers/dsl/ResultOfGreaterThanOrEqualToComparison;
+       6: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfDefinedAt<T> definedAt(T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #234                // InterfaceMethod org/scalatest/matchers/should/Matchers.definedAt$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;)Lorg/scalatest/matchers/dsl/ResultOfDefinedAt;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfOneOfApplication oneOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #244                // InterfaceMethod org/scalatest/matchers/should/Matchers.oneOf$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfOneOfApplication;
+       9: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfOneElementOfApplication oneElementOf(scala.collection.Iterable<java.lang.Object>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #253                // InterfaceMethod org/scalatest/matchers/should/Matchers.oneElementOf$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfOneElementOfApplication;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfAtLeastOneOfApplication atLeastOneOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #261                // InterfaceMethod org/scalatest/matchers/should/Matchers.atLeastOneOf$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfAtLeastOneOfApplication;
+       9: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfAtLeastOneElementOfApplication atLeastOneElementOf(scala.collection.Iterable<java.lang.Object>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #268                // InterfaceMethod org/scalatest/matchers/should/Matchers.atLeastOneElementOf$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfAtLeastOneElementOfApplication;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfNoneOfApplication noneOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #275                // InterfaceMethod org/scalatest/matchers/should/Matchers.noneOf$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfNoneOfApplication;
+       9: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfNoElementsOfApplication noElementsOf(scala.collection.Iterable<java.lang.Object>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #282                // InterfaceMethod org/scalatest/matchers/should/Matchers.noElementsOf$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfNoElementsOfApplication;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfTheSameElementsAsApplication theSameElementsAs(scala.collection.Iterable<java.lang.Object>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #290                // InterfaceMethod org/scalatest/matchers/should/Matchers.theSameElementsAs$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfTheSameElementsAsApplication;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfTheSameElementsInOrderAsApplication theSameElementsInOrderAs(scala.collection.Iterable<java.lang.Object>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #297                // InterfaceMethod org/scalatest/matchers/should/Matchers.theSameElementsInOrderAs$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfTheSameElementsInOrderAsApplication;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfOnlyApplication only(scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #304                // InterfaceMethod org/scalatest/matchers/should/Matchers.only$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfOnlyApplication;
+       6: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfInOrderOnlyApplication inOrderOnly(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #311                // InterfaceMethod org/scalatest/matchers/should/Matchers.inOrderOnly$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfInOrderOnlyApplication;
+       9: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfAllOfApplication allOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #318                // InterfaceMethod org/scalatest/matchers/should/Matchers.allOf$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfAllOfApplication;
+       9: areturn
+
+  public <R> org.scalatest.matchers.dsl.ResultOfAllElementsOfApplication allElementsOf(scala.collection.Iterable<R>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #325                // InterfaceMethod org/scalatest/matchers/should/Matchers.allElementsOf$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfAllElementsOfApplication;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfInOrderApplication inOrder(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #332                // InterfaceMethod org/scalatest/matchers/should/Matchers.inOrder$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfInOrderApplication;
+       9: areturn
+
+  public <R> org.scalatest.matchers.dsl.ResultOfInOrderElementsOfApplication inOrderElementsOf(scala.collection.Iterable<R>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #339                // InterfaceMethod org/scalatest/matchers/should/Matchers.inOrderElementsOf$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfInOrderElementsOfApplication;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfAtMostOneOfApplication atMostOneOf(java.lang.Object, java.lang.Object, scala.collection.immutable.Seq<java.lang.Object>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #346                // InterfaceMethod org/scalatest/matchers/should/Matchers.atMostOneOf$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Ljava/lang/Object;Lscala/collection/immutable/Seq;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfAtMostOneOfApplication;
+       9: areturn
+
+  public <R> org.scalatest.matchers.dsl.ResultOfAtMostOneElementOfApplication atMostOneElementOf(scala.collection.Iterable<R>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #353                // InterfaceMethod org/scalatest/matchers/should/Matchers.atMostOneElementOf$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Iterable;)Lorg/scalatest/matchers/dsl/ResultOfAtMostOneElementOfApplication;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfThrownByApplication thrownBy(scala.Function0<java.lang.Object>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #361                // InterfaceMethod org/scalatest/matchers/should/Matchers.thrownBy$:(Lorg/scalatest/matchers/should/Matchers;Lscala/Function0;)Lorg/scalatest/matchers/dsl/ResultOfThrownByApplication;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.ResultOfMessageWordApplication message(java.lang.String);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #369                // InterfaceMethod org/scalatest/matchers/should/Matchers.message$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;)Lorg/scalatest/matchers/dsl/ResultOfMessageWordApplication;
+       5: areturn
+
+  public <T> org.scalatest.compatible.Assertion doCollected(org.scalatest.matchers.should.Matchers$Collected, scala.collection.Iterable<T>, java.lang.Object, org.scalactic.Prettifier, org.scalactic.source.Position, scala.Function1<T, org.scalatest.compatible.Assertion>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: aload         6
+      10: invokestatic  #379                // InterfaceMethod org/scalatest/matchers/should/Matchers.doCollected$:(Lorg/scalatest/matchers/should/Matchers;Lorg/scalatest/matchers/should/Matchers$Collected;Lscala/collection/Iterable;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;Lscala/Function1;)Lorg/scalatest/compatible/Assertion;
+      13: areturn
+
+  public <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> all(C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #388                // InterfaceMethod org/scalatest/matchers/should/Matchers.all$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> all(MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #394                // InterfaceMethod org/scalatest/matchers/should/Matchers.all$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> all(JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #400                // InterfaceMethod org/scalatest/matchers/should/Matchers.all$:(Lorg/scalatest/matchers/should/Matchers;Ljava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> all(java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #406                // InterfaceMethod org/scalatest/matchers/should/Matchers.all$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> atLeast(int, C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #414                // InterfaceMethod org/scalatest/matchers/should/Matchers.atLeast$:(Lorg/scalatest/matchers/should/Matchers;ILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> atLeast(int, MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #420                // InterfaceMethod org/scalatest/matchers/should/Matchers.atLeast$:(Lorg/scalatest/matchers/should/Matchers;ILscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> atLeast(int, JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #425                // InterfaceMethod org/scalatest/matchers/should/Matchers.atLeast$:(Lorg/scalatest/matchers/should/Matchers;ILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> atLeast(int, java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #430                // InterfaceMethod org/scalatest/matchers/should/Matchers.atLeast$:(Lorg/scalatest/matchers/should/Matchers;ILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> every(C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #434                // InterfaceMethod org/scalatest/matchers/should/Matchers.every$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> every(MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #436                // InterfaceMethod org/scalatest/matchers/should/Matchers.every$:(Lorg/scalatest/matchers/should/Matchers;Lscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> every(JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #438                // InterfaceMethod org/scalatest/matchers/should/Matchers.every$:(Lorg/scalatest/matchers/should/Matchers;Ljava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> every(java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #440                // InterfaceMethod org/scalatest/matchers/should/Matchers.every$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> exactly(int, C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #444                // InterfaceMethod org/scalatest/matchers/should/Matchers.exactly$:(Lorg/scalatest/matchers/should/Matchers;ILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> exactly(int, MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #446                // InterfaceMethod org/scalatest/matchers/should/Matchers.exactly$:(Lorg/scalatest/matchers/should/Matchers;ILscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> exactly(int, JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #448                // InterfaceMethod org/scalatest/matchers/should/Matchers.exactly$:(Lorg/scalatest/matchers/should/Matchers;ILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> exactly(int, java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #450                // InterfaceMethod org/scalatest/matchers/should/Matchers.exactly$:(Lorg/scalatest/matchers/should/Matchers;ILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> no(C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #454                // InterfaceMethod org/scalatest/matchers/should/Matchers.no$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> no(JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #456                // InterfaceMethod org/scalatest/matchers/should/Matchers.no$:(Lorg/scalatest/matchers/should/Matchers;Ljava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> no(java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokestatic  #458                // InterfaceMethod org/scalatest/matchers/should/Matchers.no$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+       9: areturn
+
+  public <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> between(int, int, C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: aload         6
+      10: invokestatic  #467                // InterfaceMethod org/scalatest/matchers/should/Matchers.between$:(Lorg/scalatest/matchers/should/Matchers;IILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      13: areturn
+
+  public <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> between(int, int, JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: aload         6
+      10: invokestatic  #472                // InterfaceMethod org/scalatest/matchers/should/Matchers.between$:(Lorg/scalatest/matchers/should/Matchers;IILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      13: areturn
+
+  public org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> between(int, int, java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: iload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: aload         6
+      10: invokestatic  #477                // InterfaceMethod org/scalatest/matchers/should/Matchers.between$:(Lorg/scalatest/matchers/should/Matchers;IILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      13: areturn
+
+  public <E, C> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<E> atMost(int, C, org.scalatest.enablers.Collecting<E, C>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #481                // InterfaceMethod org/scalatest/matchers/should/Matchers.atMost$:(Lorg/scalatest/matchers/should/Matchers;ILjava/lang/Object;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public <K, V, MAP extends scala.collection.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<scala.Tuple2<K, V>> atMost(int, MAP, org.scalatest.enablers.Collecting<scala.Tuple2<K, V>, scala.collection.Iterable<scala.Tuple2<K, V>>>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #483                // InterfaceMethod org/scalatest/matchers/should/Matchers.atMost$:(Lorg/scalatest/matchers/should/Matchers;ILscala/collection/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public <K, V, JMAP extends java.util.Map<java.lang.Object, java.lang.Object>> org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<org.scalatest.Entry<K, V>> atMost(int, JMAP, org.scalatest.enablers.Collecting<org.scalatest.Entry<K, V>, JMAP>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #485                // InterfaceMethod org/scalatest/matchers/should/Matchers.atMost$:(Lorg/scalatest/matchers/should/Matchers;ILjava/util/Map;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public org.scalatest.matchers.should.Matchers$ResultOfCollectedAny<java.lang.Object> atMost(int, java.lang.String, org.scalatest.enablers.Collecting<java.lang.Object, java.lang.String>, org.scalactic.Prettifier, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: aload         5
+       8: invokestatic  #487                // InterfaceMethod org/scalatest/matchers/should/Matchers.atMost$:(Lorg/scalatest/matchers/should/Matchers;ILjava/lang/String;Lorg/scalatest/enablers/Collecting;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/should/Matchers$ResultOfCollectedAny;
+      11: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfATypeInvocation<T> a(scala.reflect.ClassTag<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #494                // InterfaceMethod org/scalatest/matchers/should/Matchers.a$:(Lorg/scalatest/matchers/should/Matchers;Lscala/reflect/ClassTag;)Lorg/scalatest/matchers/dsl/ResultOfATypeInvocation;
+       5: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfAnTypeInvocation<T> an(scala.reflect.ClassTag<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #502                // InterfaceMethod org/scalatest/matchers/should/Matchers.an$:(Lorg/scalatest/matchers/should/Matchers;Lscala/reflect/ClassTag;)Lorg/scalatest/matchers/dsl/ResultOfAnTypeInvocation;
+       5: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfTheTypeInvocation<T> the(scala.reflect.ClassTag<T>, org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #510                // InterfaceMethod org/scalatest/matchers/should/Matchers.the$:(Lorg/scalatest/matchers/should/Matchers;Lscala/reflect/ClassTag;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/ResultOfTheTypeInvocation;
+       6: areturn
+
+  public <T> org.scalatest.matchers.should.Matchers$AnyShouldWrapper<T> convertToAnyShouldWrapper(T, org.scalactic.source.Position, org.scalactic.Prettifier);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #517                // InterfaceMethod org/scalatest/matchers/should/Matchers.convertToAnyShouldWrapper$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/Object;Lorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)Lorg/scalatest/matchers/should/Matchers$AnyShouldWrapper;
+       7: areturn
+
+  public org.scalatest.matchers.should.Matchers$StringShouldWrapper convertToStringShouldWrapper(java.lang.String, org.scalactic.source.Position, org.scalactic.Prettifier);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: invokestatic  #523                // InterfaceMethod org/scalatest/matchers/should/Matchers.convertToStringShouldWrapper$:(Lorg/scalatest/matchers/should/Matchers;Ljava/lang/String;Lorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)Lorg/scalatest/matchers/should/Matchers$StringShouldWrapper;
+       7: areturn
+
+  public org.scalatest.matchers.should.Matchers$RegexWrapper convertToRegexWrapper(scala.util.matching.Regex);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #529                // InterfaceMethod org/scalatest/matchers/should/Matchers.convertToRegexWrapper$:(Lorg/scalatest/matchers/should/Matchers;Lscala/util/matching/Regex;)Lorg/scalatest/matchers/should/Matchers$RegexWrapper;
+       5: areturn
+
+  public <T> org.scalatest.matchers.dsl.ResultOfOfTypeInvocation<T> of(scala.reflect.ClassTag<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #538                // InterfaceMethod org/scalatest/matchers/should/Matchers.of$:(Lorg/scalatest/matchers/should/Matchers;Lscala/reflect/ClassTag;)Lorg/scalatest/matchers/dsl/ResultOfOfTypeInvocation;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.NoExceptionWord noException(org.scalactic.source.Position);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #546                // InterfaceMethod org/scalatest/matchers/dsl/MatcherWords.noException$:(Lorg/scalatest/matchers/dsl/MatcherWords;Lorg/scalactic/source/Position;)Lorg/scalatest/matchers/dsl/NoExceptionWord;
+       5: areturn
+
+  public org.scalatest.matchers.dsl.MatcherFactory1<java.lang.Object, org.scalactic.Equality> equal(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #551                // InterfaceMethod org/scalatest/matchers/dsl/MatcherWords.equal$:(Lorg/scalatest/matchers/dsl/MatcherWords;Ljava/lang/Object;)Lorg/scalatest/matchers/dsl/MatcherFactory1;
+       5: areturn
+
+  public <T> org.scalactic.Tolerance$PlusOrMinusWrapper<T> convertNumericToPlusOrMinusWrapper(T, scala.math.Numeric<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #559                // InterfaceMethod org/scalactic/Tolerance.convertNumericToPlusOrMinusWrapper$:(Lorg/scalactic/Tolerance;Ljava/lang/Object;Lscala/math/Numeric;)Lorg/scalactic/Tolerance$PlusOrMinusWrapper;
+       6: areturn
+
+  public org.scalatest.matchers.should.Matchers$KeyWord key();
+    Code:
+       0: aload_0
+       1: getfield      #563                // Field key:Lorg/scalatest/matchers/should/Matchers$KeyWord;
+       4: areturn
+
+  public org.scalatest.matchers.should.Matchers$ValueWord value();
+    Code:
+       0: aload_0
+       1: getfield      #566                // Field value:Lorg/scalatest/matchers/should/Matchers$ValueWord;
+       4: areturn
+
+  public org.scalatest.matchers.should.Matchers$AWord a();
+    Code:
+       0: aload_0
+       1: getfield      #569                // Field a:Lorg/scalatest/matchers/should/Matchers$AWord;
+       4: areturn
+
+  public org.scalatest.matchers.should.Matchers$AnWord an();
+    Code:
+       0: aload_0
+       1: getfield      #572                // Field an:Lorg/scalatest/matchers/should/Matchers$AnWord;
+       4: areturn
+
+  public org.scalatest.matchers.should.Matchers$TheSameInstanceAsPhrase theSameInstanceAs();
+    Code:
+       0: aload_0
+       1: getfield      #575                // Field theSameInstanceAs:Lorg/scalatest/matchers/should/Matchers$TheSameInstanceAsPhrase;
+       4: areturn
+
+  public org.scalatest.matchers.should.Matchers$RegexWord regex();
+    Code:
+       0: aload_0
+       1: getfield      #578                // Field regex:Lorg/scalatest/matchers/should/Matchers$RegexWord;
+       4: areturn
+
+  public org.scalatest.matchers.should.Matchers$Collected org$scalatest$matchers$should$Matchers$$AllCollected();
+    Code:
+       0: aload_0
+       1: getfield      #581                // Field org$scalatest$matchers$should$Matchers$$AllCollected:Lorg/scalatest/matchers/should/Matchers$Collected;
+       4: areturn
+
+  public org.scalatest.matchers.should.Matchers$Collected org$scalatest$matchers$should$Matchers$$EveryCollected();
+    Code:
+       0: aload_0
+       1: getfield      #583                // Field org$scalatest$matchers$should$Matchers$$EveryCollected:Lorg/scalatest/matchers/should/Matchers$Collected;
+       4: areturn
+
+  public org.scalatest.matchers.should.Matchers$BetweenCollected$ org$scalatest$matchers$should$Matchers$$BetweenCollected();
+    Code:
+       0: aload_0
+       1: getfield      #587                // Field BetweenCollected$module:Lorg/scalatest/matchers/should/Matchers$BetweenCollected$;
+       4: ifnonnull     11
+       7: aload_0
+       8: invokespecial #591                // Method org$scalatest$matchers$should$Matchers$$BetweenCollected$lzycompute$1:()V
+      11: aload_0
+      12: getfield      #587                // Field BetweenCollected$module:Lorg/scalatest/matchers/should/Matchers$BetweenCollected$;
+      15: areturn
+
+  public org.scalatest.matchers.should.Matchers$AtLeastCollected$ org$scalatest$matchers$should$Matchers$$AtLeastCollected();
+    Code:
+       0: aload_0
+       1: getfield      #595                // Field AtLeastCollected$module:Lorg/scalatest/matchers/should/Matchers$AtLeastCollected$;
+       4: ifnonnull     11
+       7: aload_0
+       8: invokespecial #598                // Method org$scalatest$matchers$should$Matchers$$AtLeastCollected$lzycompute$1:()V
+      11: aload_0
+      12: getfield      #595                // Field AtLeastCollected$module:Lorg/scalatest/matchers/should/Matchers$AtLeastCollected$;
+      15: areturn
+
+  public org.scalatest.matchers.should.Matchers$AtMostCollected$ org$scalatest$matchers$should$Matchers$$AtMostCollected();
+    Code:
+       0: aload_0
+       1: getfield      #602                // Field AtMostCollected$module:Lorg/scalatest/matchers/should/Matchers$AtMostCollected$;
+       4: ifnonnull     11
+       7: aload_0
+       8: invokespecial #605                // Method org$scalatest$matchers$should$Matchers$$AtMostCollected$lzycompute$1:()V
+      11: aload_0
+      12: getfield      #602                // Field AtMostCollected$module:Lorg/scalatest/matchers/should/Matchers$AtMostCollected$;
+      15: areturn
+
+  public org.scalatest.matchers.should.Matchers$Collected org$scalatest$matchers$should$Matchers$$NoCollected();
+    Code:
+       0: aload_0
+       1: getfield      #607                // Field org$scalatest$matchers$should$Matchers$$NoCollected:Lorg/scalatest/matchers/should/Matchers$Collected;
+       4: areturn
+
+  public org.scalatest.matchers.should.Matchers$ExactlyCollected$ org$scalatest$matchers$should$Matchers$$ExactlyCollected();
+    Code:
+       0: aload_0
+       1: getfield      #611                // Field ExactlyCollected$module:Lorg/scalatest/matchers/should/Matchers$ExactlyCollected$;
+       4: ifnonnull     11
+       7: aload_0
+       8: invokespecial #614                // Method org$scalatest$matchers$should$Matchers$$ExactlyCollected$lzycompute$1:()V
+      11: aload_0
+      12: getfield      #611                // Field ExactlyCollected$module:Lorg/scalatest/matchers/should/Matchers$ExactlyCollected$;
+      15: areturn
+
+  public org.scalatest.matchers.should.Matchers$ShouldMethodHelperClass org$scalatest$matchers$should$Matchers$$ShouldMethodHelper();
+    Code:
+       0: aload_0
+       1: getfield      #617                // Field org$scalatest$matchers$should$Matchers$$ShouldMethodHelper:Lorg/scalatest/matchers/should/Matchers$ShouldMethodHelperClass;
+       4: areturn
+
+  public void org$scalatest$matchers$should$Matchers$_setter_$key_$eq(org.scalatest.matchers.should.Matchers$KeyWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #563                // Field key:Lorg/scalatest/matchers/should/Matchers$KeyWord;
+       5: return
+
+  public void org$scalatest$matchers$should$Matchers$_setter_$value_$eq(org.scalatest.matchers.should.Matchers$ValueWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #566                // Field value:Lorg/scalatest/matchers/should/Matchers$ValueWord;
+       5: return
+
+  public void org$scalatest$matchers$should$Matchers$_setter_$a_$eq(org.scalatest.matchers.should.Matchers$AWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #569                // Field a:Lorg/scalatest/matchers/should/Matchers$AWord;
+       5: return
+
+  public void org$scalatest$matchers$should$Matchers$_setter_$an_$eq(org.scalatest.matchers.should.Matchers$AnWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #572                // Field an:Lorg/scalatest/matchers/should/Matchers$AnWord;
+       5: return
+
+  public void org$scalatest$matchers$should$Matchers$_setter_$theSameInstanceAs_$eq(org.scalatest.matchers.should.Matchers$TheSameInstanceAsPhrase);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #575                // Field theSameInstanceAs:Lorg/scalatest/matchers/should/Matchers$TheSameInstanceAsPhrase;
+       5: return
+
+  public void org$scalatest$matchers$should$Matchers$_setter_$regex_$eq(org.scalatest.matchers.should.Matchers$RegexWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #578                // Field regex:Lorg/scalatest/matchers/should/Matchers$RegexWord;
+       5: return
+
+  public final void org$scalatest$matchers$should$Matchers$_setter_$org$scalatest$matchers$should$Matchers$$AllCollected_$eq(org.scalatest.matchers.should.Matchers$Collected);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #581                // Field org$scalatest$matchers$should$Matchers$$AllCollected:Lorg/scalatest/matchers/should/Matchers$Collected;
+       5: return
+
+  public final void org$scalatest$matchers$should$Matchers$_setter_$org$scalatest$matchers$should$Matchers$$EveryCollected_$eq(org.scalatest.matchers.should.Matchers$Collected);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #583                // Field org$scalatest$matchers$should$Matchers$$EveryCollected:Lorg/scalatest/matchers/should/Matchers$Collected;
+       5: return
+
+  public final void org$scalatest$matchers$should$Matchers$_setter_$org$scalatest$matchers$should$Matchers$$NoCollected_$eq(org.scalatest.matchers.should.Matchers$Collected);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #607                // Field org$scalatest$matchers$should$Matchers$$NoCollected:Lorg/scalatest/matchers/should/Matchers$Collected;
+       5: return
+
+  public final void org$scalatest$matchers$should$Matchers$_setter_$org$scalatest$matchers$should$Matchers$$ShouldMethodHelper_$eq(org.scalatest.matchers.should.Matchers$ShouldMethodHelperClass);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #617                // Field org$scalatest$matchers$should$Matchers$$ShouldMethodHelper:Lorg/scalatest/matchers/should/Matchers$ShouldMethodHelperClass;
+       5: return
+
+  public org.scalactic.Explicitly$DecidedWord decided();
+    Code:
+       0: aload_0
+       1: getfield      #639                // Field decided:Lorg/scalactic/Explicitly$DecidedWord;
+       4: areturn
+
+  public org.scalactic.Explicitly$DeterminedWord determined();
+    Code:
+       0: aload_0
+       1: getfield      #642                // Field determined:Lorg/scalactic/Explicitly$DeterminedWord;
+       4: areturn
+
+  public org.scalactic.Explicitly$TheAfterWord after();
+    Code:
+       0: aload_0
+       1: getfield      #645                // Field after:Lorg/scalactic/Explicitly$TheAfterWord;
+       4: areturn
+
+  public void org$scalactic$Explicitly$_setter_$decided_$eq(org.scalactic.Explicitly$DecidedWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #639                // Field decided:Lorg/scalactic/Explicitly$DecidedWord;
+       5: return
+
+  public void org$scalactic$Explicitly$_setter_$determined_$eq(org.scalactic.Explicitly$DeterminedWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #642                // Field determined:Lorg/scalactic/Explicitly$DeterminedWord;
+       5: return
+
+  public void org$scalactic$Explicitly$_setter_$after_$eq(org.scalactic.Explicitly$TheAfterWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #645                // Field after:Lorg/scalactic/Explicitly$TheAfterWord;
+       5: return
+
+  public org.scalatest.matchers.dsl.FullyMatchWord fullyMatch();
+    Code:
+       0: aload_0
+       1: getfield      #654                // Field fullyMatch:Lorg/scalatest/matchers/dsl/FullyMatchWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.StartWithWord startWith();
+    Code:
+       0: aload_0
+       1: getfield      #657                // Field startWith:Lorg/scalatest/matchers/dsl/StartWithWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.EndWithWord endWith();
+    Code:
+       0: aload_0
+       1: getfield      #660                // Field endWith:Lorg/scalatest/matchers/dsl/EndWithWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.IncludeWord include();
+    Code:
+       0: aload_0
+       1: getfield      #663                // Field include:Lorg/scalatest/matchers/dsl/IncludeWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.HaveWord have();
+    Code:
+       0: aload_0
+       1: getfield      #666                // Field have:Lorg/scalatest/matchers/dsl/HaveWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.BeWord be();
+    Code:
+       0: aload_0
+       1: getfield      #669                // Field be:Lorg/scalatest/matchers/dsl/BeWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.ContainWord contain();
+    Code:
+       0: aload_0
+       1: getfield      #672                // Field contain:Lorg/scalatest/matchers/dsl/ContainWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.NotWord not();
+    Code:
+       0: aload_0
+       1: getfield      #675                // Field not:Lorg/scalatest/matchers/dsl/NotWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.LengthWord length();
+    Code:
+       0: aload_0
+       1: getfield      #678                // Field length:Lorg/scalatest/matchers/dsl/LengthWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.SizeWord size();
+    Code:
+       0: aload_0
+       1: getfield      #681                // Field size:Lorg/scalatest/matchers/dsl/SizeWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.SortedWord sorted();
+    Code:
+       0: aload_0
+       1: getfield      #684                // Field sorted:Lorg/scalatest/matchers/dsl/SortedWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.DefinedWord defined();
+    Code:
+       0: aload_0
+       1: getfield      #687                // Field defined:Lorg/scalatest/matchers/dsl/DefinedWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.ExistWord exist();
+    Code:
+       0: aload_0
+       1: getfield      #690                // Field exist:Lorg/scalatest/matchers/dsl/ExistWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.ReadableWord readable();
+    Code:
+       0: aload_0
+       1: getfield      #693                // Field readable:Lorg/scalatest/matchers/dsl/ReadableWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.WritableWord writable();
+    Code:
+       0: aload_0
+       1: getfield      #696                // Field writable:Lorg/scalatest/matchers/dsl/WritableWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.EmptyWord empty();
+    Code:
+       0: aload_0
+       1: getfield      #699                // Field empty:Lorg/scalatest/matchers/dsl/EmptyWord;
+       4: areturn
+
+  public org.scalatest.verbs.CompileWord compile();
+    Code:
+       0: aload_0
+       1: getfield      #702                // Field compile:Lorg/scalatest/verbs/CompileWord;
+       4: areturn
+
+  public org.scalatest.verbs.TypeCheckWord typeCheck();
+    Code:
+       0: aload_0
+       1: getfield      #705                // Field typeCheck:Lorg/scalatest/verbs/TypeCheckWord;
+       4: areturn
+
+  public org.scalatest.matchers.dsl.MatchPatternWord matchPattern();
+    Code:
+       0: aload_0
+       1: getfield      #708                // Field matchPattern:Lorg/scalatest/matchers/dsl/MatchPatternWord;
+       4: areturn
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$fullyMatch_$eq(org.scalatest.matchers.dsl.FullyMatchWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #654                // Field fullyMatch:Lorg/scalatest/matchers/dsl/FullyMatchWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$startWith_$eq(org.scalatest.matchers.dsl.StartWithWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #657                // Field startWith:Lorg/scalatest/matchers/dsl/StartWithWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$endWith_$eq(org.scalatest.matchers.dsl.EndWithWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #660                // Field endWith:Lorg/scalatest/matchers/dsl/EndWithWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$include_$eq(org.scalatest.matchers.dsl.IncludeWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #663                // Field include:Lorg/scalatest/matchers/dsl/IncludeWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$have_$eq(org.scalatest.matchers.dsl.HaveWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #666                // Field have:Lorg/scalatest/matchers/dsl/HaveWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$be_$eq(org.scalatest.matchers.dsl.BeWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #669                // Field be:Lorg/scalatest/matchers/dsl/BeWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$contain_$eq(org.scalatest.matchers.dsl.ContainWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #672                // Field contain:Lorg/scalatest/matchers/dsl/ContainWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$not_$eq(org.scalatest.matchers.dsl.NotWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #675                // Field not:Lorg/scalatest/matchers/dsl/NotWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$length_$eq(org.scalatest.matchers.dsl.LengthWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #678                // Field length:Lorg/scalatest/matchers/dsl/LengthWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$size_$eq(org.scalatest.matchers.dsl.SizeWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #681                // Field size:Lorg/scalatest/matchers/dsl/SizeWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$sorted_$eq(org.scalatest.matchers.dsl.SortedWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #684                // Field sorted:Lorg/scalatest/matchers/dsl/SortedWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$defined_$eq(org.scalatest.matchers.dsl.DefinedWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #687                // Field defined:Lorg/scalatest/matchers/dsl/DefinedWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$exist_$eq(org.scalatest.matchers.dsl.ExistWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #690                // Field exist:Lorg/scalatest/matchers/dsl/ExistWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$readable_$eq(org.scalatest.matchers.dsl.ReadableWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #693                // Field readable:Lorg/scalatest/matchers/dsl/ReadableWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$writable_$eq(org.scalatest.matchers.dsl.WritableWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #696                // Field writable:Lorg/scalatest/matchers/dsl/WritableWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$empty_$eq(org.scalatest.matchers.dsl.EmptyWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #699                // Field empty:Lorg/scalatest/matchers/dsl/EmptyWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$compile_$eq(org.scalatest.verbs.CompileWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #702                // Field compile:Lorg/scalatest/verbs/CompileWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$typeCheck_$eq(org.scalatest.verbs.TypeCheckWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #705                // Field typeCheck:Lorg/scalatest/verbs/TypeCheckWord;
+       5: return
+
+  public void org$scalatest$matchers$dsl$MatcherWords$_setter_$matchPattern_$eq(org.scalatest.matchers.dsl.MatchPatternWord);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #708                // Field matchPattern:Lorg/scalatest/matchers/dsl/MatchPatternWord;
+       5: return
+
+  private final void org$scalatest$matchers$should$Matchers$$BetweenCollected$lzycompute$1();
+    Code:
+       0: aload_0
+       1: dup
+       2: astore_1
+       3: monitorenter
+       4: aload_0
+       5: getfield      #587                // Field BetweenCollected$module:Lorg/scalatest/matchers/should/Matchers$BetweenCollected$;
+       8: ifnonnull     23
+      11: aload_0
+      12: new           #53                 // class org/scalatest/matchers/should/Matchers$BetweenCollected$
+      15: dup
+      16: aload_0
+      17: invokespecial #750                // Method org/scalatest/matchers/should/Matchers$BetweenCollected$."<init>":(Lorg/scalatest/matchers/should/Matchers;)V
+      20: putfield      #587                // Field BetweenCollected$module:Lorg/scalatest/matchers/should/Matchers$BetweenCollected$;
+      23: aload_1
+      24: monitorexit
+      25: goto          31
+      28: aload_1
+      29: monitorexit
+      30: athrow
+      31: return
+    Exception table:
+       from    to  target type
+           4    23    28   any
+
+  private final void org$scalatest$matchers$should$Matchers$$AtLeastCollected$lzycompute$1();
+    Code:
+       0: aload_0
+       1: dup
+       2: astore_1
+       3: monitorenter
+       4: aload_0
+       5: getfield      #595                // Field AtLeastCollected$module:Lorg/scalatest/matchers/should/Matchers$AtLeastCollected$;
+       8: ifnonnull     23
+      11: aload_0
+      12: new           #47                 // class org/scalatest/matchers/should/Matchers$AtLeastCollected$
+      15: dup
+      16: aload_0
+      17: invokespecial #753                // Method org/scalatest/matchers/should/Matchers$AtLeastCollected$."<init>":(Lorg/scalatest/matchers/should/Matchers;)V
+      20: putfield      #595                // Field AtLeastCollected$module:Lorg/scalatest/matchers/should/Matchers$AtLeastCollected$;
+      23: aload_1
+      24: monitorexit
+      25: goto          31
+      28: aload_1
+      29: monitorexit
+      30: athrow
+      31: return
+    Exception table:
+       from    to  target type
+           4    23    28   any
+
+  private final void org$scalatest$matchers$should$Matchers$$AtMostCollected$lzycompute$1();
+    Code:
+       0: aload_0
+       1: dup
+       2: astore_1
+       3: monitorenter
+       4: aload_0
+       5: getfield      #602                // Field AtMostCollected$module:Lorg/scalatest/matchers/should/Matchers$AtMostCollected$;
+       8: ifnonnull     23
+      11: aload_0
+      12: new           #50                 // class org/scalatest/matchers/should/Matchers$AtMostCollected$
+      15: dup
+      16: aload_0
+      17: invokespecial #754                // Method org/scalatest/matchers/should/Matchers$AtMostCollected$."<init>":(Lorg/scalatest/matchers/should/Matchers;)V
+      20: putfield      #602                // Field AtMostCollected$module:Lorg/scalatest/matchers/should/Matchers$AtMostCollected$;
+      23: aload_1
+      24: monitorexit
+      25: goto          31
+      28: aload_1
+      29: monitorexit
+      30: athrow
+      31: return
+    Exception table:
+       from    to  target type
+           4    23    28   any
+
+  private final void org$scalatest$matchers$should$Matchers$$ExactlyCollected$lzycompute$1();
+    Code:
+       0: aload_0
+       1: dup
+       2: astore_1
+       3: monitorenter
+       4: aload_0
+       5: getfield      #611                // Field ExactlyCollected$module:Lorg/scalatest/matchers/should/Matchers$ExactlyCollected$;
+       8: ifnonnull     23
+      11: aload_0
+      12: new           #59                 // class org/scalatest/matchers/should/Matchers$ExactlyCollected$
+      15: dup
+      16: aload_0
+      17: invokespecial #755                // Method org/scalatest/matchers/should/Matchers$ExactlyCollected$."<init>":(Lorg/scalatest/matchers/should/Matchers;)V
+      20: putfield      #611                // Field ExactlyCollected$module:Lorg/scalatest/matchers/should/Matchers$ExactlyCollected$;
+      23: aload_1
+      24: monitorexit
+      25: goto          31
+      28: aload_1
+      29: monitorexit
+      30: athrow
+      31: return
+    Exception table:
+       from    to  target type
+           4    23    28   any
+
+  public static final void $anonfun$new$2();
+    Code:
+       0: getstatic     #762                // Field curriedcase/Library$.MODULE$:Lcurriedcase/Library$;
+       3: bipush        8
+       5: new           #764                // class org/scalactic/source/Position
+       8: dup
+       9: ldc_w         #765                // String Suites.scala
+      12: ldc_w         #767                // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      15: bipush        31
+      17: invokespecial #770                // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      20: getstatic     #775                // Field org/scalactic/Prettifier$.MODULE$:Lorg/scalactic/Prettifier$;
+      23: invokevirtual #779                // Method org/scalactic/Prettifier$.default:()Lorg/scalactic/Prettifier;
+      26: invokevirtual #783                // Method curriedcase/Library$.curried:(ILorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)I
+      29: pop
+      30: return
+
+  public static final void $anonfun$new$1(curriedcase.WordSuite);
+    Code:
+       0: aload_0
+       1: ldc_w         #788                // String run its effect once
+       4: invokevirtual #792                // Method convertToWordSpecStringWrapper:(Ljava/lang/String;)Lorg/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper;
+       7: invokedynamic #808,  0            // InvokeDynamic #0:apply$mcV$sp:()Lscala/runtime/java8/JFunction0$mcV$sp;
+      12: new           #764                // class org/scalactic/source/Position
+      15: dup
+      16: ldc_w         #765                // String Suites.scala
+      19: ldc_w         #767                // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      22: bipush        31
+      24: invokespecial #770                // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      27: invokevirtual #812                // Method org/scalatest/wordspec/AnyWordSpecLike$WordSpecStringWrapper.in:(Lscala/Function0;Lorg/scalactic/source/Position;)V
+      30: return
+
+  public curriedcase.WordSuite();
+    Code:
+       0: aload_0
+       1: invokespecial #814                // Method org/scalatest/wordspec/AnyWordSpec."<init>":()V
+       4: aload_0
+       5: invokestatic  #818                // InterfaceMethod org/scalactic/Tolerance.$init$:(Lorg/scalactic/Tolerance;)V
+       8: aload_0
+       9: invokestatic  #821                // InterfaceMethod org/scalatest/matchers/dsl/MatcherWords.$init$:(Lorg/scalatest/matchers/dsl/MatcherWords;)V
+      12: aload_0
+      13: invokestatic  #824                // InterfaceMethod org/scalactic/Explicitly.$init$:(Lorg/scalactic/Explicitly;)V
+      16: aload_0
+      17: invokestatic  #826                // InterfaceMethod org/scalatest/matchers/should/Matchers.$init$:(Lorg/scalatest/matchers/should/Matchers;)V
+      20: aload_0
+      21: ldc_w         #828                // String curried word registration
+      24: new           #764                // class org/scalactic/source/Position
+      27: dup
+      28: ldc_w         #765                // String Suites.scala
+      31: ldc_w         #767                // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      34: bipush        30
+      36: invokespecial #770                // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      39: getstatic     #775                // Field org/scalactic/Prettifier$.MODULE$:Lorg/scalactic/Prettifier$;
+      42: invokevirtual #779                // Method org/scalactic/Prettifier$.default:()Lorg/scalactic/Prettifier;
+      45: invokevirtual #830                // Method convertToStringShouldWrapper:(Ljava/lang/String;Lorg/scalactic/source/Position;Lorg/scalactic/Prettifier;)Lorg/scalatest/matchers/should/Matchers$StringShouldWrapper;
+      48: aload_0
+      49: invokedynamic #836,  0            // InvokeDynamic #1:apply$mcV$sp:(Lcurriedcase/WordSuite;)Lscala/runtime/java8/JFunction0$mcV$sp;
+      54: aload_0
+      55: invokevirtual #840                // Method subjectRegistrationFunction:()Lorg/scalatest/verbs/StringVerbBlockRegistration;
+      58: invokevirtual #844                // Method org/scalatest/matchers/should/Matchers$StringShouldWrapper.should:(Lscala/Function0;Lorg/scalatest/verbs/StringVerbBlockRegistration;)V
+      61: invokestatic  #849                // Method scala/runtime/Statics.releaseFence:()V
+      64: return
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    Code:
+       0: aload_0
+       1: invokedynamic #861,  0            // InvokeDynamic #2:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}

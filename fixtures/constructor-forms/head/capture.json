@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "revision": "2169721706663d7bf632d1da36a883cfcfce4376",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/constructorforms/Cases.scala.semanticdb",
+      "sha256": "18d30a23ce83ecb6bb85be9cccc181a658078ff92161cde4b313eaca7c9ead8d",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/constructorforms/Cases.scala.semanticdb",
+      "input_target_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/constructorforms/Defaults.scala.semanticdb",
+      "sha256": "89588bfe3076799cb413a08c46b1686c28a470dd0e92b4a166005709488b1057",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/constructorforms/Defaults.scala.semanticdb",
+      "input_target_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/constructorforms/Effects.scala.semanticdb",
+      "sha256": "90431ea426d22f8208119d23497130511b7114d18fdf64f4bcdb1709667ee76e",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/constructorforms/Effects.scala.semanticdb",
+      "input_target_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/constructorforms/Secondary.scala.semanticdb",
+      "sha256": "87e55c624e2a3ac609b49fa2d205583674e7fd65c539046bb096b66e4f41a3cd",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/constructorforms/Secondary.scala.semanticdb",
+      "input_target_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/constructorforms/Value.scala.semanticdb",
+      "sha256": "0b130556f37694cd30ad4a3e1e714b5c8e050a15b903de07b031edf0db43b8dd",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/constructorforms/Value.scala.semanticdb",
+      "input_target_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/constructorforms/Cases.scala",
+      "file": "src/constructorforms/Cases.scala",
+      "sha256": "c044eb52352b5893547779366d7d5d77e53766f420a35ac6f161284043bdf337",
+      "source_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    },
+    {
+      "path": "src/constructorforms/Defaults.scala",
+      "file": "src/constructorforms/Defaults.scala",
+      "sha256": "648a47478db3ce871fd46ac2bd2c9b77aa54d9a5691b3d614af60a4c276afab7",
+      "source_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    },
+    {
+      "path": "src/constructorforms/Effects.scala",
+      "file": "src/constructorforms/Effects.scala",
+      "sha256": "185e451635151d8565104cd6121a06873d9d042b69a040c774f1dc20c9057163",
+      "source_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    },
+    {
+      "path": "src/constructorforms/Secondary.scala",
+      "file": "src/constructorforms/Secondary.scala",
+      "sha256": "3f46519feeeb27c0665a776acbef4a27d631dea181d37de00348863a5f858268",
+      "source_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    },
+    {
+      "path": "src/constructorforms/Value.scala",
+      "file": "src/constructorforms/Value.scala",
+      "sha256": "a6eb6c63c92644a9a29f3d126e808c1b8c7078af0d59dec0ba1f5bb5878b8e51",
+      "source_contexts": [
+        "project:constructor-forms/configuration:test"
+      ]
+    }
+  ]
+}

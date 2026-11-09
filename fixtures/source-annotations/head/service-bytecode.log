@@ -1,0 +1,13 @@
+Compiled from "Service.scala"
+public class annotationcase.Service {
+  public int value();
+    Code:
+       0: bipush        42
+       2: ireturn
+
+  public annotationcase.Service();
+    Code:
+       0: aload_0
+       1: invokespecial #16                 // Method java/lang/Object."<init>":()V
+       4: return
+}

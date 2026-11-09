@@ -1,0 +1,535 @@
+{
+  "schema": "selector-callback-variants-fixture/v1",
+  "generator_sha256": "17b56c538370c1dbd0804817e39c2a89a0de07b945f0f2ddd441adb335e340e5",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar",
+      "sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.19/scalatest-funsuite_2.13-3.2.19.jar",
+      "sha256": "926aeb37193ad79d0b380160765c9ab61d4367b994c1ab715896fe4961241d5e"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.19/scalatest-wordspec_2.13-3.2.19.jar",
+      "sha256": "08050f3d05c72575cac29a1483185b443d5f9f34c1fcf80c683083330385ef93"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar",
+      "sha256": "5dc6b8fa5396fe9e1a7c2b72df174a8eb3e92770cdc3e70636d3eba673cd0da3"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar",
+      "sha256": "c27c33de17d450e29e66c16c5af4cfa33e8ffcf03c124f0a3d249d848cccd4af"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+      "sha256": "b549a1bf335bc4528cf26f005894c7c37220ac4e8450847973d8f4001b8f59ea"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba"
+    }
+  ],
+  "framework_prefix": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar",
+    "sha256": "a9b108a2e73cd96cf87bc15c2c29a9f2ee6c83559227d72a042e45ff3f114b75"
+  },
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "selector": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase10-build/executables/04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c/selector",
+    "sha256": "04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c"
+  },
+  "commands": [
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/definitions/callbackcase/Opaque.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+      "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/base",
+      "-P:semanticdb:targetroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/base/raw",
+      "-P:semanticdb:synthetics:on",
+      "-Yrangepos",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/base",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/base/src/callbackcase/Changed.scala",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/base/src/callbackcase/Shared.scala",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/base/src/callbackcase/Suites.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/base:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/base",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/validation/CheckCallbacks.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/base:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library",
+      "callbackcase.CheckCallbacks",
+      "41"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/base:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library",
+      "org.scalatest.tools.Runner",
+      "-R",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/base",
+      "-oW",
+      "-s",
+      "callbackcase.Lexical1Suite",
+      "-s",
+      "callbackcase.Lexical2Suite",
+      "-s",
+      "callbackcase.Lexical3Suite",
+      "-s",
+      "callbackcase.Lexical4Suite",
+      "-s",
+      "callbackcase.Lexical5Suite",
+      "-s",
+      "callbackcase.Lexical6Suite",
+      "-s",
+      "callbackcase.Captured1Suite",
+      "-s",
+      "callbackcase.Captured2Suite",
+      "-s",
+      "callbackcase.Captured3Suite",
+      "-s",
+      "callbackcase.Captured4Suite",
+      "-s",
+      "callbackcase.Captured5Suite",
+      "-s",
+      "callbackcase.Captured6Suite",
+      "-s",
+      "callbackcase.UnknownSuite"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/base:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library",
+      "-p",
+      "-c",
+      "callbackcase.Shared$",
+      "callbackcase.Lexical1Suite",
+      "callbackcase.Lexical2Suite",
+      "callbackcase.Lexical3Suite",
+      "callbackcase.Lexical4Suite",
+      "callbackcase.Lexical5Suite",
+      "callbackcase.Lexical6Suite",
+      "callbackcase.Captured1Suite",
+      "callbackcase.Captured2Suite",
+      "callbackcase.Captured3Suite",
+      "callbackcase.Captured4Suite",
+      "callbackcase.Captured5Suite",
+      "callbackcase.Captured6Suite",
+      "callbackcase.UnknownSuite"
+    ],
+    [
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase10-build/executables/04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c/selector",
+      "capture",
+      "--input",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/base/capture.json",
+      "--output",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/base/documents.jsonl",
+      "--workers",
+      "2"
+    ],
+    [
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase10-build/executables/04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c/selector",
+      "syntax",
+      "--input",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/base/documents.jsonl",
+      "--exporter",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/compiler-selector/engine/spans/ScalaSpans.scala",
+      "--tool-cache",
+      "/private/tmp/rust-selector-execution-syntax",
+      "--output",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/base/syntax.jsonl",
+      "--workers",
+      "2"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+      "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/head",
+      "-P:semanticdb:targetroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/head/raw",
+      "-P:semanticdb:synthetics:on",
+      "-Yrangepos",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/head",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/head/src/callbackcase/Changed.scala",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/head/src/callbackcase/Shared.scala",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/head/src/callbackcase/Suites.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/head:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/head",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/validation/CheckCallbacks.scala"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/head:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library",
+      "callbackcase.CheckCallbacks",
+      "42"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/head:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library",
+      "org.scalatest.tools.Runner",
+      "-R",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/head",
+      "-oW",
+      "-s",
+      "callbackcase.Lexical1Suite",
+      "-s",
+      "callbackcase.Lexical2Suite",
+      "-s",
+      "callbackcase.Lexical3Suite",
+      "-s",
+      "callbackcase.Lexical4Suite",
+      "-s",
+      "callbackcase.Lexical5Suite",
+      "-s",
+      "callbackcase.Lexical6Suite",
+      "-s",
+      "callbackcase.Captured1Suite",
+      "-s",
+      "callbackcase.Captured2Suite",
+      "-s",
+      "callbackcase.Captured3Suite",
+      "-s",
+      "callbackcase.Captured4Suite",
+      "-s",
+      "callbackcase.Captured5Suite",
+      "-s",
+      "callbackcase.Captured6Suite",
+      "-s",
+      "callbackcase.UnknownSuite"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/head:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/execution-smoke/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-callback-variants-wa8ipxly/library",
+      "-p",
+      "-c",
+      "callbackcase.Shared$",
+      "callbackcase.Lexical1Suite",
+      "callbackcase.Lexical2Suite",
+      "callbackcase.Lexical3Suite",
+      "callbackcase.Lexical4Suite",
+      "callbackcase.Lexical5Suite",
+      "callbackcase.Lexical6Suite",
+      "callbackcase.Captured1Suite",
+      "callbackcase.Captured2Suite",
+      "callbackcase.Captured3Suite",
+      "callbackcase.Captured4Suite",
+      "callbackcase.Captured5Suite",
+      "callbackcase.Captured6Suite",
+      "callbackcase.UnknownSuite"
+    ],
+    [
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase10-build/executables/04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c/selector",
+      "capture",
+      "--input",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/head/capture.json",
+      "--output",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/head/documents.jsonl",
+      "--workers",
+      "2"
+    ],
+    [
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/benchmark-output/phase10-build/executables/04ad41ce5b9fbe608ffae60e769e351584dd71823929e82c19e2140a4584ab1c/selector",
+      "syntax",
+      "--input",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/head/documents.jsonl",
+      "--exporter",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/compiler-selector/engine/spans/ScalaSpans.scala",
+      "--tool-cache",
+      "/private/tmp/rust-selector-execution-syntax",
+      "--output",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/callback-variants/head/syntax.jsonl",
+      "--workers",
+      "2"
+    ]
+  ],
+  "registered_testcases": 0,
+  "opaque_definition_body_excluded_from_analysis": true,
+  "sides": {
+    "base": {
+      "revision": "2ce9e46e1d6e1f91ee77ba2be08cdbcf8bed642e",
+      "source_tree_sha256": "2ce9e46e1d6e1f91ee77ba2be08cdbcf8bed642e6a1500414c4c6dba5e478fea",
+      "independent_runtime_observations": [
+        "values:1,2,3,4,5,41,10,20,30,40,50,41,99"
+      ]
+    },
+    "head": {
+      "revision": "0a56539b9827b270425fd833e6e8a26f63124be0",
+      "source_tree_sha256": "0a56539b9827b270425fd833e6e8a26f63124be0cc932edee93c02de36c3b2ef",
+      "independent_runtime_observations": [
+        "values:1,2,3,4,5,42,10,20,30,40,50,42,99"
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "135cbd0e128d6e8c5272e2ddf2f3f7582e4590b70b4c45b6ee455e137050d96d",
+      "bytes": 1537
+    },
+    {
+      "path": "base/binary.json",
+      "sha256": "c0888e246b95b2411e0d5a60e402004a1ae0d318b935ec31a9a84b15141c20ba",
+      "bytes": 12340
+    },
+    {
+      "path": "base/bytecode.jar",
+      "sha256": "41f7b4fe8421e0b0fab8a028c9240752584dd29f3a4da7b288984dd4f267e937",
+      "bytes": 69107
+    },
+    {
+      "path": "base/capture.json",
+      "sha256": "5571e8fad704075b024db30a0471e25b4ef5dba5a1cadb58eadfe1212f1fbeb4",
+      "bytes": 2090
+    },
+    {
+      "path": "base/capture.log",
+      "sha256": "e5ddadf303bd728ae326e20ed12d7ce7444b30b6dd4bcc50a5bca41eab0dc967",
+      "bytes": 396
+    },
+    {
+      "path": "base/catalogue.json",
+      "sha256": "adb13802c4f804ab4967d5224543e9c27a67e065a1fa6061e15f6eb3677ee46a",
+      "bytes": 701
+    },
+    {
+      "path": "base/compile-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "base/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "base/documents.jsonl",
+      "sha256": "f712bbc1c505c4b31472442796a9c8b74be8d855e50b4722674cac0863f0d433",
+      "bytes": 37572
+    },
+    {
+      "path": "base/execution.log",
+      "sha256": "a86d712d2435541439a18c8cca39622cea8b1b4054a5f00010f5cb51966956fe",
+      "bytes": 41
+    },
+    {
+      "path": "base/javap.log",
+      "sha256": "7dcdc176e84c91a351376762c7cb41b3236b2a43d04d2bab534a398deafe285a",
+      "bytes": 309787
+    },
+    {
+      "path": "base/raw/META-INF/semanticdb/src/callbackcase/Changed.scala.semanticdb",
+      "sha256": "2619c29c918278a56ee776283a1713cfe4dcd62fa2d791f021fb985dd52a1724",
+      "bytes": 386
+    },
+    {
+      "path": "base/raw/META-INF/semanticdb/src/callbackcase/Shared.scala.semanticdb",
+      "sha256": "732b634967a6afeb49636a369fc302b280e2a87a4c0218bdec3600b5cb27884c",
+      "bytes": 1249
+    },
+    {
+      "path": "base/raw/META-INF/semanticdb/src/callbackcase/Suites.scala.semanticdb",
+      "sha256": "767a20a26a10298463c716ea31be2e98ffe71b2c61a88495f14ffab7d8f2174b",
+      "bytes": 9849
+    },
+    {
+      "path": "base/scalatest.log",
+      "sha256": "b56992531c52da7bcac4bbce4bf2a09f3ffc408a9740209a35df027e60717fbf",
+      "bytes": 422
+    },
+    {
+      "path": "base/src/callbackcase/Changed.scala",
+      "sha256": "364da6bd3f1cd46b7dd52d376775a1e5fcd9ef69b0aa6f16e07b754d1f6c83e8",
+      "bytes": 62
+    },
+    {
+      "path": "base/src/callbackcase/Shared.scala",
+      "sha256": "c01508fb28acb41bbb21b14f57c77f720e206785b19691f7e11c053d4a253ff7",
+      "bytes": 154
+    },
+    {
+      "path": "base/src/callbackcase/Suites.scala",
+      "sha256": "0f9fbde4fed67166794fa00967e2193cfda4e45bddcfca3616f44681c5ea9c7a",
+      "bytes": 1522
+    },
+    {
+      "path": "base/syntax.jsonl",
+      "sha256": "853cb1ddb72f9d0cfc84f19b7a6eef2f422dcc917a3ad7df55aa01bd9ca61c0f",
+      "bytes": 54757
+    },
+    {
+      "path": "base/syntax.log",
+      "sha256": "1935767347728e8423586929db9d7179b6ac9113f16f9355a55eb73e274aed61",
+      "bytes": 384
+    },
+    {
+      "path": "compile-opaque.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "definitions/callbackcase/Opaque.scala",
+      "sha256": "e0a7439be36e23b77e09d146ab7de6a66dfe218ee6e746f092d4dc4f88aacee8",
+      "bytes": 76
+    },
+    {
+      "path": "head/binary.json",
+      "sha256": "208ed8f5e0fdad24e1dfdcdc142d9b47c7ddd2d1a33055bd951b285b53e0e935",
+      "bytes": 12340
+    },
+    {
+      "path": "head/bytecode.jar",
+      "sha256": "b4b3ee460fc19b05a28cc5fd4f934b828a013528b6aa6ff2b39a8ff4f59a6098",
+      "bytes": 69107
+    },
+    {
+      "path": "head/capture.json",
+      "sha256": "622592417801be734acea7cd35dd6f30a5ffd3dfb6b578fa5c76bfc940d8a45a",
+      "bytes": 2090
+    },
+    {
+      "path": "head/capture.log",
+      "sha256": "1f98413db1d0ccdde18ba7df3d30f490c780bd34b1797e4649f7ff8a02654eea",
+      "bytes": 396
+    },
+    {
+      "path": "head/catalogue.json",
+      "sha256": "adb13802c4f804ab4967d5224543e9c27a67e065a1fa6061e15f6eb3677ee46a",
+      "bytes": 701
+    },
+    {
+      "path": "head/compile-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "head/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "head/documents.jsonl",
+      "sha256": "54206d6618a909f1c2cfbe56434b69b4e65783d773222d93b615751b7cdec9d6",
+      "bytes": 37572
+    },
+    {
+      "path": "head/execution.log",
+      "sha256": "6328575b7f6bbd9576d9d051746e8a2ba5b03226bdfcbe1fc4972b9af4acff75",
+      "bytes": 41
+    },
+    {
+      "path": "head/javap.log",
+      "sha256": "7dcdc176e84c91a351376762c7cb41b3236b2a43d04d2bab534a398deafe285a",
+      "bytes": 309787
+    },
+    {
+      "path": "head/raw/META-INF/semanticdb/src/callbackcase/Changed.scala.semanticdb",
+      "sha256": "b66efd71d422b699c5b71a65e2fd24b63793b905a5897bbde25d7c745226d417",
+      "bytes": 386
+    },
+    {
+      "path": "head/raw/META-INF/semanticdb/src/callbackcase/Shared.scala.semanticdb",
+      "sha256": "732b634967a6afeb49636a369fc302b280e2a87a4c0218bdec3600b5cb27884c",
+      "bytes": 1249
+    },
+    {
+      "path": "head/raw/META-INF/semanticdb/src/callbackcase/Suites.scala.semanticdb",
+      "sha256": "767a20a26a10298463c716ea31be2e98ffe71b2c61a88495f14ffab7d8f2174b",
+      "bytes": 9849
+    },
+    {
+      "path": "head/scalatest.log",
+      "sha256": "9d8b7eaec415f8bc0253ac47e9db340db7f1ee106ae2c18b4bc30ff8376283c2",
+      "bytes": 422
+    },
+    {
+      "path": "head/src/callbackcase/Changed.scala",
+      "sha256": "6191c739c552a0e476893bdda7b7923844ca406eec00920f051f2c95a489a07d",
+      "bytes": 62
+    },
+    {
+      "path": "head/src/callbackcase/Shared.scala",
+      "sha256": "c01508fb28acb41bbb21b14f57c77f720e206785b19691f7e11c053d4a253ff7",
+      "bytes": 154
+    },
+    {
+      "path": "head/src/callbackcase/Suites.scala",
+      "sha256": "0f9fbde4fed67166794fa00967e2193cfda4e45bddcfca3616f44681c5ea9c7a",
+      "bytes": 1522
+    },
+    {
+      "path": "head/syntax.jsonl",
+      "sha256": "294dcb31eea67aa52d140b5dd1287d5519fdf770cd8f2d452983700d1c21e5c0",
+      "bytes": 54757
+    },
+    {
+      "path": "head/syntax.log",
+      "sha256": "ead4020b00e6242a94e6a9893a9700410c9c8b6e73390c59256cf4aa98460a7a",
+      "bytes": 384
+    },
+    {
+      "path": "opaque.jar",
+      "sha256": "aaaeb395b5a0be1d4f3a589404626443ce673ea54657846a82ac5d656b775322",
+      "bytes": 1457
+    },
+    {
+      "path": "validation/CheckCallbacks.scala",
+      "sha256": "447d559fa8e5d0f237046bc0ae276571ca112f90bbf26bf4c6ab49a249495927",
+      "bytes": 751
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scope": "existing actual project bytecode snapshot; no project source or JVM recompile",
+  "provider_kind": "verified exact own-product directory",
+  "original_provider": "ci-cost-study/local-retained/pr7743-rebuild-v552/pr7743-run38375423961/source/apps/common/target/scala-2.13/test-classes",
+  "class_owner": "org/lfdecentralizedtrust/splice/http/UrlValidatorTest",
+  "class_sha256": "ff11aef7977f1c8cc10ecd951714c7a30fb9d88a81f342257769717c467efe7e",
+  "native_facts_path": "artifacts/pr7743-progress-native-v22-head/head/enriched.bin",
+  "native_facts_file_sha256": "cf89e44fff8df2b54cd420f63917c8da4f29a0ddc22db2f984abec74926ed756",
+  "node": 1004320,
+  "body": 322272,
+  "raw_method": "PatienceConfig()Lorg/scalatest/concurrent/AbstractPatienceConfiguration$PatienceConfig$;",
+  "fact_native_class_sha256_matches": true
+}

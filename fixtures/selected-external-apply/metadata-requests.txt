@@ -1,0 +1,3 @@
+selectedexternal/Configuration#PatienceConfig.apply().
+selectedexternal/Configuration#PatienceConfig.apply(+1).
+selectedexternal/Configuration#PatienceConfig.returning().

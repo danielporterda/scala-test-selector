@@ -1,0 +1,346 @@
+Compiled from "PositionSuite.scala"
+public class positioncase.PositionSuite extends org.scalatest.funsuite.AnyFunSuite {
+  private final int before;
+
+  private final org.scalactic.source.Position direct;
+
+  private final org.scalactic.source.Position inferred;
+
+  private final int after;
+
+  public int before();
+    Code:
+       0: aload_0
+       1: getfield      #22                 // Field before:I
+       4: ireturn
+
+  public org.scalactic.source.Position direct();
+    Code:
+       0: aload_0
+       1: getfield      #27                 // Field direct:Lorg/scalactic/source/Position;
+       4: areturn
+
+  public org.scalactic.source.Position capture(org.scalactic.source.Position);
+    Code:
+       0: aload_1
+       1: areturn
+
+  public org.scalactic.source.Position inferred();
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field inferred:Lorg/scalactic/source/Position;
+       4: areturn
+
+  public int after();
+    Code:
+       0: aload_0
+       1: getfield      #34                 // Field after:I
+       4: ireturn
+
+  public static final void $anonfun$new$1(positioncase.PositionSuite);
+    Code:
+       0: getstatic     #43                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+       3: aload_0
+       4: invokevirtual #45                 // Method direct:()Lorg/scalactic/source/Position;
+       7: invokevirtual #51                 // Method org/scalactic/source/Position.fileName:()Ljava/lang/String;
+      10: ldc           #52                 // String PositionSuite.scala
+      12: astore_1
+      13: dup
+      14: ifnonnull     25
+      17: pop
+      18: aload_1
+      19: ifnull        32
+      22: goto          36
+      25: aload_1
+      26: invokevirtual #58                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      29: ifeq          36
+      32: iconst_1
+      33: goto          37
+      36: iconst_0
+      37: invokevirtual #62                 // Method scala/Predef$.require:(Z)V
+      40: getstatic     #43                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      43: aload_0
+      44: invokevirtual #45                 // Method direct:()Lorg/scalactic/source/Position;
+      47: invokevirtual #65                 // Method org/scalactic/source/Position.lineNumber:()I
+      50: bipush        10
+      52: if_icmpne     59
+      55: iconst_1
+      56: goto          60
+      59: iconst_0
+      60: invokevirtual #62                 // Method scala/Predef$.require:(Z)V
+      63: getstatic     #43                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      66: aload_0
+      67: invokevirtual #67                 // Method inferred:()Lorg/scalactic/source/Position;
+      70: invokevirtual #51                 // Method org/scalactic/source/Position.fileName:()Ljava/lang/String;
+      73: ldc           #52                 // String PositionSuite.scala
+      75: astore_2
+      76: dup
+      77: ifnonnull     88
+      80: pop
+      81: aload_2
+      82: ifnull        95
+      85: goto          99
+      88: aload_2
+      89: invokevirtual #58                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      92: ifeq          99
+      95: iconst_1
+      96: goto          100
+      99: iconst_0
+     100: invokevirtual #62                 // Method scala/Predef$.require:(Z)V
+     103: getstatic     #43                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+     106: aload_0
+     107: invokevirtual #67                 // Method inferred:()Lorg/scalactic/source/Position;
+     110: invokevirtual #65                 // Method org/scalactic/source/Position.lineNumber:()I
+     113: bipush        12
+     115: if_icmpne     122
+     118: iconst_1
+     119: goto          123
+     122: iconst_0
+     123: invokevirtual #62                 // Method scala/Predef$.require:(Z)V
+     126: getstatic     #43                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+     129: aload_0
+     130: invokevirtual #69                 // Method before:()I
+     133: aload_0
+     134: invokevirtual #71                 // Method after:()I
+     137: if_icmpne     144
+     140: iconst_1
+     141: goto          145
+     144: iconst_0
+     145: invokevirtual #62                 // Method scala/Predef$.require:(Z)V
+     148: return
+
+  public positioncase.PositionSuite();
+    Code:
+       0: aload_0
+       1: invokespecial #77                 // Method org/scalatest/funsuite/AnyFunSuite."<init>":()V
+       4: aload_0
+       5: getstatic     #82                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+       8: invokevirtual #85                 // Method positioncase/Effects$.hits:()I
+      11: putfield      #22                 // Field before:I
+      14: aload_0
+      15: new           #47                 // class org/scalactic/source/Position
+      18: dup
+      19: ldc           #52                 // String PositionSuite.scala
+      21: ldc           #87                 // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      23: bipush        10
+      25: invokespecial #90                 // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      28: putfield      #27                 // Field direct:Lorg/scalactic/source/Position;
+      31: aload_0
+      32: aload_0
+      33: new           #47                 // class org/scalactic/source/Position
+      36: dup
+      37: ldc           #52                 // String PositionSuite.scala
+      39: ldc           #87                 // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      41: bipush        12
+      43: invokespecial #90                 // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      46: invokevirtual #92                 // Method capture:(Lorg/scalactic/source/Position;)Lorg/scalactic/source/Position;
+      49: putfield      #32                 // Field inferred:Lorg/scalactic/source/Position;
+      52: aload_0
+      53: getstatic     #82                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+      56: invokevirtual #85                 // Method positioncase/Effects$.hits:()I
+      59: putfield      #34                 // Field after:I
+      62: aload_0
+      63: ldc           #94                 // String position metadata
+      65: getstatic     #99                 // Field scala/collection/immutable/Nil$.MODULE$:Lscala/collection/immutable/Nil$;
+      68: aload_0
+      69: invokedynamic #115,  0            // InvokeDynamic #0:apply$mcV$sp:(Lpositioncase/PositionSuite;)Lscala/runtime/java8/JFunction0$mcV$sp;
+      74: new           #47                 // class org/scalactic/source/Position
+      77: dup
+      78: ldc           #52                 // String PositionSuite.scala
+      80: ldc           #87                 // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      82: bipush        14
+      84: invokespecial #90                 // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      87: invokevirtual #119                // Method test:(Ljava/lang/String;Lscala/collection/immutable/Seq;Lscala/Function0;Lorg/scalactic/source/Position;)V
+      90: return
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    Code:
+       0: aload_0
+       1: invokedynamic #131,  0            // InvokeDynamic #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}
+Compiled from "PositionSuite.scala"
+public class positioncase.UserMacroSuite extends org.scalatest.funsuite.AnyFunSuite {
+  private final int before;
+
+  private final int value;
+
+  private final int after;
+
+  public int before();
+    Code:
+       0: aload_0
+       1: getfield      #20                 // Field before:I
+       4: ireturn
+
+  public int value();
+    Code:
+       0: aload_0
+       1: getfield      #24                 // Field value:I
+       4: ireturn
+
+  public int after();
+    Code:
+       0: aload_0
+       1: getfield      #26                 // Field after:I
+       4: ireturn
+
+  public static final void $anonfun$new$2(positioncase.UserMacroSuite);
+    Code:
+       0: getstatic     #35                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+       3: aload_0
+       4: invokevirtual #37                 // Method value:()I
+       7: bipush        99
+       9: if_icmpne     16
+      12: iconst_1
+      13: goto          17
+      16: iconst_0
+      17: invokevirtual #41                 // Method scala/Predef$.require:(Z)V
+      20: getstatic     #35                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+      23: aload_0
+      24: invokevirtual #43                 // Method after:()I
+      27: aload_0
+      28: invokevirtual #45                 // Method before:()I
+      31: iconst_1
+      32: iadd
+      33: if_icmpne     40
+      36: iconst_1
+      37: goto          41
+      40: iconst_0
+      41: invokevirtual #41                 // Method scala/Predef$.require:(Z)V
+      44: return
+
+  public positioncase.UserMacroSuite();
+    Code:
+       0: aload_0
+       1: invokespecial #49                 // Method org/scalatest/funsuite/AnyFunSuite."<init>":()V
+       4: aload_0
+       5: getstatic     #54                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+       8: invokevirtual #57                 // Method positioncase/Effects$.hits:()I
+      11: putfield      #20                 // Field before:I
+      14: aload_0
+      15: getstatic     #54                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+      18: getstatic     #54                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+      21: invokevirtual #57                 // Method positioncase/Effects$.hits:()I
+      24: iconst_1
+      25: iadd
+      26: invokevirtual #61                 // Method positioncase/Effects$.hits_$eq:(I)V
+      29: bipush        99
+      31: putfield      #24                 // Field value:I
+      34: aload_0
+      35: getstatic     #54                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+      38: invokevirtual #57                 // Method positioncase/Effects$.hits:()I
+      41: putfield      #26                 // Field after:I
+      44: aload_0
+      45: ldc           #63                 // String user macro effects
+      47: getstatic     #68                 // Field scala/collection/immutable/Nil$.MODULE$:Lscala/collection/immutable/Nil$;
+      50: aload_0
+      51: invokedynamic #84,  0             // InvokeDynamic #0:apply$mcV$sp:(Lpositioncase/UserMacroSuite;)Lscala/runtime/java8/JFunction0$mcV$sp;
+      56: new           #86                 // class org/scalactic/source/Position
+      59: dup
+      60: ldc           #87                 // String PositionSuite.scala
+      62: ldc           #89                 // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      64: bipush        27
+      66: invokespecial #92                 // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      69: invokevirtual #96                 // Method test:(Ljava/lang/String;Lscala/collection/immutable/Seq;Lscala/Function0;Lorg/scalactic/source/Position;)V
+      72: return
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    Code:
+       0: aload_0
+       1: invokedynamic #108,  0            // InvokeDynamic #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}
+Compiled from "PositionSuite.scala"
+public class positioncase.AssertionMacroSuite extends org.scalatest.funsuite.AnyFunSuite {
+  private final int before;
+
+  private final int after;
+
+  public int before();
+    Code:
+       0: aload_0
+       1: getfield      #24                 // Field before:I
+       4: ireturn
+
+  public int after();
+    Code:
+       0: aload_0
+       1: getfield      #28                 // Field after:I
+       4: ireturn
+
+  public static final void $anonfun$new$3(positioncase.AssertionMacroSuite);
+    Code:
+       0: getstatic     #37                 // Field scala/Predef$.MODULE$:Lscala/Predef$;
+       3: aload_0
+       4: invokevirtual #39                 // Method after:()I
+       7: aload_0
+       8: invokevirtual #41                 // Method before:()I
+      11: bipush        10
+      13: iadd
+      14: if_icmpne     21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: invokevirtual #45                 // Method scala/Predef$.require:(Z)V
+      25: return
+
+  public positioncase.AssertionMacroSuite();
+    Code:
+       0: aload_0
+       1: invokespecial #49                 // Method org/scalatest/funsuite/AnyFunSuite."<init>":()V
+       4: aload_0
+       5: getstatic     #54                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+       8: invokevirtual #57                 // Method positioncase/Effects$.hits:()I
+      11: putfield      #24                 // Field before:I
+      14: getstatic     #62                 // Field org/scalactic/Bool$.MODULE$:Lorg/scalactic/Bool$;
+      17: getstatic     #54                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+      20: getstatic     #54                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+      23: invokevirtual #57                 // Method positioncase/Effects$.hits:()I
+      26: bipush        10
+      28: iadd
+      29: invokevirtual #66                 // Method positioncase/Effects$.hits_$eq:(I)V
+      32: iconst_1
+      33: ldc           #68                 // String {\n  Effects.hits_=(Effects.hits.+(10));\n  true\n}
+      35: getstatic     #73                 // Field org/scalactic/Prettifier$.MODULE$:Lorg/scalactic/Prettifier$;
+      38: invokevirtual #77                 // Method org/scalactic/Prettifier$.default:()Lorg/scalactic/Prettifier;
+      41: invokevirtual #81                 // Method org/scalactic/Bool$.simpleMacroBool:(ZLjava/lang/String;Lorg/scalactic/Prettifier;)Lorg/scalactic/Bool;
+      44: astore_1
+      45: getstatic     #86                 // Field org/scalatest/Assertions$.MODULE$:Lorg/scalatest/Assertions$;
+      48: invokevirtual #90                 // Method org/scalatest/Assertions$.assertionsHelper:()Lorg/scalatest/Assertions$AssertionsHelper;
+      51: aload_1
+      52: ldc           #92                 // String
+      54: getstatic     #73                 // Field org/scalactic/Prettifier$.MODULE$:Lorg/scalactic/Prettifier$;
+      57: invokevirtual #77                 // Method org/scalactic/Prettifier$.default:()Lorg/scalactic/Prettifier;
+      60: new           #94                 // class org/scalactic/source/Position
+      63: dup
+      64: ldc           #95                 // String PositionSuite.scala
+      66: ldc           #97                 // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+      68: bipush        35
+      70: invokespecial #100                // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+      73: invokevirtual #104                // Method org/scalatest/Assertions$AssertionsHelper.macroAssert:(Lorg/scalactic/Bool;Ljava/lang/Object;Lorg/scalactic/Prettifier;Lorg/scalactic/source/Position;)Lorg/scalatest/compatible/Assertion;
+      76: pop
+      77: aload_0
+      78: getstatic     #54                 // Field positioncase/Effects$.MODULE$:Lpositioncase/Effects$;
+      81: invokevirtual #57                 // Method positioncase/Effects$.hits:()I
+      84: putfield      #28                 // Field after:I
+      87: aload_0
+      88: ldc           #106                // String assertion macro argument effects
+      90: getstatic     #111                // Field scala/collection/immutable/Nil$.MODULE$:Lscala/collection/immutable/Nil$;
+      93: aload_0
+      94: invokedynamic #127,  0            // InvokeDynamic #0:apply$mcV$sp:(Lpositioncase/AssertionMacroSuite;)Lscala/runtime/java8/JFunction0$mcV$sp;
+      99: new           #94                 // class org/scalactic/source/Position
+     102: dup
+     103: ldc           #95                 // String PositionSuite.scala
+     105: ldc           #97                 // String Please set the environment variable SCALACTIC_FILL_FILE_PATHNAMES to yes at compile time to enable this feature.
+     107: bipush        37
+     109: invokespecial #100                // Method org/scalactic/source/Position."<init>":(Ljava/lang/String;Ljava/lang/String;I)V
+     112: invokevirtual #131                // Method test:(Ljava/lang/String;Lscala/collection/immutable/Seq;Lscala/Function0;Lorg/scalactic/source/Position;)V
+     115: return
+
+  private static java.lang.Object $deserializeLambda$(java.lang.invoke.SerializedLambda);
+    Code:
+       0: aload_0
+       1: invokedynamic #145,  0            // InvokeDynamic #1:lambdaDeserialize:(Ljava/lang/invoke/SerializedLambda;)Ljava/lang/Object;
+       6: areturn
+}

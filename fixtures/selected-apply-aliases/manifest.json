@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "bytes": 39889,
+      "path": "documents.jsonl",
+      "sha256": "70bc79ad716d7de025cc3516327705026ba5ff88b9dd1e1b41a65a5c3a88da96"
+    },
+    {
+      "bytes": 22562,
+      "path": "syntax.jsonl",
+      "sha256": "96ddae60230919cca200e255a0c2a0e0bbe1e971f4c49cadf05113e37ba57ae9"
+    },
+    {
+      "bytes": 934,
+      "path": "apps/common/src/main/scala/org/lfdecentralizedtrust/splice/http/UrlValidator.scala",
+      "sha256": "fe996f5d3750fbb9743829a84c6d79d543685c792443574fba21abbb039c659d"
+    }
+  ],
+  "original_revision": "f20116bc144298a8952b9a89ec057694734dc989",
+  "parents": [
+    {
+      "capture": {
+        "bytes": 76286611,
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/../local-retained/pr7743-base-f20116bc-20261107/capture/semanticdb-documents.jsonl.gz",
+        "sha256": "0c1a83766bf210f11f1ec2004e6674ca617905a7a02a0e2b1be375ecd3ed2d5d"
+      },
+      "extracted_record": {
+        "bytes": 39889,
+        "path": "documents.jsonl",
+        "sha256": "70bc79ad716d7de025cc3516327705026ba5ff88b9dd1e1b41a65a5c3a88da96"
+      },
+      "row_index": 463
+    },
+    {
+      "capture": {
+        "bytes": 122569615,
+        "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-progress-syntax/base.jsonl.gz",
+        "sha256": "f132e876661582fc9687f90cd886fac68734b6309164bac92a6832a0ce41f3bc"
+      },
+      "extracted_record": {
+        "bytes": 22562,
+        "path": "syntax.jsonl",
+        "sha256": "96ddae60230919cca200e255a0c2a0e0bbe1e971f4c49cadf05113e37ba57ae9"
+      },
+      "row_index": 463
+    }
+  ],
+  "qualification": "One unmodified original Scala compiler document record and native Scalameta record extracted from retained PR7743 BASE captures, not a new compilation or executable-coverage claim. Original semanticdb_input/source/compiler contexts remain in the original document wrapper. The isolated projection deliberately lacks external invocation metadata and must retain those guards.",
+  "schema": "selector-retained-compiler-selected-aliases/v1",
+  "source_contexts": [
+    "project:apps-common/configuration:compile"
+  ],
+  "source_path": "apps/common/src/main/scala/org/lfdecentralizedtrust/splice/http/UrlValidator.scala"
+}

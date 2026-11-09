@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "3a20e33342761fdd530e7eda7c108bc65a410e82",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/namespacecase/Uses.scala.semanticdb",
+      "sha256": "664175c2b880e5f3e07f99f22588880346f771f79d4cf8228b090933e3dfee43",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/namespacecase/Uses.scala.semanticdb",
+      "input_target_contexts": [
+        "project:static-namespace/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/namespacecase/Uses.scala",
+      "file": "src/namespacecase/Uses.scala",
+      "sha256": "38ce7694f41361e4ba29dc640aa729db36bb5301c2c3317a7c9e4a2b27f7d5aa",
+      "source_contexts": [
+        "project:static-namespace/configuration:test"
+      ]
+    }
+  ]
+}

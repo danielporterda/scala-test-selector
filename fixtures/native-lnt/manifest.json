@@ -1,0 +1,556 @@
+{
+  "schema": "selector-native-lnt-fixture/v1",
+  "diagnostic_only": true,
+  "omission_authority": false,
+  "generator_sha256": "3b7e048d4e5c93b76ec3c6e71bbdb8dc4717127e7d6a33c92f51a07d593ea00d",
+  "java": {
+    "path": "/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/bin/java",
+    "sha256": "2aee02a39a0817c27501e853728c28b79f48d114dbde7c88cbf698ecf1680f63"
+  },
+  "javac": {
+    "path": "/opt/homebrew/Cellar/openjdk@21/21.0.12.1/libexec/openjdk.jdk/Contents/Home/bin/javac",
+    "sha256": "18046707ee067a5a7ababd7a1f9dd2cbae1e6686ebc50d57ea4a7f3a80f1af43"
+  },
+  "commands": [
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lnt-u08p2p75/observer",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/validation/lntcase/Observe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-parameters",
+      "-d",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/base/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Marker.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Thrower.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/base/src/lntcase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lnt-u08p2p75/observer",
+      "lntcase.Observe",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/base/classes"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-v",
+      "-p",
+      "-c",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/base/classes/lntcase/Probe.class"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-parameters",
+      "-d",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/shifted/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Marker.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Thrower.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/shifted/src/lntcase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lnt-u08p2p75/observer",
+      "lntcase.Observe",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/shifted/classes"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-v",
+      "-p",
+      "-c",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/shifted/classes/lntcase/Probe.class"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-parameters",
+      "-d",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/constant/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Marker.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Thrower.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/constant/src/lntcase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lnt-u08p2p75/observer",
+      "lntcase.Observe",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/constant/classes"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-v",
+      "-p",
+      "-c",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/constant/classes/lntcase/Probe.class"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-parameters",
+      "-d",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/opcode/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Marker.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Thrower.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/opcode/src/lntcase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lnt-u08p2p75/observer",
+      "lntcase.Observe",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/opcode/classes"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-v",
+      "-p",
+      "-c",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/opcode/classes/lntcase/Probe.class"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-parameters",
+      "-d",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/initializer/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Marker.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Thrower.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/initializer/src/lntcase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lnt-u08p2p75/observer",
+      "lntcase.Observe",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/initializer/classes"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-v",
+      "-p",
+      "-c",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/initializer/classes/lntcase/Probe.class"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-parameters",
+      "-d",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/annotation/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Marker.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Thrower.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/annotation/src/lntcase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lnt-u08p2p75/observer",
+      "lntcase.Observe",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/annotation/classes"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-v",
+      "-p",
+      "-c",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/annotation/classes/lntcase/Probe.class"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-parameters",
+      "-d",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/method-parameters/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Marker.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/src/lntcase/Thrower.java",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/method-parameters/src/lntcase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-lnt-u08p2p75/observer",
+      "lntcase.Observe",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/method-parameters/classes"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-v",
+      "-p",
+      "-c",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/method-parameters/classes/lntcase/Probe.class"
+    ]
+  ],
+  "observations": {
+    "base": {
+      "resource_sha256": "90e8817dc6333c9b7861a24cc57c084b6efc69ec4e82ee01f54cf7d56206668f",
+      "target_loaded_during_resource_read": false,
+      "value": 7,
+      "state": 7,
+      "stack_line": 14,
+      "stack_origin": "lntcase.Thrower"
+    },
+    "shifted": {
+      "resource_sha256": "17d839b0a248a14b003747a1a7a2cc3f9c264bfc003137a80a3e93e92b2620e3",
+      "target_loaded_during_resource_read": false,
+      "value": 7,
+      "state": 7,
+      "stack_line": 21,
+      "stack_origin": "lntcase.Thrower"
+    },
+    "constant": {
+      "resource_sha256": "dac325f25f95751def76e11d55347cb44d5aab2d2e188145b31215b707e96e2e",
+      "target_loaded_during_resource_read": false,
+      "value": 8,
+      "state": 7,
+      "stack_line": 14,
+      "stack_origin": "lntcase.Thrower"
+    },
+    "opcode": {
+      "resource_sha256": "006dd77ae4549ac642ee419d186edea9b23ba7432cf3ce51622cee24b9c2e046",
+      "target_loaded_during_resource_read": false,
+      "value": 12,
+      "state": 7,
+      "stack_line": 14,
+      "stack_origin": "lntcase.Thrower"
+    },
+    "initializer": {
+      "resource_sha256": "780665941d5e4d9fc688a9947ddaa691a15c51a8add65ebcfa4296217b1edc30",
+      "target_loaded_during_resource_read": false,
+      "value": 7,
+      "state": 8,
+      "stack_line": 14,
+      "stack_origin": "lntcase.Thrower"
+    },
+    "annotation": {
+      "resource_sha256": "3e0788723c49ec31d410524c7ae723b6f996ca3579a666396ac432f4bd708e13",
+      "target_loaded_during_resource_read": false,
+      "value": 7,
+      "state": 7,
+      "stack_line": 14,
+      "stack_origin": "lntcase.Thrower"
+    },
+    "method-parameters": {
+      "resource_sha256": "634f0b024fb31aba1eb31702107144ce4727e1197e3c7265cd77dbf1cc6473db",
+      "target_loaded_during_resource_read": false,
+      "value": 7,
+      "state": 7,
+      "stack_line": 14,
+      "stack_origin": "lntcase.Thrower"
+    }
+  },
+  "qualification": "Frozen independent JVM observations, not an execution-scope or exclusion proof.",
+  "files": [
+    {
+      "path": "annotation-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "annotation-execution.log",
+      "bytes": 176,
+      "sha256": "253e1f2bde5e6a9f76f4501dcd13b884d1dde03a7a4eedd60d379c0f80ea9cb7"
+    },
+    {
+      "path": "annotation-javap.log",
+      "bytes": 4060,
+      "sha256": "d9f888c739fb00d4d95d1d99d07e3543dd3ca3c60bc7954d3d4396fe8e45c09a"
+    },
+    {
+      "path": "base-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "base-execution.log",
+      "bytes": 176,
+      "sha256": "789cabd16b6a5dee0d9351d3d9df2a3678ed50cda838f6018d56b0cf42c493fd"
+    },
+    {
+      "path": "base-javap.log",
+      "bytes": 4054,
+      "sha256": "99af46f3d05e562fc90d289a962b3d013d7135efe859180f86dd1a5d5a676799"
+    },
+    {
+      "path": "constant-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "constant-execution.log",
+      "bytes": 176,
+      "sha256": "5c4697a9397ea7e130d46edee4e230fdfa6eff57bfd542c091a8ce7248ac06e7"
+    },
+    {
+      "path": "constant-javap.log",
+      "bytes": 4058,
+      "sha256": "094e6f8a75ed8e11df6bfd5c1ddef587d5d472380991604148367325727757a4"
+    },
+    {
+      "path": "initializer-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initializer-execution.log",
+      "bytes": 176,
+      "sha256": "86bddef539b41dfef853c82911a2e07632794c0553ccbee001a1c0dd38e644d0"
+    },
+    {
+      "path": "initializer-javap.log",
+      "bytes": 4061,
+      "sha256": "cf7d9e6ec42dd0e9712f9be3c338bd29e5cc32b72752dc9aa45afd3bc68d081b"
+    },
+    {
+      "path": "java-version.log",
+      "bytes": 167,
+      "sha256": "da6bb29c482c0fd5ea827d1eecfcf573d88175541589705d776142562e788e18"
+    },
+    {
+      "path": "javac-version.log",
+      "bytes": 16,
+      "sha256": "2df6b9c76e710158266aeaae8f3578eaed8ddd747a2272483506ad9a8a5e644a"
+    },
+    {
+      "path": "method-parameters-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "method-parameters-execution.log",
+      "bytes": 176,
+      "sha256": "43a5049c3375d867fba3236ccf7a4feb5eeba0f54b9759254f5d70f480fcc09b"
+    },
+    {
+      "path": "method-parameters-javap.log",
+      "bytes": 4102,
+      "sha256": "045ed8ffa7bdc4013591221a1bd1b7f1ccc3995d22b92f83c0a0ba7da9748a66"
+    },
+    {
+      "path": "observer-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "opcode-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "opcode-execution.log",
+      "bytes": 177,
+      "sha256": "3d85ec6d263e54e6df01c9a0d4a6a12c6091bfaf729f80170c5cfbdf5b78e024"
+    },
+    {
+      "path": "opcode-javap.log",
+      "bytes": 4056,
+      "sha256": "3d3e21f079870d3f48f5a648b1a99f3ce22a54d53f411a53eecb498ddebbdcc8"
+    },
+    {
+      "path": "shifted-compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shifted-execution.log",
+      "bytes": 176,
+      "sha256": "7cf2a2562bbf95142f1f340071d23aebf7a9147000d8cc96d5dd1407619f5ead"
+    },
+    {
+      "path": "shifted-javap.log",
+      "bytes": 4059,
+      "sha256": "53ba15b630b8ec8449687a9647a2dca1be114cba8a8cea0dd0da256fb9c7a185"
+    },
+    {
+      "path": "src/lntcase/Marker.java",
+      "bytes": 179,
+      "sha256": "6975a36f480958798d3c9832b25dd6f77624145c2bb38961c0ab11513d69aebc"
+    },
+    {
+      "path": "src/lntcase/Probe.java",
+      "bytes": 296,
+      "sha256": "27f16977b260f2b94c9ec2cda26ce3731fed0c3240e702e472ab6ca9329b8477"
+    },
+    {
+      "path": "src/lntcase/Thrower.java",
+      "bytes": 125,
+      "sha256": "3ce2005f7dcada8714b3785c288276789623cee93331c4700d55358df99f0f86"
+    },
+    {
+      "path": "validation/lntcase/Observe.java",
+      "bytes": 2057,
+      "sha256": "fd16173ade89ddf7a40c8742bfca33186c25c0f823b727b1764f6fcd4d2b1fec"
+    },
+    {
+      "path": "variants/annotation/classes/lntcase/Marker.class",
+      "bytes": 295,
+      "sha256": "60d907a0b568b5fd8bef37412508ece931ef9e5296271fd23b66bb285c5f75be"
+    },
+    {
+      "path": "variants/annotation/classes/lntcase/Probe.class",
+      "bytes": 668,
+      "sha256": "3e0788723c49ec31d410524c7ae723b6f996ca3579a666396ac432f4bd708e13"
+    },
+    {
+      "path": "variants/annotation/classes/lntcase/Thrower.class",
+      "bytes": 400,
+      "sha256": "f9695e76b9ec13e4857aee36e2baef145a48d0716dfe77f20061bcd5db912676"
+    },
+    {
+      "path": "variants/annotation/src/lntcase/Probe.java",
+      "bytes": 296,
+      "sha256": "f46af9eca259f59cf398a43c902b54bab6e0ed077f87a50b6caa318ff0c8ea6f"
+    },
+    {
+      "path": "variants/base/classes/lntcase/Marker.class",
+      "bytes": 295,
+      "sha256": "60d907a0b568b5fd8bef37412508ece931ef9e5296271fd23b66bb285c5f75be"
+    },
+    {
+      "path": "variants/base/classes/lntcase/Probe.class",
+      "bytes": 668,
+      "sha256": "90e8817dc6333c9b7861a24cc57c084b6efc69ec4e82ee01f54cf7d56206668f"
+    },
+    {
+      "path": "variants/base/classes/lntcase/Thrower.class",
+      "bytes": 400,
+      "sha256": "f9695e76b9ec13e4857aee36e2baef145a48d0716dfe77f20061bcd5db912676"
+    },
+    {
+      "path": "variants/base/src/lntcase/Probe.java",
+      "bytes": 296,
+      "sha256": "27f16977b260f2b94c9ec2cda26ce3731fed0c3240e702e472ab6ca9329b8477"
+    },
+    {
+      "path": "variants/constant/classes/lntcase/Marker.class",
+      "bytes": 295,
+      "sha256": "60d907a0b568b5fd8bef37412508ece931ef9e5296271fd23b66bb285c5f75be"
+    },
+    {
+      "path": "variants/constant/classes/lntcase/Probe.class",
+      "bytes": 668,
+      "sha256": "dac325f25f95751def76e11d55347cb44d5aab2d2e188145b31215b707e96e2e"
+    },
+    {
+      "path": "variants/constant/classes/lntcase/Thrower.class",
+      "bytes": 400,
+      "sha256": "f9695e76b9ec13e4857aee36e2baef145a48d0716dfe77f20061bcd5db912676"
+    },
+    {
+      "path": "variants/constant/src/lntcase/Probe.java",
+      "bytes": 296,
+      "sha256": "20569442a7245fa498078845be655a3949c621cb04a3a37660574c838f316061"
+    },
+    {
+      "path": "variants/initializer/classes/lntcase/Marker.class",
+      "bytes": 295,
+      "sha256": "60d907a0b568b5fd8bef37412508ece931ef9e5296271fd23b66bb285c5f75be"
+    },
+    {
+      "path": "variants/initializer/classes/lntcase/Probe.class",
+      "bytes": 668,
+      "sha256": "780665941d5e4d9fc688a9947ddaa691a15c51a8add65ebcfa4296217b1edc30"
+    },
+    {
+      "path": "variants/initializer/classes/lntcase/Thrower.class",
+      "bytes": 400,
+      "sha256": "f9695e76b9ec13e4857aee36e2baef145a48d0716dfe77f20061bcd5db912676"
+    },
+    {
+      "path": "variants/initializer/src/lntcase/Probe.java",
+      "bytes": 296,
+      "sha256": "82477aa4c36071ca5aca7ed469f06f7c32b41a25c0c35ab8b2e44d7a67f938c0"
+    },
+    {
+      "path": "variants/method-parameters/classes/lntcase/Marker.class",
+      "bytes": 295,
+      "sha256": "60d907a0b568b5fd8bef37412508ece931ef9e5296271fd23b66bb285c5f75be"
+    },
+    {
+      "path": "variants/method-parameters/classes/lntcase/Probe.class",
+      "bytes": 668,
+      "sha256": "634f0b024fb31aba1eb31702107144ce4727e1197e3c7265cd77dbf1cc6473db"
+    },
+    {
+      "path": "variants/method-parameters/classes/lntcase/Thrower.class",
+      "bytes": 400,
+      "sha256": "f9695e76b9ec13e4857aee36e2baef145a48d0716dfe77f20061bcd5db912676"
+    },
+    {
+      "path": "variants/method-parameters/src/lntcase/Probe.java",
+      "bytes": 302,
+      "sha256": "367fc8a1dfce28309f7b26b4a680b01895ca082231cb617a5037d7b7e1fd2145"
+    },
+    {
+      "path": "variants/opcode/classes/lntcase/Marker.class",
+      "bytes": 295,
+      "sha256": "60d907a0b568b5fd8bef37412508ece931ef9e5296271fd23b66bb285c5f75be"
+    },
+    {
+      "path": "variants/opcode/classes/lntcase/Probe.class",
+      "bytes": 668,
+      "sha256": "006dd77ae4549ac642ee419d186edea9b23ba7432cf3ce51622cee24b9c2e046"
+    },
+    {
+      "path": "variants/opcode/classes/lntcase/Thrower.class",
+      "bytes": 400,
+      "sha256": "f9695e76b9ec13e4857aee36e2baef145a48d0716dfe77f20061bcd5db912676"
+    },
+    {
+      "path": "variants/opcode/src/lntcase/Probe.java",
+      "bytes": 296,
+      "sha256": "381d99fcb92f9c14a5af78744b22ce36e9d43edc728119f360e82e50284153f4"
+    },
+    {
+      "path": "variants/shifted/classes/lntcase/Marker.class",
+      "bytes": 295,
+      "sha256": "60d907a0b568b5fd8bef37412508ece931ef9e5296271fd23b66bb285c5f75be"
+    },
+    {
+      "path": "variants/shifted/classes/lntcase/Probe.class",
+      "bytes": 668,
+      "sha256": "17d839b0a248a14b003747a1a7a2cc3f9c264bfc003137a80a3e93e92b2620e3"
+    },
+    {
+      "path": "variants/shifted/classes/lntcase/Thrower.class",
+      "bytes": 400,
+      "sha256": "f9695e76b9ec13e4857aee36e2baef145a48d0716dfe77f20061bcd5db912676"
+    },
+    {
+      "path": "variants/shifted/src/lntcase/Probe.java",
+      "bytes": 303,
+      "sha256": "2f493a27910e78db99acf0bf2181753408d114cb7b4a8c541cc682d8d4256c1c"
+    }
+  ]
+}

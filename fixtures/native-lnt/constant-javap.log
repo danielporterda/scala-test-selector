@@ -1,0 +1,123 @@
+Classfile /Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-lnt/variants/constant/classes/lntcase/Probe.class
+  Last modified Nov 7, 2026; size 668 bytes
+  SHA-256 checksum dac325f25f95751def76e11d55347cb44d5aab2d2e188145b31215b707e96e2e
+  Compiled from "Probe.java"
+public final class lntcase.Probe
+  minor version: 0
+  major version: 61
+  flags: (0x0031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER
+  this_class: #13                         // lntcase/Probe
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 4, attributes: 2
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Methodref          #8.#9          // lntcase/Thrower.fail:()V
+   #8 = Class              #10            // lntcase/Thrower
+   #9 = NameAndType        #11:#6         // fail:()V
+  #10 = Utf8               lntcase/Thrower
+  #11 = Utf8               fail
+  #12 = Fieldref           #13.#14        // lntcase/Probe.state:I
+  #13 = Class              #15            // lntcase/Probe
+  #14 = NameAndType        #16:#17        // state:I
+  #15 = Utf8               lntcase/Probe
+  #16 = Utf8               state
+  #17 = Utf8               I
+  #18 = Utf8               ONE
+  #19 = Utf8               ConstantValue
+  #20 = Integer            1
+  #21 = Utf8               TWO
+  #22 = Integer            2
+  #23 = Utf8               Code
+  #24 = Utf8               LineNumberTable
+  #25 = Utf8               LocalVariableTable
+  #26 = Utf8               this
+  #27 = Utf8               Llntcase/Probe;
+  #28 = Utf8               value
+  #29 = Utf8               (I)I
+  #30 = Utf8               x
+  #31 = Utf8               MethodParameters
+  #32 = Utf8               <clinit>
+  #33 = Utf8               SourceFile
+  #34 = Utf8               Probe.java
+  #35 = Utf8               RuntimeVisibleAnnotations
+  #36 = Utf8               Llntcase/Marker;
+{
+  private static final int ONE;
+    descriptor: I
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 1
+
+  private static final int TWO;
+    descriptor: I
+    flags: (0x001a) ACC_PRIVATE, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 2
+
+  public static int state;
+    descriptor: I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public lntcase.Probe();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 4: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Llntcase/Probe;
+
+  public static int value(int);
+    descriptor: (I)I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: iload_0
+         1: iconst_4
+         2: iadd
+         3: ireturn
+      LineNumberTable:
+        line 10: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       4     0     x   I
+    MethodParameters:
+      Name                           Flags
+      x
+
+  public static void fail();
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=0, args_size=0
+         0: invokestatic  #7                  // Method lntcase/Thrower.fail:()V
+         3: return
+      LineNumberTable:
+        line 14: 0
+        line 15: 3
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: bipush        7
+         2: putstatic     #12                 // Field state:I
+         5: return
+      LineNumberTable:
+        line 7: 0
+}
+SourceFile: "Probe.java"
+RuntimeVisibleAnnotations:
+  0: #36(#28=I#20)
+    lntcase.Marker(
+      value=1
+    )

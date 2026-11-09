@@ -1,0 +1,60 @@
+{
+  "schema_version": "sbt-compiler-context/v1",
+  "capture_kind": "direct_scalac_fixture_actual_physical_classpath",
+  "revision": "2e8cda83400a101f7cd269845db9e10eac3389b2",
+  "errors": [],
+  "provenance": {
+    "compiler_command": [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-Xmx512m",
+      "-cp",
+      "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "scala.tools.nsc.Main",
+      "-classpath",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata",
+      "-P:semanticdb:targetroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/raw",
+      "-P:semanticdb:synthetics:on",
+      "-Yrangepos",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-external-metadata-yks5_dcf/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/external-metadata/src/selectedexternal/Calls.scala"
+    ],
+    "target_classpath_argument": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+    "original_directory_relabelled_as_jar": false,
+    "library_input_is_existing_frozen_jar": true
+  },
+  "contexts": [
+    {
+      "context_id": "project:external-metadata/configuration:test",
+      "source_revision": "2e8cda83400a101f7cd269845db9e10eac3389b2",
+      "compiler_environment_fingerprint": "30629a52cdb6c3248cdeeede2aa7fd7d7ce51bfa14efcefa530607c76b6c5995",
+      "source_records": [
+        {
+          "repo_relative_path": "src/selectedexternal/Calls.scala",
+          "sha256": "ac931d6e6d937dd9f1055e8d7cd90ab72ad98b8a3a59e12dd0a43c4df76c7a37"
+        }
+      ],
+      "full_classpath": [
+        {
+          "index": 0,
+          "kind": "jar",
+          "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar",
+          "sha256": "c5c965928dba16f7ccb7a1e9812b6de9471828d65d3345e9f822e4572b36a3ad",
+          "input_object": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/selected-external-apply/library.jar",
+          "project_output_origins": []
+        },
+        {
+          "index": 1,
+          "kind": "jar",
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+          "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+          "input_object": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+          "project_output_origins": []
+        }
+      ],
+      "exported_products": []
+    }
+  ]
+}

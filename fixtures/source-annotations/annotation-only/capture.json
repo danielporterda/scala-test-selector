@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "revision": "d89ada96cf0ee4fcb3fcd84c825f7481bb3b9a50",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/annotationcase/AffectedSuite.scala.semanticdb",
+      "sha256": "14ba5954f8a06e031e8dab8abb4bb12d860c274fb748251988ba4c9a20fcbfdd",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/annotationcase/AffectedSuite.scala.semanticdb",
+      "input_target_contexts": [
+        "project:source-annotations/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/annotationcase/Service.scala.semanticdb",
+      "sha256": "fa4a5b3faa7c3952f35c895f7cd113f434e4b16a4e7f911a3c8aa2765c9926c3",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/annotationcase/Service.scala.semanticdb",
+      "input_target_contexts": [
+        "project:source-annotations/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/annotationcase/UnaffectedSuite.scala.semanticdb",
+      "sha256": "df73c0ea49af64efe77411422d54fadfb2635e9db5cbe4c4ddb292cd3dbc3c59",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/annotationcase/UnaffectedSuite.scala.semanticdb",
+      "input_target_contexts": [
+        "project:source-annotations/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/annotationcase/AffectedSuite.scala",
+      "file": "src/annotationcase/AffectedSuite.scala",
+      "sha256": "34c247c6dfbe34092935ab38fb60d7547cbc5f1802c995da6e0f0d8c6d808d2c",
+      "source_contexts": [
+        "project:source-annotations/configuration:test"
+      ]
+    },
+    {
+      "path": "src/annotationcase/Service.scala",
+      "file": "src/annotationcase/Service.scala",
+      "sha256": "0de6b684346ed4abe9484d4137ec7aa3546dcfc322d826fa5bafc2631fd15375",
+      "source_contexts": [
+        "project:source-annotations/configuration:test"
+      ]
+    },
+    {
+      "path": "src/annotationcase/UnaffectedSuite.scala",
+      "file": "src/annotationcase/UnaffectedSuite.scala",
+      "sha256": "6c89da562b38007ff1dfe1a2c92fa6a01a18ae364ac950b7757dda6feddc64be",
+      "source_contexts": [
+        "project:source-annotations/configuration:test"
+      ]
+    }
+  ]
+}

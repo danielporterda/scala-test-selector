@@ -1,0 +1,209 @@
+{
+  "schema": "selector-native-envelope-fixture/v1",
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "generator_sha256": "a4ce472ad51e3ef4d6a785e1fb345b3751ed0e8fd6bddde8306945f6d8471460",
+  "commands": [
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/main",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-envelope/src/envelopecase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/main",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/main",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-envelope/validation/envelopecase/CheckProbe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/main",
+      "envelopecase.CheckProbe"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/main",
+      "-v",
+      "-p",
+      "-c",
+      "envelopecase.Probe"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/shadow",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-envelope/shadow-src/envelopecase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/shadow",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/shadow",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-envelope/validation/envelopecase/CheckShadow.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/shadow",
+      "envelopecase.CheckShadow"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-native-envelope-ohupla5f/shadow",
+      "-v",
+      "-p",
+      "-c",
+      "envelopecase.Probe"
+    ]
+  ],
+  "independent_runtime_observations": [
+    "branch-false:0:0",
+    "branch-true:41:1",
+    "sparse-hit:41:1",
+    "sparse-miss:0:0",
+    "dense-hit:41:1",
+    "dense-miss:0:0",
+    "catch-hit:41:1",
+    "catch-miss:0:0",
+    "scalar:4:0",
+    "disjoint-entry:29:0",
+    "branch-entry:41:1",
+    "scalar-component-entry:29:0",
+    "escape-before:0",
+    "escape-after:100",
+    "reflection:java.lang.String",
+    "native-missing:UnsatisfiedLinkError",
+    "array:9",
+    "monitor:1"
+  ],
+  "java_version": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 21.0.12.1)\nOpenJDK 64-Bit Server VM Homebrew (build 21.0.12.1, mixed mode, sharing)\n",
+  "javac_version": "javac 21.0.12.1\n",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "9e694299af3624e232d1fe84a7be6b56ae8eaea23621d31ee1e8e39a31c3e127",
+      "bytes": 1467
+    },
+    {
+      "path": "bytecode.jar",
+      "sha256": "bca0a811cfafca4b7611d25c34880990d45e58d2957b8dc493b0af1ec9e0c8de",
+      "bytes": 1844
+    },
+    {
+      "path": "classes/envelopecase/Probe$Scalar.class",
+      "sha256": "4dbd2a836fe140a73f417b50f62f4e6f23e4eeb5a7c0402377b22ef01e2ec62b",
+      "bytes": 573
+    },
+    {
+      "path": "classes/envelopecase/Probe.class",
+      "sha256": "3393ccdeac1ea0706d375f0d60b7b27abeacce8088ead6f08fc5ae6693799bc5",
+      "bytes": 2374
+    },
+    {
+      "path": "execution.log",
+      "sha256": "d564bd65381ea3544535d16db7a7a0821a4e1dbaf528126ec0ed7504d42923c9",
+      "bytes": 318
+    },
+    {
+      "path": "java-version.log",
+      "sha256": "da6bb29c482c0fd5ea827d1eecfcf573d88175541589705d776142562e788e18",
+      "bytes": 167
+    },
+    {
+      "path": "javac-version.log",
+      "sha256": "2df6b9c76e710158266aeaae8f3578eaed8ddd747a2272483506ad9a8a5e644a",
+      "bytes": 16
+    },
+    {
+      "path": "main-compile-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "main-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "main-javap.log",
+      "sha256": "e5d2948b6e4725ad2f7401f5eb106697a8fe99a336ef3ea6714125639a3a1a2d",
+      "bytes": 15463
+    },
+    {
+      "path": "shadow-classes/envelopecase/Probe.class",
+      "sha256": "425855f2474ee47f388596f1a559d6fd8d18d86fed6f0645e07ebc742b944a80",
+      "bytes": 410
+    },
+    {
+      "path": "shadow-compile-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "shadow-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "shadow-execution.log",
+      "sha256": "0b1b367fc86f2e7843369e153aff7a0c9b598b34432621cc175f2fee1a7fee86",
+      "bytes": 9
+    },
+    {
+      "path": "shadow-javap.log",
+      "sha256": "0e1da2e532f3149727624c7306ce4a71ebbdfb495fc02d06453faa9b977d986f",
+      "bytes": 2512
+    },
+    {
+      "path": "shadow-src/envelopecase/Probe.java",
+      "sha256": "f2b1722cd8664bba3a351b91fa7958ea5767b6ce3b4d8f45a8b802832b537afe",
+      "bytes": 154
+    },
+    {
+      "path": "shadow.jar",
+      "sha256": "c2831dadda608cafb4fc8f2f370e0fcc48f741c58723878e972b5f311ca31cc1",
+      "bytes": 417
+    },
+    {
+      "path": "src/envelopecase/Probe.java",
+      "sha256": "9b6e9f9cbc3d3216c1a4972cc820d136eeff9cedc4290ea2c02c9b3901f8444a",
+      "bytes": 1755
+    },
+    {
+      "path": "validation/envelopecase/CheckProbe.java",
+      "sha256": "de7b0e65b23df189d1fff20f1940c151b3ceec31617387eab7fad7986c7329af",
+      "bytes": 1651
+    },
+    {
+      "path": "validation/envelopecase/CheckShadow.java",
+      "sha256": "e7eaf3162ac7b987d09c103179a8f92ad05709d8b5e789c6217ad08509beda96",
+      "bytes": 258
+    }
+  ]
+}

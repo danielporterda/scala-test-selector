@@ -1,0 +1,2 @@
+/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/external-metadata-class-views/jar-c5c965928dba16f7ccb7a1e9812b6de9471828d65d3345e9f822e4572b36a3ad-java0/classes.jar
+/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/external-metadata-class-views/jar-4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0-java0/classes.jar

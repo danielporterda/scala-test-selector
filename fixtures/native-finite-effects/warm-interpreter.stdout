@@ -1,0 +1,6 @@
+vm=OpenJDK 64-Bit Server VM:21.0.12.1
+arguments=[-Xmx64m, -Xint]
+OmitStackTraceInFastThrow=true
+divide:caught=3000:same-previous=0:same-first=1:last-trace=3
+bounds:caught=3000:same-previous=0:same-first=1:last-trace=3
+null:caught=3000:same-previous=0:same-first=1:last-trace=3

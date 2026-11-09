@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "revision": "258997b4cf170665f8e3bf4823ef52c807b4e647",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/contextboundcase/Arguments.scala.semanticdb",
+      "sha256": "d76a450a3fd3dfd20ddb51e99ec5f3949dc7a9fbb81f67ba9a578deaf1387ced",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/contextboundcase/Arguments.scala.semanticdb",
+      "input_target_contexts": [
+        "project:context-bound-arguments/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/contextboundcase/Arguments.scala",
+      "file": "src/contextboundcase/Arguments.scala",
+      "sha256": "37757f2c03d0ec7739e691eaddb0b064c0a89eefc0c9a9b212f3ca10a0f35c4e",
+      "source_contexts": [
+        "project:context-bound-arguments/configuration:test"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "rust-selector-source-reviewed-expectations/v1",
+  "role": "Evaluator assertions only; never selector input or generated runtime edges.",
+  "basis": "Reviewed exact captured Scala source, matching compiler declarations, references and captured syntax ranges. No Python selector output supplies these assertions.",
+  "declarations": [
+    {
+      "path": "apps/app/src/main/scala/org/lfdecentralizedtrust/splice/SpliceApp.scala",
+      "symbol": "org/lfdecentralizedtrust/splice/SpliceApp.",
+      "kind": 10
+    },
+    {
+      "path": "apps/app/src/main/scala/org/lfdecentralizedtrust/splice/SpliceApp.scala",
+      "symbol": "org/lfdecentralizedtrust/splice/SpliceApp.loadConfig().",
+      "kind": 3,
+      "overridden_symbols": ["com/digitalasset/canton/CantonAppDriver#loadConfig()."]
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "symbol": "com/digitalasset/canton/time/Clock#monotonicTime().",
+      "kind": 3
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "symbol": "com/digitalasset/canton/time/Clock#uniqueTime().",
+      "kind": 3
+    }
+  ],
+  "body_calls": [
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "from_symbol": "com/digitalasset/canton/time/Clock#monotonicTime().",
+      "to_symbol": "com/digitalasset/canton/time/Clock#internalMonotonicTime().",
+      "body_range": {"start_line": 143, "start_character": 47, "end_line": 143, "end_character": 71},
+      "body_source": "internalMonotonicTime(0)",
+      "reference_range": {"start_line": 143, "start_character": 47, "end_line": 143, "end_character": 68}
+    },
+    {
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "from_symbol": "com/digitalasset/canton/time/Clock#uniqueTime().",
+      "to_symbol": "com/digitalasset/canton/time/Clock#internalMonotonicTime().",
+      "body_range": {"start_line": 148, "start_character": 44, "end_line": 148, "end_character": 68},
+      "body_source": "internalMonotonicTime(1)",
+      "reference_range": {"start_line": 148, "start_character": 44, "end_line": 148, "end_character": 65}
+    }
+  ],
+  "required_uncertainty": [
+    {
+      "reason": "fixture_is_not_a_closed_program",
+      "prohibition": "Missing external bodies and classpath data must not become proven empty effects."
+    }
+  ]
+}

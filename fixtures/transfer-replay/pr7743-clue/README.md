@@ -1,0 +1,11 @@
+# PR7743 clue transfer replay
+
+`bundle/` is a version 3 current-transfer regression derived from the genuine historical PR7743 `BaseTest.clue` input. A test-only adapter re-evaluates the sealed version 2 coarse input. All historical object origins remain coarse; no receiver partition or missing callee authority is reconstructed. The production replay reader accepts only version 3.
+
+The new missing-field channel is grounded in an independent control: production `ReadWorld` opened the original version 1 checkpoint read-only and returned empty, version zero, absent for all four required primary fields and all four missing-marker keys. That checkpoint stopped at StepLimit with 20,864 ready contexts. These responses describe an in-flight state; they do not certify finalized absence. The control performs no evaluation, resume, or export. `read-world-control.json` pins the observed state and compiled reader/transfer sources.
+
+The current transfer records `UnknownOperation` at operation 1909541, nine calls, 17 dependency reads, and four logical field reads. `reduction.json` retains the captured callback (target 833780, binding 478), nine calls, 11 reads, and an uncertainty guard while reducing 29 source operations to 11 active operations. Candidate/type/callee recipe authority remains immutable during reduction. The current operator and unchanged implementation identity before/after are pinned in `operator.json`.
+
+`history/v2/` preserves every original version 2 bundle byte, recording seal, provenance, reduction, and README. Earlier version 1 provenance remains under `history/`. `coarse-migration.json` records the adapter and the rejected experiment that injected UNKNOWN_FIELD and demanded unrecorded summary frontiers. The selected marker responses come from the independent reader control, rather than matching a historical output.
+
+Rust tests reopen and replay this fixture without Python, compiler jars, full facts, or a solver run. This is a current transfer re-evaluation of explicitly coarse historical inputs. It does not establish the historical same proof, a completed query, a fixed point, or whole-query coverage. See `provenance.json` for exact identities and limits.

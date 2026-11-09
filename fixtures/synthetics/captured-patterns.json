@@ -1,0 +1,480 @@
+{
+  "schema": "rust-selector-captured-synthetic-patterns/v1",
+  "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+  "source": "ci-cost-study/compiler-selector/capture/c759ad48a1dffcbc4cc0abc6527a0252ced85f6b/semanticdb-documents.jsonl.gz",
+  "source_sha256": "4a1ebe630da1c27d45b08de11ed313c50bedc96959c6192f01b07679ab730d2b",
+  "census": {
+    "total": 278656,
+    "root_tags": {
+      "apply_tree": 118402,
+      "select_tree": 49961,
+      "type_apply_tree": 110293
+    },
+    "nested_tags": {
+      "apply_tree": 176461,
+      "function_tree": 18184,
+      "id_tree": 174529,
+      "macro_expansion_tree": 12829,
+      "original_tree": 296840,
+      "select_tree": 143303,
+      "type_apply_tree": 168488
+    }
+  },
+  "examples": [
+    {
+      "id": "callback_apply_selection",
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "synthetic_ordinal": 4,
+      "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+      "source_sha256": "8bf640e640e10378feb137a10dba6222cceec9f48abbb48dd6495c022f8d19db",
+      "semanticdb_input_sha256": "bb7d341b7e390dd89e5be6a139dae93bda0926024ac095a9a628f283c855d8bb",
+      "source_excerpt": "action",
+      "synthetic": {
+        "range": {
+          "start_line": 130,
+          "start_character": 52,
+          "end_line": 130,
+          "end_character": 58
+        },
+        "tree": {
+          "select_tree": {
+            "qualifier": {
+              "original_tree": {
+                "range": {
+                  "start_line": 130,
+                  "start_character": 52,
+                  "end_line": 130,
+                  "end_character": 58
+                }
+              }
+            },
+            "id": {
+              "symbol": "scala/Function1#apply()."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "deferred_synthetic_function",
+      "path": "apps/app/src/main/scala/org/lfdecentralizedtrust/splice/config/ConfigTransforms.scala",
+      "synthetic_ordinal": 402,
+      "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+      "source_sha256": "863a0f45635dd339bbe453e978e1a0b2591ce56e59819a50ba9d10baa77bae0f",
+      "semanticdb_input_sha256": "af2eb59661983fab4833c34e97168daa665f91e7056afdcf2bf72a05f805b2c3",
+      "source_excerpt": "for (line <- tokenDataSource.getLines()) {\n        val parts = line.split(\" \")\n        if (parts.length == 2)\n          rows.put(parts(0), parts(1))\n      }",
+      "synthetic": {
+        "range": {
+          "start_line": 1034,
+          "start_character": 6,
+          "end_line": 1038,
+          "end_character": 7
+        },
+        "tree": {
+          "apply_tree": {
+            "function": {
+              "type_apply_tree": {
+                "function": {
+                  "select_tree": {
+                    "qualifier": {
+                      "original_tree": {
+                        "range": {
+                          "start_line": 1034,
+                          "start_character": 19,
+                          "end_line": 1034,
+                          "end_character": 45
+                        }
+                      }
+                    },
+                    "id": {
+                      "symbol": "scala/collection/IterableOnceOps#foreach()."
+                    }
+                  }
+                },
+                "type_arguments": [
+                  {
+                    "type_ref": {
+                      "symbol": "scala/Any#"
+                    }
+                  }
+                ]
+              }
+            },
+            "arguments": [
+              {
+                "function_tree": {
+                  "parameters": [
+                    {
+                      "symbol": "local12079"
+                    }
+                  ],
+                  "body": {
+                    "original_tree": {
+                      "range": {
+                        "start_line": 1034,
+                        "start_character": 47,
+                        "end_line": 1038,
+                        "end_character": 7
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "enclosing_implicit_actual",
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "synthetic_ordinal": 5,
+      "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+      "source_sha256": "8bf640e640e10378feb137a10dba6222cceec9f48abbb48dd6495c022f8d19db",
+      "semanticdb_input_sha256": "bb7d341b7e390dd89e5be6a139dae93bda0926024ac095a9a628f283c855d8bb",
+      "source_excerpt": "SystemClockRunningBackwards.Error(nowSnapshot, oldTs).discard",
+      "synthetic": {
+        "range": {
+          "start_line": 166,
+          "start_character": 10,
+          "end_line": 166,
+          "end_character": 71
+        },
+        "tree": {
+          "apply_tree": {
+            "function": {
+              "original_tree": {
+                "range": {
+                  "start_line": 166,
+                  "start_character": 10,
+                  "end_line": 166,
+                  "end_character": 71
+                }
+              }
+            },
+            "arguments": [
+              {
+                "type_apply_tree": {
+                  "function": {
+                    "select_tree": {
+                      "qualifier": {
+                        "id_tree": {
+                          "symbol": "scala/`<:<`."
+                        }
+                      },
+                      "id": {
+                        "symbol": "scala/`<:<`.refl()."
+                      }
+                    }
+                  },
+                  "type_arguments": [
+                    {
+                      "type_ref": {
+                        "symbol": "com/digitalasset/canton/time/Clock.SystemClockRunningBackwards.Error#"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "inserted_implicit_conversion",
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "synthetic_ordinal": 7,
+      "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+      "source_sha256": "8bf640e640e10378feb137a10dba6222cceec9f48abbb48dd6495c022f8d19db",
+      "semanticdb_input_sha256": "bb7d341b7e390dd89e5be6a139dae93bda0926024ac095a9a628f283c855d8bb",
+      "source_excerpt": "SystemClockRunningBackwards.Error(nowSnapshot, oldTs)",
+      "synthetic": {
+        "range": {
+          "start_line": 166,
+          "start_character": 10,
+          "end_line": 166,
+          "end_character": 63
+        },
+        "tree": {
+          "apply_tree": {
+            "function": {
+              "type_apply_tree": {
+                "function": {
+                  "select_tree": {
+                    "qualifier": {
+                      "id_tree": {
+                        "symbol": "com/digitalasset/canton/discard/Implicits."
+                      }
+                    },
+                    "id": {
+                      "symbol": "com/digitalasset/canton/discard/Implicits.DiscardOps()."
+                    }
+                  }
+                },
+                "type_arguments": [
+                  {
+                    "type_ref": {
+                      "symbol": "com/digitalasset/canton/time/Clock.SystemClockRunningBackwards.Error#"
+                    }
+                  }
+                ]
+              }
+            },
+            "arguments": [
+              {
+                "original_tree": {
+                  "range": {
+                    "start_line": 166,
+                    "start_character": 10,
+                    "end_line": 166,
+                    "end_character": 63
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "macro_expansion_without_runtime_body",
+      "path": "apps/app/src/main/scala/org/lfdecentralizedtrust/splice/config/ConfigTransforms.scala",
+      "synthetic_ordinal": 70,
+      "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+      "source_sha256": "863a0f45635dd339bbe453e978e1a0b2591ce56e59819a50ba9d10baa77bae0f",
+      "semanticdb_input_sha256": "af2eb59661983fab4833c34e97168daa665f91e7056afdcf2bf72a05f805b2c3",
+      "source_excerpt": "_.withPausedTrigger[SvOffboardingMediatorTrigger]\n        .withPausedTrigger[SvOffboardingSequencerTrigger]\n        .withPausedTrigger[SvBftSequencerPeerOffboardingTrigger]",
+      "synthetic": {
+        "range": {
+          "start_line": 226,
+          "start_character": 6,
+          "end_line": 228,
+          "end_character": 64
+        },
+        "tree": {
+          "apply_tree": {
+            "function": {
+              "original_tree": {
+                "range": {
+                  "start_line": 226,
+                  "start_character": 6,
+                  "end_line": 228,
+                  "end_character": 64
+                }
+              }
+            },
+            "arguments": [
+              {
+                "macro_expansion_tree": {
+                  "before_expansion": {
+                    "apply_tree": {
+                      "function": {
+                        "id_tree": {
+                          "symbol": "scala/reflect/package.materializeClassTag()."
+                        }
+                      }
+                    }
+                  },
+                  "tpe": {
+                    "type_ref": {
+                      "symbol": "scala/reflect/ClassTag#",
+                      "type_arguments": [
+                        {
+                          "type_ref": {
+                            "symbol": "org/lfdecentralizedtrust/splice/sv/automation/singlesv/SvBftSequencerPeerOffboardingTrigger#"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "nested_implicit_actual_calls",
+      "path": "apps/app/src/main/scala/org/lfdecentralizedtrust/splice/SpliceApp.scala",
+      "synthetic_ordinal": 1,
+      "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+      "source_sha256": "4548680c113d0a49dbb941a94d2492ec44e6541df3177d449e8219e658459ef0",
+      "semanticdb_input_sha256": "1e74146eabc0a147e216ac4e4eb3b5bc3d547dd1c57ed02174dee207452978b0",
+      "source_excerpt": "SpliceConfig.load(config)",
+      "synthetic": {
+        "range": {
+          "start_line": 31,
+          "start_character": 4,
+          "end_line": 31,
+          "end_character": 29
+        },
+        "tree": {
+          "apply_tree": {
+            "function": {
+              "original_tree": {
+                "range": {
+                  "start_line": 31,
+                  "start_character": 4,
+                  "end_line": 31,
+                  "end_character": 29
+                }
+              }
+            },
+            "arguments": [
+              {
+                "apply_tree": {
+                  "function": {
+                    "select_tree": {
+                      "qualifier": {
+                        "id_tree": {
+                          "symbol": "org/lfdecentralizedtrust/splice/SpliceApp."
+                        }
+                      },
+                      "id": {
+                        "symbol": "com/digitalasset/canton/logging/NamedLogging#errorLoggingContext()."
+                      }
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "id_tree": {
+                        "symbol": "com/digitalasset/canton/tracing/NoTracing#traceContext()."
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "selected_companion_apply",
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "synthetic_ordinal": 0,
+      "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+      "source_sha256": "8bf640e640e10378feb137a10dba6222cceec9f48abbb48dd6495c022f8d19db",
+      "semanticdb_input_sha256": "bb7d341b7e390dd89e5be6a139dae93bda0926024ac095a9a628f283c855d8bb",
+      "source_excerpt": "Promise",
+      "synthetic": {
+        "range": {
+          "start_line": 92,
+          "start_character": 61,
+          "end_line": 92,
+          "end_character": 68
+        },
+        "tree": {
+          "select_tree": {
+            "qualifier": {
+              "original_tree": {
+                "range": {
+                  "start_line": 92,
+                  "start_character": 61,
+                  "end_line": 92,
+                  "end_character": 68
+                }
+              }
+            },
+            "id": {
+              "symbol": "scala/concurrent/Promise.apply()."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "type_application_without_new_callee",
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "synthetic_ordinal": 6,
+      "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+      "source_sha256": "8bf640e640e10378feb137a10dba6222cceec9f48abbb48dd6495c022f8d19db",
+      "semanticdb_input_sha256": "bb7d341b7e390dd89e5be6a139dae93bda0926024ac095a9a628f283c855d8bb",
+      "source_excerpt": "SystemClockRunningBackwards.Error(nowSnapshot, oldTs).discard",
+      "synthetic": {
+        "range": {
+          "start_line": 166,
+          "start_character": 10,
+          "end_line": 166,
+          "end_character": 71
+        },
+        "tree": {
+          "type_apply_tree": {
+            "function": {
+              "original_tree": {
+                "range": {
+                  "start_line": 166,
+                  "start_character": 10,
+                  "end_line": 166,
+                  "end_character": 71
+                }
+              }
+            },
+            "type_arguments": [
+              {
+                "type_ref": {
+                  "symbol": "com/digitalasset/canton/time/Clock.SystemClockRunningBackwards.Error#"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "typed_selected_apply",
+      "path": "canton/community/base/src/main/scala/com/digitalasset/canton/time/Clock.scala",
+      "synthetic_ordinal": 2,
+      "revision": "c759ad48a1dffcbc4cc0abc6527a0252ced85f6b",
+      "source_sha256": "8bf640e640e10378feb137a10dba6222cceec9f48abbb48dd6495c022f8d19db",
+      "semanticdb_input_sha256": "bb7d341b7e390dd89e5be6a139dae93bda0926024ac095a9a628f283c855d8bb",
+      "source_excerpt": "Try",
+      "synthetic": {
+        "range": {
+          "start_line": 130,
+          "start_character": 25,
+          "end_line": 130,
+          "end_character": 28
+        },
+        "tree": {
+          "type_apply_tree": {
+            "function": {
+              "select_tree": {
+                "qualifier": {
+                  "original_tree": {
+                    "range": {
+                      "start_line": 130,
+                      "start_character": 25,
+                      "end_line": 130,
+                      "end_character": 28
+                    }
+                  }
+                },
+                "id": {
+                  "symbol": "scala/util/Try.apply()."
+                }
+              }
+            },
+            "type_arguments": [
+              {
+                "type_ref": {
+                  "symbol": "com/digitalasset/canton/lifecycle/UnlessShutdown.Outcome#",
+                  "type_arguments": [
+                    {
+                      "type_ref": {
+                        "symbol": "com/digitalasset/canton/time/Clock#Queued#[A]"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "qualification": "Exact compiler tree values and exact UTF-16 source excerpts; independent classification assertions live in expected.json. No graph or runtime edges are generated here."
+}

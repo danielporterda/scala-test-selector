@@ -1,0 +1,42 @@
+[package]
+name = "selector-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+selector-types.workspace = true
+selector-issue.workspace = true
+selector-artifacts.workspace = true
+selector-catalogue.workspace = true
+selector-facts.workspace = true
+selector-graph.workspace = true
+selector-plan.workspace = true
+selector-extract.workspace = true
+selector-graph-build.workspace = true
+selector-native-effects.workspace = true
+selector-models.workspace = true
+selector-solve.workspace = true
+selector-select.workspace = true
+selector-report.workspace = true
+selector-result.workspace = true
+serde_json.workspace = true
+serde.workspace = true
+sha2.workspace = true
+libc.workspace = true
+flate2.workspace = true
+
+[build-dependencies]
+sha2.workspace = true
+serde_json.workspace = true
+
+[[bin]]
+name = "selector"
+path = "src/main.rs"
+
+[dev-dependencies]
+tempfile.workspace = true

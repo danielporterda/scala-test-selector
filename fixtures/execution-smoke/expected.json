@@ -1,0 +1,41 @@
+{
+  "schema": "selector-independent-execution-expectations/v1",
+  "scope": "Real ScalaTest Suite construction lifecycle; no registered ScalaTest test-body API is exercised.",
+  "basis": "Source review plus successful independent JVM instantiation and real ScalaTest Runner completion. These assertions are evaluator-only and never graph input.",
+  "changed_paths": [
+    "src/executioncase/Changed.scala"
+  ],
+  "selected_suites": [
+    "executioncase.AffectedSuite"
+  ],
+  "excluded_suites": [
+    "executioncase.UnaffectedSuite",
+    "executioncase.DormantSuite"
+  ],
+  "completion": "complete",
+  "guarded_suites": [],
+  "independent_observed_values": {
+    "base": [
+      41,
+      7,
+      7
+    ],
+    "head": [
+      42,
+      7,
+      7
+    ]
+  },
+  "prohibitions": [
+    "Do not run DormantSuite.dormantFactory or AffectedSuite.dormant merely because they are class members.",
+    "Do not merge the two Factory.make callback arguments into one imprecise execution family.",
+    "Do not declare the entire ScalaTest Suite API effect-free to remove constructor uncertainty.",
+    "Do not use this expectation file to add runtime edges or model contracts."
+  ],
+  "required_executed_symbols": [
+    "executioncase/AffectedSuite#",
+    "executioncase/AffectedSuite#observed.",
+    "executioncase/Changed.value()."
+  ],
+  "required_factory_capture_owner": "executioncase/Factory.make()."
+}

@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "discovery": "Actual JVM construction and ScalaTest Runner; zero registered tests",
+  "families": [
+    {
+      "name": "callback-variants",
+      "suites": [
+        "callbackcase.Lexical1Suite",
+        "callbackcase.Lexical2Suite",
+        "callbackcase.Lexical3Suite",
+        "callbackcase.Lexical4Suite",
+        "callbackcase.Lexical5Suite",
+        "callbackcase.Lexical6Suite",
+        "callbackcase.Captured1Suite",
+        "callbackcase.Captured2Suite",
+        "callbackcase.Captured3Suite",
+        "callbackcase.Captured4Suite",
+        "callbackcase.Captured5Suite",
+        "callbackcase.Captured6Suite",
+        "callbackcase.UnknownSuite"
+      ]
+    }
+  ]
+}

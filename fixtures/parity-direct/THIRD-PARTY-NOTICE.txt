@@ -1,0 +1,20 @@
+The framework-prefix.jar fixture contains unmodified JVM classfiles selected from:
+
+- org.scalatest:scalatest-core_2.13:3.2.19
+- org.scalatest:scalatest-compatible:3.2.19
+- org.scalactic:scalactic_2.13:3.2.19
+- org.scala-lang:scala-library:2.13.18
+
+ScalaTest identifies its vendor as Artima, Inc. The published Maven POMs declare
+the Apache License, Version 2.0; that license is included in LICENSE-APACHE.
+The exact original artifact and selected archive hashes are pinned in manifest.json.
+Only the JAR container/class selection differs; classfile bytes are unmodified.
+
+The prefix also contains java/io/Serializable.class from the exact OpenJDK 21
+java.base module used for compilation and JVM validation. Its corresponding
+Serializable.java source, GPLv2 with Classpath Exception license, additional license
+information and assembly exception are preserved under third-party/openjdk/.
+The original JMOD/source archive hashes are pinned separately in manifest.json.
+
+The own source classes and bytecode.jar under base/ and head/ are generated from
+the Scala source in this fixture. No hand-authored runtime graph is embedded.

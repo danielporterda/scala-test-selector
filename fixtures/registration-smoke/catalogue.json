@@ -1,0 +1,21 @@
+{
+  "complete": true,
+  "families": [
+    {
+      "name": "registration-smoke",
+      "suites": [
+        "registrationcase.DirectSuite",
+        "registrationcase.StoredSuite",
+        "registrationcase.InvokedSuite",
+        "registrationcase.OpaqueSuite",
+        "registrationcase.InheritedSuite",
+        "registrationcase.InheritedSibling",
+        "registrationcase.HookSuite",
+        "registrationcase.HookSibling",
+        "registrationcase.FixtureSuite",
+        "registrationcase.WordSuite",
+        "registrationcase.NestedWordSuite"
+      ]
+    }
+  ]
+}

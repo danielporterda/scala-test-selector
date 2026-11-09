@@ -1,0 +1,146 @@
+{
+  "classes": [
+    {
+      "bytes": 27314,
+      "methods": [
+        {
+          "code_bytes": 60,
+          "code_sha256": "548e340188785293e57ade0b59d01366097ddb10716b9ec5b046197c911c2114",
+          "descriptor": "([BI)C",
+          "exception_handlers": 0,
+          "flags": 8,
+          "name": "getChar"
+        },
+        {
+          "code_bytes": 5,
+          "code_sha256": "491bf1226cdd832985f087734661dc595d23257f68d0a742a2adbe4b6c88691e",
+          "descriptor": "([B)I",
+          "exception_handlers": 0,
+          "flags": 9,
+          "name": "length"
+        },
+        {
+          "code_bytes": 66,
+          "code_sha256": "39a98a1feb001af367c4c15eb7d2f6b74b759c890115bb61f7c77978f52a90ef",
+          "descriptor": "([BII)[B",
+          "exception_handlers": 0,
+          "flags": 9,
+          "name": "compress"
+        }
+      ],
+      "owner": "java/lang/StringUTF16",
+      "path": "java/lang/StringUTF16.class",
+      "sha256": "e03e9a012b6c29de2130ef49badab77d421f5272e1c72224838545e1091488b5"
+    },
+    {
+      "bytes": 59937,
+      "methods": [
+        {
+          "code_bytes": 25,
+          "code_sha256": "fc4b90f56df687c534a22d83537b009702ea524b1ff4c024012123457646a322",
+          "descriptor": "([BII)[B",
+          "exception_handlers": 0,
+          "flags": 9,
+          "name": "copyOfRange"
+        }
+      ],
+      "owner": "java/util/Arrays",
+      "path": "java/util/Arrays.class",
+      "sha256": "4a41d89cb79284298b95303a66b3738955d22694f9b34016d87241d9ae8193ab"
+    },
+    {
+      "bytes": 16683,
+      "methods": [
+        {
+          "code_bytes": 55,
+          "code_sha256": "52112805c5d6a1a0ef349100c878b4cb31f3b440762187b21333bef88f7f7d3e",
+          "descriptor": "(I)Ljava/lang/String;",
+          "exception_handlers": 0,
+          "flags": 9,
+          "name": "toString"
+        },
+        {
+          "code_bytes": 128,
+          "code_sha256": "6f56ddc212ef1d1ac677868062fbc7b5b5e1896b120e8dea745a6531ddbce99a",
+          "descriptor": "(II)Ljava/lang/String;",
+          "exception_handlers": 0,
+          "flags": 9,
+          "name": "toString"
+        }
+      ],
+      "owner": "java/lang/Integer",
+      "path": "java/lang/Integer.class",
+      "sha256": "44bc6d0e77a7f4965c2fa6bcecc9af63b841ef94eace398fcbc1f954c3835179"
+    },
+    {
+      "bytes": 17375,
+      "methods": [
+        {
+          "code_bytes": 55,
+          "code_sha256": "447f3fc9ebd71769bd63cff8ee9a3092d3c96f5658e8c508c4f0ac20623bd886",
+          "descriptor": "(J)Ljava/lang/String;",
+          "exception_handlers": 0,
+          "flags": 9,
+          "name": "toString"
+        },
+        {
+          "code_bytes": 139,
+          "code_sha256": "66628591387ea50c0a2fb5355e499a3bb477ed3a84821f683c2f50735dde40db",
+          "descriptor": "(JI)Ljava/lang/String;",
+          "exception_handlers": 0,
+          "flags": 9,
+          "name": "toString"
+        }
+      ],
+      "owner": "java/lang/Long",
+      "path": "java/lang/Long.class",
+      "sha256": "cc18d51ef0f74906c2c8714849ff778f7e01a4a29539ba8817faedb989a50f29"
+    },
+    {
+      "bytes": 49154,
+      "methods": [
+        {
+          "code_bytes": 10,
+          "code_sha256": "7c62a250bbcf8b1e9b196eb6a30953154d60fabe8b0a00a844cd128007963899",
+          "descriptor": "(III)I",
+          "exception_handlers": 0,
+          "flags": 8,
+          "name": "checkBoundsOffCount"
+        },
+        {
+          "code_bytes": 11,
+          "code_sha256": "b94045876cfe592536891701ed24191b38a537f21ad7c9d4677aae91ba41aef6",
+          "descriptor": "(III)V",
+          "exception_handlers": 0,
+          "flags": 8,
+          "name": "checkBoundsBeginEnd"
+        }
+      ],
+      "owner": "java/lang/String",
+      "path": "java/lang/String.class",
+      "sha256": "831a11d5c76c84b8777a7813440b4570d49934dee05c285c9068a0ec43158412"
+    }
+  ],
+  "contracts": {
+    "bounds_checks": "Pinned standard Preconditions formatter only; normal scalar identity/void return does not assert exception-free execution. Caller catch/finally recipes remain executable.",
+    "not_modeled": [
+      "java/lang/StringUTF16.getChars(III[B)I writes caller byte buffer",
+      "java/lang/AbstractStringBuilder.append(I)Ljava/lang/AbstractStringBuilder; writes receiver/backing array",
+      "instance String state reads",
+      "arbitrary Object.toString/CharSequence/equals dispatch"
+    ],
+    "numeric_formatting": "Only primitive scalar arguments; internal mutable buffers are not exposed, result is conservative unknown String data. No application callback contract. The original class/provider/Code pins and initialization phases remain authoritative inputs."
+  },
+  "generation": "Byte-identical copied classfile members from retained declared Java21 java.base; no compiler or JVM run.",
+  "independent_parser": {
+    "path": "benchmark-output/native-footprint-diagnostic-v1/local_capsules.py",
+    "sha256": "be9ab1ba214e60a281acbb8776306d8492ef1a5070e76d99d902f77e05b29e2b"
+  },
+  "schema": "selector-jdk-primitive-models-fixture/v2",
+  "scope": "Exact trusted Java21 primitive-data and static numeric-formatting/bounds contracts under declared-platform admission. Caller-array writers, reference arrays, arbitrary callbacks/loaders and instance receiver-state operations remain unsupported. Primitive array input reads remain normalized heap dependencies; array/String return values remain TOP rather than EMPTY or fabricated allocations. Normal checkBoundsOffCount return aliases scalar argument 0; successful checkBoundsBeginEnd returns void. Listed class initialization and caller exception-handler paths remain explicit.",
+  "source_archive": {
+    "bytes": 30081825,
+    "path": "artifacts/pr7743-declared-runtime-platform-v2/head/java.base.jar",
+    "sha256": "ba5f1b0448a754a9bfe2bed7d0e9db87d94cb5d6575b1a8227362b536872e87f"
+  }
+}

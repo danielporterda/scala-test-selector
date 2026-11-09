@@ -1,0 +1,33 @@
+{
+  "schema": "compiler-external-metadata/v1",
+  "producer_sha256": "9b4ac2b8c5b59036a0fd79de78fbf72a7200fc07ac5490fddc03a12409a2634a",
+  "authority_sha256": "b1e99e737aa5561227d0308063d47327dc971abc661c7154fea99f1245079630",
+  "contexts_sha256": "806e9717ce16ac80b2380ab14038bb1cb7b610b1e232a33a453fd6c472f5407b",
+  "payloads": [
+    {
+      "path": "external-signatures.semanticdb",
+      "sha256": "e6c01bc907104e8f5de03686a1f77b8b4a1421a4a5f7f90b5e48013b39e4709e"
+    }
+  ],
+  "bindings": [
+    {
+      "context": "project:external-metadata/configuration:test",
+      "roots": [
+        "selectedexternal/Configuration#PatienceConfig.apply().",
+        "selectedexternal/Configuration#PatienceConfig.apply(+1).",
+        "selectedexternal/Configuration#PatienceConfig.returning()."
+      ],
+      "projections": [
+        {
+          "context": "project:external-metadata/configuration:test",
+          "payload": 0,
+          "outer_class": "selectedexternal/Configuration",
+          "outer_class_sha256": "646cb66cfdabbee1d44f35054bfbc65e89e38676dbf97b738596b83817a49d0d",
+          "classpath_sha256": "dfedf3a6833861b6b48962d14520d5124d84db6199cb5b20641381953485dc87",
+          "provider_index": 0,
+          "provider_sha256": "c5c965928dba16f7ccb7a1e9812b6de9471828d65d3345e9f822e4572b36a3ad"
+        }
+      ]
+    }
+  ]
+}

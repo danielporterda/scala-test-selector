@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "revision": "c3f33095bcc673483723fec70251333e69fce539",
+  "contexts": [
+    {
+      "id": "project:source-annotations/configuration:test",
+      "entries": [
+        {
+          "path": "bytecode.jar",
+          "sha256": "b1ade25495d046f5ef2eee59b26f114b98a06f942cee9fabeb57320806208e29",
+          "kind": "jar"
+        },
+        {
+          "path": "../../execution-smoke/framework-prefix.jar",
+          "sha256": "a9b108a2e73cd96cf87bc15c2c29a9f2ee6c83559227d72a042e45ff3f114b75",
+          "kind": "jar"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+          "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar",
+          "sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar",
+          "sha256": "5dc6b8fa5396fe9e1a7c2b72df174a8eb3e92770cdc3e70636d3eba673cd0da3",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar",
+          "sha256": "c27c33de17d450e29e66c16c5af4cfa33e8ffcf03c124f0a3d249d848cccd4af",
+          "kind": "unavailable"
+        },
+        {
+          "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+          "sha256": "b549a1bf335bc4528cf26f005894c7c37220ac4e8450847973d8f4001b8f59ea",
+          "kind": "unavailable"
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "context": "project:source-annotations/configuration:test",
+      "compiler_symbol": "annotationcase/AffectedSuite#",
+      "jvm_owner": "annotationcase/AffectedSuite"
+    },
+    {
+      "context": "project:source-annotations/configuration:test",
+      "compiler_symbol": "annotationcase/UnaffectedSuite#",
+      "jvm_owner": "annotationcase/UnaffectedSuite"
+    },
+    {
+      "context": "project:source-annotations/configuration:test",
+      "compiler_symbol": "org/scalatest/Suite#",
+      "jvm_owner": "org/scalatest/Suite"
+    }
+  ],
+  "methods": [
+    {
+      "context": "project:source-annotations/configuration:test",
+      "compiler_symbol": "org/scalatest/Suite#",
+      "jvm_owner": "org/scalatest/Suite",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalatest/Suite;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:source-annotations/configuration:test",
+      "jvm_owner": "org/scalactic/TripleEqualsSupport",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalactic/TripleEqualsSupport;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:source-annotations/configuration:test",
+      "jvm_owner": "org/scalactic/TripleEquals",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalactic/TripleEquals;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:source-annotations/configuration:test",
+      "jvm_owner": "org/scalatest/Assertions",
+      "jvm_name": "$init$",
+      "descriptor": "(Lorg/scalatest/Assertions;)V",
+      "receiver_parameter": 0
+    },
+    {
+      "context": "project:source-annotations/configuration:test",
+      "jvm_owner": "annotationcase/AffectedSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:source-annotations/configuration:test",
+      "jvm_owner": "annotationcase/AffectedSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    },
+    {
+      "context": "project:source-annotations/configuration:test",
+      "jvm_owner": "annotationcase/UnaffectedSuite",
+      "jvm_name": "org$scalatest$Suite$_setter_$styleName_$eq",
+      "descriptor": "(Ljava/lang/String;)V"
+    },
+    {
+      "context": "project:source-annotations/configuration:test",
+      "jvm_owner": "annotationcase/UnaffectedSuite",
+      "jvm_name": "org$scalatest$Assertions$_setter_$succeed_$eq",
+      "descriptor": "(Lorg/scalatest/compatible/Assertion;)V"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "selector-trusted-scala-runtime-fixture/v1",
+  "new_jvm_runs": 0,
+  "historical_runtime_image_proven": false,
+  "copies": [
+    {
+      "owner": "scala/runtime/Statics",
+      "path": "scala/runtime/Statics.class",
+      "sha256": "0fcbcbeb38436fdff60e576baadfaf269a9eb93ac3594c139f76ad13fde4e296",
+      "bytes": 2745,
+      "archive": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "archive_sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "owner": "scala/runtime/Statics$VM",
+      "path": "scala/runtime/Statics$VM.class",
+      "sha256": "ebf2ff536c34b994586895b57106202b730f182ac95ff752c18012a29293e8a7",
+      "bytes": 2948,
+      "archive": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "archive_sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "owner": "java/lang/invoke/VarHandle",
+      "path": "java/lang/invoke/VarHandle.class",
+      "sha256": "7039c0f15daf2409afd9f0d0335503474cbef3431ccba5065fdbf957f8bb94a7",
+      "bytes": 12510,
+      "archive": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/artifacts/pr7743-declared-runtime-platform-v2/head/java.base.jar",
+      "archive_sha256": "ba5f1b0448a754a9bfe2bed7d0e9db87d94cb5d6575b1a8227362b536872e87f"
+    }
+  ],
+  "supporting_actual_run": "benchmark-output/trusted-bootstrap-v1/completed-validation.json"
+}

@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "revision": "d6e0c90120e5b0b5a64f6bf37886b3e82a2e6ff8",
+  "source_root": ".",
+  "inputs": [
+    {
+      "path": "raw/META-INF/semanticdb/src/registrationcase/Effects.scala.semanticdb",
+      "sha256": "5943a94f229e3b3e32362fa537b026c519b3f9efb74c2cba3ee7e9a4f44f5333",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/registrationcase/Effects.scala.semanticdb",
+      "input_target_contexts": [
+        "project:registration-styles/configuration:test"
+      ]
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/registrationcase/Suites.scala.semanticdb",
+      "sha256": "52b693b1c85fc0d52a34278bec7bf5ac83f04361486fdb357c91a1e199e0380c",
+      "semanticdb_input": "raw/META-INF/semanticdb/src/registrationcase/Suites.scala.semanticdb",
+      "input_target_contexts": [
+        "project:registration-styles/configuration:test"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "src/registrationcase/Effects.scala",
+      "file": "src/registrationcase/Effects.scala",
+      "sha256": "7afde97ab5377ca9723238826c6c6a10e5627de49647ebfd88a1cf82a2278ad5",
+      "source_contexts": [
+        "project:registration-styles/configuration:test"
+      ]
+    },
+    {
+      "path": "src/registrationcase/Suites.scala",
+      "file": "src/registrationcase/Suites.scala",
+      "sha256": "02f2e3278c63d6140719c03e827b9d18e07f4ca41b3d4efeebb6edb4934dfd92",
+      "source_contexts": [
+        "project:registration-styles/configuration:test"
+      ]
+    }
+  ]
+}

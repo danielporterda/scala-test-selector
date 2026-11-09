@@ -1,0 +1,156 @@
+{
+  "schema": "selector-genuine-trait-super-fixture/v1",
+  "compiler": "Scala 2.13.18",
+  "plugin": "SemanticDB 4.15.2",
+  "revision_kind": "first40hex_of_source_sha256",
+  "generator_sha256": "22fd81fcf41fca9a85b5979ae26936c8e0a4bcfdfc3be3ec127d4e0193a3ecd3",
+  "selector_sha256": "f822c7ea6dbb5c9b0c3e63337901108184e080352de0f80625495d251793fb25",
+  "tooling_manifest_sha256": "01e41b78ccfe04c919fdb2506a4b210ba9a2a74543834a9bdde244eac7ae0d7d",
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "java_version": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 21.0.12.1)\nOpenJDK 64-Bit Server VM Homebrew (build 21.0.12.1, mixed mode, sharing)\n",
+  "inputs": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba"
+    },
+    {
+      "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/compiler-selector/engine/spans/ScalaSpans.scala",
+      "sha256": "306910603430eb0b508716a1d3e77d292280c23a67767af155e23803f6edb5a5"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/trait-super",
+        "-P:semanticdb:targetroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/trait-super/raw",
+        "-Yrangepos",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-trait-super-qnaswlpn/classes",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/trait-super/src/TraitSuper.scala"
+      ],
+      "log": "compile.log",
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-cp",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-trait-super-qnaswlpn/classes:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+        "traitcase.Check"
+      ],
+      "log": "execution.log",
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/target/perf-dev/selector",
+        "capture",
+        "--input",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/trait-super/capture.json",
+        "--output",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/trait-super/documents.jsonl"
+      ],
+      "log": "capture.log",
+      "exit_code": 0
+    },
+    {
+      "argv": [
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/target/perf-dev/selector",
+        "syntax",
+        "--input",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/trait-super/documents.jsonl",
+        "--exporter",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/compiler-selector/engine/spans/ScalaSpans.scala",
+        "--tool-cache",
+        "/private/tmp/rust-selector-execution-syntax",
+        "--output",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/trait-super/syntax.jsonl",
+        "--workers",
+        "2"
+      ],
+      "log": "syntax.log",
+      "exit_code": 0
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "4ba66b698d2d37721b9b68cfc666637e4a6089f0c9f0ced3caeeb02493749bf6",
+      "bytes": 39
+    },
+    {
+      "path": "README.md",
+      "sha256": "0e7e44c2cfb9b3a4dc2e4eb865a5121be224338f901f0fbb8aa332b67b0dde47",
+      "bytes": 841
+    },
+    {
+      "path": "capture.json",
+      "sha256": "f2a647a937fe9ac3402de5ff00e3f27fab156ea2c4c043a8cf4f6ba35faf19c7",
+      "bytes": 738
+    },
+    {
+      "path": "capture.log",
+      "sha256": "c633e09dc0f28b2d1504c9ba0b31a34c8cadc4646e2b606873ff0d74ea61b109",
+      "bytes": 225
+    },
+    {
+      "path": "compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "documents.jsonl",
+      "sha256": "492b2189e5a112fe7c154bdfa5da874b9e3fb618b99f4c0b8efd97a57b83a251",
+      "bytes": 10407
+    },
+    {
+      "path": "execution.log",
+      "sha256": "c1e8336086f99c6a248fc3883e16fce0ed15275ef6abf1a7cc759f8fe50c721e",
+      "bytes": 20
+    },
+    {
+      "path": "expected.json",
+      "sha256": "9fd475e45e188d8587a6ab44a39692f0f0d7283fbc7d69c98febe32cd940d9f8",
+      "bytes": 869
+    },
+    {
+      "path": "raw/META-INF/semanticdb/src/TraitSuper.scala.semanticdb",
+      "sha256": "5c8db7f43321ad0c9c5acfcad0febc38cc1fbca220a669910d9596aba0522820",
+      "bytes": 2793
+    },
+    {
+      "path": "src/TraitSuper.scala",
+      "sha256": "62af895a2785dd4e7a20317c4e199ea04426c4a3e9d44d6ddd0d83498bce512b",
+      "bytes": 425
+    },
+    {
+      "path": "syntax.jsonl",
+      "sha256": "e2d5b3adc7056284d9f22a9e6491e084bdaac4438fb732f755d540d9f6dfe157",
+      "bytes": 14537
+    },
+    {
+      "path": "syntax.log",
+      "sha256": "3d98c8e1fd15a29710b5a8f9579b6ea0803e2d8aa6dec910e7f27fad6e8fcdb0",
+      "bytes": 214
+    }
+  ]
+}

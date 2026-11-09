@@ -1,0 +1,394 @@
+{
+  "schema": "selector-constructor-forms-fixture/v1",
+  "compiler": "Scala 2.13.18",
+  "plugin": "SemanticDB 4.15.2",
+  "generator_sha256": "667f1ede43e5b6a3dbab0d5f8583135c189e31806890bc9df116ce6e7aeb69ef",
+  "capture_helper_sha256": "11424bb4a30ca1cb8b347dd1106b03071d1c56bd4823b213ea1480e945e44bf9",
+  "jars": [
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar",
+      "sha256": "4e85d96ff7bc7dc627985523c3541b9917aaa08e956391380c42db21a2c4e5a0"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar",
+      "sha256": "2f15891fcae7aad30a3892194fb2abb6224cf7ce5d2bd90fba7f1c48682fca21"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+      "sha256": "6935ff1982b2ac93d695f15aa66921be2f602921277afe002f018fd8c7d6e29b"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar",
+      "sha256": "30230081d029f6341b83fe7f157d336113e1c97497fe950169293d28a5bf2936"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar",
+      "sha256": "5dc6b8fa5396fe9e1a7c2b72df174a8eb3e92770cdc3e70636d3eba673cd0da3"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar",
+      "sha256": "c27c33de17d450e29e66c16c5af4cfa33e8ffcf03c124f0a3d249d848cccd4af"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+      "sha256": "b549a1bf335bc4528cf26f005894c7c37220ac4e8450847973d8f4001b8f59ea"
+    },
+    {
+      "path": "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+      "sha256": "8789c0888c1280de7822206c8395f37ab32b6d746e22ee13511cec39c72b10ba"
+    }
+  ],
+  "sides": {
+    "base": {
+      "revision": "06aa77bce52c2904f7964002d33d6ca4d502545e",
+      "compile_command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+        "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/base",
+        "-P:semanticdb:targetroot:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-constructor-forms-l0lt2gwk/metadata",
+        "-Yrangepos",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-constructor-forms-l0lt2gwk/classes",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/base/src/constructorforms/Cases.scala",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/base/src/constructorforms/Defaults.scala",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/base/src/constructorforms/Effects.scala",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/base/src/constructorforms/Secondary.scala",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/base/src/constructorforms/Value.scala"
+      ],
+      "observed_values": [
+        41,
+        41,
+        7,
+        7,
+        41,
+        41,
+        7,
+        7,
+        41,
+        7,
+        41,
+        7,
+        41
+      ],
+      "discovered_suites": [
+        "constructorforms.ApplyDefaultSuite",
+        "constructorforms.NewDefaultSuite",
+        "constructorforms.ApplyExplicitSuite",
+        "constructorforms.CopyDefaultSuite",
+        "constructorforms.CopyExplicitSuite",
+        "constructorforms.SecondaryDefaultSuite",
+        "constructorforms.SecondaryExplicitSuite",
+        "constructorforms.NewExplicitSuite",
+        "constructorforms.MethodDefaultSuite",
+        "constructorforms.MethodExplicitSuite",
+        "constructorforms.ByNameDefaultUsedSuite",
+        "constructorforms.ByNameDefaultIgnoredSuite",
+        "constructorforms.DependentDefaultSuite"
+      ]
+    },
+    "head": {
+      "revision": "2169721706663d7bf632d1da36a883cfcfce4376",
+      "compile_command": [
+        "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+        "-cp",
+        "/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.18/scala-compiler-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.18/scala-reflect-2.13.18.jar",
+        "scala.tools.nsc.Main",
+        "-classpath",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/framework-prefix.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.18/scala-library-2.13.18.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.19/scalatest-core_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.19/scalatest-compatible-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.19/scalactic_2.13-3.2.19.jar:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.4.0/scala-xml_2.13-2.4.0.jar",
+        "-Xplugin:/Users/danielporter/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/semanticdb-scalac_2.13.18/4.15.2/semanticdb-scalac_2.13.18-4.15.2.jar",
+        "-P:semanticdb:sourceroot:/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/head",
+        "-P:semanticdb:targetroot:/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-constructor-forms-pm2sju32/metadata",
+        "-Yrangepos",
+        "-d",
+        "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-constructor-forms-pm2sju32/classes",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/head/src/constructorforms/Cases.scala",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/head/src/constructorforms/Defaults.scala",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/head/src/constructorforms/Effects.scala",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/head/src/constructorforms/Secondary.scala",
+        "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/constructor-forms/head/src/constructorforms/Value.scala"
+      ],
+      "observed_values": [
+        42,
+        42,
+        7,
+        7,
+        42,
+        42,
+        7,
+        7,
+        42,
+        7,
+        42,
+        7,
+        42
+      ],
+      "discovered_suites": [
+        "constructorforms.ApplyDefaultSuite",
+        "constructorforms.NewDefaultSuite",
+        "constructorforms.ApplyExplicitSuite",
+        "constructorforms.CopyDefaultSuite",
+        "constructorforms.CopyExplicitSuite",
+        "constructorforms.SecondaryDefaultSuite",
+        "constructorforms.SecondaryExplicitSuite",
+        "constructorforms.NewExplicitSuite",
+        "constructorforms.MethodDefaultSuite",
+        "constructorforms.MethodExplicitSuite",
+        "constructorforms.ByNameDefaultUsedSuite",
+        "constructorforms.ByNameDefaultIgnoredSuite",
+        "constructorforms.DependentDefaultSuite"
+      ]
+    }
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "66c75e38791cea6212a2271129955dd89b1ae6f31d57eed09a1cdeef68e9025a",
+      "bytes": 1548
+    },
+    {
+      "path": "base/binary.json",
+      "sha256": "59d738d429381a397215bfacbd1414f6f4c8f88f236fa09bb4c5bd4a28132df0",
+      "bytes": 17886
+    },
+    {
+      "path": "base/bytecode.jar",
+      "sha256": "c74482b44ac6725157dab6a0202e8cc2eed2659c9f008e2a0bf12b127cbe957a",
+      "bytes": 71215
+    },
+    {
+      "path": "base/capture.json",
+      "sha256": "e8de1d7fcfd79369155d256e712e1e915de650de4883c3ab88ef441529dfd624",
+      "bytes": 3482
+    },
+    {
+      "path": "base/capture.log",
+      "sha256": "1c64b389983edb61b65b2bfe1b40d7023b9c22f8f66dca2b0908035a2bb4ac98",
+      "bytes": 226
+    },
+    {
+      "path": "base/catalogue.json",
+      "sha256": "e9ff0e8e3909e1b7af322e30d578778483cf0736e9cdc9c75d78fbb692ef1b27",
+      "bytes": 824
+    },
+    {
+      "path": "base/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "base/constructor-bytecode.log",
+      "sha256": "ff612ba5168edb79f125f2814fb56e84c0873b0aeb9a944ed59f7d71f46e7fa8",
+      "bytes": 11056
+    },
+    {
+      "path": "base/documents.jsonl",
+      "sha256": "5895ec6655b4d6b88ab49106f2bd9decd170312cb1cfb42279e7d73b1ebd69a8",
+      "bytes": 58929
+    },
+    {
+      "path": "base/execution.log",
+      "sha256": "b7cfdd9ef0fb5d3374bf03ec7577b0c0fa740bc6cbe918e41c86f30e60eafde3",
+      "bytes": 601
+    },
+    {
+      "path": "base/raw/META-INF/semanticdb/src/constructorforms/Cases.scala.semanticdb",
+      "sha256": "18d30a23ce83ecb6bb85be9cccc181a658078ff92161cde4b313eaca7c9ead8d",
+      "bytes": 10985
+    },
+    {
+      "path": "base/raw/META-INF/semanticdb/src/constructorforms/Defaults.scala.semanticdb",
+      "sha256": "89588bfe3076799cb413a08c46b1686c28a470dd0e92b4a166005709488b1057",
+      "bytes": 3569
+    },
+    {
+      "path": "base/raw/META-INF/semanticdb/src/constructorforms/Effects.scala.semanticdb",
+      "sha256": "55629ff745ddb0a99646d433c6c61b3aaa731e20f5aecdacb1f09fc35c843779",
+      "bytes": 422
+    },
+    {
+      "path": "base/raw/META-INF/semanticdb/src/constructorforms/Secondary.scala.semanticdb",
+      "sha256": "87e55c624e2a3ac609b49fa2d205583674e7fd65c539046bb096b66e4f41a3cd",
+      "bytes": 1058
+    },
+    {
+      "path": "base/raw/META-INF/semanticdb/src/constructorforms/Value.scala.semanticdb",
+      "sha256": "0b130556f37694cd30ad4a3e1e714b5c8e050a15b903de07b031edf0db43b8dd",
+      "bytes": 4941
+    },
+    {
+      "path": "base/scalatest.log",
+      "sha256": "c1a3d80c4bd0f28135e7e093dcfc1ef3e13c4375bbfd585bdaec6ede63e876f0",
+      "bytes": 496
+    },
+    {
+      "path": "base/src/constructorforms/Cases.scala",
+      "sha256": "c044eb52352b5893547779366d7d5d77e53766f420a35ac6f161284043bdf337",
+      "bytes": 1323
+    },
+    {
+      "path": "base/src/constructorforms/Defaults.scala",
+      "sha256": "648a47478db3ce871fd46ac2bd2c9b77aa54d9a5691b3d614af60a4c276afab7",
+      "bytes": 280
+    },
+    {
+      "path": "base/src/constructorforms/Effects.scala",
+      "sha256": "17ecb414efb3a5ca0ee44b48eba84614805fcd8d6f5442a62c91efca4080e1be",
+      "bytes": 68
+    },
+    {
+      "path": "base/src/constructorforms/Secondary.scala",
+      "sha256": "3f46519feeeb27c0665a776acbef4a27d631dea181d37de00348863a5f858268",
+      "bytes": 101
+    },
+    {
+      "path": "base/src/constructorforms/Value.scala",
+      "sha256": "a6eb6c63c92644a9a29f3d126e808c1b8c7078af0d59dec0ba1f5bb5878b8e51",
+      "bytes": 74
+    },
+    {
+      "path": "base/syntax.jsonl",
+      "sha256": "40a55daa0e721c48df3feea8a15e932f568c31da961d6385c538e942d59ea52f",
+      "bytes": 54490
+    },
+    {
+      "path": "base/syntax.log",
+      "sha256": "88b098d23b12b5db6e050bef3cee40b093816af938bc9ea8ad46761411762759",
+      "bytes": 215
+    },
+    {
+      "path": "base/validation-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "expected.json",
+      "sha256": "8775bdeb5119a2348a553a8c5dfc4c39fc85a145c61bc9f3617e54bc72d5efb3",
+      "bytes": 1051
+    },
+    {
+      "path": "framework-prefix.jar",
+      "sha256": "70a28d7607182cda0249fb9235b53526f9b6141d2174f00e09f8c42593372695",
+      "bytes": 62067
+    },
+    {
+      "path": "head/binary.json",
+      "sha256": "9565c8962ca280de70447ab9e6688d74e9f920f54c0b0c2133eac62e50d470e9",
+      "bytes": 17886
+    },
+    {
+      "path": "head/bytecode.jar",
+      "sha256": "856737b27e545f32e3bffa696598806b6fcc684cbe213ef38a3e8553a3b06536",
+      "bytes": 71215
+    },
+    {
+      "path": "head/capture.json",
+      "sha256": "1d5c7e538228d729dec5e5fd05058a43c75be590c330ffacb1e8089d8b26f860",
+      "bytes": 3482
+    },
+    {
+      "path": "head/capture.log",
+      "sha256": "1210690cc02b80036a26122297ee2a74cdf85201c65bb9d626e9d85da86c2509",
+      "bytes": 226
+    },
+    {
+      "path": "head/catalogue.json",
+      "sha256": "e9ff0e8e3909e1b7af322e30d578778483cf0736e9cdc9c75d78fbb692ef1b27",
+      "bytes": 824
+    },
+    {
+      "path": "head/compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "head/constructor-bytecode.log",
+      "sha256": "ff612ba5168edb79f125f2814fb56e84c0873b0aeb9a944ed59f7d71f46e7fa8",
+      "bytes": 11056
+    },
+    {
+      "path": "head/documents.jsonl",
+      "sha256": "5ae637e776ceab7259d4bc44a2c2f67715deed78849b28dbd553766cac21e31b",
+      "bytes": 58929
+    },
+    {
+      "path": "head/execution.log",
+      "sha256": "4cdfbbd174ae84b2c222e4f435d6ca3ba8e10c2b31489a41c70b71cdf2c593fa",
+      "bytes": 601
+    },
+    {
+      "path": "head/raw/META-INF/semanticdb/src/constructorforms/Cases.scala.semanticdb",
+      "sha256": "18d30a23ce83ecb6bb85be9cccc181a658078ff92161cde4b313eaca7c9ead8d",
+      "bytes": 10985
+    },
+    {
+      "path": "head/raw/META-INF/semanticdb/src/constructorforms/Defaults.scala.semanticdb",
+      "sha256": "89588bfe3076799cb413a08c46b1686c28a470dd0e92b4a166005709488b1057",
+      "bytes": 3569
+    },
+    {
+      "path": "head/raw/META-INF/semanticdb/src/constructorforms/Effects.scala.semanticdb",
+      "sha256": "90431ea426d22f8208119d23497130511b7114d18fdf64f4bcdb1709667ee76e",
+      "bytes": 422
+    },
+    {
+      "path": "head/raw/META-INF/semanticdb/src/constructorforms/Secondary.scala.semanticdb",
+      "sha256": "87e55c624e2a3ac609b49fa2d205583674e7fd65c539046bb096b66e4f41a3cd",
+      "bytes": 1058
+    },
+    {
+      "path": "head/raw/META-INF/semanticdb/src/constructorforms/Value.scala.semanticdb",
+      "sha256": "0b130556f37694cd30ad4a3e1e714b5c8e050a15b903de07b031edf0db43b8dd",
+      "bytes": 4941
+    },
+    {
+      "path": "head/scalatest.log",
+      "sha256": "9b0c207583a6c2e01f1cdb2731e3bef62eef965d1f0eaee8767d8641aaca1dca",
+      "bytes": 495
+    },
+    {
+      "path": "head/src/constructorforms/Cases.scala",
+      "sha256": "c044eb52352b5893547779366d7d5d77e53766f420a35ac6f161284043bdf337",
+      "bytes": 1323
+    },
+    {
+      "path": "head/src/constructorforms/Defaults.scala",
+      "sha256": "648a47478db3ce871fd46ac2bd2c9b77aa54d9a5691b3d614af60a4c276afab7",
+      "bytes": 280
+    },
+    {
+      "path": "head/src/constructorforms/Effects.scala",
+      "sha256": "185e451635151d8565104cd6121a06873d9d042b69a040c774f1dc20c9057163",
+      "bytes": 68
+    },
+    {
+      "path": "head/src/constructorforms/Secondary.scala",
+      "sha256": "3f46519feeeb27c0665a776acbef4a27d631dea181d37de00348863a5f858268",
+      "bytes": 101
+    },
+    {
+      "path": "head/src/constructorforms/Value.scala",
+      "sha256": "a6eb6c63c92644a9a29f3d126e808c1b8c7078af0d59dec0ba1f5bb5878b8e51",
+      "bytes": 74
+    },
+    {
+      "path": "head/syntax.jsonl",
+      "sha256": "120e73fc1709c4b7b9ccf2b82220934c117c5112025c5ccc8abff6e44bb1c060",
+      "bytes": 54490
+    },
+    {
+      "path": "head/syntax.log",
+      "sha256": "46c5866e507797003f07cc79560b9bfbd7cf99e90def48a43544fd7714884cd7",
+      "bytes": 215
+    },
+    {
+      "path": "head/validation-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ]
+}

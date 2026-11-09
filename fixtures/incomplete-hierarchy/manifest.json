@@ -1,0 +1,206 @@
+{
+  "schema": "selector-incomplete-hierarchy-fixture/v1",
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "generator_sha256": "aeb1d8b50eac424d666be01f71d46003595f851133789049f469f6e7493c2d9e",
+  "commands": [
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "-version"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+      "--release",
+      "17",
+      "-g",
+      "-d",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes",
+      "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/incomplete-hierarchy/src/metadatacase/Probe.java"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes",
+      "metadatacase.Probe",
+      "child"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes",
+      "metadatacase.Probe",
+      "default"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes",
+      "metadatacase.Probe",
+      "super-static"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes",
+      "metadatacase.Probe",
+      "super-constructor"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+      "-cp",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes",
+      "metadatacase.Probe",
+      "missing"
+    ],
+    [
+      "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javap",
+      "-classpath",
+      "/var/folders/4g/q2wv72kn7x3_d0jpk34_zd0w0000gn/T/selector-incomplete-hierarchy-8ynvu92o/classes",
+      "-v",
+      "-p",
+      "-c",
+      "metadatacase.Probe$Marker",
+      "metadatacase.Probe$Child",
+      "metadatacase.Probe$DefaultParent",
+      "metadatacase.Probe$DefaultChild",
+      "metadatacase.Probe$SuperParent",
+      "metadatacase.Probe$SuperChild",
+      "metadatacase.Probe$Missing",
+      "metadatacase.Probe$Effects"
+    ]
+  ],
+  "bootstrap_input": {
+    "path": "/Users/danielporter/cantonnetworkci/splice/ci-cost-study/rust-selector/fixtures/native-hierarchy/bootstrap.jar",
+    "sha256": "0c697e8d82ace53e32556a491f56e9fb444f37f58b7f87027835dd296f6c839c",
+    "bytes": 1504,
+    "provenance": "native-hierarchy manifest and third-party/openjdk retain exact JDK bytes/source/license"
+  },
+  "independent_runtime_observations": {
+    "child": "child:2:2:7",
+    "default": "default:12:2:7",
+    "super-static": "super-static:48:2:7",
+    "super-constructor": "super-constructor:112:1:0",
+    "missing": "missing:2:1:11"
+  },
+  "analysis_only_omitted_classes": [
+    "Probe$DefaultParent.class",
+    "Probe$Marker.class",
+    "Probe$Missing.class",
+    "Probe$SuperParent.class"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "81091c2a53690547da877ee28fd2aeec7c8b34c4b5bf357c8ae965031e446970",
+      "bytes": 1902
+    },
+    {
+      "path": "bytecode.jar",
+      "sha256": "139001d4af2572a8d8f2999787bb5ee3f82c45c4a4efaa6d447ad887f8afc37d",
+      "bytes": 5319
+    },
+    {
+      "path": "child.log",
+      "sha256": "e0559a337d7d05d9d65713c13d1d4026c121d8547b9b5da242086b6bda0e6011",
+      "bytes": 12
+    },
+    {
+      "path": "classes/metadatacase/Probe$Child.class",
+      "sha256": "0d4a8a5f89af0024cc3cd806369d3421815123f7b17b97abb5392833caa7d745",
+      "bytes": 632
+    },
+    {
+      "path": "classes/metadatacase/Probe$DefaultChild.class",
+      "sha256": "479aae1b0b87a0c0b7f581a5f1430202d6901742ce168dec08df54bf0bce9d68",
+      "bytes": 684
+    },
+    {
+      "path": "classes/metadatacase/Probe$DefaultParent.class",
+      "sha256": "398889d717e1dbb0a80a760a668b69df6c128857bffdb213d33cd6832fa054d4",
+      "bytes": 539
+    },
+    {
+      "path": "classes/metadatacase/Probe$Effects.class",
+      "sha256": "2f60a9980a6c5164f0bf9f8ebb0d12330d6ed617487db973730756d9258d2f0a",
+      "bytes": 643
+    },
+    {
+      "path": "classes/metadatacase/Probe$Marker.class",
+      "sha256": "4d659c80f77fca8d87e29627e1f647757f30aa46a24d699cbd773b1354a54faa",
+      "bytes": 387
+    },
+    {
+      "path": "classes/metadatacase/Probe$Missing.class",
+      "sha256": "45372990522acd2c6d42ba1baef0e58e1ce33c00744845c99a0c521df57ff8bd",
+      "bytes": 421
+    },
+    {
+      "path": "classes/metadatacase/Probe$SuperChild.class",
+      "sha256": "94b168efdfbb722af2ea1302b235cdfd6829a3b7381bdb9cbd39ec8dc5ccac32",
+      "bytes": 650
+    },
+    {
+      "path": "classes/metadatacase/Probe$SuperParent.class",
+      "sha256": "c3ece8f72b150e3523e47b7c1d6380f4617f198c8d0ab58a5f8b39a3e2d41b89",
+      "bytes": 547
+    },
+    {
+      "path": "classes/metadatacase/Probe.class",
+      "sha256": "c8d723b04aaf83fbf3db93cc74233f79c5e1c5a94ba9153ef87a8d75cbd1574d",
+      "bytes": 2150
+    },
+    {
+      "path": "compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "default.log",
+      "sha256": "8b16d20a7314abc00d9fca0cfd469c91a913bcec1a41ebde096f73d58f7f4b45",
+      "bytes": 15
+    },
+    {
+      "path": "java-version.log",
+      "sha256": "da6bb29c482c0fd5ea827d1eecfcf573d88175541589705d776142562e788e18",
+      "bytes": 167
+    },
+    {
+      "path": "javac-version.log",
+      "sha256": "2df6b9c76e710158266aeaae8f3578eaed8ddd747a2272483506ad9a8a5e644a",
+      "bytes": 16
+    },
+    {
+      "path": "javap.log",
+      "sha256": "3d00b67bf3cb029b61e385a0cac9ce0df99c4149138f7d38afd10ca4d0522f3d",
+      "bytes": 29164
+    },
+    {
+      "path": "missing.log",
+      "sha256": "da1c78c4576f2916574a921b31d4269e8863847b5f275526980a4cf257f1e474",
+      "bytes": 15
+    },
+    {
+      "path": "retained.jar",
+      "sha256": "6357f9c3e004587992fe1d8a339bb7247cc0eb099f236f8c6f465fa732657429",
+      "bytes": 3484
+    },
+    {
+      "path": "src/metadatacase/Probe.java",
+      "sha256": "2352032a336ef33e5c031ee060b6e5c1e5eee1364a0ec843902dea39d857092e",
+      "bytes": 1825
+    },
+    {
+      "path": "super-constructor.log",
+      "sha256": "97f50ff9f8c64b7be40ff231055e77a2b9855913b1df2ea551a28880587f3c24",
+      "bytes": 26
+    },
+    {
+      "path": "super-static.log",
+      "sha256": "06d3ddd4a213a6ffa0fb5e495dd677594a08b118d6e8acf97dfdc95d2092bd74",
+      "bytes": 20
+    }
+  ]
+}

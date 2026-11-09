@@ -1,0 +1,176 @@
+{
+  "schema": "rust-selector-jvm-resolution-fixture/v1",
+  "source_sha256": "359c4811264ee11f45a28dd249df93905156cc20f35b100d34b7661fcaaa4f05",
+  "javac": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/javac",
+  "javac_sha256": "18046707ee067a5a7ababd7a1f9dd2cbae1e6686ebc50d57ea4a7f3a80f1af43",
+  "java": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin/java",
+  "java_sha256": "2aee02a39a0817c27501e853728c28b79f48d114dbde7c88cbf698ecf1680f63",
+  "java_version": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 21.0.12.1)\nOpenJDK 64-Bit Server VM Homebrew (build 21.0.12.1, mixed mode, sharing)\n",
+  "compile_command": [
+    "javac",
+    "--release",
+    "17",
+    "-g:none",
+    "-d",
+    "<classes>",
+    "Resolution.java"
+  ],
+  "java_base_jmod": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/jmods/java.base.jmod",
+  "java_base_jmod_sha256": "d3309e386efaacbc917e75706405b35517473a891326142705c8998f5090c2a3",
+  "object_class_member": "classes/java/lang/Object.class",
+  "synthetic_controls": [
+    {
+      "path": "controls/ambiguous-default.class",
+      "source": "classes/fixture/DefaultLeaf.class",
+      "transform": "replace one equal-length UTF8 constant fixture/DefaultTop with fixture/DefaultTwo",
+      "expected": "ambiguous maximally specific concrete interface methods; no arbitrary choice",
+      "sha256": "09d67f1514c1a6a9bb5b6a8ac0724ffcbef911e08c2da2a67ab5f29430e2ba01"
+    },
+    {
+      "path": "controls/cyclic-interface.class",
+      "source": "classes/fixture/DefaultOne.class",
+      "transform": "replace one equal-length UTF8 superinterface fixture/DefaultTop with fixture/DefaultOne",
+      "expected": "invalid cyclic interface hierarchy; explicit unknown",
+      "sha256": "4e8052e6b40aa98bce898c41c0d95b456fc65250662e42aed9e252387b471698"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "ADDITIONAL_LICENSE_INFO",
+      "sha256": "a69bce275ba7a3570af6579cb0f55682cd75fedfcd49e0e8e9022270c447c916",
+      "bytes": 2114
+    },
+    {
+      "path": "ASSEMBLY_EXCEPTION",
+      "sha256": "75292f03bf23d3db7c985aecc191029b93883200721ed23ed34a2e601463df33",
+      "bytes": 1514
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "4b9abebc4338048a7c2dc184e9f800deb349366bdf28eb23c2677a77b4c87726",
+      "bytes": 19274
+    },
+    {
+      "path": "classes/fixture/AbstractLeaf.class",
+      "sha256": "a2434236e4d9c851cdd0dd8c5eea3958d92357e55711be21df53909a2f3a0d0a",
+      "bytes": 189
+    },
+    {
+      "path": "classes/fixture/AbstractOne.class",
+      "sha256": "9915a0c5c71d58f3a4dd7819066854b05e68af24d6e40c62398b8ff1352805ef",
+      "bytes": 111
+    },
+    {
+      "path": "classes/fixture/AbstractTwo.class",
+      "sha256": "a0ae5ef3fe187280484f2d4d700f10fff575e6fac024e73c0ea5ac20978c419b",
+      "bytes": 111
+    },
+    {
+      "path": "classes/fixture/DefaultLeaf.class",
+      "sha256": "39ef9b8ce10c58cc954bcf5b6582a50bf2d8d1560af8cfe26324b9ebaf6bf99a",
+      "bytes": 275
+    },
+    {
+      "path": "classes/fixture/DefaultOne.class",
+      "sha256": "727a5a7be02161c00e27122525910c3bb86a2964037b42c9e1dc490aa6110b3a",
+      "bytes": 173
+    },
+    {
+      "path": "classes/fixture/DefaultTop.class",
+      "sha256": "5d13766e4108b2aeb1236127837dfb0e183ef091adb76987dfb5bc15d806f259",
+      "bytes": 188
+    },
+    {
+      "path": "classes/fixture/DefaultTwo.class",
+      "sha256": "58724aa242e5ea0a3f705a27f11f55dba91ffe1a5d5df1093f3b6fb1e07a6cf6",
+      "bytes": 173
+    },
+    {
+      "path": "classes/fixture/FieldBeforeParent.class",
+      "sha256": "d75e6c2ebb1f0579301d16cd8f1604303385cbe34e6fab369f88365137d26439",
+      "bytes": 167
+    },
+    {
+      "path": "classes/fixture/FieldBoth.class",
+      "sha256": "10980fa35b4f49bcd933f9788e733f3a4047af5362c027704efacbdfbe2861d2",
+      "bytes": 180
+    },
+    {
+      "path": "classes/fixture/FieldLeaf.class",
+      "sha256": "c36ea8ee73892ea6a0253a5400750a8a02974a9342055f5ef4b4f79dad5d3afa",
+      "bytes": 156
+    },
+    {
+      "path": "classes/fixture/FieldOne.class",
+      "sha256": "80c75db75c63a2dc4633e42ff90720431d447c4dcc980f4e945cd21df4bf1e3f",
+      "bytes": 92
+    },
+    {
+      "path": "classes/fixture/FieldOverride.class",
+      "sha256": "a5470fb72d4aa5257ea6e010a352c0c5c3fb95ed98d529d946dc655e2f23c947",
+      "bytes": 286
+    },
+    {
+      "path": "classes/fixture/FieldTop.class",
+      "sha256": "2caa31790245757556c83540fb6d6001b3c38702513d8ce5186d3416b7857b3c",
+      "bytes": 196
+    },
+    {
+      "path": "classes/fixture/FieldTwo.class",
+      "sha256": "b8109faae47561d8da476025f4f2e8897c6ba63f7a236d6a6af15bfb3a624d83",
+      "bytes": 196
+    },
+    {
+      "path": "classes/fixture/InitArgument.class",
+      "sha256": "a24241ad69f3af1297b5b45bf8055edbd60e55e7c594f4f35e01e75bb8d2a966",
+      "bytes": 159
+    },
+    {
+      "path": "classes/fixture/Resolution.class",
+      "sha256": "56cd7959f46d9e1bb2516cf76d3d28ab4fe08339aafeec54e1f9854c8d846efd",
+      "bytes": 1929
+    },
+    {
+      "path": "classes/fixture/ResolveBase.class",
+      "sha256": "6e5d40667accde6b762fd3efa177fa7fa980a48e268ef651d048a7dd9ff24226",
+      "bytes": 574
+    },
+    {
+      "path": "classes/fixture/ResolveLeaf.class",
+      "sha256": "98c16377a7a003e36b08b00fb39794d3bff4e2ed7ea24e30a3b537cffb96cb0b",
+      "bytes": 597
+    },
+    {
+      "path": "classes/fixture/ResolveMid.class",
+      "sha256": "19cffc97fb06c0a4765eddb4e0e7ff1f8a597d7bcbc12fbc80e3466d57820a26",
+      "bytes": 204
+    },
+    {
+      "path": "classes/java/lang/Object.class",
+      "sha256": "10cc90d16479279e1d6ee258fdaea4c5640ac6125acb5a7100a7b0a20237a9f2",
+      "bytes": 2487
+    },
+    {
+      "path": "controls/ambiguous-default.class",
+      "sha256": "09d67f1514c1a6a9bb5b6a8ac0724ffcbef911e08c2da2a67ab5f29430e2ba01",
+      "bytes": 275
+    },
+    {
+      "path": "controls/cyclic-interface.class",
+      "sha256": "4e8052e6b40aa98bce898c41c0d95b456fc65250662e42aed9e252387b471698",
+      "bytes": 173
+    },
+    {
+      "path": "jdk-source/java/lang/Object.java",
+      "sha256": "e73d59e14502368925b23870aa9bf1a306a4bf6ae615443416f7a97b3a3e86c1",
+      "bytes": 28177
+    },
+    {
+      "path": "resolution.jar",
+      "sha256": "d140c7b26e56a6dd81f45f003177fcbd4171889d8daf2a53e0cef6d61e8c7936",
+      "bytes": 7711
+    }
+  ],
+  "jvm_witness": "inherited=fixture.ResolveBase\nstaticMethod=fixture.ResolveBase\nstaticField=fixture.ResolveBase\ndefaultMethod=fixture.DefaultOne\ndefaultResult=one\nsuperResult=mid\nfieldBeforeParent=fixture.FieldTop\nfieldOverride=fixture.FieldOverride\n",
+  "jdk_source_zip_sha256": "c4ef32be6c98b51e7ad4c01a583bf85f456304012271f019f34f6c3b1a93e1a3"
+}

@@ -1,0 +1,41 @@
+[package]
+name = "selector-acceptance"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+selector-types.workspace = true
+selector-artifacts.workspace = true
+selector-facts.workspace = true
+selector-graph.workspace = true
+selector-plan.workspace = true
+selector-domain.workspace = true
+selector-extract.workspace = true
+selector-graph-build.workspace = true
+selector-models.workspace = true
+selector-solve.workspace = true
+selector-select.workspace = true
+selector-report.workspace = true
+selector-result.workspace = true
+
+[features]
+allocation-contracts = []
+
+[[test]]
+name = "allocation_contracts"
+path = "tests/allocation_contracts.rs"
+harness = false
+required-features = ["allocation-contracts"]
+
+[dev-dependencies]
+selector-issue.workspace = true
+selector-transfer.workspace = true
+flate2.workspace = true
+tempfile.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
